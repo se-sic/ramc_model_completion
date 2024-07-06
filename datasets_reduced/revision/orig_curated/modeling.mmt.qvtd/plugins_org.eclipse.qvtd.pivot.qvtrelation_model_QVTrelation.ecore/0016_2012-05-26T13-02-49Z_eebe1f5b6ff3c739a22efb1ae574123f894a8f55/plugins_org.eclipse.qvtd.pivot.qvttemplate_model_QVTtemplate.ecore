@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="QVTTemplate" name="qvttemplate" nsURI="http://www.eclipse.org/qvt/0.9/QVTtemplate" nsPrefix="qvtt">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTTemplate.CollectionTemplateExp" name="CollectionTemplateExp" eSuperTypes="QVTTemplate.TemplateExp">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.CollectionTemplateExp.member" name="member" ordered="false" upperBound="-1" containment="true">
+      <eAnnotations xmi:id="_Ohd44N6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_Ohd44d6vEei97MD7GK1RmA" key="body" value="listContainer"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="../../../../../org.eclipse.git_2018-08-22/org.eclipse.git.resolved/modeling.mmt.qvtd/plugins_org.eclipse.qvtd.pivot.qvtrelation_model_QVTrelation.ecore/2012-05-26T13-02-49Z_eebe1f5b6ff3c739a22efb1ae574123f894a8f55/examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#//OCLExpression"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.CollectionTemplateExp.referredCollectionType" name="referredCollectionType" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_OlQ0X96vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.CollectionTemplateExp.rest" name="rest">
+      <eAnnotations xmi:id="_Ohd45N6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_Ohd45d6vEei97MD7GK1RmA" key="body" value="matchingExp"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_OlQ4R96vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTTemplate.ObjectTemplateExp" name="ObjectTemplateExp" eSuperTypes="QVTTemplate.TemplateExp">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.ObjectTemplateExp.part" name="part" ordered="false" upperBound="-1" eType="QVTTemplate.PropertyTemplateItem" containment="true" eOpposite="QVTTemplate.PropertyTemplateItem.objContainer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.ObjectTemplateExp.referredClass" name="referredClass" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_OlQz_N6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTTemplate.PropertyTemplateItem" name="PropertyTemplateItem">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_OlQ0jN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.PropertyTemplateItem.objContainer" name="objContainer" lowerBound="1" eType="QVTTemplate.ObjectTemplateExp" transient="true" eOpposite="QVTTemplate.ObjectTemplateExp.part"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.PropertyTemplateItem.referredProperty" name="referredProperty" lowerBound="1">
+      <eAnnotations xmi:id="_Ohd46N6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_Ohd46d6vEei97MD7GK1RmA" key="body" value="propertyItem"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_OlQ3ZN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.PropertyTemplateItem.value" name="value" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_Ohd4696vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_Ohd47N6vEei97MD7GK1RmA" key="body" value="propertyItem"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="../../../../../org.eclipse.git_2018-08-22/org.eclipse.git.resolved/modeling.mmt.qvtd/plugins_org.eclipse.qvtd.pivot.qvtrelation_model_QVTrelation.ecore/2012-05-26T13-02-49Z_eebe1f5b6ff3c739a22efb1ae574123f894a8f55/examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#//OCLExpression"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Ohd47t6vEei97MD7GK1RmA" name="isOpposite" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_OlQzxd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTTemplate.TemplateExp" name="TemplateExp" abstract="true">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_OlQ2hN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.TemplateExp.bindsTo" name="bindsTo">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_OlQ4R96vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.TemplateExp.where" name="where" containment="true">
+      <eAnnotations xmi:id="_Ohd48t6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_Ohd4896vEei97MD7GK1RmA" key="body" value="owner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="../../../../../org.eclipse.git_2018-08-22/org.eclipse.git.resolved/modeling.mmt.qvtd/plugins_org.eclipse.qvtd.pivot.qvtrelation_model_QVTrelation.ecore/2012-05-26T13-02-49Z_eebe1f5b6ff3c739a22efb1ae574123f894a8f55/examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#//OCLExpression"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

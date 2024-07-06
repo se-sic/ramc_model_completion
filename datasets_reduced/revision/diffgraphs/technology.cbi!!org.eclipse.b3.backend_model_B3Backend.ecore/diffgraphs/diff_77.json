@@ -1,0 +1,34 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_SgraZt6yEei97MD7GK1RmA', 'name':'getReturnTypeForParameterTypes','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Type','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3fee9cb8 (expression: Type)','eContainingClass':'BTypeCalculator','eParameters':['types']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_SgraZ96yEei97MD7GK1RmA', 'name':'types','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'TypeArray','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@51b49262 (expression: TypeArray)','eOperation':'getReturnTypeForParameterTypes'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_jLET3N6yEei97MD7GK1RmA', 'name':'getSignature','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'B3FunctionType','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3b998d30 (expression: B3FunctionType)','eContainingClass':'BTypeCalculator','eParameters':['types']}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_jLET3d6yEei97MD7GK1RmA', 'name':'types','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'TypeArray','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6764ea8e (expression: TypeArray)','eOperation':'getSignature'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_6KehD96wEei97MD7GK1RmA', 'name':'BTypeCalculator','ePackage':'b3backend','abstract':'false','interface':'false','eOperations':['getReturnTypeForParameterTypes'],'eStructuralFeatures':['func']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "2", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "4", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "4", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+}]}

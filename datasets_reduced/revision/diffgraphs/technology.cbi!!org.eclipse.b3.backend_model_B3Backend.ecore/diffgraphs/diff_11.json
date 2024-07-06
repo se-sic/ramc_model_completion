@@ -1,0 +1,30 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_2B1QE96wEei97MD7GK1RmA', 'name':'getSignature','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'IType','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6110b123 (expression: IType)','eContainingClass':'BFunction'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_2B1Qed6wEei97MD7GK1RmA', 'name':'isAssignableFrom','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@41937cba (expression: EBoolean)','eContainingClass':'B3FunctionType','eParameters':['type']}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_2B1Qe96wEei97MD7GK1RmA', 'name':'type','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'IType','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7c68eb91 (expression: IType)','eOperation':'isAssignableFrom'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_pfFhld6wEei97MD7GK1RmA', 'name':'B3FunctionType','ePackage':'b3backend','abstract':'false','interface':'false','eOperations':['getParameterTypesArray','isAssignableFrom'],'eStructuralFeatures':['functionType','returnType','parameterTypes','varArgs'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@62108728 (expression: IType)']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_lTgRjt6wEei97MD7GK1RmA', 'name':'BFunction','ePackage':'b3backend','abstract':'true','interface':'false','eOperations':['internalCall','getSignature'],'eStructuralFeatures':['visibility','final','executionMode','name','guard','parameterTypes','exceptionTypes','typeParameters','parameterNames','varArgs','parameters','documentation','returnType','cached'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@7967b877 (expression: BExpression)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@1e56ba24 (expression: IGenericDeclaration)']}}" 
+}], 
+ "links": [{
+	 "source": "1", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "3", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "4", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+}]}

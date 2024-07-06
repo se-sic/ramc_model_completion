@@ -1,0 +1,33 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EEnumLiteral', 'attributes': {'id': '_PULk_t6uEei97MD7GK1RmA', 'name':'GET_SUPER','value':'48','instance':'GET_SUPER','literal':'GET_SUPER','eEnum':'Opcode'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_PULmFd6uEei97MD7GK1RmA', 'name':'getField','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Field','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@34ee16d1 (expression: Field)','eContainingClass':'CodeBlock'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_PULml96uEei97MD7GK1RmA', 'name':'GetSuper','ePackage':'emftvm','abstract':'false','interface':'false','eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@e869020 (expression: FieldInstruction)']}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_5WZewN6tEei97MD7GK1RmA', 'name':'emftvm','nsURI':'http://www.eclipse.org/m2m/atl/2011/EMFTVM','nsPrefix':'emftvm','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@75c6f33','eClassifiers':['ModuleResolver','EnumLiteral','StackFrame','Method','TimingData','VMMonitor','LazyCollection','LazyBag','LazyList','LazyOrderedSet','LazySet','EJavaObjectArray','ModelDeclarationTag','FeatureTag','Opcode','...']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EEnum', 'attributes': {'id': '_5WZe296tEei97MD7GK1RmA', 'name':'Opcode','defaultValue':'PUSH','ePackage':'emftvm','serializable':'true','eLiterals':['PUSH','PUSHT','PUSHF','POP','LOAD','STORE','SET','GET','GET_TRANS','SET_STATIC','GET_STATIC','FINDTYPE','FINDTYPE_S','NEW','NEW_S','DELETE','DUP','DUP_X1','SWAP','SWAP_X1','IF','IFN','GOTO','ITERATE','...']}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_5WZgGN6tEei97MD7GK1RmA', 'name':'CodeBlock','ePackage':'emftvm','abstract':'false','interface':'false','eOperations':['execute','getStackLevel','getModule','getOperation','getField','getPredecessors','getAllPredecessors','getNonLoopingPredecessors'],'eStructuralFeatures':['maxLocals','maxStack','code','lineNumbers','localVariables','matcherFor','applierFor','postApplyFor','bodyFor','initialiserFor','nested','nestedFor','parentFrame','bindingFor']}}" 
+}], 
+ "links": [{
+	 "source": "3", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "4", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eLiterals'}" 
+},{
+	 "source": "5", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+}]}

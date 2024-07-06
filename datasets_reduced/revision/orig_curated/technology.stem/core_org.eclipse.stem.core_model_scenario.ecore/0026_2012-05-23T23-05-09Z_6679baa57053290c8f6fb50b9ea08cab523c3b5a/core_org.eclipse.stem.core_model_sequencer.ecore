@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_c9bcEt60Eei97MD7GK1RmA" name="sequencer" nsURI="http:///org/eclipse/stem/core/sequencer.ecore" nsPrefix="org.eclipse.stem.core.sequencer">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_c9bcE960Eei97MD7GK1RmA" name="RealTimeSequencer" eSuperTypes="_c9bcK960Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_c9bcFN60Eei97MD7GK1RmA" name="Sequencer" abstract="true">
+    <eSuperTypes href="core_org.eclipse.stem.core_model_common.ecore#_c9VTbd60Eei97MD7GK1RmA"/>
+    <eOperations xmi:id="_c9bcFd60Eei97MD7GK1RmA" name="reset"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_c9bcFt60Eei97MD7GK1RmA" name="startTime" containment="true" resolveProxies="false">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_c9bb4t60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_c9bcGN60Eei97MD7GK1RmA" name="endTime" containment="true" resolveProxies="false">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_c9bb4t60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_c9bcGt60Eei97MD7GK1RmA" name="currentTime" containment="true" resolveProxies="false">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_c9bb4t60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_c9bcHN60Eei97MD7GK1RmA" name="nextTime" changeable="false" volatile="true" transient="true" resolveProxies="false">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_c9bb4t60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_c9bcHt60Eei97MD7GK1RmA" name="timeDelta" changeable="false" transient="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_c9ba8d60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_c9bcIN60Eei97MD7GK1RmA" name="duration" defaultValueLiteral="-1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_c9ba8d60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_c9bcIt60Eei97MD7GK1RmA" name="timeToStop" changeable="false" volatile="true" transient="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_c9bavN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_c9bcJN60Eei97MD7GK1RmA" name="workComplete">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_c9ba1N60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_c9bcJt60Eei97MD7GK1RmA" name="workIncrement" changeable="false" volatile="true" transient="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_c9ba5960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_c9bcKN60Eei97MD7GK1RmA" name="cycle" defaultValueLiteral="0">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_c9ba5960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_c9bcK960Eei97MD7GK1RmA" name="SequentialSequencer" eSuperTypes="_c9bcFN60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_c9bcLN60Eei97MD7GK1RmA" name="timeIncrement">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_c9ba8d60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_c9bdSt60Eei97MD7GK1RmA" name="solver" nsURI="http://org/eclipse/stem/core/solver" nsPrefix="org.eclipse.stem.core.solver">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_c9bdS960Eei97MD7GK1RmA" name="Solver">
+    <eSuperTypes href="core_org.eclipse.stem.core_model_common.ecore#_c9VTbd60Eei97MD7GK1RmA"/>
+    <eOperations xmi:id="_c9bdTN60Eei97MD7GK1RmA" name="step" eExceptions="_jr1LoN60Eei97MD7GK1RmA">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_c9bavN60Eei97MD7GK1RmA"/>
+      <eParameters xmi:id="_c9bdTt60Eei97MD7GK1RmA" name="time">
+        <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_c9bb4t60Eei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_c9bdUN60Eei97MD7GK1RmA" name="timeDelta">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_c9ba8d60Eei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_c9bdUt60Eei97MD7GK1RmA" name="cycle">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_c9ba5960Eei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_c9bdVN60Eei97MD7GK1RmA" name="reset"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_c9bdWt60Eei97MD7GK1RmA" name="partitioner" transient="true">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_graph.ecore#_c9bcvt60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_d01kJt60Eei97MD7GK1RmA" name="canonicalGraph" transient="true" containment="true">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_graph.ecore#_c9bcS960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_jr1LoN60Eei97MD7GK1RmA" name="SolverException" instanceClassName="org.eclipse.stem.core.solver.SolverException" serializable="false"/>
+</ecore:EPackage>

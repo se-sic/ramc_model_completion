@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_YQ1u8t60Eei97MD7GK1RmA" name="model" nsURI="http:///org/eclipse/stem/core/model.ecore" nsPrefix="org.eclipse.stem.core.model">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_YQ1u8960Eei97MD7GK1RmA" name="Decorator">
+    <eSuperTypes href="core_org.eclipse.stem.core_model_common.ecore#_YQ1vfd60Eei97MD7GK1RmA"/>
+    <eOperations xmi:id="_YQ1u9N60Eei97MD7GK1RmA" name="decorateGraph">
+      <eParameters xmi:id="_YQ1u9t60Eei97MD7GK1RmA" name="time" eType="_YQ1vIN60Eei97MD7GK1RmA"/>
+      <eExceptions xsi:type="ecore:EDataType" href="core_org.eclipse.stem.core_model_scenario.ecore#_YWDmN960Eei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_YQ1u9960Eei97MD7GK1RmA" name="updateLabels">
+      <eParameters xmi:id="_YQ1u-N60Eei97MD7GK1RmA" name="time" eType="_YQ1vIN60Eei97MD7GK1RmA"/>
+      <eParameters xmi:id="_YQ1u-d60Eei97MD7GK1RmA" name="timerPeriod">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_hAd60Eei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_YQ1u-960Eei97MD7GK1RmA" name="cycle">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_g9960Eei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_YQ1u_d60Eei97MD7GK1RmA" name="resetLabels">
+      <eExceptions xsi:type="ecore:EDataType" href="core_org.eclipse.stem.core_model_scenario.ecore#_YWDmN960Eei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_YQ1u_t60Eei97MD7GK1RmA" name="prepare">
+      <eParameters xmi:id="_YQ1u_960Eei97MD7GK1RmA" name="model" eType="_YQ1vDt60Eei97MD7GK1RmA"/>
+      <eParameters xmi:id="_YQ1vAN60Eei97MD7GK1RmA" name="time" eType="_YQ1vIN60Eei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_YQ1vAd60Eei97MD7GK1RmA" name="labelsToUpdate" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_graph.ecore#_YQ_hxd60Eei97MD7GK1RmA"/>
+      <eOpposite href="core_org.eclipse.stem.core_model_graph.ecore#_YQ_hy960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_YQ1vA960Eei97MD7GK1RmA" name="graph" transient="true">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_graph.ecore#_YQ_h3960Eei97MD7GK1RmA"/>
+      <eOpposite href="core_org.eclipse.stem.core_model_graph.ecore#_YQ_iEN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_YQ1vBd60Eei97MD7GK1RmA" name="enabled" transient="true" defaultValueLiteral="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_gzN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_YQ1vB960Eei97MD7GK1RmA" name="graphDecorated" transient="true" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_gzN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_YQ1vCd60Eei97MD7GK1RmA" name="progress" transient="true" defaultValueLiteral="0.0">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_g5N60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_YQ1vDN60Eei97MD7GK1RmA" name="EdgeDecorator" eSuperTypes="_YQ1u8960Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_YQ1vDd60Eei97MD7GK1RmA" name="GraphDecorator" eSuperTypes="_YQ1u8960Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_YQ1vDt60Eei97MD7GK1RmA" name="Model">
+    <eSuperTypes href="core_org.eclipse.stem.core_model_common.ecore#_YQ1vfd60Eei97MD7GK1RmA"/>
+    <eOperations xmi:id="_YQ1vD960Eei97MD7GK1RmA" name="getCanonicalGraph">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_graph.ecore#_YQ_h3960Eei97MD7GK1RmA"/>
+      <eParameters xmi:id="_YQ1vEd60Eei97MD7GK1RmA" name="uri">
+        <eType xsi:type="ecore:EDataType" href="core_org.eclipse.stem.core_model_common.ecore#_YQ1vh960Eei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_YQ1vE960Eei97MD7GK1RmA" name="filter">
+        <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_common.ecore#_YQ1viN60Eei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_YQ1vFd60Eei97MD7GK1RmA" name="time" eType="_YQ1vIN60Eei97MD7GK1RmA"/>
+      <eExceptions xsi:type="ecore:EDataType" href="core_org.eclipse.stem.core_model_scenario.ecore#_YWDmN960Eei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_YQ1vFt60Eei97MD7GK1RmA" name="prepare">
+      <eParameters xmi:id="_YQ1vF960Eei97MD7GK1RmA" name="time" eType="_YQ1vIN60Eei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_YQ1vGN60Eei97MD7GK1RmA" name="models" upperBound="-1" eType="_YQ1vDt60Eei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_YQ1vGd60Eei97MD7GK1RmA" name="graphs" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_graph.ecore#_YQ_h3960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_YQ1vG960Eei97MD7GK1RmA" name="graphDecorators" upperBound="-1" eType="_YQ1vDd60Eei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_YQ1vHN60Eei97MD7GK1RmA" name="nodeDecorators" upperBound="-1" eType="_YQ1vH960Eei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_YQ1vHd60Eei97MD7GK1RmA" name="edgeDecorators" upperBound="-1" eType="_YQ1vDN60Eei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_YQ1vH960Eei97MD7GK1RmA" name="NodeDecorator" eSuperTypes="_YQ1u8960Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_YQ1vIN60Eei97MD7GK1RmA" name="STEMTime">
+    <eOperations xmi:id="_YQ1vId60Eei97MD7GK1RmA" name="addIncrement" eType="_YQ1vIN60Eei97MD7GK1RmA">
+      <eParameters xmi:id="_YQ1vIt60Eei97MD7GK1RmA" name="timeIncrement">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_hAd60Eei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_YQ1vJN60Eei97MD7GK1RmA" name="valueEquals">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_gzN60Eei97MD7GK1RmA"/>
+      <eParameters xmi:id="_YQ1vJt60Eei97MD7GK1RmA" name="obj" eType="_YQ1vIN60Eei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_YQ1vJ960Eei97MD7GK1RmA" name="time">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_g4t60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="_YQ1vK960Eei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_YQ1vKt60Eei97MD7GK1RmA" eClassifier="_YQ1vIN60Eei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_YQ1vK960Eei97MD7GK1RmA" name="Comparable" instanceClassName="java.lang.Comparable" abstract="true" interface="true">
+    <eTypeParameters xmi:id="_YQ1vLN60Eei97MD7GK1RmA" name="T"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_YQ1vLd60Eei97MD7GK1RmA" name="IntegrationDecorator" abstract="true" eSuperTypes="_YQ1vH960Eei97MD7GK1RmA">
+    <eOperations xmi:id="_YQ1vLt60Eei97MD7GK1RmA" name="applyExternalDeltas">
+      <eParameters xmi:id="_YQ1vL960Eei97MD7GK1RmA" name="time" eType="_YQ1vIN60Eei97MD7GK1RmA"/>
+      <eParameters xmi:id="_YQ1vMN60Eei97MD7GK1RmA" name="timeDelta">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_hAd60Eei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_YQ1vMt60Eei97MD7GK1RmA" name="labels" upperBound="-1">
+        <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_graph.ecore#_YQ_hxd60Eei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_YQ1vNN60Eei97MD7GK1RmA" name="calculateDelta">
+      <eParameters xmi:id="_YQ1vNd60Eei97MD7GK1RmA" name="time" eType="_YQ1vIN60Eei97MD7GK1RmA"/>
+      <eParameters xmi:id="_YQ1vNt60Eei97MD7GK1RmA" name="timeDelta">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_hAd60Eei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_YQ1vON60Eei97MD7GK1RmA" name="labels" upperBound="-1">
+        <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_graph.ecore#_YQ_hxd60Eei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_YQ1vOt60Eei97MD7GK1RmA" name="doModelSpecificAdjustments">
+      <eParameters xmi:id="_YQ1vO960Eei97MD7GK1RmA" name="label">
+        <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_graph.ecore#_YQ_iHN60Eei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_YQ1vPd60Eei97MD7GK1RmA" name="isDeterministic">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_gzN60Eei97MD7GK1RmA"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_YXw2oN60Eei97MD7GK1RmA" name="TransformationDecorator" abstract="true" eSuperTypes="_YQ1vH960Eei97MD7GK1RmA">
+    <eOperations xmi:id="_YXw2od60Eei97MD7GK1RmA" name="transform">
+      <eParameters xmi:id="_YXw2ot60Eei97MD7GK1RmA" name="time" eType="_YQ1vIN60Eei97MD7GK1RmA"/>
+      <eParameters xmi:id="_YXw2o960Eei97MD7GK1RmA" name="timeDelta">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_YQ_hAd60Eei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+</ecore:EPackage>

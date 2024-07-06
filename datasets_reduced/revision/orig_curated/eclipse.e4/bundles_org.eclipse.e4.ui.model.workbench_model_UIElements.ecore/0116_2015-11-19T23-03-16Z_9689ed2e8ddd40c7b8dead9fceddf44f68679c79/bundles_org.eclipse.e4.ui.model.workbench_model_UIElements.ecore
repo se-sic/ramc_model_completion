@@ -1,0 +1,1125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_LWKscd6tEei97MD7GK1RmA" name="application" nsURI="http://www.eclipse.org/ui/2010/UIModel/application" nsPrefix="application">
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_LWKsn96tEei97MD7GK1RmA" name="IEclipseContext" instanceClassName="org.eclipse.e4.core.contexts.IEclipseContext" serializable="false"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_T65trt6tEei97MD7GK1RmA" name="StringToStringMap" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_T65tr96tEei97MD7GK1RmA" name="key">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_T65tsd6tEei97MD7GK1RmA" name="value">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsyd6tEei97MD7GK1RmA" name="Application">
+    <eAnnotations xmi:id="_XSJWSd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_XSJWSt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The MApplication acts as the root of the UI Model. It's children are the&#xD;&#xA; MWindows representing the UI for this application. It also owns the application's&#xD;&#xA;context (which is hooked to the OSGI context, allowing access not only to its&#xD;&#xA;own runtime information but also to any registered OSGI service.&#xD;&#xA;&lt;/p>&lt;p>&#xD;&#xA;It also owns a number of caches which, while independent of the UI itself are&#xD;&#xA;used by the appliecation to populate new windows or to define state that is&#xD;&#xA;epected to be the same for all windows:&#xD;&#xA;&lt;ui>&#xD;&#xA;&lt;li>Keybindings, Handlers, Commands&lt;/li>&#xD;&#xA;&lt;li>Part Descriptors (to support a 'Show View' dialog...)&lt;/li>&#xD;&#xA;&lt;li>Snippets of model (such as saved perspectives...)&lt;/li>&#xD;&#xA;&lt;/ui>&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKsyt6tEei97MD7GK1RmA" name="commands" upperBound="-1" eType="_LWKsfd6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_XPd1vN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XPd1vd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the list of MCommand elements available in the application. Commands&#xD;&#xA;represent some logical operation. The actual implementation of the operation is&#xD;&#xA;determined by the MHandler chosen by the system based on the current execution&#xD;&#xA;context.&#xD;&#xA;&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA0Cd6tEei97MD7GK1RmA" name="addons" upperBound="-1" eType="_WvA0KN6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_XPd1v96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XPd1wN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the ordered list of MAddons for this model. The individual addons will be&#xD;&#xA;created through injection after the model loads but before it is rendered.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_W6zNSt6tEei97MD7GK1RmA" name="categories" upperBound="-1" eType="_W6zNkN6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_XM4b0t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b096tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XRZvdN6tEei97MD7GK1RmA" name="dialogs" upperBound="-1" eType="_XRZyDd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XRZvdd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XRZvdt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the ordered list of MDialogs for this model.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.1"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_LWKszd6tEei97MD7GK1RmA" eClassifier="_LWKs9d6tEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="_LWKsod6tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_M4sPM96tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_WvA0Kt6tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_S43CR96tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_V96u6t6tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_Wx4in96tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_W1TqIN6tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_W1TqJt6tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_XIqq1t6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsc96tEei97MD7GK1RmA" name="ApplicationElement" abstract="true">
+    <eAnnotations xmi:id="_XSJWY96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_XSJWZN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the root element for all UI Model elements, defining attribtues common&#xD;&#xA;to every element; the element's id as well as three general storage elements:&#xD;&#xA;&lt;ul>&#xD;&#xA;&lt;li>Tags: This is a set of strings which can be used to stereotype a particular&#xD;&#xA;element. Tags may be specified in element searches and can also be referred&#xD;&#xA;to in the CSS styling definition.&lt;/li>&#xD;&#xA;&lt;li>PersistedState: A string to string map used to store information that nneds&#xD;&#xA;to be persisted between sessions.&lt;/li>&#xD;&#xA;&lt;li>TransientData: A string to object map which can be used to store runtime data&#xD;&#xA;relevant to a particular model element.&lt;/li>&#xD;&#xA;&lt;/ul>&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA0Et6tEei97MD7GK1RmA" name="elementId">
+      <eAnnotations xmi:id="_XM4b496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b5N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_VM3r796tEei97MD7GK1RmA" name="persistedState" upperBound="-1" eType="_T65trt6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_XPd1196tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XPd12N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a Strimg to String map that can be used to persist information avout model&#xD;&#xA;elements across program sessions. The format of the 'value' string is defined by&#xD;&#xA;the code setting the value into the map. Information stored in this map is part of&#xD;&#xA;the model and will be persisted and restored as such.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TqU7E96tEei97MD7GK1RmA" name="tags" upperBound="-1">
+      <eAnnotations xmi:id="_XPd12t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XPd1296tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Tags are a list of Strings that are persistent parts of the UI Model. They can be used to 'refine' a particular&#xD;&#xA;model element, supplying extra 'meta' information. These tags interact with the CSS engine so that it's&#xD;&#xA;possible to write CSS specific to a particular tag. The platform currently uses this mechanism to cause the&#xD;&#xA;color change in the stack comtaining the currently active part&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XB8-Ot6tEei97MD7GK1RmA" name="contributorURI">
+      <eAnnotations xmi:id="_XPd13t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XPd1396tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field is used to track the bundle (if any) from which the UI element was&#xD;&#xA;derived in order to faciliate its removal should the bundle go away or be updated.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XF1Yrd6tEei97MD7GK1RmA" name="transientData" upperBound="-1" eType="_XF1Ytd6tEei97MD7GK1RmA" transient="true" containment="true">
+      <eAnnotations xmi:id="_XPd14t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XPd1496tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a String to Object map into which any desired runtime information realted to a particular element&#xD;&#xA;may be stored. It is &lt;i>not&lt;/i> persisted across sessions so it is not necessary that the 'values' be&#xD;&#xA;serializable.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsdt6tEei97MD7GK1RmA" name="Contribution" abstract="true" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_XSJWeN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_XSJWed6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;MContribution is a mix-in class used by concrete elements such as Parts to define&#xD;&#xA;the location of the client supplied class implementing the specific logic needed.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA0F96tEei97MD7GK1RmA" name="contributionURI">
+      <eAnnotations xmi:id="_XPd16N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XPd16d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The ContributionURI defines the complete path to a class implementing the logic&#xD;&#xA;for elements require external code to handle the UI such as MParts and MHandlers.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsed6tEei97MD7GK1RmA" name="object" transient="true" derived="true">
+      <eAnnotations xmi:id="_XPd17N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XPd17d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the DI created instance of the class implementing the logic for the element.&#xD;&#xA;It will only be non-null if the element has been rendered into the presentation.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0KN6tEei97MD7GK1RmA" name="Addon" eSuperTypes="_LWKsdt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_XSJWg96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_XSJWhN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;An MAddon represents a self-contained application logic. Addons may be used&#xD;&#xA;to augment the UI in a variety of ways without requriing that the base application&#xD;&#xA;be aware of the extensions.&#xD;&#xA;&lt;/p>&lt;p>&#xD;&#xA;Addons aare expected to be capable of being removed without damage to the&#xD;&#xA;original UI. While not yet implemented there will be an uninstall protocol defined&#xD;&#xA;ni the future allowing an addon to remove any model elements specific to the&#xD;&#xA;addon (i.e. The MinMaxAddon's TrimElements.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XF1Ytd6tEei97MD7GK1RmA" name="StringToObjectMap" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XF1Ytt6tEei97MD7GK1RmA" name="key">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XF1YuN6tEei97MD7GK1RmA" name="value">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eSubpackages xmi:id="_WvA0Kd6tEei97MD7GK1RmA" name="commands" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/commands" nsPrefix="commands">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0Kt6tEei97MD7GK1RmA" name="BindingTableContainer" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XSJWjN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJWjd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This type contains the list of binding 'tables', representing the various sets of bindings&#xD;&#xA;based on the applicaiton's current running 'context'. Here the 'context' represents&#xD;&#xA;the applicaiton's UI state (i.e. whenther a Dialog is open...).&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_V96u6N6tEei97MD7GK1RmA" name="bindingTables" upperBound="-1" eType="_V96u896tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cDN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cDd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_V96u6d6tEei97MD7GK1RmA" name="rootContext" upperBound="-1" eType="_V96u7d6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cD96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cEN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_V96u6t6tEei97MD7GK1RmA" name="Bindings" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XSJWld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJWlt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Mixin interface that lists MBindingContexts that should be active when this&#xA;object is active.&#xD;&#xA;&lt;/p>&#xA;&lt;p>Example values: org.eclipse.ui.contexts.dialog, org.eclipse.ui.contexts.window&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XDTpKN6tEei97MD7GK1RmA" name="bindingContexts" upperBound="-1" eType="_V96u7d6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4cFd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cFt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_V96u7d6tEei97MD7GK1RmA" name="BindingContext" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJWm96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJWnN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This class describes the hierarchy of contexts that are used by the &#xA;&lt;code>EBindingService&lt;/code> to determine which Bindings are currently &#xA;available to the user.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_V96u7t6tEei97MD7GK1RmA" name="name">
+        <eAnnotations xmi:id="_XM4cG96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cHN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_V96u8N6tEei97MD7GK1RmA" name="description">
+        <eAnnotations xmi:id="_XM4cH96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cIN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_V96u8t6tEei97MD7GK1RmA" name="children" upperBound="-1" eType="_V96u7d6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cI96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cJN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_V96u896tEei97MD7GK1RmA" name="BindingTable" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJWqd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJWqt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A set of Bindings that will be active if the matching &lt;code>MBindingContext&lt;/code>&#xA;is active.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NqSEzt6tEei97MD7GK1RmA" name="bindings" upperBound="-1" eType="_NqSEy96tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cKd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cKt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XDTpMd6tEei97MD7GK1RmA" name="bindingContext" lowerBound="1" eType="_V96u7d6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4cLN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cLd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsfd6tEei97MD7GK1RmA" name="Command" eSuperTypes="_LWKsc96tEei97MD7GK1RmA _XTfbet6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJWst6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJWs96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A Command represents a logical operation within the applicaiton. The implementation&#xD;&#xA;is provided by an MHandler chosen by examining all the candidate's enablement.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKshN6tEei97MD7GK1RmA" name="commandName">
+        <eAnnotations xmi:id="_XPd2Kt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2K96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field holds the command's name, used in the UI by default when there&#xD;&#xA;are menu or toolbar items representing this command.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_M4sPL96tEei97MD7GK1RmA" name="description">
+        <eAnnotations xmi:id="_XPd2Lt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2L96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field holds the command's description, used in the UI when the commands&#xD;&#xA;being shown in dialogs....&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ONNLEt6tEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_ONNLE96tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XPd2Mt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2M96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This list defines the ste of parameters that this command expects to have defined&#xD;&#xA;during execution.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_W6zNeN6tEei97MD7GK1RmA" name="category" eType="_W6zNkN6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4cRd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cRt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XTfakd6tEei97MD7GK1RmA" name="localizedCommandName" changeable="false" volatile="true" transient="true" derived="true">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XTfak96tEei97MD7GK1RmA" name="localizedDescription" changeable="false" volatile="true" transient="true" derived="true">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_ONNLE96tEei97MD7GK1RmA" name="CommandParameter" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJWy96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJWzN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This represents the format of a parameter to be used in a Command.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ONNLFN6tEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eAnnotations xmi:id="_XPd2O96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2PN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The name of the parameter.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ONNLFt6tEei97MD7GK1RmA" name="typeId">
+        <eAnnotations xmi:id="_XPd2P96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2QN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The type of the parameter.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ONNLGN6tEei97MD7GK1RmA" name="optional" defaultValueLiteral="true">
+        <eAnnotations xmi:id="_XPd2Q96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2RN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Determines whether or not this parameter is optional.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_M4sPMd6tEei97MD7GK1RmA" name="Handler" eSuperTypes="_LWKsdt6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJW2t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJW296tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Handlers provide the execution logic that provides the implementation of a&#xD;&#xA;particular command.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_M4sPMt6tEei97MD7GK1RmA" name="command" lowerBound="1" eType="_LWKsfd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XPd2St6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2S96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a reference to the Command for which this is an execution candidate.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_M4sPM96tEei97MD7GK1RmA" name="HandlerContainer" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XSJW4N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJW4d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This provides a container in which to store lists of Handlers. &#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_M4sPNN6tEei97MD7GK1RmA" name="handlers" upperBound="-1" eType="_M4sPMd6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cYN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cYd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_NqSEy96tEei97MD7GK1RmA" name="KeyBinding" eSuperTypes="_LWKsc96tEei97MD7GK1RmA _NqSEVt6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJW5t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJW596tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Keybindings map a particular keyboard sequence (i.e. Ctrl + C for Copy...) onto&#xD;&#xA;some command.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NqSEzN6tEei97MD7GK1RmA" name="command" lowerBound="1" eType="_LWKsfd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XPd2Vt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2V96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A reference to the Command to (attempt to) execute if the given key sequence is&#xD;&#xA;detected.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ONNLud6tEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_LWKsid6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XPd2Wd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2Wt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This allows a KeyBinding to provide a particular set of parameters to be used when&#xD;&#xA;the Command is to be executed. This allows generic commands like 'Open Part' to&#xD;&#xA;have bindings that will open a &lt;i>specific&lt;/i> Part...&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_NqSEVt6tEei97MD7GK1RmA" name="KeySequence" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XSJW796tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJW8N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This represents the sequence of characters in a KeyBinding whose detection will&#xD;&#xA;fire the associated Command.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NqSEV96tEei97MD7GK1RmA" name="keySequence" lowerBound="1">
+        <eAnnotations xmi:id="_XPd2X96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2YN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a formatted string used by the key binding infrastructure to determine the&#xD;&#xA;exact key sequence for a KeyBinding.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsid6tEei97MD7GK1RmA" name="Parameter" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJW9t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJW996tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This defines the value of a Parameter to be used by a Command.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA0Ut6tEei97MD7GK1RmA" name="name">
+        <eAnnotations xmi:id="_XPd2Zt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2Z96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the name of this parameter.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsjN6tEei97MD7GK1RmA" name="value">
+        <eAnnotations xmi:id="_XPd2at6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2a96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the value of this parameter.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" xmi:id="_LWKsoN6tEei97MD7GK1RmA" name="ParameterizedCommand" instanceClassName="org.eclipse.core.commands.ParameterizedCommand" serializable="false"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_W6zNkN6tEei97MD7GK1RmA" name="Category" eSuperTypes="_LWKsc96tEei97MD7GK1RmA _XTfbet6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJXAt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXA96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This defines a logical grouping of Commands in order to facilitate showing &#xD;&#xA;the current set of Commands in dialogs, lists etc&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W6zNkd6tEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eAnnotations xmi:id="_XPd2et6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2e96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The name to be displayed for this category.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W6zNk96tEei97MD7GK1RmA" name="description">
+        <eAnnotations xmi:id="_XPd2ft6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2f96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The description to display for this category.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XTfa196tEei97MD7GK1RmA" name="localizedName" changeable="false" volatile="true" transient="true" defaultValueLiteral="" derived="true">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XTfa2d6tEei97MD7GK1RmA" name="localizedDescription" changeable="false" volatile="true" transient="true" derived="true">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages xmi:id="_WvA0V96tEei97MD7GK1RmA" name="ui" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/ui" nsPrefix="ui">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsod6tEei97MD7GK1RmA" name="Context" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XSJXFt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXF96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This class is mixed into a UI element when that element is expected to participate&#xD;&#xA;in the Dependency Injection context hierarchy. The context life-cycle matches&#xD;&#xA;that of the rendered element it belongs to. It's automatically created when the&#xD;&#xA;element is rendered and disposed when the element is unrendered.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsot6tEei97MD7GK1RmA" name="context" eType="_LWKsn96tEei97MD7GK1RmA" transient="true" derived="true">
+        <eAnnotations xmi:id="_XNoDdt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoDd96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This attribute is a reference to the IEclipseContext for this UI element. It will be &#xD;&#xA;non-null only when the element is rendered.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKso96tEei97MD7GK1RmA" name="variables" ordered="false" upperBound="-1">
+        <eAnnotations xmi:id="_XM4cmd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cmt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_T65t4d6tEei97MD7GK1RmA" name="properties" upperBound="-1" eType="_T65trt6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cnd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cnt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_N8kuEt6tEei97MD7GK1RmA" name="Dirtyable" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XSJXI96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXJN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This class should be mixed into any UI element that should participate in the&#xD;&#xA;dirty / save handling. Parts are the most likely scenario for this but it exists as&#xD;&#xA;a mix-in to allow for future model extensions.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_MWuxqd6tEei97MD7GK1RmA" name="dirty" transient="true" derived="true">
+        <eAnnotations xmi:id="_XNoDg96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoDhN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The current dirty state of the UI element.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsht6tEei97MD7GK1RmA" name="Input" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XSJXKt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXK96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This class should be mixed into UI elements such as InputParts that need to &#xD;&#xA;reference an external resource (files...).&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients.&#xD;&#xA;@deprecated No longer used"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsh96tEei97MD7GK1RmA" name="inputURI">
+        <eAnnotations xmi:id="_XPd2mt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2m96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The specification of the particular resource's location or other meta information.&#xD;&#xA;The format of this field will be interpreted by the class using it (i.e. a Part).&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsld6tEei97MD7GK1RmA" name="UIElement" abstract="true" eSuperTypes="_LWKsc96tEei97MD7GK1RmA _XTfbet6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJXMd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXMt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the base mix-in shared by all model elements that can be rendered into the&#xD;&#xA;UI presentation of the application. Its main job is to manage the bindings between&#xD;&#xA;the concrete element and the UI 'widget' representing it in the UI.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKslt6tEei97MD7GK1RmA" name="widget" transient="true" derived="true">
+        <eAnnotations xmi:id="_XPd2pd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2pt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field represents the platform specific UI 'widget' that is representing this&#xD;&#xA;UIElement on the screen. It will only be non-null when the element has been rendered.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_PPxbd96tEei97MD7GK1RmA" name="renderer" transient="true" derived="true">
+        <eAnnotations xmi:id="_XPd2qd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2qt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field tracks the specific renderer used to create the 'widget'.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_PPxbed6tEei97MD7GK1RmA" name="toBeRendered" defaultValueLiteral="true">
+        <eAnnotations xmi:id="_XPd2rd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2rt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field controls whether the given UIElement should be displayed within&#xD;&#xA;the application. Note that due to lazy loading it is possible to have this field&#xD;&#xA;set to true but to not have actually rendered the element itself (it does show up&#xD;&#xA;as a tab on the appropiate stack but will only be rendered when that tab is&#xD;&#xA;selected.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_QCOMAt6tEei97MD7GK1RmA" name="onTop">
+        <eAnnotations xmi:id="_XM4cwd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cwt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsmt6tEei97MD7GK1RmA" name="visible" defaultValueLiteral="true">
+        <eAnnotations xmi:id="_XPd2td6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2tt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field determines whether or not the given UIElement appears in the presentation&#xD;&#xA;or whether it should be 'cached' for specialized use. Under normal circumstances&#xD;&#xA;this flag should always be 'true'.&#xD;&#xA;&lt;/p>&lt;p>&#xD;&#xA;The MinMaxAddon uses this flag for example when a stack becomes minimized. By&#xD;&#xA;setting the flag to false the stack's widget is cleanly removed from the UI but&#xD;&#xA;is still 'rendered'. Once the widget has been cached the minimized stack can then&#xD;&#xA;display the widget using its own technques.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKsnN6tEei97MD7GK1RmA" name="parent" eOpposite="_LWKsqd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XPd2ud6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2ut6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field is a reference to this element's container. Note that while this field is valid&#xD;&#xA;for most UIElements there are a few (such as TrimBars and the Windows associated&#xD;&#xA;with top level windows and perspectives) where this will return 'null' &#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eGenericType eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_LWKsnt6tEei97MD7GK1RmA" eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Qzw9ud6tEei97MD7GK1RmA" name="containerData">
+        <eAnnotations xmi:id="_XPd2vt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2v96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a persistend field that may be used by the &lt;b>parent&lt;/b> element's renderer&#xD;&#xA;to maintain any data that it needs to control the container. For example this is where&#xD;&#xA;the SashRenderer stores the 'weight' of a particular element.&#xD;&#xA;&lt;/p> &lt;p>&#xD;&#xA;&lt;b>NOTE:&lt;/b> This field is effectively deprecated in favor of the parent renderer&#xD;&#xA;simply adding a new keyed value to the UIElement's 'persistentData' map.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WwW4RN6tEei97MD7GK1RmA" name="curSharedRef" eType="_SYHtDt6tEei97MD7GK1RmA" transient="true" derived="true">
+        <eAnnotations xmi:id="_XPd2wt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2w96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a transient (i.e. non-persisted) field which is used in conjunction with&#xD;&#xA;MPlaceholders which are used to share elements actoss multiple perspectives. This&#xD;&#xA;field will point back to the MPlaceholder (if any) currently hosting this one.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WwzkNd6tEei97MD7GK1RmA" name="visibleWhen" eType="_WwzkW96tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4c1d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c1t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W7slk96tEei97MD7GK1RmA" name="accessibilityPhrase">
+        <eAnnotations xmi:id="_XPd2yN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2yd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field is provided as a way to inform accessibility screen readers with extra&#xD;&#xA;information. The intent is that the reader should 'say' this phrase as well as what&#xD;&#xA;it would normally emit given the widget hierarchy.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XTfbId6tEei97MD7GK1RmA" name="localizedAccessibilityPhrase" changeable="false" volatile="true" transient="true" derived="true">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKspt6tEei97MD7GK1RmA" name="ElementContainer" abstract="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJXX96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXYN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the base for the two different types of containment used in the model;&#xD;&#xA;'Stacks' (where only one element would be visible at a time) and 'Tiles' (where &#xD;&#xA;all the ele elements are visible at the same time.&#xD;&#xA;&lt;/p>&lt;p>&#xD;&#xA;All containers define the type of element that they are to contain. By design this is&#xD;&#xA;always a single type. Where different concrete types are to be contained within the&#xD;&#xA;same container they all both mix in a container-specific type. For example both&#xD;&#xA;MParts and MPlaceholders are valid children for an MPartStack so they both mix in&#xD;&#xA;'StackElement' (which is an empty stub used only to constran the stack's types.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eTypeParameters xmi:id="_LWKsp96tEei97MD7GK1RmA" name="T">
+        <eBounds xmi:id="_LWKsqN6tEei97MD7GK1RmA" eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+      </eTypeParameters>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKsqd6tEei97MD7GK1RmA" name="children" upperBound="-1" containment="true" eOpposite="_LWKsnN6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XPd20d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd20t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the list of contained elements in this container. All elements must be of type &lt;T>.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eGenericType eTypeParameter="_LWKsp96tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TqU7Q96tEei97MD7GK1RmA" name="selectedElement">
+        <eAnnotations xmi:id="_XPd21d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd21t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field contains the reference to the currently 'selected' element within a container.&#xD;&#xA;Note that the element must not only be in the container's children list but must also be&#xD;&#xA;visible in the presentation (&quot;toBeRendered' == true).&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eGenericType eTypeParameter="_LWKsp96tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_PgR8nd6tEei97MD7GK1RmA" name="UILabel" abstract="true" interface="true" eSuperTypes="_XTfbet6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJXbN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXbd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a mix in that will be used for UI Elements that are capable of showing label&#xD;&#xA;information in the GUI (e.g. Parts, Menus / Toolbars, Persepectives...)&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_PgR8nt6tEei97MD7GK1RmA" name="label">
+        <eAnnotations xmi:id="_XPd25N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd25d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The label to display for this element. If the label is expected to be internationalized&#xD;&#xA;then the label may be set to a 'key' value to be used by the translation service.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKskd6tEei97MD7GK1RmA" name="iconURI">
+        <eAnnotations xmi:id="_XPd26N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd26d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field contains a fully qualified URL defining the path to an Image to display&#xD;&#xA;for this element.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsk96tEei97MD7GK1RmA" name="tooltip">
+        <eAnnotations xmi:id="_XPd27N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd27d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The tooltip to display for this element. If the tooltip is expected to be internationalized&#xD;&#xA;then the tooltip may be set to a 'key' value to be used by the translation service.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XTfbP96tEei97MD7GK1RmA" name="localizedLabel" changeable="false" volatile="true" transient="true" defaultValueLiteral="" derived="true">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XTfbQd6tEei97MD7GK1RmA" name="localizedTooltip" changeable="false" volatile="true" transient="true" defaultValueLiteral="" derived="true">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Qzw9zt6tEei97MD7GK1RmA" name="GenericStack" abstract="true">
+      <eAnnotations xmi:id="_XSJXg96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXhN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This type defines the base type for 'stack' type containers. These containers are&#xD;&#xA;expected to only show their currently 'selected' element.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eTypeParameters xmi:id="_Qzw9z96tEei97MD7GK1RmA" name="T">
+        <eBounds xmi:id="_Qzw90N6tEei97MD7GK1RmA" eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+      </eTypeParameters>
+      <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_Qzw91t6tEei97MD7GK1RmA" eTypeParameter="_Qzw9z96tEei97MD7GK1RmA"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsrd6tEei97MD7GK1RmA" name="GenericTile" abstract="true">
+      <eAnnotations xmi:id="_XSJXit6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXi96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This type defines the base type for 'tile' type containers. These containers are&#xD;&#xA;expected to only show all their visible children at the same time.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eTypeParameters xmi:id="_LWKsrt6tEei97MD7GK1RmA" name="T">
+        <eBounds xmi:id="_LWKsr96tEei97MD7GK1RmA" eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+      </eTypeParameters>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsst6tEei97MD7GK1RmA" name="horizontal">
+        <eAnnotations xmi:id="_XPd2_N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd2_d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field determines which direction the tiling should take; 'true' for horizontal' tiling,&#xD;&#xA;'false' for vertical.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_LWKstd6tEei97MD7GK1RmA" eTypeParameter="_LWKsrt6tEei97MD7GK1RmA"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0jd6tEei97MD7GK1RmA" name="GenericTrimContainer" abstract="true">
+      <eAnnotations xmi:id="_XSJXld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXlt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This provides a collection specifically for TrimBars.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eTypeParameters xmi:id="_LWKst96tEei97MD7GK1RmA" name="T">
+        <eBounds xmi:id="_LWKsuN6tEei97MD7GK1RmA" eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+      </eTypeParameters>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_OumBO96tEei97MD7GK1RmA" name="side" lowerBound="1" eType="_OumA096tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XPd3B96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd3CN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is an enum defining the side of the UI Window on which this collection&#xD;&#xA;should be displayed.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_LWKsx96tEei97MD7GK1RmA" eTypeParameter="_LWKst96tEei97MD7GK1RmA"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" xmi:id="_OumA096tEei97MD7GK1RmA" name="SideValue">
+      <eAnnotations xmi:id="_XPd3DN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XPd3Dd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;An enum providing the specific values determining the side of a trimmedWindow&#xD;&#xA;on which particular trim bars should be displayed.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eLiterals xmi:id="_OumA1N6tEei97MD7GK1RmA" name="Top"/>
+      <eLiterals xmi:id="_OumA1d6tEei97MD7GK1RmA" name="Bottom" value="1"/>
+      <eLiterals xmi:id="_OumA1t6tEei97MD7GK1RmA" name="Left" value="2"/>
+      <eLiterals xmi:id="_OumA196tEei97MD7GK1RmA" name="Right" value="3"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_WwzkW96tEei97MD7GK1RmA" name="Expression" abstract="true" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJXpt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXp96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A class upon which specific types of expressions are based.  These are often used to&#xA;evaluate visibility and enablement of model elements.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_WwzkXN6tEei97MD7GK1RmA" name="CoreExpression" eSuperTypes="_WwzkW96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XSJXqd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXqt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A specific kind of expression used by the Eclipse Workbench.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WwzkXd6tEei97MD7GK1RmA" name="coreExpressionId" defaultValueLiteral="">
+        <eAnnotations xmi:id="_XM4dJ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4dKN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W0RIEN6tEei97MD7GK1RmA" name="coreExpression" transient="true">
+        <eAnnotations xmi:id="_XM4dK96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4dLN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XIqq1t6tEei97MD7GK1RmA" name="SnippetContainer" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XSJXtN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XSJXtd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This provides a collection of model fragments that can be subsequently cloned and&#xD;&#xA;inserterd into the model using the EModelService. For example saving a customized&#xD;&#xA;Perspective will create a clone and store it in this container.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XIqq196tEei97MD7GK1RmA" name="snippets" upperBound="-1" eType="_LWKsld6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4dMt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4dM96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XTfbet6tEei97MD7GK1RmA" name="Localizable" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XUPCW96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XUPCXN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This class should be mixed into any UI element that should participate in the&#xD;&#xA;Locale update handling.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.1"/>
+      </eAnnotations>
+      <eOperations xmi:id="_XTfbfd6tEei97MD7GK1RmA" name="updateLocalization">
+        <eAnnotations xmi:id="_XTfbft6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XTfbf96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This method is used to support Locale changes at runtime.&#xD;&#xA;Implementing this method should result in refreshing localizable properties&#xD;&#xA;like labels, tooltips and descriptions.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eOperations>
+    </eClassifiers>
+    <eSubpackages xmi:id="_WvA0mN6tEei97MD7GK1RmA" name="menu" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" nsPrefix="menu">
+      <eClassifiers xsi:type="ecore:EEnum" xmi:id="_SYHsQt6tEei97MD7GK1RmA" name="ItemType">
+        <eAnnotations xmi:id="_XPd3KN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XPd3Kd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This enum defines the style of a menu or toolbar item.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eLiterals xmi:id="_SYHsQ96tEei97MD7GK1RmA" name="Push"/>
+        <eLiterals xmi:id="_SYHsRN6tEei97MD7GK1RmA" name="Check" value="1"/>
+        <eLiterals xmi:id="_SYHsRd6tEei97MD7GK1RmA" name="Radio" value="2"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsz96tEei97MD7GK1RmA" name="Item" abstract="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA _PgR8nd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJXwd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJXwt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the base type for various menu and toolbar items.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs0N6tEei97MD7GK1RmA" name="enabled" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_XPd3Md6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3Mt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Defines the current enablement state of a given menu or toolbar item.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs0t6tEei97MD7GK1RmA" name="selected">
+          <eAnnotations xmi:id="_XPd3Nd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3Nt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Defines the current selection state for a menu or tool item&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_SYHslt6tEei97MD7GK1RmA" name="type" lowerBound="1" eType="_SYHsQt6tEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_XPd3Od6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3Ot6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Defines the item type for this item.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs1t6tEei97MD7GK1RmA" name="HandledItem" abstract="true" eSuperTypes="_LWKsz96tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJXz96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJX0N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the base class for menu and tool items associated with Commands.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKs196tEei97MD7GK1RmA" name="command" eType="_LWKsfd6tEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_XPd3P96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3QN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A reference to the Command associated with this item.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs2d6tEei97MD7GK1RmA" name="wbCommand" eType="_LWKsoN6tEei97MD7GK1RmA" transient="true">
+          <eAnnotations xmi:id="_XPd3Qt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3Q96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is used for low level implementation and is not intended to be used by clients&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKs2t6tEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_LWKsid6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd3Rd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3Rt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Defines the specific parameters to use when executing the command through this item.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0p96tEei97MD7GK1RmA" name="MenuElement" abstract="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA _PgR8nd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJX296tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJX3N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the bsae type for both menu items and Separators.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eOperations xmi:id="_XFPjdN6tEei97MD7GK1RmA" name="getLocalizedMnemonics">
+          <eAnnotations xmi:id="_XPd3S96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3TN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a method that will return the translated mnemonic for this element.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA0qd6tEei97MD7GK1RmA" name="mnemonics">
+          <eAnnotations xmi:id="_XPd3T96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3UN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the character that is interpreted by the platform to allow for easier navigation&#xD;&#xA;through menus.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs296tEei97MD7GK1RmA" name="MenuItem" abstract="true" eSuperTypes="_LWKsz96tEei97MD7GK1RmA _WvA0p96tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJX5t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJX596tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the base type for both Handled and direct menu items.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0q96tEei97MD7GK1RmA" name="MenuSeparator" eSuperTypes="_WvA0p96tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJX6d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJX6t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;An element representing a separator in a menu.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs3N6tEei97MD7GK1RmA" name="Menu">
+        <eAnnotations xmi:id="_XSJX7N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJX7d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a concrete class used to represent a menu in the UI Model.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA0rd6tEei97MD7GK1RmA" name="enabled" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_XPd3XN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3Xd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This field determines whether the associated menu is enabled or not.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_WvA0p96tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA0sd6tEei97MD7GK1RmA" eClassifier="_WvA0p96tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_Wx4iid6tEei97MD7GK1RmA" name="MenuContribution">
+        <eAnnotations xmi:id="_XSJX9t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJX996tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3. This represents a potential extension to some menu already&#xD;&#xA;defined in the UI.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Wx4iit6tEei97MD7GK1RmA" name="positionInParent" defaultValueLiteral="">
+          <eAnnotations xmi:id="_XPd3Zt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3Z96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Indicates the position in the parent menu where this contribution should be placed.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W6WiBN6tEei97MD7GK1RmA" name="parentId" lowerBound="1">
+          <eAnnotations xmi:id="_XPd3at6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3a96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The element id of the Menu to be contributed to.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_Wx4ijd6tEei97MD7GK1RmA" eClassifier="_WvA0p96tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WxQQad6tEei97MD7GK1RmA" name="PopupMenu" eSuperTypes="_LWKs3N6tEei97MD7GK1RmA _LWKsod6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYA96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYBN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a concrete class representing context menus. Menus of this type are generally&#xD;&#xA;managed by code within the running application since they're not visible in the UI.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_NZlWKt6tEei97MD7GK1RmA" name="DirectMenuItem" eSuperTypes="_LWKs296tEei97MD7GK1RmA _LWKsdt6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYBt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYB96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the concrete class use to represent a menu item that is directly &#xD;&#xA;invoked when selected.  The supplied contribution is asked to execute&#xA;when selected.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_NZlWKd6tEei97MD7GK1RmA" name="HandledMenuItem" eSuperTypes="_LWKs296tEei97MD7GK1RmA _LWKs1t6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYCd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYCt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the concrete UI Model element representing a menu item that is managed&#xD;&#xA;through the Commands / Handlers infrastructure.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs4N6tEei97MD7GK1RmA" name="ToolItem" abstract="true" eSuperTypes="_LWKsz96tEei97MD7GK1RmA _WvA0vd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYDN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYDd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the base type for both Direct and Handled tool items.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_W2pt2t6tEei97MD7GK1RmA" name="menu" eType="_LWKs3N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd3fN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3fd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;When set this represents the menu that appears when the 'drop down' arrow is&#xD;&#xA;clicked on this tool item.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs5N6tEei97MD7GK1RmA" name="ToolBar">
+        <eAnnotations xmi:id="_XSJYEt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYE96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the concrete class representing a Toolbar in the UI Model.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA0u96tEei97MD7GK1RmA" eClassifier="_WvA0vd6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_WvA05t6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0vd6tEei97MD7GK1RmA" name="ToolBarElement" abstract="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYGN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYGd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a placeholder class mixed in to any other type that can be added to a Toolbar.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0vt6tEei97MD7GK1RmA" name="ToolControl" eSuperTypes="_WvA0vd6tEei97MD7GK1RmA _LWKsdt6tEei97MD7GK1RmA _WvA05t6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYG96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYHN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a concrete class representing a widget hosted directly in the trim &#xD;&#xA;or as an item in a Toolbar.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_NZlWMN6tEei97MD7GK1RmA" name="HandledToolItem" eSuperTypes="_LWKs4N6tEei97MD7GK1RmA _LWKs1t6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYHt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYH96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the concrete UI Model element representing a tool item that is managed&#xD;&#xA;through the Commands / Handlers infrastructure.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_NZlWNd6tEei97MD7GK1RmA" name="DirectToolItem" eSuperTypes="_LWKs4N6tEei97MD7GK1RmA _LWKsdt6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYId6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYIt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the concrete class use to represent a tool item that is directly &#xD;&#xA;invoked when selected.  The supplied contribution is asked to execute&#xA;when selected.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0wd6tEei97MD7GK1RmA" name="ToolBarSeparator" eSuperTypes="_WvA0vd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYJN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYJd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the concrete class used to represent a separator in a Toolbar.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_Wx4in96tEei97MD7GK1RmA" name="MenuContributions" abstract="true" interface="true">
+        <eAnnotations xmi:id="_XSJYJ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYKN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3. This is a container aggregating the menu contributions to be&#xD;&#xA;applied to menus.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wx4ioN6tEei97MD7GK1RmA" name="menuContributions" upperBound="-1" eType="_Wx4iid6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4do96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dpN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W1TqHd6tEei97MD7GK1RmA" name="ToolBarContribution">
+        <eAnnotations xmi:id="_XSJYO96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYPN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3. This represents a potential extension to some toolbar already&#xD;&#xA;defined in the UI.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W2NCAN6tEei97MD7GK1RmA" name="parentId">
+          <eAnnotations xmi:id="_XPd3q96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3rN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The element id of the Toolbar to be contributed to.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W2NCAt6tEei97MD7GK1RmA" name="positionInParent">
+          <eAnnotations xmi:id="_XPd3r96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3sN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Indicates the position in the Toolbar where this contribution should be placed.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_W1TqH96tEei97MD7GK1RmA" eClassifier="_WvA0vd6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W1TqIN6tEei97MD7GK1RmA" name="ToolBarContributions" abstract="true" interface="true">
+        <eAnnotations xmi:id="_XSJYSN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYSd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3. This is a container aggregating the toolbar contributions to be&#xD;&#xA;applied to existing toolbars.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_W1wWE96tEei97MD7GK1RmA" name="toolBarContributions" upperBound="-1" eType="_W1TqHd6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4dxN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dxd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W1TqI96tEei97MD7GK1RmA" name="TrimContribution">
+        <eAnnotations xmi:id="_XSJYTt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYT96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3. This represents a potential extension to some trim bar.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W2NCCd6tEei97MD7GK1RmA" name="parentId">
+          <eAnnotations xmi:id="_XPd3vt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3v96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The element id of the TrimBar to be contributed to.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W2NCC96tEei97MD7GK1RmA" name="positionInParent">
+          <eAnnotations xmi:id="_XPd3wt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3w96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Indicates the position in the TrimBar where this contribution should be placed.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_W1TqJd6tEei97MD7GK1RmA" eClassifier="_WvA05t6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W1TqJt6tEei97MD7GK1RmA" name="TrimContributions" abstract="true" interface="true">
+        <eAnnotations xmi:id="_XSJYW96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYXN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3. This is a container aggregating the trim bar contributions to be&#xD;&#xA;applied.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_W1wWGN6tEei97MD7GK1RmA" name="trimContributions" upperBound="-1" eType="_W1TqI96tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4d196tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4d2N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_XLf8v96tEei97MD7GK1RmA" name="DynamicMenuContribution" eSuperTypes="_LWKs296tEei97MD7GK1RmA _LWKsdt6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYgN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYgd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a concrete class used to represent a menu item that replaces itself through&#xD;&#xA;the execution of the associated client code.  The supplied contribution will&#xA;provide the appropriate MMenuElement model elements when queried.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages xmi:id="_WvA0wt6tEei97MD7GK1RmA" name="basic" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" nsPrefix="basic">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs6d6tEei97MD7GK1RmA" name="Part" eSuperTypes="_LWKsld6tEei97MD7GK1RmA _WvA0596tEei97MD7GK1RmA _WwD9zt6tEei97MD7GK1RmA _LWKsdt6tEei97MD7GK1RmA _LWKsod6tEei97MD7GK1RmA _PgR8nd6tEei97MD7GK1RmA _M4sPM96tEei97MD7GK1RmA _N8kuEt6tEei97MD7GK1RmA _V96u6t6tEei97MD7GK1RmA _WvA06N6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYhN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYhd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This a concrete class representing the core UI functionality within a Window. It's what&#xD;&#xA;used to be a View / Editor in Eclipse 3.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKs6t6tEei97MD7GK1RmA" name="menus" upperBound="-1" eType="_LWKs3N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd3-N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3-d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This defines the list of the menus associated with this part. There are two specific menus&#xD;&#xA;that are managed by the core UI;&#xD;&#xA;&lt;ul>&#xD;&#xA;&lt;li>If the menu is the part's id prefixed with &quot;menu:&quot; then it will appear as the &#xD;&#xA;drop down menu available from the view's toolbar.&lt;/li>&#xD;&#xA;&lt;li>If the menu is the part's id prefixed with &quot;popup:&quot; then it will appear as the &#xD;&#xA;ddefault context menu for this view.&lt;/li>&#xD;&#xA;&lt;/ul>&#xD;&#xA;Other menus can be added here but have to be managed by the part itsefl...&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKs696tEei97MD7GK1RmA" name="toolbar" eType="_LWKs5N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd3-96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3_N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the Toolbar associated with tihs Part (if any).&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UrgEmd6tEei97MD7GK1RmA" name="closeable" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_XPd3_t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd3_96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Determines whether the user is allowed to close this view.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XA52QN6tEei97MD7GK1RmA" name="description">
+          <eAnnotations xmi:id="_XPd4At6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4A96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The description of this Part; used when the Part appears in a list of Parts&#xD;&#xA;(i.e. 'Show View').&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XTfcW96tEei97MD7GK1RmA" name="localizedDescription" changeable="false" volatile="true" transient="true" derived="true">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_XQz71d6tEei97MD7GK1RmA" name="CompositePart">
+        <eAnnotations xmi:id="_XSJYmd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYmt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a Part that is capable of supporting an internal structure. In order to be useful instances of this part muct be capable&#xD;&#xA;of managing their internal structure.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.1&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients.&#xD;&#xA;"/>
+        </eAnnotations>
+        <eGenericSuperTypes eClassifier="_LWKs6d6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_LWKsrd6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_XRZxvd6tEei97MD7GK1RmA" eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_VNA13d6tEei97MD7GK1RmA" name="InputPart" eSuperTypes="_LWKs6d6tEei97MD7GK1RmA _LWKsht6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJYn96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYoN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a subclass of Part that allows tracking of an 'input'. While originally defined as&#xD;&#xA;a type of 'editor' it turns out that it may well be better to just use a regular Part and&#xD;&#xA;to store what would be the input as an entry on the Part's 'persistentData' map.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@deprecated Use Part instead.&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs7N6tEei97MD7GK1RmA" name="PartStack">
+        <eAnnotations xmi:id="_XSJYot6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYo96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the concrete class representing a stack of Parts in the UI Model.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eGenericSuperTypes eClassifier="_Qzw9zt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WwD9q96tEei97MD7GK1RmA" eClassifier="_WwD9zt6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_WvA06N6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs8d6tEei97MD7GK1RmA" name="PartSashContainer">
+        <eAnnotations xmi:id="_XSJYqd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYqt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the concrete class representing sashed containment in the UI Model. This&#xD;&#xA;type is recursive, allowing the creation of a tree of sashes whose leafs are Parts.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eGenericSuperTypes eClassifier="_LWKsrd6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA00N6tEei97MD7GK1RmA" eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_WvA06N6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs9d6tEei97MD7GK1RmA" name="Window">
+        <eAnnotations xmi:id="_XSJYsN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJYsd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the concrete class representing a bare bones window in the UI Model. Unless&#xD;&#xA;specifically desired it's likely better to use the TrimmedWindow instead.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKs9t6tEei97MD7GK1RmA" name="mainMenu" eType="_LWKs3N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd4Gt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4G96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The main menu (if any) for this window.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs996tEei97MD7GK1RmA" name="x" defaultValueLiteral="-2147483648">
+          <eAnnotations xmi:id="_XPd4Hd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4Ht6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The 'X' position of this window&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3WN6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs-d6tEei97MD7GK1RmA" name="y" defaultValueLiteral="-2147483648">
+          <eAnnotations xmi:id="_XPd4Id6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4It6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The 'Y' position of this window&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3WN6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs-96tEei97MD7GK1RmA" name="width" defaultValueLiteral="-1">
+          <eAnnotations xmi:id="_XPd4Jd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4Jt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The width of this window&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3WN6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs_d6tEei97MD7GK1RmA" name="height" defaultValueLiteral="-1">
+          <eAnnotations xmi:id="_XPd4Kd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4Kt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The heigfht of this window&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3WN6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA03d6tEei97MD7GK1RmA" name="windows" upperBound="-1" eType="_LWKs9d6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd4Ld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4Lt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The collection of 'Detached' windows associated with this window.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WwD9vt6tEei97MD7GK1RmA" name="sharedElements" upperBound="-1" eType="_LWKsld6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd4MN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4Md6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the collection of UI Elements that are referenced by Placeholders, allowing&#xD;&#xA;the re-use of these elements in different Perspectives.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA0396tEei97MD7GK1RmA" eClassifier="_WvA06N6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_PgR8nd6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_LWKsod6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_M4sPM96tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_V96u6t6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_XIqq1t6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA05N6tEei97MD7GK1RmA" name="TrimmedWindow" eSuperTypes="_LWKs9d6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJY096tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJY1N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A subclass of Window that also supports TrimBars on its edges.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA05d6tEei97MD7GK1RmA" name="trimBars" upperBound="-1" eType="_WvA06d6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd4Pd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4Pt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The collection of TrimBars associated with this window.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA05t6tEei97MD7GK1RmA" name="TrimElement" abstract="true" interface="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJY2d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJY2t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A class to be mixed in to any element that should be allowed to be added to a TrimBar.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0596tEei97MD7GK1RmA" name="PartSashContainerElement" abstract="true" interface="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJY3N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJY3d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A class to be mixed in to any element that should be allowed to be added to&#xD;&#xA;a PartSashContainer. Since a PartSashContainer is itself a PartSashContainerElement&#xD;&#xA;we can defined nested 'trees' of sash containment.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA06N6tEei97MD7GK1RmA" name="WindowElement" abstract="true" interface="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJY396tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJY4N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A class to be mixed in to any element that should be allowed to be added to a&#xD;&#xA;Window.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA06d6tEei97MD7GK1RmA" name="TrimBar">
+        <eAnnotations xmi:id="_XSJY4t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJY496tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a concrete class representing the trim along a Window's edge.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XMbxDt6tEei97MD7GK1RmA" name="pendingCleanup" upperBound="-1" eType="_WvA05t6tEei97MD7GK1RmA" transient="true">
+          <eAnnotations xmi:id="_XPd4TN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4Td6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is for internal use...&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_WvA0jd6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA0696tEei97MD7GK1RmA" eClassifier="_WvA05t6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WwD9zt6tEei97MD7GK1RmA" name="StackElement" abstract="true" interface="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJY696tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJY7N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A class to be mixed in to any element that should be allowed to be added to a&#xD;&#xA;PartStack.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_XRZyDd6tEei97MD7GK1RmA" name="Dialog" eSuperTypes="_LWKs9d6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XVbWNt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XVbWN96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A subclass of Window representing a dialog.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.1&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients.&#xD;&#xA;@noreference  This model element is still provisional."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_XRZyEN6tEei97MD7GK1RmA" name="WizardDialog" eSuperTypes="_XRZyDd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XVbWOd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XVbWOt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A subclass of Window representing a wizard dialog.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.1&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients.&#xD;&#xA;@noreference  This model element is still provisional."/>
+        </eAnnotations>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages xmi:id="_WvA07d6tEei97MD7GK1RmA" name="advanced" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" nsPrefix="advanced">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_SYHtDt6tEei97MD7GK1RmA" name="Placeholder" eSuperTypes="_LWKsld6tEei97MD7GK1RmA _WvA0596tEei97MD7GK1RmA _WwD9zt6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJY9d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJY9t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A Placeholder is a concrete class used to share elements between perspectives. The&#xD;&#xA;elements referenced by a Placeholder generally exist in the Window's 'sharedElements'&#xD;&#xA;list. By convention a placeholder usually shares the same elementId as the element&#xD;&#xA;that it's referencing.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_SYHtD96tEei97MD7GK1RmA" name="ref" lowerBound="1" eType="_LWKsld6tEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_XPd4Wd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4Wt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The reference to the actual UI element that this Placeholder is acting as a proxy for.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XDwWIN6tEei97MD7GK1RmA" name="closeable" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_XPd4XN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4Xd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Determines whether the element (usually a Part) referenced by this Placeholder can&#xD;&#xA;be closed by the User. This allows a Part to be closeable in one perspective but&#xD;&#xA;not closeable in a different one.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKtI96tEei97MD7GK1RmA" name="Perspective">
+        <eAnnotations xmi:id="_XSJY_96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJZAN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The Persepctive defines a part of the UI presentation that can be switched independently&#xD;&#xA;of the rest of the UI. By using Placeholders it's possible to share elements between&#xD;&#xA;different perspectives.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA08d6tEei97MD7GK1RmA" name="windows" upperBound="-1" eType="_LWKs9d6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4eb96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4ecN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA0896tEei97MD7GK1RmA" eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_PgR8nd6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_LWKsod6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_M4sPM96tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKtKN6tEei97MD7GK1RmA" name="PerspectiveStack">
+        <eAnnotations xmi:id="_XSJZCd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJZCt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The PerspectiveStack is a collectin of Perspectives. Only one perspective may be&#xD;&#xA;visible at a time and is determined by the container's 'selectedElement'.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eGenericSuperTypes eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_Qzw9zt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_TaS7096tEei97MD7GK1RmA" eClassifier="_LWKtI96tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_WvA06N6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W8lXF96tEei97MD7GK1RmA" name="Area" eSuperTypes="_LWKs8d6tEei97MD7GK1RmA _PgR8nd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJZEd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJZEt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is a concrete element representing a (possibly sashed) chunk of the UI presentation&#xD;&#xA;that will minimize / maximize as one unit. This is used in Eclipse 4 to allow for a split&#xD;&#xA;Editor Area.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+  <eSubpackages xmi:id="_WvA0-96tEei97MD7GK1RmA" name="descriptor" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/descriptor" nsPrefix="descriptor">
+    <eSubpackages xmi:id="_WvA0_N6tEei97MD7GK1RmA" name="basic" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" nsPrefix="basic">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_S43CRN6tEei97MD7GK1RmA" name="PartDescriptor" eSuperTypes="_LWKsc96tEei97MD7GK1RmA _PgR8nd6tEei97MD7GK1RmA _M4sPM96tEei97MD7GK1RmA _V96u6t6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XSJZFt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJZF96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This element represents a template from which an MPart can be created on demand.&#xD;&#xA;The collection of PartDescriptors owned by the Application represents the contributed&#xD;&#xA;parts and is used in the e4 version of 'Show View'...&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_S43CRd6tEei97MD7GK1RmA" name="allowMultiple">
+          <eAnnotations xmi:id="_XPd4ft6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4f96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Determines whether or not the part represented by this descriptot can have multiple&#xD;&#xA;instances with a given window.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TJFPkd6tEei97MD7GK1RmA" name="category">
+          <eAnnotations xmi:id="_XPd4gt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4g96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The category that the view represented by this descriptor belongs to.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA1At6tEei97MD7GK1RmA" name="menus" upperBound="-1" eType="_LWKs3N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd4ht6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4h96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This defines the list of the menus associated with the part represented by this descriptor. &#xD;&#xA;There are two specific menus that are managed by the core UI;&#xD;&#xA;&lt;ul>&#xD;&#xA;&lt;li>If the menu is the part's id prefixed with &quot;menu:&quot; then it will appear as the &#xD;&#xA;drop down menu available from the view's toolbar.&lt;/li>&#xD;&#xA;&lt;li>If the menu is the part's id prefixed with &quot;popup:&quot; then it will appear as the &#xD;&#xA;ddefault context menu for this view.&lt;/li>&#xD;&#xA;&lt;/ul>&#xD;&#xA;Other menus can be added here but have to be managed by the part itsefl...&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA1A96tEei97MD7GK1RmA" name="toolbar" eType="_LWKs5N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd4id6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4it6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the Toolbar associated with tihs Part (if any).&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA1BN6tEei97MD7GK1RmA" name="closeable" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_XPd4jN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4jd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Defines whether instances of views created from this descriptor are closeable by the&#xD;&#xA;User.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA1Bt6tEei97MD7GK1RmA" name="dirtyable">
+          <eAnnotations xmi:id="_XPd4kN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4kd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Determines whether Parts generated from this template can participate in the&#xD;&#xA;Dirty -> Save cycle. At best this is a hint since all Parts are inherently dirtyable.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA1CN6tEei97MD7GK1RmA" name="contributionURI">
+          <eAnnotations xmi:id="_XPd4lN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4ld6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The fully qualified path to the class implementing the behavior of the Part.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XA52iN6tEei97MD7GK1RmA" name="description">
+          <eAnnotations xmi:id="_XPd4mN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4md6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The description of this Part.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XTfc-96tEei97MD7GK1RmA" name="localizedDescription" changeable="false" volatile="true" transient="true" derived="true">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XW3g8d6tEei97MD7GK1RmA" name="variables" ordered="false" upperBound="-1">
+          <eAnnotations xmi:id="_XW3g8t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XW3g896tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XW3g9d6tEei97MD7GK1RmA" name="properties" upperBound="-1" eType="_T65trt6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XW3g9t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XW3g996tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_S43CR96tEei97MD7GK1RmA" name="PartDescriptorContainer" abstract="true" interface="true">
+        <eAnnotations xmi:id="_XSJZO96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XSJZPN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A type specific collection of PartDescriptors.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0&#xD;&#xA;@noimplement This interface is not intended to be implemented by clients."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_S43CSN6tEei97MD7GK1RmA" name="descriptors" upperBound="-1" eType="_S43CRN6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XPd4n96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XPd4oN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;A collection of PartDescriptors.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>

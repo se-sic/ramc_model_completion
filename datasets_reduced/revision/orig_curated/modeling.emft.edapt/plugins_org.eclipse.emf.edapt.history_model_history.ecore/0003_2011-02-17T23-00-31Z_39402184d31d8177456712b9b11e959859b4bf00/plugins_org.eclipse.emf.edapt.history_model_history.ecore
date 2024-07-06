@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_Zq1E4N6tEei97MD7GK1RmA" name="history" nsURI="http://www.eclipse.org/emf/edapt/history/0.3" nsPrefix="history">
+  <eAnnotations xmi:id="_Zq1E4d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+    <details xmi:id="_Zq1E4t6tEei97MD7GK1RmA" key="documentation" value="Metamodel to specify the history of a metamodel"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1E496tEei97MD7GK1RmA" name="History">
+    <eAnnotations xmi:id="_Zq1E5N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1E5d6tEei97MD7GK1RmA" key="documentation" value="A container for a whole history of a metamodel"/>
+    </eAnnotations>
+    <eOperations xmi:id="_Zq1E5t6tEei97MD7GK1RmA" name="getFirstRelease" eType="_Zq1E896tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zq1E596tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1E6N6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the first release of the history"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_Zq1E6d6tEei97MD7GK1RmA" name="getLastRelease" eType="_Zq1E896tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zq1E6t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1E696tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the last release of the history"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_Zq1E7N6tEei97MD7GK1RmA" name="getRootPackages" upperBound="-1">
+      <eAnnotations xmi:id="_Zq1E7d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1E7t6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the root packages created by the history"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1Gyd6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1E8N6tEei97MD7GK1RmA" name="releases" upperBound="-1" eType="_Zq1E896tEei97MD7GK1RmA" containment="true" eOpposite="_Zq1FD96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zq1E8d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1E8t6tEei97MD7GK1RmA" key="documentation" value="A sequence of metamodel versions"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1E896tEei97MD7GK1RmA" name="Release">
+    <eAnnotations xmi:id="_Zq1E9N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1E9d6tEei97MD7GK1RmA" key="documentation" value="A container to collect a sequence of changes until a release"/>
+    </eAnnotations>
+    <eOperations xmi:id="_Zq1E9t6tEei97MD7GK1RmA" name="getNextRelease" eType="_Zq1E896tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zq1E996tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1E-N6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the release which succeeds this release"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_Zq1E-d6tEei97MD7GK1RmA" name="getPreviousRelease" eType="_Zq1E896tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zq1E-t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1E-96tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the release that preceeds this release"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_Zq1E_N6tEei97MD7GK1RmA" name="isFirstRelease" lowerBound="1">
+      <eAnnotations xmi:id="_Zq1E_d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1E_t6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine whether the release is the first one in the history"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HBd6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_Zq1FAN6tEei97MD7GK1RmA" name="isLastRelease" lowerBound="1">
+      <eAnnotations xmi:id="_Zq1FAd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FAt6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine whether the release is the last one in the history"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HBd6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_Zq1FBN6tEei97MD7GK1RmA" name="getNumber" lowerBound="1">
+      <eAnnotations xmi:id="_Zq1FBd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FBt6tEei97MD7GK1RmA" key="documentation" value="Helper method to get the number of the release"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HMN6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1FCN6tEei97MD7GK1RmA" name="date">
+      <eAnnotations xmi:id="_Zq1FCd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FCt6tEei97MD7GK1RmA" key="documentation" value="The date when the version is released"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HG96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1FDN6tEei97MD7GK1RmA" name="changes" upperBound="-1" eType="_Zq1FFt6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_Zq1FDd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FDt6tEei97MD7GK1RmA" key="documentation" value="The sequence of changes which lead to a release"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1FD96tEei97MD7GK1RmA" name="history" lowerBound="1" eType="_Zq1E496tEei97MD7GK1RmA" eOpposite="_Zq1E8N6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zq1FEN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FEd6tEei97MD7GK1RmA" key="documentation" value="History to which the release belongs"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1FEt6tEei97MD7GK1RmA" name="label">
+      <eAnnotations xmi:id="_Zq1FE96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FFN6tEei97MD7GK1RmA" key="documentation" value="Label to tag the release"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1FFt6tEei97MD7GK1RmA" name="Change" abstract="true">
+    <eAnnotations xmi:id="_Zq1FF96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_Zq1FGN6tEei97MD7GK1RmA" key="constraints" value="Breaking"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_Zq1FGd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1FGt6tEei97MD7GK1RmA" key="documentation" value="A base class for all metamodel changes"/>
+    </eAnnotations>
+    <eOperations xmi:id="_Zq1FG96tEei97MD7GK1RmA" name="getRelease" eType="_Zq1E896tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zq1FHN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FHd6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the release to which this change belongs"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1FHt6tEei97MD7GK1RmA" name="breaking" transient="true">
+      <eAnnotations xmi:id="_Zq1FH96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FIN6tEei97MD7GK1RmA" key="documentation" value="Whether the change is breaking, i.e. a migration has to be specified (this attribute is only used during validation and is therefore not persisted)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HBd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1FIt6tEei97MD7GK1RmA" name="description">
+      <eAnnotations xmi:id="_Zq1FI96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FJN6tEei97MD7GK1RmA" key="documentation" value="Description to comment the change"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1FJt6tEei97MD7GK1RmA" name="PrimitiveChange" abstract="true" eSuperTypes="_Zq1F8N6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FJ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1FKN6tEei97MD7GK1RmA" key="documentation" value="The base class for all primitive changes, i.e. changes derived from direct editing"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1FKd6tEei97MD7GK1RmA" name="NoChange" eSuperTypes="_Zq1FJt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FKt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1FK96tEei97MD7GK1RmA" key="documentation" value="Although no change is made to the metamodel, a migration may be necessary"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1FLN6tEei97MD7GK1RmA" name="ContentChange" abstract="true" eSuperTypes="_Zq1FJt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FLd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1FLt6tEei97MD7GK1RmA" key="documentation" value="A change to the containment structure of the metamodel"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1FL96tEei97MD7GK1RmA" name="target">
+      <eAnnotations xmi:id="_Zq1FMN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FMd6tEei97MD7GK1RmA" key="documentation" value="The target element of the create, delete or move"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1Gl96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1FM96tEei97MD7GK1RmA" name="reference" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_Zq1FNN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FNd6tEei97MD7GK1RmA" key="documentation" value="A reference to the meta-metamodel feature which is derived from the featureName attribute"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Zq1FNt6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmt/cope/codegen">
+        <details xmi:id="_Zq1FN96tEei97MD7GK1RmA" key="get" value=""/>
+        <details xmi:id="_Zq1FON6tEei97MD7GK1RmA" key="set" value=""/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1G1t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1FOt6tEei97MD7GK1RmA" name="referenceName">
+      <eAnnotations xmi:id="_Zq1FO96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FPN6tEei97MD7GK1RmA" key="documentation" value="The name of the feature within which the child is created in the element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1FPt6tEei97MD7GK1RmA" name="NonDelete" abstract="true" eSuperTypes="_Zq1FLN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FP96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1FQN6tEei97MD7GK1RmA" key="documentation" value="Base class for content changes that do not delete an element"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1FQd6tEei97MD7GK1RmA" name="element" lowerBound="1">
+      <eAnnotations xmi:id="_Zq1FQt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FQ96tEei97MD7GK1RmA" key="documentation" value="The element to be moved"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1Gl96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1FRd6tEei97MD7GK1RmA" name="Create" eSuperTypes="_Zq1FPt6tEei97MD7GK1RmA _Zq1F_d6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FRt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1FR96tEei97MD7GK1RmA" key="documentation" value="A change that creates a new child within a containment reference of an element"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1FSN6tEei97MD7GK1RmA" name="Move" eSuperTypes="_Zq1FPt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FSd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1FSt6tEei97MD7GK1RmA" key="documentation" value="A change that moves an element to a target container. The containment reference to which the element will be moved will be derived from the source container."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1FS96tEei97MD7GK1RmA" name="source" lowerBound="1">
+      <eAnnotations xmi:id="_Zq1FTN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FTd6tEei97MD7GK1RmA" key="documentation" value="The source element from which the element is moved"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1Gl96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1FT96tEei97MD7GK1RmA" name="Delete" eSuperTypes="_Zq1F_d6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FUN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1FUd6tEei97MD7GK1RmA" key="documentation" value="A change that deletes an element, all its contents and the cross references to them from the metamodel"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_Zq1FUt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_Zq1FU96tEei97MD7GK1RmA" key="text" value=""/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1FVN6tEei97MD7GK1RmA" name="element" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_Zq1FVd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FVt6tEei97MD7GK1RmA" key="documentation" value="The element to be deleted"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1Gl96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1FWN6tEei97MD7GK1RmA" name="ValueChange" abstract="true" eSuperTypes="_Zq1FJt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FWd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1FWt6tEei97MD7GK1RmA" key="documentation" value="A base class for metamodel changes which affect attributes and cross references of elements"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1FW96tEei97MD7GK1RmA" name="element" lowerBound="1">
+      <eAnnotations xmi:id="_Zq1FXN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FXd6tEei97MD7GK1RmA" key="documentation" value="The element whose attribute or cross reference will be changed"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1Gl96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1FX96tEei97MD7GK1RmA" name="feature" lowerBound="1" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_Zq1FYN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FYd6tEei97MD7GK1RmA" key="documentation" value="A sequence of metamodel versions"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1G396tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1FY96tEei97MD7GK1RmA" name="featureName" lowerBound="1">
+      <eAnnotations xmi:id="_Zq1FZN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FZd6tEei97MD7GK1RmA" key="documentation" value="A reference to the meta-metamodel feature which is derived from the featureName attribute"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1FZ96tEei97MD7GK1RmA" name="dataValue">
+      <eAnnotations xmi:id="_Zq1FaN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Fad6tEei97MD7GK1RmA" key="documentation" value="Serialized value of a primitive type to be set in, added to or removed from an attribute"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1Fa96tEei97MD7GK1RmA" name="referenceValue">
+      <eAnnotations xmi:id="_Zq1FbN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Fbd6tEei97MD7GK1RmA" key="documentation" value="Value of an object type to be set in, added to or removed from an reference"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1Gl96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1Fb96tEei97MD7GK1RmA" name="value" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_Zq1FcN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Fcd6tEei97MD7GK1RmA" key="documentation" value="Derived attribute that provides either dataValue or referenceValue depending on the type of the feature (attribute or reference respectively)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HOd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1Fc96tEei97MD7GK1RmA" name="Set" eSuperTypes="_Zq1FWN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FdN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1Fdd6tEei97MD7GK1RmA" key="documentation" value="A change that sets the value (may be null) of an single-valued attribute or reference"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1Fdt6tEei97MD7GK1RmA" name="oldDataValue">
+      <eAnnotations xmi:id="_Zq1Fd96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FeN6tEei97MD7GK1RmA" key="documentation" value="Serialized value of a primitive type that is the old value of the attribute"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1Fet6tEei97MD7GK1RmA" name="oldReferenceValue">
+      <eAnnotations xmi:id="_Zq1Fe96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FfN6tEei97MD7GK1RmA" key="documentation" value="Value of an object type that is the old value of the reference"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1Gl96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1Fft6tEei97MD7GK1RmA" name="oldValue" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_Zq1Ff96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmt/cope/codegen">
+        <details xmi:id="_Zq1FgN6tEei97MD7GK1RmA" key="get" value=""/>
+        <details xmi:id="_Zq1Fgd6tEei97MD7GK1RmA" key="set" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Zq1Fgt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Fg96tEei97MD7GK1RmA" key="documentation" value="Derived attribute that provides either oldDataValue or oldFeferenceValue depending on the type of the feature (attribute or reference respectively)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HOd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1Fhd6tEei97MD7GK1RmA" name="Add" eSuperTypes="_Zq1FWN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1Fht6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1Fh96tEei97MD7GK1RmA" key="documentation" value="A change that adds a value to a multi-valued attribute or reference"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1FiN6tEei97MD7GK1RmA" name="Remove" eSuperTypes="_Zq1FWN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1Fid6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1Fit6tEei97MD7GK1RmA" key="documentation" value="A change that removes a value from a multi-valued attribute or reference"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1Fi96tEei97MD7GK1RmA" name="CompositeChange" eSuperTypes="_Zq1F8N6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FjN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1Fjd6tEei97MD7GK1RmA" key="documentation" value="A change consisting of a sequence of primitive changes"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1Fjt6tEei97MD7GK1RmA" name="changes" upperBound="-1" eType="_Zq1FJt6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_Zq1Fj96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FkN6tEei97MD7GK1RmA" key="documentation" value="A sequence of primitive changes"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1Fkd6tEei97MD7GK1RmA" name="OperationChange" eSuperTypes="_Zq1Fi96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1Fkt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1Fk96tEei97MD7GK1RmA" key="documentation" value="A change to witness the execution of a coupled evolution operation"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1FlN6tEei97MD7GK1RmA" name="operation" lowerBound="1" eType="_Zq1Fl96tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_Zq1Fld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Flt6tEei97MD7GK1RmA" key="documentation" value="An instance of the operation"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1Fl96tEei97MD7GK1RmA" name="OperationInstance" eSuperTypes="_Zq1F6d6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1FmN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1Fmd6tEei97MD7GK1RmA" key="documentation" value="An instance of an operation, i.e. parameters and variables are assigned values"/>
+    </eAnnotations>
+    <eOperations xmi:id="_Zq1Fmt6tEei97MD7GK1RmA" name="getParameter" eType="_Zq1F1N6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zq1Fm96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FnN6tEei97MD7GK1RmA" key="body" value="return OperationInstance_static.getParameter(this, name);"/>
+        <details xmi:id="_Zq1Fnd6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the instantiated parameter with a certain name"/>
+      </eAnnotations>
+      <eParameters xmi:id="_Zq1Fnt6tEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_Zq1FoN6tEei97MD7GK1RmA" name="getParameterValue">
+      <eAnnotations xmi:id="_Zq1Fod6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Fot6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the value of a parameter with a certain name"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HOd6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Zq1FpN6tEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_Zq1Fpt6tEei97MD7GK1RmA" name="getVariable" eType="_Zq1F4t6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zq1Fp96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FqN6tEei97MD7GK1RmA" key="body" value="return OperationInstance_static.getVariable(this, name);"/>
+        <details xmi:id="_Zq1Fqd6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the instantiated variable with a certain name"/>
+      </eAnnotations>
+      <eParameters xmi:id="_Zq1Fqt6tEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_Zq1FrN6tEei97MD7GK1RmA" name="getVariableValue">
+      <eAnnotations xmi:id="_Zq1Frd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Frt6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the value of a variable with a certain name"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HOd6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Zq1FsN6tEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_Zq1Fst6tEei97MD7GK1RmA" name="getOperation">
+      <eAnnotations xmi:id="_Zq1Fs96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FtN6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the instantiated operation"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.edapt.declaration_model_declaration.ecore#_Zq-2C96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_Zq1Ftt6tEei97MD7GK1RmA" name="setParameterValue">
+      <eParameters xmi:id="_Zq1Ft96tEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_Zq1Fud6tEei97MD7GK1RmA" name="value">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HOd6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1Fu96tEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_Zq1F1N6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_Zq1FvN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Fvd6tEei97MD7GK1RmA" key="documentation" value="List of instances of parameters"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1Fvt6tEei97MD7GK1RmA" name="variables" upperBound="-1" eType="_Zq1F4t6tEei97MD7GK1RmA" transient="true" containment="true">
+      <eAnnotations xmi:id="_Zq1Fv96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1FwN6tEei97MD7GK1RmA" key="documentation" value="List of instance of parameters (only needed during runtime and is therefore not persisted)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1Fwd6tEei97MD7GK1RmA" name="PlaceholderInstance" abstract="true" eSuperTypes="_Zq1F6d6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1Fwt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1Fw96tEei97MD7GK1RmA" key="documentation" value="A base class for instances of parameters and variables"/>
+    </eAnnotations>
+    <eOperations xmi:id="_Zq1FxN6tEei97MD7GK1RmA" name="getPlaceholder">
+      <eAnnotations xmi:id="_Zq1Fxd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Fxt6tEei97MD7GK1RmA" key="body" value="return PlaceholderInstance_static.getPlaceholder(this);"/>
+        <details xmi:id="_Zq1Fx96tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the instantiated placeholder"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.edapt.declaration_model_declaration.ecore#_Zq-2Nd6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1Fyd6tEei97MD7GK1RmA" name="value" volatile="true" transient="true">
+      <eAnnotations xmi:id="_Zq1Fyt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Fy96tEei97MD7GK1RmA" key="documentation" value="The value conforming to the type derived from dataValue and referenceValue depending on its characteristics (primitive or object type, single-valued or multi-valued type)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HOd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1Fzd6tEei97MD7GK1RmA" name="dataValue" upperBound="-1">
+      <eAnnotations xmi:id="_Zq1Fzt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1Fz96tEei97MD7GK1RmA" key="documentation" value="A list of serialized instances of a primitive type"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1F0d6tEei97MD7GK1RmA" name="referenceValue" upperBound="-1" eType="_Zq1F296tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_Zq1F0t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1F096tEei97MD7GK1RmA" key="documentation" value="A list of serialized instances of an object type"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1F1N6tEei97MD7GK1RmA" name="ParameterInstance" eSuperTypes="_Zq1Fwd6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1F1d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1F1t6tEei97MD7GK1RmA" key="documentation" value="An instance of a parameter, i.e. the parameter is assigned a value"/>
+    </eAnnotations>
+    <eOperations xmi:id="_Zq1F196tEei97MD7GK1RmA" name="getParameter">
+      <eAnnotations xmi:id="_Zq1F2N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1F2d6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the instantiated parameter"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.edapt.declaration_model_declaration.ecore#_Zq-2PN6tEei97MD7GK1RmA"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1F296tEei97MD7GK1RmA" name="ModelReference">
+    <eAnnotations xmi:id="_Zq1F3N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1F3d6tEei97MD7GK1RmA" key="documentation" value="Reference to the metamodel"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1F3t6tEei97MD7GK1RmA" name="element" lowerBound="1">
+      <eAnnotations xmi:id="_Zq1F396tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1F4N6tEei97MD7GK1RmA" key="documentation" value="Element of the metamodel which is referenced"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1Gl96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1F4t6tEei97MD7GK1RmA" name="VariableInstance" eSuperTypes="_Zq1Fwd6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1F496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1F5N6tEei97MD7GK1RmA" key="documentation" value="An instance of a helper variable, i.e. the variable is assigned a value"/>
+    </eAnnotations>
+    <eOperations xmi:id="_Zq1F5d6tEei97MD7GK1RmA" name="getVariable">
+      <eAnnotations xmi:id="_Zq1F5t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1F596tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the instantiated variable"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.edapt.declaration_model_declaration.ecore#_Zq-2Tt6tEei97MD7GK1RmA"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1F6d6tEei97MD7GK1RmA" name="NamedElement" abstract="true">
+    <eAnnotations xmi:id="_Zq1F6t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1F696tEei97MD7GK1RmA" key="documentation" value="A base class for all elements which are identified by a name"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1F7N6tEei97MD7GK1RmA" name="name" lowerBound="1">
+      <eAnnotations xmi:id="_Zq1F7d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1F7t6tEei97MD7GK1RmA" key="documentation" value="Identifier"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1F8N6tEei97MD7GK1RmA" name="MigrateableChange" abstract="true" eSuperTypes="_Zq1FFt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1F8d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1F8t6tEei97MD7GK1RmA" key="documentation" value="Base class for changes to which a migration can be attached"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1F896tEei97MD7GK1RmA" name="MigrationChange" eSuperTypes="_Zq1FFt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1F9N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1F9d6tEei97MD7GK1RmA" key="documentation" value="A change to attach a migration to a sequence of changes"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zq1F9t6tEei97MD7GK1RmA" name="migration" lowerBound="1">
+      <eAnnotations xmi:id="_Zq1F996tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1F-N6tEei97MD7GK1RmA" key="documentation" value="The code snippet overwriting the identity transformation"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zq1HTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1F-t6tEei97MD7GK1RmA" name="changes" upperBound="-1" eType="_Zq1F8N6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_Zq1F-96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1F_N6tEei97MD7GK1RmA" key="documentation" value="A sequence of primitive changes"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zq1F_d6tEei97MD7GK1RmA" name="InitializerChange" abstract="true" eSuperTypes="_Zq1FLN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zq1F_t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zq1F_96tEei97MD7GK1RmA" key="documentation" value="Base class for content changes that perform a number of value changes to initialize a created element or detach a deleted element"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zq1GAN6tEei97MD7GK1RmA" name="changes" upperBound="-1" eType="_Zq1FWN6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_Zq1GAd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zq1GAt6tEei97MD7GK1RmA" key="documentation" value="The value changes that are performed as part of the content change"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

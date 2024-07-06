@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_fZDzAN6tEei97MD7GK1RmA" name="cmof" nsURI="http://schema.omg.org/spec/MOF/2.0/cmof.xml" nsPrefix="cmof">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZDzAd6tEei97MD7GK1RmA" name="Classifier" abstract="true" eSuperTypes="_fZDzYN6tEei97MD7GK1RmA _fZD1Bd6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZDzAt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZDzA96tEei97MD7GK1RmA" key="documentation" value="A classifier is a type. It can specify a generalization hierarchy by referencing its general classifiers.  A classifier is also a namespace whose members can include features. Classifier is an abstract metaclass."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fZDzBN6tEei97MD7GK1RmA" name="no_cycles_in_generalization">
+      <eAnnotations xmi:id="_fZDzBd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzBt6tEei97MD7GK1RmA" key="documentation" value="Generalization hierarchies must be directed and acyclical. A classifier can not be both a transitively general and transitively specific classifier of the same classifier.&#xD;&#xA;not self.allParents()->includes(self)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzCN6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZDzCt6tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZDzDN6tEei97MD7GK1RmA" name="specialize_type">
+      <eAnnotations xmi:id="_fZDzDd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzDt6tEei97MD7GK1RmA" key="documentation" value="A classifier may only specialize classifiers of a valid type.&#xD;&#xA;self.parents()->forAll(c | self.maySpecializeType(c))"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzEN6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZDzEt6tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZDzFN6tEei97MD7GK1RmA" name="conformsTo" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZDzFd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzFt6tEei97MD7GK1RmA" key="documentation" value="The query conformsTo() gives true for a classifier that defines a type that conforms to another. This is used, for example, in the specification of signature conformance for operations.&#xD;&#xA;result = (self=other) or (self.allParents()->includes(other))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzF96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzGN6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzGd6tEei97MD7GK1RmA" source="redefines" references="_fZD1CN6tEei97MD7GK1RmA"/>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzG96tEei97MD7GK1RmA" name="other" ordered="false" lowerBound="1" eType="_fZDzAd6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZDzHN6tEei97MD7GK1RmA" name="allFeatures" ordered="false" upperBound="-1" eType="_fZD0z96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzHd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzHt6tEei97MD7GK1RmA" key="documentation" value="The query allFeatures() gives all of the features in the namespace of the classifier. In general, through mechanisms such as inheritance, this will be a larger set than feature.&#xD;&#xA;result = member->select(oclIsKindOf(Feature))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzH96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzIN6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZDzId6tEei97MD7GK1RmA" name="getGenerals" ordered="false" upperBound="-1" eType="_fZDzAd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzIt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzI96tEei97MD7GK1RmA" key="documentation" value="The general classifiers are the classifiers referenced by the generalization relationships.&#xD;&#xA;result = self.parents()"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzJN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzJd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZDzJt6tEei97MD7GK1RmA" name="parents" ordered="false" upperBound="-1" eType="_fZDzAd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzJ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzKN6tEei97MD7GK1RmA" key="documentation" value="The query parents() gives all of the immediate ancestors of a generalized Classifier.&#xD;&#xA;result = generalization.general"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzKd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzKt6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZDzK96tEei97MD7GK1RmA" name="getInheritedMembers" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzLN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzLd6tEei97MD7GK1RmA" key="documentation" value="The inheritedMember association is derived by inheriting the inheritable members of the parents.&#xD;&#xA;result = self.inherit(self.parents()->collect(p | p.inheritableMembers(self))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzLt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzL96tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZDzMN6tEei97MD7GK1RmA" name="allParents" ordered="false" upperBound="-1" eType="_fZDzAd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzMd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzMt6tEei97MD7GK1RmA" key="documentation" value="The query allParents() gives all of the direct and indirect ancestors of a generalized Classifier.&#xD;&#xA;result = self.parents()->union(self.parents()->collect(p | p.allParents())"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzM96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzNN6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZDzNd6tEei97MD7GK1RmA" name="inheritableMembers" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzNt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzN96tEei97MD7GK1RmA" key="documentation" value="The query inheritableMembers() gives all of the members of a classifier that may be inherited in one of its descendants, subject to whatever visibility restrictions apply.&#xD;&#xA;c.allParents()->includes(self)&#xD;&#xA;result = member->select(m | c.hasVisibilityOf(m))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzON6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzOd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eParameters xmi:id="_fZDzOt6tEei97MD7GK1RmA" name="c" ordered="false" lowerBound="1" eType="_fZDzAd6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZDzO96tEei97MD7GK1RmA" name="hasVisibilityOf" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZDzPN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzPd6tEei97MD7GK1RmA" key="documentation" value="The query hasVisibilityOf() determines whether a named element is visible in the classifier. By default all are visible. It is only called when the argument is something owned by a parent.&#xD;&#xA;self.allParents()->collect(c | c.member)->includes(n)&#xD;&#xA;result = if (self.inheritedMember->includes(n)) then (n.visibility &lt;> #private) else true"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzPt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzP96tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzQd6tEei97MD7GK1RmA" name="n" ordered="false" lowerBound="1" eType="_fZDzod6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZDzQt6tEei97MD7GK1RmA" name="inherit" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzQ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzRN6tEei97MD7GK1RmA" key="documentation" value="The inherit operation is overridden to exclude redefined properties.&#xD;&#xA;result = inhs"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzRd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzRt6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eParameters xmi:id="_fZDzR96tEei97MD7GK1RmA" name="inhs" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZDzSN6tEei97MD7GK1RmA" name="maySpecializeType" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZDzSd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzSt6tEei97MD7GK1RmA" key="documentation" value="The query maySpecializeType() determines whether this classifier may have a generalization relationship to classifiers of the specified type. By default a classifier may specialize classifiers of the same or a more general type. It is intended to be redefined by classifiers that have different specialization constraints.&#xD;&#xA;result = self.oclIsKindOf(c.oclType)"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzS96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzTN6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzTt6tEei97MD7GK1RmA" name="c" ordered="false" lowerBound="1" eType="_fZDzAd6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZDzT96tEei97MD7GK1RmA" name="feature" ordered="false" upperBound="-1" eType="_fZD0z96tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true" eOpposite="_fZD00t6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzUN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzUd6tEei97MD7GK1RmA" key="documentation" value="Redefines the corresponding association in Abstractions. Subsets Namespace::member and is a derived union. Note that there may be members of the Classifier that are of the type Feature but are not included in this association, e.g. inherited features."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzUt6tEei97MD7GK1RmA" source="subsets" references="_fZDznd6tEei97MD7GK1RmA"/>
+      <eAnnotations xmi:id="_fZDzU96tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZDzVN6tEei97MD7GK1RmA" name="attribute" ordered="false" upperBound="-1" eType="_fZD0Ud6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZDzVd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzVt6tEei97MD7GK1RmA" key="documentation" value="Refers to all of the Properties that are direct (i.e. not inherited or imported) attributes of the classifier. Subsets Classifier::feature and is a derived union."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzV96tEei97MD7GK1RmA" source="subsets" references="_fZDzT96tEei97MD7GK1RmA"/>
+      <eAnnotations xmi:id="_fZDzWN6tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZDzWd6tEei97MD7GK1RmA" name="general" ordered="false" upperBound="-1" eType="_fZDzAd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzWt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzW96tEei97MD7GK1RmA" key="documentation" value="References the general classifier in the Generalization relationship. Subsets DirectedRelationship::target."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZDzXN6tEei97MD7GK1RmA" name="inheritedMember" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZDzXd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzXt6tEei97MD7GK1RmA" key="documentation" value="Specifies all elements inherited by this classifier from the general classifiers. Subsets Namespace::member. This is derived."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzX96tEei97MD7GK1RmA" source="subsets" references="_fZDznd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZDzYN6tEei97MD7GK1RmA" name="Namespace" abstract="true" eSuperTypes="_fZDzod6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZDzYd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZDzYt6tEei97MD7GK1RmA" key="documentation" value="A namespace has the ability to import either individial members or all members of a package, thereby making it possible to refer to those named elements without qualification in the importing namespace. In the case of conflicts, it is necessary to use qualified names or aliases to disambiguate the referenced elements."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_fZDzY96tEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EReference" xmi:id="_fZDzZN6tEei97MD7GK1RmA" name="ownedMember" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true" eOpposite="_fZDzpd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fZDzZd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZDzZt6tEei97MD7GK1RmA" key="documentation" value="Redefines the corresponding property of Abstractions::Namespaces::Namespace."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZDzZ96tEei97MD7GK1RmA" source="subsets" references="_fZDznd6tEei97MD7GK1RmA _fZD0Ht6tEei97MD7GK1RmA"/>
+        <eAnnotations xmi:id="_fZDzaN6tEei97MD7GK1RmA" source="union"/>
+      </contents>
+    </eAnnotations>
+    <eOperations xmi:id="_fZDzad6tEei97MD7GK1RmA" name="members_are_distinguishable">
+      <eAnnotations xmi:id="_fZDzat6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDza96tEei97MD7GK1RmA" key="documentation" value="All the members of a Namespace are distinguishable within it.&#xD;&#xA;membersAreDistinguishable()"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzbd6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZDzb96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZDzcd6tEei97MD7GK1RmA" name="getImportedMembers" ordered="false" upperBound="-1" eType="_fZD1Ft6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzct6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzc96tEei97MD7GK1RmA" key="documentation" value="The importedMember property is derived from the ElementImports and the PackageImports. References the PackageableElements that are members of this Namespace as a result of either PackageImports or ElementImports.&#xD;&#xA;result = self.importMembers(self.elementImport.importedElement.asSet()->union(self.packageImport.importedPackage->collect(p | p.visibleMembers())))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzdN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzdd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZDzdt6tEei97MD7GK1RmA" name="getNamesOfMember" ordered="false" upperBound="-1">
+      <eAnnotations xmi:id="_fZDzd96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzeN6tEei97MD7GK1RmA" key="documentation" value="The query getNamesOfMember() is overridden to take account of importing. It gives back the set of names that an element would have in an importing namespace, either because it is owned, or if not owned then imported individually, or if not individually then from a package.&#xD;&#xA;result = if self.ownedMember->includes(element)&#xA;then Set{}->include(element.name)&#xA;else let elementImports: ElementImport = self.elementImport->select(ei | ei.importedElement = element) in&#xA;  if elementImports->notEmpty()&#xA;  then elementImports->collect(el | el.getName())&#xA;  else self.packageImport->select(pi | pi.importedPackage.visibleMembers()->includes(element))->collect(pi | pi.importedPackage.getNamesOfMember(element))&#xA;  endif&#xA;endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzed6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzet6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzfN6tEei97MD7GK1RmA" name="element" ordered="false" lowerBound="1" eType="_fZDzod6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZDzfd6tEei97MD7GK1RmA" name="importMembers" ordered="false" upperBound="-1" eType="_fZD1Ft6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzft6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzf96tEei97MD7GK1RmA" key="documentation" value="The query importMembers() defines which of a set of PackageableElements are actually imported into the namespace. This excludes hidden ones, i.e., those which have names that conflict with names of owned members, and also excludes elements which would have the same name when imported.&#xD;&#xA;result = self.excludeCollisions(imps)->select(imp | self.ownedMember->forAll(mem | mem.imp.isDistinguishableFrom(mem, self)))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzgN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzgd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eParameters xmi:id="_fZDzgt6tEei97MD7GK1RmA" name="imps" ordered="false" upperBound="-1" eType="_fZD1Ft6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZDzg96tEei97MD7GK1RmA" name="excludeCollisions" ordered="false" upperBound="-1" eType="_fZD1Ft6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzhN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzhd6tEei97MD7GK1RmA" key="documentation" value="The query excludeCollisions() excludes from a set of PackageableElements any that would not be distinguishable from each other in this namespace.&#xD;&#xA;result = imps->reject(imp1 | imps.exists(imp2 | not imp1.isDistinguishableFrom(imp2, self)))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzht6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzh96tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eParameters xmi:id="_fZDziN6tEei97MD7GK1RmA" name="imps" ordered="false" upperBound="-1" eType="_fZD1Ft6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZDzid6tEei97MD7GK1RmA" name="membersAreDistinguishable" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZDzit6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzi96tEei97MD7GK1RmA" key="documentation" value="The Boolean query membersAreDistinguishable() determines whether all of the namespace's members are distinguishable within it.&#xD;&#xA;result = self.member->forAll( memb |&#xA;&#x9;self.member->excluding(memb)->forAll(other |&#xA;&#x9;&#x9;memb.isDistinguishableFrom(other, self)))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzjN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzjd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZDzj96tEei97MD7GK1RmA" name="ownedRule" ordered="false" upperBound="-1" eType="_fZD2lt6tEei97MD7GK1RmA" containment="true" eOpposite="_fZD2tN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzkN6tEei97MD7GK1RmA" source="subsets" references="_fZDzZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZDzkd6tEei97MD7GK1RmA" name="importedMember" ordered="false" upperBound="-1" eType="_fZD1Ft6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZDzkt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzk96tEei97MD7GK1RmA" key="documentation" value="References the PackageableElements that are members of this Namespace as a result of either PackageImports or ElementImports. Subsets Namespace::member."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzlN6tEei97MD7GK1RmA" source="subsets" references="_fZDznd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZDzld6tEei97MD7GK1RmA" name="elementImport" ordered="false" upperBound="-1" eType="_fZD28t6tEei97MD7GK1RmA" containment="true" eOpposite="_fZD3Ft6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzlt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzl96tEei97MD7GK1RmA" key="documentation" value="References the ElementImports owned by the Namespace. Subsets Element::ownedElement."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzmN6tEei97MD7GK1RmA" source="subsets" references="_fZD0Ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZDzmd6tEei97MD7GK1RmA" name="packageImport" ordered="false" upperBound="-1" eType="_fZD3Gt6tEei97MD7GK1RmA" containment="true" eOpposite="_fZD3LN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzmt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzm96tEei97MD7GK1RmA" key="documentation" value="References the PackageImports owned by the Namespace. Subsets Element::ownedElement."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDznN6tEei97MD7GK1RmA" source="subsets" references="_fZD0Ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZDznd6tEei97MD7GK1RmA" name="member" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZDznt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzn96tEei97MD7GK1RmA" key="documentation" value="Redefines the corresponding property of Abstractions::Namespaces::Namespace."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzoN6tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZDzod6tEei97MD7GK1RmA" name="NamedElement" abstract="true" eSuperTypes="_fZDz4t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZDzot6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZDzo96tEei97MD7GK1RmA" key="documentation" value="NamedElement has a visibility attribute.&#xD;&#xA;A named element represents elements with names."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_fZDzpN6tEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EReference" xmi:id="_fZDzpd6tEei97MD7GK1RmA" name="namespace" ordered="false" eType="_fZDzYN6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true" eOpposite="_fZDzZN6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fZDzpt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZDzp96tEei97MD7GK1RmA" key="documentation" value="Specifies the namespace that owns the NamedElement. Subsets Element::owner. This is a derived union."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZDzqN6tEei97MD7GK1RmA" source="subsets" references="_fZD0It6tEei97MD7GK1RmA"/>
+        <eAnnotations xmi:id="_fZDzqd6tEei97MD7GK1RmA" source="union"/>
+      </contents>
+    </eAnnotations>
+    <eOperations xmi:id="_fZDzqt6tEei97MD7GK1RmA" name="no_name">
+      <eAnnotations xmi:id="_fZDzq96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzrN6tEei97MD7GK1RmA" key="documentation" value="If there is no name, or one of the containing namespaces has no name, there is no qualified name.&#xD;&#xA;(self.name->isEmpty() or self.allNamespaces()->select(ns | ns.name->isEmpty())->notEmpty())&#xA;&#xA;  implies self.qualifiedName->isEmpty()"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzrt6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZDzsN6tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZDzst6tEei97MD7GK1RmA" name="qualified_name">
+      <eAnnotations xmi:id="_fZDzs96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDztN6tEei97MD7GK1RmA" key="documentation" value="When there is a name, and all of the containing namespaces have a name, the qualified name is constructed from the names of the containing namespaces.&#xD;&#xA;(self.name->notEmpty() and self.allNamespaces()->select(ns | ns.name->isEmpty())->isEmpty()) implies&#xA;  self.qualifiedName = self.allNamespaces()->iterate( ns : Namespace; result: String = self.name | ns.name->union(self.separator())->union(result))"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDztt6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZDzuN6tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZDzut6tEei97MD7GK1RmA" name="visibility_needs_ownership">
+      <eAnnotations xmi:id="_fZDzu96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzvN6tEei97MD7GK1RmA" key="documentation" value="If a NamedElement is not owned by a Namespace, it does not have a visibility.&#xD;&#xA;namespace->isEmpty() implies visibility->isEmpty()"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzvt6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZDzwN6tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZDzwt6tEei97MD7GK1RmA" name="allNamespaces" upperBound="-1" eType="_fZDzYN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDzw96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzxN6tEei97MD7GK1RmA" key="documentation" value="The query allNamespaces() gives the sequence of namespaces in which the NamedElement is nested, working outwards.&#xD;&#xA;result = if self.namespace->isEmpty()&#xA;then Sequence{}&#xA;else self.namespace.allNamespaces()->prepend(self.namespace)&#xA;endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzxd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzxt6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZDzx96tEei97MD7GK1RmA" name="isDistinguishableFrom" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZDzyN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDzyd6tEei97MD7GK1RmA" key="documentation" value="The query isDistinguishableFrom() determines whether two NamedElements may logically co-exist within a Namespace. By default, two named elements are distinguishable if (a) they have unrelated types or (b) they have related types but different names.&#xD;&#xA;result = if self.oclIsKindOf(n.oclType) or n.oclIsKindOf(self.oclType)&#xA;then ns.getNamesOfMember(self)->intersection(ns.getNamesOfMember(n))->isEmpty()&#xA;else true&#xA;endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDzyt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDzy96tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzzd6tEei97MD7GK1RmA" name="n" ordered="false" lowerBound="1" eType="_fZDzod6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDzzt6tEei97MD7GK1RmA" name="ns" ordered="false" lowerBound="1" eType="_fZDzYN6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZDzz96tEei97MD7GK1RmA" name="separator" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZDz0N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDz0d6tEei97MD7GK1RmA" key="documentation" value="The query separator() gives the string that is used to separate names when constructing a qualified name.&#xD;&#xA;result = '::'"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDz0t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDz096tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZDz1d6tEei97MD7GK1RmA" name="qualifiedName" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZDz1t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDz196tEei97MD7GK1RmA" key="documentation" value="When there is a name, and all of the containing namespaces have a name, the qualified name is constructed from the names of the containing namespaces.&#xD;&#xA;result = if self.name->notEmpty() and self.allNamespaces()->select(ns | ns.name->isEmpty())->isEmpty()&#xA;then &#xA;    self.allNamespaces()->iterate( ns : Namespace; result: String = self.name | ns.name->union(self.separator())->union(result))&#xA;else&#xA;    Set{}&#xA;endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDz2N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDz2d6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZDz296tEei97MD7GK1RmA" name="visibility" ordered="false" eType="_fZD2496tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDz3N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDz3d6tEei97MD7GK1RmA" key="documentation" value="Determines the visibility of the NamedElement within different Namespaces within the overall model."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZDz3t6tEei97MD7GK1RmA" name="name" ordered="false" iD="true">
+      <eAnnotations xmi:id="_fZDz396tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDz4N6tEei97MD7GK1RmA" key="documentation" value="The name of the NamedElement."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZDz4t6tEei97MD7GK1RmA" name="Element" abstract="true">
+    <eAnnotations xmi:id="_fZDz496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZDz5N6tEei97MD7GK1RmA" key="documentation" value="An element can own comments.&#xD;&#xA;Element is an abstract metaclass with no superclass. It is used as the common superclass for all metaclasses in the infrastructure library."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fZDz5d6tEei97MD7GK1RmA" name="not_own_self">
+      <eAnnotations xmi:id="_fZDz5t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDz596tEei97MD7GK1RmA" key="documentation" value="An element may not directly or indirectly own itself.&#xD;&#xA;not self.allOwnedElements()->includes(self)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDz6d6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZDz696tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZDz7d6tEei97MD7GK1RmA" name="has_owner">
+      <eAnnotations xmi:id="_fZDz7t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDz796tEei97MD7GK1RmA" key="documentation" value="Elements that must be owned must have an owner.&#xD;&#xA;self.mustBeOwned() implies owner->notEmpty()"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZDz8d6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZDz896tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZDz9d6tEei97MD7GK1RmA" name="allOwnedElements" ordered="false" upperBound="-1" eType="_fZDz4t6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZDz9t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDz996tEei97MD7GK1RmA" key="documentation" value="The query allOwnedElements() gives all of the direct and indirect owned elements of an element.&#xD;&#xA;result = ownedElement->union(ownedElement->collect(e | e.allOwnedElements()))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDz-N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDz-d6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZDz-t6tEei97MD7GK1RmA" name="mustBeOwned" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZDz-96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZDz_N6tEei97MD7GK1RmA" key="documentation" value="The query mustBeOwned() indicates whether elements of this type must have an owner. Subclasses of Element that do not require an owner must override this operation.&#xD;&#xA;result = true"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZDz_d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZDz_t6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD0AN6tEei97MD7GK1RmA" name="getMetaClass" ordered="false" lowerBound="1" eType="_fZD0Nt6tEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fZD0Ad6tEei97MD7GK1RmA" name="container" ordered="false" lowerBound="1" eType="_fZDz4t6tEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fZD0At6tEei97MD7GK1RmA" name="equals" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0BN6tEei97MD7GK1RmA" name="otherElement" ordered="false" lowerBound="1" eType="_fZD1cN6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD0Bd6tEei97MD7GK1RmA" name="get" ordered="false" lowerBound="1" eType="_fZD1cN6tEei97MD7GK1RmA">
+      <eParameters xmi:id="_fZD0Bt6tEei97MD7GK1RmA" name="property" ordered="false" lowerBound="1" eType="_fZD0Ud6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD0B96tEei97MD7GK1RmA" name="set" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD4w96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0Cd6tEei97MD7GK1RmA" name="property" ordered="false" lowerBound="1" eType="_fZD0Ud6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0Ct6tEei97MD7GK1RmA" name="value" ordered="false" lowerBound="1" eType="_fZD1cN6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD0C96tEei97MD7GK1RmA" name="isSet" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0Dd6tEei97MD7GK1RmA" name="property" ordered="false" lowerBound="1" eType="_fZD0Ud6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD0Dt6tEei97MD7GK1RmA" name="unset" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD4w96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0EN6tEei97MD7GK1RmA" name="property" ordered="false" lowerBound="1" eType="_fZD0Ud6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD0Ed6tEei97MD7GK1RmA" name="delete" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD4w96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD0E96tEei97MD7GK1RmA" name="invoke" ordered="false" lowerBound="1" eType="_fZD1cN6tEei97MD7GK1RmA">
+      <eParameters xmi:id="_fZD0FN6tEei97MD7GK1RmA" name="op" ordered="false" lowerBound="1" eType="_fZD1796tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0Fd6tEei97MD7GK1RmA" name="arguments" ordered="false" lowerBound="1" eType="_fZD23t6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD0Ft6tEei97MD7GK1RmA" name="isInstanceOfType" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0GN6tEei97MD7GK1RmA" name="type" ordered="false" lowerBound="1" eType="_fZD0Nt6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0Gd6tEei97MD7GK1RmA" name="includeSubtypes" ordered="false" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD0G96tEei97MD7GK1RmA" name="verify" ordered="false" lowerBound="1" eType="_fZD24t6tEei97MD7GK1RmA">
+      <eParameters xmi:id="_fZD0HN6tEei97MD7GK1RmA" name="deepVerify" ordered="false" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0Ht6tEei97MD7GK1RmA" name="ownedElement" ordered="false" upperBound="-1" eType="_fZDz4t6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true" eOpposite="_fZD0It6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0H96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0IN6tEei97MD7GK1RmA" key="documentation" value="The Elements owned by this element."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0Id6tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0It6tEei97MD7GK1RmA" name="owner" ordered="false" eType="_fZDz4t6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true" eOpposite="_fZD0Ht6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0I96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0JN6tEei97MD7GK1RmA" key="documentation" value="The Element that owns this element."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0Jd6tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0Jt6tEei97MD7GK1RmA" name="ownedComment" ordered="false" upperBound="-1" eType="_fZD0Kt6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_fZD0J96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0KN6tEei97MD7GK1RmA" key="documentation" value="The Comments owned by this element. Subsets Element::ownedElement.&#xD;&#xA;The Comments owned by this element."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0Kd6tEei97MD7GK1RmA" source="subsets" references="_fZD0Ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD0Kt6tEei97MD7GK1RmA" name="Comment" eSuperTypes="_fZDz4t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD0K96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD0LN6tEei97MD7GK1RmA" key="documentation" value="A comment is a textual annotation that can be attached to a set of elements.&#xD;&#xA;A comment gives the ability to attach various remarks to elements. A comment carries no semantic force, but may contain information that is useful to a modeler. A comment may be owned by any element."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD0Ld6tEei97MD7GK1RmA" name="body" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD0Lt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0L96tEei97MD7GK1RmA" key="documentation" value="Specifies a string that is the comment."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0MN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_fZD0Md6tEei97MD7GK1RmA" key="kind" value="element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0M96tEei97MD7GK1RmA" name="annotatedElement" ordered="false" upperBound="-1" eType="_fZDz4t6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0NN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0Nd6tEei97MD7GK1RmA" key="documentation" value="References the Element(s) being commented."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD0Nt6tEei97MD7GK1RmA" name="Class" eSuperTypes="_fZDzAd6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD0N96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD0ON6tEei97MD7GK1RmA" key="documentation" value="Class is a kind of classifier whose features are attributes and operations. Attributes of a class are represented by instances of Property that are owned by the class. Some of these attributes may represent the navigable ends of binary associations.&#xD;&#xA;A class is a type that has objects as its instances."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_fZD0Od6tEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EOperation" xmi:id="_fZD0Ot6tEei97MD7GK1RmA" name="inherit" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fZD0O96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD0PN6tEei97MD7GK1RmA" key="documentation" value="The inherit operation is overridden to exclude redefined properties.&#xD;&#xA;result = inhs->excluding(inh | ownedMember->select(oclIsKindOf(RedefinableElement))->select(redefinedElement->includes(inh)))"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD0Pd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+          <details xmi:id="_fZD0Pt6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD0P96tEei97MD7GK1RmA" source="redefines" references="_fZDzQt6tEei97MD7GK1RmA"/>
+        <eParameters xmi:id="_fZD0QN6tEei97MD7GK1RmA" name="inhs" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD0Qd6tEei97MD7GK1RmA" name="isAbstract" ordered="false" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_fZD0Qt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0Q96tEei97MD7GK1RmA" key="documentation" value="True when a class is abstract. The default value is false."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0Rd6tEei97MD7GK1RmA" name="ownedAttribute" upperBound="-1" eType="_fZD0Ud6tEei97MD7GK1RmA" containment="true" eOpposite="_fZD0yN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0Rt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0R96tEei97MD7GK1RmA" key="documentation" value="The attributes (i.e. the properties) owned by the class. This is an ordered association. Subsets Classifier::attribute and Namespace::ownedMember.&#xD;&#xA;The attributes owned by a class. These do not include the inherited attributes. Attributes are represented by instances of Property."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0SN6tEei97MD7GK1RmA" source="subsets" references="_fZDzVN6tEei97MD7GK1RmA _fZDzZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0Sd6tEei97MD7GK1RmA" name="ownedOperation" upperBound="-1" eType="_fZD1796tEei97MD7GK1RmA" containment="true" eOpposite="_fZD2Xd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0St6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0S96tEei97MD7GK1RmA" key="documentation" value="The operations owned by the class. This is an ordered association. Subsets Classifier::feature and Namespace::ownedMember.&#xD;&#xA;The operations owned by a class. These do not include the inherited operations."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0TN6tEei97MD7GK1RmA" source="subsets" references="_fZDzT96tEei97MD7GK1RmA _fZDzZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0Td6tEei97MD7GK1RmA" name="superClass" ordered="false" upperBound="-1" eType="_fZD0Nt6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0Tt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0T96tEei97MD7GK1RmA" key="documentation" value="This gives the superclasses of a class. It redefines Classifier::general.&#xD;&#xA;The immediate superclasses of a class, from which the class inherits."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0UN6tEei97MD7GK1RmA" source="redefines" references="_fZDzWd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD0Ud6tEei97MD7GK1RmA" name="Property" eSuperTypes="_fZD0zN6tEei97MD7GK1RmA _fZD1cd6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD0Ut6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD0U96tEei97MD7GK1RmA" key="documentation" value="Property represents a declared state of one or more instances in terms of a named relationship to a value or values. When a property is an attribute of a classifier, the value or values are related to the instance of the classifier by being held in slots of the instance. When a property is an association end, the value or values are related to the instance or instances at the other end(s) of the association.&#xA;&#xA;&#xA;&#xA;Property is indirectly a subclass of Constructs::TypedElement. The range of valid values represented by the property can be controlled by setting the property's type.&#xD;&#xA;A property is a typed element that represents an attribute of a class."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_fZD0VN6tEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EOperation" xmi:id="_fZD0Vd6tEei97MD7GK1RmA" name="isConsistentWith" ordered="false" lowerBound="1">
+        <eAnnotations xmi:id="_fZD0Vt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD0V96tEei97MD7GK1RmA" key="documentation" value="The query isConsistentWith() specifies, for any two Properties in a context in which redefinition is possible, whether redefinition would be logically consistent. A redefining property is consistent with a redefined property if the type of the redefining property conforms to the type of the redefined property, the multiplicity of the redefining property (if.specified) is contained in the multiplicity of the redefined property, and the redefining property is derived if the redefined property is derived.&#xD;&#xA;redefinee.isRedefinitionContextValid(self)&#xD;&#xA;result = (redefinee.oclIsKindOf(Property) and &#xA;    let prop: Property = redefinee.oclAsType(Property) in&#xA;        type.conformsTo(prop.type) and&#xA;        (lowerBound()->notEmpty and prop.lowerBound()->notEmpty() implies lowerBound() >= prop.lowerBound())&#xA;    and&#xA;        (upperBound()->notEmpty and prop.upperBound()->notEmpty() implies upperBound() &lt;= prop.upperBound())&#xA;    and&#xA;        (prop.isDerived implies isDerived))"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD0WN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+          <details xmi:id="_fZD0Wd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD0Wt6tEei97MD7GK1RmA" source="redefines" references="_fZD06d6tEei97MD7GK1RmA"/>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+        <eParameters xmi:id="_fZD0XN6tEei97MD7GK1RmA" name="redefinee" ordered="false" lowerBound="1" eType="_fZD01t6tEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD0Xd6tEei97MD7GK1RmA" name="multiplicity_of_composite">
+      <eAnnotations xmi:id="_fZD0Xt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0X96tEei97MD7GK1RmA" key="documentation" value="A multiplicity of a composite aggregation must not have an upper bound greater than 1.&#xD;&#xA;isComposite implies (upperBound()->isEmpty() or upperBound() &lt;= 1)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0Yd6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD0Y96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD0Zd6tEei97MD7GK1RmA" name="subsetting_context">
+      <eAnnotations xmi:id="_fZD0Zt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0Z96tEei97MD7GK1RmA" key="documentation" value="Subsetting may only occur when the context of the subsetting property conforms to the context of the subsetted property.&#xD;&#xA;self.subsettedProperty->notEmpty() implies&#xA;  (self.subsettingContext()->notEmpty() and self.subsettingContext()->forAll (sc |&#xA;    self.subsettedProperty->forAll(sp |&#xA;      sp.subsettingContext()->exists(c | sc.conformsTo(c)))))"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0ad6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD0a96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD0bd6tEei97MD7GK1RmA" name="navigable_property_redefinition">
+      <eAnnotations xmi:id="_fZD0bt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0b96tEei97MD7GK1RmA" key="documentation" value="A navigable property can only be redefined or subsetted by a navigable property.&#xD;&#xA;(self.subsettedProperty->exists(sp | sp.isNavigable()) implies self.isNavigable())&#xA;  and (self.redefinedProperty->exists(rp | rp.isNavigable()) implies self.isNavigable())"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0cd6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD0c96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD0dd6tEei97MD7GK1RmA" name="subsetting_rules">
+      <eAnnotations xmi:id="_fZD0dt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0d96tEei97MD7GK1RmA" key="documentation" value="A subsetting property may strengthen the type of the subsetted property, and its upper bound may be less.&#xD;&#xA;self.subsettedProperty->forAll(sp |&#xA;  self.type.conformsTo(sp.type) and&#xA;    ((self.upperBound()->notEmpty() and sp.upperBound()->notEmpty()) implies&#xA;      self.upperBound()&lt;=sp.upperBound() ))"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0ed6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD0e96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD0fd6tEei97MD7GK1RmA" name="navigable_readonly">
+      <eAnnotations xmi:id="_fZD0ft6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0f96tEei97MD7GK1RmA" key="documentation" value="Only a navigable property can be marked as readOnly.&#xD;&#xA;isReadOnly implies isNavigable()"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0gd6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD0g96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD0hd6tEei97MD7GK1RmA" name="derived_union_is_derived">
+      <eAnnotations xmi:id="_fZD0ht6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0h96tEei97MD7GK1RmA" key="documentation" value="A derived union is derived.&#xD;&#xA;isDerivedUnion implies isDerived"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0id6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD0i96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD0jd6tEei97MD7GK1RmA" name="getOpposite" ordered="false" lowerBound="1" eType="_fZD0Ud6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0jt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0j96tEei97MD7GK1RmA" key="documentation" value="If this property is owned by a class, associated with a binary association, and the other end of the association is also owned by a class, then opposite gives the other end.&#xD;&#xA;result = if owningAssociation->notEmpty() and association.memberEnd->size() = 2 then &#xA;&#x9;&#x9;let otherEnd = (association.memberEnd - self)->any() in &#xA;&#x9;&#x9;&#x9;if otherEnd.owningAssociation->notEmpty then otherEnd else Set{} endif&#xA;&#x9;else Set {}&#xA;&#x9;endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0kN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD0kd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZD0kt6tEei97MD7GK1RmA" name="subsettingContext" ordered="false" upperBound="-1" eType="_fZDzAd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0k96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0lN6tEei97MD7GK1RmA" key="documentation" value="The query subsettingContext() gives the context for subsetting a property. It consists, in the case of an attribute, of the corresponding classifier, and in the case of an association end, all of the classifiers at the other ends.&#xD;&#xA;result = if association->notEmpty()&#xA;then association.endType-type &#xA;else if classifier->notEmpty then Set{classifier} else Set{} endif&#xA;endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0ld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD0lt6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZD0l96tEei97MD7GK1RmA" name="isNavigable" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD0mN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0md6tEei97MD7GK1RmA" key="documentation" value="The query isNavigable indicates whether it is possible to navigate across the property.&#xD;&#xA;result = not classifier->isEmpty() or&#xA;association.owningAssociation.navigableOwnedEnd->includes(self)"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0mt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD0m96tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD0nd6tEei97MD7GK1RmA" name="isDerivedUnion" ordered="false" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_fZD0nt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0n96tEei97MD7GK1RmA" key="documentation" value="Specifies whether the property is derived as the union of all of the properties that are constrained to subset it. The default value is false."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0od6tEei97MD7GK1RmA" name="owningAssociation" ordered="false" eType="_fZD1vd6tEei97MD7GK1RmA" transient="true" eOpposite="_fZD12N6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0ot6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0o96tEei97MD7GK1RmA" key="documentation" value="References the owning association of this property, if any. Subsets Property::association, NamedElement::namespace, and Feature::featuringClassifier."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0pN6tEei97MD7GK1RmA" source="subsets" references="_fZD0pd6tEei97MD7GK1RmA _fZDzpd6tEei97MD7GK1RmA _fZD00t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0pd6tEei97MD7GK1RmA" name="association" ordered="false" eType="_fZD1vd6tEei97MD7GK1RmA" eOpposite="_fZD10N6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0pt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0p96tEei97MD7GK1RmA" key="documentation" value="References the association of which this property is a member, if any."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0qN6tEei97MD7GK1RmA" name="redefinedProperty" ordered="false" upperBound="-1" eType="_fZD0Ud6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0qd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0qt6tEei97MD7GK1RmA" key="documentation" value="References the properties that are redefined by this property. Subsets RedefinableElement::redefinedElement."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0q96tEei97MD7GK1RmA" source="subsets" references="_fZD0-96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0rN6tEei97MD7GK1RmA" name="subsettedProperty" ordered="false" upperBound="-1" eType="_fZD0Ud6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0rd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0rt6tEei97MD7GK1RmA" key="documentation" value="References the properties of which this property is constrained to be a subset."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0r96tEei97MD7GK1RmA" name="datatype" ordered="false" eType="_fZD13N6tEei97MD7GK1RmA" transient="true" eOpposite="_fZD1696tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0sN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0sd6tEei97MD7GK1RmA" key="documentation" value="The DataType that owns this Operation. Subsets NamedElement::namespace, Feature::featuringClassifier, and RedefinableElement::redefinitionContext."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0st6tEei97MD7GK1RmA" source="subsets" references="_fZDzpd6tEei97MD7GK1RmA _fZD00t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD0s96tEei97MD7GK1RmA" name="isReadOnly" ordered="false" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_fZD0tN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0td6tEei97MD7GK1RmA" key="documentation" value="This redefines the corresponding attribute in Basic::Property and Abstractions::StructuralFeature. The default value is false.&#xD;&#xA;If isReadOnly is true, the attribute may not be written to after initialization. The default value is false."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD0t96tEei97MD7GK1RmA" name="default" ordered="false">
+      <eAnnotations xmi:id="_fZD0uN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0ud6tEei97MD7GK1RmA" key="documentation" value="Specifies a String that represents a value to be used when no argument is supplied for the Property.&#xD;&#xA;A string that is evaluated to give a default value for the attribute when an object of the owning class is instantiated."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD0u96tEei97MD7GK1RmA" name="isComposite" ordered="false" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_fZD0vN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0vd6tEei97MD7GK1RmA" key="documentation" value="If isComposite is true, the object containing the attribute is a container for the object or value contained in the attribute. The default value is false."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD0v96tEei97MD7GK1RmA" name="isDerived" ordered="false" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_fZD0wN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0wd6tEei97MD7GK1RmA" key="documentation" value="If isDerived is true, the value of the attribute is derived from information elsewhere. The default value is false."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0w96tEei97MD7GK1RmA" name="opposite" ordered="false" eType="_fZD0Ud6tEei97MD7GK1RmA" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZD0xN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0xd6tEei97MD7GK1RmA" key="documentation" value="In the case where the property is one navigable end of a binary association with both ends navigable, this gives the other end.&#xD;&#xA;Two attributes attr1 and attr2 of two objects o1 and o2 (which may be the same object) may be paired with each other so that o1.attr1 refers to o2 if and only if o2.attr2 refers to o1. In such a case attr1 is the opposite of attr2 and attr2 is the opposite of attr1."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD0xt6tEei97MD7GK1RmA" name="isID" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0yN6tEei97MD7GK1RmA" name="class" ordered="false" eType="_fZD0Nt6tEei97MD7GK1RmA" transient="true" eOpposite="_fZD0Rd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0yd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0yt6tEei97MD7GK1RmA" key="documentation" value="The class that owns the property, and of which the property is an attribute."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0y96tEei97MD7GK1RmA" source="subsets" references="_fZDzpd6tEei97MD7GK1RmA _fZD00t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD0zN6tEei97MD7GK1RmA" name="StructuralFeature" abstract="true" eSuperTypes="_fZD0z96tEei97MD7GK1RmA _fZD1cd6tEei97MD7GK1RmA _fZD0_96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD0zd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD0zt6tEei97MD7GK1RmA" key="documentation" value="A structural feature is a typed feature of a classifier that specifies the structure of instances of the classifier. Structural feature is an abstract metaclass."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD0z96tEei97MD7GK1RmA" name="Feature" abstract="true" eSuperTypes="_fZD01t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD00N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD00d6tEei97MD7GK1RmA" key="documentation" value="A feature declares a behavioral or structural characteristic of instances of classifiers. Feature is an abstract metaclass."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD00t6tEei97MD7GK1RmA" name="featuringClassifier" ordered="false" upperBound="-1" eType="_fZDzAd6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true" eOpposite="_fZDzT96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD0096tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD01N6tEei97MD7GK1RmA" key="documentation" value="Redefines the corresponding association in Abstractions. This is a derived union."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD01d6tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD01t6tEei97MD7GK1RmA" name="RedefinableElement" abstract="true" eSuperTypes="_fZDzod6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD0196tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD02N6tEei97MD7GK1RmA" key="documentation" value="A redefinable element is an element that, when defined in the context of a classifier, can be redefined more specifically or differently in the context of another classifier that specializes (directly or indirectly) the context classifier. "/>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD02d6tEei97MD7GK1RmA" name="redefinition_context_valid">
+      <eAnnotations xmi:id="_fZD02t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0296tEei97MD7GK1RmA" key="documentation" value="At least one of the redefinition contexts of the redefining element must be a specialization of at least one of the redefinition contexts for each redefined element.&#xD;&#xA;self.redefinedElement->forAll(e | self.isRedefinitionContextValid(e))"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD03d6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD0396tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD04d6tEei97MD7GK1RmA" name="redefinition_consistent">
+      <eAnnotations xmi:id="_fZD04t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0496tEei97MD7GK1RmA" key="documentation" value="A redefining element must be consistent with each redefined element.&#xD;&#xA;self.redefinedElement->forAll(re | re.isConsistentWith(self))"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD05d6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD0596tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD06d6tEei97MD7GK1RmA" name="isConsistentWith" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD06t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0696tEei97MD7GK1RmA" key="documentation" value="The query isConsistentWith() specifies, for any two RedefinableElements in a context in which redefinition is possible, whether redefinition would be logically consistent. By default, this is false; this operation must be overridden for subclasses of RedefinableElement to define the consistency conditions.&#xD;&#xA;result = false"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD07N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD07d6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD0796tEei97MD7GK1RmA" name="redefinee" ordered="false" lowerBound="1" eType="_fZD01t6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD08N6tEei97MD7GK1RmA" name="isRedefinitionContextValid" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD08d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD08t6tEei97MD7GK1RmA" key="documentation" value="The query isRedefinitionContextValid() specifies whether the redefinition contexts of this RedefinableElement are properly related to the redefinition contexts of the specified RedefinableElement to allow this element to redefine the other. By default at least one of the redefinition contexts of this element must be a specialization of at least one of the redefinition contexts of the specified element.&#xD;&#xA;result = self.redefinitionContext->exists(c | redefinable.redefinitionContext->exists(r | c.allParents()->includes(r)))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0896tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD09N6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD09t6tEei97MD7GK1RmA" name="redefinable" ordered="false" lowerBound="1" eType="_fZD01t6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0996tEei97MD7GK1RmA" name="redefinitionContext" ordered="false" upperBound="-1" eType="_fZDzAd6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZD0-N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0-d6tEei97MD7GK1RmA" key="documentation" value="References the contexts that this element may be redefined from. This is a derived union."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0-t6tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD0-96tEei97MD7GK1RmA" name="redefinedElement" ordered="false" upperBound="-1" eType="_fZD01t6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZD0_N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD0_d6tEei97MD7GK1RmA" key="documentation" value="The redefinable element that is being redefined by this element. This is a derived union."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD0_t6tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD0_96tEei97MD7GK1RmA" name="TypedElement" abstract="true" eSuperTypes="_fZDzod6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD1AN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD1Ad6tEei97MD7GK1RmA" key="documentation" value="A typed element is an element that has a type that serves as a constraint on the range of values the element can represent. Typed element is an abstract metaclass.&#xD;&#xA;A typed element is a kind of named element that represents elements with types."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1At6tEei97MD7GK1RmA" name="type" ordered="false" eType="_fZD1Bd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD1A96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1BN6tEei97MD7GK1RmA" key="documentation" value="Redefines the corresponding property from Basic to derive this information from the return result for this Operation.&#xD;&#xA;The type of the TypedElement."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD1Bd6tEei97MD7GK1RmA" name="Type" abstract="true" eSuperTypes="_fZD1Ft6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD1Bt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD1B96tEei97MD7GK1RmA" key="documentation" value="A type serves as a constraint on the range of values represented by a typed element. Type is an abstract metaclass.&#xD;&#xA;A type is a named element that is used as the type for a typed element. A type can be contained in a package."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD1CN6tEei97MD7GK1RmA" name="conformsTo" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD1Cd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Ct6tEei97MD7GK1RmA" key="documentation" value="The query conformsTo() gives true for a type that conforms to another. By default, two types do not conform to each other. This query is intended to be redefined for specific conformance situations.&#xD;&#xA;result = false"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1C96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD1DN6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD1Dt6tEei97MD7GK1RmA" name="other" ordered="false" lowerBound="1" eType="_fZD1Bd6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD1D96tEei97MD7GK1RmA" name="isInstance" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD1Ed6tEei97MD7GK1RmA" name="object" ordered="false" lowerBound="1" eType="_fZD1cN6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1Et6tEei97MD7GK1RmA" name="package" ordered="false" eType="_fZD1Gd6tEei97MD7GK1RmA" volatile="true" transient="true" derived="true" eOpposite="_fZD1Td6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD1E96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1FN6tEei97MD7GK1RmA" key="documentation" value="References the owning package of a package. Subsets NamedElement::namespace and redefines Basic::Package::nestingPackage.&#xD;&#xA;Specifies the owning package of this classifier, if any."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1Fd6tEei97MD7GK1RmA" source="subsets" references="_fZDzpd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD1Ft6tEei97MD7GK1RmA" name="PackageableElement" abstract="true" eSuperTypes="_fZDzod6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD1F96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD1GN6tEei97MD7GK1RmA" key="documentation" value="A packageable element indicates a named element that may be owned directly by a package."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD1Gd6tEei97MD7GK1RmA" name="Package" eSuperTypes="_fZDzYN6tEei97MD7GK1RmA _fZD1Ft6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD1Gt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD1G96tEei97MD7GK1RmA" key="documentation" value="A package is a namespace for its members, and may contain other packages. Only packageable elements can be owned members of a package. By virtue of being a namespace, a package can import either individual members of other packages, or all the members of other packages. In addition a package can be merged with other packages.&#xD;&#xA;A package is a container for types and other packages."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_fZD1HN6tEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EOperation" xmi:id="_fZD1Hd6tEei97MD7GK1RmA" name="mustBeOwned" ordered="false" lowerBound="1">
+        <eAnnotations xmi:id="_fZD1Ht6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD1H96tEei97MD7GK1RmA" key="documentation" value="The query mustBeOwned() indicates whether elements of this type must have an owner.&#xD;&#xA;result = false"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD1IN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+          <details xmi:id="_fZD1Id6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD1It6tEei97MD7GK1RmA" source="redefines" references="_fZDz-t6tEei97MD7GK1RmA"/>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD1JN6tEei97MD7GK1RmA" name="elements_public_or_private">
+      <eAnnotations xmi:id="_fZD1Jd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Jt6tEei97MD7GK1RmA" key="documentation" value="If an element that is owned by a package has visibility, it is public or private.&#xD;&#xA;self.ownedElements->forAll(e | e.visibility->notEmpty() implies e.visbility = #public or e.visibility = #private)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD1KN6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD1Kt6tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD1LN6tEei97MD7GK1RmA" name="visibleMembers" ordered="false" upperBound="-1" eType="_fZD1Ft6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD1Ld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Lt6tEei97MD7GK1RmA" key="documentation" value="The query visibleMembers() defines which members of a Package can be accessed outside it.&#xD;&#xA;result = member->select( m | self.makesVisible(m))"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1L96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD1MN6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZD1Md6tEei97MD7GK1RmA" name="makesVisible" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD1Mt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1M96tEei97MD7GK1RmA" key="documentation" value="The query makesVisible() defines whether a Package makes an element visible outside itself. Elements with no visibility and elements with public visibility are made visible.&#xD;&#xA;self.member->includes(el)&#xD;&#xA;result = (ownedMember->includes(el)) or&#xA;   (elementImport->&#xA;      select(ei|ei.visibility = #public)->&#xA;         collect(ei|ei.importedElement)->includes(el)) or&#xA;   (packageImport->&#xA;      select(pi|pi.visibility = #public)->&#xA;        collect(pi|&#xA;           pi.importedPackage.member->includes(el))->notEmpty())"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1NN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD1Nd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD1N96tEei97MD7GK1RmA" name="el" ordered="false" lowerBound="1" eType="_fZDzod6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1ON6tEei97MD7GK1RmA" name="ownedMember" ordered="false" upperBound="-1" eType="_fZD1Ft6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_fZD1Od6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Ot6tEei97MD7GK1RmA" key="documentation" value="Specifies the members that are owned by this Package. Redefines Namespace::ownedMember."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1O96tEei97MD7GK1RmA" source="redefines" references="_fZDzZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1PN6tEei97MD7GK1RmA" name="packageMerge" ordered="false" upperBound="-1" eType="_fZD1Ud6tEei97MD7GK1RmA" containment="true" eOpposite="_fZD1WN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD1Pd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Pt6tEei97MD7GK1RmA" key="documentation" value="References the PackageMerges that are owned by this Package. Subsets Element::ownedElement."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1P96tEei97MD7GK1RmA" source="subsets" references="_fZD0Ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1QN6tEei97MD7GK1RmA" name="nestedPackage" ordered="false" upperBound="-1" eType="_fZD1Gd6tEei97MD7GK1RmA" volatile="true" transient="true" derived="true" resolveProxies="false" eOpposite="_fZD1RN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD1Qd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Qt6tEei97MD7GK1RmA" key="documentation" value="References the owned members that are Packages. Subsets Package::ownedMember and redefines Basic::Package::nestedPackage.&#xD;&#xA;The set of contained packages."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1Q96tEei97MD7GK1RmA" source="subsets" references="_fZD1ON6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1RN6tEei97MD7GK1RmA" name="nestingPackage" ordered="false" eType="_fZD1Gd6tEei97MD7GK1RmA" volatile="true" transient="true" derived="true" eOpposite="_fZD1QN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD1Rd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Rt6tEei97MD7GK1RmA" key="documentation" value="References the owning package of a package. Subsets NamedElement::namespace and redefines Basic::Package::nestingPackage.&#xD;&#xA;The containing package."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1R96tEei97MD7GK1RmA" source="subsets" references="_fZDzpd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD1SN6tEei97MD7GK1RmA" name="uRI" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD1Sd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_fZD1St6tEei97MD7GK1RmA" key="name" value="uri"/>
+        <details xmi:id="_fZD1S96tEei97MD7GK1RmA" key="kind" value="attribute"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1Td6tEei97MD7GK1RmA" name="ownedType" ordered="false" upperBound="-1" eType="_fZD1Bd6tEei97MD7GK1RmA" volatile="true" transient="true" derived="true" resolveProxies="false" eOpposite="_fZD1Et6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD1Tt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1T96tEei97MD7GK1RmA" key="documentation" value="References the owned members that are Types. Subsets Package::ownedMember and redefines Basic::Package::ownedType.&#xD;&#xA;The set of contained types."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1UN6tEei97MD7GK1RmA" source="subsets" references="_fZD1ON6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD1Ud6tEei97MD7GK1RmA" name="PackageMerge" eSuperTypes="_fZD1XN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD1Ut6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD1U96tEei97MD7GK1RmA" key="documentation" value="A package merge is a directed relationship between two packages, that indicates that the contents of the two packages are to be combined. It is very similar to Generalization in the sense that the source element conceptually adds the characteristics of the target element to its own characteristics resulting in an element that combines the characteristics of both.&#xA;&#xA;&#xA;&#xA;This mechanism should be used when elements defined in different packages have the same name and are intended to represent the same concept. Most often it is used to provide different definitions of a given concept for different purposes, starting from a common base definition. A given base concept is extended in increments, with each increment defined in a separate merged package. By selecting which increments to merge, it is possible to obtain a custom definition of a concept for a specific end. Package merge is particularly useful in meta-modeling and is extensively used in the definition of the UML metamodel.&#xA;&#xA;&#xA;&#xA;Conceptually, a package merge can be viewed as an operation that takes the contents of two packages and produces a new package that combines the contents of the packages involved in the merge. In terms of model semantics, there is no difference between a model with explicit package merges, and a model in which all the merges have been performed."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1VN6tEei97MD7GK1RmA" name="mergedPackage" ordered="false" lowerBound="1" eType="_fZD1Gd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD1Vd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Vt6tEei97MD7GK1RmA" key="documentation" value="References the Package that is to be merged with the receiving package of the Package-Merge. Subsets DirectedRelationship::target."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1V96tEei97MD7GK1RmA" source="subsets" references="_fZD1ZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1WN6tEei97MD7GK1RmA" name="receivingPackage" ordered="false" lowerBound="1" eType="_fZD1Gd6tEei97MD7GK1RmA" transient="true" eOpposite="_fZD1PN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD1Wd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Wt6tEei97MD7GK1RmA" key="documentation" value="References the Package that is being extended with the contents of the merged package of the PackageMerge. Subsets Element::owner and DirectedRelationship::source."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1W96tEei97MD7GK1RmA" source="subsets" references="_fZD1X96tEei97MD7GK1RmA _fZD0It6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD1XN6tEei97MD7GK1RmA" name="DirectedRelationship" abstract="true" eSuperTypes="_fZD1ad6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD1Xd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD1Xt6tEei97MD7GK1RmA" key="documentation" value="A directed relationship references one or more source elements and one or more target elements. DirectedRelationship is an abstract metaclass."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1X96tEei97MD7GK1RmA" name="source" ordered="false" lowerBound="1" upperBound="-1" eType="_fZDz4t6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZD1YN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Yd6tEei97MD7GK1RmA" key="documentation" value="Specifies the sources of the DirectedRelationship. Subsets Relationship::relatedElement. This is a derived union."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1Yt6tEei97MD7GK1RmA" source="subsets" references="_fZD1bN6tEei97MD7GK1RmA"/>
+      <eAnnotations xmi:id="_fZD1Y96tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1ZN6tEei97MD7GK1RmA" name="target" ordered="false" lowerBound="1" upperBound="-1" eType="_fZDz4t6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZD1Zd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1Zt6tEei97MD7GK1RmA" key="documentation" value="Specifies the targets of the DirectedRelationship. Subsets Relationship::relatedElement. This is a derived union."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1Z96tEei97MD7GK1RmA" source="subsets" references="_fZD1bN6tEei97MD7GK1RmA"/>
+      <eAnnotations xmi:id="_fZD1aN6tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD1ad6tEei97MD7GK1RmA" name="Relationship" abstract="true" eSuperTypes="_fZDz4t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD1at6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD1a96tEei97MD7GK1RmA" key="documentation" value="A relationship references one or more related elements. Relationship is an abstract metaclass."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1bN6tEei97MD7GK1RmA" name="relatedElement" ordered="false" lowerBound="1" upperBound="-1" eType="_fZDz4t6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZD1bd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1bt6tEei97MD7GK1RmA" key="documentation" value="Specifies the elements related by the Relationship. This is a derived union."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1b96tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fZD1cN6tEei97MD7GK1RmA" name="Object" instanceClassName="java.lang.Object"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD1cd6tEei97MD7GK1RmA" name="MultiplicityElement" abstract="true" eSuperTypes="_fZDz4t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD1ct6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD1c96tEei97MD7GK1RmA" key="documentation" value="A MultiplicityElement is an abstract metaclass which includes optional attributes for defining the bounds of a multiplicity. A MultiplicityElement also includes specifications of whether the values in an instantiation of this element must be unique or ordered."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD1dN6tEei97MD7GK1RmA" name="upper_gt_0">
+      <eAnnotations xmi:id="_fZD1dd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1dt6tEei97MD7GK1RmA" key="documentation" value="A multiplicity must define at least one valid cardinality that is greater than zero.&#xD;&#xA;upperBound()->notEmpty() implies upperBound() > 0"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD1eN6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD1et6tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD1fN6tEei97MD7GK1RmA" name="lower_ge_0">
+      <eAnnotations xmi:id="_fZD1fd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1ft6tEei97MD7GK1RmA" key="documentation" value="The lower bound must be a non-negative integer literal.&#xD;&#xA;lowerBound()->notEmpty() implies lowerBound() >= 0"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD1gN6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD1gt6tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD1hN6tEei97MD7GK1RmA" name="upper_ge_lower">
+      <eAnnotations xmi:id="_fZD1hd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1ht6tEei97MD7GK1RmA" key="documentation" value="The upper bound must be greater than or equal to the lower bound.&#xD;&#xA;(upperBound()->notEmpty() and lowerBound()->notEmpty()) implies upperBound() >= lowerBound()"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD1iN6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD1it6tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD1jN6tEei97MD7GK1RmA" name="lowerBound" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD1jd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1jt6tEei97MD7GK1RmA" key="documentation" value="The query lowerBound() returns the lower bound of the multiplicity as an integer.&#xD;&#xA;result = if lower->notEmpty() then lower else 1 endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1j96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD1kN6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD1kt6tEei97MD7GK1RmA" name="upperBound" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD1k96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1lN6tEei97MD7GK1RmA" key="documentation" value="The query upperBound() returns the upper bound of the multiplicity for a bounded multiplicity as an unlimited natural.&#xD;&#xA;result = if upper->notEmpty() then upper else 1 endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1ld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD1lt6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD1mN6tEei97MD7GK1RmA" name="isMultivalued" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD1md6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1mt6tEei97MD7GK1RmA" key="documentation" value="The query isMultivalued() checks whether this multiplicity has an upper bound greater than one.&#xD;&#xA;upperBound()->notEmpty()&#xD;&#xA;result = upperBound() > 1"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1m96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD1nN6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD1nt6tEei97MD7GK1RmA" name="includesCardinality" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD1n96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1oN6tEei97MD7GK1RmA" key="documentation" value="The query includesCardinality() checks whether the specified cardinality is valid for this multiplicity.&#xD;&#xA;upperBound()->notEmpty() and lowerBound()->notEmpty()&#xD;&#xA;result = (lowerBound() &lt;= C) and (upperBound() >= C)"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1od6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD1ot6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD1pN6tEei97MD7GK1RmA" name="C" ordered="false" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD1pt6tEei97MD7GK1RmA" name="includesMultiplicity" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD1p96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1qN6tEei97MD7GK1RmA" key="documentation" value="The query includesMultiplicity() checks whether this multiplicity includes all the cardinalities allowed by the specified multiplicity.&#xD;&#xA;self.upperBound()->notEmpty() and self.lowerBound()->notEmpty() and M.upperBound()->notEmpty() and M.lowerBound()->notEmpty()&#xD;&#xA;result = (self.lowerBound() &lt;= M.lowerBound()) and (self.upperBound() >= M.upperBound())"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1qd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD1qt6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD1rN6tEei97MD7GK1RmA" name="M" ordered="false" lowerBound="1" eType="_fZD1cd6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD1rd6tEei97MD7GK1RmA" name="isOrdered" ordered="false" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_fZD1rt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1r96tEei97MD7GK1RmA" key="documentation" value="For a multivalued multiplicity, this attribute specifies whether the values in an instantiation of this element are sequentially ordered. Default is false."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD1sd6tEei97MD7GK1RmA" name="isUnique" ordered="false" lowerBound="1" defaultValueLiteral="true">
+      <eAnnotations xmi:id="_fZD1st6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1s96tEei97MD7GK1RmA" key="documentation" value="For a multivalued multiplicity, this attributes specifies whether the values in an instantiation of this element are unique. Default is true."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD1td6tEei97MD7GK1RmA" name="lower" ordered="false" defaultValueLiteral="1">
+      <eAnnotations xmi:id="_fZD1tt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1t96tEei97MD7GK1RmA" key="documentation" value="Specifies the lower bound of the multiplicity interval. Default is one."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD1ud6tEei97MD7GK1RmA" name="upper" ordered="false" defaultValueLiteral="1">
+      <eAnnotations xmi:id="_fZD1ut6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1u96tEei97MD7GK1RmA" key="documentation" value="Specifies the upper bound of the multiplicity interval. Default is one."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD1vd6tEei97MD7GK1RmA" name="Association" eSuperTypes="_fZDzAd6tEei97MD7GK1RmA _fZD1ad6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD1vt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD1v96tEei97MD7GK1RmA" key="documentation" value="An association specifies a semantic relationship that can occur between typed instances. It has at least two ends represented by properties, each of which is connected to the type of the end. More than one end of an association may have the same type.&#xA;&#xA;&#xA;&#xA;An end property of an association that is owned by an end class or that is a navigable owned end of the association indicates that the association is navigable from the opposite ends, otherwise the association is not navigable from the opposite ends."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD1wN6tEei97MD7GK1RmA" name="association_ends">
+      <eAnnotations xmi:id="_fZD1wd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1wt6tEei97MD7GK1RmA" key="documentation" value="Association ends of associations with more than two ends must be owned by the association.&#xD;&#xA;if memberEnd->size() > 2 then ownedEnd->includesAll(memberEnd)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD1xN6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD1xt6tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD1yN6tEei97MD7GK1RmA" name="isDerived" ordered="false" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_fZD1yd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1yt6tEei97MD7GK1RmA" key="documentation" value="Specifies whether the association is derived from other model elements such as other associations or constraints. The default value is false."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1zN6tEei97MD7GK1RmA" name="endType" ordered="false" lowerBound="1" upperBound="-1" eType="_fZD1Bd6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZD1zd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD1zt6tEei97MD7GK1RmA" key="documentation" value="References the classifiers that are used as types of the ends of the association."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1z96tEei97MD7GK1RmA" source="subsets" references="_fZD1bN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD10N6tEei97MD7GK1RmA" name="memberEnd" lowerBound="2" upperBound="-1" eType="_fZD0Ud6tEei97MD7GK1RmA" eOpposite="_fZD0pd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD10d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD10t6tEei97MD7GK1RmA" key="documentation" value="Each end represents participation of instances of the classifier connected to the end in links of the association. This is an ordered association."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1096tEei97MD7GK1RmA" source="subsets" references="_fZDznd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD11N6tEei97MD7GK1RmA" name="navigableOwnedEnd" ordered="false" upperBound="-1" eType="_fZD0Ud6tEei97MD7GK1RmA" resolveProxies="false">
+      <eAnnotations xmi:id="_fZD11d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD11t6tEei97MD7GK1RmA" key="documentation" value="The navigable ends that are owned by the association itself."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1196tEei97MD7GK1RmA" source="subsets" references="_fZD12N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD12N6tEei97MD7GK1RmA" name="ownedEnd" upperBound="-1" eType="_fZD0Ud6tEei97MD7GK1RmA" containment="true" eOpposite="_fZD0od6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD12d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD12t6tEei97MD7GK1RmA" key="documentation" value="The ends that are owned by the association itself. This is an ordered association."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD1296tEei97MD7GK1RmA" source="subsets" references="_fZD10N6tEei97MD7GK1RmA _fZDzT96tEei97MD7GK1RmA _fZDzZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD13N6tEei97MD7GK1RmA" name="DataType" eSuperTypes="_fZDzAd6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD13d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD13t6tEei97MD7GK1RmA" key="documentation" value="A data type is a type whose instances are identified only by their value. A DataType may contain attributes to support the modeling of structured data types.&#xA;&#xA;&#xA;&#xA;A typical use of data types would be to represent programming language primitive types or CORBA basic types. For example, integer and string types are often treated as data types.&#xD;&#xA;DataType is an abstract class that acts as a common superclass for different kinds of data types."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_fZD1396tEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EOperation" xmi:id="_fZD14N6tEei97MD7GK1RmA" name="inherit" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fZD14d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD14t6tEei97MD7GK1RmA" key="documentation" value="The inherit operation is overridden to exclude redefined properties.&#xD;&#xA;result = inhs->excluding(inh | ownedMember->select(oclIsKindOf(RedefinableElement))->select(redefinedElement->includes(inh)))"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD1496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+          <details xmi:id="_fZD15N6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD15d6tEei97MD7GK1RmA" source="redefines" references="_fZDzQt6tEei97MD7GK1RmA"/>
+        <eParameters xmi:id="_fZD15t6tEei97MD7GK1RmA" name="inhs" ordered="false" upperBound="-1" eType="_fZDzod6tEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1596tEei97MD7GK1RmA" name="ownedOperation" upperBound="-1" eType="_fZD1796tEei97MD7GK1RmA" containment="true" eOpposite="_fZD2Yd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD16N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD16d6tEei97MD7GK1RmA" key="documentation" value="The Operations owned by the DataType. Subsets Classifier::feature and Element::ownedMember."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD16t6tEei97MD7GK1RmA" source="subsets" references="_fZDzT96tEei97MD7GK1RmA _fZDzZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD1696tEei97MD7GK1RmA" name="ownedAttribute" upperBound="-1" eType="_fZD0Ud6tEei97MD7GK1RmA" containment="true" eOpposite="_fZD0r96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD17N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD17d6tEei97MD7GK1RmA" key="documentation" value="The Attributes owned by the DataType. Subsets Classifier::attribute and Element::ownedMember."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD17t6tEei97MD7GK1RmA" source="subsets" references="_fZDzVN6tEei97MD7GK1RmA _fZDzZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD1796tEei97MD7GK1RmA" name="Operation" eSuperTypes="_fZD2Zd6tEei97MD7GK1RmA _fZD1cd6tEei97MD7GK1RmA _fZD0_96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD18N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD18d6tEei97MD7GK1RmA" key="documentation" value="An operation is owned by a class and may be invoked in the context of objects that are instances of that class. It is a typed element and a multiplicity element."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_fZD18t6tEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EOperation" xmi:id="_fZD1896tEei97MD7GK1RmA" name="lowerBound" ordered="false" lowerBound="1">
+        <eAnnotations xmi:id="_fZD19N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD19d6tEei97MD7GK1RmA" key="documentation" value="If this operation has a return parameter, lower equals the value of lower for that parameter. Otherwise lower is not defined.&#xD;&#xA;result = if returnResult->size() = 1 then returnResult->any().lower else Set{} endif"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD19t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+          <details xmi:id="_fZD1996tEei97MD7GK1RmA" key="constraints" value="spec"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD1-N6tEei97MD7GK1RmA" source="redefines" references="_fZD1jN6tEei97MD7GK1RmA"/>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" xmi:id="_fZD1-t6tEei97MD7GK1RmA" name="upperBound" ordered="false" lowerBound="1">
+        <eAnnotations xmi:id="_fZD1-96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD1_N6tEei97MD7GK1RmA" key="documentation" value="If this operation has a return parameter, upper equals the value of upper for that parameter. Otherwise upper is not defined.&#xD;&#xA;result = if returnResult->size() = 1 then returnResult->any().upper else Set{} endif"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD1_d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+          <details xmi:id="_fZD1_t6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD1_96tEei97MD7GK1RmA" source="redefines" references="_fZD1kt6tEei97MD7GK1RmA"/>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EOperation" xmi:id="_fZD2Ad6tEei97MD7GK1RmA" name="isConsistentWith" ordered="false" lowerBound="1">
+        <eAnnotations xmi:id="_fZD2At6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD2A96tEei97MD7GK1RmA" key="documentation" value="The query isConsistentWith() specifies, for any two Operations in a context in which redefinition is possible, whether redefinition would be consistent in the sense of maintaining type covariance. Other senses of consistency may be required, for example to determine consistency in the sense of contravariance. Users may define alternative queries under names different from 'isConsistentWith()', as for example, users may define a query named 'isContravariantWith()'.&#xD;&#xA;redefinee.isRedefinitionContextValid(self)&#xD;&#xA;result = (redefinee.oclIsKindOf(Operation) and&#xA;    let op: Operation = redefinee.oclAsType(Operation) in&#xA;        self.formalParameter.size() = op.formalParameter.size() and&#xA;        self.returnResult.size() = op.returnResult.size() and&#xA;        forAll(i | op.formalParameter[i].type.conformsTo(self.formalParameter[i].type)) and&#xA;        forAll(i | op.returnResult[i].type.conformsTo(self.returnResult[i].type))&#xA;)"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2BN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+          <details xmi:id="_fZD2Bd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2Bt6tEei97MD7GK1RmA" source="redefines" references="_fZD06d6tEei97MD7GK1RmA"/>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+        <eParameters xmi:id="_fZD2CN6tEei97MD7GK1RmA" name="redefinee" ordered="false" lowerBound="1" eType="_fZD01t6tEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EReference" xmi:id="_fZD2Cd6tEei97MD7GK1RmA" name="ownedParameter" upperBound="-1" eType="_fZD2ed6tEei97MD7GK1RmA" containment="true" eOpposite="_fZD2g96tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fZD2Ct6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD2C96tEei97MD7GK1RmA" key="documentation" value="Specifies the ordered set of formal parameters of this BehavioralFeature. Subsets Namespace::ownedMember.&#xD;&#xA;The parameters to the operation."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2DN6tEei97MD7GK1RmA" source="redefines" references="_fZD2ct6tEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EAttribute" xmi:id="_fZD2Dd6tEei97MD7GK1RmA" name="isOrdered" ordered="false" lowerBound="1" volatile="true" transient="true" defaultValueLiteral="false" derived="true">
+        <eAnnotations xmi:id="_fZD2Dt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD2D96tEei97MD7GK1RmA" key="documentation" value="Redefines the corresponding property from Basic to derive this information from the return result for this Operation."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2EN6tEei97MD7GK1RmA" source="redefines" references="_fZD1rd6tEei97MD7GK1RmA"/>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EAttribute" xmi:id="_fZD2Et6tEei97MD7GK1RmA" name="isUnique" ordered="false" lowerBound="1" volatile="true" transient="true" defaultValueLiteral="true" derived="true">
+        <eAnnotations xmi:id="_fZD2E96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD2FN6tEei97MD7GK1RmA" key="documentation" value="Redefines the corresponding property from Basic to derive this information from the return result for this Operation."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2Fd6tEei97MD7GK1RmA" source="redefines" references="_fZD1sd6tEei97MD7GK1RmA"/>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EAttribute" xmi:id="_fZD2F96tEei97MD7GK1RmA" name="lower" ordered="false" volatile="true" transient="true" defaultValueLiteral="1" derived="true">
+        <eAnnotations xmi:id="_fZD2GN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD2Gd6tEei97MD7GK1RmA" key="documentation" value="Redefines the corresponding property from Basic to derive this information from the return result for this Operation."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2Gt6tEei97MD7GK1RmA" source="redefines" references="_fZD1td6tEei97MD7GK1RmA"/>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EAttribute" xmi:id="_fZD2HN6tEei97MD7GK1RmA" name="upper" ordered="false" volatile="true" transient="true" defaultValueLiteral="1" derived="true">
+        <eAnnotations xmi:id="_fZD2Hd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD2Ht6tEei97MD7GK1RmA" key="documentation" value="Redefines the corresponding property from Basic to derive this information from the return result for this Operation."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2H96tEei97MD7GK1RmA" source="redefines" references="_fZD1ud6tEei97MD7GK1RmA"/>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EReference" xmi:id="_fZD2Id6tEei97MD7GK1RmA" name="type" ordered="false" eType="_fZD1Bd6tEei97MD7GK1RmA" volatile="true" transient="true" derived="true">
+        <eAnnotations xmi:id="_fZD2It6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD2I96tEei97MD7GK1RmA" key="documentation" value="Redefines the corresponding property from Basic to derive this information from the return result for this Operation."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2JN6tEei97MD7GK1RmA" source="redefines" references="_fZD1At6tEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EReference" xmi:id="_fZD2Jd6tEei97MD7GK1RmA" name="raisedException" ordered="false" upperBound="-1" eType="_fZD1Bd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fZD2Jt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD2J96tEei97MD7GK1RmA" key="documentation" value="References the Types representing exceptions that may be raised during an invocation of this operation. Redefines Basic::Operation.raisedException and BehavioralFeature.raisedException.&#xD;&#xA;The exceptions that are declared as possible during an invocation of the operation."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2KN6tEei97MD7GK1RmA" source="redefines" references="_fZD2dt6tEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD2Kd6tEei97MD7GK1RmA" name="only_body_for_query">
+      <eAnnotations xmi:id="_fZD2Kt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2K96tEei97MD7GK1RmA" key="documentation" value="A bodyCondition can only be specified for a query operation.&#xD;&#xA;bodyCondition->notEmpty() implies isQuery"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD2Ld6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD2L96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD2Md6tEei97MD7GK1RmA" name="at_most_one_return">
+      <eAnnotations xmi:id="_fZD2Mt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2M96tEei97MD7GK1RmA" key="documentation" value="An operation can have at most one return parameter; i.e., an owned parameter with the direction set to 'return'&#xD;&#xA;self.ownedParameter->select(par | par.direction = #return)->size() &lt;= 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD2Nd6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD2N96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD2Od6tEei97MD7GK1RmA" name="isOrdered" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD2Ot6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2O96tEei97MD7GK1RmA" key="documentation" value="If this operation has a return parameter, isOrdered equals the value of isOrdered for that parameter. Otherwise isOrdered is false.&#xD;&#xA;result = if returnResult->size() = 1 then returnResult->any().isOrdered else false endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2PN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD2Pd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD2P96tEei97MD7GK1RmA" name="isUnique" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD2QN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2Qd6tEei97MD7GK1RmA" key="documentation" value="If this operation has a return parameter, isUnique equals the value of isUnique for that parameter. Otherwise isUnique is true.&#xD;&#xA;result = if returnResult->size() = 1 then returnResult->any().isUnique else true endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2Qt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD2Q96tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD2Rd6tEei97MD7GK1RmA" name="getType" ordered="false" lowerBound="1" eType="_fZD1Bd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD2Rt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2R96tEei97MD7GK1RmA" key="documentation" value="If this operation has a return parameter, type equals the value of type for that parameter. Otherwise type is not defined.&#xD;&#xA;result = if returnResult->size() = 1 then returnResult->any().type else Set{} endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2SN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD2Sd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_fZD2St6tEei97MD7GK1RmA" name="returnResult" ordered="false" upperBound="-1" eType="_fZD2ed6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD2S96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD2TN6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2Td6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2Tt6tEei97MD7GK1RmA" key="documentation" value="result = ownedParameter->select (par | par.direction = #return)"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD2T96tEei97MD7GK1RmA" name="isQuery" ordered="false" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_fZD2UN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2Ud6tEei97MD7GK1RmA" key="documentation" value="Specifies whether an execution of the BehavioralFeature leaves the state of the system unchanged (isQuery=true) or whether side effects may occur (isQuery=false). The default value is false."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2U96tEei97MD7GK1RmA" name="redefinedOperation" ordered="false" upperBound="-1" eType="_fZD1796tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD2VN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2Vd6tEei97MD7GK1RmA" key="documentation" value="References the Operations that are redefined by this Operation. Subsets RedefinableElement.redefinedElement."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2Vt6tEei97MD7GK1RmA" source="subsets" references="_fZD0-96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2V96tEei97MD7GK1RmA" name="precondition" ordered="false" upperBound="-1" eType="_fZD2lt6tEei97MD7GK1RmA" resolveProxies="false">
+      <eAnnotations xmi:id="_fZD2WN6tEei97MD7GK1RmA" source="subsets" references="_fZDzj96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2Wd6tEei97MD7GK1RmA" name="postcondition" ordered="false" upperBound="-1" eType="_fZD2lt6tEei97MD7GK1RmA" resolveProxies="false">
+      <eAnnotations xmi:id="_fZD2Wt6tEei97MD7GK1RmA" source="subsets" references="_fZDzj96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2W96tEei97MD7GK1RmA" name="bodyCondition" ordered="false" upperBound="-1" eType="_fZD2lt6tEei97MD7GK1RmA" resolveProxies="false">
+      <eAnnotations xmi:id="_fZD2XN6tEei97MD7GK1RmA" source="subsets" references="_fZDzj96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2Xd6tEei97MD7GK1RmA" name="class" ordered="false" eType="_fZD0Nt6tEei97MD7GK1RmA" transient="true" eOpposite="_fZD0Sd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD2Xt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2X96tEei97MD7GK1RmA" key="documentation" value="The class that owns the operation. Subsets RedefinableElement::redefinitionContext and NamedElement::namespace and Feature::featuringClassifier.&#xD;&#xA;The class that owns the operation."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2YN6tEei97MD7GK1RmA" source="subsets" references="_fZD0996tEei97MD7GK1RmA _fZDzpd6tEei97MD7GK1RmA _fZD00t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2Yd6tEei97MD7GK1RmA" name="datatype" ordered="false" eType="_fZD13N6tEei97MD7GK1RmA" transient="true" eOpposite="_fZD1596tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD2Yt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2Y96tEei97MD7GK1RmA" key="documentation" value="The DataType that owns this Operation. Subsets NamedElement::namespace, Feature::featuringClassifier, and RedefinableElement::redefinitionContext."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2ZN6tEei97MD7GK1RmA" source="subsets" references="_fZD0996tEei97MD7GK1RmA _fZDzpd6tEei97MD7GK1RmA _fZD00t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD2Zd6tEei97MD7GK1RmA" name="BehavioralFeature" abstract="true" eSuperTypes="_fZDzYN6tEei97MD7GK1RmA _fZD0z96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD2Zt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD2Z96tEei97MD7GK1RmA" key="documentation" value="A behavioral feature is a feature of a classifier that specifies an aspect of the behavior of its instances. BehavioralFeature is an abstract metaclass specializing Feature and Namespace. Kinds of behavioral aspects are modeled by subclasses of BehavioralFeature."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_fZD2aN6tEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EOperation" xmi:id="_fZD2ad6tEei97MD7GK1RmA" name="isDistinguishableFrom" ordered="false" lowerBound="1">
+        <eAnnotations xmi:id="_fZD2at6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fZD2a96tEei97MD7GK1RmA" key="documentation" value="The query isDistinguishableFrom() determines whether two BehavioralFeatures may coexist in the same Namespace. It specifies that they have to have different signatures.&#xD;&#xA;result = if n.oclIsKindOf(BehavioralFeature)&#xA;then&#xA;  if ns.getNamesOfMember(self)->intersection(ns.getNamesOfMember(n))->notEmpty()&#xA;  then Set{}->include(self)->include(n)->isUnique( bf | bf.parameter->collect(type))&#xA;  else true&#xA;  endif&#xA;else true&#xA;endif"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2bN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+          <details xmi:id="_fZD2bd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fZD2bt6tEei97MD7GK1RmA" source="redefines" references="_fZDzx96tEei97MD7GK1RmA"/>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+        <eParameters xmi:id="_fZD2cN6tEei97MD7GK1RmA" name="n" ordered="false" lowerBound="1" eType="_fZDzod6tEei97MD7GK1RmA"/>
+        <eParameters xmi:id="_fZD2cd6tEei97MD7GK1RmA" name="ns" ordered="false" lowerBound="1" eType="_fZDzYN6tEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2ct6tEei97MD7GK1RmA" name="ownedParameter" upperBound="-1" eType="_fZD2ed6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_fZD2c96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2dN6tEei97MD7GK1RmA" key="documentation" value="Specifies the ordered set of formal parameters of this BehavioralFeature."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2dd6tEei97MD7GK1RmA" source="subsets" references="_fZDzZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2dt6tEei97MD7GK1RmA" name="raisedException" ordered="false" upperBound="-1" eType="_fZD1Bd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD2d96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2eN6tEei97MD7GK1RmA" key="documentation" value="References the Types representing exceptions that may be raised during an invocation of this feature."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD2ed6tEei97MD7GK1RmA" name="Parameter" eSuperTypes="_fZD1cd6tEei97MD7GK1RmA _fZD0_96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD2et6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD2e96tEei97MD7GK1RmA" key="documentation" value="A parameter is a kind of typed element in order to allow the specification of an optional multiplicity on parameters. In addition, it supports the specification of an optional default value.&#xD;&#xA;A parameter is a typed element that represents a parameter of an operation."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD2fN6tEei97MD7GK1RmA" name="default" ordered="false">
+      <eAnnotations xmi:id="_fZD2fd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2ft6tEei97MD7GK1RmA" key="documentation" value="Specifies a String that represents a value to be used when no argument is supplied for the Parameter."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD2gN6tEei97MD7GK1RmA" name="direction" ordered="false" lowerBound="1" eType="_fZD2h96tEei97MD7GK1RmA" defaultValueLiteral="in">
+      <eAnnotations xmi:id="_fZD2gd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2gt6tEei97MD7GK1RmA" key="documentation" value="Indicates whether a parameter is being sent into or out of a behavioral element. The default value is in."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2g96tEei97MD7GK1RmA" name="operation" ordered="false" eType="_fZD1796tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true">
+      <eAnnotations xmi:id="_fZD2hN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2hd6tEei97MD7GK1RmA" key="documentation" value="References the Operation for which this is a formal parameter. Subsets NamedElement::namespace and redefines Basic::Parameter::operation.&#xD;&#xA;The operation that owns the parameter."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2ht6tEei97MD7GK1RmA" source="subsets" references="_fZDzpd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_fZD2h96tEei97MD7GK1RmA" name="ParameterDirectionKind">
+    <eAnnotations xmi:id="_fZD2iN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD2id6tEei97MD7GK1RmA" key="documentation" value="ParameterDirectionKind is an enumeration of the following literal values:&#xA;&#xA;  - in Indicates that parameter values are passed into the behavioral element by the caller.&#xA;&#xA;  - inout Indicates that parameter values are passed into a behavioral element by the caller and then back out to the caller from the behavioral element.&#xA;&#xA;  - out Indicates that parameter values are passed from a behavioral element out to the caller.&#xA;&#xA;  - return Indicates that parameter values are passed as return values from a behavioral element back to the caller.&#xA;&#xA;"/>
+    </eAnnotations>
+    <eLiterals xmi:id="_fZD2it6tEei97MD7GK1RmA" name="in">
+      <eAnnotations xmi:id="_fZD2i96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2jN6tEei97MD7GK1RmA" key="documentation" value="Indicates that parameter values are passed into the behavioral element by the caller."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals xmi:id="_fZD2jd6tEei97MD7GK1RmA" name="inout" value="1">
+      <eAnnotations xmi:id="_fZD2jt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2j96tEei97MD7GK1RmA" key="documentation" value="Indicates that parameter values are passed into a behavioral element by the caller and then back out to the caller from the behavioral element."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals xmi:id="_fZD2kN6tEei97MD7GK1RmA" name="out" value="2">
+      <eAnnotations xmi:id="_fZD2kd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2kt6tEei97MD7GK1RmA" key="documentation" value="Indicates that parameter values are passed from a behavioral element out to the caller."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals xmi:id="_fZD2k96tEei97MD7GK1RmA" name="return" value="3">
+      <eAnnotations xmi:id="_fZD2lN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2ld6tEei97MD7GK1RmA" key="documentation" value="Indicates that parameter values are passed as return values from a behavioral element back to the caller."/>
+      </eAnnotations>
+    </eLiterals>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD2lt6tEei97MD7GK1RmA" name="Constraint" eSuperTypes="_fZD1Ft6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD2l96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD2mN6tEei97MD7GK1RmA" key="documentation" value="Constraint contains a ValueSpecification that specifies additional semantics for one or more elements. Certain kinds of constraints (such as an association &quot;xor&quot; constraint) are predefined in UML, others may be user-defined. A user-defined Constraint is described using a specified language, whose syntax and interpretation is a tool responsibility. One predefined language for writing constraints is OCL. In some situations, a programming language such as Java may be appropriate for expressing a constraint. In other situations natural language may be used.&#xA;&#xA;&#xA;&#xA;Constraint is a condition (a Boolean expression) that restricts the extension of the associated element beyond what is imposed by the other language constructs applied to the element. Constraint contains an optional name, although they are commonly unnamed."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD2md6tEei97MD7GK1RmA" name="not_apply_to_self">
+      <eAnnotations xmi:id="_fZD2mt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2m96tEei97MD7GK1RmA" key="documentation" value="A constraint cannot be applied to itself.&#xD;&#xA;not constrainedElement->includes(self)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD2nd6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD2n96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD2od6tEei97MD7GK1RmA" name="value_specification_boolean">
+      <eAnnotations xmi:id="_fZD2ot6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2o96tEei97MD7GK1RmA" key="documentation" value="The value specification for a constraint must evaluate to a boolean value.&#xD;&#xA;self.specification().booleanValue().isOclKindOf(Boolean)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD2pd6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD2p96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2qd6tEei97MD7GK1RmA" name="context" ordered="false" eType="_fZDzYN6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fZD2qt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2q96tEei97MD7GK1RmA" key="documentation" value="Specifies the Namespace that is the context for evaluating this constraint. This is a derived union."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2rN6tEei97MD7GK1RmA" source="union"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2rd6tEei97MD7GK1RmA" name="constrainedElement" upperBound="-1" eType="_fZDz4t6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD2rt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2r96tEei97MD7GK1RmA" key="documentation" value="The ordered set of Elements referenced by this Constraint."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2sN6tEei97MD7GK1RmA" name="specification" ordered="false" lowerBound="1" eType="_fZD2t96tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_fZD2sd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2st6tEei97MD7GK1RmA" key="documentation" value="A condition that must be true when evaluated in order for the constraint to be satisfied. Subsets Element::ownedElement.&#xA;&#xA;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2s96tEei97MD7GK1RmA" source="subsets" references="_fZD0Ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD2tN6tEei97MD7GK1RmA" name="namespace" ordered="false" eType="_fZDzYN6tEei97MD7GK1RmA" transient="true" eOpposite="_fZDzj96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD2td6tEei97MD7GK1RmA" source="subsets" references="_fZD2qd6tEei97MD7GK1RmA"/>
+      <eAnnotations xmi:id="_fZD2tt6tEei97MD7GK1RmA" source="redefines" references="_fZDzpd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD2t96tEei97MD7GK1RmA" name="ValueSpecification" abstract="true" eSuperTypes="_fZD0_96tEei97MD7GK1RmA _fZD1Ft6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD2uN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD2ud6tEei97MD7GK1RmA" key="documentation" value="ValueSpecification is an abstract metaclass used to identify a value or values in a model. It may reference an instance or it may be an expression denoting an instance or instances when evaluated. It adds a specialization to Constructs::TypedElement."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD2ut6tEei97MD7GK1RmA" name="isComputable" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD2u96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2vN6tEei97MD7GK1RmA" key="documentation" value="The query isComputable() determines whether a value specification can be computed in a model. This operation cannot be fully defined in OCL. A conforming implementation is expected to deliver true for this operation for all value specifications that it can compute, and to compute all of those for which the operation is true. A conforming implementation is expected to be able to compute the value of all literals.&#xD;&#xA;result = false"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2vd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD2vt6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD2wN6tEei97MD7GK1RmA" name="integerValue" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD2wd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2wt6tEei97MD7GK1RmA" key="documentation" value="The query integerValue() gives a single Integer value when one can be computed.&#xD;&#xA;result = Set{}"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2w96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD2xN6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD2xt6tEei97MD7GK1RmA" name="booleanValue" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD2x96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2yN6tEei97MD7GK1RmA" key="documentation" value="The query booleanValue() gives a single Boolean value when one can be computed.&#xD;&#xA;result = Set{}"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2yd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD2yt6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD2zN6tEei97MD7GK1RmA" name="stringValue" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD2zd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2zt6tEei97MD7GK1RmA" key="documentation" value="The query stringValue() gives a single String value when one can be computed.&#xD;&#xA;result = Set{}"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2z96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD20N6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD20t6tEei97MD7GK1RmA" name="unlimitedValue" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD2096tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD21N6tEei97MD7GK1RmA" key="documentation" value="The query unlimitedValue() gives a single UnlimitedNatural value when one can be computed.&#xD;&#xA;result = Set{}"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD21d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD21t6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5at6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD22N6tEei97MD7GK1RmA" name="isNull" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD22d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD22t6tEei97MD7GK1RmA" key="documentation" value="The query isNull() returns true when it can be computed that the value is null.&#xD;&#xA;result = false"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD2296tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD23N6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD23t6tEei97MD7GK1RmA" name="Argument">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD2396tEei97MD7GK1RmA" name="name" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD24d6tEei97MD7GK1RmA" name="value" ordered="false" lowerBound="1" eType="_fZD1cN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fZD24t6tEei97MD7GK1RmA" name="ReflectiveCollection" instanceClassName="java.util.Collection"/>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_fZD2496tEei97MD7GK1RmA" name="VisibilityKind">
+    <eAnnotations xmi:id="_fZD25N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD25d6tEei97MD7GK1RmA" key="documentation" value="VisibilityKind is an enumeration of the following literal values:&#xA;&#xA;  - public&#xA;&#xA;  - private&#xA;&#xA;  - protected&#xA;&#xA;  - package"/>
+    </eAnnotations>
+    <eLiterals xmi:id="_fZD25t6tEei97MD7GK1RmA" name="public">
+      <eAnnotations xmi:id="_fZD2596tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD26N6tEei97MD7GK1RmA" key="documentation" value="A public element is visible to all elements that can access the contents of the namespace that owns it."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals xmi:id="_fZD26d6tEei97MD7GK1RmA" name="private" value="1">
+      <eAnnotations xmi:id="_fZD26t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2696tEei97MD7GK1RmA" key="documentation" value="A private element is only visible inside the namespace that owns it."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals xmi:id="_fZD27N6tEei97MD7GK1RmA" name="protected" value="2">
+      <eAnnotations xmi:id="_fZD27d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD27t6tEei97MD7GK1RmA" key="documentation" value="A protected element is visible to elements that have a generalization relationship to the namespace that owns it."/>
+      </eAnnotations>
+    </eLiterals>
+    <eLiterals xmi:id="_fZD2796tEei97MD7GK1RmA" name="package" value="3">
+      <eAnnotations xmi:id="_fZD28N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD28d6tEei97MD7GK1RmA" key="documentation" value="A package element is owned by a namespace that is not a package, and is visible to elements that are in the same package as its owning namespace. Only named elements that are not owned by packages can be marked as having package visibility.  Any element marked as having package visibility is visible to all elements within the nearest enclosing package (given that other owning elements have proper visibility).  Outside the nearest enclosing package, an element marked as having package visibility is not visible."/>
+      </eAnnotations>
+    </eLiterals>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD28t6tEei97MD7GK1RmA" name="ElementImport" eSuperTypes="_fZD1XN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD2896tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD29N6tEei97MD7GK1RmA" key="documentation" value="An element import is defined as a directed relationship between an importing namespace and a packageable element. The name of the packageable element or its alias is to be added to the namespace of the importing namespace. It is also possible to control whether the imported element can be further imported."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD29d6tEei97MD7GK1RmA" name="visibility_public_or_private">
+      <eAnnotations xmi:id="_fZD29t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2996tEei97MD7GK1RmA" key="documentation" value="The visibility of an ElementImport is either public or private.&#xD;&#xA;self.visibility = #public or self.visibility = #private"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD2-d6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD2-96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD2_d6tEei97MD7GK1RmA" name="imported_element_is_public">
+      <eAnnotations xmi:id="_fZD2_t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD2_96tEei97MD7GK1RmA" key="documentation" value="An importedElement has either public visibility or no visibility at all.&#xD;&#xA;self.importedElement.visibility.notEmpty() implies self.importedElement.visibility = #public"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD3Ad6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD3A96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD3Bd6tEei97MD7GK1RmA" name="getName" ordered="false" lowerBound="1">
+      <eAnnotations xmi:id="_fZD3Bt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3B96tEei97MD7GK1RmA" key="documentation" value="The query getName() returns the name under which the imported PackageableElement will be known in the importing namespace.&#xD;&#xA;result = if self.alias->notEmpty() then &#xA;  self.alias&#xA;else&#xA;  self.importedElement.name&#xA;endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD3CN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+        <details xmi:id="_fZD3Cd6tEei97MD7GK1RmA" key="constraints" value="spec"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD3C96tEei97MD7GK1RmA" name="visibility" ordered="false" lowerBound="1" eType="_fZD2496tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD3DN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3Dd6tEei97MD7GK1RmA" key="documentation" value="Specifies the visibility of the imported PackageableElement within the importing Package. The default visibility is the same as that of the imported element. If the imported element does not have a visibility, it is possible to add visibility to the element import."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD3Dt6tEei97MD7GK1RmA" name="alias" ordered="false">
+      <eAnnotations xmi:id="_fZD3D96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3EN6tEei97MD7GK1RmA" key="documentation" value="Specifies the name that should be added to the namespace of the importing Package in lieu of the name of the imported PackagableElement. The aliased name must not clash with any other member name in the importing Package. By default, no alias is used."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3Et6tEei97MD7GK1RmA" name="importedElement" ordered="false" lowerBound="1" eType="_fZD1Ft6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD3E96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3FN6tEei97MD7GK1RmA" key="documentation" value="Specifies the PackageableElement whose name is to be added to a Namespace. Subsets DirectedRelationship::target."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD3Fd6tEei97MD7GK1RmA" source="subsets" references="_fZD1ZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3Ft6tEei97MD7GK1RmA" name="importingNamespace" ordered="false" lowerBound="1" eType="_fZDzYN6tEei97MD7GK1RmA" transient="true" eOpposite="_fZDzld6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD3F96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3GN6tEei97MD7GK1RmA" key="documentation" value="Specifies the Namespace that imports a PackageableElement from another Package. Subsets DirectedRelationship::source and Element::owner."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD3Gd6tEei97MD7GK1RmA" source="subsets" references="_fZD1X96tEei97MD7GK1RmA _fZD0It6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD3Gt6tEei97MD7GK1RmA" name="PackageImport" eSuperTypes="_fZD1XN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD3G96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD3HN6tEei97MD7GK1RmA" key="documentation" value="A package import is defined as a directed relationship that identifies a package whose members are to be imported by a namespace."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fZD3Hd6tEei97MD7GK1RmA" name="public_or_private">
+      <eAnnotations xmi:id="_fZD3Ht6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3H96tEei97MD7GK1RmA" key="documentation" value="The visibility of a PackageImport is either public or private.&#xD;&#xA;self.visibility = #public or self.visibility = #private"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD3Id6tEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5Vt6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fZD3I96tEei97MD7GK1RmA" name="context">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5e96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD3Jd6tEei97MD7GK1RmA" name="visibility" ordered="false" lowerBound="1" eType="_fZD2496tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD3Jt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3J96tEei97MD7GK1RmA" key="documentation" value="Specifies the visibility of the imported PackageableElements within the importing Namespace, i.e., whether imported elements will in turn be visible to other packages that use that importingPackage as an importedPackage. If the PackageImport is public, the imported elements will be visible outside the package, while if it is private they will not. By default, the value of visibility is public."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3KN6tEei97MD7GK1RmA" name="importedPackage" ordered="false" lowerBound="1" eType="_fZD1Gd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD3Kd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3Kt6tEei97MD7GK1RmA" key="documentation" value="Specifies the Package whose members are imported into a Namespace. Subsets DirectedRelationship::target."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD3K96tEei97MD7GK1RmA" source="subsets" references="_fZD1ZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3LN6tEei97MD7GK1RmA" name="importingNamespace" ordered="false" lowerBound="1" eType="_fZDzYN6tEei97MD7GK1RmA" transient="true" eOpposite="_fZDzmd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD3Ld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3Lt6tEei97MD7GK1RmA" key="documentation" value="Specifies the Namespace that imports the members from a Package. Subsets DirectedRelationship::source and Element::owner."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD3L96tEei97MD7GK1RmA" source="subsets" references="_fZD1X96tEei97MD7GK1RmA _fZD0It6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD3MN6tEei97MD7GK1RmA" name="OpaqueExpression" eSuperTypes="_fZD2t96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD3Md6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD3Mt6tEei97MD7GK1RmA" key="documentation" value="An opaque expression contains language-specific text strings used to describe a value or values, and an optional specification of the languages."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD3M96tEei97MD7GK1RmA" name="body" lowerBound="1" upperBound="-1">
+      <eAnnotations xmi:id="_fZD3NN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3Nd6tEei97MD7GK1RmA" key="documentation" value="The text of the expression, possibly in multiple languages."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD3Nt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_fZD3N96tEei97MD7GK1RmA" key="kind" value="element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD3Od6tEei97MD7GK1RmA" name="language" upperBound="-1">
+      <eAnnotations xmi:id="_fZD3Ot6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3O96tEei97MD7GK1RmA" key="documentation" value="Specifies the languages in which the expression is stated. The interpretation of the expression body depends on the language. If languages are unspecified, it might be implicit from the expression body or the context. Languages are matched to body strings by order."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD3Pd6tEei97MD7GK1RmA" name="Expression" eSuperTypes="_fZD2t96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD3Pt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD3P96tEei97MD7GK1RmA" key="documentation" value="An expression is a structured tree of symbols that denotes a (possibly empty) set of values when evaluated in a context."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3QN6tEei97MD7GK1RmA" name="operand" upperBound="-1" eType="_fZD2t96tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_fZD3Qd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3Qt6tEei97MD7GK1RmA" key="documentation" value="Specifies a sequence of operands."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD3Q96tEei97MD7GK1RmA" source="subsets" references="_fZD0Ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD3RN6tEei97MD7GK1RmA" name="Enumeration" eSuperTypes="_fZD13N6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD3Rd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD3Rt6tEei97MD7GK1RmA" key="documentation" value="Enumeration is a kind of data type, whose instances may be any of a number of predefined enumeration literals.&#xA;&#xA;It is possible to extend the set of applicable enumeration literals in other packages or profiles.&#xA;&#xA;&#xD;&#xA;An enumeration defines a set of literals that can be used as its values."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3R96tEei97MD7GK1RmA" name="ownedLiteral" upperBound="-1" eType="_fZD3S96tEei97MD7GK1RmA" containment="true" eOpposite="_fZD3Tt6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD3SN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3Sd6tEei97MD7GK1RmA" key="documentation" value="The ordered collection of literals for the enumeration. Subsets Element::ownedMember.&#xD;&#xA;The ordered set of literals for this Enumeration."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD3St6tEei97MD7GK1RmA" source="subsets" references="_fZDzZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD3S96tEei97MD7GK1RmA" name="EnumerationLiteral" eSuperTypes="_fZDzod6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD3TN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD3Td6tEei97MD7GK1RmA" key="documentation" value="An enumeration literal is a value of an enumeration."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3Tt6tEei97MD7GK1RmA" name="enumeration" ordered="false" eType="_fZD3RN6tEei97MD7GK1RmA" transient="true" eOpposite="_fZD3R96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fZD3T96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fZD3UN6tEei97MD7GK1RmA" key="documentation" value="The enumeration that this literal belongs to. Subsets NamedElement::namespace.&#xD;&#xA;The Enumeration that this EnumerationLiteral is a member of."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_fZD3Ud6tEei97MD7GK1RmA" source="subsets" references="_fZDzpd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD3Ut6tEei97MD7GK1RmA" name="PrimitiveType" eSuperTypes="_fZD13N6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fZD3U96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD3VN6tEei97MD7GK1RmA" key="documentation" value="The PrimitiveTypes subpackage within the Core package defines the different types of primitive values that are used to define the Core metamodel. It is also intended that every metamodel based on Core will reuse the following primitive types.&#xA;&#xA;In Core and the UML metamodel, these primitive types are predefined and available to the Core and UML extensions at all time. These predefined value types are independent of any object model and part of the definition of the Core.&#xA;&#xA;&#xD;&#xA;A primitive type is a data type implemented by the underlying infrastructure and made available for modeling."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fZD3Vd6tEei97MD7GK1RmA" name="ReflectiveSequence" instanceClassName="java.util.List"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fZD3Vt6tEei97MD7GK1RmA" name="URIExtent" instanceClassName="org.eclipse.emf.ecore.resource.Resource">
+    <eAnnotations xmi:id="_fZD3V96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD3WN6tEei97MD7GK1RmA" key="documentation" value="Objects may be identified by URIs which are provided by a URIExtent. Use a URIExtent to lookup an Object given a URI, or get the URI of an object in that extent.&#xA;&#xA;"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD3Wd6tEei97MD7GK1RmA" name="Exception">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3Wt6tEei97MD7GK1RmA" name="objectInError" ordered="false" lowerBound="1" eType="_fZDz4t6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3W96tEei97MD7GK1RmA" name="elementInError" ordered="false" lowerBound="1" eType="_fZDz4t6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD3XN6tEei97MD7GK1RmA" name="description" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD3Xt6tEei97MD7GK1RmA" name="Factory" eSuperTypes="_fZDz4t6tEei97MD7GK1RmA">
+    <eOperations xmi:id="_fZD3X96tEei97MD7GK1RmA" name="createFromString" ordered="false" lowerBound="1" eType="_fZD1cN6tEei97MD7GK1RmA">
+      <eParameters xmi:id="_fZD3YN6tEei97MD7GK1RmA" name="dataType" ordered="false" lowerBound="1" eType="_fZD13N6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD3Yd6tEei97MD7GK1RmA" name="string" ordered="false" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fZD3Y96tEei97MD7GK1RmA" name="convertToString" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD3Zd6tEei97MD7GK1RmA" name="dataType" ordered="false" lowerBound="1" eType="_fZD13N6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD3Zt6tEei97MD7GK1RmA" name="object" ordered="false" lowerBound="1" eType="_fZD1cN6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD3Z96tEei97MD7GK1RmA" name="create" ordered="false" lowerBound="1" eType="_fZDz4t6tEei97MD7GK1RmA">
+      <eParameters xmi:id="_fZD3aN6tEei97MD7GK1RmA" name="metaClass" ordered="false" lowerBound="1" eType="_fZD0Nt6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD3ad6tEei97MD7GK1RmA" name="createElement" ordered="false" lowerBound="1" eType="_fZDz4t6tEei97MD7GK1RmA">
+      <eParameters xmi:id="_fZD3at6tEei97MD7GK1RmA" name="aClass" ordered="false" lowerBound="1" eType="_fZD0Nt6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD3a96tEei97MD7GK1RmA" name="arguments" ordered="false" lowerBound="1" eType="_fZD23t6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD3bN6tEei97MD7GK1RmA" name="createLink" ordered="false" lowerBound="1" eType="_fZD3cd6tEei97MD7GK1RmA">
+      <eParameters xmi:id="_fZD3bd6tEei97MD7GK1RmA" name="association" ordered="false" lowerBound="1" eType="_fZD1vd6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD3bt6tEei97MD7GK1RmA" name="firstElement" ordered="false" lowerBound="1" eType="_fZDz4t6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD3b96tEei97MD7GK1RmA" name="secondElement" ordered="false" lowerBound="1" eType="_fZDz4t6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3cN6tEei97MD7GK1RmA" name="package" ordered="false" lowerBound="1" eType="_fZD1Gd6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD3cd6tEei97MD7GK1RmA" name="Link">
+    <eOperations xmi:id="_fZD3ct6tEei97MD7GK1RmA" name="equals" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5P96tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fZD3dN6tEei97MD7GK1RmA" name="otherLink" ordered="false" lowerBound="1" eType="_fZD3cd6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fZD3dd6tEei97MD7GK1RmA" name="delete" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD4w96tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3d96tEei97MD7GK1RmA" name="secondElement" ordered="false" lowerBound="1" eType="_fZDz4t6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3eN6tEei97MD7GK1RmA" name="firstElement" ordered="false" lowerBound="1" eType="_fZDz4t6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3ed6tEei97MD7GK1RmA" name="association" ordered="false" lowerBound="1" eType="_fZD1vd6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fZD3et6tEei97MD7GK1RmA" name="Extent" instanceClassName="org.eclipse.emf.ecore.resource.Resource">
+    <eAnnotations xmi:id="_fZD3e96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fZD3fN6tEei97MD7GK1RmA" key="documentation" value="An Extent refers to a set of Objects. An object may be in more than one extent. An Extent is not an Object, it is part of the MOF facility."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fZD3fd6tEei97MD7GK1RmA" name="Tag" eSuperTypes="_fZDz4t6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD3ft6tEei97MD7GK1RmA" name="name" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fZD3gN6tEei97MD7GK1RmA" name="value" ordered="false" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fZD5h96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fZD3gt6tEei97MD7GK1RmA" name="element" ordered="false" upperBound="-1" eType="_fZDz4t6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+</ecore:EPackage>

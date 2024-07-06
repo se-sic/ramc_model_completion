@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_l2d3IN60Eei97MD7GK1RmA" name="modifier" nsURI="http:///org/eclipse/stem/core/modifier.ecore" nsPrefix="org.eclipse.stem.core.modifier">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3Id60Eei97MD7GK1RmA" name="DoubleNOPModifier" eSuperTypes="_l2d3aN60Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3It60Eei97MD7GK1RmA" name="DoubleRangeModifier" eSuperTypes="_l2d3ad60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3I960Eei97MD7GK1RmA" name="startValue" defaultValueLiteral="-99999999.0">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9JN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Jd60Eei97MD7GK1RmA" name="endValue" defaultValueLiteral="-99999999.0">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9JN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3J960Eei97MD7GK1RmA" name="increment" defaultValueLiteral="-99999999.0">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9JN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Kd60Eei97MD7GK1RmA" name="nextValue" defaultValueLiteral="0.0">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9JN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3K960Eei97MD7GK1RmA" name="originalValue">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9JN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3Ld60Eei97MD7GK1RmA" name="DoubleSequenceModifier" eSuperTypes="_l2d3ed60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Lt60Eei97MD7GK1RmA" name="sequence" upperBound="-1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9J960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3MN60Eei97MD7GK1RmA" name="FeatureModifier" abstract="true">
+    <eOperations xmi:id="_l2d3Md60Eei97MD7GK1RmA" name="updateFeature"/>
+    <eOperations xmi:id="_l2d3Mt60Eei97MD7GK1RmA" name="reset"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2d3M960Eei97MD7GK1RmA" name="target">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K8nt60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2d3Nd60Eei97MD7GK1RmA" name="eStructuralFeature" transient="true" resolveProxies="false">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K85t60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3N960Eei97MD7GK1RmA" name="featureName">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9VN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Od60Eei97MD7GK1RmA" name="featureId">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9N960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3O960Eei97MD7GK1RmA" name="currentValueText" changeable="false" transient="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9VN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Pd60Eei97MD7GK1RmA" name="complete" changeable="false" volatile="true" transient="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9DN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3P960Eei97MD7GK1RmA" name="IntegerNOPModifier" eSuperTypes="_l2d3aN60Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3QN60Eei97MD7GK1RmA" name="IntegerRangeModifier" eSuperTypes="_l2d3ad60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Qd60Eei97MD7GK1RmA" name="startValue" defaultValueLiteral="-99999999">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9N960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Q960Eei97MD7GK1RmA" name="endValue" defaultValueLiteral="-99999999">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9N960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Rd60Eei97MD7GK1RmA" name="increment" defaultValueLiteral="-99999999">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9N960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3R960Eei97MD7GK1RmA" name="nextValue" defaultValueLiteral="-99999999">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9N960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Sd60Eei97MD7GK1RmA" name="originalValue">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9N960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3S960Eei97MD7GK1RmA" name="IntegerSequenceModifier" eSuperTypes="_l2d3ed60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3TN60Eei97MD7GK1RmA" name="sequence" upperBound="-1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9Ot60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3Tt60Eei97MD7GK1RmA" name="LongNOPModifier" eSuperTypes="_l2d3aN60Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3T960Eei97MD7GK1RmA" name="LongRangeModifier" eSuperTypes="_l2d3ad60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3UN60Eei97MD7GK1RmA" name="startValue" defaultValueLiteral="-99999999">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9Qd60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Ut60Eei97MD7GK1RmA" name="endValue" defaultValueLiteral="-99999999">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9Qd60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3VN60Eei97MD7GK1RmA" name="increment" defaultValueLiteral="-99999999">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9Qd60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Vt60Eei97MD7GK1RmA" name="nextValue" defaultValueLiteral="-99999999">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9Qd60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3WN60Eei97MD7GK1RmA" name="originalValue" defaultValueLiteral="-99999999">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9Qd60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3Wt60Eei97MD7GK1RmA" name="LongSequenceModifier" eSuperTypes="_l2d3ed60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3W960Eei97MD7GK1RmA" name="sequence" upperBound="-1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9RN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3Xd60Eei97MD7GK1RmA" name="Modifier">
+    <eSuperTypes href="core_org.eclipse.stem.core_model_model.ecore#_l1_9Ed60Eei97MD7GK1RmA"/>
+    <eOperations xmi:id="_l2d3Xt60Eei97MD7GK1RmA" name="updateScenario">
+      <eParameters xmi:id="_l2d3X960Eei97MD7GK1RmA" name="baseScenario">
+        <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_scenario.ecore#_l2K-Bd60Eei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_l2d3Yd60Eei97MD7GK1RmA" name="reset"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Yt60Eei97MD7GK1RmA" name="targetURI">
+      <eType xsi:type="ecore:EDataType" href="core_org.eclipse.stem.core_model_common.ecore#_l2Bydt60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2d3ZN60Eei97MD7GK1RmA" name="featureModifiers" upperBound="-1" eType="_l2d3MN60Eei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3Zd60Eei97MD7GK1RmA" name="complete" changeable="false" volatile="true" transient="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9DN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3aN60Eei97MD7GK1RmA" name="NOPModifier" eSuperTypes="_l2d3MN60Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3ad60Eei97MD7GK1RmA" name="RangeModifier" abstract="true" eSuperTypes="_l2d3MN60Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3at60Eei97MD7GK1RmA" name="STEMTimeNOPModifier" eSuperTypes="_l2d3aN60Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3a960Eei97MD7GK1RmA" name="STEMTimeRangeModifier" eSuperTypes="_l2d3ad60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2d3bN60Eei97MD7GK1RmA" name="startValue">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9QN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2d3bt60Eei97MD7GK1RmA" name="endValue">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9QN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3cN60Eei97MD7GK1RmA" name="increment">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9Qd60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2d3ct60Eei97MD7GK1RmA" name="nextValue">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9QN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2d3dN60Eei97MD7GK1RmA" name="originalValue">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9QN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3dt60Eei97MD7GK1RmA" name="STEMTimeSequenceModifier" eSuperTypes="_l2d3ed60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2d3d960Eei97MD7GK1RmA" name="sequence" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9QN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3ed60Eei97MD7GK1RmA" name="SequenceModifier" abstract="true" eSuperTypes="_l2d3MN60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3et60Eei97MD7GK1RmA" name="sequenceSize" changeable="false" volatile="true" transient="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9N960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3fN60Eei97MD7GK1RmA" name="currentSequenceIndex" defaultValueLiteral="0">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9N960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3ft60Eei97MD7GK1RmA" name="nextValue" changeable="false" volatile="true" transient="true" unsettable="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9QN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3gN60Eei97MD7GK1RmA" name="originalValue">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9QN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3gt60Eei97MD7GK1RmA" name="StringNOPModifier" eSuperTypes="_l2d3aN60Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3g960Eei97MD7GK1RmA" name="StringSequenceModifier" eSuperTypes="_l2d3ed60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3hN60Eei97MD7GK1RmA" name="sequence" upperBound="-1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9VN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3ht60Eei97MD7GK1RmA" name="Modifiable" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3h960Eei97MD7GK1RmA" name="SingleValueModifier" abstract="true" eSuperTypes="_l2d3MN60Eei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3iN60Eei97MD7GK1RmA" name="DoubleModifier" eSuperTypes="_l2d3h960Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3id60Eei97MD7GK1RmA" name="value">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9JN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3i960Eei97MD7GK1RmA" name="originalValue" transient="true" defaultValueLiteral="-1E200">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9JN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3jd60Eei97MD7GK1RmA" name="IntegerModifier" eSuperTypes="_l2d3h960Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3jt60Eei97MD7GK1RmA" name="value">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9N960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3kN60Eei97MD7GK1RmA" name="originalValue" transient="true" defaultValueLiteral="-2000000000">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9N960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3kt60Eei97MD7GK1RmA" name="LongModifier" eSuperTypes="_l2d3h960Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3k960Eei97MD7GK1RmA" name="value">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9Qd60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2d3ld60Eei97MD7GK1RmA" name="originalValue" transient="true" defaultValueLiteral="-2000000000">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9Qd60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2d3l960Eei97MD7GK1RmA" name="STEMTimeModifier" eSuperTypes="_l2d3h960Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2d3mN60Eei97MD7GK1RmA" name="value">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9QN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2d3mt60Eei97MD7GK1RmA" name="originalValue" transient="true">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9QN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

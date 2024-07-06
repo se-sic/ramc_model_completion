@@ -1,0 +1,34 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_r1Q2aN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@655e6fe7 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'createUsage','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Usage','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@101d2dc7 (expression: Usage)','eContainingClass':'NamedElement','eParameters':['supplier']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_r1Q2ad6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@675c6a96 (key: documentation, value: Creates a usage between this named element and the specified supplier, owned by this named element's nearest package.)'],'eModelElement':'createUsage'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_r1Q2a96tEei97MD7GK1RmA', 'name':'supplier','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'NamedElement','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@44ce9f17 (expression: NamedElement)','eOperation':'createUsage'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_r1Q2at6tEei97MD7GK1RmA', 'key':'documentation','value':'Creates a usage between this named element and the specified supplier, owned by this named element's nearest package.'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftfLdN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@1b911300 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'NamedElement','ePackage':'uml','abstract':'true','interface':'false','eOperations':['has_no_qualified_name','has_qualified_name','visibility_needs_ownership','createDependency','getLabel','getLabel','createUsage','getQualifiedName','allNamespaces','isDistinguishableFrom','separator','...'],'eStructuralFeatures':['name','visibility','qualifiedName','clientDependency','namespace','nameExpression'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@1f951ce8 (expression: Element)']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "0", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "1", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "4", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+}]}

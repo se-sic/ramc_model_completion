@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="QVTRelation" name="qvtrelation" nsURI="http://www.eclipse.org/qvt/2015/QVTrelation" nsPrefix="qvtr">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTRelation.DomainPattern" name="DomainPattern">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_WHKg4N6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.DomainPattern.templateExpression" name="templateExpression" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvtd.pivot.qvttemplate_model_QVTtemplate.ecore#QVTTemplate.TemplateExp"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTRelation.Key" name="Key">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc2E96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.Key.identifies" name="identifies" lowerBound="1">
+      <eAnnotations xmi:id="_ZG18It6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_ZG18I96vEei97MD7GK1RmA" key="body" value="key"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc1Sd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.Key.part" name="part" ordered="false" upperBound="-1">
+      <eAnnotations xmi:id="_ZG18Jd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_ZG18Jt6vEei97MD7GK1RmA" key="body" value="key"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc4yd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.Key.transformation" name="transformation" eType="QVTRelation.RelationalTransformation" transient="true" eOpposite="QVTRelation.RelationalTransformation.ownedKey"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHKhJN6vEei97MD7GK1RmA" name="oppositePart" ordered="false" upperBound="-1">
+      <eAnnotations xmi:id="_ZG18Kd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_ZG18Kt6vEei97MD7GK1RmA" key="body" value="oppKey"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc4yd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTRelation.Relation" name="Relation">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_WHKg6t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTRelation.Relation.isTopLevel" name="isTopLevel">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc05t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.Relation.operationalImpl" name="operationalImpl" ordered="false" upperBound="-1" eType="QVTRelation.RelationImplementation" containment="true" eOpposite="QVTRelation.RelationImplementation.relation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.Relation.variable" name="variable" ordered="false" upperBound="-1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc6Nd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.Relation.when" name="when" containment="true">
+      <eAnnotations xmi:id="_WHKhLd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_WHKhLt6vEei97MD7GK1RmA" key="body" value="whenOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_WHKg4N6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.Relation.where" name="where" containment="true">
+      <eAnnotations xmi:id="_WHKhMN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_WHKhMd6vEei97MD7GK1RmA" key="body" value="whereOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_WHKg4N6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTRelation.RelationCallExp" name="RelationCallExp">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc4Qt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationCallExp.argument" name="argument" lowerBound="2" upperBound="-1" containment="true">
+      <eAnnotations xmi:id="_ZG18Nt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_ZG18N96vEei97MD7GK1RmA" key="body" value="relationCallExp"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc4Qt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationCallExp.referredRelation" name="referredRelation" lowerBound="1" eType="QVTRelation.Relation">
+      <eAnnotations xmi:id="_ZG18Od6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_ZG18Ot6vEei97MD7GK1RmA" key="body" value="relationCallExp"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTRelation.RelationDomain" name="RelationDomain">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_WHKg0N6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationDomain.defaultAssignment" name="defaultAssignment" ordered="false" upperBound="-1" eType="QVTRelation.RelationDomainAssignment" containment="true">
+      <eAnnotations xmi:id="_WHKhNt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_WHKhN96vEei97MD7GK1RmA" key="body" value="owner"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationDomain.pattern" name="pattern" upperBound="-1" eType="QVTRelation.DomainPattern" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationDomain.rootVariable" name="rootVariable" lowerBound="1" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc6Nd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTRelation.RelationDomainAssignment" name="RelationDomainAssignment">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc2E96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationDomainAssignment.valueExp" name="valueExp" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_WHKhOt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_WHKhO96vEei97MD7GK1RmA" key="body" value="domainAssignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc4Qt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationDomainAssignment.variable" name="variable" lowerBound="1">
+      <eAnnotations xmi:id="_WHKhPd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_WHKhPt6vEei97MD7GK1RmA" key="body" value="domainAssignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc6Nd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHKhQd6vEei97MD7GK1RmA" name="RelationModel">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_WHKgzd6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTRelation.RelationImplementation" name="RelationImplementation">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc2E96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationImplementation.impl" name="impl" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ZMc4RN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationImplementation.inDirectionOf" name="inDirectionOf" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_WHKhBN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationImplementation.relation" name="relation" eType="QVTRelation.Relation" transient="true" eOpposite="QVTRelation.Relation.operationalImpl"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTRelation.RelationalTransformation" name="RelationalTransformation">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_WHKg9N6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTRelation.RelationalTransformation.ownedKey" name="ownedKey" ordered="false" upperBound="-1" eType="QVTRelation.Key" containment="true" eOpposite="QVTRelation.Key.transformation"/>
+  </eClassifiers>
+</ecore:EPackage>

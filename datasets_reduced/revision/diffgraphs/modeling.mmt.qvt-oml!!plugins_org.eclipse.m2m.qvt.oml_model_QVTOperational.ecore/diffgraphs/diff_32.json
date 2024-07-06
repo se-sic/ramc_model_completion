@@ -1,0 +1,37 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_Bw8z096vEei97MD7GK1RmA', 'name':'TemplateParameterType','ePackage':'expressions','abstract':'false','interface':'false','eStructuralFeatures':['specification'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@2817222c (expression: EClassifier)']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_Bw8z1N6vEei97MD7GK1RmA', 'name':'specification','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EString','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7c1f7709 (expression: EString)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'TemplateParameterType','iD':'false','eAttributeType':'EString'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_Bw82Yd6vEei97MD7GK1RmA', 'name':'visitDictLiteralExp','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EJavaObject','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6a2cd7f9 (expression: T)','eContainingClass':'ExtendedVisitor','eParameters':['dictLiteralExp']}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_Bw82Y96vEei97MD7GK1RmA', 'name':'dictLiteralExp','ordered':'true','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'DictLiteralExp','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4fd666c5 (expression: DictLiteralExp)','eOperation':'visitDictLiteralExp'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_BFWTvd6vEei97MD7GK1RmA', 'name':'ExtendedVisitor','ePackage':'expressions','eTypeParameters':['T'],'abstract':'true','interface':'true','eOperations':['visitModule','visitLibrary','visitRename','visitModuleImport','visitClass','visitContextualProperty','visitImperativeOperation','visitVarParameter','visitOperationBody','visitMappingOperation','visitHelper','...'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@3d07afd1 (expression: Visitor<T, EClassifier, EOperation, EStructuralFeature, EEnumLiteral, EParameter, EObject, CallOperationAction, SendSignalAction, Constraint>)']}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_BFWSAd6vEei97MD7GK1RmA', 'name':'expressions','nsURI':'http://www.eclipse.org/qvt/1.0.0/Operational/Expressions','nsPrefix':'qvtoperational.expr','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@1a192360','eClassifiers':['ListType','DictLiteralExp','DictLiteralPart','TemplateParameterType','DictionaryType','Typedef','Module','Library','Rename','ModuleImport','Class','ContextualProperty','ImperativeOperation','ModelParameter','...'],'eSuperPackage':'qvtoperational'}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "2", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "4", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "5", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+}]}

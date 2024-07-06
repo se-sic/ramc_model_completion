@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_au4i4d6tEei97MD7GK1RmA" name="mappings" nsURI="http://www.eclipse.org/gmf/2005/mappings" nsPrefix="gmfmap">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4i4t6tEei97MD7GK1RmA" name="MappingEntry" abstract="true">
+    <eAnnotations xmi:id="_au4i496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2004/EmfaticAnnotationMap">
+      <details xmi:id="_au4i5N6tEei97MD7GK1RmA" key="constraints" value="http://www.eclipse.org/gmf/2005/constraints"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4i5d6tEei97MD7GK1RmA" name="NodeMapping" eSuperTypes="_au4i4t6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i5t6tEei97MD7GK1RmA" name="diagramNode" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="archive_org.eclipse.gmf.diadef_models_diadef.ecore#_au4jMd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i6N6tEei97MD7GK1RmA" name="domainMetaElement" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs3N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i6t6tEei97MD7GK1RmA" name="containmentFeature">
+      <eAnnotations xmi:id="_au4i696tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_au4i7N6tEei97MD7GK1RmA" key="ocl" value="oclIsUndefined(containmentFeature) or domainMetaElement.eAllReferences->includes(containmentFeature)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtVd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i7t6tEei97MD7GK1RmA" name="editFeature">
+      <eAnnotations xmi:id="_au4i796tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_au4i8N6tEei97MD7GK1RmA" key="ocl" value="oclIsUndefined(editFeature) or domainMetaElement.eAllAttributes->includes(editFeature)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs0d6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i8t6tEei97MD7GK1RmA" name="childMappings" upperBound="-1" eType="_au4i896tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4i896tEei97MD7GK1RmA" name="ChildNodeMapping">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i9N6tEei97MD7GK1RmA" name="compartment" lowerBound="1">
+      <eAnnotations xmi:id="_au4i9d6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_au4i9t6tEei97MD7GK1RmA" key="ocl" value="eContainer.diagramNode.compartments->includes(self.compartment)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="archive_org.eclipse.gmf.diadef_models_diadef.ecore#_au4jO96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i-N6tEei97MD7GK1RmA" name="diagramNode" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="archive_org.eclipse.gmf.diadef_models_diadef.ecore#_au4jMd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i-t6tEei97MD7GK1RmA" name="domainChildrenFeature" lowerBound="1">
+      <eAnnotations xmi:id="_au4i-96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_au4i_N6tEei97MD7GK1RmA" key="ocl" value="eContainer.domainMetaElement.eAllAttributes->includes(domainChildrenFeature)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtXt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i_t6tEei97MD7GK1RmA" name="conditionalFeature" lowerBound="1">
+      <eAnnotations xmi:id="_au4i_96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_au4jAN6tEei97MD7GK1RmA" key="ocl" value="domainChildrenFeature.eClass.eAllAttributes->includes(conditionalFeature) and conditionalFeature.eType == EcorePackage.getEBoolean"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_au4jAd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_au4jAt6tEei97MD7GK1RmA" key="documentation" value="e.g. EcorePackage.getEClass_EReferences for domainChildrenFeature with EcorePackage.getEReference_Containment for conditionalFeature"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs0d6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_avLd896tEei97MD7GK1RmA" name="editFeature">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs0d6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_avLd9d6tEei97MD7GK1RmA" name="domainMetaElement">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs3N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jBN6tEei97MD7GK1RmA" name="LinkMapping" eSuperTypes="_au4i4t6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jBd6tEei97MD7GK1RmA" name="diagramLink" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="archive_org.eclipse.gmf.diadef_models_diadef.ecore#_au4jQN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jB96tEei97MD7GK1RmA" name="domainMetaElement">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs3N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jCd6tEei97MD7GK1RmA" name="containmentFeature">
+      <eAnnotations xmi:id="_au4jCt6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_au4jC96tEei97MD7GK1RmA" key="ocl" value="oclIsUndefined(containmentFeature) or (not oclIsUndefined(domainMetaElement) and domainMetaElement.eAllReferences->includes(containmentFeature))"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtVd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jDd6tEei97MD7GK1RmA" name="labelEditFeature">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs0d6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jD96tEei97MD7GK1RmA" name="labelDisplayFeature">
+      <eAnnotations xmi:id="_au4jEN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_au4jEd6tEei97MD7GK1RmA" key="documentation" value="By default, same as editFeature, once latter is set"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs0d6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jE96tEei97MD7GK1RmA" name="linkMetaFeature" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtXt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jFd6tEei97MD7GK1RmA" name="CanvasMapping" eSuperTypes="_au4i4t6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jFt6tEei97MD7GK1RmA" name="diagramCanvas" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="archive_org.eclipse.gmf.diadef_models_diadef.ecore#_au4jRN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jGN6tEei97MD7GK1RmA" name="domainModel">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtR96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jGt6tEei97MD7GK1RmA" name="domainMetaElement">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs3N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jHN6tEei97MD7GK1RmA" name="Mapping">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jHd6tEei97MD7GK1RmA" name="nodes" lowerBound="1" upperBound="-1" eType="_au4i5d6tEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jHt6tEei97MD7GK1RmA" name="links" upperBound="-1" eType="_au4jBN6tEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jH96tEei97MD7GK1RmA" name="diagram" lowerBound="1" eType="_au4jFd6tEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+</ecore:EPackage>

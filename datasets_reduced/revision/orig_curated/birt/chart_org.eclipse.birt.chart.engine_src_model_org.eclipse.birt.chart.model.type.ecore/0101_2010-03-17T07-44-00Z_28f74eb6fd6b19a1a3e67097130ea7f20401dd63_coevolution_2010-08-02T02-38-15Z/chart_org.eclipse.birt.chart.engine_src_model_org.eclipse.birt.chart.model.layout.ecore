@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_HsIDoN6tEei97MD7GK1RmA" name="layout" nsURI="http://www.birt.eclipse.org/ChartModelLayout" nsPrefix="layout">
+  <eAnnotations xmi:id="_HsIDod6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+    <details xmi:id="_HsIDot6tEei97MD7GK1RmA" key="documentation" value="&#xD;&#xA;&#x9;&#x9;Schema file for the chart.model package.&#xD;&#xA;&#x9;&#x9;"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HsIDo96tEei97MD7GK1RmA" name="Block">
+    <eAnnotations xmi:id="_K56P2N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_K56P2d6tEei97MD7GK1RmA" key="documentation" value="Block is the most important component to layout the contents of a chart.&#xD;&#xA;It represents a rectangular area that bounds an individual chart element, which is used&#xD;&#xA;to determine the layout of the chart.  The user can define its Bounds, Insets, Outline and &#xD;&#xA;Background among other properties. A Block can also contain other Blocks as its children. &#xD;&#xA;Use Block.getChildren( ) which returns a list of type Block to navigate through &#xD;&#xA;the children hierarchy of Blocks.&#xD;&#xA;&lt;p xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;>&#xD;&#xA;The most important block is the chart's block, all contents of a chart &#xD;&#xA;are rendered inside this block, we can get the instance of a chart's block using:&lt;br/>&#xD;&#xA;Chart.getBlock( );&#xD;&#xA;&lt;/p>&#xD;&#xA;A chart graphically consists of 3 parts, TitleBlock, Plot and Legend, which are &#xD;&#xA;also sub-type of Block and organized as children of the chart's Block.  Besides the general &#xD;&#xA;approach of using Chart.getBlock( ).getChildren( ) we can also access them using the &#xD;&#xA;convenient methods:&lt;br xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;/>&#xD;&#xA;Chart.getTitle( );&lt;br xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;/>&#xD;&#xA;Chart.getPlot( );&lt;br xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;/>&#xD;&#xA;Chart.getLegend( );&lt;br xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;/>&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HsIDpt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HsIDp96tEei97MD7GK1RmA" key="name" value="Block"/>
+      <details xmi:id="_HsIDqN6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIDqd6tEei97MD7GK1RmA" name="children" lowerBound="1" upperBound="-1" eType="_HsIDo96tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_HsIDrN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIDrd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIDrt6tEei97MD7GK1RmA" key="name" value="Children"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIDr96tEei97MD7GK1RmA" name="bounds" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56P4t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56P496tEei97MD7GK1RmA" key="documentation" value="Element &quot;Bounds&quot; represents the size of a block and the its position insides its container."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIDst6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIDs96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIDtN6tEei97MD7GK1RmA" key="name" value="Bounds"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhm996tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIDtt6tEei97MD7GK1RmA" name="anchor" unsettable="true">
+      <eAnnotations xmi:id="_K56P6d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56P6t6tEei97MD7GK1RmA" key="documentation" value="Aattribute &quot;Anchor&quot; specifies the position of the block inside its container.  "/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIDud6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIDut6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIDu96tEei97MD7GK1RmA" key="name" value="Anchor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhmxt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIDvd6tEei97MD7GK1RmA" name="stretch" unsettable="true">
+      <eAnnotations xmi:id="_K56P8N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56P8d6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;Stretch&quot; specifies how the content of the block fills up available space."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIDwN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIDwd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIDwt6tEei97MD7GK1RmA" key="name" value="Stretch"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhqHd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIDxN6tEei97MD7GK1RmA" name="insets" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56P996tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56P-N6tEei97MD7GK1RmA" key="documentation" value="Element &quot;Insets&quot; represents the size of the margin between the block's edge and its client area."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIDx96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIDyN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIDyd6tEei97MD7GK1RmA" key="name" value="Insets"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhoed6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIDy96tEei97MD7GK1RmA" name="row" lowerBound="1" defaultValueLiteral="-1" unsettable="true">
+      <eAnnotations xmi:id="_K56P_t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56P_96tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;Row&quot; represents the row index for the block, by default it's -1."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIDzt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIDz96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsID0N6tEei97MD7GK1RmA" key="name" value="Row"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsID0t6tEei97MD7GK1RmA" name="column" lowerBound="1" defaultValueLiteral="-1" unsettable="true">
+      <eAnnotations xmi:id="_K56QBd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QBt6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;Column&quot; the column index for the block, by default it's -1."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsID1d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsID1t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsID196tEei97MD7GK1RmA" key="name" value="Column"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsID2d6tEei97MD7GK1RmA" name="rowspan" lowerBound="1" defaultValueLiteral="-1" unsettable="true">
+      <eAnnotations xmi:id="_K56QDN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QDd6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;Rowspan&quot; represents the rowspan value for the block, by default it's -1."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsID3N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsID3d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsID3t6tEei97MD7GK1RmA" key="name" value="Rowspan"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsID4N6tEei97MD7GK1RmA" name="columnspan" lowerBound="1" defaultValueLiteral="-1" unsettable="true">
+      <eAnnotations xmi:id="_K56QE96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QFN6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;Columnspan&quot; represents the columnspan value for the block, by&#x9;default it's -1."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsID496tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsID5N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsID5d6tEei97MD7GK1RmA" key="name" value="Columnspan"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsID596tEei97MD7GK1RmA" name="minSize" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56QGt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QG96tEei97MD7GK1RmA" key="documentation" value="Element &quot;MinSize&quot; represents the minimum size for the block."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsID6t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsID696tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsID7N6tEei97MD7GK1RmA" key="name" value="MinSize"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhp_t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsID7t6tEei97MD7GK1RmA" name="outline" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56QId6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QIt6tEei97MD7GK1RmA" key="documentation" value="Element &quot;outline&quot; of type LineAttributes specifies how to render the block's outline."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsID8d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsID8t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsID896tEei97MD7GK1RmA" key="name" value="Outline"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsID9d6tEei97MD7GK1RmA" name="background" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56QKN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QKd6tEei97MD7GK1RmA" key="documentation" value="Element &quot;background&quot; of type Fill specifies how to render the background of the Block. &#xD;&#xA;Can be transparent, a solid color, a gradient or image"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsID-N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsID-d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsID-t6tEei97MD7GK1RmA" key="name" value="Background"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhn296tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsID_N6tEei97MD7GK1RmA" name="visible" lowerBound="1" defaultValueLiteral="true" unsettable="true">
+      <eAnnotations xmi:id="_K56QL96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QMN6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;Visible&quot; specifies whether the block is visible.  By default it's true."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsID_96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEAN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEAd6tEei97MD7GK1RmA" key="name" value="Visible"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIEA96tEei97MD7GK1RmA" name="triggers" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56QNt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QN96tEei97MD7GK1RmA" key="documentation" value="&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEBt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEB96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIECN6tEei97MD7GK1RmA" key="name" value="Triggers"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-Tnt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I1NL-t6tEei97MD7GK1RmA" name="widthHint" defaultValueLiteral="-1" unsettable="true">
+      <eAnnotations xmi:id="_K56QPd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QPt6tEei97MD7GK1RmA" key="documentation" value="WidthHint specifies a hinted width for the block.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I1NL_d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I1NL_t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I1NL_96tEei97MD7GK1RmA" key="name" value="WidthHint"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I1NMAd6tEei97MD7GK1RmA" name="heightHint" defaultValueLiteral="-1" unsettable="true">
+      <eAnnotations xmi:id="_K56QRN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QRd6tEei97MD7GK1RmA" key="documentation" value="HeightHint pecifies a hinted height for the block.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I1NMBN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I1NMBd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I1NMBt6tEei97MD7GK1RmA" key="name" value="HeightHint"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KStEyN6tEei97MD7GK1RmA" name="cursor" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56QS96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QTN6tEei97MD7GK1RmA" key="documentation" value="Element &quot;Cursor&quot; represents cursor for the block."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KStEy96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KStEzN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KStEzd6tEei97MD7GK1RmA" key="name" value="Cursor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_KSaKTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HsIECt6tEei97MD7GK1RmA" name="ClientArea">
+    <eAnnotations xmi:id="_K56QUt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_K56QU96tEei97MD7GK1RmA" key="documentation" value="ClientArea holds a group of graphical properties for Plot and Legend to specify how to render &#xD;&#xA;their client area, the properties include background, outline, visible... and so on.&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HsIEDd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HsIEDt6tEei97MD7GK1RmA" key="name" value="ClientArea"/>
+      <details xmi:id="_HsIED96tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIEEN6tEei97MD7GK1RmA" name="background" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56QWN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QWd6tEei97MD7GK1RmA" key="documentation" value="Element &quot;background&quot; of type Fill specifies how to render the background of the client area. &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEE96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEFN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEFd6tEei97MD7GK1RmA" key="name" value="Background"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhn296tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIEF96tEei97MD7GK1RmA" name="outline" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56QX96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QYN6tEei97MD7GK1RmA" key="documentation" value="Element &quot;Outline&quot; of type LineAttributes specifies how to render the outline of the client area.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEGt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEG96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEHN6tEei97MD7GK1RmA" key="name" value="Outline"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIEHt6tEei97MD7GK1RmA" name="shadowColor" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56QZt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QZ96tEei97MD7GK1RmA" key="documentation" value="Element &quot;ShadowColor&quot; of type ColorDefinition specifies the shadow color for the client area.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEId6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEIt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEI96tEei97MD7GK1RmA" key="name" value="ShadowColor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhnNN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIEJd6tEei97MD7GK1RmA" name="insets" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56Qbd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Qbt6tEei97MD7GK1RmA" key="documentation" value="Element &quot;Insets&quot; represents the size of the margin between the client area's edge and its client area.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEKN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEKd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEKt6tEei97MD7GK1RmA" key="name" value="Insets"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhoed6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_JlWPqt6tEei97MD7GK1RmA" name="visible" lowerBound="1" defaultValueLiteral="true" unsettable="true">
+      <eAnnotations xmi:id="_K56QdN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Qdd6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;Visible&quot; specifies whether client area is visible."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_JlWPrd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_JlWPrt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_JlWPr96tEei97MD7GK1RmA" key="name" value="Visible"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_KJsS4d6tEei97MD7GK1RmA" name="EllipsisType" instanceClassName="int">
+    <eAnnotations xmi:id="_KJsS4t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_KJsS496tEei97MD7GK1RmA" key="name" value="Ellipsis_._type"/>
+      <details xmi:id="_KJsS5N6tEei97MD7GK1RmA" key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#int"/>
+      <details xmi:id="_KJsS5d6tEei97MD7GK1RmA" key="minInclusive" value="0"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_KJsS5t6tEei97MD7GK1RmA" name="EllipsisTypeObject" instanceClassName="java.lang.Integer">
+    <eAnnotations xmi:id="_KJsS596tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_KJsS6N6tEei97MD7GK1RmA" key="name" value="Ellipsis_._type:Object"/>
+      <details xmi:id="_KJsS6d6tEei97MD7GK1RmA" key="baseType" value="Ellipsis_._type"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HsIELN6tEei97MD7GK1RmA" name="LabelBlock" eSuperTypes="_HsIDo96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_K56QhN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_K56Qhd6tEei97MD7GK1RmA" key="documentation" value="LabelBlock is a sub-type of Block, which is specialized for laying out a text  &#xD;&#xA;in the chart for general purpose. It contains a Label, which holds the content &#xD;&#xA;and graphical properties of the text to be rendered.  Following example shows&#xD;&#xA;how to add a arbitrary text &quot;Sample Text&quot; to a chart: &#xD;&#xA;&lt;p xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;>&#xD;&#xA;&#x9;&#x9;Chart cm = ....&lt;br/>&#xD;&#xA;&#x9;&#x9;LabelBlock lbBlock = (LabelBlock) LabelBlockImpl.create( );&lt;br/>&#xD;&#xA;&#x9;&#x9;lbBlock.getBounds( ).set( 50, 50, 100, 100 );&lt;br/>&#xD;&#xA;&#x9;&#x9;lbBlock.getLabel( ).getCaption( ).setValue( &quot;Sample Text&quot; );&lt;br/>&#xD;&#xA;&#x9;&#x9;cm.getBlock( ).getChildren( ).add( lbBlock );&#xD;&#xA;&lt;/p>&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HsIEL96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HsIEMN6tEei97MD7GK1RmA" key="name" value="LabelBlock"/>
+      <details xmi:id="_HsIEMd6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIEMt6tEei97MD7GK1RmA" name="label" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56Qit6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Qi96tEei97MD7GK1RmA" key="documentation" value="Element &quot;Label&quot; of type Label specifies the content and graphical &#xD;&#xA;properties of the text to be laid out and rendered within the block.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIENd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIENt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEN96tEei97MD7GK1RmA" key="name" value="Label"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_HrE7lt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HsIEOd6tEei97MD7GK1RmA" name="Legend" eSuperTypes="_HsIDo96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_K56Qkd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_K56Qkt6tEei97MD7GK1RmA" key="documentation" value="Legend represents the rectangular area in chart, where its legends are displayed.  It holds also a &#xD;&#xA;group of attributes and elements to specify how the legend items are laid out and displayed. &#xD;&#xA;The legend items usually describe either the series or categories, depeding on the chart type.&#xD;&#xA;Legend is a sub-type of Block, and exists as a child block of the chart's block in a chart's model.  &#xD;&#xA;&lt;p xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;>&#xD;&#xA;Besides the general approach of using Chart.getBlock( ).getChildren( ) we can also access it using the &#xD;&#xA;convenient method: Chart.getLegend( );&#xD;&#xA;&lt;/p>&#xD;&#xA;&#x9;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HsIEPN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HsIEPd6tEei97MD7GK1RmA" key="name" value="Legend"/>
+      <details xmi:id="_HsIEPt6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIEP96tEei97MD7GK1RmA" name="horizontalSpacing" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_K56Ql96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QmN6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;HorizontalSpacing&quot; represents the horizontal spacing &#xD;&#xA;in points between elements in the legend, namely legend items.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEQt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEQ96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIERN6tEei97MD7GK1RmA" key="name" value="HorizontalSpacing"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIERt6tEei97MD7GK1RmA" name="verticalSpacing" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_K56Qnt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Qn96tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;VerticalSpacing&quot; represents the vertical spacing in&#xD;&#xA;points between elements in the legend, namely legend items.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIESd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIESt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIES96tEei97MD7GK1RmA" key="name" value="VerticalSpacing"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIETd6tEei97MD7GK1RmA" name="clientArea" lowerBound="1" eType="_HsIECt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56Qpd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Qpt6tEei97MD7GK1RmA" key="documentation" value="Element &quot;ClientArea&quot; represents the valid rectangular area of a legend &#xD;&#xA;block to lay out legned items, it extends the whole block excluding the &#xD;&#xA;margin of the block, which is defined by &quot;Insets&quot;. It also holds a group of &#xD;&#xA;properties to specify how this area will be rendered, including its background, &#xD;&#xA;outline, visibility... and so on.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEUN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEUd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEUt6tEei97MD7GK1RmA" key="name" value="ClientArea"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIEU96tEei97MD7GK1RmA" name="text" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56Qq96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QrN6tEei97MD7GK1RmA" key="documentation" value="Element &quot;Text&quot; of Legend holds the Font and Color properties for all legend items.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEVt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEV96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEWN6tEei97MD7GK1RmA" key="name" value="Text"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhqUN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIEWt6tEei97MD7GK1RmA" name="orientation" lowerBound="1" defaultValueLiteral="Vertical" unsettable="true">
+      <eAnnotations xmi:id="_K56Qst6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Qs96tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;orientation&quot; specifies the layout orientation of legend &#xD;&#xA;items inside one legend group.  It can be Vertical or Horizontal, which &#xD;&#xA;means the legend items will be laid out in top-down or left-right &#xD;&#xA;direction respectively.&#xD;&#xA;&lt;p xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;>&#xD;&#xA;In case of colored by series, all legend items related with the same &#xD;&#xA;designtime series belong to the same group, therefore if no y-optional &#xD;&#xA;grouping is defined each group contains only one legend item, otherwise &#xD;&#xA;more than one legned items.&lt;br/>&#xD;&#xA;In case of colored by category, all legend items belong to one group.&#xD;&#xA;&lt;/p>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEXd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEXt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEX96tEei97MD7GK1RmA" key="name" value="Orientation"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhpZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIEYd6tEei97MD7GK1RmA" name="direction" lowerBound="1" defaultValueLiteral="Top_Bottom" unsettable="true">
+      <eAnnotations xmi:id="_K56Qud6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Qut6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;direction&quot; specifies the layout direction of legend groups if &#xD;&#xA;there are more than one legend groups.  It can be Left_Right or &#xD;&#xA;Top_Bottom, which means the legend groups will be laid out in left-right &#xD;&#xA;or top-down direction respectively.&#xD;&#xA;&lt;p xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;>&#xD;&#xA;In case of colored by series, all legend items related with the same &#xD;&#xA;designtime series belong to the same group, therefore if no y-optional &#xD;&#xA;grouping is defined each group contains only one legend item, otherwise &#xD;&#xA;more than one legned items.&lt;br/>&#xD;&#xA;In case of colored by category, all legend items belong to one group.&#xD;&#xA;&lt;/p>&#xD;&#xA;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEZN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEZd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEZt6tEei97MD7GK1RmA" key="name" value="Direction"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhnvN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIEaN6tEei97MD7GK1RmA" name="separator" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56QwN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Qwd6tEei97MD7GK1RmA" key="documentation" value="Element &quot;Separator&quot; specifies the graphical attributes of the seperate line between legend groups. &#xD;&#xA;&lt;p xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;>&#xD;&#xA;In case of colored by series, all legend items related with the same &#xD;&#xA;designtime series belong to the same group, therefore if no y-optional &#xD;&#xA;grouping is defined each group contains only one legend item, otherwise &#xD;&#xA;more than one legned items.&lt;br/>&#xD;&#xA;In case of colored by category, all legend items belong to one group.&#xD;&#xA;&lt;/p>&#xD;&#xA;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEa96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEbN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEbd6tEei97MD7GK1RmA" key="name" value="Separator"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIEb96tEei97MD7GK1RmA" name="position" lowerBound="1" defaultValueLiteral="Right" unsettable="true">
+      <eAnnotations xmi:id="_K56Qx96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56QyN6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;position&quot; specifies the position of the legend relative to the plot block &#xD;&#xA;of the chart, it can be Above, Below, Left, Right and Inside. If Inside is selected, &#xD;&#xA;the legend block will be displayed in the middel of the plot block and overlapped &#xD;&#xA;with it.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEct6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEc96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEdN6tEei97MD7GK1RmA" key="name" value="Position"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpjt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIEdt6tEei97MD7GK1RmA" name="itemType" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_K56Qzt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Qz96tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;ItemType&quot; specifies whether the datapoints and the legend items are &#xD;&#xA;colored by category or series pallet.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEed6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEet6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEe96tEei97MD7GK1RmA" key="name" value="ItemType"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho096tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IIHc7d6tEei97MD7GK1RmA" name="title" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56Q1d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Q1t6tEei97MD7GK1RmA" key="documentation" value="Element &quot;Title&quot; of type Label specifies the content and graphical &#xD;&#xA;properties of the title of the legend block.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IIHc8N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IIHc8d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IIHc8t6tEei97MD7GK1RmA" key="name" value="Title"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_HrE7lt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IIHc9N6tEei97MD7GK1RmA" name="titlePosition" unsettable="true">
+      <eAnnotations xmi:id="_K56Q3N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Q3d6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;TitlePosition&quot; specifies the position of the legend title &#xD;&#xA;inside the legend block.  It can be Above, Below, Left and Right - &#xD;&#xA;by default it's Above.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IIHc996tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IIHc-N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IIHc-d6tEei97MD7GK1RmA" key="name" value="TitlePosition"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpjt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IMu3O96tEei97MD7GK1RmA" name="showValue" unsettable="true">
+      <eAnnotations xmi:id="_K56Q496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Q5N6tEei97MD7GK1RmA" key="documentation" value="The boolean attribute &quot;ShowValue&quot; specifies whether a descriptive value of &#xD;&#xA;the related series will be displayed under the legend item, normally this value &#xD;&#xA;will be the first value in the series.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMu3Pt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMu3P96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMu3QN6tEei97MD7GK1RmA" key="name" value="ShowValue"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IMu3Qt6tEei97MD7GK1RmA" name="showPercent" unsettable="true">
+      <eAnnotations xmi:id="_K56Q6t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Q696tEei97MD7GK1RmA" key="documentation" value="This attribute is not currently used."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMu3Rd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMu3Rt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMu3R96tEei97MD7GK1RmA" key="name" value="ShowPercent"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IMu3Sd6tEei97MD7GK1RmA" name="showTotal" unsettable="true">
+      <eAnnotations xmi:id="_K56Q8d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Q8t6tEei97MD7GK1RmA" key="documentation" value="This attribute is not currently used."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMu3TN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMu3Td6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMu3Tt6tEei97MD7GK1RmA" key="name" value="ShowTotal"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Ivp-MN6tEei97MD7GK1RmA" name="wrappingSize" unsettable="true">
+      <eAnnotations xmi:id="_K56Q-N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56Q-d6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;WrappingSize&quot; specifies the behavior of automatically wrapping the &#xD;&#xA;legend items text into multiple lines when lacking in display space. Value zero &#xD;&#xA;means this feature is disabled, a positive value represents the maximal width &#xD;&#xA;of the text in points. &#xD;&#xA;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Ivp-M96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Ivp-NN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Ivp-Nd6tEei97MD7GK1RmA" key="name" value="WrappingSize"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_J5TIUN6tEei97MD7GK1RmA" name="maxPercent" defaultValueLiteral="0.33333333" unsettable="true">
+      <eAnnotations xmi:id="_K56Q_96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56RAN6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;MaxPercent&quot; specifies the maximal percent of space which the&#xD;&#xA;legend can take from the whole chart block. By default, it's 0.33333333,&#xD;&#xA;which means the legend block will either be dropped or occupy less than &#xD;&#xA;33.3% space of the whole chart block.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_J5TIU96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_J5TIVN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_J5TIVd6tEei97MD7GK1RmA" key="name" value="MaxPercent"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_KJsTbN6tEei97MD7GK1RmA" name="titlePercent" lowerBound="1" eType="_KJsTnd6tEei97MD7GK1RmA" defaultValueLiteral="0.6" unsettable="true">
+      <eAnnotations xmi:id="_K56RBt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56RB96tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;TitlePercent&quot; specifies the maximal percent of space which the&#xD;&#xA;legend title can take from the whole legend block. By default, it's 0.6, &#xD;&#xA;which means the legend title will either be dropped or occupy less than &#xD;&#xA;60% space of the whole legend block.&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KJsTb96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KJsTcN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KJsTcd6tEei97MD7GK1RmA" key="name" value="TitlePercent"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_KJsTct6tEei97MD7GK1RmA" name="ellipsis" lowerBound="1" eType="_KJsS4d6tEei97MD7GK1RmA" defaultValueLiteral="1" unsettable="true">
+      <eAnnotations xmi:id="_K56RDN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56RDd6tEei97MD7GK1RmA" key="documentation" value="Int attribute &quot;Ellipsis&quot; specifies the behavior of shortening the legend item's &#xD;&#xA;text with ellipsis if there is not enough space to display the whole text. Value&#xD;&#xA;0 indicates that the feature is disabled, and the legend item will either be displayed &#xD;&#xA;with whole text or be dropped. A positive value n represents the minimal count &#xD;&#xA;of characters to be displayed before the ellipsis, which means the legend item &#xD;&#xA;will either be dropped or be displayed with at least n characters.&#xD;&#xA;                        &#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KJsTdd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KJsTdt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KJsTd96tEei97MD7GK1RmA" key="name" value="Ellipsis"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KH6Ks96tEei97MD7GK1RmA" name="formatSpecifier" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56REt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56RE96tEei97MD7GK1RmA" key="documentation" value="Element &quot;FormatSpecifier&quot; specifies how the legend item text will be formated."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KH6KtN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KH6Ktd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KH6Ktt6tEei97MD7GK1RmA" key="name" value="FormatSpecifier"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhoLN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HsIEfd6tEei97MD7GK1RmA" name="Plot" eSuperTypes="_HsIDo96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_K56RGd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_K56RGt6tEei97MD7GK1RmA" key="documentation" value="Plot represent the rectangular area in a chart, inside where the graph of its datapoints is displayed. &#xD;&#xA;It extends to the client area of a chart's block excluding the title and legend.  Plot is a sub-type of Block, &#xD;&#xA;and exists as a child block of the chart's block in a chart's model.  &#xD;&#xA;&lt;p xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;>&#xD;&#xA;Besides the general approach of using Chart.getBlock( ).getChildren( ) we can also access it using the &#xD;&#xA;convenient method: Chart.getPlot( );&#xD;&#xA;&lt;/p>&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HsIEgN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HsIEgd6tEei97MD7GK1RmA" key="name" value="Plot"/>
+      <details xmi:id="_HsIEgt6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIEg96tEei97MD7GK1RmA" name="horizontalSpacing" lowerBound="1" defaultValueLiteral="5" unsettable="true">
+      <eAnnotations xmi:id="_K56RH96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56RIN6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;VerticalSpacing&quot; specifies the vertical spacing between elements in the plot.  &#xD;&#xA;For chart with axes, it represents the space in points between the horizontal axes and the graph &#xD;&#xA;of the datapoints.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEht6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEh96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEiN6tEei97MD7GK1RmA" key="name" value="HorizontalSpacing"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HsIEit6tEei97MD7GK1RmA" name="verticalSpacing" lowerBound="1" defaultValueLiteral="5" unsettable="true">
+      <eAnnotations xmi:id="_K56RJt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56RJ96tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;VerticalSpacing&quot; specifies the vertical spacing between elements in the plot.  &#xD;&#xA;For chart with axes, it represents the space in points between the vertical axes and the graph &#xD;&#xA;of the datapoints.&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIEjd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEjt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIEj96tEei97MD7GK1RmA" key="name" value="VerticalSpacing"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HsIEkd6tEei97MD7GK1RmA" name="clientArea" lowerBound="1" eType="_HsIECt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_K56RLd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K56RLt6tEei97MD7GK1RmA" key="documentation" value="Element &quot;ClientArea&quot; represents the valid rectangular area of a plot &#xD;&#xA;block to lay out its content.  It extends the whole block excluding the &#xD;&#xA;margin of the block, which is defined by &quot;Insets&quot;.  It also holds a group of &#xD;&#xA;properties to specify how this area will be rendered, including its background, &#xD;&#xA;outline, visibility... and so on.&#xD;&#xA;&lt;p xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;>&#xD;&#xA;For chart with axes it represents the area within axes. &lt;br/> &#xD;&#xA;For chart without axes it will be split into cells, with each cell for one single series.&#xD;&#xA;&lt;/p>&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HsIElN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HsIEld6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HsIElt6tEei97MD7GK1RmA" key="name" value="ClientArea"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HsIEl96tEei97MD7GK1RmA" name="TitleBlock" eSuperTypes="_HsIELN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_K56RM96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_K56RNN6tEei97MD7GK1RmA" key="documentation" value="TitleBlock is a special sub-type of LabelBlock, which devotes itself to representing the title of the chart.&#xD;&#xA;&lt;p xmlns=&quot;http://www.birt.eclipse.org/ChartModelLayout&quot;>&#xD;&#xA;Besides the general approach of using Chart.getBlock( ).getChildren( ) we can also access it using the &#xD;&#xA;convenient method: Chart.getTitle( );&#xD;&#xA;&lt;/p>&#xD;&#xA;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HsIEmt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HsIEm96tEei97MD7GK1RmA" key="name" value="TitleBlock"/>
+      <details xmi:id="_HsIEnN6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_K72IWN6tEei97MD7GK1RmA" name="auto" lowerBound="1" defaultValueLiteral="false" unsettable="true">
+      <eAnnotations xmi:id="_K72IWd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_K72IWt6tEei97MD7GK1RmA" key="documentation" value="Attribute &quot;Auto&quot; of type boolean specifies whether the  text of the TitleBlock &#xD;&#xA;could be automatically determined by the system."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_K72IW96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_K72IXN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_K72IXd6tEei97MD7GK1RmA" key="name" value="Auto"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_KJsTnd6tEei97MD7GK1RmA" name="TitlePercentType" instanceClassName="double">
+    <eAnnotations xmi:id="_KJsTnt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_KJsTn96tEei97MD7GK1RmA" key="name" value="TitlePercent_._type"/>
+      <details xmi:id="_KJsToN6tEei97MD7GK1RmA" key="baseType" value="http://www.eclipse.org/emf/2003/XMLType#double"/>
+      <details xmi:id="_KJsTod6tEei97MD7GK1RmA" key="minInclusive" value="0"/>
+      <details xmi:id="_KJsTot6tEei97MD7GK1RmA" key="maxInclusive" value="1"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_KJsTo96tEei97MD7GK1RmA" name="TitlePercentTypeObject" instanceClassName="java.lang.Double">
+    <eAnnotations xmi:id="_KJsTpN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_KJsTpd6tEei97MD7GK1RmA" key="name" value="TitlePercent_._type:Object"/>
+      <details xmi:id="_KJsTpt6tEei97MD7GK1RmA" key="baseType" value="TitlePercent_._type"/>
+    </eAnnotations>
+  </eClassifiers>
+</ecore:EPackage>

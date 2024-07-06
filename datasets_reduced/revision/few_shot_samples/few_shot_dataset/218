@@ -1,0 +1,591 @@
+----------------------------------------------------------------------------------------------------
+1 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "true",
+    "ePackage": "application",
+    "eStructuralFeatures": [
+      "id",
+      "style"
+    ],
+    "id": "_LWKsc96tEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "ApplicationElement"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "derived": "false",
+    "eAttributeType": "EString",
+    "eContainingClass": "ApplicationElement",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@fff8c3c (expression: EString)",
+    "eType": "EString",
+    "iD": "false",
+    "id": "_TqU7E96tEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "tags",
+    "ordered": "true",
+    "required": "false",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EAttribute",
+  "type": "object"
+}
+1 0 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "derived": "false",
+    "eAttributeType": "EString",
+    "eContainingClass": "ApplicationElement",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@315422f9 (expression: EString)",
+    "eType": "EString",
+    "iD": "false",
+    "id": "_RUlLrt6tEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "style",
+    "ordered": "true",
+    "required": "false",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EAttribute",
+  "type": "object"
+}
+----------------------------------------------------------------------------------------------------
+2 0 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "ePackage": "b3backend",
+    "eStructuralFeatures": [
+      "name",
+      "expr"
+    ],
+    "id": "_oGfW696wEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "BParameter"
+  },
+  "changeType": "Add",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "false",
+    "derived": "false",
+    "eContainingClass": "BParameter",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@3c0a9b0 (expression: BExpression)",
+    "eReferenceType": "BExpression",
+    "eType": "BExpression",
+    "id": "_oGfW7t6wEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "expr",
+    "ordered": "true",
+    "required": "true",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EReference",
+  "type": "object"
+}
+2 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "derived": "false",
+    "eAttributeType": "EString",
+    "eContainingClass": "BParameter",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@4ad79c0a (expression: EString)",
+    "eType": "EString",
+    "iD": "false",
+    "id": "_oGfW7N6wEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "name",
+    "ordered": "true",
+    "required": "false",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EAttribute",
+  "type": "object"
+}
+----------------------------------------------------------------------------------------------------
+1 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eParameters",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "eContainingClass": "ListChange",
+    "eParameters": [
+      "originalList"
+    ],
+    "id": "_ZcJI0N6tEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "reverse",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EOperation",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@4c314aed (expression: EEList<EJavaObject>)",
+    "eOperation": "reverse",
+    "eType": "EEList",
+    "id": "_ZcJI0d6tEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "originalList",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EParameter",
+  "type": "object"
+}
+0 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOperations",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eOperations": [
+      "apply",
+      "applyAndReverse",
+      "reverse"
+    ],
+    "ePackage": "change",
+    "eStructuralFeatures": [
+      "kind",
+      "dataValues",
+      "index",
+      "moveToIndex",
+      "values",
+      "referenceValues",
+      "feature",
+      "featureMapEntryValues"
+    ],
+    "id": "_ZQn1Q96tEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "ListChange"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{}
+----------------------------------------------------------------------------------------------------
+1 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eParameters",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "eContainingClass": "ExecEnv",
+    "eParameters": [
+      "element",
+      "frame"
+    ],
+    "id": "_KU8EFd6uEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "queueForDelete",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EOperation",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@1a94d331 (expression: StackFrame)",
+    "eOperation": "queueForDelete",
+    "eType": "StackFrame",
+    "id": "_KU8EGN6uEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "frame",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EParameter",
+  "type": "object"
+}
+1 3 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eParameters",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@61323d25 (expression: EObject)",
+    "eOperation": "queueForDelete",
+    "eType": "EObject",
+    "id": "_KU8EFt6uEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "element",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EParameter",
+  "type": "object"
+}
+4 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOperations",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eOperations": [
+      "loadModule",
+      "registerFeature",
+      "registerRule",
+      "findOperation",
+      "findStaticOperation",
+      "findField",
+      "findStaticField",
+      "findRule",
+      "findType",
+      "run",
+      "getRules",
+      "getModelOf",
+      "getModelID",
+      "queueForDelete",
+      "deleteQueue",
+      "..."
+    ],
+    "ePackage": "emftvm",
+    "eStructuralFeatures": [
+      "metaModels",
+      "inputModels",
+      "inoutModels",
+      "outputModels",
+      "modules"
+    ],
+    "id": "_5WZfG96tEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "ExecEnv"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{}
+4 0 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "false",
+    "derived": "false",
+    "eContainingClass": "ExecEnv",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@f080d10 (expression: EObject)",
+    "eReferenceType": "EObject",
+    "eType": "EObject",
+    "id": "_5WZfb96tEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "true",
+    "name": "deletionQueue",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "true",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "-1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EReference",
+  "type": "object"
+}
+----------------------------------------------------------------------------------------------------
+0 4 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eParameters",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "eContainingClass": "TransformationDecorator",
+    "eParameters": [
+      "time",
+      "timeDelta"
+    ],
+    "id": "_YXw2od60Eei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "transform",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EOperation",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@49f3c05 (expression: STEMTime)",
+    "eOperation": "transform",
+    "eType": "STEMTime",
+    "id": "_YXw2ot60Eei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "time",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EParameter",
+  "type": "object"
+}
+0 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eParameters",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@75c25d60 (expression: ELong)",
+    "eOperation": "transform",
+    "eType": "ELong",
+    "id": "_YXw2o960Eei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "timeDelta",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EParameter",
+  "type": "object"
+}
+3 0 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOperations",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "true",
+    "eGenericSuperTypes": [
+      "org.eclipse.emf.ecore.impl.EGenericTypeImpl@1c088000 (expression: NodeDecorator)"
+    ],
+    "eOperations": [
+      "transform"
+    ],
+    "ePackage": "model",
+    "id": "_YXw2oN60Eei97MD7GK1RmA",
+    "interface": "false",
+    "name": "TransformationDecorator"
+  },
+  "changeType": "Add",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{}
+1 3 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eClassifiers",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "eClassifiers": [
+      "Decorator",
+      "EdgeDecorator",
+      "GraphDecorator",
+      "Model",
+      "NodeDecorator",
+      "STEMTime",
+      "Comparable",
+      "IntegrationDecorator",
+      "TransformationDecorator"
+    ],
+    "eFactoryInstance": "org.eclipse.emf.ecore.impl.EFactoryImpl@736eff9",
+    "id": "_YQ1u8t60Eei97MD7GK1RmA",
+    "name": "model",
+    "nsPrefix": "org.eclipse.stem.core.model",
+    "nsURI": "http:///org/eclipse/stem/core/model.ecore"
+  },
+  "changeType": "Preserve",
+  "className": "EPackage",
+  "type": "object"
+} 
+ Target Node:{}
+----------------------------------------------------------------------------------------------------
+2 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eParameters",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "eContainingClass": "FeatureChange",
+    "eParameters": [
+      "originalObject"
+    ],
+    "id": "_ZcJIt96tEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "reverse",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EOperation",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@14e46211 (expression: EObject)",
+    "eOperation": "reverse",
+    "eType": "EObject",
+    "id": "_ZcJIuN6tEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "originalObject",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EParameter",
+  "type": "object"
+}
+--------------------------------------------------COMPLETION--------------------------------------------------
+0 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOperations",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eOperations": [
+      "apply",
+      "applyAndReverse",
+      "reverse"
+    ],
+    "ePackage": "change",
+    "eStructuralFeatures": [
+      "featureName",
+      "dataValue",
+      "set",
+      "value",
+      "feature",
+      "referenceValue",
+      "listChanges"
+    ],
+    "id": "_ZQn1L96tEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "FeatureChange"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{}

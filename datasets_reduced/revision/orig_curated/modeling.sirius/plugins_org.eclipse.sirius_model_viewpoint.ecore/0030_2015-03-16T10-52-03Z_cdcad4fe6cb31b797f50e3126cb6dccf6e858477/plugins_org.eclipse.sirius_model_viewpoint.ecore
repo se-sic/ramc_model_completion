@@ -1,0 +1,1755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_fmITwN6vEei97MD7GK1RmA" name="viewpoint" nsURI="http://www.eclipse.org/sirius/1.1.0" nsPrefix="viewpoint">
+  <eAnnotations xmi:id="_fmITwd6vEei97MD7GK1RmA" source="Tags">
+    <details xmi:id="_fmITwt6vEei97MD7GK1RmA" key="deprecated" value="Anything tagged as deprecated will disappear quite soon.&#xA;&#xA;"/>
+    <details xmi:id="_fmITw96vEei97MD7GK1RmA" key="to be renamed" value="Anything tagged &quot;to be renamed&quot; will be renamed, at least in the UI&#xA;"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmITxN6vEei97MD7GK1RmA" name="DAnalysis">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmITxd6vEei97MD7GK1RmA" name="referencedAnalysis" upperBound="-1" eType="_fmITxN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmITxt6vEei97MD7GK1RmA" name="models" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmITyN6vEei97MD7GK1RmA" name="eAnnotations" upperBound="-1" eType="_fmIa7N6vEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmITyd6vEei97MD7GK1RmA" name="ownedViews" upperBound="-1" eType="_fmIUKt6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmITyt6vEei97MD7GK1RmA" name="selectedViews" upperBound="-1" eType="_fmIUKt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmITy96vEei97MD7GK1RmA" name="ownedFeatureExtensions" upperBound="-1" eType="_fmITzt6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmITzN6vEei97MD7GK1RmA" name="version">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmITzt6vEei97MD7GK1RmA" name="DFeatureExtension" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmITz96vEei97MD7GK1RmA" name="description" lowerBound="1" eType="_fmIXeN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIT0N6vEei97MD7GK1RmA" name="DValidable" abstract="true" interface="true">
+    <eAnnotations xmi:id="_fmIT0d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIT0t6vEei97MD7GK1RmA" key="documentation" value="Represents an element that can be validated."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmIT096vEei97MD7GK1RmA" name="validate">
+      <eAnnotations xmi:id="_fmIT1N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIT1d6vEei97MD7GK1RmA" key="documentation" value="Validate the element. Return &lt;code>false&lt;/code> if the element is not valid."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIT196vEei97MD7GK1RmA" name="DNavigable" abstract="true">
+    <eAnnotations xmi:id="_fmIT2N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIT2d6vEei97MD7GK1RmA" key="documentation" value="Represents an element that can be navigate. The user can see the details in another editor."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIT2t6vEei97MD7GK1RmA" name="ownedNavigationLinks" upperBound="-1" eType="_fmIU5t6vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_fmIT296vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIT3N6vEei97MD7GK1RmA" key="documentation" value="The links of the navigable element."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIT3d6vEei97MD7GK1RmA" name="DStylizable" abstract="true" interface="true">
+    <eAnnotations xmi:id="_fmIT3t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIT396vEei97MD7GK1RmA" key="documentation" value="An element that has a style."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmIT4N6vEei97MD7GK1RmA" name="getStyle" eType="_fmIWwt6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fmIT4d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIT4t6vEei97MD7GK1RmA" key="documentation" value="Return the style of the element."/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIT496vEei97MD7GK1RmA" name="DRefreshable" abstract="true" interface="true">
+    <eAnnotations xmi:id="_fmIT5N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIT5d6vEei97MD7GK1RmA" key="documentation" value="An element that can be refreshed."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmIT5t6vEei97MD7GK1RmA" name="refresh">
+      <eAnnotations xmi:id="_fmIT596vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIT6N6vEei97MD7GK1RmA" key="documentation" value="Refresh the element."/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIT6d6vEei97MD7GK1RmA" name="DLabelled" abstract="true" interface="true">
+    <eAnnotations xmi:id="_fmIT6t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIT696vEei97MD7GK1RmA" key="documentation" value="An element that has a label."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIT7N6vEei97MD7GK1RmA" name="DMappingBased" abstract="true" interface="true">
+    <eAnnotations xmi:id="_fmIT7d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIT7t6vEei97MD7GK1RmA" key="documentation" value="An element that has a mapping."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmIT796vEei97MD7GK1RmA" name="getMapping" eType="_fmIYEN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fmIT8N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIT8d6vEei97MD7GK1RmA" key="documentation" value="Return the mapping of the element."/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIT8t6vEei97MD7GK1RmA" name="DContainer" abstract="true" interface="true">
+    <eAnnotations xmi:id="_fmIT896vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIT9N6vEei97MD7GK1RmA" key="documentation" value="An element that contains others diagram elements."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIT9d6vEei97MD7GK1RmA" name="DRepresentationContainer" eSuperTypes="_fmIUKt6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIT-96vEei97MD7GK1RmA" name="models" upperBound="-1" changeable="false" volatile="true" transient="true" derived="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIT_d6vEei97MD7GK1RmA" name="DSemanticDecorator" abstract="true">
+    <eAnnotations xmi:id="_fmIT_t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIT_96vEei97MD7GK1RmA" key="documentation" value="An element that has a link to the semantic model."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIUAN6vEei97MD7GK1RmA" name="target" lowerBound="1">
+      <eAnnotations xmi:id="_fmIUAd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUAt6vEei97MD7GK1RmA" key="documentation" value="The referenced EObject."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIUBN6vEei97MD7GK1RmA" name="DRepresentation" abstract="true" eSuperTypes="_fmIZjN6vEei97MD7GK1RmA _fmIT496vEei97MD7GK1RmA _fmIZj96vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIUEt6vEei97MD7GK1RmA" name="ownedRepresentationElements" upperBound="-1" eType="_fmIUId6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fmIUE96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUFN6vEei97MD7GK1RmA" key="documentation" value="The directly contained representation elements"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIUFd6vEei97MD7GK1RmA" name="representationElements" upperBound="-1" eType="_fmIUId6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fmIUFt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUF96vEei97MD7GK1RmA" key="documentation" value="The directly and indirectly contained representation elements"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIUGN6vEei97MD7GK1RmA" name="name" defaultValueLiteral="">
+      <eAnnotations xmi:id="_fmIUGd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUGt6vEei97MD7GK1RmA" key="documentation" value="The name of the representation."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIUHN6vEei97MD7GK1RmA" name="ownedAnnotationEntries" upperBound="-1" eType="_fmIayN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIUId6vEei97MD7GK1RmA" name="DRepresentationElement" abstract="true" eSuperTypes="_fmIT6d6vEei97MD7GK1RmA _fmIT7N6vEei97MD7GK1RmA _fmIT3d6vEei97MD7GK1RmA _fmIT496vEei97MD7GK1RmA _fmIT_d6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIUIt6vEei97MD7GK1RmA" name="name" defaultValueLiteral="">
+      <eAnnotations xmi:id="_fmIUI96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUJN6vEei97MD7GK1RmA" key="documentation" value="The name of the element. It is the name that is displayed on the diagram."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIUJt6vEei97MD7GK1RmA" name="semanticElements" upperBound="-1">
+      <eAnnotations xmi:id="_fmIUJ96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUKN6vEei97MD7GK1RmA" key="documentation" value="The semantic elements to show that represents this view point element."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIUKt6vEei97MD7GK1RmA" name="DView" eSuperTypes="_fmIT496vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmIUK96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIULN6vEei97MD7GK1RmA" key="documentation" value="An view is the root element"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIULd6vEei97MD7GK1RmA" name="ownedRepresentations" upperBound="-1" eType="_fmIUBN6vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_fmIULt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUL96vEei97MD7GK1RmA" key="documentation" value="The viewpoints that are owned by this analysis."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIUMN6vEei97MD7GK1RmA" name="ownedExtensions" eType="_fmIUQd6vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_fmIUMd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUMt6vEei97MD7GK1RmA" key="documentation" value="The Meta Model extension for this analysis. It may be null."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIUM96vEei97MD7GK1RmA" name="allRepresentations" upperBound="-1" eType="_fmIUBN6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fmIUNN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUNd6vEei97MD7GK1RmA" key="documentation" value="All viewpoints of this analysis"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIUNt6vEei97MD7GK1RmA" name="hiddenRepresentations" upperBound="-1" eType="_fmIUBN6vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_fmIUN96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUON6vEei97MD7GK1RmA" key="documentation" value="All hidden viewpoints of this analysis."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIUOd6vEei97MD7GK1RmA" name="referencedRepresentations" upperBound="-1" eType="_fmIUBN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_ftA_Vt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_ftA_V96vEei97MD7GK1RmA" key="documentation" value="ViewPoints referenced but not contained in this analysis."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIUPN6vEei97MD7GK1RmA" name="initialized" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIUPt6vEei97MD7GK1RmA" name="viewpoint" lowerBound="1" eType="_ftBCet6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fmIUP96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIUQN6vEei97MD7GK1RmA" key="documentation" value="The viewpoint that is used for this view"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIUQd6vEei97MD7GK1RmA" name="MetaModelExtension">
+    <eAnnotations xmi:id="_fmIUQt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIUQ96vEei97MD7GK1RmA" key="documentation" value="Represent a Meta Model extension.&#xD;&#xA;A meta model extension adds types, attributes and references into an existing meta model"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIURN6vEei97MD7GK1RmA" name="extensionGroup" lowerBound="1">
+      <eAnnotations xmi:id="_fmIURd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIURt6vEei97MD7GK1RmA" key="documentation" value="The referenced meta model extension. It should be an instance of ExtensionGroup."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIU4N6vEei97MD7GK1RmA" name="Decoration">
+    <eAnnotations xmi:id="_fmIU4d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIU4t6vEei97MD7GK1RmA" key="documentation" value="Represent a decoration of a diagram element with a specific icon, based on its relationships with MetaElements of the MetaModel.&#xD;&#xA;"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIU496vEei97MD7GK1RmA" name="description" lowerBound="1" eType="_fmIZ2d6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fmIU5N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIU5d6vEei97MD7GK1RmA" key="documentation" value="The referenced DecorationDescription."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIU5t6vEei97MD7GK1RmA" name="DNavigationLink" abstract="true">
+    <eAnnotations xmi:id="_fmIU596vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIU6N6vEei97MD7GK1RmA" key="documentation" value="A link for a navigable."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmIU6d6vEei97MD7GK1RmA" name="isAvailable">
+      <eAnnotations xmi:id="_fmIU6t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIU696vEei97MD7GK1RmA" key="documentation" value="Return true if the navigation is available."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIU7d6vEei97MD7GK1RmA" name="targetType" eType="_fmIZs96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fmIU7t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIU796vEei97MD7GK1RmA" key="documentation" value="The type of the target."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIU8N6vEei97MD7GK1RmA" name="label" defaultValueLiteral="link to...">
+      <eAnnotations xmi:id="_fmIU8d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIU8t6vEei97MD7GK1RmA" key="documentation" value="The label of the navigation."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIVBN6vEei97MD7GK1RmA" name="DSourceFileLink" eSuperTypes="_fmIU5t6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmIVBd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIVBt6vEei97MD7GK1RmA" key="documentation" value="A link that references a Source File."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIVB96vEei97MD7GK1RmA" name="filePath" lowerBound="1">
+      <eAnnotations xmi:id="_fmIVCN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIVCd6vEei97MD7GK1RmA" key="documentation" value="The path of the source file."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIVC96vEei97MD7GK1RmA" name="startPosition" defaultValueLiteral="0">
+      <eAnnotations xmi:id="_fmIVDN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIVDd6vEei97MD7GK1RmA" key="documentation" value="The index of the start portion of code."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFyd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIVD96vEei97MD7GK1RmA" name="endPosition" defaultValueLiteral="1">
+      <eAnnotations xmi:id="_fmIVEN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIVEd6vEei97MD7GK1RmA" key="documentation" value="The index of the end portion of code."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFyd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIWct6vEei97MD7GK1RmA" name="DAnalysisCustomData">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIWc96vEei97MD7GK1RmA" name="key" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIWdd6vEei97MD7GK1RmA" name="data" lowerBound="1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIWt96vEei97MD7GK1RmA" name="LabelStyle" eSuperTypes="_fmIXFd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmIWuN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIWud6vEei97MD7GK1RmA" key="documentation" value="The style of a label."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIWut6vEei97MD7GK1RmA" name="labelAlignment" eType="_fmIW4t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_fmIWu96vEei97MD7GK1RmA" name="FontFormat">
+    <eAnnotations xmi:id="_fmIWvN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIWvd6vEei97MD7GK1RmA" key="documentation" value="The format of the font."/>
+    </eAnnotations>
+    <eLiterals xmi:id="_fmIWvt6vEei97MD7GK1RmA" name="normal"/>
+    <eLiterals xmi:id="_fmIWv96vEei97MD7GK1RmA" name="italic" value="1"/>
+    <eLiterals xmi:id="_fmIWwN6vEei97MD7GK1RmA" name="bold" value="2"/>
+    <eLiterals xmi:id="_fmIWwd6vEei97MD7GK1RmA" name="bold_italic" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIWwt6vEei97MD7GK1RmA" name="Style" abstract="true" eSuperTypes="_fmIT496vEei97MD7GK1RmA _fmIXO96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmIWw96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIWxN6vEei97MD7GK1RmA" key="documentation" value="The super class of all styles."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIWxd6vEei97MD7GK1RmA" name="description" eType="_fmIa896vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_fmIW4t6vEei97MD7GK1RmA" name="LabelAlignment">
+    <eLiterals xmi:id="_fmIW496vEei97MD7GK1RmA" name="CENTER"/>
+    <eLiterals xmi:id="_fmIW5N6vEei97MD7GK1RmA" name="LEFT" value="1"/>
+    <eLiterals xmi:id="_fmIW5d6vEei97MD7GK1RmA" name="RIGHT" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_gnQaPt6vEei97MD7GK1RmA" name="RGBValues" instanceClassName="org.eclipse.sirius.viewpoint.RGBValues"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIW8d6vEei97MD7GK1RmA" name="DAnalysisSessionEObject">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIW8t6vEei97MD7GK1RmA" name="open" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIW9t6vEei97MD7GK1RmA" name="resources" upperBound="-1" transient="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF3d6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIW-N6vEei97MD7GK1RmA" name="controlledResources" upperBound="-1" transient="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF3d6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ftBCGt6vEei97MD7GK1RmA" name="activatedViewpoints" upperBound="-1" eType="_ftBCet6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIW-96vEei97MD7GK1RmA" name="analyses" upperBound="-1" eType="_fmITxN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIW_N6vEei97MD7GK1RmA" name="synchronizationStatus" lowerBound="1" eType="_fmIW_d6vEei97MD7GK1RmA" defaultValueLiteral="dirty"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_fmIW_d6vEei97MD7GK1RmA" name="SyncStatus">
+    <eLiterals xmi:id="_fmIW_t6vEei97MD7GK1RmA" name="dirty"/>
+    <eLiterals xmi:id="_fmIW_96vEei97MD7GK1RmA" name="sync" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXCN6vEei97MD7GK1RmA" name="SessionManagerEObject">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXCd6vEei97MD7GK1RmA" name="ownedSessions" upperBound="-1" eType="_fmIW8d6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXCt6vEei97MD7GK1RmA" name="DResource" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXC96vEei97MD7GK1RmA" name="name" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXDd6vEei97MD7GK1RmA" name="path" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXD96vEei97MD7GK1RmA" name="DFile" eSuperTypes="_fmIXCt6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXEN6vEei97MD7GK1RmA" name="DResourceContainer" eSuperTypes="_fmIXCt6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXEd6vEei97MD7GK1RmA" name="members" upperBound="-1" eType="_fmIXCt6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXEt6vEei97MD7GK1RmA" name="DProject" eSuperTypes="_fmIXEN6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXE96vEei97MD7GK1RmA" name="DFolder" eSuperTypes="_fmIXEN6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXFN6vEei97MD7GK1RmA" name="DModel" eSuperTypes="_fmIXD96vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXFd6vEei97MD7GK1RmA" name="BasicLabelStyle" eSuperTypes="_fmIXO96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmIXFt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fmIXF96vEei97MD7GK1RmA" key="documentation" value="The style of a label."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXGN6vEei97MD7GK1RmA" name="labelSize" defaultValueLiteral="8">
+      <eAnnotations xmi:id="_fmIXGd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIXGt6vEei97MD7GK1RmA" key="documentation" value="The font size."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFyd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXHN6vEei97MD7GK1RmA" name="labelFormat" eType="_fmIWu96vEei97MD7GK1RmA" defaultValueLiteral="normal">
+      <eAnnotations xmi:id="_fmIXHd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIXHt6vEei97MD7GK1RmA" key="documentation" value="The font format."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXH96vEei97MD7GK1RmA" name="showIcon" defaultValueLiteral="true">
+      <eAnnotations xmi:id="_fmIXIN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIXId6vEei97MD7GK1RmA" key="documentation" value="True, if the icon shoud be dispayed on the element."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXJN6vEei97MD7GK1RmA" name="iconPath" defaultValueLiteral="">
+      <eAnnotations xmi:id="_fmIXJd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIXJt6vEei97MD7GK1RmA" key="documentation" value="The path of the icon to display on the element. If unset, the icon corresponding to the semantic element will be displayed."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_gnQaa96vEei97MD7GK1RmA" name="labelColor" eType="_gnQaPt6vEei97MD7GK1RmA" defaultValueLiteral="0,0,0"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXO96vEei97MD7GK1RmA" name="Customizable" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXPN6vEei97MD7GK1RmA" name="customFeatures" upperBound="-1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eSubpackages xmi:id="_fmIXUN6vEei97MD7GK1RmA" name="description" nsURI="http://www.eclipse.org/sirius/description/1.1.0" nsPrefix="description">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXUd6vEei97MD7GK1RmA" name="Group" eSuperTypes="_fmIZj96vEei97MD7GK1RmA _fmIZjN6vEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXUt6vEei97MD7GK1RmA" name="name" defaultValueLiteral="">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ftBCdN6vEei97MD7GK1RmA" name="ownedViewpoints" upperBound="-1" eType="_ftBCet6vEei97MD7GK1RmA" containment="true" eKeys="_fmIa096vEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXVd6vEei97MD7GK1RmA" name="systemColorsPalette" lowerBound="1" eType="_fmIawt6vEei97MD7GK1RmA" transient="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXVt6vEei97MD7GK1RmA" name="userColorsPalettes" upperBound="-1" eType="_fmIaxN6vEei97MD7GK1RmA" containment="true" eKeys="_fmIaxd6vEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXV96vEei97MD7GK1RmA" name="version">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXWd6vEei97MD7GK1RmA" name="Component" abstract="true" interface="true"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_ftBCet6vEei97MD7GK1RmA" name="Viewpoint" eSuperTypes="_fmIZjN6vEei97MD7GK1RmA _fmIXWd6vEei97MD7GK1RmA _fmIazd6vEei97MD7GK1RmA _fmIa0N6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_ftBCe96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_ftBCfN6vEei97MD7GK1RmA" key="documentation" value="A Viewpoint defines a &quot;way of looking at your model&quot;, you could make an analogy with &quot;What is your current concern about your analysis&quot;. It defines representations and might also define specific data only relevant for this concern."/>
+      </eAnnotations>
+      <eOperations xmi:id="_fmIXXd6vEei97MD7GK1RmA" name="initView">
+        <eAnnotations xmi:id="_fmIXXt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIXX96vEei97MD7GK1RmA" key="documentation" value="Initialize the analysis."/>
+        </eAnnotations>
+        <eParameters xmi:id="_fmIXYN6vEei97MD7GK1RmA" name="model">
+          <eAnnotations xmi:id="_fmIXYd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIXYt6vEei97MD7GK1RmA" key="documentation" value="The root model element."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXZN6vEei97MD7GK1RmA" name="modelFileExtension" defaultValueLiteral="*">
+        <eAnnotations xmi:id="_fmIXZd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIXZt6vEei97MD7GK1RmA" key="documentation" value="Might be used to restrict your viewpoint to a set of file extensions, for instance &quot;ecore&quot;"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXaN6vEei97MD7GK1RmA" name="validationSet" eType="_fmIfJN6vEei97MD7GK1RmA" containment="true" eKeys="_fmIfKt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIXad6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIXat6vEei97MD7GK1RmA" key="documentation" value="The validations rules"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXa96vEei97MD7GK1RmA" name="ownedRepresentations" upperBound="-1" eType="_fmIXed6vEei97MD7GK1RmA" containment="true" eKeys="_fmIa096vEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXbN6vEei97MD7GK1RmA" name="ownedRepresentationExtensions" upperBound="-1" eType="_fmIXj96vEei97MD7GK1RmA" containment="true" eKeys="_fmIXkN6vEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXbd6vEei97MD7GK1RmA" name="ownedJavaExtensions" upperBound="-1" eType="_fmIYCd6vEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXbt6vEei97MD7GK1RmA" name="ownedMMExtensions" upperBound="-1" eType="_fmIYAt6vEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXb96vEei97MD7GK1RmA" name="ownedFeatureExtensions" upperBound="-1" eType="_fmIXeN6vEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXcN6vEei97MD7GK1RmA" name="icon">
+        <eAnnotations xmi:id="_fmIXcd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIXct6vEei97MD7GK1RmA" key="documentation" value="image path to use as an icon for the viewpoint "/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXdN6vEei97MD7GK1RmA" name="ownedTemplates" upperBound="-1" eType="_fmIXit6vEei97MD7GK1RmA" containment="true" eKeys="_fmIXi96vEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXdd6vEei97MD7GK1RmA" name="conflicts" upperBound="-1" eType="_fmIa8d6vEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXdt6vEei97MD7GK1RmA" name="reuses" upperBound="-1" eType="_fmIa8d6vEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXd96vEei97MD7GK1RmA" name="customizes" upperBound="-1" eType="_fmIa8d6vEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXeN6vEei97MD7GK1RmA" name="FeatureExtensionDescription" abstract="true" interface="true"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXed6vEei97MD7GK1RmA" name="RepresentationDescription" abstract="true" interface="true" eSuperTypes="_fmIZjN6vEei97MD7GK1RmA _fmIazd6vEei97MD7GK1RmA _fmIa0N6vEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXet6vEei97MD7GK1RmA" name="titleExpression" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="">
+        <eAnnotations xmi:id="_fmIXe96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIXfN6vEei97MD7GK1RmA" key="documentation" value="The default title of the representation. (new + name if empty)"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIXfd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIXft6vEei97MD7GK1RmA" key="returnType" value="a string."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIXf96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXgN6vEei97MD7GK1RmA" name="initialisation" lowerBound="1">
+        <eAnnotations xmi:id="_fmIXgd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIXgt6vEei97MD7GK1RmA" key="documentation" value="Set to true if your want your representation to be automatically created when initializing a new session."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXhN6vEei97MD7GK1RmA" name="metamodel" upperBound="-1">
+        <eAnnotations xmi:id="_fmIXhd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIXht6vEei97MD7GK1RmA" key="documentation" value="You might use this reference to statically bind your representation with a set of Ecore packages. Keep in mind that this is not mandatory."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFYt6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXiN6vEei97MD7GK1RmA" name="showOnStartup">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXit6vEei97MD7GK1RmA" name="RepresentationTemplate" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXi96vEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXjd6vEei97MD7GK1RmA" name="ownedRepresentations" upperBound="-1" eType="_fmIXed6vEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXjt6vEei97MD7GK1RmA" name="RepresentationImportDescription" abstract="true" interface="true" eSuperTypes="_fmIXed6vEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIXj96vEei97MD7GK1RmA" name="RepresentationExtensionDescription" abstract="true" interface="true">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXkN6vEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXkt6vEei97MD7GK1RmA" name="viewpointURI" lowerBound="1">
+        <eAnnotations xmi:id="_ftBCs96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_ftBCtN6vEei97MD7GK1RmA" key="documentation" value="The logical URI of the viewpoint you want to extend, in the form of viewpoint:/pluginID/ViewpointName"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIXlt6vEei97MD7GK1RmA" name="representationName" lowerBound="1">
+        <eAnnotations xmi:id="_fmIXl96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIXmN6vEei97MD7GK1RmA" key="documentation" value="The name of the Representation you are extending."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIXmt6vEei97MD7GK1RmA" name="metamodel" upperBound="-1">
+        <eAnnotations xmi:id="_fmIXm96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIXnN6vEei97MD7GK1RmA" key="documentation" value="You might use this reference to statically bind your representation extension with a set of Ecore packages. Keep in mind that this is not mandatory."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFYt6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIYAt6vEei97MD7GK1RmA" name="MetamodelExtensionSetting">
+      <eAnnotations xmi:id="_fmIYA96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIYBN6vEei97MD7GK1RmA" key="documentation" value="Describe the Meta Model extension to use."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIYBd6vEei97MD7GK1RmA" name="extensionGroup">
+        <eAnnotations xmi:id="_fmIYBt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIYB96vEei97MD7GK1RmA" key="documentation" value="The Meta Model extension."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIYCd6vEei97MD7GK1RmA" name="JavaExtension">
+      <eAnnotations xmi:id="_fmIYCt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIYC96vEei97MD7GK1RmA" key="documentation" value="This class allows to import a Java Class that is used as an Acceleo Service. All acceleo expressions can use the services."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIYDN6vEei97MD7GK1RmA" name="qualifiedClassName" lowerBound="1">
+        <eAnnotations xmi:id="_fmIYDd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIYDt6vEei97MD7GK1RmA" key="documentation" value="The name of the class to import."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIYEN6vEei97MD7GK1RmA" name="RepresentationElementMapping" abstract="true" eSuperTypes="_fmIa0N6vEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIYEd6vEei97MD7GK1RmA" name="detailDescriptions" upperBound="-1" eType="_fmIdgN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIYEt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIYE96vEei97MD7GK1RmA" key="documentation" value="All details that can be created from this node."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIYFN6vEei97MD7GK1RmA" name="navigationDescriptions" upperBound="-1" eType="_fmIdmN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIYFd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIYFt6vEei97MD7GK1RmA" key="documentation" value="All details that can be created from this node."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIZA96vEei97MD7GK1RmA" name="AbstractMappingImport" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIZBN6vEei97MD7GK1RmA" name="hideSubMappings" defaultValueLiteral="false">
+        <eAnnotations xmi:id="_fmIZBd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIZBt6vEei97MD7GK1RmA" key="documentation" value="Set to true if you don't want to inherit the sub mappings of the imported mapping."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIZCN6vEei97MD7GK1RmA" name="inheritsAncestorFilters" defaultValueLiteral="true">
+        <eAnnotations xmi:id="_fmIZCd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIZCt6vEei97MD7GK1RmA" key="documentation" value="Set to true if you want the filters applying on the imported mappings apply on this one."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIZjN6vEei97MD7GK1RmA" name="DocumentedElement" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIZjd6vEei97MD7GK1RmA" name="documentation" defaultValueLiteral="">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIZj96vEei97MD7GK1RmA" name="DModelElement" abstract="true">
+      <eOperations xmi:id="_fmIZkN6vEei97MD7GK1RmA" name="getDAnnotation" eType="_fmIZlN6vEei97MD7GK1RmA">
+        <eParameters xmi:id="_fmIZkd6vEei97MD7GK1RmA" name="source">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIZk96vEei97MD7GK1RmA" name="eAnnotations" upperBound="-1" eType="_fmIZlN6vEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIZlN6vEei97MD7GK1RmA" name="DAnnotation">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIZld6vEei97MD7GK1RmA" name="source">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIZl96vEei97MD7GK1RmA" name="details" upperBound="-1" containment="true" resolveProxies="false">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF6d6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIZmd6vEei97MD7GK1RmA" name="ConditionalStyleDescription" abstract="true">
+      <eOperations xmi:id="_fmIZmt6vEei97MD7GK1RmA" name="checkPredicate">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+        <eParameters xmi:id="_fmIZnN6vEei97MD7GK1RmA" name="modelElement">
+          <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+        </eParameters>
+        <eParameters xmi:id="_fmIZnt6vEei97MD7GK1RmA" name="viewVariable">
+          <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+        </eParameters>
+        <eParameters xmi:id="_fmIZoN6vEei97MD7GK1RmA" name="containerVariable">
+          <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+        </eParameters>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIZot6vEei97MD7GK1RmA" name="predicateExpression" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIZo96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIZpN6vEei97MD7GK1RmA" key="documentation" value="This expression will get evaluated and if it returns true the contained style will be choosen."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIZpd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIZpt6vEei97MD7GK1RmA" key="returnType" value="a boolean."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIZp96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+          <details xmi:id="_fmIZqN6vEei97MD7GK1RmA" key="view" value="ecore.EObject | the current view."/>
+          <details xmi:id="_fmIZqd6vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic container."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmIZsN6vEei97MD7GK1RmA" name="TypeName" instanceClassName="java.lang.String"/>
+    <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmIZsd6vEei97MD7GK1RmA" name="InterpretedExpression" instanceClassName="java.lang.String"/>
+    <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmIZst6vEei97MD7GK1RmA" name="FeatureName" instanceClassName="java.lang.String"/>
+    <eClassifiers xsi:type="ecore:EEnum" xmi:id="_fmIZs96vEei97MD7GK1RmA" name="NavigationTargetType">
+      <eLiterals xmi:id="_fmIZtN6vEei97MD7GK1RmA" name="model"/>
+      <eLiterals xmi:id="_fmIZtd6vEei97MD7GK1RmA" name="file" value="1"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIZvt6vEei97MD7GK1RmA" name="PasteTargetDescription" abstract="true">
+      <eAnnotations xmi:id="_fmIZv96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIZwN6vEei97MD7GK1RmA" key="documentation" value="A PasteTargetDescription is a Description or Mapping that can have many PasteTools."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIZwd6vEei97MD7GK1RmA" name="pasteDescriptions" upperBound="-1" eType="_fmIc3N6vEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIZ196vEei97MD7GK1RmA" name="DecorationDescriptionsSet">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIZ2N6vEei97MD7GK1RmA" name="decorationDescriptions" upperBound="-1" eType="_fmIZ2d6vEei97MD7GK1RmA" containment="true" eKeys="_fmIZ2t6vEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIZ2d6vEei97MD7GK1RmA" name="DecorationDescription" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIZ2t6vEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eAnnotations xmi:id="_fmIZ296vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIZ3N6vEei97MD7GK1RmA" key="documentation" value="The name of the decoration."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIZ3t6vEei97MD7GK1RmA" name="position" lowerBound="1" eType="_fmIZ7d6vEei97MD7GK1RmA" defaultValueLiteral="SOUTH_WEST"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIZ396vEei97MD7GK1RmA" name="decoratorPath" lowerBound="1">
+        <eAnnotations xmi:id="_fmIZ4N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIZ4d6vEei97MD7GK1RmA" key="documentation" value="The path of the icon of the decoration."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIZ496vEei97MD7GK1RmA" name="preconditionExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIZ5N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIZ5d6vEei97MD7GK1RmA" key="documentation" value="Expression that filters the elements on which we want to display the decoration."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIZ5t6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIZ596vEei97MD7GK1RmA" key="returnType" value="a boolean."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_gTSWX96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+          <details xmi:id="_gTSWYN6vEei97MD7GK1RmA" key="containerView" value="viewpoint.DSemanticDecorator | the view that would contain the potential views of the checked elements."/>
+          <details xmi:id="_gTSWYd6vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic element of the container view."/>
+          <details xmi:id="_gTSWYt6vEei97MD7GK1RmA" key="viewpoint" value="diagram.DDiagram | (deprecated) the current diagram."/>
+          <details xmi:id="_gTSWY96vEei97MD7GK1RmA" key="diagram" value="diagram.DDiagram | the current diagram."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" xmi:id="_fmIZ7d6vEei97MD7GK1RmA" name="Position">
+      <eLiterals xmi:id="_fmIZ7t6vEei97MD7GK1RmA" name="NORTH" literal="NORTH"/>
+      <eLiterals xmi:id="_fmIZ796vEei97MD7GK1RmA" name="WEST" value="1" literal="WEST"/>
+      <eLiterals xmi:id="_fmIZ8N6vEei97MD7GK1RmA" name="SOUTH" value="2" literal="SOUTH"/>
+      <eLiterals xmi:id="_fmIZ8d6vEei97MD7GK1RmA" name="EAST" value="3" literal="EAST"/>
+      <eLiterals xmi:id="_fmIZ8t6vEei97MD7GK1RmA" name="NORTH_WEST" value="4" literal="NORTH_WEST"/>
+      <eLiterals xmi:id="_fmIZ896vEei97MD7GK1RmA" name="NORTH_EAST" value="5" literal="NORTH_EAST"/>
+      <eLiterals xmi:id="_fmIZ9N6vEei97MD7GK1RmA" name="SOUTH_WEST" value="6" literal="SOUTH_WEST"/>
+      <eLiterals xmi:id="_fmIZ9d6vEei97MD7GK1RmA" name="SOUTH_EAST" value="7" literal="SOUTH_EAST"/>
+      <eLiterals xmi:id="_fmIZ9t6vEei97MD7GK1RmA" name="CENTER" value="8" literal="CENTER"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIZ-96vEei97MD7GK1RmA" name="SemanticBasedDecoration" eSuperTypes="_fmIZ2d6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fmIZ_N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIZ_d6vEei97MD7GK1RmA" key="documentation" value="A SemanticBasedDecoration applies decoration on views that targeted an element of the given type."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIZ_t6vEei97MD7GK1RmA" name="domainClass" lowerBound="1" eType="_fmIZsN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIZ_96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIaAN6vEei97MD7GK1RmA" key="documentation" value="The path of the icon of the decoration."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaKt6vEei97MD7GK1RmA" name="Customization">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIaK96vEei97MD7GK1RmA" name="vsmElementCustomizations" lowerBound="1" upperBound="-1" eType="_fmIaLN6vEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaLN6vEei97MD7GK1RmA" name="IVSMElementCustomization" abstract="true" interface="true"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaLd6vEei97MD7GK1RmA" name="VSMElementCustomization" eSuperTypes="_fmIaLN6vEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaLt6vEei97MD7GK1RmA" name="predicateExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fytdod6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fytdot6vEei97MD7GK1RmA" key="returnType" value="a boolean result. True to enable the customization, false to disabled it. True by default."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIaMd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+          <details xmi:id="_fmIaMt6vEei97MD7GK1RmA" key="view" value="ecore.EObject | the current view."/>
+          <details xmi:id="_fmIaM96vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic container."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIaNN6vEei97MD7GK1RmA" name="featureCustomizations" lowerBound="1" upperBound="-1" eType="_fmIaOd6vEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaNd6vEei97MD7GK1RmA" name="VSMElementCustomizationReuse" eSuperTypes="_fmIaLN6vEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIaNt6vEei97MD7GK1RmA" name="reuse" lowerBound="1" upperBound="-1" eType="_fmIaOd6vEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIaN96vEei97MD7GK1RmA" name="appliedOn" lowerBound="1" upperBound="-1">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaOd6vEei97MD7GK1RmA" name="EStructuralFeatureCustomization" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIaOt6vEei97MD7GK1RmA" name="appliedOn" upperBound="-1">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ftBFXt6vEei97MD7GK1RmA" name="applyOnAll">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaPN6vEei97MD7GK1RmA" name="EAttributeCustomization" eSuperTypes="_fmIaOd6vEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaPd6vEei97MD7GK1RmA" name="attributeName" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_f14D-96vEei97MD7GK1RmA" name="value" eType="_fmIZsd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_f14D_N6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_f14D_d6vEei97MD7GK1RmA" key="returnType" value="A java Object to affect as new value of a EAttribute, for example a java primitive."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_f14D_t6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+          <details xmi:id="_f14D_96vEei97MD7GK1RmA" key="view" value="ecore.EObject | the current view."/>
+          <details xmi:id="_f14EAN6vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic container."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaRd6vEei97MD7GK1RmA" name="EReferenceCustomization" eSuperTypes="_fmIaOd6vEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaRt6vEei97MD7GK1RmA" name="referenceName" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIaSN6vEei97MD7GK1RmA" name="value">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaSt6vEei97MD7GK1RmA" name="SelectionDescription" abstract="true" interface="true">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaS96vEei97MD7GK1RmA" name="candidatesExpression" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIaTN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIaTd6vEei97MD7GK1RmA" key="returnType" value="a Collection&lt;EObject> or an EObject."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_gTSWm96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+          <details xmi:id="_gTSWnN6vEei97MD7GK1RmA" key="diagram" value="diagram.DDiagram | the current DDiagram."/>
+          <details xmi:id="_gTSWnd6vEei97MD7GK1RmA" key="containerView" value="viewpoint.DSemanticDecorator | the view of the container."/>
+          <details xmi:id="_gTSWnt6vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic element of the container."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaUt6vEei97MD7GK1RmA" name="multiple" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaVN6vEei97MD7GK1RmA" name="tree" lowerBound="1">
+        <eAnnotations xmi:id="_fmIaVd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIaVt6vEei97MD7GK1RmA" key="documentation" value="Set to true if you want a tree representation of the selection candidates."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaWN6vEei97MD7GK1RmA" name="rootExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIaWd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIaWt6vEei97MD7GK1RmA" key="returnType" value="a Collection&lt;EObject> or an EObject."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_gTSWqN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+          <details xmi:id="_gTSWqd6vEei97MD7GK1RmA" key="diagram" value="diagram.DDiagram | the current DDiagram."/>
+          <details xmi:id="_gTSWqt6vEei97MD7GK1RmA" key="containerView" value="viewpoint.DSemanticDecorator | the view of the container."/>
+          <details xmi:id="_gTSWq96vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic element of the container."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaX96vEei97MD7GK1RmA" name="childrenExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIaYN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIaYd6vEei97MD7GK1RmA" key="returnType" value="a Collection&lt;EObject> or an EObject."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_gTSWr96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+          <details xmi:id="_gTSWsN6vEei97MD7GK1RmA" key="diagram" value="diagram.DDiagram | the current DDiagram."/>
+          <details xmi:id="_gTSWsd6vEei97MD7GK1RmA" key="containerView" value="viewpoint.DSemanticDecorator | the view of the container."/>
+          <details xmi:id="_gTSWst6vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic element of the container."/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaZt6vEei97MD7GK1RmA" name="message">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaaN6vEei97MD7GK1RmA" name="ColorDescription" abstract="true">
+      <eAnnotations xmi:id="_fmIaad6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIaat6vEei97MD7GK1RmA" key="documentation" value="A color definition, which can produce a concrete RGB triplet."/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaa96vEei97MD7GK1RmA" name="SystemColor" eSuperTypes="_fmIajN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fmIabN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIabd6vEei97MD7GK1RmA" key="documentation" value="A subtype of FixedColor which is only used in the system palette.&#xA;Graphical elements which only support colors from the system&#xA;palette can use this type instead of the more general FixedColor."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIabt6vEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eAnnotations xmi:id="_fmIab96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIacN6vEei97MD7GK1RmA" key="documentation" value="The name of the color description, as shown to the user in color palettes."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIact6vEei97MD7GK1RmA" name="InterpolatedColor" eSuperTypes="_fmIaaN6vEei97MD7GK1RmA _fmIanN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fmIac96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIadN6vEei97MD7GK1RmA" key="documentation" value="Describes a color which varies between two level color depending on the values of dynamically computed expressions.&#xD;&#xA;&#xD;&#xA;@Deprecated : Describes a color which varies between two extremes (red and green)&#xD;&#xA;depending on the values of dynamically computed expressions."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIadd6vEei97MD7GK1RmA" name="colorValueComputationExpression" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="1">
+        <eAnnotations xmi:id="_fmIadt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIad96vEei97MD7GK1RmA" key="documentation" value="An expression computing the value of the color. The value of the color must be include in the scale bounds"/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIaeN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIaed6vEei97MD7GK1RmA" key="returnType" value="an integer."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIaet6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIae96vEei97MD7GK1RmA" name="minValueComputationExpression" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="0">
+        <eAnnotations xmi:id="_fmIafN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIafd6vEei97MD7GK1RmA" key="returnType" value="an integer."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIaft6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaf96vEei97MD7GK1RmA" name="maxValueComputationExpression" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="10">
+        <eAnnotations xmi:id="_fmIagN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIagd6vEei97MD7GK1RmA" key="returnType" value="an integer."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIagt6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIag96vEei97MD7GK1RmA" name="colorSteps" upperBound="-1" eType="_fmIahN6vEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIahN6vEei97MD7GK1RmA" name="ColorStep">
+      <eAnnotations xmi:id="_fmIahd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIaht6vEei97MD7GK1RmA" key="documentation" value="A ColorStep is identified by its associatedValue and references an associatedColor (FixedColor).&#xD;&#xA;"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIah96vEei97MD7GK1RmA" name="associatedValue" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="">
+        <eAnnotations xmi:id="_fmIaiN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIaid6vEei97MD7GK1RmA" key="returnType" value="an integer."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIait6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIai96vEei97MD7GK1RmA" name="associatedColor" lowerBound="1" eType="_fmIajN6vEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIajN6vEei97MD7GK1RmA" name="FixedColor" eSuperTypes="_fmIaaN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fmIajd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIajt6vEei97MD7GK1RmA" key="documentation" value="A fixed color description defined by a specific RGB triplet."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaj96vEei97MD7GK1RmA" name="red" lowerBound="1" defaultValueLiteral="125">
+        <eAnnotations xmi:id="_fmIakN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIakd6vEei97MD7GK1RmA" key="documentation" value="The red value of the RGB color."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFyd6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIak96vEei97MD7GK1RmA" name="green" lowerBound="1" defaultValueLiteral="125">
+        <eAnnotations xmi:id="_fmIalN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIald6vEei97MD7GK1RmA" key="documentation" value="The green value of the RGB color."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFyd6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIal96vEei97MD7GK1RmA" name="blue" lowerBound="1" defaultValueLiteral="125">
+        <eAnnotations xmi:id="_fmIamN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIamd6vEei97MD7GK1RmA" key="documentation" value="The blue value of the RGB color."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFyd6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIam96vEei97MD7GK1RmA" name="UserFixedColor" eSuperTypes="_fmIajN6vEei97MD7GK1RmA _fmIanN6vEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIanN6vEei97MD7GK1RmA" name="UserColor" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIand6vEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eAnnotations xmi:id="_fmIant6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIan96vEei97MD7GK1RmA" key="documentation" value="The name of the color description, as shown to the user in color palettes."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" xmi:id="_fmIaod6vEei97MD7GK1RmA" name="SystemColors">
+      <eAnnotations xmi:id="_fmIaot6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIao96vEei97MD7GK1RmA" key="documentation" value="The list of colors available in the system palette."/>
+      </eAnnotations>
+      <eLiterals xmi:id="_fmIapN6vEei97MD7GK1RmA" name="black"/>
+      <eLiterals xmi:id="_fmIapd6vEei97MD7GK1RmA" name="blue" value="1"/>
+      <eLiterals xmi:id="_fmIapt6vEei97MD7GK1RmA" name="red" value="2"/>
+      <eLiterals xmi:id="_fmIap96vEei97MD7GK1RmA" name="green" value="3"/>
+      <eLiterals xmi:id="_fmIaqN6vEei97MD7GK1RmA" name="yellow" value="4"/>
+      <eLiterals xmi:id="_fmIaqd6vEei97MD7GK1RmA" name="purple" value="5"/>
+      <eLiterals xmi:id="_fmIaqt6vEei97MD7GK1RmA" name="orange" value="6"/>
+      <eLiterals xmi:id="_fmIaq96vEei97MD7GK1RmA" name="chocolate" value="7"/>
+      <eLiterals xmi:id="_fmIarN6vEei97MD7GK1RmA" name="gray" value="8"/>
+      <eLiterals xmi:id="_fmIard6vEei97MD7GK1RmA" name="white" value="9"/>
+      <eLiterals xmi:id="_fmIart6vEei97MD7GK1RmA" name="dark_blue" value="11"/>
+      <eLiterals xmi:id="_fmIar96vEei97MD7GK1RmA" name="dark_red" value="12"/>
+      <eLiterals xmi:id="_fmIasN6vEei97MD7GK1RmA" name="dark_green" value="13"/>
+      <eLiterals xmi:id="_fmIasd6vEei97MD7GK1RmA" name="dark_yellow" value="14"/>
+      <eLiterals xmi:id="_fmIast6vEei97MD7GK1RmA" name="dark_purple" value="15"/>
+      <eLiterals xmi:id="_fmIas96vEei97MD7GK1RmA" name="dark_orange" value="16"/>
+      <eLiterals xmi:id="_fmIatN6vEei97MD7GK1RmA" name="dark_chocolate" value="17"/>
+      <eLiterals xmi:id="_fmIatd6vEei97MD7GK1RmA" name="dark_gray" value="18"/>
+      <eLiterals xmi:id="_fmIatt6vEei97MD7GK1RmA" name="light_blue" value="21"/>
+      <eLiterals xmi:id="_fmIat96vEei97MD7GK1RmA" name="light_red" value="22"/>
+      <eLiterals xmi:id="_fmIauN6vEei97MD7GK1RmA" name="light_green" value="23"/>
+      <eLiterals xmi:id="_fmIaud6vEei97MD7GK1RmA" name="light_yellow" value="24"/>
+      <eLiterals xmi:id="_fmIaut6vEei97MD7GK1RmA" name="light_purple" value="25"/>
+      <eLiterals xmi:id="_fmIau96vEei97MD7GK1RmA" name="light_orange" value="26"/>
+      <eLiterals xmi:id="_fmIavN6vEei97MD7GK1RmA" name="light_chocolate" value="27"/>
+      <eLiterals xmi:id="_fmIavd6vEei97MD7GK1RmA" name="light_gray" value="28"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIavt6vEei97MD7GK1RmA" name="Environment">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIav96vEei97MD7GK1RmA" name="systemColors" eType="_fmIawt6vEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIawN6vEei97MD7GK1RmA" name="defaultTools" upperBound="-1" eType="_fmIcHN6vEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIawd6vEei97MD7GK1RmA" name="labelBorderStyles" eType="_fmIbJt6vEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIawt6vEei97MD7GK1RmA" name="SytemColorsPalette">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIaw96vEei97MD7GK1RmA" name="entries" upperBound="-1" eType="_fmIaa96vEei97MD7GK1RmA" containment="true" eKeys="_fmIabt6vEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIaxN6vEei97MD7GK1RmA" name="UserColorsPalette">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIaxd6vEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIax96vEei97MD7GK1RmA" name="entries" upperBound="-1" eType="_fmIanN6vEei97MD7GK1RmA" containment="true" eKeys="_fmIand6vEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIayN6vEei97MD7GK1RmA" name="AnnotationEntry">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIayd6vEei97MD7GK1RmA" name="source">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIay96vEei97MD7GK1RmA" name="data" containment="true" resolveProxies="false">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIazd6vEei97MD7GK1RmA" name="EndUserDocumentedElement" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIazt6vEei97MD7GK1RmA" name="endUserDocumentation" defaultValueLiteral="">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIa0N6vEei97MD7GK1RmA" name="IdentifiedElement">
+      <eAnnotations xmi:id="_fmIa0d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIa0t6vEei97MD7GK1RmA" key="documentation" value="All elements which are identified by its name (id) and which have a label to display it to the end-user."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIa096vEei97MD7GK1RmA" name="name" lowerBound="1" defaultValueLiteral="">
+        <eAnnotations xmi:id="_fmIa1N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIa1d6vEei97MD7GK1RmA" key="documentation" value="The identifier of this element. Must be unique. Changing this identifier will break existing user models which reference the old identifier."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIa196vEei97MD7GK1RmA" name="label">
+        <eAnnotations xmi:id="_fmIa2N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIa2d6vEei97MD7GK1RmA" key="documentation" value="The label used to display this viewpoint to the end-user."/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIa296vEei97MD7GK1RmA" name="ComputedColor" eSuperTypes="_fmIanN6vEei97MD7GK1RmA _fmIaaN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fmIa3N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmIa3d6vEei97MD7GK1RmA" key="documentation" value="Describes a color which each value red, blue and green are computed expressions."/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIa3t6vEei97MD7GK1RmA" name="red" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="">
+        <eAnnotations xmi:id="_fmIa396vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIa4N6vEei97MD7GK1RmA" key="documentation" value="An expression computing the value of the color."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIa4d6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIa4t6vEei97MD7GK1RmA" key="returnType" value="an integer."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIa496vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIa5N6vEei97MD7GK1RmA" name="green" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="">
+        <eAnnotations xmi:id="_fmIa5d6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIa5t6vEei97MD7GK1RmA" key="returnType" value="an integer."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIa596vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIa6N6vEei97MD7GK1RmA" name="blue" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="">
+        <eAnnotations xmi:id="_fmIa6d6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+          <details xmi:id="_fmIa6t6vEei97MD7GK1RmA" key="returnType" value="an integer."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_fmIa696vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIa7N6vEei97MD7GK1RmA" name="DAnnotationEntry">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIa7d6vEei97MD7GK1RmA" name="source">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIa796vEei97MD7GK1RmA" name="details" upperBound="-1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmIa8d6vEei97MD7GK1RmA" name="URI" instanceClassName="org.eclipse.emf.common.util.URI"/>
+    <eSubpackages xmi:id="_fmIa8t6vEei97MD7GK1RmA" name="style" nsURI="http://www.eclipse.org/sirius/description/style/1.1.0" nsPrefix="style">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIa896vEei97MD7GK1RmA" name="StyleDescription" abstract="true" interface="true"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIbBd6vEei97MD7GK1RmA" name="BasicLabelStyleDescription">
+        <eAnnotations xmi:id="_fmIbBt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIbB96vEei97MD7GK1RmA" key="documentation" value="The style of a label."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIbCN6vEei97MD7GK1RmA" name="labelSize" defaultValueLiteral="8">
+          <eAnnotations xmi:id="_fmIbCd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIbCt6vEei97MD7GK1RmA" key="documentation" value="The font size."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFyd6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIbDN6vEei97MD7GK1RmA" name="labelFormat" eType="_fmIWu96vEei97MD7GK1RmA" defaultValueLiteral="normal">
+          <eAnnotations xmi:id="_fmIbDd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIbDt6vEei97MD7GK1RmA" key="documentation" value="The font format."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIbD96vEei97MD7GK1RmA" name="showIcon" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_fmIbEN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIbEd6vEei97MD7GK1RmA" key="documentation" value="True, if the icon shoud be dispayed on the element."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIbE96vEei97MD7GK1RmA" name="labelExpression" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="feature:name">
+          <eAnnotations xmi:id="_fmIbFN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIbFd6vEei97MD7GK1RmA" key="documentation" value="Expression that computes the name of a node."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIbFt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIbF96vEei97MD7GK1RmA" key="contentassist" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIbGN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIbGd6vEei97MD7GK1RmA" key="returnType" value="a string."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_gTSXVt6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+            <details xmi:id="_gTSXV96vEei97MD7GK1RmA" key="diagram" value="diagram.DDiagram | the current DSemanticDiagram."/>
+            <details xmi:id="_gTSXWN6vEei97MD7GK1RmA" key="view" value="diagram.DDiagramElement | the current view for which the label is calculated."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIbHd6vEei97MD7GK1RmA" name="labelColor" lowerBound="1" eType="_fmIaaN6vEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIbHt6vEei97MD7GK1RmA" name="iconPath" defaultValueLiteral="">
+          <eAnnotations xmi:id="_fmIbH96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIbIN6vEei97MD7GK1RmA" key="documentation" value="The path of the icon to display on the element. If unset, the icon corresponding to the semantic element will be displayed."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIbIt6vEei97MD7GK1RmA" name="LabelStyleDescription" eSuperTypes="_fmIbBd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIbI96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIbJN6vEei97MD7GK1RmA" key="documentation" value="The style of a label."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIbJd6vEei97MD7GK1RmA" name="labelAlignment" eType="_fmIW4t6vEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIbJt6vEei97MD7GK1RmA" name="LabelBorderStyles">
+        <eAnnotations xmi:id="_glUib96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_glUicN6vEei97MD7GK1RmA" key="documentation" value="A group of LabelBorderStyleDescription to store in Environment.odesign."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIbKd6vEei97MD7GK1RmA" name="labelBorderStyleDescriptions" upperBound="-1" eType="_fmIbKt6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIbKt6vEei97MD7GK1RmA" name="LabelBorderStyleDescription">
+        <eAnnotations xmi:id="_fmIbK96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIbLN6vEei97MD7GK1RmA" key="documentation" value="The style of the border of a container label."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIbLd6vEei97MD7GK1RmA" name="id">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIbL96vEei97MD7GK1RmA" name="name">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIbMd6vEei97MD7GK1RmA" name="cornerHeight">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFyd6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIbM96vEei97MD7GK1RmA" name="cornerWidth">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFyd6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIb3N6vEei97MD7GK1RmA" name="TooltipStyleDescription">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIb3d6vEei97MD7GK1RmA" name="tooltipExpression" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="">
+          <eAnnotations xmi:id="_fmIb3t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIb396vEei97MD7GK1RmA" key="documentation" value="This expression is used to compute the text of the optional tooltip shown when the user leaves the mouse on an element."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIb4N6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIb4d6vEei97MD7GK1RmA" key="returnType" value="a string."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIb4t6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+            <details xmi:id="_fmIb496vEei97MD7GK1RmA" key="view" value="viewpoint.DSemanticDecorator | the current view."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages xmi:id="_fmIcB96vEei97MD7GK1RmA" name="tool" nsURI="http://www.eclipse.org/sirius/description/tool/1.1.0" nsPrefix="tool">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIcHN6vEei97MD7GK1RmA" name="ToolEntry" abstract="true" interface="true" eSuperTypes="_fmIZjN6vEei97MD7GK1RmA _fmIa0N6vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIcIt6vEei97MD7GK1RmA" name="AbstractToolDescription" abstract="true" eSuperTypes="_fmIcHN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIcI96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIcJN6vEei97MD7GK1RmA" key="documentation" value="Base class of all tools."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIcJd6vEei97MD7GK1RmA" name="precondition" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="">
+          <eAnnotations xmi:id="_fmIcJt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIcJ96vEei97MD7GK1RmA" key="documentation" value="The precondition of the tool."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIcKN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIcKd6vEei97MD7GK1RmA" key="contentassist" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIcKt6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIcK96vEei97MD7GK1RmA" key="returnType" value="a boolean."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIcLN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+            <details xmi:id="_fmIcLd6vEei97MD7GK1RmA" key="container" value="ecore.EObject | the container."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIcLt6vEei97MD7GK1RmA" name="forceRefresh" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_fmIcL96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIcMN6vEei97MD7GK1RmA" key="documentation" value="If true then a refresh for the whole representation is executed after every execution of the tool."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIcMt6vEei97MD7GK1RmA" name="filters" upperBound="-1" eType="_fmIerd6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIcM96vEei97MD7GK1RmA" name="MappingBasedToolDescription" abstract="true" eSuperTypes="_fmIcIt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_ftBHZd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_ftBHZt6vEei97MD7GK1RmA" key="documentation" value="A mapping based tool. This is a tool that create a ViewPointElement."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIcNt6vEei97MD7GK1RmA" name="ToolDescription" eSuperTypes="_fmIcM96vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIcN96vEei97MD7GK1RmA" name="iconPath" defaultValueLiteral="">
+          <eAnnotations xmi:id="_fmIcON6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIcOd6vEei97MD7GK1RmA" key="documentation" value="The path of the icon to display in the palette. If unset, the icon corresponding to the semantic element associated with the mapping will be displayed."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIcO96vEei97MD7GK1RmA" name="element" lowerBound="1" eType="_fmId-N6vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIcPN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIcPd6vEei97MD7GK1RmA" key="documentation" value="The variable container that represents the semantic element of the clicked view."/>
+            <details xmi:id="_fmIcPt6vEei97MD7GK1RmA" key="documentedName" value="element"/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIcP96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+            <details xmi:id="_fmIcQN6vEei97MD7GK1RmA" key="type" value="ecore.EObject"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIcQd6vEei97MD7GK1RmA" name="elementView" lowerBound="1" eType="_fmId-d6vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIcQt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIcQ96vEei97MD7GK1RmA" key="documentation" value="The variable that represents the clicked view."/>
+            <details xmi:id="_fmIcRN6vEei97MD7GK1RmA" key="documentedName" value="elementView"/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIcRd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+            <details xmi:id="_fmIcRt6vEei97MD7GK1RmA" key="type" value="ecore.EObject"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIcR96vEei97MD7GK1RmA" name="initialOperation" lowerBound="1" eType="_fmIeC96vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIcSN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIcSd6vEei97MD7GK1RmA" key="documentation" value="The first operation to execute."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIc3N6vEei97MD7GK1RmA" name="PasteDescription" eSuperTypes="_fmIcM96vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIc3d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIc3t6vEei97MD7GK1RmA" key="documentation" value="Tool that describes a paste operation."/>
+        </eAnnotations>
+        <eOperations xmi:id="_fmIc396vEei97MD7GK1RmA" name="getContainers" upperBound="-1" eType="_fmIZvt6vEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIc4N6vEei97MD7GK1RmA" name="container" lowerBound="1" eType="_fmId_d6vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIc4d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIc4t6vEei97MD7GK1RmA" key="documentation" value="The semantic element of the new container view."/>
+            <details xmi:id="_fmIc496vEei97MD7GK1RmA" key="documentedName" value="newSemanticContainer"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIc5N6vEei97MD7GK1RmA" name="containerView" lowerBound="1" eType="_fmId_96vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIc5d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIc5t6vEei97MD7GK1RmA" key="documentation" value="The new view container (DRepresentation of DRepresentationElement)."/>
+            <details xmi:id="_fmIc596vEei97MD7GK1RmA" key="documentedName" value="newContainerView"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIc6N6vEei97MD7GK1RmA" name="copiedView" lowerBound="1" eType="_fmId-d6vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIc6d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIc6t6vEei97MD7GK1RmA" key="documentation" value="The copied view."/>
+            <details xmi:id="_fmIc696vEei97MD7GK1RmA" key="documentedName" value="oldSemanticElement"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIc7N6vEei97MD7GK1RmA" name="copiedElement" lowerBound="1" eType="_fmId-N6vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIc7d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIc7t6vEei97MD7GK1RmA" key="documentation" value="The copied semantic element."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIc796vEei97MD7GK1RmA" name="initialOperation" lowerBound="1" eType="_fmIeC96vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIc8N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIc8d6vEei97MD7GK1RmA" key="documentation" value="The first operation."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIdQN6vEei97MD7GK1RmA" name="SelectionWizardDescription" eSuperTypes="_fmIcIt6vEei97MD7GK1RmA _fmIaSt6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdQd6vEei97MD7GK1RmA" name="element" lowerBound="1" eType="_fmId996vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdQt6vEei97MD7GK1RmA" name="containerView" lowerBound="1" eType="_fmId_96vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdQ96vEei97MD7GK1RmA" name="container" lowerBound="1" eType="_fmId_t6vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdRN6vEei97MD7GK1RmA" name="initialOperation" lowerBound="1" eType="_fmIeC96vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdRd6vEei97MD7GK1RmA" name="iconPath" lowerBound="1" defaultValueLiteral="/org.eclipse.sirius.ui/icons/full/obj16/SelectionWizardDescription.gif">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdR96vEei97MD7GK1RmA" name="windowTitle" lowerBound="1" defaultValueLiteral="Selection Wizard">
+          <eAnnotations xmi:id="_fmIdSN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdSd6vEei97MD7GK1RmA" key="documentation" value="Title of the dialog."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdS96vEei97MD7GK1RmA" name="windowImagePath">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIdTd6vEei97MD7GK1RmA" name="PaneBasedSelectionWizardDescription" eSuperTypes="_fmIcIt6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdTt6vEei97MD7GK1RmA" name="element" lowerBound="1" eType="_fmId996vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdT96vEei97MD7GK1RmA" name="containerView" lowerBound="1" eType="_fmId_96vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdUN6vEei97MD7GK1RmA" name="container" lowerBound="1" eType="_fmId_t6vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdUd6vEei97MD7GK1RmA" name="initialOperation" lowerBound="1" eType="_fmIeC96vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdUt6vEei97MD7GK1RmA" name="iconPath" lowerBound="1" defaultValueLiteral="/org.eclipse.sirius.ui/icons/full/obj16/PaneBasedSelectionWizardDescription.gif">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdVN6vEei97MD7GK1RmA" name="windowTitle" lowerBound="1" defaultValueLiteral="Selection Wizard">
+          <eAnnotations xmi:id="_fmIdVd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdVt6vEei97MD7GK1RmA" key="documentation" value="Title of the dialog."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdWN6vEei97MD7GK1RmA" name="windowImagePath">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdWt6vEei97MD7GK1RmA" name="message">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdXN6vEei97MD7GK1RmA" name="choiceOfValuesMessage" defaultValueLiteral="Choice of values">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdXt6vEei97MD7GK1RmA" name="candidatesExpression" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIdX96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIdYN6vEei97MD7GK1RmA" key="returnType" value="a Collection&lt;EObject> or an EObject."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_gTSX_t6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+            <details xmi:id="_gTSX_96vEei97MD7GK1RmA" key="diagram" value="diagram.DDiagram | the current DDiagram."/>
+            <details xmi:id="_gTSYAN6vEei97MD7GK1RmA" key="containerView" value="viewpoint.DSemanticDecorator | the selected view."/>
+            <details xmi:id="_gTSYAd6vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic element of containerView."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdZd6vEei97MD7GK1RmA" name="tree" lowerBound="1">
+          <eAnnotations xmi:id="_fmIdZt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdZ96vEei97MD7GK1RmA" key="documentation" value="Set to true if you want a tree representation of the selection candidates."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdad6vEei97MD7GK1RmA" name="rootExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIdat6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIda96vEei97MD7GK1RmA" key="returnType" value="a Collection&lt;EObject> or an EObject."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_gTSYCd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+            <details xmi:id="_gTSYCt6vEei97MD7GK1RmA" key="diagram" value="diagram.DDiagram | the current DDiagram."/>
+            <details xmi:id="_gTSYC96vEei97MD7GK1RmA" key="containerView" value="viewpoint.DSemanticDecorator | the selected view."/>
+            <details xmi:id="_gTSYDN6vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic element of containerView."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdcN6vEei97MD7GK1RmA" name="childrenExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIdcd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIdct6vEei97MD7GK1RmA" key="returnType" value="a Collection&lt;EObject> or an EObject."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_gTSYEN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+            <details xmi:id="_gTSYEd6vEei97MD7GK1RmA" key="diagram" value="diagram.DDiagram | the current DDiagram."/>
+            <details xmi:id="_gTSYEt6vEei97MD7GK1RmA" key="containerView" value="viewpoint.DSemanticDecorator | the selected view."/>
+            <details xmi:id="_gTSYE96vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic element of containerView."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdd96vEei97MD7GK1RmA" name="selectedValuesMessage" defaultValueLiteral="Selected values">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIded6vEei97MD7GK1RmA" name="preSelectedCandidatesExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIdet6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIde96vEei97MD7GK1RmA" key="returnType" value="a Collection&lt;EObject> or an EObject."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_gTSYGd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+            <details xmi:id="_gTSYGt6vEei97MD7GK1RmA" key="diagram" value="diagram.DDiagram | the current DDiagram."/>
+            <details xmi:id="_gTSYG96vEei97MD7GK1RmA" key="containerView" value="viewpoint.DSemanticDecorator | the selected view."/>
+            <details xmi:id="_gTSYHN6vEei97MD7GK1RmA" key="container" value="ecore.EObject | the semantic element of containerView."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIdgN6vEei97MD7GK1RmA" name="RepresentationCreationDescription" abstract="true" eSuperTypes="_fmIcIt6vEei97MD7GK1RmA">
+        <eOperations xmi:id="_fmIdgd6vEei97MD7GK1RmA" name="getMappings" lowerBound="1" upperBound="-1" eType="_fmIYEN6vEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdgt6vEei97MD7GK1RmA" name="titleExpression" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="">
+          <eAnnotations xmi:id="_fmIdg96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdhN6vEei97MD7GK1RmA" key="documentation" value="The default title of the representation to create. (new + name if empty)"/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIdhd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIdht6vEei97MD7GK1RmA" key="returnType" value="a string."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIdh96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdiN6vEei97MD7GK1RmA" name="browseExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIdid6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdit6vEei97MD7GK1RmA" key="documentation" value="You might put here an expression to browse the semantic model to get to a new place before creating the representation."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIdi96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIdjN6vEei97MD7GK1RmA" key="returnType" value="an EObject."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIdjd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdjt6vEei97MD7GK1RmA" name="representationDescription" lowerBound="1" eType="_fmIXed6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdj96vEei97MD7GK1RmA" name="initialOperation" eType="_fmIeC96vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdkN6vEei97MD7GK1RmA" name="containerViewVariable" lowerBound="1" eType="_fmId_96vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_ftBIwt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_ftBIw96vEei97MD7GK1RmA" key="documentation" value="The variable containerView that represents the clickedView (instance of ViewPoint or ViewPointElement)."/>
+            <details xmi:id="_ftBIxN6vEei97MD7GK1RmA" key="documentedName" value="containerView"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdlN6vEei97MD7GK1RmA" name="representationNameVariable" lowerBound="1" eType="_fmIend6vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIdld6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdlt6vEei97MD7GK1RmA" key="documentation" value="The variable representationName that represents the name of the created representation."/>
+            <details xmi:id="_fmIdl96vEei97MD7GK1RmA" key="documentedName" value="representationName"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIdmN6vEei97MD7GK1RmA" name="RepresentationNavigationDescription" abstract="true" eSuperTypes="_fmIcIt6vEei97MD7GK1RmA">
+        <eOperations xmi:id="_fmIdmd6vEei97MD7GK1RmA" name="getMappings" lowerBound="1" upperBound="-1" eType="_fmIYEN6vEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdmt6vEei97MD7GK1RmA" name="browseExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIdm96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdnN6vEei97MD7GK1RmA" key="documentation" value="Expression returning the navigation target."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIdnd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIdnt6vEei97MD7GK1RmA" key="returnType" value="an EObject."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIdn96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdoN6vEei97MD7GK1RmA" name="navigationNameExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIdod6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIdot6vEei97MD7GK1RmA" key="returnType" value="a string."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIdo96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables">
+            <details xmi:id="_fmIdpN6vEei97MD7GK1RmA" key="name" value="name of the targeted Representation."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdpd6vEei97MD7GK1RmA" name="representationDescription" lowerBound="1" eType="_fmIXed6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdpt6vEei97MD7GK1RmA" name="containerViewVariable" lowerBound="1" eType="_fmId_96vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_ftBI2N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_ftBI2d6vEei97MD7GK1RmA" key="documentation" value="The variable containerView that represents the clickedView (instance of ViewPoint or ViewPointElement)."/>
+            <details xmi:id="_ftBI2t6vEei97MD7GK1RmA" key="documentedName" value="containerView"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdqt6vEei97MD7GK1RmA" name="containerVariable" lowerBound="1" eType="_fmId996vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIdq96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdrN6vEei97MD7GK1RmA" key="documentation" value="The variable container that represents the semantic element of the clicked view."/>
+            <details xmi:id="_fmIdrd6vEei97MD7GK1RmA" key="documentedName" value="container"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdrt6vEei97MD7GK1RmA" name="representationNameVariable" lowerBound="1" eType="_fmIend6vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIdr96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdsN6vEei97MD7GK1RmA" key="documentation" value="The variable representationName that represents the name of the representation to open."/>
+            <details xmi:id="_fmIdsd6vEei97MD7GK1RmA" key="documentedName" value="representationName"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIdst6vEei97MD7GK1RmA" name="MenuItemOrRef" abstract="true" interface="true"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIds96vEei97MD7GK1RmA" name="MenuItemDescription" abstract="true" eSuperTypes="_fmIcIt6vEei97MD7GK1RmA _fmIdst6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdtN6vEei97MD7GK1RmA" name="icon">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIdtt6vEei97MD7GK1RmA" name="MenuItemDescriptionReference" eSuperTypes="_fmIdst6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdt96vEei97MD7GK1RmA" name="item" lowerBound="1" eType="_fmIds96vEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIduN6vEei97MD7GK1RmA" name="OperationAction" eSuperTypes="_fmIds96vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdud6vEei97MD7GK1RmA" name="view" lowerBound="1" eType="_fmId_96vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdut6vEei97MD7GK1RmA" name="initialOperation" lowerBound="1" eType="_fmIeC96vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIdu96vEei97MD7GK1RmA" name="ExternalJavaAction" eSuperTypes="_fmIds96vEei97MD7GK1RmA _fmIeBt6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIdvN6vEei97MD7GK1RmA" name="id" lowerBound="1">
+          <eAnnotations xmi:id="_fmIdvd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdvt6vEei97MD7GK1RmA" key="documentation" value="Identifier for your External Java Action provided through extension points."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdwN6vEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_fmIent6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIdwd6vEei97MD7GK1RmA" name="ExternalJavaActionCall" eSuperTypes="_fmIds96vEei97MD7GK1RmA _fmIeBt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIdwt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIdw96vEei97MD7GK1RmA" key="documentation" value="An operation which can be used to call an ExternalJavaAction defined elsewhere."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdxN6vEei97MD7GK1RmA" name="action" lowerBound="1" eType="_fmIdu96vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIdxd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIdxt6vEei97MD7GK1RmA" key="documentation" value="The action to call."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIdx96vEei97MD7GK1RmA" name="PopupMenu" eSuperTypes="_fmIcIt6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIdyN6vEei97MD7GK1RmA" name="menuItemDescription" lowerBound="1" upperBound="-1" eType="_fmIds96vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId5N6vEei97MD7GK1RmA" name="AbstractVariable" abstract="true">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmId5d6vEei97MD7GK1RmA" name="name">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId596vEei97MD7GK1RmA" name="VariableContainer" abstract="true">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmId6N6vEei97MD7GK1RmA" name="subVariables" upperBound="-1" eType="_fmId7t6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId6d6vEei97MD7GK1RmA" name="AcceleoVariable" eSuperTypes="_fmId596vEei97MD7GK1RmA _fmId7t6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmId6t6vEei97MD7GK1RmA" name="computationExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmId696vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmId7N6vEei97MD7GK1RmA" key="returnType" value="a Collection&lt;Object> or an Object."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmId7d6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId7t6vEei97MD7GK1RmA" name="SubVariable" abstract="true" eSuperTypes="_fmId5N6vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId796vEei97MD7GK1RmA" name="DialogVariable" abstract="true" eSuperTypes="_fmId5N6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmId8N6vEei97MD7GK1RmA" name="dialogPrompt">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId9t6vEei97MD7GK1RmA" name="ElementDropVariable" eSuperTypes="_fmId5N6vEei97MD7GK1RmA _fmId596vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId996vEei97MD7GK1RmA" name="ElementSelectVariable" eSuperTypes="_fmId5N6vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId-N6vEei97MD7GK1RmA" name="ElementVariable" eSuperTypes="_fmId5N6vEei97MD7GK1RmA _fmId596vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId-d6vEei97MD7GK1RmA" name="ElementViewVariable" eSuperTypes="_fmId5N6vEei97MD7GK1RmA _fmId596vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId-t6vEei97MD7GK1RmA" name="ElementDeleteVariable" eSuperTypes="_fmId5N6vEei97MD7GK1RmA _fmId596vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId_d6vEei97MD7GK1RmA" name="DropContainerVariable" eSuperTypes="_fmId5N6vEei97MD7GK1RmA _fmId596vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId_t6vEei97MD7GK1RmA" name="SelectContainerVariable" eSuperTypes="_fmId5N6vEei97MD7GK1RmA _fmId596vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmId_96vEei97MD7GK1RmA" name="ContainerViewVariable" eSuperTypes="_fmId5N6vEei97MD7GK1RmA _fmId596vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeAN6vEei97MD7GK1RmA" name="SelectModelElementVariable" eSuperTypes="_fmId7t6vEei97MD7GK1RmA _fmIaSt6vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeAd6vEei97MD7GK1RmA" name="EditMaskVariables">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeAt6vEei97MD7GK1RmA" name="mask">
+          <eAnnotations xmi:id="_fmIeA96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeBN6vEei97MD7GK1RmA" key="documentation" value="Editing mask, in the form of {0} : {1} for instance."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeBt6vEei97MD7GK1RmA" name="ContainerModelOperation" abstract="true" eSuperTypes="_fmIeCN6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIeB96vEei97MD7GK1RmA" name="subModelOperations" upperBound="-1" eType="_fmIeCN6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeCN6vEei97MD7GK1RmA" name="ModelOperation" abstract="true"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeCd6vEei97MD7GK1RmA" name="InitialNodeCreationOperation">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIeCt6vEei97MD7GK1RmA" name="firstModelOperations" lowerBound="1" eType="_fmIeCN6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeC96vEei97MD7GK1RmA" name="InitialOperation">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIeDN6vEei97MD7GK1RmA" name="firstModelOperations" lowerBound="1" eType="_fmIeCN6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeDd6vEei97MD7GK1RmA" name="InitEdgeCreationOperation">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIeDt6vEei97MD7GK1RmA" name="firstModelOperations" lowerBound="1" eType="_fmIeCN6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeD96vEei97MD7GK1RmA" name="InitialContainerDropOperation">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIeEN6vEei97MD7GK1RmA" name="firstModelOperations" lowerBound="1" eType="_fmIeCN6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeEd6vEei97MD7GK1RmA" name="CreateInstance" eSuperTypes="_fmIeBt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIeEt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIeE96vEei97MD7GK1RmA" key="documentation" value="This operation allows to create a new instance. The context must be the container of the new instance."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeFN6vEei97MD7GK1RmA" name="typeName" eType="_fmIZsN6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeFd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeFt6vEei97MD7GK1RmA" key="documentation" value="The type of the new instance."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeF96vEei97MD7GK1RmA" name="referenceName" lowerBound="1" eType="_fmIZst6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeGN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeGd6vEei97MD7GK1RmA" key="documentation" value="The name of the reference that contained the new instance."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeGt6vEei97MD7GK1RmA" name="variableName" defaultValueLiteral="instance">
+          <eAnnotations xmi:id="_fmIeG96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeHN6vEei97MD7GK1RmA" key="documentation" value="Once the instance is created, a new variable will be bound with the name given here and will be available to any contained operation."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeHt6vEei97MD7GK1RmA" name="ChangeContext" eSuperTypes="_fmIeBt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIeH96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIeIN6vEei97MD7GK1RmA" key="documentation" value="This operation allows to change the execution context."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeId6vEei97MD7GK1RmA" name="browseExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeIt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeI96vEei97MD7GK1RmA" key="documentation" value="Expression to  browse to a new context (kind of a GOTO for models)."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeJN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeJd6vEei97MD7GK1RmA" key="contentassist" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeJt6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIeJ96vEei97MD7GK1RmA" key="returnType" value="an EObject."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeKN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeKd6vEei97MD7GK1RmA" name="SetValue" eSuperTypes="_fmIeBt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIeKt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIeK96vEei97MD7GK1RmA" key="documentation" value="This operation allows to set a value of a feature of the current context."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeLN6vEei97MD7GK1RmA" name="featureName" lowerBound="1" eType="_fmIZst6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeLd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeLt6vEei97MD7GK1RmA" key="documentation" value="The name of the feature to set."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeL96vEei97MD7GK1RmA" name="valueExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeMN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeMd6vEei97MD7GK1RmA" key="documentation" value="An expression computing the value to set."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeMt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeM96vEei97MD7GK1RmA" key="contentassist" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeNN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIeNd6vEei97MD7GK1RmA" key="returnType" value="any type supported by the feature."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeNt6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeN96vEei97MD7GK1RmA" name="SetObject" eSuperTypes="_fmIeBt6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeON6vEei97MD7GK1RmA" name="featureName" lowerBound="1" eType="_fmIZst6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeOd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeOt6vEei97MD7GK1RmA" key="documentation" value="The name of the feature to set."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIeO96vEei97MD7GK1RmA" name="object">
+          <eAnnotations xmi:id="_fmIePN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIePd6vEei97MD7GK1RmA" key="documentation" value="An instance to set, you might need to use &quot;load resource&quot; in the editor in order to be able to pick it."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeP96vEei97MD7GK1RmA" name="Unset" eSuperTypes="_fmIeBt6vEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeQN6vEei97MD7GK1RmA" name="featureName" lowerBound="1" eType="_fmIZst6vEei97MD7GK1RmA" defaultValueLiteral="">
+          <eAnnotations xmi:id="_fmIeQd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeQt6vEei97MD7GK1RmA" key="documentation" value="Name of the feature to unset."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeQ96vEei97MD7GK1RmA" name="elementExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeRN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeRd6vEei97MD7GK1RmA" key="documentation" value="Expression returning the elements to unset from the feature."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeRt6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIeR96vEei97MD7GK1RmA" key="returnType" value="a Collection&lt;EObject> or an EObject."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeSN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeSd6vEei97MD7GK1RmA" name="MoveElement" eSuperTypes="_fmIeBt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIeSt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIeS96vEei97MD7GK1RmA" key="documentation" value="Move the element of the current context to another container."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeTN6vEei97MD7GK1RmA" name="newContainerExpression" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeTd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeTt6vEei97MD7GK1RmA" key="documentation" value="Expression computing the new container."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeT96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeUN6vEei97MD7GK1RmA" key="contentassist" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeUd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIeUt6vEei97MD7GK1RmA" key="returnType" value="an EObject."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeU96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeVN6vEei97MD7GK1RmA" name="featureName" lowerBound="1" eType="_fmIZst6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeVd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeVt6vEei97MD7GK1RmA" key="documentation" value="The name of the reference in the new container to put the element in."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeV96vEei97MD7GK1RmA" name="RemoveElement" eSuperTypes="_fmIeBt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIeWN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIeWd6vEei97MD7GK1RmA" key="documentation" value="Remove the element represented by the current context."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeWt6vEei97MD7GK1RmA" name="For" eSuperTypes="_fmIeBt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIeW96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIeXN6vEei97MD7GK1RmA" key="documentation" value="This operation allows to iterate a list of elements."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeXd6vEei97MD7GK1RmA" name="expression" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeXt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeX96vEei97MD7GK1RmA" key="documentation" value="Expression returning the elements to iterate on."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeYN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeYd6vEei97MD7GK1RmA" key="contentassist" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeYt6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIeY96vEei97MD7GK1RmA" key="returnType" value="a Collection&lt;EObject> or an EObject."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeZN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeZd6vEei97MD7GK1RmA" name="iteratorName" lowerBound="1" defaultValueLiteral="i">
+          <eAnnotations xmi:id="_fmIeZt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeZ96vEei97MD7GK1RmA" key="documentation" value="On every iteration, the current element will be binded with the given name."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" xmi:id="_fmIeht6vEei97MD7GK1RmA" name="DragSource">
+        <eLiterals xmi:id="_fmIeh96vEei97MD7GK1RmA" name="DIAGRAM" value="1"/>
+        <eLiterals xmi:id="_fmIeiN6vEei97MD7GK1RmA" name="PROJECT_EXPLORER" value="2" literal="PROJECT_EXPLORER"/>
+        <eLiterals xmi:id="_fmIeid6vEei97MD7GK1RmA" name="BOTH" value="3"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIeit6vEei97MD7GK1RmA" name="If" eSuperTypes="_fmIeBt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIei96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIejN6vEei97MD7GK1RmA" key="documentation" value="If the evaluation of the condition returns true then all operations contains by this If statement will be executed, otherwise all operations will be ignored."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIejd6vEei97MD7GK1RmA" name="conditionExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIejt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIej96vEei97MD7GK1RmA" key="contentassist" value=""/>
+            <details xmi:id="_fmIekN6vEei97MD7GK1RmA" key="documentation" value="Expression representing the condition, if it returns true, every operation contained by this statement will be executed."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIekd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIekt6vEei97MD7GK1RmA" key="returnType" value="a boolean."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIek96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIelN6vEei97MD7GK1RmA" name="DeleteView" eSuperTypes="_fmIeBt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIeld6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIelt6vEei97MD7GK1RmA" key="documentation" value="Deletes the current context if it is a view"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIend6vEei97MD7GK1RmA" name="NameVariable" eSuperTypes="_fmId5N6vEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIent6vEei97MD7GK1RmA" name="ExternalJavaActionParameter">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIen96vEei97MD7GK1RmA" name="name" lowerBound="1">
+          <eAnnotations xmi:id="_fmIeoN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeod6vEei97MD7GK1RmA" key="documentation" value="Name of the parameter"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeo96vEei97MD7GK1RmA" name="value" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIepN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIepd6vEei97MD7GK1RmA" key="documentation" value="Value of the parameter."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIept6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIep96vEei97MD7GK1RmA" key="returnType" value="any type supported by the corresponding java parameter."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeqN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIerd6vEei97MD7GK1RmA" name="ToolFilterDescription">
+        <eAnnotations xmi:id="_fmIert6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIer96vEei97MD7GK1RmA" key="documentation" value="filter to hide a tool in UI based on preconditon evaluated when specified elements to listen are modified "/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIesN6vEei97MD7GK1RmA" name="precondition" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIesd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIest6vEei97MD7GK1RmA" key="documentation" value="The precondition of the filter."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIes96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIetN6vEei97MD7GK1RmA" key="contentassist" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIetd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIett6vEei97MD7GK1RmA" key="returnType" value="a boolean."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIet96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIeuN6vEei97MD7GK1RmA" name="elementsToListen" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeud6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeut6vEei97MD7GK1RmA" key="documentation" value="The elements to listen by the filter."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIeu96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIevN6vEei97MD7GK1RmA" key="contentassist" value=""/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIevd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIevt6vEei97MD7GK1RmA" key="returnType" value="a collection."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIev96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIewN6vEei97MD7GK1RmA" name="listeners" lowerBound="1" upperBound="-1" eType="_fmIewd6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIewd6vEei97MD7GK1RmA" name="FeatureChangeListener">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIewt6vEei97MD7GK1RmA" name="domainClass" lowerBound="1" eType="_fmIZsN6vEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIew96vEei97MD7GK1RmA" name="featureName" lowerBound="1" eType="_fmIZst6vEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIexN6vEei97MD7GK1RmA" name="Case" eSuperTypes="_fmIezt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIexd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIext6vEei97MD7GK1RmA" key="documentation" value="If the evaluation of the condition returns true then all operations contains by this case statement will be executed, otherwise all operations will be ignored."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIex96vEei97MD7GK1RmA" name="conditionExpression" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIeyN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIeyd6vEei97MD7GK1RmA" key="contentassist" value=""/>
+            <details xmi:id="_fmIeyt6vEei97MD7GK1RmA" key="documentation" value="Expression representing the condition, if it returns true, every operation contained by this statement will be executed."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIey96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIezN6vEei97MD7GK1RmA" key="returnType" value="a boolean."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIezd6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIezt6vEei97MD7GK1RmA" name="SwitchChild" abstract="true">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIez96vEei97MD7GK1RmA" name="subModelOperations" upperBound="-1" eType="_fmIeCN6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIe0N6vEei97MD7GK1RmA" name="Default" eSuperTypes="_fmIezt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIe0d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIe0t6vEei97MD7GK1RmA" key="documentation" value="The Default Case is executed if none of Case condition are true."/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIe096vEei97MD7GK1RmA" name="Switch" eSuperTypes="_fmIeCN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIe1N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIe1d6vEei97MD7GK1RmA" key="documentation" value="Swich contains 1 or more Case and 1 Default Case. If no Case condition return true, Default Case is executed. If there are more Case condition who return true it's the first Condition Case true who is executed."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIe1t6vEei97MD7GK1RmA" name="cases" lowerBound="1" upperBound="-1" eType="_fmIexN6vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIe196vEei97MD7GK1RmA" name="default" lowerBound="1" eType="_fmIe0N6vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages xmi:id="_fmIfI96vEei97MD7GK1RmA" name="validation" nsURI="http://www.eclipse.org/sirius/description/validation/1.1.0" nsPrefix="validation">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIfJN6vEei97MD7GK1RmA" name="ValidationSet" eSuperTypes="_fmIZjN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIfJd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIfJt6vEei97MD7GK1RmA" key="documentation" value="A set of validation rules."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIfKt6vEei97MD7GK1RmA" name="name" defaultValueLiteral="">
+          <eAnnotations xmi:id="_fmIfK96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfLN6vEei97MD7GK1RmA" key="documentation" value="The name of the set."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIfJ96vEei97MD7GK1RmA" name="ownedRules" upperBound="-1" eType="_fmIfNN6vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIfKN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfKd6vEei97MD7GK1RmA" key="documentation" value="The validation rules owned by this set."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIfLt6vEei97MD7GK1RmA" name="reusedRules" upperBound="-1" eType="_fmIfNN6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIfL96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfMN6vEei97MD7GK1RmA" key="documentation" value="The validations rules that are reused by this set."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIfMd6vEei97MD7GK1RmA" name="allRules" upperBound="-1" eType="_fmIfNN6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+          <eAnnotations xmi:id="_fmIfMt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfM96vEei97MD7GK1RmA" key="documentation" value="All rules of the set."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIfNN6vEei97MD7GK1RmA" name="ValidationRule" abstract="true">
+        <eAnnotations xmi:id="_fmIfNd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIfNt6vEei97MD7GK1RmA" key="documentation" value="A validation rule."/>
+        </eAnnotations>
+        <eOperations xmi:id="_fmIfN96vEei97MD7GK1RmA" name="checkRule">
+          <eAnnotations xmi:id="_fmIfON6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfOd6vEei97MD7GK1RmA" key="documentation" value="Check the rule for the specified element."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFnt6vEei97MD7GK1RmA"/>
+          <eParameters xmi:id="_fmIfO96vEei97MD7GK1RmA" name="eObj">
+            <eAnnotations xmi:id="_fmIfPN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_fmIfPd6vEei97MD7GK1RmA" key="documentation" value="The object to test."/>
+            </eAnnotations>
+            <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+          </eParameters>
+        </eOperations>
+        <eOperations xmi:id="_fmIfP96vEei97MD7GK1RmA" name="getMessage">
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+          <eParameters xmi:id="_fmIfQd6vEei97MD7GK1RmA" name="eObj">
+            <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+          </eParameters>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIfQ96vEei97MD7GK1RmA" name="level" lowerBound="1" eType="_fmIfX96vEei97MD7GK1RmA" defaultValueLiteral="INFO"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIfRN6vEei97MD7GK1RmA" name="message" eType="_fmIZsd6vEei97MD7GK1RmA" defaultValueLiteral="The element has...">
+          <eAnnotations xmi:id="_gjYqh96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_gjYqiN6vEei97MD7GK1RmA" key="returnType" value="a string."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIfR96vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIfSN6vEei97MD7GK1RmA" name="audits" upperBound="-1" eType="_fmIfVt6vEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIfSd6vEei97MD7GK1RmA" name="fixes" upperBound="-1" eType="_fmIfa96vEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIfSt6vEei97MD7GK1RmA" name="SemanticValidationRule" eSuperTypes="_fmIfNN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIfS96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIfTN6vEei97MD7GK1RmA" key="documentation" value="A validation rule that is applied on a semantic element."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIfTd6vEei97MD7GK1RmA" name="targetClass" lowerBound="1" eType="_fmIZsN6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIfTt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfT96vEei97MD7GK1RmA" key="documentation" value="The name of the domain class of the element."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIfUN6vEei97MD7GK1RmA" name="ViewValidationRule" eSuperTypes="_fmIfNN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIfUd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIfUt6vEei97MD7GK1RmA" key="documentation" value="A validation rule that is applied on a view element."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIfU96vEei97MD7GK1RmA" name="targets" upperBound="-1" eType="_fmIYEN6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIfVN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfVd6vEei97MD7GK1RmA" key="documentation" value="The mapping to validate."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIfVt6vEei97MD7GK1RmA" name="RuleAudit">
+        <eAnnotations xmi:id="_fmIfV96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIfWN6vEei97MD7GK1RmA" key="documentation" value="The validation expression."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIfWd6vEei97MD7GK1RmA" name="auditExpression" lowerBound="1" eType="_fmIZsd6vEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_fmIfWt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfW96vEei97MD7GK1RmA" key="documentation" value="An expression checked on the model, if the audit fails (return false) then the rule fail."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIfXN6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/returnType">
+            <details xmi:id="_fmIfXd6vEei97MD7GK1RmA" key="returnType" value="a boolean."/>
+          </eAnnotations>
+          <eAnnotations xmi:id="_fmIfXt6vEei97MD7GK1RmA" source="http://www.eclipse.org/sirius/interpreted/expression/variables"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EEnum" xmi:id="_fmIfX96vEei97MD7GK1RmA" name="ERROR_LEVEL">
+        <eAnnotations xmi:id="_fmIfYN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIfYd6vEei97MD7GK1RmA" key="documentation" value="All levels of error for a validation rule."/>
+        </eAnnotations>
+        <eLiterals xmi:id="_fmIfYt6vEei97MD7GK1RmA" name="INFO">
+          <eAnnotations xmi:id="_fmIfY96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfZN6vEei97MD7GK1RmA" key="documentation" value="Info level."/>
+          </eAnnotations>
+        </eLiterals>
+        <eLiterals xmi:id="_fmIfZd6vEei97MD7GK1RmA" name="WARNING" value="1">
+          <eAnnotations xmi:id="_fmIfZt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfZ96vEei97MD7GK1RmA" key="documentation" value="Warning level."/>
+          </eAnnotations>
+        </eLiterals>
+        <eLiterals xmi:id="_fmIfaN6vEei97MD7GK1RmA" name="ERROR" value="3">
+          <eAnnotations xmi:id="_fmIfad6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfat6vEei97MD7GK1RmA" key="documentation" value="Error level."/>
+          </eAnnotations>
+        </eLiterals>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIfa96vEei97MD7GK1RmA" name="ValidationFix">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIfbN6vEei97MD7GK1RmA" name="name" lowerBound="1">
+          <eAnnotations xmi:id="_fmIfbd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfbt6vEei97MD7GK1RmA" key="documentation" value="Name of the quick fix displayed to the user."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmIfcN6vEei97MD7GK1RmA" name="initialOperation" lowerBound="1" eType="_fmIeC96vEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_fmIfcd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfct6vEei97MD7GK1RmA" key="documentation" value="The first operation."/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages xmi:id="_fmIfc96vEei97MD7GK1RmA" name="audit" nsURI="http://www.eclipse.org/sirius/description/audit/1.1.0" nsPrefix="audit">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIfdN6vEei97MD7GK1RmA" name="InformationSection" abstract="true">
+        <eAnnotations xmi:id="_fmIfdd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIfdt6vEei97MD7GK1RmA" key="documentation" value="The section that displays informations about the selected element."/>
+        </eAnnotations>
+        <eOperations xmi:id="_fmIfd96vEei97MD7GK1RmA" name="getContent">
+          <eAnnotations xmi:id="_fmIfeN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfed6vEei97MD7GK1RmA" key="documentation" value="Return the content of the section."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+          <eParameters xmi:id="_fmIfe96vEei97MD7GK1RmA" name="eObj">
+            <eAnnotations xmi:id="_fmIffN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+              <details xmi:id="_fmIffd6vEei97MD7GK1RmA" key="documentation" value="The selected element."/>
+            </eAnnotations>
+            <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+          </eParameters>
+        </eOperations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmIff96vEei97MD7GK1RmA" name="TemplateInformationSection" eSuperTypes="_fmIfdN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_fmIfgN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_fmIfgd6vEei97MD7GK1RmA" key="documentation" value="This information section is based on an Acceleo template."/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmIfgt6vEei97MD7GK1RmA" name="templatePath">
+          <eAnnotations xmi:id="_fmIfg96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_fmIfhN6vEei97MD7GK1RmA" key="documentation" value="The file path of the template."/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>

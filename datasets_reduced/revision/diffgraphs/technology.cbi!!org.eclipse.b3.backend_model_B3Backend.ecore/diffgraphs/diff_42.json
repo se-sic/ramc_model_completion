@@ -1,0 +1,62 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_lTgRMt6wEei97MD7GK1RmA', 'name':'childContexts','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'BExecutionContext','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@622ceb4a (expression: BExecutionContext)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'BExecutionContext','containment':'true','container':'false','resolveProxies':'true','eOpposite':'parentContext','eReferenceType':'BExecutionContext'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_lTgRMd6wEei97MD7GK1RmA', 'name':'parentContext','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BExecutionContext','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@81cc306 (expression: BExecutionContext)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'BExecutionContext','containment':'false','container':'true','resolveProxies':'true','eOpposite':'childContexts','eReferenceType':'BExecutionContext'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_l9OuPd6xEei97MD7GK1RmA', 'name':'getFunctionIterator','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'IFunctionIterator','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@59b3ebac (expression: IFunctionIterator<IFunction>)','eContainingClass':'BExecutionContext','eParameters':['type','functionType']}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_l9OuQd6xEei97MD7GK1RmA', 'name':'functionType','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EJavaClass','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@323b88a6 (expression: EJavaClass<?>)','eOperation':'getFunctionIterator'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_l9OuQN6xEei97MD7GK1RmA', 'name':'type','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Type','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6ef6e3a5 (expression: Type)','eOperation':'getFunctionIterator'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_l9OvkN6xEei97MD7GK1RmA', 'name':'getEvaluationContext','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BExecutionContext','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@258de930 (expression: BExecutionContext)','eContainingClass':'BWithExpression','eParameters':['ctx'],'eGenericExceptions':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@67abe7bd (expression: Throwable)']}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_l9Ovkd6xEei97MD7GK1RmA', 'name':'ctx','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BExecutionContext','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@1f7db751 (expression: BExecutionContext)','eOperation':'getEvaluationContext'}}" 
+},{
+	 "id": "7", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_DzhfFN6xEei97MD7GK1RmA', 'name':'BWithExpression','ePackage':'b3backend','abstract':'false','interface':'false','eOperations':['createContext','getEvaluationContext'],'eStructuralFeatures':['referencedAdvice','propertySets','concerns','funcExpr'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@37fe8f35 (expression: BExpression)']}}" 
+},{
+	 "id": "8", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_lTgQ4t6wEei97MD7GK1RmA', 'name':'BExecutionContext','ePackage':'b3backend','abstract':'true','interface':'false','eOperations':['loadFunctions','loadFunction','defineFunction','callFunction','getValue','getLValue','defineValue','defineFinalValue','defineVariableValue','defineFinalVariableValue','isFinal','isImmutable','getInvocationContext','...'],'eStructuralFeatures':['parentContext','valueMap','funcStore','effectiveConcerns']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOpposite'}" 
+},{
+	 "source": "2", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "2", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "5", 
+	 "target": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "7", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "8", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "8", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "1", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOpposite'}" 
+}]}

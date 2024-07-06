@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_l2K-BN60Eei97MD7GK1RmA" name="scenario" nsURI="http:///org/eclipse/stem/core/scenario.ecore" nsPrefix="org.eclipse.stem.core.scenario">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l2K-Bd60Eei97MD7GK1RmA" name="Scenario">
+    <eSuperTypes href="core_org.eclipse.stem.core_model_common.ecore#_l2Bybd60Eei97MD7GK1RmA"/>
+    <eOperations xmi:id="_l2K-Bt60Eei97MD7GK1RmA" name="step">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9DN60Eei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_l2K-CN60Eei97MD7GK1RmA" name="reset" eExceptions="_l2K-G960Eei97MD7GK1RmA"/>
+    <eOperations xmi:id="_l2K-Cd60Eei97MD7GK1RmA" name="initialize" eExceptions="_l2K-G960Eei97MD7GK1RmA"/>
+    <eOperations xmi:id="_l2K-Ct60Eei97MD7GK1RmA" name="produceTitle">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9VN60Eei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2K-DN60Eei97MD7GK1RmA" name="model">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9Ld60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2K-Dt60Eei97MD7GK1RmA" name="sequencer">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_sequencer.ecore#_l2d3td60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2K-EN60Eei97MD7GK1RmA" name="scenarioDecorators" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9Ed60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2K-Et60Eei97MD7GK1RmA" name="canonicalGraph" changeable="false" transient="true" resolveProxies="false">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_graph.ecore#_l2UtS960Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l2K-FN60Eei97MD7GK1RmA" name="progress" transient="true" defaultValueLiteral="0.0">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9JN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2K-Ft60Eei97MD7GK1RmA" name="solver" containment="true">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_solver.ecore#_l2d30t60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l2K-GN60Eei97MD7GK1RmA" name="loggers" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_logger.ecore#_l2noId60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_l2K-G960Eei97MD7GK1RmA" name="ScenarioInitializationException" instanceClassName="org.eclipse.stem.core.scenario.ScenarioInitializationException" serializable="false"/>
+</ecore:EPackage>

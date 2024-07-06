@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_Hqx_0N6tEei97MD7GK1RmA" name="type" nsURI="http://www.birt.eclipse.org/ChartModelType" nsPrefix="type">
+  <eAnnotations xmi:id="_LMTl096tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+    <details xmi:id="_LMTl1N6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;Schema file for the chart.model package.&#xA;&#x9;&#x9;"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_IHhmM96tEei97MD7GK1RmA" name="AreaSeries" eSuperTypes="_Hqx_6N6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_LMTl1t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMTl196tEei97MD7GK1RmA" key="documentation" value="This is a Series type that, during design time, holds the query data for Area charts, and during run time, &#xA;holds the value for each data point in the series.  When rendered, a line connects each data point, and &#xA;the area below the line is filled with the series color."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_IHhmNt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_IHhmN96tEei97MD7GK1RmA" key="name" value="AreaSeries"/>
+      <details xmi:id="_IHhmON6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Hqx_096tEei97MD7GK1RmA" name="BarSeries">
+    <eAnnotations xmi:id="_LMTl3N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMTl3d6tEei97MD7GK1RmA" key="documentation" value="This is a Series type that, during design time, holds the query data for Bar charts, and during run time, &#xA;holds the value for each riser in the series.  When rendered, a riser extends from the x-axis to the &#xA;value of each data point."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_Hqx_1t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_Hqx_196tEei97MD7GK1RmA" key="name" value="BarSeries"/>
+      <details xmi:id="_Hqx_2N6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eSuperTypes href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_HrE8Td6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Hqx_2d6tEei97MD7GK1RmA" name="riser" defaultValueLiteral="Rectangle" unsettable="true">
+      <eAnnotations xmi:id="_LMTl4t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTl496tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the 'Riser' to be used for displaying the data values in the chart.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hqx_3N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hqx_3d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hqx_3t6tEei97MD7GK1RmA" key="name" value="Riser"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpqd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hqx_4N6tEei97MD7GK1RmA" name="riserOutline" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTl6d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTl6t6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the color to be used for the Riser outline.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hqx_496tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hqx_5N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hqx_5d6tEei97MD7GK1RmA" key="name" value="RiserOutline"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhnNN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_I-pbj96tEei97MD7GK1RmA" name="BubbleSeries" eSuperTypes="_HqyAQ96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_KV13_96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_KV14AN6tEei97MD7GK1RmA" key="documentation" value="This is a Series type that holds data for Bubble Charts.&#x9;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_I-pbkt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_I-pbk96tEei97MD7GK1RmA" key="name" value="BubbleSeries"/>
+      <details xmi:id="_I-pblN6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_I-pbld6tEei97MD7GK1RmA" name="accLineAttributes" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTl996tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTl-N6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the attributes for the line used to represent the acceleration line to the Bubble.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pbmN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pbmd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pbmt6tEei97MD7GK1RmA" key="name" value="AccLineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I-pbnN6tEei97MD7GK1RmA" name="accOrientation" defaultValueLiteral="Horizontal" unsettable="true">
+      <eAnnotations xmi:id="_I-pbnd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_I-pbnt6tEei97MD7GK1RmA" key="documentation" value="Specifies the orientation of the acceleration line."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pbn96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pboN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pbod6tEei97MD7GK1RmA" key="name" value="AccOrientation"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhpZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_IL_Pj96tEei97MD7GK1RmA" name="DialSeries">
+    <eAnnotations xmi:id="_KV14E96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_KV14FN6tEei97MD7GK1RmA" key="documentation" value="This is a Series type that holds data for Dial Charts."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_IL_PkN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_IL_Pkd6tEei97MD7GK1RmA" key="name" value="DialSeries"/>
+      <details xmi:id="_IL_Pkt6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eSuperTypes href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_HrE8Td6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IL_Pk96tEei97MD7GK1RmA" name="dial" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_IL_PlN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IL_Pld6tEei97MD7GK1RmA" key="documentation" value="Specifies the Dial for this series"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IL_Plt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IL_Pl96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IL_PmN6tEei97MD7GK1RmA" key="name" value="Dial"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_IMSKe96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IL_Pmt6tEei97MD7GK1RmA" name="needle" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_IL_Pm96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IL_PnN6tEei97MD7GK1RmA" key="documentation" value="Defines the needle to be used in the Dial"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IL_Pnd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IL_Pnt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IL_Pn96tEei97MD7GK1RmA" key="name" value="Needle"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_IMSLkt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_I-pbuN6tEei97MD7GK1RmA" name="DifferenceSeries" eSuperTypes="_IHhmM96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_LMTmGt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMTmG96tEei97MD7GK1RmA" key="documentation" value="This is a Series type that, during design time, holds the query data for Difference charts, and during &#xA;run time, holds the values for each data point in the series.  Each data point in a Difference Series&#xA;holds two values.  When rendered, a line connects each high value of each data point, another line&#xA;connects each low value of each data point, and the area between the high and low lines is filled with &#xA;the series color."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_I-pbud6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_I-pbut6tEei97MD7GK1RmA" key="name" value="DifferenceSeries"/>
+      <details xmi:id="_I-pbu96tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_I-pbvN6tEei97MD7GK1RmA" name="negativeMarkers" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_I-pbvd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_I-pbvt6tEei97MD7GK1RmA" key="documentation" value="Specifies the marker to be used for displaying the data point on the negative line in the chart."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pbv96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pbwN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pbwd6tEei97MD7GK1RmA" key="name" value="NegativeMarkers"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhpG96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_I-pbw96tEei97MD7GK1RmA" name="negativeLineAttributes" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmJ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmKN6tEei97MD7GK1RmA" key="documentation" value="Specifies the attributes for the negative line used to represent this series.&#xA;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pbxt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pbx96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pbyN6tEei97MD7GK1RmA" key="name" value="NegativeLineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_I-pbyt6tEei97MD7GK1RmA" name="GanttSeries">
+    <eAnnotations xmi:id="_KV14PN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_KV14Pd6tEei97MD7GK1RmA" key="documentation" value="This is a Series type that holds data for Gantt Charts."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_I-pbzd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_I-pbzt6tEei97MD7GK1RmA" key="name" value="GanttSeries"/>
+      <details xmi:id="_I-pbz96tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eSuperTypes href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_HrE8Td6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_I-pb0N6tEei97MD7GK1RmA" name="startMarker" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmNN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmNd6tEei97MD7GK1RmA" key="documentation" value="&#xA;Specifies the marker to be used for displaying the start data point on the line in the chart.&#xA;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pb096tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pb1N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pb1d6tEei97MD7GK1RmA" key="name" value="StartMarker"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhpG96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I-pb196tEei97MD7GK1RmA" name="startMarkerPosition" lowerBound="1" defaultValueLiteral="Above" unsettable="true">
+      <eAnnotations xmi:id="_I-pb2N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_I-pb2d6tEei97MD7GK1RmA" key="documentation" value="Specifies the position of the start marker relative to the connection line start point."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pb2t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pb296tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pb3N6tEei97MD7GK1RmA" key="name" value="StartMarkerPosition"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpjt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_I-pb3t6tEei97MD7GK1RmA" name="endMarker" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmQt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmQ96tEei97MD7GK1RmA" key="documentation" value="&#xA;Specifies the marker to be used for displaying the end data point on the line in the chart."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pb4d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pb4t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pb496tEei97MD7GK1RmA" key="name" value="EndMarker"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhpG96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I-pb5d6tEei97MD7GK1RmA" name="endMarkerPosition" lowerBound="1" defaultValueLiteral="Above" unsettable="true">
+      <eAnnotations xmi:id="_I-pb5t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_I-pb596tEei97MD7GK1RmA" key="documentation" value="Specifies the position of the end marker relative to the connection line end point."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pb6N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pb6d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pb6t6tEei97MD7GK1RmA" key="name" value="EndMarkerPosition"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpjt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_I-pb7N6tEei97MD7GK1RmA" name="connectionLine" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmUN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmUd6tEei97MD7GK1RmA" key="documentation" value="&#xA;Specifies the attributes for the line used to represent this series."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pb796tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pb8N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pb8d6tEei97MD7GK1RmA" key="name" value="ConnectionLine"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_I-pb896tEei97MD7GK1RmA" name="outline" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmV96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmWN6tEei97MD7GK1RmA" key="documentation" value="&#xA;Specifies the attributes for the outline used to represent this series."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pb9t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pb996tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pb-N6tEei97MD7GK1RmA" key="name" value="Outline"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_I-pb-t6tEei97MD7GK1RmA" name="outlineFill" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmXt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmX96tEei97MD7GK1RmA" key="documentation" value="Defines the extra fill to be used with outline.&#xA;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pb_d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pb_t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pb_96tEei97MD7GK1RmA" key="name" value="OutlineFill"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhn296tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I-pcAd6tEei97MD7GK1RmA" name="useDecorationLabelValue" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_I-pcAt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_I-pcA96tEei97MD7GK1RmA" key="documentation" value="Specifies if use decoration value as the datapoint label value"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pcBN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pcBd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pcBt6tEei97MD7GK1RmA" key="name" value="UseDecorationLabelValue"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_I-pcCN6tEei97MD7GK1RmA" name="decorationLabel" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmbN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmbd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the properties for the decoration label, which could be used to decorate the primary base Axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pcC96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pcDN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pcDd6tEei97MD7GK1RmA" key="name" value="DecorationLabel"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_HrE7lt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I-pcD96tEei97MD7GK1RmA" name="decorationLabelPosition" lowerBound="1" defaultValueLiteral="Above" unsettable="true">
+      <eAnnotations xmi:id="_LMTmc96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmdN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the position property for the decoration label.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pcEt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pcE96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pcFN6tEei97MD7GK1RmA" key="name" value="DecorationLabelPosition"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpjt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I-pcFt6tEei97MD7GK1RmA" name="paletteLineColor" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_I-pcF96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_I-pcGN6tEei97MD7GK1RmA" key="documentation" value="Indicates if use the series palette color to draw the line instead of the color in ConnectionLine"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I-pcGd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-pcGt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-pcG96tEei97MD7GK1RmA" key="name" value="PaletteLineColor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Hqx_6N6tEei97MD7GK1RmA" name="LineSeries">
+    <eAnnotations xmi:id="_LMTmgt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMTmg96tEei97MD7GK1RmA" key="documentation" value="This is a Series type that, during design time, holds the query data for Line charts, and during run time, &#xA;holds the value for each data point in the line.  When rendered, a line connects each data point."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_Hqx_696tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_Hqx_7N6tEei97MD7GK1RmA" key="name" value="LineSeries"/>
+      <details xmi:id="_Hqx_7d6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eSuperTypes href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_HrE8Td6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_I5lVeN6tEei97MD7GK1RmA" name="markers" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmiN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmid6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the marker to be used for displaying the data point on the line in the chart.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I5lVe96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I5lVfN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I5lVfd6tEei97MD7GK1RmA" key="name" value="Markers"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhpG96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hqx_7t6tEei97MD7GK1RmA" name="marker" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_I5lVgN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_I5lVgd6tEei97MD7GK1RmA" key="documentation" value="Deprecated. Use Markers property instead. This is kept just to maintain the compatibility with old models."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hqx_8d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hqx_8t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hqx_896tEei97MD7GK1RmA" key="name" value="Marker"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhpG96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hqx_9d6tEei97MD7GK1RmA" name="lineAttributes" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmlt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTml96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the attributes for the line used to represent this series.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hqx_-N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hqx_-d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hqx_-t6tEei97MD7GK1RmA" key="name" value="LineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IJvM4t6tEei97MD7GK1RmA" name="paletteLineColor" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_IJvM496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IJvM5N6tEei97MD7GK1RmA" key="documentation" value="Indicates if use the series palette color to draw the line instead of the color in LineAttributes"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IJvM5d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IJvM5t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IJvM596tEei97MD7GK1RmA" key="name" value="PaletteLineColor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Hqx__N6tEei97MD7GK1RmA" name="curve" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMTmpN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmpd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Indicates whether the line segments joining data points in the series are to be drawn as curves or as straight lines.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hqx__96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAAN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyAAd6tEei97MD7GK1RmA" key="name" value="Curve"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HqyAA96tEei97MD7GK1RmA" name="shadowColor" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmq96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmrN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the color to be used for the shadow.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HqyABt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAB96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyACN6tEei97MD7GK1RmA" key="name" value="ShadowColor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhnNN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I2as2t6tEei97MD7GK1RmA" name="connectMissingValue" defaultValueLiteral="true" unsettable="true">
+      <eAnnotations xmi:id="_I2as296tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_I2as3N6tEei97MD7GK1RmA" key="documentation" value="Specifies if connect the missing values in the line or just skip drawing."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I2as3d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I2as3t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I2as396tEei97MD7GK1RmA" key="name" value="ConnectMissingValue"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HqyAC96tEei97MD7GK1RmA" name="PieSeries">
+    <eAnnotations xmi:id="_LMTmut6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMTmu96tEei97MD7GK1RmA" key="documentation" value="This is a Series type that, during design time, holds the query data for Pie charts, and during run time, &#xA;holds the value for each data point in the pie that represents the series.  When rendered, each series is &#xA;drawn as a complete pie, and each data point in that series defines the size of the pie's slices.  A pie chart&#xA;with multiple series will draw multiple pies."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HqyADt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HqyAD96tEei97MD7GK1RmA" key="name" value="PieSeries"/>
+      <details xmi:id="_HqyAEN6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eSuperTypes href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_HrE8Td6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HqyAEd6tEei97MD7GK1RmA" name="explosion" unsettable="true">
+      <eAnnotations xmi:id="_LMTmwN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmwd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the 'Explosion' value to be&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;used while displaying the pie slices.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HqyAFN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAFd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyAFt6tEei97MD7GK1RmA" key="name" value="Explosion"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IHhmft6tEei97MD7GK1RmA" name="explosionExpression">
+      <eAnnotations xmi:id="_LMTmx96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmyN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies an expression to determine if&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;the explosion will be applied to each&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;slice.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IHhmgd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IHhmgt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IHhmg96tEei97MD7GK1RmA" key="name" value="ExplosionExpression"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0im96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HqyAGN6tEei97MD7GK1RmA" name="title" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTmzt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTmz96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the properties for a series title.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HqyAG96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAHN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyAHd6tEei97MD7GK1RmA" key="name" value="Title"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_HrE7lt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HqyAH96tEei97MD7GK1RmA" name="titlePosition" lowerBound="1" defaultValueLiteral="Above" unsettable="true">
+      <eAnnotations xmi:id="_LMTm1d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTm1t6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the position property for a series&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;title.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HqyAIt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAI96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyAJN6tEei97MD7GK1RmA" key="name" value="TitlePosition"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpjt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HqyAJt6tEei97MD7GK1RmA" name="leaderLineAttributes" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTm3N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTm3d6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the attributes for leader lines.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HqyAKd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAKt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyAK96tEei97MD7GK1RmA" key="name" value="LeaderLineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HqyALd6tEei97MD7GK1RmA" name="leaderLineStyle" lowerBound="1" defaultValueLiteral="Fixed_Length" unsettable="true">
+      <eAnnotations xmi:id="_LMTm496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTm5N6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies how the leader lines are to be&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;shown.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HqyAMN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAMd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyAMt6tEei97MD7GK1RmA" key="name" value="LeaderLineStyle"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhoyN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HqyANN6tEei97MD7GK1RmA" name="leaderLineLength" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMTm6t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTm696tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Length for the leader lines. Used only&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;if style is 'FIXED_LENGTH'.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HqyAN96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAON6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyAOd6tEei97MD7GK1RmA" key="name" value="LeaderLineLength"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpgt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HqyAO96tEei97MD7GK1RmA" name="sliceOutline" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTm8d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTm8t6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the color to be used for the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;slice outline.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HqyAPt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAP96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyAQN6tEei97MD7GK1RmA" key="name" value="SliceOutline"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhnNN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IZC0md6tEei97MD7GK1RmA" name="ratio" lowerBound="1" defaultValueLiteral="1" unsettable="true">
+      <eAnnotations xmi:id="_LMTm-N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTm-d6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the ratio(height/width) of the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;oval, 1 means it's a circle, 0 means&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;stretch automatically.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IZC0nN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IZC0nd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IZC0nt6tEei97MD7GK1RmA" key="name" value="Ratio"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_J8fk6t6tEei97MD7GK1RmA" name="rotation" lowerBound="1" defaultValueLiteral="0" unsettable="true">
+      <eAnnotations xmi:id="_LMTm_96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTnAN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the rotation of the pie, 0 means&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;start drawing the first slice from the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;east.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_J8fk7d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_J8fk7t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_J8fk796tEei97MD7GK1RmA" key="name" value="Rotation"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Kx_pk96tEei97MD7GK1RmA" name="clockwise" lowerBound="1" defaultValueLiteral="false" unsettable="true">
+      <eAnnotations xmi:id="_LMTnBt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTnB96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Attribute &quot;Clockwise&quot; Specifies whether&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;the pie slices are rendered in clockwise&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;direction, by default they will be&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;rendered in counter-clockwise direction.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Kx_plt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Kx_pl96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Kx_pmN6tEei97MD7GK1RmA" key="name" value="Clockwise"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LC7Bit6tEei97MD7GK1RmA" name="innerRadius" lowerBound="1" defaultValueLiteral="0" unsettable="true">
+      <eAnnotations xmi:id="_LEkATN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LEkATd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines inner radius, if inner radius&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;greater than 0, it should be a dount&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;pie. If value of inner radius is between&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;0 and 1, the inner radius is percentage&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;value of width/height of pie, otherwise&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;it is actual size.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_LC7Bjd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_LC7Bjt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_LC7Bj96tEei97MD7GK1RmA" key="name" value="InnerRadius"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LEkAUt6tEei97MD7GK1RmA" name="innerRadiusPercent" lowerBound="1" defaultValueLiteral="true" unsettable="true">
+      <eAnnotations xmi:id="_LEkAU96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LEkAVN6tEei97MD7GK1RmA" key="documentation" value="Indicates if the value of inner radius is a percent value or actual value."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_LEkAVd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_LEkAVt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_LEkAV96tEei97MD7GK1RmA" key="name" value="InnerRadiusPercent"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HqyAQ96tEei97MD7GK1RmA" name="ScatterSeries" eSuperTypes="_Hqx_6N6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_LMTnHN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMTnHd6tEei97MD7GK1RmA" key="documentation" value="This is a Series type that holds data for Scatter Charts.&#xA;&#x9;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HqyARt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HqyAR96tEei97MD7GK1RmA" key="name" value="ScatterSeries"/>
+      <details xmi:id="_HqyASN6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HqyASd6tEei97MD7GK1RmA" name="StockSeries">
+    <eAnnotations xmi:id="_LMTnIt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMTnI96tEei97MD7GK1RmA" key="documentation" value="This is a Series type that holds data for Stock Charts.&#xA;&#x9;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HqyATN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HqyATd6tEei97MD7GK1RmA" key="name" value="StockSeries"/>
+      <details xmi:id="_HqyATt6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eSuperTypes href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.component.ecore#_HrE8Td6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HqyAT96tEei97MD7GK1RmA" name="fill" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTnKN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTnKd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the fill to be used for the Candle.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HqyAUt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAU96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyAVN6tEei97MD7GK1RmA" key="name" value="Fill"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhn296tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HqyAVt6tEei97MD7GK1RmA" name="lineAttributes" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMTnL96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMTnMN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the style to be used to display the lines for this series.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HqyAWd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HqyAWt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HqyAW96tEei97MD7GK1RmA" key="name" value="LineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I35T8t6tEei97MD7GK1RmA" name="showAsBarStick" defaultValueLiteral="false" unsettable="true">
+      <eAnnotations xmi:id="_I35T896tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_I35T9N6tEei97MD7GK1RmA" key="documentation" value="Specifies if show graph as bar-stick look."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I35T9d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I35T9t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I35T996tEei97MD7GK1RmA" key="name" value="ShowAsBarStick"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I35T-d6tEei97MD7GK1RmA" name="stickLength" defaultValueLiteral="5" unsettable="true">
+      <eAnnotations xmi:id="_I35T-t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_I35T-96tEei97MD7GK1RmA" key="documentation" value="Specifies the length of the stick when show as bar-stick look."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I35T_N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I35T_d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I35T_t6tEei97MD7GK1RmA" key="name" value="StickLength"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

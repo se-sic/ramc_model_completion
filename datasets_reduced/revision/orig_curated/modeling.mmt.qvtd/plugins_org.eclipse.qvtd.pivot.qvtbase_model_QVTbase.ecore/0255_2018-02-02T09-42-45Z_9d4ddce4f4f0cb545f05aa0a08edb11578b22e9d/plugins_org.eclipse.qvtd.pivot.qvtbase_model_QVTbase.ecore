@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_CXsqsN6vEei97MD7GK1RmA" name="qvtbase" nsURI="http://www.eclipse.org/qvt/2015/QVTbase" nsPrefix="qvtb">
+  <eAnnotations xmi:id="_FY-DUd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+    <details xmi:id="_FY-DUt6vEei97MD7GK1RmA" key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details xmi:id="_FY-DU96vEei97MD7GK1RmA" key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details xmi:id="_FY-DVN6vEei97MD7GK1RmA" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_CgeMMd6vEei97MD7GK1RmA" name="BaseModel">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUbU96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_CXsqsd6vEei97MD7GK1RmA" name="Domain" abstract="true">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUbWd6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUcTt6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_FZzw1t6vEei97MD7GK1RmA" name="validateNameIsTypedModelName">
+      <eAnnotations xmi:id="_FZzw196vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FZzw2N6vEei97MD7GK1RmA" key="originalName" value="NameIsTypedModelName"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Fowy2d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_Fowy2t6vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;typedModel &lt;> null implies name = typedModel.name&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_FZzw3N6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_FZzw3t6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1iqn96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1iqoN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_FZzw4t6vEei97MD7GK1RmA" name="validateTypedModelIsTransformationModelParameter">
+      <eAnnotations xmi:id="_FZzw496vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FZzw5N6vEei97MD7GK1RmA" key="originalName" value="TypedModelIsTransformationModelParameter"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Fowy5d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_Fowy5t6vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;oclContainer().oclIsKindOf(Transformation) and typedModel &lt;> null implies&#xA;&#x9;oclContainer().oclAsType(Transformation).modelParameter->includes(typedModel)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_FZzw6N6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_FZzw6t6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1iqq96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1iqrN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_CXsqtN6vEei97MD7GK1RmA" name="isCheckable" lowerBound="1" unsettable="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_CXsqtt6vEei97MD7GK1RmA" name="isEnforceable" lowerBound="1" unsettable="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsquN6vEei97MD7GK1RmA" name="rule" lowerBound="1" eType="_CXsq0t6vEei97MD7GK1RmA" transient="true" eOpposite="_CXsq1d6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsqud6vEei97MD7GK1RmA" name="typedModel" eType="_CXsq7d6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_CXsqu96vEei97MD7GK1RmA" name="Function">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUbat6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_FZzw8t6vEei97MD7GK1RmA" name="validateParametersAreFunctionParameter">
+      <eAnnotations xmi:id="_FZzw896vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FZzw9N6vEei97MD7GK1RmA" key="originalName" value="ParametersAreFunctionParameter"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Fowy9d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_Fowy9t6vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;ownedParameters->forAll(oclIsKindOf(FunctionParameter))&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_FZzw-N6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_FZzw-t6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1iqu96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1iqvN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_FZzw_t6vEei97MD7GK1RmA" name="validateReturnTypeIsQueryType">
+      <eAnnotations xmi:id="_FZzw_96vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FZzxAN6vEei97MD7GK1RmA" key="originalName" value="ReturnTypeIsQueryType"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Fuzwod6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_Fuzwot6vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;queryExpression &lt;> null implies queryExpression.type.conformsTo(type)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_FZzxBN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_FZzxBt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1iqx96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1iqyN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsqvt6vEei97MD7GK1RmA" name="queryExpression" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUbaN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_CXsqwd6vEei97MD7GK1RmA" name="FunctionParameter">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUb2N6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_CXsqxN6vEei97MD7GK1RmA" name="Pattern">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUZOd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsqx96vEei97MD7GK1RmA" name="predicate" ordered="false" upperBound="-1" eType="_CXsqy96vEei97MD7GK1RmA" containment="true" eOpposite="_CXsq0N6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsqyN6vEei97MD7GK1RmA" name="bindsTo" ordered="false" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUdW96vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_CXsqy96vEei97MD7GK1RmA" name="Predicate">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUZOd6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_FZzxD96vEei97MD7GK1RmA" name="validateConditionIsBoolean">
+      <eAnnotations xmi:id="_FZzxEN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FZzxEd6vEei97MD7GK1RmA" key="originalName" value="ConditionIsBoolean"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_FZzxEt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_FZzxE96vEei97MD7GK1RmA" key="body" value="&#xA;conditionExpression.type = Boolean&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_FZzxFd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_FZzxF96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1iq2N6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1iq2d6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsqzt6vEei97MD7GK1RmA" name="conditionExpression" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_EjX4LN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_EjX4Ld6vEei97MD7GK1RmA" key="body" value="predicate"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUbaN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq0N6vEei97MD7GK1RmA" name="pattern" lowerBound="1" eType="_CXsqxN6vEei97MD7GK1RmA" transient="true" eOpposite="_CXsqx96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_CXsq0t6vEei97MD7GK1RmA" name="Rule" abstract="true">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUbWd6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_FZzxH96vEei97MD7GK1RmA" name="validateDomainNameIsUnique">
+      <eAnnotations xmi:id="_FZzxIN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FZzxId6vEei97MD7GK1RmA" key="originalName" value="DomainNameIsUnique"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_FowzIt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_FowzI96vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;domain->isUnique(name)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_FZzxJd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_FZzxJ96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1iq6N6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1iq6d6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_FowzK96vEei97MD7GK1RmA" name="validateNoOverridesCycle">
+      <eAnnotations xmi:id="_FowzLN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FowzLd6vEei97MD7GK1RmA" key="originalName" value="NoOverridesCycle"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Fr4_rt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_Fr4_r96vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;overridden->closure(overridden)->excludes(self)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_FowzMd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_FowzM96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1iq9N6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1iq9d6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_Fr4_t96vEei97MD7GK1RmA" name="validateOverridingRuleOverridesAllDomains">
+      <eAnnotations xmi:id="_Fr4_uN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_Fr4_ud6vEei97MD7GK1RmA" key="originalName" value="OverridingRuleOverridesAllDomains"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Fr4_ut6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_Fr4_u96vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;overridden &lt;> null implies&#xA;&#x9;overridden.domain->forAll(od | self.domain.name->includes(od.name))&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Fr4_vd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_Fr4_v96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1irAN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1irAd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq1d6vEei97MD7GK1RmA" name="domain" upperBound="-1" eType="_CXsqsd6vEei97MD7GK1RmA" containment="true" eOpposite="_CXsquN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="F-qvtbase-Rule-isAbstract" name="isAbstract" lowerBound="1" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_DVkBRd6vEei97MD7GK1RmA" name="overridden" eType="_CXsq0t6vEei97MD7GK1RmA" eOpposite="_CXsq1t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq1t6vEei97MD7GK1RmA" name="overrides" upperBound="-1" eType="_CXsq0t6vEei97MD7GK1RmA" eOpposite="_DVkBRd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq2d6vEei97MD7GK1RmA" name="transformation" eType="_CXsq296vEei97MD7GK1RmA" transient="true" resolveProxies="false" eOpposite="_CXsq596vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_CXsq296vEei97MD7GK1RmA" name="Transformation">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElKojt6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_CXsq3t6vEei97MD7GK1RmA" name="getFunction" lowerBound="1" eType="_CXsqu96vEei97MD7GK1RmA">
+      <eParameters xmi:id="_CXsq396vEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mxN6vEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_CXsq4d6vEei97MD7GK1RmA" name="getModelParameter" lowerBound="1" eType="_CXsq7d6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_CXsq4t6vEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mxN6vEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_FZzxS96vEei97MD7GK1RmA" name="validateContextTypeIsTransformation">
+      <eAnnotations xmi:id="_FZzxTN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FZzxTd6vEei97MD7GK1RmA" key="originalName" value="ContextTypeIsTransformation"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_FowzWt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_FowzW96vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;ownedContext &lt;> null implies ownedContext.type = self&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_FZzxUd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_FZzxU96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1irFN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1irFd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_FZzxV96vEei97MD7GK1RmA" name="validateExtendedTypedModelIsExtended">
+      <eAnnotations xmi:id="_FZzxWN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FZzxWd6vEei97MD7GK1RmA" key="originalName" value="ExtendedTypedModelIsExtended"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_FowzZt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_FowzZ96vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;_extends &lt;> null implies&#xA;&#x9;_extends.modelParameter->forAll(etm |&#xA;&#x9;&#x9;self.modelParameter->select(name = etm.name).usedPackage->includesAll(etm.usedPackage)&#xA;&#x9;)&#xA;&#x9;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_FZzxXd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_FZzxX96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1irIN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1irId6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_FZzxY96vEei97MD7GK1RmA" name="validateModelParameterIsUnique">
+      <eAnnotations xmi:id="_FZzxZN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_FZzxZd6vEei97MD7GK1RmA" key="originalName" value="ModelParameterIsUnique"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Fowzct6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_Fowzc96vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;modelParameter->isUnique(name)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_FZzxad6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_FZzxa96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1irLN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1irLd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_Fowze96vEei97MD7GK1RmA" name="validateNoExtendsCycle">
+      <eAnnotations xmi:id="_FowzfN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_Fowzfd6vEei97MD7GK1RmA" key="originalName" value="NoExtendsCycle"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Fowzft6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_Fowzf96vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;_extends->closure(_extends)->excludes(self)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mfN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Fowzgd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_mk96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_Fowzg96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_F1irON6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_F1irOd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_msN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_CX_muN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq5N6vEei97MD7GK1RmA" name="ownedTag" ordered="false" upperBound="-1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElKocd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq5t6vEei97MD7GK1RmA" name="modelParameter" upperBound="-1" eType="_CXsq7d6vEei97MD7GK1RmA" containment="true" eOpposite="_CXsq8N6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq596vEei97MD7GK1RmA" name="rule" ordered="false" upperBound="-1" eType="_CXsq0t6vEei97MD7GK1RmA" containment="true" eOpposite="_CXsq2d6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq6N6vEei97MD7GK1RmA" name="extends" eType="_CXsq296vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_CXsq6d6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_CXsq6t6vEei97MD7GK1RmA" key="body" value="extendedBy"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_FFr7Kd6vEei97MD7GK1RmA" name="ownedContext" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUdW96vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_CXsq7d6vEei97MD7GK1RmA" name="TypedModel">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUbWd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq8N6vEei97MD7GK1RmA" name="transformation" lowerBound="1" eType="_CXsq296vEei97MD7GK1RmA" transient="true" eOpposite="_CXsq5t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq8d6vEei97MD7GK1RmA" name="usedPackage" ordered="false" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUbxd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CXsq896vEei97MD7GK1RmA" name="dependsOn" ordered="false" upperBound="-1" eType="_CXsq7d6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_CXsq9N6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_CXsq9d6vEei97MD7GK1RmA" key="body" value="dependent"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_FFr7M96vEei97MD7GK1RmA" name="ownedContext" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_ElUdW96vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

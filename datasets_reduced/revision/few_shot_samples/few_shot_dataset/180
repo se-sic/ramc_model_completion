@@ -1,0 +1,575 @@
+----------------------------------------------------------------------------------------------------
+2 0 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOperations",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "true",
+    "eOperations": [
+      "loadFunctions",
+      "defineFunction",
+      "callFunction",
+      "getValue",
+      "getLValue",
+      "defineValue",
+      "defineFinalValue",
+      "defineVariableValue",
+      "defineFinalVariableValue",
+      "isFinal",
+      "isImmutable",
+      "getInvocationContext",
+      "..."
+    ],
+    "ePackage": "b3backend",
+    "eStructuralFeatures": [
+      "parentContext",
+      "childContexts",
+      "valueMap",
+      "funcStore"
+    ],
+    "id": "_lTgQ4t6wEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "BExecutionContext"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "eContainingClass": "BExecutionContext",
+    "eGenericExceptions": [
+      "org.eclipse.emf.ecore.impl.EGenericTypeImpl@7aa633da (expression: B3EngineException)"
+    ],
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@3a61bc55 (expression: T)",
+    "eParameters": [
+      "clazz"
+    ],
+    "eType": "EJavaObject",
+    "eTypeParameters": [
+      "T"
+    ],
+    "id": "_G0t-E96xEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "getContext",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EOperation",
+  "type": "object"
+}
+0 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eParameters",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@1c2a62f8 (expression: EJavaClass<T>)",
+    "eOperation": "getContext",
+    "eType": "EJavaClass",
+    "id": "_G0t-Ft6xEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "clazz",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EParameter",
+  "type": "object"
+}
+----------------------------------------------------------------------------------------------------
+2 1 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eOperations": [
+      "evaluate",
+      "getDeclaredType"
+    ],
+    "ePackage": "b3backend",
+    "eStructuralFeatures": [
+      "catchExpr",
+      "varname",
+      "exceptionType"
+    ],
+    "id": "_lTgRS96wEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "BCatch"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "BCatch",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@3c776c61 (expression: IType)",
+    "eReferenceType": "IType",
+    "eType": "IType",
+    "id": "_q3sSot6wEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "exceptionType",
+    "ordered": "true",
+    "required": "true",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EReference",
+  "type": "object"
+}
+2 0 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "derived": "false",
+    "eAttributeType": "EString",
+    "eContainingClass": "BCatch",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@607ae5b6 (expression: EString)",
+    "eType": "EString",
+    "iD": "false",
+    "id": "_lTgRUt6wEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "varname",
+    "ordered": "true",
+    "required": "false",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EAttribute",
+  "type": "object"
+}
+----------------------------------------------------------------------------------------------------
+1 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOperations",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eOperations": [
+      "apply",
+      "applyAndReverse",
+      "copyAndReverse"
+    ],
+    "ePackage": "change",
+    "eStructuralFeatures": [
+      "objectChanges",
+      "objectsToDetach",
+      "objectsToAttach",
+      "resourceChanges"
+    ],
+    "id": "_ZQn1It6tEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "ChangeDescription"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "eContainingClass": "ChangeDescription",
+    "eParameters": [
+      "eObjectToProxyURIMap"
+    ],
+    "id": "_ZcJIpN6tEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "copyAndReverse",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EOperation",
+  "type": "object"
+}
+2 0 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eParameters",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@58ccf766 (expression: EObjectToURIMap)",
+    "eOperation": "copyAndReverse",
+    "eType": "EObjectToURIMap",
+    "id": "_ZcJIpd6tEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "eObjectToProxyURIMap",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EParameter",
+  "type": "object"
+}
+----------------------------------------------------------------------------------------------------
+1 0 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "true",
+    "eOperations": [
+      "getStackLevel"
+    ],
+    "ePackage": "emftvm",
+    "eStructuralFeatures": [
+      "owningBlock",
+      "opcode",
+      "stackProduction",
+      "stackConsumption",
+      "lineNumber"
+    ],
+    "id": "_5WZfzN6tEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "Instruction"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "false",
+    "defaultValue": "0",
+    "defaultValueLiteral": "0",
+    "derived": "true",
+    "eAttributeType": "EInt",
+    "eContainingClass": "Instruction",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@1b1180b4 (expression: EInt)",
+    "eType": "EInt",
+    "iD": "false",
+    "id": "_FW7Sd96uEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "stackLevel",
+    "ordered": "true",
+    "required": "true",
+    "transient": "true",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "true"
+  },
+  "changeType": "Add",
+  "className": "EAttribute",
+  "type": "object"
+}
+1 2 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eOperations",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "eContainingClass": "Instruction",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@3deb04d3 (expression: EInt)",
+    "eType": "EInt",
+    "id": "_5WZfzd6tEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "getStackLevel",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Remove",
+  "className": "EOperation",
+  "type": "object"
+}
+----------------------------------------------------------------------------------------------------
+0 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eOperations": [
+      "loadModule",
+      "registerFeature",
+      "registerRule",
+      "findOperation",
+      "findStaticOperation",
+      "findField",
+      "findStaticField",
+      "findRule",
+      "findType",
+      "run",
+      "getRules",
+      "getModelOf",
+      "getModelID",
+      "queueForDelete",
+      "deleteQueue",
+      "..."
+    ],
+    "ePackage": "emftvm",
+    "eStructuralFeatures": [
+      "metaModels",
+      "inputModels",
+      "inoutModels",
+      "outputModels",
+      "modules",
+      "matches",
+      "traces",
+      "uniqueResults"
+    ],
+    "id": "_5WZfG96tEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "ExecEnv"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "false",
+    "derived": "true",
+    "eAttributeType": "EMap",
+    "eContainingClass": "ExecEnv",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@67530cf9 (expression: EMap<TraceLink, EJavaObject>)",
+    "eType": "EMap",
+    "iD": "false",
+    "id": "_UUs5At6uEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "uniqueResults",
+    "ordered": "true",
+    "required": "true",
+    "transient": "true",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EAttribute",
+  "type": "object"
+}
+0 3 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "false",
+    "container": "false",
+    "containment": "false",
+    "derived": "true",
+    "eContainingClass": "ExecEnv",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@3c6b80cd (expression: TraceLinkSet)",
+    "eReferenceType": "TraceLinkSet",
+    "eType": "TraceLinkSet",
+    "id": "_UUs4_t6uEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "matches",
+    "ordered": "true",
+    "required": "true",
+    "resolveProxies": "true",
+    "transient": "true",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EReference",
+  "type": "object"
+}
+0 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "false",
+    "container": "false",
+    "containment": "false",
+    "derived": "true",
+    "eContainingClass": "ExecEnv",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@7c5c5550 (expression: TraceLinkSet)",
+    "eReferenceType": "TraceLinkSet",
+    "eType": "TraceLinkSet",
+    "id": "_UUs5AN6uEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "traces",
+    "ordered": "true",
+    "required": "true",
+    "resolveProxies": "true",
+    "transient": "true",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EReference",
+  "type": "object"
+}
+----------------------------------------------------------------------------------------------------
+3 0 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOperations",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "true",
+    "eOperations": [
+      "loadFunctions",
+      "loadFunction",
+      "defineFunction",
+      "callFunction",
+      "getValue",
+      "getLValue",
+      "defineValue",
+      "defineFinalValue",
+      "defineVariableValue",
+      "defineFinalVariableValue",
+      "isFinal",
+      "isImmutable",
+      "getInvocationContext",
+      "..."
+    ],
+    "ePackage": "b3backend",
+    "eStructuralFeatures": [
+      "parentContext",
+      "valueMap",
+      "funcStore",
+      "effectiveConcerns",
+      "progressMonitor"
+    ],
+    "id": "_lTgQ4t6wEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "BExecutionContext"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "eAnnotations": [
+      "org.eclipse.emf.ecore.impl.EAnnotationImpl@795be0fd (source: http://www.eclipse.org/emf/2002/GenModel)"
+    ],
+    "eContainingClass": "BExecutionContext",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@234d42ac (expression: BInnerContext)",
+    "eType": "BInnerContext",
+    "id": "_xVUnwt6xEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "createWrappedInnerContext",
+    "ordered": "true",
+    "required": "false",
+    "unique": "true",
+    "upperBound": "1"
+  },
+  "changeType": "Add",
+  "className": "EOperation",
+  "type": "object"
+}
+1 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "details",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "details": [
+      "org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2bbc41b6 (key: documentation, value: Creates a new inner context parented by a delegating context refering to a newly created outer context.\\nThe freshly created outer context is obtained by simply calling getOuterContext on the returned inner context.\\n\\nThis method is useful when a context is needed that keeps the input contexts content visible (in the returned inner context), while at the same time providing a new outer context where values visible downstream can be placed.)"
+    ],
+    "eModelElement": "createWrappedInnerContext",
+    "id": "_xVUnw96xEei97MD7GK1RmA",
+    "source": "http://www.eclipse.org/emf/2002/GenModel"
+  },
+  "changeType": "Add",
+  "className": "EAnnotation",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "id": "_xVUnxN6xEei97MD7GK1RmA",
+    "key": "documentation",
+    "value": "Creates a new inner context parented by a delegating context refering to a newly created outer context.\\nThe freshly created outer context is obtained by simply calling getOuterContext on the returned "
+  },
+  "changeType": "Add",
+  "className": "EStringToStringMapEntry",
+  "type": "object"
+}
+--------------------------------------------------COMPLETION--------------------------------------------------
+0 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eAnnotations",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{}

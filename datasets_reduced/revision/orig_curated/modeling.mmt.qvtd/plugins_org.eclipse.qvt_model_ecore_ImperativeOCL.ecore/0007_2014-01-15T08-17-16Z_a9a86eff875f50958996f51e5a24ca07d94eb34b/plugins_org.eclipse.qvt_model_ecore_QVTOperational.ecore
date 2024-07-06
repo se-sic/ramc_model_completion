@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="QVTOperational" name="QVTOperational" nsURI="http://schema.omg.org/spec/QVT/1.2/qvtoperational.xml" nsPrefix="qvtoperational">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.Constructor" name="Constructor" eSuperTypes="QVTOperational.ImperativeOperation"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.ConstructorBody" name="ConstructorBody" eSuperTypes="QVTOperational.OperationBody"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.ContextualProperty" name="ContextualProperty">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Property"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ContextualProperty.context" name="context" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Class"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ContextualProperty.initExpression" name="initExpression" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmcUd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcUt6vEei97MD7GK1RmA" key="body" value="ownerProperty"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ContextualProperty.overridden" name="overridden">
+      <eAnnotations xmi:id="_crmcVN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcVd6vEei97MD7GK1RmA" key="body" value="overriding"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Property"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="QVTOperational.DirectionKind" name="DirectionKind">
+    <eLiterals xmi:id="QVTOperational.DirectionKind.in" name="in"/>
+    <eLiterals xmi:id="QVTOperational.DirectionKind.inout" name="inout" value="1"/>
+    <eLiterals xmi:id="QVTOperational.DirectionKind.out" name="out" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.EntryOperation" name="EntryOperation" eSuperTypes="QVTOperational.ImperativeOperation"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.Helper" name="Helper" eSuperTypes="QVTOperational.ImperativeOperation">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.Helper.isQuery" name="isQuery">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.qvt_model_ecore_PrimitiveTypes.ecore#PrimitiveTypes.Boolean"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.ImperativeCallExp" name="ImperativeCallExp">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OperationCallExp"/>
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_ImperativeOCL.ecore#ImperativeOCL.ImperativeExpression"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.ImperativeCallExp.isVirtual" name="isVirtual" defaultValueLiteral="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.qvt_model_ecore_PrimitiveTypes.ecore#PrimitiveTypes.Boolean"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.ImperativeOperation" name="ImperativeOperation">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Operation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ImperativeOperation.body" name="body" eType="QVTOperational.OperationBody" containment="true" resolveProxies="false" eOpposite="QVTOperational.OperationBody.operation"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ImperativeOperation.context" name="context" eType="QVTOperational.VarParameter" containment="true" resolveProxies="false" eOpposite="QVTOperational.VarParameter.ctxOwner"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.ImperativeOperation.isBlackbox" name="isBlackbox">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.qvt_model_ecore_PrimitiveTypes.ecore#PrimitiveTypes.Boolean"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ImperativeOperation.overridden" name="overridden" eType="QVTOperational.ImperativeOperation">
+      <eAnnotations xmi:id="_crmcXd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcXt6vEei97MD7GK1RmA" key="body" value="overriding"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ImperativeOperation.result" name="result" upperBound="-1" eType="QVTOperational.VarParameter" containment="true" resolveProxies="false" eOpposite="QVTOperational.VarParameter.resOwner"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="QVTOperational.ImportKind" name="ImportKind">
+    <eLiterals xmi:id="QVTOperational.ImportKind.extension" name="extension"/>
+    <eLiterals xmi:id="QVTOperational.ImportKind.access" name="access" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.Library" name="Library" eSuperTypes="QVTOperational.Module"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.MappingBody" name="MappingBody" eSuperTypes="QVTOperational.OperationBody">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.MappingBody.endSection" name="endSection" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmcYN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcYd6vEei97MD7GK1RmA" key="body" value="endOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.MappingBody.initSection" name="initSection" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmcY96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcZN6vEei97MD7GK1RmA" key="body" value="initOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.MappingCallExp" name="MappingCallExp" eSuperTypes="QVTOperational.ImperativeCallExp">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.MappingCallExp.isStrict" name="isStrict">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.qvt_model_ecore_PrimitiveTypes.ecore#PrimitiveTypes.Boolean"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.MappingOperation" name="MappingOperation" eSuperTypes="QVTOperational.ImperativeOperation">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.MappingOperation.disjunct" name="disjunct" upperBound="-1" eType="QVTOperational.MappingOperation">
+      <eAnnotations xmi:id="_crmcZ96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcaN6vEei97MD7GK1RmA" key="body" value="disjuncter"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.MappingOperation.inherited" name="inherited" upperBound="-1" eType="QVTOperational.MappingOperation">
+      <eAnnotations xmi:id="_crmcad6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcat6vEei97MD7GK1RmA" key="body" value="inheriting"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.MappingOperation.merged" name="merged" upperBound="-1" eType="QVTOperational.MappingOperation">
+      <eAnnotations xmi:id="_crmca96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcbN6vEei97MD7GK1RmA" key="body" value="merging"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.MappingOperation.refinedRelation" name="refinedRelation">
+      <eAnnotations xmi:id="_crmcbd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcbt6vEei97MD7GK1RmA" key="body" value="refiningOperation"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_QVTRelation.ecore#QVTRelation.Relation"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.MappingOperation.when" name="when" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmccN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmccd6vEei97MD7GK1RmA" key="body" value="whenOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.MappingOperation.where" name="where" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmcc96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcdN6vEei97MD7GK1RmA" key="body" value="whereOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.MappingParameter" name="MappingParameter" eSuperTypes="QVTOperational.VarParameter">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.MappingParameter.extent" name="extent" eType="QVTOperational.ModelParameter"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.MappingParameter.referredDomain" name="referredDomain">
+      <eAnnotations xmi:id="_crmcdt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcd96vEei97MD7GK1RmA" key="body" value="referringParameter"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_QVTRelation.ecore#QVTRelation.RelationDomain"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.ModelParameter" name="ModelParameter" eSuperTypes="QVTOperational.VarParameter"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.ModelType" name="ModelType">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Class"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ModelType.additionalCondition" name="additionalCondition" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmced6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcet6vEei97MD7GK1RmA" key="body" value="condOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.ModelType.conformanceKind" name="conformanceKind" defaultValueLiteral="effective">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.qvt_model_ecore_PrimitiveTypes.ecore#PrimitiveTypes.String"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ModelType.metamodel" name="metamodel" lowerBound="1" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Package"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.Module" name="Module">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Class"/>
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Package"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.Module.configProperty" name="configProperty" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Property"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.Module.entry" name="entry" eType="QVTOperational.EntryOperation">
+      <eAnnotations xmi:id="_crmcgN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcgd6vEei97MD7GK1RmA" key="body" value="entryContext"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.Module.isBlackbox" name="isBlackbox">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.qvt_model_ecore_PrimitiveTypes.ecore#PrimitiveTypes.Boolean"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.Module.moduleImport" name="moduleImport" upperBound="-1" eType="QVTOperational.ModuleImport" containment="true" resolveProxies="false" eOpposite="QVTOperational.ModuleImport.module"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.Module.ownedTag" name="ownedTag" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmcg96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmchN6vEei97MD7GK1RmA" key="body" value="owner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Tag"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.Module.ownedVariable" name="ownedVariable" ordered="false" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmcht6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmch96vEei97MD7GK1RmA" key="body" value="variableOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.Variable"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.Module.usedModelType" name="usedModelType" upperBound="-1" eType="QVTOperational.ModelType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.ModuleImport" name="ModuleImport">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Element"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ModuleImport.binding" name="binding" upperBound="-1" eType="QVTOperational.ModelType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ModuleImport.importedModule" name="importedModule" lowerBound="1" eType="QVTOperational.Module">
+      <eAnnotations xmi:id="_crmci96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcjN6vEei97MD7GK1RmA" key="body" value="importingElement"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.ModuleImport.kind" name="kind" eType="QVTOperational.ImportKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ModuleImport.module" name="module" eType="QVTOperational.Module" transient="true" resolveProxies="false" eOpposite="QVTOperational.Module.moduleImport"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.ObjectExp" name="ObjectExp">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_ImperativeOCL.ecore#ImperativeOCL.InstantiationExp"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ObjectExp.body" name="body" lowerBound="1" eType="QVTOperational.ConstructorBody" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ObjectExp.referredObject" name="referredObject" lowerBound="1">
+      <eAnnotations xmi:id="_crmcjt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcj96vEei97MD7GK1RmA" key="body" value="objectExpression"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.Variable"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.OperationBody" name="OperationBody">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Element"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.OperationBody.content" name="content" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmckt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmck96vEei97MD7GK1RmA" key="body" value="contentOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.OperationBody.operation" name="operation" eType="QVTOperational.ImperativeOperation" transient="true" resolveProxies="false" eOpposite="QVTOperational.ImperativeOperation.body"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.OperationBody.variable" name="variable" ordered="false" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmcld6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmclt6vEei97MD7GK1RmA" key="body" value="opBody"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.Variable"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.OperationalTransformation" name="OperationalTransformation" eSuperTypes="QVTOperational.Module">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.OperationalTransformation.intermediateClass" name="intermediateClass" upperBound="-1">
+      <eAnnotations xmi:id="_crmcmd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcmt6vEei97MD7GK1RmA" key="body" value="transfClient"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Class"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.OperationalTransformation.intermediateProperty" name="intermediateProperty" upperBound="-1">
+      <eAnnotations xmi:id="_crmcnN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcnd6vEei97MD7GK1RmA" key="body" value="tranfClient"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Property"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.OperationalTransformation.modelParameter" name="modelParameter" upperBound="-1" eType="QVTOperational.ModelParameter" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmcn96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcoN6vEei97MD7GK1RmA" key="body" value="module"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.OperationalTransformation.refined" name="refined">
+      <eAnnotations xmi:id="_crmcod6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcot6vEei97MD7GK1RmA" key="body" value="refinement"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_QVTRelation.ecore#QVTRelation.RelationalTransformation"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.OperationalTransformation.relation" name="relation" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crmcpN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcpd6vEei97MD7GK1RmA" key="body" value="owner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_QVTRelation.ecore#QVTRelation.Relation"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.ResolveExp" name="ResolveExp">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.CallExp"/>
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_ImperativeOCL.ecore#ImperativeOCL.ImperativeExpression"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ResolveExp.condition" name="condition" containment="true" resolveProxies="false">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.ResolveExp.isDeferred" name="isDeferred">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.qvt_model_ecore_PrimitiveTypes.ecore#PrimitiveTypes.Boolean"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.ResolveExp.isInverse" name="isInverse">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.qvt_model_ecore_PrimitiveTypes.ecore#PrimitiveTypes.Boolean"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.ResolveExp.one" name="one">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.qvt_model_ecore_PrimitiveTypes.ecore#PrimitiveTypes.Boolean"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ResolveExp.target" name="target" containment="true" resolveProxies="false">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.Variable"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.ResolveInExp" name="ResolveInExp" eSuperTypes="QVTOperational.ResolveExp">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.ResolveInExp.inMapping" name="inMapping" eType="QVTOperational.MappingOperation">
+      <eAnnotations xmi:id="_crmcrt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crmcr96vEei97MD7GK1RmA" key="body" value="resolveExpression"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTOperational.VarParameter" name="VarParameter">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.Variable"/>
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Parameter"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.VarParameter.ctxOwner" name="ctxOwner" eType="QVTOperational.ImperativeOperation" transient="true" resolveProxies="false" eOpposite="QVTOperational.ImperativeOperation.context"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTOperational.VarParameter.kind" name="kind" eType="QVTOperational.DirectionKind"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTOperational.VarParameter.resOwner" name="resOwner" eType="QVTOperational.ImperativeOperation" transient="true" resolveProxies="false" eOpposite="QVTOperational.ImperativeOperation.result"/>
+  </eClassifiers>
+</ecore:EPackage>

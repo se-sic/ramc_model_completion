@@ -1,0 +1,155 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_lTgR1N6wEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@3a7ae513 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'systemCall','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@57a0622f (expression: EBoolean)','changeable':'true','volatile':'false','transient':'false','defaultValue':'false','unsettable':'false','derived':'false','eContainingClass':'BJavaFunction','iD':'false','eAttributeType':'EBoolean'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_lTgR1d6wEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@46e8d0be (key: documentation, value: Indicates if the call should be made on the form f(BExecutionContext ctx, Object[] params, Types[] types) or as a regular call, where no access to the context and types is provided.)'],'eModelElement':'systemCall'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_lTgR1t6wEei97MD7GK1RmA', 'key':'documentation','value':'Indicates if the call should be made on the form f(BExecutionContext ctx, Object[] params, Types[] types) or as a regular call, where no access to the context and types is provided.'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_cLB0CN6xEei97MD7GK1RmA', 'name':'loadFunction','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BJavaFunction','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@43f4485d (expression: BJavaFunction)','eContainingClass':'BExecutionContext','eParameters':['method'],'eGenericExceptions':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@7c9dccf3 (expression: B3EngineException)']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_cLB0Cd6xEei97MD7GK1RmA', 'name':'method','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Method','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@343508f5 (expression: Method)','eOperation':'loadFunction'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_cLB08t6xEei97MD7GK1RmA', 'name':'classFunction','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7cafed27 (expression: EBoolean)','changeable':'true','volatile':'false','transient':'false','defaultValue':'false','unsettable':'false','derived':'false','eContainingClass':'IFunction','iD':'false','eAttributeType':'EBoolean'}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_cLB1It6xEei97MD7GK1RmA', 'name':'isSystemCall','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@39e330a2 (expression: EBoolean)','eContainingClass':'BJavaFunction'}}" 
+},{
+	 "id": "7", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_cLB1JN6xEei97MD7GK1RmA', 'name':'isFunctionCall','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@34674e5e (expression: EBoolean)','eContainingClass':'BJavaFunction'}}" 
+},{
+	 "id": "8", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_cLB1Jt6xEei97MD7GK1RmA', 'name':'isMethodCall','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@1040a77b (expression: EBoolean)','eContainingClass':'BJavaFunction'}}" 
+},{
+	 "id": "9", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_cLB1Kd6xEei97MD7GK1RmA', 'name':'callType','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BJavaCallType','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4274da41 (expression: BJavaCallType)','changeable':'true','volatile':'false','transient':'false','defaultValue':'FUNCTION','unsettable':'false','derived':'false','eContainingClass':'BJavaFunction','iD':'false','eAttributeType':'BJavaCallType'}}" 
+},{
+	 "id": "10", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EEnum', 'attributes': {'id': '_cLB16N6xEei97MD7GK1RmA', 'name':'BJavaCallType','defaultValue':'FUNCTION','ePackage':'b3backend','serializable':'true','eLiterals':['FUNCTION','SYSTEM','METHOD']}}" 
+},{
+	 "id": "11", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EEnumLiteral', 'attributes': {'id': '_cLB16d6xEei97MD7GK1RmA', 'name':'FUNCTION','value':'0','instance':'FUNCTION','literal':'FUNCTION','eEnum':'BJavaCallType'}}" 
+},{
+	 "id": "12", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EEnumLiteral', 'attributes': {'id': '_cLB1696xEei97MD7GK1RmA', 'name':'METHOD','value':'2','instance':'METHOD','literal':'METHOD','eEnum':'BJavaCallType'}}" 
+},{
+	 "id": "13", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EEnumLiteral', 'attributes': {'id': '_cLB16t6xEei97MD7GK1RmA', 'name':'SYSTEM','value':'1','instance':'SYSTEM','literal':'SYSTEM','eEnum':'BJavaCallType'}}" 
+},{
+	 "id": "14", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_cLB17N6xEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@69512d0d (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'B3MetaClass','ePackage':'b3backend','abstract':'false','interface':'false','eOperations':['isAssignableFrom'],'eStructuralFeatures':['instanceClass'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@27fd3365 (expression: IType)']}}" 
+},{
+	 "id": "15", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_cLB17d6xEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7971b6d4 (key: documentation, value: Represents the type of a class \\\\'instance\\\\'. In java there is no type that describes the difference between the type of instances, and the type of the class - for String, both are represented by Class<T> (java.lang.String). \\rAn instance of B3MetaClass has an attribute {@link #instanceClass} that is reference to the class. \\rIt only computes equal to another B3MetaClass instance for the same instance class.\\rIt computes isAssignableTo to true for any B3MetaClass with an instanceClass being a subclass.)'],'eModelElement':'B3MetaClass'}}" 
+},{
+	 "id": "16", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_cLB1796xEei97MD7GK1RmA', 'name':'isAssignableFrom','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5c46a4e (expression: EBoolean)','eContainingClass':'B3MetaClass','eParameters':['type']}}" 
+},{
+	 "id": "17", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_cLB18t6xEei97MD7GK1RmA', 'name':'instanceClass','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EJavaClass','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@1c2b3a56 (expression: EJavaClass)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'B3MetaClass','iD':'false','eAttributeType':'EJavaClass'}}" 
+},{
+	 "id": "18", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_cLB17t6xEei97MD7GK1RmA', 'key':'documentation','value':'Represents the type of a class \\\\'instance\\\\'. In java there is no type that describes the difference between the type of instances, and the type of the class - for String, both are represented by Class<T'}}" 
+},{
+	 "id": "19", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_cLB18d6xEei97MD7GK1RmA', 'name':'type','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'IType','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@11aedbdf (expression: IType)','eOperation':'isAssignableFrom'}}" 
+},{
+	 "id": "20", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_O_V2hd6xEei97MD7GK1RmA', 'name':'IFunction','ePackage':'b3backend','abstract':'true','interface':'true','eOperations':['call','internalCall','prepareCall','getSignature','getReturnTypeForParameterTypes','getEffectiveParameters'],'eStructuralFeatures':['visibility','final','executionMode','name','guard','parameterTypes','exceptionTypes','typeParameters','parameterNames','parameters','varArgs','documentation','returnType','closure','typeCalculator','container','...'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@478981c8 (expression: IGenericDeclaration)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@66f05a46 (expression: BExpression)']}}" 
+},{
+	 "id": "21", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_lTgQ4t6wEei97MD7GK1RmA', 'name':'BExecutionContext','ePackage':'b3backend','abstract':'true','interface':'false','eOperations':['loadFunctions','loadFunction','defineFunction','callFunction','getValue','getLValue','defineValue','defineFinalValue','defineVariableValue','defineFinalVariableValue','isFinal','isImmutable','getInvocationContext','...'],'eStructuralFeatures':['parentContext','childContexts','valueMap','funcStore']}}" 
+},{
+	 "id": "22", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_lTgQ0d6wEei97MD7GK1RmA', 'name':'b3backend','nsURI':'http://b3backend/1.0','nsPrefix':'b3backend','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@194c3fb7','eClassifiers':['BExpression','BSourceLink','BFileReference','BLineReference','BExecutionContext','BIfExpression','BSwitchExpression','BCase','BTryExpression','BCatch','BBinaryExpression','BOrExpression','BAndExpression','...']}}" 
+},{
+	 "id": "23", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_lTgR0t6wEei97MD7GK1RmA', 'name':'BJavaFunction','ePackage':'b3backend','abstract':'false','interface':'false','eOperations':['isSystemCall','isFunctionCall','isMethodCall'],'eStructuralFeatures':['method','callType'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@466affd2 (expression: BFunction)']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "1", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "3", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "10", 
+	 "target": "11", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eLiterals'}" 
+},{
+	 "source": "10", 
+	 "target": "12", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eLiterals'}" 
+},{
+	 "source": "10", 
+	 "target": "13", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eLiterals'}" 
+},{
+	 "source": "14", 
+	 "target": "15", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "14", 
+	 "target": "16", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "14", 
+	 "target": "17", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "15", 
+	 "target": "18", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "16", 
+	 "target": "19", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "20", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "21", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "22", 
+	 "target": "14", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "22", 
+	 "target": "10", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "23", 
+	 "target": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "23", 
+	 "target": "7", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "23", 
+	 "target": "8", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "23", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "23", 
+	 "target": "9", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+}]}

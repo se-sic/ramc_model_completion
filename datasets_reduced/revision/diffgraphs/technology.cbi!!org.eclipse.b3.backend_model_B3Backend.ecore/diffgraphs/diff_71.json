@@ -1,0 +1,44 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_y-rMiN6xEei97MD7GK1RmA', 'name':'evaluateDefaults','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EJavaObject','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@33a7e307 (expression: EJavaObject)','eContainingClass':'BPropertySet','eParameters':['ctx','allVisible'],'eGenericExceptions':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@1fed4caf (expression: Throwable)']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_y-rMit6xEei97MD7GK1RmA', 'name':'ctx','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BExecutionContext','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@407c80a9 (expression: BExecutionContext)','eOperation':'evaluateDefaults'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_y-rMi96xEei97MD7GK1RmA', 'name':'allVisible','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@39b24641 (expression: EBoolean)','eOperation':'evaluateDefaults'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_YHkwXN6yEei97MD7GK1RmA', 'name':'printStack','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eContainingClass':'BExecutionContext'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_YHkwXd6yEei97MD7GK1RmA', 'name':'printStackTrace','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eContainingClass':'BExecutionContext'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_Caa-D96xEei97MD7GK1RmA', 'name':'BPropertySet','ePackage':'b3backend','abstract':'false','interface':'false','eOperations':['evaluateDefaults'],'eStructuralFeatures':['extends','operations','propertiesFile'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@5560135a (expression: BAdvice)']}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_lTgQ4t6wEei97MD7GK1RmA', 'name':'BExecutionContext','ePackage':'b3backend','abstract':'true','interface':'false','eOperations':['loadFunctions','loadFunction','defineFunction','callFunction','getInvocationContext','createInnerContext','createWrappedInnerContext','createOuterContext','getDeclaredFunctionType','isPropertyScope','...'],'eStructuralFeatures':['parentContext','valueMap','funcStore','effectiveConcerns','progressMonitor','injector'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@4e49aa35 (expression: ITypedValueContainer)']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "0", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "5", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "6", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "6", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+}]}

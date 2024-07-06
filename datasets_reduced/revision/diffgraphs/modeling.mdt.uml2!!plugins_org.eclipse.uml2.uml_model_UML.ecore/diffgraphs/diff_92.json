@@ -1,0 +1,1604 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIFWvd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2b4ba96a (key: documentation, value: A class describes a set of objects that share the same specifications of features, constraints, and semantics.\\nA class has the capability to have an internal structure and ports.\\nClass has derived association that indicates how it may be extended through one or more stereotypes. Stereotype is the only kind of metaclass that cannot be extended by stereotypes.\\nA class may be designated as active (i.e., each of its instances having its own thread of control) or passive (i.e., each of its instances executing within the context of some other object). A class may also specify which signals the instances of this class handle.)'],'eModelElement':'Class'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIFWvt6tEei97MD7GK1RmA', 'key':'documentation','value':'A class describes a set of objects that share the same specifications of features, constraints, and semantics.\\nA class has the capability to have an internal structure and ports.\\nClass has derived ass'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIFWy96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@1074e16c (key: documentation, value: True when a class is abstract.\\nIf true, the Classifier does not provide a complete declaration and can typically not be instantiated. An abstract classifier is intended to be used by other classifiers e.g. as the target of general metarelationships or generalization relationships.)'],'eModelElement':'isAbstract'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIFWzN6tEei97MD7GK1RmA', 'key':'documentation','value':'True when a class is abstract.\\nIf true, the Classifier does not provide a complete declaration and can typically not be instantiated. An abstract classifier is intended to be used by other classifiers'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIFXNd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7d63fb7 (key: documentation, value: A classifier is a classification of instances - it describes a set of instances that have features in common. A classifier can specify a generalization hierarchy by referencing its general classifiers.\\nA classifier has the capability to own collaboration uses. These collaboration uses link a collaboration with the classifier to give a description of the workings of the classifier.\\nClassifier is defined to be a kind of templateable element so that a classifier can be parameterized. It is also defined to be a kind of parameterable element so that a classifier can be a formal template parameter.\\nA classifier has the capability to own use cases. Although the owning classifier typically represents the subject to which the owned use cases apply, this is not necessarily the case. In principle, the same use case can be applied to multiple subjects, as identified by the subject association role of a use case.)'],'eModelElement':'Classifier'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIFXNt6tEei97MD7GK1RmA', 'key':'documentation','value':'A classifier is a classification of instances - it describes a set of instances that have features in common. A classifier can specify a generalization hierarchy by referencing its general classifiers'}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIFXwt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@18b38bea (key: documentation, value: The query inherit() defines how to inherit a set of elements. Here the operation is defined to inherit them all. It is intended to be redefined in circumstances where inheritance is affected by redefinition.\\nThe inherit operation is overridden to exclude redefined properties.\\nresult = inhs)'],'eModelElement':'inherit'}}" 
+},{
+	 "id": "7", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIFXw96tEei97MD7GK1RmA', 'key':'documentation','value':'The query inherit() defines how to inherit a set of elements. Here the operation is defined to inherit them all. It is intended to be redefined in circumstances where inheritance is affected by redefi'}}" 
+},{
+	 "id": "8", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIFYOt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@289f4368 (key: documentation, value: The query getNamesOfMember() takes importing into account. It gives back the set of names that an element would have in an importing namespace, either because it is owned, or if not owned then imported individually, or if not individually then from a package.\\nThe query getNamesOfMember() gives a set of all of the names that a member would have in a Namespace. In general a member can have multiple names in a Namespace if it is imported more than once with different aliases. The query takes account of importing. It gives back the set of names that an element would have in an importing namespace, either because it is owned, or if not owned then imported individually, or if not individually then from a package.\\nresult = if self.ownedMember ->includes(element)\\nthen Set{}->include(element.name)\\nelse let elementImports: ElementImport = self.elementImport->select(ei | ei.importedElement = element) in\\n  if elementImports->notEmpty()\\n  then elementImports->collect(el | el.getName())\\n  else self.packageImport->select(pi | pi.importedPackage.visibleMembers()->includes(element))-> collect(pi | pi.importedPackage.getNamesOfMember(element))\\n  endif\\nendif)'],'eModelElement':'getNamesOfMember'}}" 
+},{
+	 "id": "9", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIFYO96tEei97MD7GK1RmA', 'key':'documentation','value':'The query getNamesOfMember() takes importing into account. It gives back the set of names that an element would have in an importing namespace, either because it is owned, or if not owned then importe'}}" 
+},{
+	 "id": "10", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIFZuN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2b1da058 (key: documentation, value: An expression represents a node in an expression tree, which may be non-terminal or terminal. It defines a symbol, and has a possibly empty sequence of operands which are value specifications.\\nAn expression is a structured tree of symbols that denotes a (possibly empty) set of values when evaluated in a context.)'],'eModelElement':'Expression'}}" 
+},{
+	 "id": "11", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIFZud6tEei97MD7GK1RmA', 'key':'documentation','value':'An expression represents a node in an expression tree, which may be non-terminal or terminal. It defines a symbol, and has a possibly empty sequence of operands which are value specifications.\\nAn expr'}}" 
+},{
+	 "id": "12", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF8Id6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@779279e4 (key: documentation, value: A typed element has a type.\\nA typed element is a kind of named element that represents an element with a type.)'],'eModelElement':'TypedElement'}}" 
+},{
+	 "id": "13", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF8It6tEei97MD7GK1RmA', 'key':'documentation','value':'A typed element has a type.\\nA typed element is a kind of named element that represents an element with a type.'}}" 
+},{
+	 "id": "14", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF8JN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3b55b19c (key: documentation, value: The type of the TypedElement.\\nThis information is derived from the return result for this Operation.)'],'eModelElement':'type'}}" 
+},{
+	 "id": "15", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF8Jd6tEei97MD7GK1RmA', 'key':'documentation','value':'The type of the TypedElement.\\nThis information is derived from the return result for this Operation.'}}" 
+},{
+	 "id": "16", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF8Yt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@6dbd9df8 (key: documentation, value: A packageable element indicates a named element that may be owned directly by a package.\\nPackageable elements are able to serve as a template parameter.)'],'eModelElement':'PackageableElement'}}" 
+},{
+	 "id": "17", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF8Y96tEei97MD7GK1RmA', 'key':'documentation','value':'A packageable element indicates a named element that may be owned directly by a package.\\nPackageable elements are able to serve as a template parameter.'}}" 
+},{
+	 "id": "18", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF9Bd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@629f523b (key: documentation, value: The query makesVisible() defines whether a Package makes an element visible outside itself. Elements with no visibility and elements with public visibility are made visible.\\nself.member->includes(el)\\nresult = (ownedMember->includes(el)) or\\n(elementImport->select(ei|ei.importedElement = #public)->collect(ei|ei.importedElement)->includes(el)) or\\n(packageImport->select(pi|pi.visibility = #public)->collect(pi|pi.importedPackage.member->includes(el))->notEmpty()))'],'eModelElement':'makesVisible'}}" 
+},{
+	 "id": "19", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF9Bt6tEei97MD7GK1RmA', 'key':'documentation','value':'The query makesVisible() defines whether a Package makes an element visible outside itself. Elements with no visibility and elements with public visibility are made visible.\\nself.member->includes(el)\\n'}}" 
+},{
+	 "id": "20", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF-St6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@68a34ddf (key: documentation, value: An association describes a set of tuples whose values refer to typed instances. An instance of an association is called a link. A link is a tuple with one value for each end of the association, where each value is an instance of the type of the end.)'],'eModelElement':'Association'}}" 
+},{
+	 "id": "21", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF-S96tEei97MD7GK1RmA', 'key':'documentation','value':'An association describes a set of tuples whose values refer to typed instances. An instance of an association is called a link. A link is a tuple with one value for each end of the association, where '}}" 
+},{
+	 "id": "22", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF-od6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2e38cd25 (key: documentation, value: Property represents a declared state of one or more instances in terms of a named relationship to a value or values. When a property is an attribute of a classifier, the value or values are related to the instance of the classifier by being held in slots of the instance. When a property is an association end, the value or values are related to the instance or instances at the other end(s) of the association. The range of valid values represented by the property can be controlled by setting the property's type.\\nA property has the capability of being a deployment target in a deployment relationship. This enables modeling the deployment to hierarchical nodes that have properties functioning as internal parts.\\nProperty specializes ParameterableElement to specify that a property can be exposed as a formal template parameter, and provided as an actual parameter in a binding of a template.\\nA property represents a set of instances that are owned by a containing classifier instance.\\nA property is a structural feature of a classifier that characterizes instances of the classifier. A property related by ownedAttribute to a classifier (other than an association) represents an attribute and might also represent an association end. It relates an instance of the class to a value or set of values of the type of the attribute. A property related by memberEnd or its specializations to an association represents an end of the association. The type of the property is the type of the end of the association.)'],'eModelElement':'Property'}}" 
+},{
+	 "id": "23", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF-ot6tEei97MD7GK1RmA', 'key':'documentation','value':'Property represents a declared state of one or more instances in terms of a named relationship to a value or values. When a property is an attribute of a classifier, the value or values are related to'}}" 
+},{
+	 "id": "24", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF-q96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@329d86e6 (key: documentation, value: The query isConsistentWith() specifies, for any two Properties in a context in which redefinition is possible, whether redefinition would be logically consistent. A redefining property is consistent with a redefined property if the type of the redefining property conforms to the type of the redefined property, and the multiplicity of the redefining property (if specified) is contained in the multiplicity of the redefined property.\\nredefinee.isRedefinitionContextValid(self)\\nresult = redefinee.oclIsKindOf(Property) and \\n  let prop : Property = redefinee.oclAsType(Property) in \\n  (prop.type.conformsTo(self.type) and \\n  ((prop.lowerBound()->notEmpty() and self.lowerBound()->notEmpty()) implies prop.lowerBound() >= self.lowerBound()) and \\n  ((prop.upperBound()->notEmpty() and self.upperBound()->notEmpty()) implies prop.lowerBound() <= self.lowerBound()) and \\n  (self.isComposite implies prop.isComposite)))'],'eModelElement':'isConsistentWith'}}" 
+},{
+	 "id": "25", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF-rN6tEei97MD7GK1RmA', 'key':'documentation','value':'The query isConsistentWith() specifies, for any two Properties in a context in which redefinition is possible, whether redefinition would be logically consistent. A redefining property is consistent w'}}" 
+},{
+	 "id": "26", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF-sd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@26868d83 (key: documentation, value: If isReadOnly is true, the attribute may not be written to after initialization.\\nIf true, the attribute may only be read, and not written.)'],'eModelElement':'isReadOnly'}}" 
+},{
+	 "id": "27", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF-st6tEei97MD7GK1RmA', 'key':'documentation','value':'If isReadOnly is true, the attribute may not be written to after initialization.\\nIf true, the attribute may only be read, and not written.'}}" 
+},{
+	 "id": "28", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF_pd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@48cdf126 (key: documentation, value: References the Class that owns the Property.)'],'eModelElement':'class'}}" 
+},{
+	 "id": "29", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF_pt6tEei97MD7GK1RmA', 'key':'documentation','value':'References the Class that owns the Property.'}}" 
+},{
+	 "id": "30", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF_qd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@69990ef6 (key: documentation, value: A String that is evaluated to give a default value for the Property when an object of the owning Classifier is instantiated.\\nSpecifies a String that represents a value to be used when no argument is supplied for the Property.)'],'eModelElement':'default'}}" 
+},{
+	 "id": "31", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF_qt6tEei97MD7GK1RmA', 'key':'documentation','value':'A String that is evaluated to give a default value for the Property when an object of the owning Classifier is instantiated.\\nSpecifies a String that represents a value to be used when no argument is s'}}" 
+},{
+	 "id": "32", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIF_td6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@f73c1ee (key: documentation, value: Specifies whether the Property is derived, i.e., whether its value or values can be computed from other information.\\nIf isDerived is true, the value of the attribute is derived from information elsewhere.)'],'eModelElement':'isDerived'}}" 
+},{
+	 "id": "33", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIF_tt6tEei97MD7GK1RmA', 'key':'documentation','value':'Specifies whether the Property is derived, i.e., whether its value or values can be computed from other information.\\nIf isDerived is true, the value of the attribute is derived from information elsewh'}}" 
+},{
+	 "id": "34", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGAed6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@79f631e8 (key: documentation, value: The query includesMultiplicity() checks whether this multiplicity includes all the cardinalities allowed by the specified multiplicity.\\nself.upperBound()->notEmpty() and self.lowerBound()->notEmpty() and M.upperBound()->notEmpty() and M.lowerBound()->notEmpty()\\nresult = (self.lowerBound() <= M.lowerBound()) and (self.upperBound() >= M.upperBound()))'],'eModelElement':'includesMultiplicity'}}" 
+},{
+	 "id": "35", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGAet6tEei97MD7GK1RmA', 'key':'documentation','value':'The query includesMultiplicity() checks whether this multiplicity includes all the cardinalities allowed by the specified multiplicity.\\nself.upperBound()->notEmpty() and self.lowerBound()->notEmpty() '}}" 
+},{
+	 "id": "36", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGAht6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@119c1968 (key: documentation, value: The query isMultivalued() checks whether this multiplicity has an upper bound greater than one.\\nupperBound()->notEmpty()\\nresult = upperBound() > 1)'],'eModelElement':'isMultivalued'}}" 
+},{
+	 "id": "37", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGAh96tEei97MD7GK1RmA', 'key':'documentation','value':'The query isMultivalued() checks whether this multiplicity has an upper bound greater than one.\\nupperBound()->notEmpty()\\nresult = upperBound() > 1'}}" 
+},{
+	 "id": "38", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGBBN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5259934e (key: documentation, value: An artifact is the specification of a physical piece of information that is used or produced by a software development process, or by deployment and operation of a system. Examples of artifacts include model files, source files, scripts, and binary executable files, a table in a database system, a development deliverable, or a word-processing document, a mail message.\\nAn artifact is the source of a deployment to a node.)'],'eModelElement':'Artifact'}}" 
+},{
+	 "id": "39", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGBBd6tEei97MD7GK1RmA', 'key':'documentation','value':'An artifact is the specification of a physical piece of information that is used or produced by a software development process, or by deployment and operation of a system. Examples of artifacts includ'}}" 
+},{
+	 "id": "40", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGBSN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@4f80956a (key: documentation, value: Operation specializes TemplateableElement in order to support specification of template operations and bound operations. Operation specializes ParameterableElement to specify that an operation can be exposed as a formal template parameter, and provided as an actual parameter in a binding of a template.\\nAn operation may invoke both the execution of method behaviors as well as other behavioral responses.\\nAn operation is a behavioral feature of a classifier that specifies the name, type, parameters, and constraints for invoking an associated behavior.)'],'eModelElement':'Operation'}}" 
+},{
+	 "id": "41", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGBSd6tEei97MD7GK1RmA', 'key':'documentation','value':'Operation specializes TemplateableElement in order to support specification of template operations and bound operations. Operation specializes ParameterableElement to specify that an operation can be '}}" 
+},{
+	 "id": "42", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGBTN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@44aa1fbe (key: documentation, value: A redefining operation is consistent with a redefined operation if it has the same number of owned parameters, and the type of each owned parameter conforms to the type of the corresponding redefined parameter.\\nThe query isConsistentWith() specifies, for any two Operations in a context in which redefinition is possible, whether redefinition would be consistent in the sense of maintaining type covariance. Other senses of consistency may be required, for example to determine consistency in the sense of contravariance. Users may define alternative queries under names different from 'isConsistentWith()', as for example, users may define a query named 'isContravariantWith()'.\\nresult = redefinee.oclIsKindOf(Operation) and\\nlet op : Operation = redefinee.oclAsType(Operation) in\\n\\tself.ownedParameter->size() = op.ownedParameter->size() and\\n\\tSequence{1..self.ownedParameter->size()}->\\n\\t\\tforAll(i |op.ownedParameter->at(1).type.conformsTo(self.ownedParameter->at(i).type))\\nredefinee.isRedefinitionContextValid(self))'],'eModelElement':'isConsistentWith'}}" 
+},{
+	 "id": "43", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGBTd6tEei97MD7GK1RmA', 'key':'documentation','value':'A redefining operation is consistent with a redefined operation if it has the same number of owned parameters, and the type of each owned parameter conforms to the type of the corresponding redefined '}}" 
+},{
+	 "id": "44", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGBvN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7c831c94 (key: documentation, value: This information is derived from the return result for this Operation.\\nSpecifies whether the return parameter is unique or not, if present.)'],'eModelElement':'isUnique'}}" 
+},{
+	 "id": "45", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGBvd6tEei97MD7GK1RmA', 'key':'documentation','value':'This information is derived from the return result for this Operation.\\nSpecifies whether the return parameter is unique or not, if present.'}}" 
+},{
+	 "id": "46", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGBwN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3bdd06a4 (key: documentation, value: Specifies the lower multiplicity of the return parameter, if present.\\nThis information is derived from the return result for this Operation.)'],'eModelElement':'lower'}}" 
+},{
+	 "id": "47", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGBwd6tEei97MD7GK1RmA', 'key':'documentation','value':'Specifies the lower multiplicity of the return parameter, if present.\\nThis information is derived from the return result for this Operation.'}}" 
+},{
+	 "id": "48", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGB096tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@d16e0f9 (key: documentation, value: Specifies the upper multiplicity of the return parameter, if present.\\nThis information is derived from the return result for this Operation.)'],'eModelElement':'upper'}}" 
+},{
+	 "id": "49", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGB1N6tEei97MD7GK1RmA', 'key':'documentation','value':'Specifies the upper multiplicity of the return parameter, if present.\\nThis information is derived from the return result for this Operation.'}}" 
+},{
+	 "id": "50", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGB196tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@4157f606 (key: documentation, value: A behavioral feature is a feature of a classifier that specifies an aspect of the behavior of its instances.\\nA behavioral feature owns zero or more parameter sets.\\nA behavioral feature is implemented (realized) by a behavior. A behavioral feature specifies that a classifier will respond to a designated request by invoking its implementing method.)'],'eModelElement':'BehavioralFeature'}}" 
+},{
+	 "id": "51", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGB2N6tEei97MD7GK1RmA', 'key':'documentation','value':'A behavioral feature is a feature of a classifier that specifies an aspect of the behavior of its instances.\\nA behavioral feature owns zero or more parameter sets.\\nA behavioral feature is implemented '}}" 
+},{
+	 "id": "52", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGjot6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@a3d432c (key: documentation, value: A parameter is a specification of an argument used to pass information into or out of an invocation of a behavioral feature.\\nParameters have support for streaming, exceptions, and parameter sets.\\nParameters are allowed to be treated as connectable elements.)'],'eModelElement':'Parameter'}}" 
+},{
+	 "id": "53", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGjo96tEei97MD7GK1RmA', 'key':'documentation','value':'A parameter is a specification of an argument used to pass information into or out of an invocation of a behavioral feature.\\nParameters have support for streaming, exceptions, and parameter sets.\\nPara'}}" 
+},{
+	 "id": "54", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGlC96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7cc3173b (key: documentation, value: Interfaces may include receptions (in addition to operations).\\nAn interface is a kind of classifier that represents a declaration of a set of coherent public features and obligations. An interface specifies a contract; any instance of a classifier that realizes the interface must fulfill that contract. The obligations that may be associated with an interface are in the form of various kinds of constraints (such as pre- and post-conditions) or protocol specifications, which may impose ordering restrictions on interactions through the interface.\\nSince an interface specifies conformance characteristics, it does not own detailed behavior specifications. Instead, interfaces may own a protocol state machine that specifies event sequences and pre/post conditions for the operations and receptions described by the interface.)'],'eModelElement':'Interface'}}" 
+},{
+	 "id": "55", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGlDN6tEei97MD7GK1RmA', 'key':'documentation','value':'Interfaces may include receptions (in addition to operations).\\nAn interface is a kind of classifier that represents a declaration of a set of coherent public features and obligations. An interface spe'}}" 
+},{
+	 "id": "56", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGoFN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@73256f4d (key: documentation, value: A trigger relates an event to a behavior that may affect an instance of the classifier.\\nA trigger specification may be qualified by the port on which the event occurred.)'],'eModelElement':'Trigger'}}" 
+},{
+	 "id": "57", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGoFd6tEei97MD7GK1RmA', 'key':'documentation','value':'A trigger relates an event to a behavior that may affect an instance of the classifier.\\nA trigger specification may be qualified by the port on which the event occurred.'}}" 
+},{
+	 "id": "58", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGoIN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@640a8691 (key: documentation, value: A port is a property of a classifier that specifies a distinct interaction point between that classifier and its environment or between the (behavior of the) classifier and its internal parts. Ports are connected to properties of the classifier by connectors through which requests can be made to invoke the behavioral features of a classifier. A Port may specify the services a classifier provides (offers) to its environment as well as the services that a classifier expects (requires) of its environment.\\nA port has an associated protocol state machine.)'],'eModelElement':'Port'}}" 
+},{
+	 "id": "59", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGoId6tEei97MD7GK1RmA', 'key':'documentation','value':'A port is a property of a classifier that specifies a distinct interaction point between that classifier and its environment or between the (behavior of the) classifier and its internal parts. Ports a'}}" 
+},{
+	 "id": "60", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIGoct6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@6577da46 (key: documentation, value: The query isConsistentWith() specifies that a redefining transition is consistent with a redefined transition provided that the redefining transition has the following relation to the redefined transition: A redefining transition redefines all properties of the corresponding redefined transition, except the source state and the trigger.\\nresult = (redefinee.oclIsKindOf(Transition) and\\n  let trans: Transition = redefinee.oclAsType(Transition) in\\n    (source() = trans.source() and trigger() = tran.trigger())\\nredefinee.isRedefinitionContextValid(self))'],'eModelElement':'isConsistentWith'}}" 
+},{
+	 "id": "61", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIGoc96tEei97MD7GK1RmA', 'key':'documentation','value':'The query isConsistentWith() specifies that a redefining transition is consistent with a redefined transition provided that the redefining transition has the following relation to the redefined transi'}}" 
+},{
+	 "id": "62", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIHKkt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2c34b31f (key: documentation, value: By specializing multiplicity element, it supports a multiplicity that specifies valid cardinalities for the collection of values associated with an instantiation of the structural feature.\\nA structural feature is a typed feature of a classifier that specifies the structure of instances of the classifier.)'],'eModelElement':'StructuralFeature'}}" 
+},{
+	 "id": "63", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIHKk96tEei97MD7GK1RmA', 'key':'documentation','value':'By specializing multiplicity element, it supports a multiplicity that specifies valid cardinalities for the collection of values associated with an instantiation of the structural feature.\\nA structura'}}" 
+},{
+	 "id": "64", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIHLD96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@c66a8b9 (key: documentation, value: An instance specification is a model element that represents an instance in a modeled system.\\nAn instance specification has the capability of being a deployment target in a deployment relationship, in the case that it is an instance of a node. It is also has the capability of being a deployed artifact, if it is an instance of an artifact.)'],'eModelElement':'InstanceSpecification'}}" 
+},{
+	 "id": "65", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIHLEN6tEei97MD7GK1RmA', 'key':'documentation','value':'An instance specification is a model element that represents an instance in a modeled system.\\nAn instance specification has the capability of being a deployment target in a deployment relationship, in'}}" 
+},{
+	 "id": "66", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIHNvt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@6b9ee3d3 (key: documentation, value: The query isNonNegative() tells whether an integer expression has a non-negative value.\\nself.isIntegral()\\nresult = false)'],'eModelElement':'isNonNegative'}}" 
+},{
+	 "id": "67", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIHNv96tEei97MD7GK1RmA', 'key':'documentation','value':'The query isNonNegative() tells whether an integer expression has a non-negative value.\\nself.isIntegral()\\nresult = false'}}" 
+},{
+	 "id": "68", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIHOVt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@18b2cddd (key: documentation, value: An action has pre- and post-conditions.\\nAn action is a named element that is the fundamental unit of executable functionality. The execution of an action represents some transformation or processing in the modeled system, be it a computer system or otherwise.\\nAn action represents a single step within an activity, that is, one that is not further decomposed within the activity.)'],'eModelElement':'Action'}}" 
+},{
+	 "id": "69", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIHOV96tEei97MD7GK1RmA', 'key':'documentation','value':'An action has pre- and post-conditions.\\nAn action is a named element that is the fundamental unit of executable functionality. The execution of an action represents some transformation or processing i'}}" 
+},{
+	 "id": "70", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wbsirt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@f0b4ee (key: documentation, value: An executable node is an abstract class for activity nodes that may be executed. It is used as an attachment point for exception handlers.)'],'eModelElement':'ExecutableNode'}}" 
+},{
+	 "id": "71", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wbsir96tEei97MD7GK1RmA', 'key':'documentation','value':'An executable node is an abstract class for activity nodes that may be executed. It is used as an attachment point for exception handlers.'}}" 
+},{
+	 "id": "72", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_wIHO5t6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@667f86b1 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'getStructuredNodes','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'StructuredActivityNode','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@69d26b02 (expression: StructuredActivityNode)','eContainingClass':'Activity'}}" 
+},{
+	 "id": "73", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIHO596tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@59abbfcf (key: documentation, value: Missing derivation for Activity::/structuredNode : StructuredActivityNode\\ntrue)','org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@67197e20 (key: suppressedVisibility, value: true)'],'eModelElement':'getStructuredNodes'}}" 
+},{
+	 "id": "74", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIHO6N6tEei97MD7GK1RmA', 'key':'documentation','value':'Missing derivation for Activity::/structuredNode : StructuredActivityNode\\ntrue'}}" 
+},{
+	 "id": "75", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIHO6d6tEei97MD7GK1RmA', 'key':'suppressedVisibility','value':'true'}}" 
+},{
+	 "id": "76", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIHPC96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@4a2adcc8 (key: documentation, value: An activity edge is an abstract class for directed connections between two activity nodes.\\nActivity edges can be contained in interruptible regions.)'],'eModelElement':'ActivityEdge'}}" 
+},{
+	 "id": "77", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIHPDN6tEei97MD7GK1RmA', 'key':'documentation','value':'An activity edge is an abstract class for directed connections between two activity nodes.\\nActivity edges can be contained in interruptible regions.'}}" 
+},{
+	 "id": "78", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIHP9t6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@306991a6 (key: documentation, value: Because of the concurrent nature of the execution of actions within and across activities, it can be difficult to guarantee the consistent access and modification of object memory. In order to avoid race conditions or other concurrency-related problems, it is sometimes necessary to isolate the effects of a group of actions from the effects of actions outside the group. This may be indicated by setting the mustIsolate attribute to true on a structured activity node. If a structured activity node is \\\\'isolated,\\\\' then any object used by an action within the node cannot be accessed by any action outside the node until the structured activity node as a whole completes. Any concurrent actions that would result in accessing such objects are required to have their execution deferred until the completion of the node.\\nA structured activity node is an executable activity node that may have an expansion into subordinate nodes as an activity group. The subordinate nodes must belong to only one structured activity node, although they may be nested.)'],'eModelElement':'StructuredActivityNode'}}" 
+},{
+	 "id": "79", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIHP996tEei97MD7GK1RmA', 'key':'documentation','value':'Because of the concurrent nature of the execution of actions within and across activities, it can be difficult to guarantee the consistent access and modification of object memory. In order to avoid r'}}" 
+},{
+	 "id": "80", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIHxjt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3bbd5d23 (key: documentation, value: A pin is an object node for inputs and outputs to actions.\\nA pin is a typed element and multiplicity element that provides values to actions and accept result values from them.)'],'eModelElement':'Pin'}}" 
+},{
+	 "id": "81", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIHxj96tEei97MD7GK1RmA', 'key':'documentation','value':'A pin is an object node for inputs and outputs to actions.\\nA pin is a typed element and multiplicity element that provides values to actions and accept result values from them.'}}" 
+},{
+	 "id": "82", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIHxo96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5a1c6097 (key: documentation, value: Object nodes have support for token selection, limitation on the number of tokens, specifying the state required for tokens, and carrying control values.\\nAn object node is an abstract activity node that is part of defining object flow in an activity.)'],'eModelElement':'ObjectNode'}}" 
+},{
+	 "id": "83", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIHxpN6tEei97MD7GK1RmA', 'key':'documentation','value':'Object nodes have support for token selection, limitation on the number of tokens, specifying the state required for tokens, and carrying control values.\\nAn object node is an abstract activity node th'}}" 
+},{
+	 "id": "84", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIH3VN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@63ee94bd (key: documentation, value: In addition to targeting an object, invocation actions can also invoke behavioral features on ports from where the invocation requests are routed onwards on links deriving from attached connectors. Invocation actions may also be sent to a target via a given port, either on the sending object or on another object.\\nInvocationAction is an abstract class for the various actions that invoke behavior.)'],'eModelElement':'InvocationAction'}}" 
+},{
+	 "id": "85", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIH3Vd6tEei97MD7GK1RmA', 'key':'documentation','value':'In addition to targeting an object, invocation actions can also invoke behavioral features on ports from where the invocation requests are routed onwards on links deriving from attached connectors. In'}}" 
+},{
+	 "id": "86", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_wIH5Mt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@76f6206c (key: documentation, value: A component represents a modular part of a system that encapsulates its contents and whose manifestation is replaceable within its environment.\\nIn the namespace of a component, all model elements that are involved in or related to its definition are either owned or imported explicitly. This may include, for example, use cases and dependencies (e.g. mappings), packages, components, and artifacts.)'],'eModelElement':'Component'}}" 
+},{
+	 "id": "87", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_wIH5M96tEei97MD7GK1RmA', 'key':'documentation','value':'A component represents a modular part of a system that encapsulates its contents and whose manifestation is replaceable within its environment.\\nIn the namespace of a component, all model elements that'}}" 
+},{
+	 "id": "88", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBELlN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@72946651 (key: documentation, value: Packageable elements are able to serve as a template parameter.\\nA packageable element indicates a named element that may be owned directly by a package.)'],'eModelElement':'PackageableElement'}}" 
+},{
+	 "id": "89", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBELld6tEei97MD7GK1RmA', 'key':'documentation','value':'Packageable elements are able to serve as a template parameter.\\nA packageable element indicates a named element that may be owned directly by a package.'}}" 
+},{
+	 "id": "90", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBENNN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@587f50dd (key: documentation, value: A class may be designated as active (i.e., each of its instances having its own thread of control) or passive (i.e., each of its instances executing within the context of some other object). A class may also specify which signals the instances of this class handle.\\nA class describes a set of objects that share the same specifications of features, constraints, and semantics.\\nA class has the capability to have an internal structure and ports.\\nClass has derived association that indicates how it may be extended through one or more stereotypes. Stereotype is the only kind of metaclass that cannot be extended by stereotypes.)'],'eModelElement':'Class'}}" 
+},{
+	 "id": "91", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBENNd6tEei97MD7GK1RmA', 'key':'documentation','value':'A class may be designated as active (i.e., each of its instances having its own thread of control) or passive (i.e., each of its instances executing within the context of some other object). A class m'}}" 
+},{
+	 "id": "92", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBENQt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@11210697 (key: documentation, value: If true, the Classifier does not provide a complete declaration and can typically not be instantiated. An abstract classifier is intended to be used by other classifiers e.g. as the target of general metarelationships or generalization relationships.\\nTrue when a class is abstract.)'],'eModelElement':'isAbstract'}}" 
+},{
+	 "id": "93", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBENQ96tEei97MD7GK1RmA', 'key':'documentation','value':'If true, the Classifier does not provide a complete declaration and can typically not be instantiated. An abstract classifier is intended to be used by other classifiers e.g. as the target of general '}}" 
+},{
+	 "id": "94", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBENy96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@1f54aee0 (key: documentation, value: A classifier is a classification of instances - it describes a set of instances that have features in common. A classifier can specify a generalization hierarchy by referencing its general classifiers.\\nA classifier has the capability to own use cases. Although the owning classifier typically represents the subject to which the owned use cases apply, this is not necessarily the case. In principle, the same use case can be applied to multiple subjects, as identified by the subject association role of a use case.\\nClassifier is defined to be a kind of templateable element so that a classifier can be parameterized. It is also defined to be a kind of parameterable element so that a classifier can be a formal template parameter.\\nA classifier has the capability to own collaboration uses. These collaboration uses link a collaboration with the classifier to give a description of the workings of the classifier.)'],'eModelElement':'Classifier'}}" 
+},{
+	 "id": "95", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBENzN6tEei97MD7GK1RmA', 'key':'documentation','value':'A classifier is a classification of instances - it describes a set of instances that have features in common. A classifier can specify a generalization hierarchy by referencing its general classifiers'}}" 
+},{
+	 "id": "96", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEOWN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5b4818e5 (key: documentation, value: The inherit operation is overridden to exclude redefined properties.\\nThe query inherit() defines how to inherit a set of elements. Here the operation is defined to inherit them all. It is intended to be redefined in circumstances where inheritance is affected by redefinition.\\nresult = inhs)'],'eModelElement':'inherit'}}" 
+},{
+	 "id": "97", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEOWd6tEei97MD7GK1RmA', 'key':'documentation','value':'The inherit operation is overridden to exclude redefined properties.\\nThe query inherit() defines how to inherit a set of elements. Here the operation is defined to inherit them all. It is intended to '}}" 
+},{
+	 "id": "98", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEO0N6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2ef7e3f6 (key: documentation, value: The query getNamesOfMember() gives a set of all of the names that a member would have in a Namespace. In general a member can have multiple names in a Namespace if it is imported more than once with different aliases. The query takes account of importing. It gives back the set of names that an element would have in an importing namespace, either because it is owned, or if not owned then imported individually, or if not individually then from a package.\\nThe query getNamesOfMember() takes importing into account. It gives back the set of names that an element would have in an importing namespace, either because it is owned, or if not owned then imported individually, or if not individually then from a package.\\nresult = if self.ownedMember ->includes(element)\\nthen Set{}->include(element.name)\\nelse let elementImports: ElementImport = self.elementImport->select(ei | ei.importedElement = element) in\\n  if elementImports->notEmpty()\\n  then elementImports->collect(el | el.getName())\\n  else self.packageImport->select(pi | pi.importedPackage.visibleMembers()->includes(element))-> collect(pi | pi.importedPackage.getNamesOfMember(element))\\n  endif\\nendif)'],'eModelElement':'getNamesOfMember'}}" 
+},{
+	 "id": "99", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEO0d6tEei97MD7GK1RmA', 'key':'documentation','value':'The query getNamesOfMember() gives a set of all of the names that a member would have in a Namespace. In general a member can have multiple names in a Namespace if it is imported more than once with d'}}" 
+},{
+	 "id": "100", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEPoN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@79893e4 (key: documentation, value: An expression is a structured tree of symbols that denotes a (possibly empty) set of values when evaluated in a context.\\nAn expression represents a node in an expression tree, which may be non-terminal or terminal. It defines a symbol, and has a possibly empty sequence of operands which are value specifications.)'],'eModelElement':'Expression'}}" 
+},{
+	 "id": "101", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEPod6tEei97MD7GK1RmA', 'key':'documentation','value':'An expression is a structured tree of symbols that denotes a (possibly empty) set of values when evaluated in a context.\\nAn expression represents a node in an expression tree, which may be non-termina'}}" 
+},{
+	 "id": "102", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEP0d6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3617adf1 (key: documentation, value: A typed element is a kind of named element that represents an element with a type.\\nA typed element has a type.)'],'eModelElement':'TypedElement'}}" 
+},{
+	 "id": "103", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEP0t6tEei97MD7GK1RmA', 'key':'documentation','value':'A typed element is a kind of named element that represents an element with a type.\\nA typed element has a type.'}}" 
+},{
+	 "id": "104", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEP1N6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@b2df4fd (key: documentation, value: This information is derived from the return result for this Operation.\\nThe type of the TypedElement.)'],'eModelElement':'type'}}" 
+},{
+	 "id": "105", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEP1d6tEei97MD7GK1RmA', 'key':'documentation','value':'This information is derived from the return result for this Operation.\\nThe type of the TypedElement.'}}" 
+},{
+	 "id": "106", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEQnt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5d5f6708 (key: documentation, value: The query makesVisible() defines whether a Package makes an element visible outside itself. Elements with no visibility and elements with public visibility are made visible.\\nresult = (ownedMember->includes(el)) or\\n(elementImport->select(ei|ei.importedElement = #public)->collect(ei|ei.importedElement)->includes(el)) or\\n(packageImport->select(pi|pi.visibility = #public)->collect(pi|pi.importedPackage.member->includes(el))->notEmpty())\\nself.member->includes(el))'],'eModelElement':'makesVisible'}}" 
+},{
+	 "id": "107", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEQn96tEei97MD7GK1RmA', 'key':'documentation','value':'The query makesVisible() defines whether a Package makes an element visible outside itself. Elements with no visibility and elements with public visibility are made visible.\\nresult = (ownedMember->inc'}}" 
+},{
+	 "id": "108", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBESod6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3247ab09 (key: documentation, value: An association describes a set of tuples whose values refer to typed instances. An instance of an association is called a link.A link is a tuple with one value for each end of the association, where each value is an instance of the type of the end.\\nAn association describes a set of tuples whose values refer to typed instances. An instance of an association is called a link. A link is a tuple with one value for each end of the association, where each value is an instance of the type of the end.)'],'eModelElement':'Association'}}" 
+},{
+	 "id": "109", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBESot6tEei97MD7GK1RmA', 'key':'documentation','value':'An association describes a set of tuples whose values refer to typed instances. An instance of an association is called a link.A link is a tuple with one value for each end of the association, where e'}}" 
+},{
+	 "id": "110", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBES-N6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@ee9cd54 (key: documentation, value: Property represents a declared state of one or more instances in terms of a named relationship to a value or values. When a property is an attribute of a classifier, the value or values are related to the instance of the classifier by being held in slots of the instance. When a property is an association end, the value or values are related to the instance or instances at the other end(s) of the association. The range of valid values represented by the property can be controlled by setting the property's type.\\nA property is a structural feature of a classifier that characterizes instances of the classifier. A property related by ownedAttribute to a classifier (other than an association) represents an attribute and might also represent an association end. It relates an instance of the class to a value or set of values of the type of the attribute. A property related by memberEnd or its specializations to an association represents an end of the association. The type of the property is the type of the end of the association.\\nA property has the capability of being a deployment target in a deployment relationship. This enables modeling the deployment to hierarchical nodes that have properties functioning as internal parts.\\nProperty specializes ParameterableElement to specify that a property can be exposed as a formal template parameter, and provided as an actual parameter in a binding of a template.\\nA property represents a set of instances that are owned by a containing classifier instance.)'],'eModelElement':'Property'}}" 
+},{
+	 "id": "111", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBES-d6tEei97MD7GK1RmA', 'key':'documentation','value':'Property represents a declared state of one or more instances in terms of a named relationship to a value or values. When a property is an attribute of a classifier, the value or values are related to'}}" 
+},{
+	 "id": "112", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBETAt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5c79dc53 (key: documentation, value: The query isConsistentWith() specifies, for any two Properties in a context in which redefinition is possible, whether redefinition would be logically consistent. A redefining property is consistent with a redefined property if the type of the redefining property conforms to the type of the redefined property, the multiplicity of the redefining property (if specified) is contained in the multiplicity of the redefined property.\\nThe query isConsistentWith() specifies, for any two Properties in a context in which redefinition is possible, whether redefinition would be logically consistent. A redefining property is consistent with a redefined property if the type of the redefining property conforms to the type of the redefined property, and the multiplicity of the redefining property (if specified) is contained in the multiplicity of the redefined property.\\nredefinee.isRedefinitionContextValid(self)\\nresult = redefinee.oclIsKindOf(Property) and \\n  let prop : Property = redefinee.oclAsType(Property) in \\n  (prop.type.conformsTo(self.type) and \\n  ((prop.lowerBound()->notEmpty() and self.lowerBound()->notEmpty()) implies prop.lowerBound() >= self.lowerBound()) and \\n  ((prop.upperBound()->notEmpty() and self.upperBound()->notEmpty()) implies prop.lowerBound() <= self.lowerBound()) and \\n  (self.isComposite implies prop.isComposite)))'],'eModelElement':'isConsistentWith'}}" 
+},{
+	 "id": "113", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBETA96tEei97MD7GK1RmA', 'key':'documentation','value':'The query isConsistentWith() specifies, for any two Properties in a context in which redefinition is possible, whether redefinition would be logically consistent. A redefining property is consistent w'}}" 
+},{
+	 "id": "114", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBETCN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5409e64d (key: documentation, value: If true, the attribute may only be read, and not written.\\nIf isReadOnly is true, the attribute may not be written to after initialization.)'],'eModelElement':'isReadOnly'}}" 
+},{
+	 "id": "115", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBETCd6tEei97MD7GK1RmA', 'key':'documentation','value':'If true, the attribute may only be read, and not written.\\nIf isReadOnly is true, the attribute may not be written to after initialization.'}}" 
+},{
+	 "id": "116", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBET_N6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7cedc6c5 (key: documentation, value: References the Class that owns the Property.\\nReferences the Class that owns the Property.)'],'eModelElement':'class'}}" 
+},{
+	 "id": "117", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBET_d6tEei97MD7GK1RmA', 'key':'documentation','value':'References the Class that owns the Property.\\nReferences the Class that owns the Property.'}}" 
+},{
+	 "id": "118", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEUAN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@44ccef7b (key: documentation, value: Specifies a String that represents a value to be used when no argument is supplied for the Property.\\nA String that is evaluated to give a default value for the Property when an object of the owning Classifier is instantiated.)'],'eModelElement':'default'}}" 
+},{
+	 "id": "119", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEUAd6tEei97MD7GK1RmA', 'key':'documentation','value':'Specifies a String that represents a value to be used when no argument is supplied for the Property.\\nA String that is evaluated to give a default value for the Property when an object of the owning Cl'}}" 
+},{
+	 "id": "120", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEUDN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2e563a05 (key: documentation, value: If isDerived is true, the value of the attribute is derived from information elsewhere.\\nSpecifies whether the Property is derived, i.e., whether its value or values can be computed from other information.)'],'eModelElement':'isDerived'}}" 
+},{
+	 "id": "121", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEUDd6tEei97MD7GK1RmA', 'key':'documentation','value':'If isDerived is true, the value of the attribute is derived from information elsewhere.\\nSpecifies whether the Property is derived, i.e., whether its value or values can be computed from other informat'}}" 
+},{
+	 "id": "122", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEUKd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@44c8800 (key: documentation, value: A structural feature is a typed feature of a classifier that specifies the structure of instances of the classifier.\\nBy specializing multiplicity element, it supports a multiplicity that specifies valid cardinalities for the collection of values associated with an instantiation of the structural feature.)'],'eModelElement':'StructuralFeature'}}" 
+},{
+	 "id": "123", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEUKt6tEei97MD7GK1RmA', 'key':'documentation','value':'A structural feature is a typed feature of a classifier that specifies the structure of instances of the classifier.\\nBy specializing multiplicity element, it supports a multiplicity that specifies val'}}" 
+},{
+	 "id": "124", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEUgN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@67c450ec (key: documentation, value: The query includesMultiplicity() checks whether this multiplicity includes all the cardinalities allowed by the specified multiplicity.\\nresult = (self.lowerBound() <= M.lowerBound()) and (self.upperBound() >= M.upperBound())\\nself.upperBound()->notEmpty() and self.lowerBound()->notEmpty() and M.upperBound()->notEmpty() and M.lowerBound()->notEmpty())'],'eModelElement':'includesMultiplicity'}}" 
+},{
+	 "id": "125", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEUgd6tEei97MD7GK1RmA', 'key':'documentation','value':'The query includesMultiplicity() checks whether this multiplicity includes all the cardinalities allowed by the specified multiplicity.\\nresult = (self.lowerBound() <= M.lowerBound()) and (self.upperBo'}}" 
+},{
+	 "id": "126", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEUjd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@44c3091c (key: documentation, value: The query isMultivalued() checks whether this multiplicity has an upper bound greater than one.\\nresult = upperBound() > 1\\nupperBound()->notEmpty())'],'eModelElement':'isMultivalued'}}" 
+},{
+	 "id": "127", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEUjt6tEei97MD7GK1RmA', 'key':'documentation','value':'The query isMultivalued() checks whether this multiplicity has an upper bound greater than one.\\nresult = upperBound() > 1\\nupperBound()->notEmpty()'}}" 
+},{
+	 "id": "128", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEVsN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7109b623 (key: documentation, value: An artifact is the source of a deployment to a node.\\nAn artifact is the specification of a physical piece of information that is used or produced by a software development process, or by deployment and operation of a system. Examples of artifacts include model files, source files, scripts, and binary executable files, a table in a database system, a development deliverable, or a word-processing document, a mail message.)'],'eModelElement':'Artifact'}}" 
+},{
+	 "id": "129", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEVsd6tEei97MD7GK1RmA', 'key':'documentation','value':'An artifact is the source of a deployment to a node.\\nAn artifact is the specification of a physical piece of information that is used or produced by a software development process, or by deployment an'}}" 
+},{
+	 "id": "130", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEV9N6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@1d893875 (key: documentation, value: An operation is a behavioral feature of a classifier that specifies the name, type, parameters, and constraints for invoking an associated behavior.\\nAn operation may invoke both the execution of method behaviors as well as other behavioral responses.\\nOperation specializes TemplateableElement in order to support specification of template operations and bound operations. Operation specializes ParameterableElement to specify that an operation can be exposed as a formal template parameter, and provided as an actual parameter in a binding of a template.)'],'eModelElement':'Operation'}}" 
+},{
+	 "id": "131", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEV9d6tEei97MD7GK1RmA', 'key':'documentation','value':'An operation is a behavioral feature of a classifier that specifies the name, type, parameters, and constraints for invoking an associated behavior.\\nAn operation may invoke both the execution of metho'}}" 
+},{
+	 "id": "132", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEV-N6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@577d097 (key: documentation, value: A redefining operation is consistent with a redefined operation if it has the same number of owned parameters, and the type of each owned parameter conforms to the type of the corresponding redefined parameter.\\nThe query isConsistentWith() specifies, for any two Operations in a context in which redefinition is possible, whether redefinition would be consistent in the sense of maintaining type covariance. Other senses of consistency may be required, for example to determine consistency in the sense of contravariance. Users may define alternative queries under names different from 'isConsistentWith()', as for example, users may define a query named 'isContravariantWith()'.\\nredefinee.isRedefinitionContextValid(self)\\nresult = redefinee.oclIsKindOf(Operation) and\\nlet op : Operation = redefinee.oclAsType(Operation) in\\n\\tself.ownedParameter->size() = op.ownedParameter->size() and\\n\\tSequence{1..self.ownedParameter->size()}->\\n\\t\\tforAll(i |op.ownedParameter->at(1).type.conformsTo(self.ownedParameter->at(i).type)))'],'eModelElement':'isConsistentWith'}}" 
+},{
+	 "id": "133", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEV-d6tEei97MD7GK1RmA', 'key':'documentation','value':'A redefining operation is consistent with a redefined operation if it has the same number of owned parameters, and the type of each owned parameter conforms to the type of the corresponding redefined '}}" 
+},{
+	 "id": "134", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEWaN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3993ee28 (key: documentation, value: Specifies whether the return parameter is unique or not, if present.\\nThis information is derived from the return result for this Operation.)'],'eModelElement':'isUnique'}}" 
+},{
+	 "id": "135", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEWad6tEei97MD7GK1RmA', 'key':'documentation','value':'Specifies whether the return parameter is unique or not, if present.\\nThis information is derived from the return result for this Operation.'}}" 
+},{
+	 "id": "136", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEWbN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@62f9325a (key: documentation, value: This information is derived from the return result for this Operation.\\nSpecifies the lower multiplicity of the return parameter, if present.)'],'eModelElement':'lower'}}" 
+},{
+	 "id": "137", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEWbd6tEei97MD7GK1RmA', 'key':'documentation','value':'This information is derived from the return result for this Operation.\\nSpecifies the lower multiplicity of the return parameter, if present.'}}" 
+},{
+	 "id": "138", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEWf96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@18b5196a (key: documentation, value: This information is derived from the return result for this Operation.\\nSpecifies the upper multiplicity of the return parameter, if present.)'],'eModelElement':'upper'}}" 
+},{
+	 "id": "139", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEWgN6tEei97MD7GK1RmA', 'key':'documentation','value':'This information is derived from the return result for this Operation.\\nSpecifies the upper multiplicity of the return parameter, if present.'}}" 
+},{
+	 "id": "140", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEWg96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@1a14b1a0 (key: documentation, value: A behavioral feature is a feature of a classifier that specifies an aspect of the behavior of its instances.\\nA behavioral feature is implemented (realized) by a behavior. A behavioral feature specifies that a classifier will respond to a designated request by invoking its implementing method.\\nA behavioral feature owns zero or more parameter sets.)'],'eModelElement':'BehavioralFeature'}}" 
+},{
+	 "id": "141", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEWhN6tEei97MD7GK1RmA', 'key':'documentation','value':'A behavioral feature is a feature of a classifier that specifies an aspect of the behavior of its instances.\\nA behavioral feature is implemented (realized) by a behavior. A behavioral feature specifie'}}" 
+},{
+	 "id": "142", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEXSN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@13d26f3d (key: documentation, value: Since an interface specifies conformance characteristics, it does not own detailed behavior specifications. Instead, interfaces may own a protocol state machine that specifies event sequences and pre/post conditions for the operations and receptions described by the interface.\\nInterfaces may include receptions (in addition to operations).\\nAn interface is a kind of classifier that represents a declaration of a set of coherent public features and obligations. An interface specifies a contract; any instance of a classifier that realizes the interface must fulfill that contract. The obligations that may be associated with an interface are in the form of various kinds of constraints (such as pre- and post-conditions) or protocol specifications, which may impose ordering restrictions on interactions through the interface.)'],'eModelElement':'Interface'}}" 
+},{
+	 "id": "143", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEXSd6tEei97MD7GK1RmA', 'key':'documentation','value':'Since an interface specifies conformance characteristics, it does not own detailed behavior specifications. Instead, interfaces may own a protocol state machine that specifies event sequences and pre/'}}" 
+},{
+	 "id": "144", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEaUd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7c3fef41 (key: documentation, value: A trigger specification may be qualified by the port on which the event occurred.\\nA trigger relates an event to a behavior that may affect an instance of the classifier.)'],'eModelElement':'Trigger'}}" 
+},{
+	 "id": "145", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEaUt6tEei97MD7GK1RmA', 'key':'documentation','value':'A trigger specification may be qualified by the port on which the event occurred.\\nA trigger relates an event to a behavior that may affect an instance of the classifier.'}}" 
+},{
+	 "id": "146", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEaXd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3f7ab273 (key: documentation, value: A port has an associated protocol state machine.\\nA port is a property of a classifier that specifies a distinct interaction point between that classifier and its environment or between the (behavior of the) classifier and its internal parts. Ports are connected to properties of the classifier by connectors through which requests can be made to invoke the behavioral features of a classifier. A Port may specify the services a classifier provides (offers) to its environment as well as the services that a classifier expects (requires) of its environment.)'],'eModelElement':'Port'}}" 
+},{
+	 "id": "147", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEaXt6tEei97MD7GK1RmA', 'key':'documentation','value':'A port has an associated protocol state machine.\\nA port is a property of a classifier that specifies a distinct interaction point between that classifier and its environment or between the (behavior o'}}" 
+},{
+	 "id": "148", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEa9d6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@75af6c1c (key: documentation, value: The query isConsistentWith() specifies that a redefining transition is consistent with a redefined transition provided that the redefining transition has the following relation to the redefined transition: A redefining transition redefines all properties of the corresponding redefined transition, except the source state and the trigger.\\nredefinee.isRedefinitionContextValid(self)\\nresult = (redefinee.oclIsKindOf(Transition) and\\n  let trans: Transition = redefinee.oclAsType(Transition) in\\n    (source() = trans.source() and trigger() = tran.trigger()))'],'eModelElement':'isConsistentWith'}}" 
+},{
+	 "id": "149", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEa9t6tEei97MD7GK1RmA', 'key':'documentation','value':'The query isConsistentWith() specifies that a redefining transition is consistent with a redefined transition provided that the redefining transition has the following relation to the redefined transi'}}" 
+},{
+	 "id": "150", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEb5t6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@4ca8ab71 (key: documentation, value: Parameters are allowed to be treated as connectable elements.\\nA parameter is a specification of an argument used to pass information into or out of an invocation of a behavioral feature.\\nParameters have support for streaming, exceptions, and parameter sets.)'],'eModelElement':'Parameter'}}" 
+},{
+	 "id": "151", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEb596tEei97MD7GK1RmA', 'key':'documentation','value':'Parameters are allowed to be treated as connectable elements.\\nA parameter is a specification of an argument used to pass information into or out of an invocation of a behavioral feature.\\nParameters ha'}}" 
+},{
+	 "id": "152", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEdh96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@298c70c2 (key: documentation, value: An instance specification has the capability of being a deployment target in a deployment relationship, in the case that it is an instance of a node. It is also has the capability of being a deployed artifact, if it is an instance of an artifact.\\nAn instance specification is a model element that represents an instance in a modeled system.)'],'eModelElement':'InstanceSpecification'}}" 
+},{
+	 "id": "153", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEdiN6tEei97MD7GK1RmA', 'key':'documentation','value':'An instance specification has the capability of being a deployment target in a deployment relationship, in the case that it is an instance of a node. It is also has the capability of being a deployed '}}" 
+},{
+	 "id": "154", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEf5t6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@6abf2c4 (key: documentation, value: The query isNonNegative() tells whether an integer expression has a non-negative value.\\nresult = false\\nself.isIntegral())'],'eModelElement':'isNonNegative'}}" 
+},{
+	 "id": "155", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEf596tEei97MD7GK1RmA', 'key':'documentation','value':'The query isNonNegative() tells whether an integer expression has a non-negative value.\\nresult = false\\nself.isIntegral()'}}" 
+},{
+	 "id": "156", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBEgft6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7b6bd609 (key: documentation, value: An action has pre- and post-conditions.\\nAn action represents a single step within an activity, that is, one that is not further decomposed within the activity.\\nAn action is a named element that is the fundamental unit of executable functionality. The execution of an action represents some transformation or processing in the modeled system, be it a computer system or otherwise.)'],'eModelElement':'Action'}}" 
+},{
+	 "id": "157", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBEgf96tEei97MD7GK1RmA', 'key':'documentation','value':'An action has pre- and post-conditions.\\nAn action represents a single step within an activity, that is, one that is not further decomposed within the activity.\\nAn action is a named element that is the'}}" 
+},{
+	 "id": "158", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNVi96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@62b45197 (key: documentation, value: An executable node is an abstract class for activity nodes that may be executed. It is used as an attachment point for exception handlers.\\nAn executable node is an abstract class for activity nodes that may be executed. It is used as an attachment point for exception handlers.)'],'eModelElement':'ExecutableNode'}}" 
+},{
+	 "id": "159", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNVjN6tEei97MD7GK1RmA', 'key':'documentation','value':'An executable node is an abstract class for activity nodes that may be executed. It is used as an attachment point for exception handlers.\\nAn executable node is an abstract class for activity nodes th'}}" 
+},{
+	 "id": "160", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_xBNV-96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7f5fac9d (source: http:///org/eclipse/emf/ecore/util/ExtendedMetaData)','org.eclipse.emf.ecore.impl.EAnnotationImpl@60c58bb (source: subsets)'],'name':'ownedGroup','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'ActivityGroup','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6d0f15de (expression: ActivityGroup)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'Activity','containment':'true','container':'false','resolveProxies':'true','eReferenceType':'ActivityGroup'}}" 
+},{
+	 "id": "161", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNV_N6tEei97MD7GK1RmA', 'source':'http:///org/eclipse/emf/ecore/util/ExtendedMetaData','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@9615f3d (key: name, value: group)','org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@6da0c214 (key: kind, value: element)'],'eModelElement':'ownedGroup'}}" 
+},{
+	 "id": "162", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNV_96tEei97MD7GK1RmA', 'source':'subsets','eModelElement':'ownedGroup','references':['group']}}" 
+},{
+	 "id": "163", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNV_t6tEei97MD7GK1RmA', 'key':'kind','value':'element'}}" 
+},{
+	 "id": "164", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNV_d6tEei97MD7GK1RmA', 'key':'name','value':'group'}}" 
+},{
+	 "id": "165", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_fthnnd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4b97aa8a (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@fe9df3 (source: http:///org/eclipse/emf/ecore/util/ExtendedMetaData)','...'],'name':'group','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'ActivityGroup','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@37cec485 (expression: ActivityGroup)','changeable':'true','volatile':'true','transient':'true','unsettable':'false','derived':'true','eContainingClass':'Activity','containment':'false','container':'false','resolveProxies':'true','eOpposite':'inActivity','eReferenceType':'ActivityGroup'}}" 
+},{
+	 "id": "166", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNWC96tEei97MD7GK1RmA', 'source':'http:///org/eclipse/emf/ecore/util/ExtendedMetaData','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@25608b60 (key: kind, value: attribute)'],'eModelElement':'group'}}" 
+},{
+	 "id": "167", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNWDN6tEei97MD7GK1RmA', 'key':'kind','value':'attribute'}}" 
+},{
+	 "id": "168", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_xBNWDt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@453b924e (source: http:///org/eclipse/emf/ecore/util/ExtendedMetaData)','org.eclipse.emf.ecore.impl.EAnnotationImpl@67ab8e2d (source: subsets)'],'name':'ownedNode','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'ActivityNode','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@64213e21 (expression: ActivityNode)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'Activity','containment':'true','container':'false','resolveProxies':'true','eReferenceType':'ActivityNode'}}" 
+},{
+	 "id": "169", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNWD96tEei97MD7GK1RmA', 'source':'http:///org/eclipse/emf/ecore/util/ExtendedMetaData','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3ba53c03 (key: name, value: node)','org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@a966968 (key: kind, value: element)'],'eModelElement':'ownedNode'}}" 
+},{
+	 "id": "170", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNWEt6tEei97MD7GK1RmA', 'source':'subsets','eModelElement':'ownedNode','references':['node']}}" 
+},{
+	 "id": "171", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNWEN6tEei97MD7GK1RmA', 'key':'name','value':'node'}}" 
+},{
+	 "id": "172", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNWEd6tEei97MD7GK1RmA', 'key':'kind','value':'element'}}" 
+},{
+	 "id": "173", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_fthnrd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@1c881ff7 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@4cd8e73f (source: http:///org/eclipse/emf/ecore/util/ExtendedMetaData)','...'],'name':'node','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'ActivityNode','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5c55060 (expression: ActivityNode)','changeable':'true','volatile':'true','transient':'true','unsettable':'false','derived':'true','eContainingClass':'Activity','containment':'false','container':'false','resolveProxies':'true','eOpposite':'activity','eReferenceType':'ActivityNode'}}" 
+},{
+	 "id": "174", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNWJt6tEei97MD7GK1RmA', 'source':'http:///org/eclipse/emf/ecore/util/ExtendedMetaData','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@63b1f894 (key: kind, value: attribute)'],'eModelElement':'node'}}" 
+},{
+	 "id": "175", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNWJ96tEei97MD7GK1RmA', 'key':'kind','value':'attribute'}}" 
+},{
+	 "id": "176", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNWbd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@63b3eac8 (key: documentation, value: Activity edges can be contained in interruptible regions.\\nAn activity edge is an abstract class for directed connections between two activity nodes.)'],'eModelElement':'ActivityEdge'}}" 
+},{
+	 "id": "177", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNWbt6tEei97MD7GK1RmA', 'key':'documentation','value':'Activity edges can be contained in interruptible regions.\\nAn activity edge is an abstract class for directed connections between two activity nodes.'}}" 
+},{
+	 "id": "178", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNXFd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@6de912b7 (key: documentation, value: A structured activity node is an executable activity node that may have an expansion into subordinate nodes as an activity group. The subordinate nodes must belong to only one structured activity node, although they may be nested.\\nBecause of the concurrent nature of the execution of actions within and across activities, it can be difficult to guarantee the consistent access and modification of object memory. In order to avoid race conditions or other concurrency-related problems, it is sometimes necessary to isolate the effects of a group of actions from the effects of actions outside the group. This may be indicated by setting the mustIsolate attribute to true on a structured activity node. If a structured activity node is \\\\'isolated,\\\\' then any object used by an action within the node cannot be accessed by any action outside the node until the structured activity node as a whole completes. Any concurrent actions that would result in accessing such objects are required to have their execution deferred until the completion of the node.)'],'eModelElement':'StructuredActivityNode'}}" 
+},{
+	 "id": "179", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNXFt6tEei97MD7GK1RmA', 'key':'documentation','value':'A structured activity node is an executable activity node that may have an expansion into subordinate nodes as an activity group. The subordinate nodes must belong to only one structured activity node'}}" 
+},{
+	 "id": "180", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNXbN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@78349236 (key: documentation, value: A pin is a typed element and multiplicity element that provides values to actions and accept result values from them.\\nA pin is an object node for inputs and outputs to actions.)'],'eModelElement':'Pin'}}" 
+},{
+	 "id": "181", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNXbd6tEei97MD7GK1RmA', 'key':'documentation','value':'A pin is a typed element and multiplicity element that provides values to actions and accept result values from them.\\nA pin is an object node for inputs and outputs to actions.'}}" 
+},{
+	 "id": "182", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNXgd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@20fde153 (key: documentation, value: An object node is an abstract activity node that is part of defining object flow in an activity.\\nObject nodes have support for token selection, limitation on the number of tokens, specifying the state required for tokens, and carrying control values.)'],'eModelElement':'ObjectNode'}}" 
+},{
+	 "id": "183", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNXgt6tEei97MD7GK1RmA', 'key':'documentation','value':'An object node is an abstract activity node that is part of defining object flow in an activity.\\nObject nodes have support for token selection, limitation on the number of tokens, specifying the state'}}" 
+},{
+	 "id": "184", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNdMt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2d10d2a4 (key: documentation, value: InvocationAction is an abstract class for the various actions that invoke behavior.\\nIn addition to targeting an object, invocation actions can also invoke behavioral features on ports from where the invocation requests are routed onwards on links deriving from attached connectors. Invocation actions may also be sent to a target via a given port, either on the sending object or on another object.)'],'eModelElement':'InvocationAction'}}" 
+},{
+	 "id": "185", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNdM96tEei97MD7GK1RmA', 'key':'documentation','value':'InvocationAction is an abstract class for the various actions that invoke behavior.\\nIn addition to targeting an object, invocation actions can also invoke behavioral features on ports from where the i'}}" 
+},{
+	 "id": "186", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_xBNfEN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@275e36d5 (key: documentation, value: In the namespace of a component, all model elements that are involved in or related to its definition are either owned or imported explicitly. This may include, for example, use cases and dependencies (e.g. mappings), packages, components, and artifacts.\\nA component represents a modular part of a system that encapsulates its contents and whose manifestation is replaceable within its environment.)'],'eModelElement':'Component'}}" 
+},{
+	 "id": "187", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_xBNfEd6tEei97MD7GK1RmA', 'key':'documentation','value':'In the namespace of a component, all model elements that are involved in or related to its definition are either owned or imported explicitly. This may include, for example, use cases and dependencies'}}" 
+},{
+	 "id": "188", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgeEd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@5239bf09 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Association','ePackage':'uml','abstract':'false','interface':'false','eOperations':['specialized_end_number','specialized_end_types','binary_associations','association_ends','isBinary','getEndTypes'],'eStructuralFeatures':['endType','isDerived','memberEnd','ownedEnd','navigableOwnedEnd'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@d3aeca9 (expression: Classifier)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@72cf5db6 (expression: Relationship)']}}" 
+},{
+	 "id": "189", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_nMs0lt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7c8278df (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@2bcc9fb3 (source: subsets)'],'name':'class','ordered':'false','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Class','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5bea3fbe (expression: Class)','changeable':'false','volatile':'true','transient':'true','unsettable':'false','derived':'false','eContainingClass':'Property','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'Class'}}" 
+},{
+	 "id": "190", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftf2mt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7aca1202 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'includesMultiplicity','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@38d945d3 (expression: Boolean)','eContainingClass':'MultiplicityElement','eParameters':['M']}}" 
+},{
+	 "id": "191", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_ftgaEt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@5f5ec667 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'lower','ordered':'false','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Integer','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@13ca3537 (expression: Integer)','changeable':'false','volatile':'true','transient':'true','defaultValueLiteral':'1','defaultValue':'1','unsettable':'false','derived':'true','eContainingClass':'Operation','iD':'false','eAttributeType':'Integer'}}" 
+},{
+	 "id": "192", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgcft6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@5f795279 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Port','ePackage':'uml','abstract':'false','interface':'false','eOperations':['port_destroyed','port_aggregation','default_value','getProvideds','getRequireds'],'eStructuralFeatures':['isBehavior','isConjugated','isService','protocol','provided','redefinedPort','required'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@4529f1f0 (expression: Property)']}}" 
+},{
+	 "id": "193", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_fthoMN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2e2ffe4d (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@f1ed3cb (source: redefines)'],'name':'activity','ordered':'false','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Activity','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5237b10c (expression: Activity)','changeable':'true','volatile':'true','transient':'true','unsettable':'false','derived':'true','containment':'false','container':'false','resolveProxies':'true','eOpposite':'structuredNode','eReferenceType':'Activity'}}" 
+},{
+	 "id": "194", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_fthnpd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@13236585 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@30f0fca4 (source: subsets)'],'name':'structuredNode','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'StructuredActivityNode','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3c6fc9c7 (expression: StructuredActivityNode)','changeable':'false','volatile':'true','transient':'true','unsettable':'false','derived':'true','eContainingClass':'Activity','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'StructuredActivityNode'}}" 
+},{
+	 "id": "195", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgd_t6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2838e3e0 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'StructuralFeature','ePackage':'uml','abstract':'true','interface':'false','eStructuralFeatures':['isReadOnly'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@2b25e5b5 (expression: Feature)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@53735b88 (expression: TypedElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@76c7b4bc (expression: MultiplicityElement)']}}" 
+},{
+	 "id": "196", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftgZwN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@fcaf0e8 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@ddbc7a6 (source: redefines)'],'name':'isConsistentWith','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@11535373 (expression: Boolean)','eParameters':['redefinee']}}" 
+},{
+	 "id": "197", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftfz6d6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@6e344a19 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@bc56f62 (source: duplicates)'],'name':'Classifier','ePackage':'uml','abstract':'true','interface':'false','eOperations':['specialize_type','maps_to_generalization_set','non_final_parents','no_cycles_in_generalization','getAllAttributes','getAllOperations','getAllUsedInterfaces','getOperation','getOperation','getOperations','...'],'eStructuralFeatures':['feature','attribute','collaborationUse','general','generalization','powertypeExtent','inheritedMember','isAbstract','isFinalSpecialization','ownedUseCase','useCase','redefinedClassifier','representation','...'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@6e647cad (expression: Namespace)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@61bcf788 (expression: RedefinableElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@6ca8a67 (expression: Type)','...']}}" 
+},{
+	 "id": "198", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftf3AN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4e2117cd (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@46ead443 (source: redefines)'],'name':'isConsistentWith','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6f35c65d (expression: Boolean)','eParameters':['redefinee']}}" 
+},{
+	 "id": "199", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftjfat6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@1b26226e (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Component','ePackage':'uml','abstract':'false','interface':'false','eOperations':['no_nested_classifiers','no_packaged_elements','createOwnedClass','createOwnedEnumeration','createOwnedInterface','createOwnedPrimitiveType','getProvideds','realizedInterfaces','getRequireds','usedInterfaces'],'eStructuralFeatures':['isIndirectlyInstantiated','packagedElement','provided','realization','required'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@21329f82 (expression: Class)']}}" 
+},{
+	 "id": "200", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_ftgZLd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@63c004cf (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'isDerived','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@706faa93 (expression: Boolean)','changeable':'true','volatile':'false','transient':'false','defaultValueLiteral':'false','defaultValue':'false','unsettable':'false','derived':'false','eContainingClass':'Property','iD':'false','eAttributeType':'Boolean'}}" 
+},{
+	 "id": "201", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftfznN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@73fc71a2 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@5f3d09f5 (source: duplicates)'],'name':'Class','ePackage':'uml','abstract':'false','interface':'false','eOperations':['passive_class','createOwnedOperation','isMetaclass','getExtensions','getSuperClasses'],'eStructuralFeatures':['ownedOperation','extension','isActive','nestedClassifier','ownedReception','superClass'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@1ea485e7 (expression: EncapsulatedClassifier)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@547cc79a (expression: BehavioredClassifier)']}}" 
+},{
+	 "id": "202", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftiQl96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4929684c (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'InvocationAction','ePackage':'uml','abstract':'true','interface':'false','eOperations':['on_port_receiver'],'eStructuralFeatures':['argument','onPort'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@4e8b6e3e (expression: Action)']}}" 
+},{
+	 "id": "203", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftho5t6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@5d8ec5b0 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Pin','ePackage':'uml','abstract':'true','interface':'false','eOperations':['control_pins'],'eStructuralFeatures':['isControl'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@3fa8156f (expression: ObjectNode)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@6ef0ff90 (expression: MultiplicityElement)']}}" 
+},{
+	 "id": "204", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_fthnnN6tEei97MD7GK1RmA', 'source':'subsets','eModelElement':'partition','references':['group','ownedGroup']}}" 
+},{
+	 "id": "205", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthDiN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@1b5b8491 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Action','ePackage':'uml','abstract':'true','interface':'false','eOperations':['getContext'],'eStructuralFeatures':['context','input','isLocallyReentrant','localPostcondition','localPrecondition','output'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@61ef9975 (expression: ExecutableNode)']}}" 
+},{
+	 "id": "206", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_ftgZNd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4e7a82de (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'default','ordered':'false','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'String','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@26672571 (expression: String)','changeable':'true','volatile':'true','transient':'true','unsettable':'true','derived':'true','eContainingClass':'Property','iD':'false','eAttributeType':'String'}}" 
+},{
+	 "id": "207", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgcct6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@37fa7e82 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Trigger','ePackage':'uml','abstract':'false','interface':'false','eStructuralFeatures':['event','port'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@2583df41 (expression: NamedElement)']}}" 
+},{
+	 "id": "208", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgZnt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@11b206b (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Artifact','ePackage':'uml','abstract':'false','interface':'false','eOperations':['createOwnedAttribute','createOwnedOperation'],'eStructuralFeatures':['fileName','manifestation','nestedArtifact','ownedAttribute','ownedOperation'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@62653acb (expression: Classifier)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@26612e20 (expression: DeployedArtifact)']}}" 
+},{
+	 "id": "209", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_ftgaFt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@c33f52 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'upper','ordered':'false','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'UnlimitedNatural','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@dd0396e (expression: UnlimitedNatural)','changeable':'false','volatile':'true','transient':'true','defaultValueLiteral':'1','defaultValue':'1','unsettable':'false','derived':'true','eContainingClass':'Operation','iD':'false','eAttributeType':'UnlimitedNatural'}}" 
+},{
+	 "id": "210", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftgb-d6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@c5094a9 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@4ce59329 (source: redefines)'],'name':'isConsistentWith','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@12330815 (expression: Boolean)','eParameters':['redefinee']}}" 
+},{
+	 "id": "211", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthoLN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@28b6cf2d (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@59004edf (source: duplicates)'],'name':'StructuredActivityNode','ePackage':'uml','abstract':'false','interface':'false','eOperations':['output_pin_edges','edges','input_pin_edges'],'eStructuralFeatures':['mustIsolate','node','structuredNodeInput','structuredNodeOutput','variable','edge'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@e31481 (expression: Action)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@d21bd (expression: Namespace)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@e837e13 (expression: ActivityGroup)']}}" 
+},{
+	 "id": "212", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthnOt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2a7dbe13 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'ActivityEdge','ePackage':'uml','abstract':'true','interface':'false','eOperations':['owned','source_and_target','structured_node'],'eStructuralFeatures':['guard','inGroup','inPartition','inStructuredNode','interrupts','redefinedEdge','source','target','weight','activity'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@2a14bca (expression: RedefinableElement)']}}" 
+},{
+	 "id": "213", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftf1996tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@464b7dc (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'isNonNegative','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@63a42fa6 (expression: Boolean)','eContainingClass':'OpaqueExpression'}}" 
+},{
+	 "id": "214", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_fthoJN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4845d035 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@683af88c (source: subsets)'],'name':'inActivity','ordered':'false','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Activity','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6b58ba0a (expression: Activity)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'ActivityGroup','containment':'false','container':'true','resolveProxies':'true','eOpposite':'group','eReferenceType':'Activity'}}" 
+},{
+	 "id": "215", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'volatile', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "216", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'transient', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "217", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'derived', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "218", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgZvN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2639c884 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@173bc065 (source: duplicates)'],'name':'Operation','ePackage':'uml','abstract':'false','interface':'false','eOperations':['at_most_one_return','only_body_for_query','getReturnResult','setIsOrdered','setIsUnique','setLower','setType','setUpper','isOrdered','isUnique','getLower','returnResult','getType','getUpper'],'eStructuralFeatures':['bodyCondition','class','datatype','interface','isOrdered','isQuery','isUnique','lower','postcondition','precondition','redefinedOperation','type','upper'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@70542df1 (expression: BehavioralFeature)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@319d3fc0 (expression: ParameterableElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@16e2f52 (expression: TemplateableElement)']}}" 
+},{
+	 "id": "219", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthoqN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@61f442cc (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'ObjectNode','ePackage':'uml','abstract':'true','interface':'false','eOperations':['input_output_parameter','selection_behavior','object_flow_edges'],'eStructuralFeatures':['inState','isControlType','ordering','selection','upperBound'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@4ccc36aa (expression: ActivityNode)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@66360b71 (expression: TypedElement)']}}" 
+},{
+	 "id": "220", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'changeable', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "221", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'volatile', 'valueBefore': 'true', 'valueAfter': 'false'}" 
+},{
+	 "id": "222", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'transient', 'valueBefore': 'true', 'valueAfter': 'false'}" 
+},{
+	 "id": "223", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'derived', 'valueBefore': 'true', 'valueAfter': 'false'}" 
+},{
+	 "id": "224", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'containment', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "225", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'volatile', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "226", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'transient', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "227", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'derived', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "228", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'containment', 'valueBefore': 'true', 'valueAfter': 'false'}" 
+},{
+	 "id": "229", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftf0UN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@a8ba48a (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'inherit','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'NamedElement','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5d7fd94a (expression: NamedElement)','eContainingClass':'Classifier','eParameters':['inhs']}}" 
+},{
+	 "id": "230", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgaOd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4dc0ad99 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@77a62034 (source: duplicates)'],'name':'BehavioralFeature','ePackage':'uml','abstract':'true','interface':'false','eOperations':['createReturnResult'],'eStructuralFeatures':['concurrency','isAbstract','method','ownedParameter','ownedParameterSet','raisedException'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@776b8aa5 (expression: Namespace)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@9d71997 (expression: Feature)']}}" 
+},{
+	 "id": "231", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_ftgaDt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@1abad70e (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'isUnique','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@c249363 (expression: Boolean)','changeable':'false','volatile':'true','transient':'true','defaultValueLiteral':'true','defaultValue':'true','unsettable':'false','derived':'true','eContainingClass':'Operation','iD':'false','eAttributeType':'Boolean'}}" 
+},{
+	 "id": "232", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthBad6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7fc73a1 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Expression','ePackage':'uml','abstract':'false','interface':'false','eStructuralFeatures':['operand','symbol'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@339f29f7 (expression: ValueSpecification)']}}" 
+},{
+	 "id": "233", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftfzH96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@32604852 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'makesVisible','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@74dba870 (expression: Boolean)','eContainingClass':'Package','eParameters':['el']}}" 
+},{
+	 "id": "234", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftf2jN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7b8dd1b6 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'isMultivalued','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7805da62 (expression: Boolean)','eContainingClass':'MultiplicityElement'}}" 
+},{
+	 "id": "235", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftfLyt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@6f8ff6a9 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@28a6e3dc (source: duplicates)'],'name':'PackageableElement','ePackage':'uml','abstract':'true','interface':'false','eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@5f334dae (expression: NamedElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@696d506a (expression: ParameterableElement)']}}" 
+},{
+	 "id": "236", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthDoN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4904e98d (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'ExecutableNode','ePackage':'uml','abstract':'true','interface':'false','eStructuralFeatures':['handler'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@75dffcc8 (expression: ActivityNode)']}}" 
+},{
+	 "id": "237", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftga1t6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@46bb8b36 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Interface','ePackage':'uml','abstract':'false','interface':'false','eOperations':['visibility','createOwnedAttribute','createOwnedOperation'],'eStructuralFeatures':['nestedClassifier','ownedAttribute','ownedReception','protocol','redefinedInterface','ownedOperation'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@3f5d5728 (expression: Classifier)']}}" 
+},{
+	 "id": "238", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthB1t6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7e54407c (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'InstanceSpecification','ePackage':'uml','abstract':'false','interface':'false','eOperations':['deployment_artifact','structural_feature','defining_feature','deployment_target'],'eStructuralFeatures':['classifier','slot','specification'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@19fd77b8 (expression: DeploymentTarget)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@60268510 (expression: PackageableElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@46b50918 (expression: DeployedArtifact)']}}" 
+},{
+	 "id": "239", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthnet6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@6a5bb20f (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Activity','ePackage':'uml','abstract':'false','interface':'false','eOperations':['autonomous','no_supergroups','activity_parameter_node','getStructuredNodes'],'eStructuralFeatures':['edge','group','structuredNode','variable','isReadOnly','isSingleExecution','partition','node'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@7a630808 (expression: Behavior)']}}" 
+},{
+	 "id": "240", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftf2Dd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2c07aae0 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Parameter','ePackage':'uml','abstract':'false','interface':'false','eOperations':['in_and_out','not_exception','connector_end','reentrant_behaviors','stream_and_exception','isSetDefault','setBooleanDefaultValue','setDefault','setIntegerDefaultValue','setNullDefaultValue','setRealDefaultValue','...'],'eStructuralFeatures':['default','defaultValue','direction','effect','isException','isStream','operation','parameterSet'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@31613252 (expression: ConnectableElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@3625516f (expression: MultiplicityElement)']}}" 
+},{
+	 "id": "241", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftf2_N6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4f20b98d (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@ce8f8cf (source: duplicates)'],'name':'Property','ePackage':'uml','abstract':'false','interface':'false','eOperations':['subsetting_context_conforms','derived_union_is_read_only','multiplicity_of_composite','redefined_property_inherited','subsetting_rules','binding_to_attribute','derived_union_is_derived','deployment_target','...'],'eStructuralFeatures':['datatype','interface','aggregation','associationEnd','qualifier','class','default','defaultValue','isComposite','isDerived','isDerivedUnion','isID','opposite','owningAssociation','redefinedProperty','...'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@57e8acca (expression: StructuralFeature)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@5309f5d7 (expression: ConnectableElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@5bcdbfe4 (expression: DeploymentTarget)']}}" 
+},{
+	 "id": "242", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_ftfLcd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7c5f706 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'type','ordered':'false','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Type','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6a7fd531 (expression: Type)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'TypedElement','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'Type'}}" 
+},{
+	 "id": "243", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_fthnK96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@5371678e (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@4b299661 (source: subsets)'],'name':'activity','ordered':'false','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Activity','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@1f365994 (expression: Activity)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'ActivityNode','containment':'false','container':'true','resolveProxies':'true','eOpposite':'node','eReferenceType':'Activity'}}" 
+},{
+	 "id": "244", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'volatile', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "245", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'transient', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "246", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'derived', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "247", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftfyj96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@414867ca (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'getNamesOfMember','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'String','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@146b8404 (expression: String)','eContainingClass':'Namespace','eParameters':['element']}}" 
+},{
+	 "id": "248", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftfLbt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7d783a98 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'TypedElement','ePackage':'uml','abstract':'true','interface':'false','eStructuralFeatures':['type'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@474cfab2 (expression: NamedElement)']}}" 
+},{
+	 "id": "249", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'volatile', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "250", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'transient', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "251", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'derived', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "252", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'containment', 'valueBefore': 'true', 'valueAfter': 'false'}" 
+},{
+	 "id": "253", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_ftf3CN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@67c0a808 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@6e7a4e29 (source: redefines)'],'name':'isReadOnly','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@58474a10 (expression: Boolean)','changeable':'true','volatile':'false','transient':'false','defaultValueLiteral':'false','defaultValue':'false','unsettable':'false','derived':'false','iD':'false','eAttributeType':'Boolean'}}" 
+},{
+	 "id": "254", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_ftfzrN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@42bc6350 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@2712e83b (source: redefines)'],'name':'isAbstract','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3e2eb2b2 (expression: Boolean)','changeable':'true','volatile':'false','transient':'false','defaultValueLiteral':'false','defaultValue':'false','unsettable':'false','derived':'false','iD':'false','eAttributeType':'Boolean'}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "2", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "4", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "6", 
+	 "target": "7", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "8", 
+	 "target": "9", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "10", 
+	 "target": "11", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "12", 
+	 "target": "13", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "14", 
+	 "target": "15", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "16", 
+	 "target": "17", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "18", 
+	 "target": "19", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "20", 
+	 "target": "21", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "22", 
+	 "target": "23", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "24", 
+	 "target": "25", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "26", 
+	 "target": "27", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "28", 
+	 "target": "29", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "30", 
+	 "target": "31", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "32", 
+	 "target": "33", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "34", 
+	 "target": "35", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "36", 
+	 "target": "37", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "38", 
+	 "target": "39", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "40", 
+	 "target": "41", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "42", 
+	 "target": "43", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "44", 
+	 "target": "45", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "46", 
+	 "target": "47", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "48", 
+	 "target": "49", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "50", 
+	 "target": "51", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "52", 
+	 "target": "53", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "54", 
+	 "target": "55", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "56", 
+	 "target": "57", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "58", 
+	 "target": "59", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "60", 
+	 "target": "61", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "62", 
+	 "target": "63", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "64", 
+	 "target": "65", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "66", 
+	 "target": "67", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "68", 
+	 "target": "69", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "70", 
+	 "target": "71", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "72", 
+	 "target": "73", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "73", 
+	 "target": "74", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "73", 
+	 "target": "75", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "76", 
+	 "target": "77", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "78", 
+	 "target": "79", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "80", 
+	 "target": "81", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "82", 
+	 "target": "83", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "84", 
+	 "target": "85", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "86", 
+	 "target": "87", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "88", 
+	 "target": "89", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "90", 
+	 "target": "91", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "92", 
+	 "target": "93", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "94", 
+	 "target": "95", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "96", 
+	 "target": "97", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "98", 
+	 "target": "99", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "100", 
+	 "target": "101", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "102", 
+	 "target": "103", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "104", 
+	 "target": "105", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "106", 
+	 "target": "107", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "108", 
+	 "target": "109", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "110", 
+	 "target": "111", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "112", 
+	 "target": "113", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "114", 
+	 "target": "115", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "116", 
+	 "target": "117", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "118", 
+	 "target": "119", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "120", 
+	 "target": "121", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "122", 
+	 "target": "123", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "124", 
+	 "target": "125", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "126", 
+	 "target": "127", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "128", 
+	 "target": "129", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "130", 
+	 "target": "131", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "132", 
+	 "target": "133", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "134", 
+	 "target": "135", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "136", 
+	 "target": "137", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "138", 
+	 "target": "139", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "140", 
+	 "target": "141", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "142", 
+	 "target": "143", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "144", 
+	 "target": "145", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "146", 
+	 "target": "147", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "148", 
+	 "target": "149", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "150", 
+	 "target": "151", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "152", 
+	 "target": "153", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "154", 
+	 "target": "155", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "156", 
+	 "target": "157", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "158", 
+	 "target": "159", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "160", 
+	 "target": "161", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "160", 
+	 "target": "162", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "161", 
+	 "target": "163", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "161", 
+	 "target": "164", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "162", 
+	 "target": "165", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'references'}" 
+},{
+	 "source": "166", 
+	 "target": "167", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "168", 
+	 "target": "169", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "168", 
+	 "target": "170", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "169", 
+	 "target": "171", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "169", 
+	 "target": "172", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "170", 
+	 "target": "173", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'references'}" 
+},{
+	 "source": "174", 
+	 "target": "175", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "176", 
+	 "target": "177", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "178", 
+	 "target": "179", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "180", 
+	 "target": "181", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "182", 
+	 "target": "183", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "184", 
+	 "target": "185", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "186", 
+	 "target": "187", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "188", 
+	 "target": "20", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "188", 
+	 "target": "108", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "189", 
+	 "target": "28", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "189", 
+	 "target": "116", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "190", 
+	 "target": "34", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "190", 
+	 "target": "124", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "191", 
+	 "target": "46", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "191", 
+	 "target": "136", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "192", 
+	 "target": "58", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "192", 
+	 "target": "146", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "193", 
+	 "target": "194", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOpposite'}" 
+},{
+	 "source": "195", 
+	 "target": "62", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "195", 
+	 "target": "122", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "196", 
+	 "target": "42", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "196", 
+	 "target": "132", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "197", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "197", 
+	 "target": "94", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "198", 
+	 "target": "24", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "198", 
+	 "target": "112", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "199", 
+	 "target": "86", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "199", 
+	 "target": "186", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "200", 
+	 "target": "32", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "200", 
+	 "target": "120", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "201", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "201", 
+	 "target": "90", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "202", 
+	 "target": "84", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "202", 
+	 "target": "184", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "203", 
+	 "target": "80", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "203", 
+	 "target": "180", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "204", 
+	 "target": "160", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'references'}" 
+},{
+	 "source": "205", 
+	 "target": "68", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "205", 
+	 "target": "156", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "206", 
+	 "target": "30", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "206", 
+	 "target": "118", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "207", 
+	 "target": "56", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "207", 
+	 "target": "144", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "208", 
+	 "target": "38", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "208", 
+	 "target": "128", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "209", 
+	 "target": "48", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "209", 
+	 "target": "138", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "210", 
+	 "target": "60", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "210", 
+	 "target": "148", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "211", 
+	 "target": "78", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "211", 
+	 "target": "178", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "212", 
+	 "target": "76", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "212", 
+	 "target": "176", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "213", 
+	 "target": "66", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "213", 
+	 "target": "154", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "214", 
+	 "target": "215", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "214", 
+	 "target": "216", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "214", 
+	 "target": "217", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "218", 
+	 "target": "40", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "218", 
+	 "target": "130", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "219", 
+	 "target": "82", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "219", 
+	 "target": "182", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "194", 
+	 "target": "220", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "194", 
+	 "target": "221", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "194", 
+	 "target": "222", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "194", 
+	 "target": "223", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "194", 
+	 "target": "224", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "165", 
+	 "target": "166", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "165", 
+	 "target": "225", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "165", 
+	 "target": "226", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "165", 
+	 "target": "227", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "165", 
+	 "target": "228", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "229", 
+	 "target": "6", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "229", 
+	 "target": "96", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "230", 
+	 "target": "50", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "230", 
+	 "target": "140", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "231", 
+	 "target": "44", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "231", 
+	 "target": "134", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "232", 
+	 "target": "10", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "232", 
+	 "target": "100", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "233", 
+	 "target": "18", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "233", 
+	 "target": "106", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "234", 
+	 "target": "36", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "234", 
+	 "target": "126", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "235", 
+	 "target": "16", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "235", 
+	 "target": "88", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "236", 
+	 "target": "70", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "236", 
+	 "target": "158", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "237", 
+	 "target": "54", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "237", 
+	 "target": "142", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "238", 
+	 "target": "64", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "238", 
+	 "target": "152", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "239", 
+	 "target": "72", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "239", 
+	 "target": "168", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "239", 
+	 "target": "160", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "240", 
+	 "target": "52", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "240", 
+	 "target": "150", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "241", 
+	 "target": "22", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "241", 
+	 "target": "110", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "242", 
+	 "target": "14", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "242", 
+	 "target": "104", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "243", 
+	 "target": "244", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "243", 
+	 "target": "245", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "243", 
+	 "target": "246", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "247", 
+	 "target": "8", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "247", 
+	 "target": "98", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "248", 
+	 "target": "12", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "248", 
+	 "target": "102", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "173", 
+	 "target": "174", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "173", 
+	 "target": "249", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "173", 
+	 "target": "250", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "173", 
+	 "target": "251", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "173", 
+	 "target": "252", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "253", 
+	 "target": "26", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "253", 
+	 "target": "114", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "254", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "254", 
+	 "target": "92", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+}]}

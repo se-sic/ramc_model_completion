@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ASCII"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="QVTTemplate" name="QVTTemplate" nsURI="http://schema.omg.org/spec/QVT/1.2/qvttemplate.xml" nsPrefix="qvttemplate">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTTemplate.CollectionTemplateExp" name="CollectionTemplateExp" eSuperTypes="QVTTemplate.TemplateExp">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.CollectionTemplateExp.member" name="member" ordered="false" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crwNc96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crwNdN6vEei97MD7GK1RmA" key="body" value="listContainer"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.CollectionTemplateExp.referredCollectionType" name="referredCollectionType" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.CollectionType"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.CollectionTemplateExp.rest" name="rest">
+      <eAnnotations xmi:id="_crwNd96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crwNeN6vEei97MD7GK1RmA" key="body" value="matchingExp"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.Variable"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTTemplate.ObjectTemplateExp" name="ObjectTemplateExp" eSuperTypes="QVTTemplate.TemplateExp">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.ObjectTemplateExp.part" name="part" ordered="false" upperBound="-1" eType="QVTTemplate.PropertyTemplateItem" containment="true" resolveProxies="false" eOpposite="QVTTemplate.PropertyTemplateItem.objContainer"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.ObjectTemplateExp.referredClass" name="referredClass" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Class"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTTemplate.PropertyTemplateItem" name="PropertyTemplateItem">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Element"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="QVTTemplate.PropertyTemplateItem.isOpposite" name="isOpposite" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.qvt_model_ecore_PrimitiveTypes.ecore#PrimitiveTypes.Boolean"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.PropertyTemplateItem.objContainer" name="objContainer" lowerBound="1" eType="QVTTemplate.ObjectTemplateExp" transient="true" resolveProxies="false" eOpposite="QVTTemplate.ObjectTemplateExp.part"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.PropertyTemplateItem.referredProperty" name="referredProperty" lowerBound="1">
+      <eAnnotations xmi:id="_crwNfN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crwNfd6vEei97MD7GK1RmA" key="body" value="propertyItem"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EMOF.ecore#EMOF.Property"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.PropertyTemplateItem.value" name="value" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crwNf96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crwNgN6vEei97MD7GK1RmA" key="body" value="propertyItem"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="QVTTemplate.TemplateExp" name="TemplateExp" abstract="true">
+    <eSuperTypes href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.LiteralExp"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.TemplateExp.bindsTo" name="bindsTo">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.Variable"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="QVTTemplate.TemplateExp.where" name="where" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_crwNhN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_crwNhd6vEei97MD7GK1RmA" key="body" value="owner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.qvt_model_ecore_EssentialOCL.ecore#EssentialOCL.OclExpression"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

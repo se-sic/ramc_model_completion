@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_ZmohYd6tEei97MD7GK1RmA" name="declaration" nsURI="http://www.eclipse.org/emf/edapt/declaration/0.3" nsPrefix="declaration">
+  <eAnnotations xmi:id="_ZmohYt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+    <details xmi:id="_ZmohY96tEei97MD7GK1RmA" key="documentation" value="Metamodel for the declaration of operations"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZmohZN6tEei97MD7GK1RmA" name="IdentifiedElement" abstract="true">
+    <eAnnotations xmi:id="_ZmohZd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_ZmohZt6tEei97MD7GK1RmA" key="documentation" value="Base class for elements which are identified by a name "/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZmohZ96tEei97MD7GK1RmA" name="name" lowerBound="1">
+      <eAnnotations xmi:id="_ZmohaN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohad6tEei97MD7GK1RmA" key="documentation" value="Identifier"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zmohbt6tEei97MD7GK1RmA" name="description">
+      <eAnnotations xmi:id="_Zmohb96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_ZmohcN6tEei97MD7GK1RmA" key="documentation" value="Description for the metamodeler to be able to understand the parameter"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zmohed6tEei97MD7GK1RmA" name="Library" eSuperTypes="_ZmohZN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zmohet6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zmohe96tEei97MD7GK1RmA" key="documentation" value="Container for a set of coupled evolution operations"/>
+    </eAnnotations>
+    <eOperations xmi:id="_ZmohfN6tEei97MD7GK1RmA" name="getOperation" eType="_ZmohjN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zmohfd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohft6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the operation in the library with a certain name"/>
+      </eAnnotations>
+      <eParameters xmi:id="_Zmohf96tEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_Zmohgd6tEei97MD7GK1RmA" name="getCode">
+      <eAnnotations xmi:id="_Zmohgt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohg96tEei97MD7GK1RmA" key="documentation" value="Helper method to access the code implementing the operations declared in the library"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zmohhd6tEei97MD7GK1RmA" name="operations" upperBound="-1" eType="_ZmohjN6tEei97MD7GK1RmA" containment="true" eOpposite="_Zmohnt6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zmohht6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohh96tEei97MD7GK1RmA" key="documentation" value="Set of coupled evolution operations"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZmohiN6tEei97MD7GK1RmA" name="implementation" lowerBound="1">
+      <eAnnotations xmi:id="_Zmohid6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohit6tEei97MD7GK1RmA" key="documentation" value="Relative path to the code implementing the operations of the library"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZoIWUd6tEei97MD7GK1RmA" name="label" lowerBound="1">
+      <eAnnotations xmi:id="_ZoIWUt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_ZoIWU96tEei97MD7GK1RmA" key="documentation" value="Label for an element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZoIWVd6tEei97MD7GK1RmA" name="libraries" upperBound="-1" eType="_Zmohed6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZmohjN6tEei97MD7GK1RmA" name="Operation" eSuperTypes="_ZmohZN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zmohjd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zmohjt6tEei97MD7GK1RmA" key="documentation" value="Coupled evolution operation"/>
+    </eAnnotations>
+    <eOperations xmi:id="_Zmohj96tEei97MD7GK1RmA" name="getParameter" eType="_Zmohvd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_ZmohkN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohkd6tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the parameter of the operation with a certain name"/>
+      </eAnnotations>
+      <eParameters xmi:id="_Zmohkt6tEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_Zmohmd6tEei97MD7GK1RmA" name="getMainParameter" eType="_Zmohvd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zmohmt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohm96tEei97MD7GK1RmA" key="documentation" value="Helper method to determine the main parameter of the operation, i.e. the parameter with main set to true"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_ZmohnN6tEei97MD7GK1RmA" name="refines">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsLN6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_ZnrDXt6tEei97MD7GK1RmA" name="getConstraint" eType="_Zmoh1d6tEei97MD7GK1RmA">
+      <eParameters xmi:id="_ZnrDX96tEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zmohnt6tEei97MD7GK1RmA" name="library" lowerBound="1" eType="_Zmohed6tEei97MD7GK1RmA" eOpposite="_Zmohhd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zmohn96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_ZmohoN6tEei97MD7GK1RmA" key="documentation" value="Library to which the operation belongs"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zmohod6tEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_Zmohvd6tEei97MD7GK1RmA" containment="true" eOpposite="_ZmohwN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zmohot6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmoho96tEei97MD7GK1RmA" key="documentation" value="A list of parameters of the coupled evolution operations"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZmohpN6tEei97MD7GK1RmA" name="constraints" upperBound="-1" eType="_Zmoh1d6tEei97MD7GK1RmA" containment="true" eOpposite="_Zmoh2N6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zmohpd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohpt6tEei97MD7GK1RmA" key="documentation" value="A list of constraints restricting the executability of the coupled evolution operation"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zmohqt6tEei97MD7GK1RmA" name="deprecated" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_Zmohq96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_ZmohrN6tEei97MD7GK1RmA" key="documentation" value="Whether this operation should no longer be used"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsLN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zmohst6tEei97MD7GK1RmA" name="before">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZmohtN6tEei97MD7GK1RmA" name="after">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZnOXlt6tEei97MD7GK1RmA" name="implementation" lowerBound="1" transient="true">
+      <eGenericType>
+        <eTypeArguments xmi:id="_ZnOXmN6tEei97MD7GK1RmA"/>
+        <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsXt6tEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zmohdd6tEei97MD7GK1RmA" name="label" lowerBound="1">
+      <eAnnotations xmi:id="_Zmohdt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohd96tEei97MD7GK1RmA" key="documentation" value="Label for an element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zmohvd6tEei97MD7GK1RmA" name="Parameter" eSuperTypes="_ZmohZN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zmohvt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zmohv96tEei97MD7GK1RmA" key="documentation" value="A parameter of an operation"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZmohwN6tEei97MD7GK1RmA" name="operation" lowerBound="1" eType="_ZmohjN6tEei97MD7GK1RmA" eOpposite="_Zmohod6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zmohwd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohwt6tEei97MD7GK1RmA" key="documentation" value="Operation to which the parameter belongs"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zmohw96tEei97MD7GK1RmA" name="required" defaultValueLiteral="true">
+      <eAnnotations xmi:id="_ZmohxN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohxd6tEei97MD7GK1RmA" key="documentation" value="Whether the parameter is required to be set for allowing an operation to be executed"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsLN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zmohy96tEei97MD7GK1RmA" name="main">
+      <eAnnotations xmi:id="_ZmohzN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmohzd6tEei97MD7GK1RmA" key="documentation" value="Whether the parameter is determined by selection (at most one parameter for unambiguousness)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsLN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zmoh4t6tEei97MD7GK1RmA" name="many">
+      <eAnnotations xmi:id="_Zmoh496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmoh5N6tEei97MD7GK1RmA" key="documentation" value="Whether the type is multi-valued"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsLN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zmoh5t6tEei97MD7GK1RmA" name="classifier" lowerBound="1" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_Zmoh596tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmoh6N6tEei97MD7GK1RmA" key="documentation" value="Classifier for which the type stands (the value of this reference is derived from the type's name)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Zmxrh96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Zmoh6t6tEei97MD7GK1RmA" name="classifierName" lowerBound="1">
+      <eAnnotations xmi:id="_Zmoh696tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmoh7N6tEei97MD7GK1RmA" key="documentation" value="Name of the classifier for which the type stands"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_ZmxsdN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zmoh1d6tEei97MD7GK1RmA" name="Constraint" eSuperTypes="_ZmohZN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Zmoh1t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Zmoh196tEei97MD7GK1RmA" key="documentation" value="A constraint which determines whether an operation can be executed with a setting of parameters"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Zmoh2N6tEei97MD7GK1RmA" name="operation" lowerBound="1" eType="_ZmohjN6tEei97MD7GK1RmA" eOpposite="_ZmohpN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Zmoh2d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Zmoh2t6tEei97MD7GK1RmA" key="documentation" value="Operation to which the parameter belongs"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZnrDmd6tEei97MD7GK1RmA" name="restricts" eType="_Zmohvd6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+</ecore:EPackage>

@@ -1,0 +1,30 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_BCVvwN6xEei97MD7GK1RmA', 'name':'isPropertyScope','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@202001e4 (expression: EBoolean)','eContainingClass':'BExecutionContext'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_BCVwzN6xEei97MD7GK1RmA', 'name':'BDefProperty','ePackage':'b3backend','abstract':'false','interface':'false','eStructuralFeatures':['mutable'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@2ee022ed (expression: BDefValue)']}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_BCVwzd6xEei97MD7GK1RmA', 'name':'mutable','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@27498d78 (expression: EBoolean)','changeable':'true','volatile':'true','transient':'true','defaultValue':'false','unsettable':'false','derived':'true','eContainingClass':'BDefProperty','iD':'false','eAttributeType':'EBoolean'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_lTgQ4t6wEei97MD7GK1RmA', 'name':'BExecutionContext','ePackage':'b3backend','abstract':'true','interface':'false','eOperations':['loadFunctions','defineFunction','callFunction','getValue','getLValue','defineValue','defineFinalValue','defineVariableValue','defineFinalVariableValue','isFinal','isImmutable','getInvocationContext','...'],'eStructuralFeatures':['parentContext','childContexts','valueMap','funcStore']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_lTgQ0d6wEei97MD7GK1RmA', 'name':'b3backend','nsURI':'http://b3backend/1.0','nsPrefix':'b3backend','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@5210ea33','eClassifiers':['BExpression','BSourceLink','BFileReference','BLineReference','BExecutionContext','BIfExpression','BSwitchExpression','BCase','BTryExpression','BCatch','BBinaryExpression','BOrExpression','BAndExpression','...']}}" 
+}], 
+ "links": [{
+	 "source": "1", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "3", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "4", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+}]}

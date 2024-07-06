@@ -1,0 +1,69 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ZnRzr96zEei97MD7GK1RmA', 'name':'BeeHive','ePackage':'build','abstract':'false','interface':'false','eOperations':['getResolvedCapabilityContainer'],'eStructuralFeatures':['beeModels','parent','resolutions']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ZnRzsN6zEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@29ae5e10 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'getResolvedCapabilityContainer','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'IProvidedCapabilityContainer','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@75fa010e (expression: IProvidedCapabilityContainer)','eContainingClass':'BeeHive','eParameters':['requiredCapability']}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_ZnRztN6zEei97MD7GK1RmA', 'name':'beeModels','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'BeeModel','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@70dee1ff (expression: BeeModel)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'BeeHive','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'BeeModel'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_ZnRztd6zEei97MD7GK1RmA', 'name':'parent','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BeeHive','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@690e7280 (expression: BeeHive)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'BeeHive','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'BeeHive'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_ZnRztt6zEei97MD7GK1RmA', 'name':'resolutions','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4ffa1071 (expression: EMap<RequiredCapability, Capability>)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'BeeHive','iD':'false','eAttributeType':'EMap'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ZnRzsd6zEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3f168501 (key: documentation, value: Returns the {@link IProvidedCapabilityContainer} that was the result of resolving the {@link RequiredCapability} referenced by the\\rrequiredCapability parameter. The returned capability container is one of {@link BuildUnit} or {@link Builder}. Naturally, to get the actual capability from a builder, the result must first be built.\\r)'],'eModelElement':'getResolvedCapabilityContainer'}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ZnRzs96zEei97MD7GK1RmA', 'name':'requiredCapability','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'RequiredCapability','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@206ec9cd (expression: RequiredCapability)','eOperation':'getResolvedCapabilityContainer'}}" 
+},{
+	 "id": "7", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ZnRzst6zEei97MD7GK1RmA', 'key':'documentation','value':'Returns the {@link IProvidedCapabilityContainer} that was the result of resolving the {@link RequiredCapability} referenced by the\\rrequiredCapability parameter. The returned capability container is on'}}" 
+},{
+	 "id": "8", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ZnRzut6zEei97MD7GK1RmA', 'name':'ResolutionInfo','ePackage':'build','abstract':'false','interface':'false'}}" 
+},{
+	 "id": "9", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_LS_N4d6zEei97MD7GK1RmA', 'name':'build','nsURI':'http://b3build/1.0','nsPrefix':'build','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@746367','eClassifiers':['BuildUnit','IBuilder','VersionRange','Version','URI','VersionedCapability','BuilderInput','PathGroup','Prerequisite','BuildResultReference','CompoundBuildResultReference','BuilderReference','Capability','...']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "0", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "0", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "0", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "1", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "1", 
+	 "target": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "5", 
+	 "target": "7", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "9", 
+	 "target": "8", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "9", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+}]}

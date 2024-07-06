@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_HrE6wN6tEei97MD7GK1RmA" name="component" nsURI="http://www.birt.eclipse.org/ChartModelComponent" nsPrefix="component">
+  <eAnnotations xmi:id="_LMdW0d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+    <details xmi:id="_LMdW0t6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;Schema file for the chart.model package.&#xA;&#x9;&#x9;"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HrE6w96tEei97MD7GK1RmA" name="Axis">
+    <eAnnotations xmi:id="_LMdW1N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMdW1d6tEei97MD7GK1RmA" key="documentation" value="This type defines the basic elements that are expected in any axis.  An axis refers to a line &#xA;along the X, Y, or Z co-ordinate system used in the plot.  It provides a point of reference for &#xA;the various values plotted in each direction.  This class can further be extended for special axis types.&#xA;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HrE6xt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HrE6x96tEei97MD7GK1RmA" key="name" value="Axis"/>
+      <details xmi:id="_HrE6yN6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE6yd6tEei97MD7GK1RmA" name="type" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdW2t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdW296tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the type of Axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE6zN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE6zd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE6zt6tEei97MD7GK1RmA" key="name" value="Type"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhm6t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE60N6tEei97MD7GK1RmA" name="title" eType="_HrE7lt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdW4d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdW4t6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;This is the element title.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE6096tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE61N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE61d6tEei97MD7GK1RmA" key="name" value="Title"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IDCu5t6tEei97MD7GK1RmA" name="subTitle" eType="_HrE7lt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdW596tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdW6N6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;This is the element subtitle.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IDCu6d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IDCu6t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IDCu696tEei97MD7GK1RmA" key="name" value="SubTitle"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE63N6tEei97MD7GK1RmA" name="titlePosition" defaultValueLiteral="Left" unsettable="true">
+      <eAnnotations xmi:id="_LMdW7d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdW7t6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies where the title for the axis should be&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;displayed, by default it's Left.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE6396tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE64N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE64d6tEei97MD7GK1RmA" key="name" value="TitlePosition"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpjt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE6496tEei97MD7GK1RmA" name="associatedAxes" upperBound="-1" eType="_HrE6w96tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdW9N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdW9d6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the value orthogonal axes associated with&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;this axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE65t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE6596tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE66N6tEei97MD7GK1RmA" key="name" value="AssociatedAxes"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IMIZid6tEei97MD7GK1RmA" name="ancillaryAxes" upperBound="-1" eType="_HrE6w96tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdW-t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdW-96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the value ancillary base axes associated&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;with this axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMIZjN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMIZjd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMIZjt6tEei97MD7GK1RmA" key="name" value="AncillaryAxes"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE66d6tEei97MD7GK1RmA" name="seriesDefinitions" lowerBound="1" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXAN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXAd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the source of the series.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE67N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE67d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE67t6tEei97MD7GK1RmA" key="name" value="SeriesDefinitions"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-TQt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE68N6tEei97MD7GK1RmA" name="gapWidth" unsettable="true">
+      <eAnnotations xmi:id="_LMdXB96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXCN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the spacing between the first (or last)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;series marker and the edge of the unit on the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;axis. This is specified as a percentage.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE6896tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE69N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE69d6tEei97MD7GK1RmA" key="name" value="GapWidth"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE6996tEei97MD7GK1RmA" name="orientation" defaultValueLiteral="Vertical" unsettable="true">
+      <eAnnotations xmi:id="_LMdXDt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXD96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the orientation of the Axis,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;by default it's Vertical.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE6-t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE6-96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE6_N6tEei97MD7GK1RmA" key="name" value="Orientation"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhpZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE6_t6tEei97MD7GK1RmA" name="lineAttributes" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXFd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXFt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the formatting information for the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;axis line.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7Ad6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7At6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7A96tEei97MD7GK1RmA" key="name" value="LineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7Bd6tEei97MD7GK1RmA" name="label" lowerBound="1" eType="_HrE7lt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXHN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXHd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;A label instance to hold attributes for axis&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;labels.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7CN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7Cd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7Ct6tEei97MD7GK1RmA" key="name" value="Label"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7C96tEei97MD7GK1RmA" name="formatSpecifier" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXIt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXI96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the formatting for axis labels.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7Dt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7D96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7EN6tEei97MD7GK1RmA" key="name" value="FormatSpecifier"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhoLN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE7Et6tEei97MD7GK1RmA" name="labelPosition" defaultValueLiteral="Left" unsettable="true">
+      <eAnnotations xmi:id="_LMdXKd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXKt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies where the labels for the axis should&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;be displayed, by default it's Left.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7Fd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7Ft6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7F96tEei97MD7GK1RmA" key="name" value="LabelPosition"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpjt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE7Gd6tEei97MD7GK1RmA" name="staggered" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdXMN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXMd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the position to be used for the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;labels. (Staggered/Straight)&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7HN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7Hd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7Ht6tEei97MD7GK1RmA" key="name" value="Staggered"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_I2atq96tEei97MD7GK1RmA" name="interval" defaultValueLiteral="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdXN96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXON6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the showing interval for the labels.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_I2atrt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I2atr96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I2atsN6tEei97MD7GK1RmA" key="name" value="Interval"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hutd8N6tEei97MD7GK1RmA" name="markerLines" upperBound="-1" eType="_HrE7zd6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXPt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXP96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines a set of markers for positions on the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;axis scale displayed as lines across the plot at&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;those locations.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hutd896tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hutd9N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hutd9d6tEei97MD7GK1RmA" key="name" value="MarkerLines"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hutd9t6tEei97MD7GK1RmA" name="markerRanges" upperBound="-1" eType="_HrE77t6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXRN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXRd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines a set of marker areas for a range of&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;values on the axis displayed as filled&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;rectangles extending across the plot between the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;start and end positions.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hutd-d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hutd-t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hutd-96tEei97MD7GK1RmA" key="name" value="MarkerRanges"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Iw9lMt6tEei97MD7GK1RmA" name="triggers" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXSt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXS96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the triggers for the axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Iw9lNd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Iw9lNt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Iw9lN96tEei97MD7GK1RmA" key="name" value="Triggers"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-Tnt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7LN6tEei97MD7GK1RmA" name="majorGrid" lowerBound="1" eType="_HrE7bd6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXUd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXUt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the major grid associated with the axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7L96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7MN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7Md6tEei97MD7GK1RmA" key="name" value="MajorGrid"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7Mt6tEei97MD7GK1RmA" name="minorGrid" lowerBound="1" eType="_HrE7bd6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXV96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXWN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the minor grid associated with the axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7Nd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7Nt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7N96tEei97MD7GK1RmA" key="name" value="MinorGrid"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7ON6tEei97MD7GK1RmA" name="scale" lowerBound="1" eType="_HrE8Hd6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXXd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXXt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the scale for the axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7O96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7PN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7Pd6tEei97MD7GK1RmA" key="name" value="Scale"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7Pt6tEei97MD7GK1RmA" name="origin" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXY96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXZN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the location on the perpendicular&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;primary axis that should be considered as the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;point of intersection for this axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7Qd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7Qt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7Q96tEei97MD7GK1RmA" key="name" value="Origin"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhm196tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE7Rd6tEei97MD7GK1RmA" name="primaryAxis" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdXat6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXa96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies whether or not this is a primary axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7SN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7Sd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7St6tEei97MD7GK1RmA" key="name" value="PrimaryAxis"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE7TN6tEei97MD7GK1RmA" name="categoryAxis" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdXcd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXct6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies whether or not this is a category&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7T96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7UN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7Ud6tEei97MD7GK1RmA" key="name" value="CategoryAxis"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE7U96tEei97MD7GK1RmA" name="percent" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdXeN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXed6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies whether or not this is a percentage&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7Vt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7V96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7WN6tEei97MD7GK1RmA" key="name" value="Percent"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Jmrsft6tEei97MD7GK1RmA" name="labelWithinAxes" lowerBound="1" defaultValueLiteral="false" unsettable="true">
+      <eAnnotations xmi:id="_LMdXf96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXgN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies whether axis labels are within axes,&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;i.e. inside the axis delimited area.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Jmrsgd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Jmrsgt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Jmrsg96tEei97MD7GK1RmA" key="name" value="LabelWithinAxes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_KCA9pd6tEei97MD7GK1RmA" name="aligned" lowerBound="1" defaultValueLiteral="false" unsettable="true">
+      <eAnnotations xmi:id="_LMdXht6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXh96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies whether the zero point of this axis is&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;to be aligned with other axes whose &quot;Aligned&quot; is&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;true.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KCA9qN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KCA9qd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KCA9qt6tEei97MD7GK1RmA" key="name" value="Aligned"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_KCA9rN6tEei97MD7GK1RmA" name="sideBySide" lowerBound="1" defaultValueLiteral="false" unsettable="true">
+      <eAnnotations xmi:id="_LMdXjd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXjt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies whether the data points of this axis&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;is to be placed side by side instead of&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;overlayed with those of other axes whose&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;SideBySide&quot; is true.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KCA9r96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KCA9sN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KCA9sd6tEei97MD7GK1RmA" key="name" value="SideBySide"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KSQagt6tEei97MD7GK1RmA" name="cursor" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXlN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXld6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;The element represents a cursor for axis area.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KSQahd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KSQaht6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KSQah96tEei97MD7GK1RmA" key="name" value="Cursor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_KSaKTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_KbYf-t6tEei97MD7GK1RmA" name="labelSpan" unsettable="true">
+      <eAnnotations xmi:id="_LMdXm96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXnN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Give the user a way to customize a fixed&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;thickness of axis label. Span means width for&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;vertical axis, and height for horizontal axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;By default, this value is unset.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KbYf_d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KbYf_t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KbYf_96tEei97MD7GK1RmA" key="name" value="LabelSpan"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_KkAQgd6tEei97MD7GK1RmA" name="axisPercent" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_KkAQgt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_KkAQg96tEei97MD7GK1RmA" key="documentation" value="This field indicates this axis will use what percent size of chart plot height if the AxesStudyLayout of ChartWithAxes is true. The value of this field is just a number, not a percent value. The actual percent value will be computed by dividing total numbers of all axes."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KkAQhN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KkAQhd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KkAQht6tEei97MD7GK1RmA" key="name" value="AxisPercent"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HrE7Wt6tEei97MD7GK1RmA" name="ChartPreferences">
+    <eAnnotations xmi:id="_LMdXqd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMdXqt6tEei97MD7GK1RmA" key="documentation" value="This type defines the global chart preferences.&#xA;&#x9;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HrE7Xd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HrE7Xt6tEei97MD7GK1RmA" key="name" value="ChartPreferences"/>
+      <details xmi:id="_HrE7X96tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7YN6tEei97MD7GK1RmA" name="labels" lowerBound="1" upperBound="-1" eType="_HrE7lt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXr96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXsN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;A collection of labels holding preferences for the various labels used in a chart.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7Y96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7ZN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7Zd6tEei97MD7GK1RmA" key="name" value="Labels"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7Zt6tEei97MD7GK1RmA" name="blocks" lowerBound="1" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXtd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXtt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;A collection of blocks holding preferences for the different blocks used in a chart.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7ad6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7at6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7a96tEei97MD7GK1RmA" key="name" value="Blocks"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.layout.ecore#_HsIDo96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_IHqwzd6tEei97MD7GK1RmA" name="CurveFitting">
+    <eAnnotations xmi:id="_IHqwzt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_IHqwz96tEei97MD7GK1RmA" key="documentation" value="&#x9;&#x9;&#x9;This type defines the curve fitting element."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_IHqw0N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_IHqw0d6tEei97MD7GK1RmA" key="name" value="CurveFitting"/>
+      <details xmi:id="_IHqw0t6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IHqw096tEei97MD7GK1RmA" name="lineAttributes" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXwt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXw96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the formatting information for the curve.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IHqw1t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IHqw196tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IHqw2N6tEei97MD7GK1RmA" key="name" value="LineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IHqw2t6tEei97MD7GK1RmA" name="label" lowerBound="1" eType="_HrE7lt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdXyd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdXyt6tEei97MD7GK1RmA" key="documentation" value="&#x9;&#x9;&#x9;&#x9;&#x9;A label instance to hold attributes for curve labels.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IHqw3d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IHqw3t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IHqw396tEei97MD7GK1RmA" key="name" value="Label"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IHqw4N6tEei97MD7GK1RmA" name="labelAnchor" unsettable="true">
+      <eAnnotations xmi:id="_LMdXz96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdX0N6tEei97MD7GK1RmA" key="documentation" value="Specifies where the labels for the curve should be displayed.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IHqw496tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IHqw5N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IHqw5d6tEei97MD7GK1RmA" key="name" value="LabelAnchor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhmxt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_IMSKe96tEei97MD7GK1RmA" name="Dial">
+    <eAnnotations xmi:id="_KV_p2N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_KV_p2d6tEei97MD7GK1RmA" key="documentation" value="This type defines the basic elements that are expected in a dial chart. This can further be extended for special dial chart types."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_IMSKft6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_IMSKf96tEei97MD7GK1RmA" key="name" value="Dial"/>
+      <details xmi:id="_IMSKgN6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IMSKgd6tEei97MD7GK1RmA" name="startAngle" defaultValueLiteral="0" unsettable="true">
+      <eAnnotations xmi:id="_IMSKgt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKg96tEei97MD7GK1RmA" key="documentation" value="Specifies the start angle of the dial."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKhN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKhd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKht6tEei97MD7GK1RmA" key="name" value="StartAngle"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IMSKiN6tEei97MD7GK1RmA" name="stopAngle" defaultValueLiteral="180" unsettable="true">
+      <eAnnotations xmi:id="_IMSKid6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKit6tEei97MD7GK1RmA" key="documentation" value="Specifies the stop angle of the dial."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKi96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKjN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKjd6tEei97MD7GK1RmA" key="name" value="StopAngle"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IMSKj96tEei97MD7GK1RmA" name="radius" unsettable="true">
+      <eAnnotations xmi:id="_IMSKkN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKkd6tEei97MD7GK1RmA" key="documentation" value="Specifies the radius of the dial."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKkt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKk96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKlN6tEei97MD7GK1RmA" key="name" value="Radius"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IMSKlt6tEei97MD7GK1RmA" name="lineAttributes" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_IMSKl96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKmN6tEei97MD7GK1RmA" key="documentation" value="Specifies the border line style."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKmd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKmt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKm96tEei97MD7GK1RmA" key="name" value="LineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IMSKnd6tEei97MD7GK1RmA" name="fill" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_IMSKnt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKn96tEei97MD7GK1RmA" key="documentation" value="Specifies the background fill style."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKoN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKod6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKot6tEei97MD7GK1RmA" key="name" value="Fill"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhn296tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IMSKpN6tEei97MD7GK1RmA" name="dialRegions" upperBound="-1" eType="_IMSKyd6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdX_96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYAN6tEei97MD7GK1RmA" key="documentation" value="Defines a set of areas for a range of values within a dial displayed as filled sections&#xA;extending across the dial between the start and end positions."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKp96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKqN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKqd6tEei97MD7GK1RmA" key="name" value="DialRegions"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IMSKqt6tEei97MD7GK1RmA" name="majorGrid" lowerBound="1" eType="_HrE7bd6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_IMSKq96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKrN6tEei97MD7GK1RmA" key="documentation" value="Defines the major grid associated with the dial."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKrd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKrt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKr96tEei97MD7GK1RmA" key="name" value="MajorGrid"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IMSKsN6tEei97MD7GK1RmA" name="minorGrid" lowerBound="1" eType="_HrE7bd6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_IMSKsd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKst6tEei97MD7GK1RmA" key="documentation" value="Defines the minor grid associated with the dial."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKs96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKtN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKtd6tEei97MD7GK1RmA" key="name" value="MinorGrid"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IMSKtt6tEei97MD7GK1RmA" name="scale" lowerBound="1" eType="_HrE8Hd6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_IMSKt96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKuN6tEei97MD7GK1RmA" key="documentation" value="Defines the scale for the dial."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKud6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKut6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKu96tEei97MD7GK1RmA" key="name" value="Scale"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IjOEvt6tEei97MD7GK1RmA" name="inverseScale" lowerBound="1" defaultValueLiteral="false" unsettable="true">
+      <eAnnotations xmi:id="_IjOEv96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IjOEwN6tEei97MD7GK1RmA" key="documentation" value="Defines if invert the scale during rendering(right to left)"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IjOEwd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IjOEwt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IjOEw96tEei97MD7GK1RmA" key="name" value="InverseScale"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IMSKvN6tEei97MD7GK1RmA" name="label" lowerBound="1" eType="_HrE7lt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_IMSKvd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKvt6tEei97MD7GK1RmA" key="documentation" value="Defines the properties for grid labels."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKv96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKwN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKwd6tEei97MD7GK1RmA" key="name" value="Label"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IMSKwt6tEei97MD7GK1RmA" name="formatSpecifier" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_IMSKw96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKxN6tEei97MD7GK1RmA" key="documentation" value="Format specifier for grid label."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSKxd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSKxt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSKx96tEei97MD7GK1RmA" key="name" value="FormatSpecifier"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhoLN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_IMSKyd6tEei97MD7GK1RmA" name="DialRegion" eSuperTypes="_HrE77t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_IMSKyt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_IMSKy96tEei97MD7GK1RmA" key="name" value="DialRegion"/>
+      <details xmi:id="_IMSKzN6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IMSKzd6tEei97MD7GK1RmA" name="innerRadius" unsettable="true">
+      <eAnnotations xmi:id="_IMSKzt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSKz96tEei97MD7GK1RmA" key="documentation" value="Specifies the percentage value of the inner radius of the dial region."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSK0N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSK0d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSK0t6tEei97MD7GK1RmA" key="name" value="InnerRadius"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IMSK1N6tEei97MD7GK1RmA" name="outerRadius" unsettable="true">
+      <eAnnotations xmi:id="_IMSK1d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSK1t6tEei97MD7GK1RmA" key="documentation" value="Specifies the percentage value of the outer radius of the dial region."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSK196tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSK2N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSK2d6tEei97MD7GK1RmA" key="name" value="OuterRadius"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_IqRvat6tEei97MD7GK1RmA" name="EStringToDataSetMapEntry" instanceClassName="java.util.Map$Entry">
+    <eAnnotations xmi:id="_KV_qP96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_KV_qQN6tEei97MD7GK1RmA" key="documentation" value="Each entry makes up the value of an actual data point to be plotted in the chart.  "/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_I-ymo96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_I-ympN6tEei97MD7GK1RmA" key="name" value="EStringToDataSetMapEntry"/>
+      <details xmi:id="_I-ympd6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IqRva96tEei97MD7GK1RmA" name="key" lowerBound="1">
+      <eAnnotations xmi:id="_I-ymp96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-ymqN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-ymqd6tEei97MD7GK1RmA" key="name" value="Key"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0im96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IqRvbd6tEei97MD7GK1RmA" name="value" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_I-ymrN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_I-ymrd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_I-ymrt6tEei97MD7GK1RmA" key="name" value="Value"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-Syt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HrE7bd6tEei97MD7GK1RmA" name="Grid">
+    <eAnnotations xmi:id="_LMdYTd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMdYTt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;This type defines the grid associated with an axis.&#xA;&#x9;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HrE7cN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HrE7cd6tEei97MD7GK1RmA" key="name" value="Grid"/>
+      <details xmi:id="_HrE7ct6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7c96tEei97MD7GK1RmA" name="lineAttributes" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYU96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYVN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Holds formatting information for the grid lines.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7dt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7d96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7eN6tEei97MD7GK1RmA" key="name" value="LineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE7et6tEei97MD7GK1RmA" name="tickStyle" lowerBound="1" defaultValueLiteral="Across" unsettable="true">
+      <eAnnotations xmi:id="_LMdYWt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYW96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies how the tick is to be marked for the grid line.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7fd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7ft6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7f96tEei97MD7GK1RmA" key="name" value="TickStyle"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhqd96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7gd6tEei97MD7GK1RmA" name="tickAttributes" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYYd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYYt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the formatting information for the tick.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7hN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7hd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7ht6tEei97MD7GK1RmA" key="name" value="TickAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE7iN6tEei97MD7GK1RmA" name="tickSize" unsettable="true">
+      <eAnnotations xmi:id="_LMdYaN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYad6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the formatting information for the tick.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7i96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7jN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7jd6tEei97MD7GK1RmA" key="name" value="TickSize"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE7j96tEei97MD7GK1RmA" name="tickCount" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdYb96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYcN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the frequency of the grid lines per unit of the scale.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7kt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7k96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7lN6tEei97MD7GK1RmA" key="name" value="TickCount"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HrE7lt6tEei97MD7GK1RmA" name="Label">
+    <eAnnotations xmi:id="_LMdYdt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMdYd96tEei97MD7GK1RmA" key="documentation" value="This type defines a text label. It is not intended as a standalone element but should be associated with &#xA;a chart element.&#x9;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HrE7md6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HrE7mt6tEei97MD7GK1RmA" key="name" value="Label"/>
+      <details xmi:id="_HrE7m96tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7nN6tEei97MD7GK1RmA" name="caption" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYfN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYfd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;The string content displayed in the label.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7n96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7oN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7od6tEei97MD7GK1RmA" key="name" value="Caption"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhqUN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7qt6tEei97MD7GK1RmA" name="background" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYg96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYhN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the background for the label.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7rd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7rt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7r96tEei97MD7GK1RmA" key="name" value="Background"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhn296tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7sd6tEei97MD7GK1RmA" name="outline" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYit6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYi96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the outline (border) for the label.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7tN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7td6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7tt6tEei97MD7GK1RmA" key="name" value="Outline"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7uN6tEei97MD7GK1RmA" name="shadowColor" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYkd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYkt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the shadow color for the label.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7u96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7vN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7vd6tEei97MD7GK1RmA" key="name" value="ShadowColor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhnNN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7v96tEei97MD7GK1RmA" name="insets" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYmN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYmd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the insets for the label.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7wt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7w96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7xN6tEei97MD7GK1RmA" key="name" value="Insets"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhoed6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE7xt6tEei97MD7GK1RmA" name="visible" lowerBound="1" defaultValueLiteral="true" unsettable="true">
+      <eAnnotations xmi:id="_LMdYn96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYoN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies whether or not the label is visible on the chart.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;By default it's true;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7yd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7yt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7y96tEei97MD7GK1RmA" key="name" value="Visible"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_J6tcwN6tEei97MD7GK1RmA" name="ellipsis" lowerBound="1" defaultValueLiteral="0" unsettable="true">
+      <eAnnotations xmi:id="_J6tcwd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_J6tcwt6tEei97MD7GK1RmA" key="documentation" value="Specifies the min count of characters before ellipsis. 0 means ellipsis won't be used."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_J6tcw96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_J6tcxN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_J6tcxd6tEei97MD7GK1RmA" key="name" value="Ellipsis"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HrE7zd6tEei97MD7GK1RmA" name="MarkerLine">
+    <eAnnotations xmi:id="_LMdYrd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMdYrt6tEei97MD7GK1RmA" key="documentation" value="This type defines a single line element. It is intended for use as a marker associated with an Axis.&#xA;It can be used to denote a target value or threshold."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HrE70N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HrE70d6tEei97MD7GK1RmA" key="name" value="MarkerLine"/>
+      <details xmi:id="_HrE70t6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Huteo96tEei97MD7GK1RmA" name="lineAttributes" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYs96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYtN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specify the line properties.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hutept6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hutep96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HuteqN6tEei97MD7GK1RmA" key="name" value="LineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Huteqt6tEei97MD7GK1RmA" name="value" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYut6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYu96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines where this line is to be positioned&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;w.r.t the axis. (Can be a value on the axis or a&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;category name).&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Huterd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hutert6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Huter96tEei97MD7GK1RmA" key="name" value="Value"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-SxN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hutesd6tEei97MD7GK1RmA" name="label" lowerBound="1" eType="_HrE7lt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYwd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYwt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the label associated with this line.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HutetN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hutetd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hutett6tEei97MD7GK1RmA" key="name" value="Label"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Hutet96tEei97MD7GK1RmA" name="labelAnchor" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdYx96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYyN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies where the label associated with this&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;line is to be positioned with respect to the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;line itself.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Huteut6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Huteu96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HutevN6tEei97MD7GK1RmA" key="name" value="LabelAnchor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhmxt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hutevt6tEei97MD7GK1RmA" name="formatSpecifier" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdYzt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdYz96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the formatting for marker line labels.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hutewd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hutewt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hutew96tEei97MD7GK1RmA" key="name" value="FormatSpecifier"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhoLN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IxHWu96tEei97MD7GK1RmA" name="triggers" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdY1d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdY1t6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the triggers for the marker line.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IxHWvt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IxHWv96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IxHWwN6tEei97MD7GK1RmA" key="name" value="Triggers"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-Tnt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KSQbut6tEei97MD7GK1RmA" name="cursor" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_KSQbu96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_KSQbvN6tEei97MD7GK1RmA" key="documentation" value="The element represents a cursor for marker line."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KSQbvd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KSQbvt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KSQbv96tEei97MD7GK1RmA" key="name" value="Cursor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_KSaKTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HrE77t6tEei97MD7GK1RmA" name="MarkerRange">
+    <eAnnotations xmi:id="_LMdY496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMdY5N6tEei97MD7GK1RmA" key="documentation" value="This type defines a marker area. It is intended for use as a range marker associated with an Axis.&#xA;&#x9;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HrE78d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HrE78t6tEei97MD7GK1RmA" key="name" value="MarkerRange"/>
+      <details xmi:id="_HrE7896tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE79N6tEei97MD7GK1RmA" name="outline" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdY6d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdY6t6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specify the outline properties for the marker&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;range.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7996tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7-N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE7-d6tEei97MD7GK1RmA" key="name" value="Outline"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE7-96tEei97MD7GK1RmA" name="fill" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdY8N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdY8d6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specify the background for the marker range.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE7_t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE7_96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE8AN6tEei97MD7GK1RmA" key="name" value="Fill"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhn296tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hute2d6tEei97MD7GK1RmA" name="startValue" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdY996tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdY-N6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines where this area starts relative to the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;axis scale.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hute3N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hute3d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hute3t6tEei97MD7GK1RmA" key="name" value="StartValue"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-SxN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hute4N6tEei97MD7GK1RmA" name="endValue" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdY_t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdY_96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines where this area is ends relative to the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;axis scale.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hute496tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hute5N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hute5d6tEei97MD7GK1RmA" key="name" value="EndValue"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-SxN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hute596tEei97MD7GK1RmA" name="label" lowerBound="1" eType="_HrE7lt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZBd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZBt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the label associated with this area.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hute6t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hute696tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hute7N6tEei97MD7GK1RmA" key="name" value="Label"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Hute7d6tEei97MD7GK1RmA" name="labelAnchor" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdZC96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZDN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies where the label associated with this&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;line is to be positioned within respect to the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;marker range itself.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hute8N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hute8d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_Hute8t6tEei97MD7GK1RmA" key="name" value="LabelAnchor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhmxt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Hute-96tEei97MD7GK1RmA" name="formatSpecifier" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZEt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZE96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the formatting for marker range&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;labels.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Hute_t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_Hute_96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HutfAN6tEei97MD7GK1RmA" key="name" value="FormatSpecifier"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhoLN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IxHW-N6tEei97MD7GK1RmA" name="triggers" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZGd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZGt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the triggers for the marker range.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IxHW-96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IxHW_N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IxHW_d6tEei97MD7GK1RmA" key="name" value="Triggers"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-Tnt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KSQb_t6tEei97MD7GK1RmA" name="cursor" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_KSQb_96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_KSQcAN6tEei97MD7GK1RmA" key="documentation" value="The element represents a cursor for marker range."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KSQcAd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KSQcAt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KSQcA96tEei97MD7GK1RmA" key="name" value="Cursor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_KSaKTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_IMSLkt6tEei97MD7GK1RmA" name="Needle">
+    <eAnnotations xmi:id="_IMSLk96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_IMSLlN6tEei97MD7GK1RmA" key="documentation" value="&#x9;&#x9;&#x9;This type defines a needle of a dial."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_IMSLld6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_IMSLlt6tEei97MD7GK1RmA" key="name" value="Needle"/>
+      <details xmi:id="_IMSLl96tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IMSLmN6tEei97MD7GK1RmA" name="lineAttributes" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_IMSLmd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSLmt6tEei97MD7GK1RmA" key="documentation" value="Specify the line properties for the needle."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSLm96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSLnN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSLnd6tEei97MD7GK1RmA" key="name" value="LineAttributes"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrho3t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IMSLn96tEei97MD7GK1RmA" name="decorator" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_IMSLoN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_IMSLod6tEei97MD7GK1RmA" key="documentation" value="Specify the line decorator for the needle."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IMSLot6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IMSLo96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IMSLpN6tEei97MD7GK1RmA" key="name" value="Decorator"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_IMb9396tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HrE8Hd6tEei97MD7GK1RmA" name="Scale">
+    <eAnnotations xmi:id="_LMdZO96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMdZPN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;This type defines the scale associated with an axis.&#xA;&#x9;&#x9;&#x9;"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HrE8IN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HrE8Id6tEei97MD7GK1RmA" key="name" value="Scale"/>
+      <details xmi:id="_HrE8It6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE8I96tEei97MD7GK1RmA" name="min" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZQd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZQt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Minimum value that should appear on the axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE8Jt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE8J96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE8KN6tEei97MD7GK1RmA" key="name" value="Min"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-SxN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrE8Kt6tEei97MD7GK1RmA" name="max" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZSN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZSd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Maximum value that should appear on the axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE8Ld6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE8Lt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE8L96tEei97MD7GK1RmA" key="name" value="Max"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-SxN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE8Md6tEei97MD7GK1RmA" name="step" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdZT96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZUN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Step size in the values shown on the axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE8NN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE8Nd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE8Nt6tEei97MD7GK1RmA" key="name" value="Step"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE8ON6tEei97MD7GK1RmA" name="unit" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdZVt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZV96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Step unit in the values shown on the axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE8O96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE8PN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE8Pd6tEei97MD7GK1RmA" key="name" value="Unit"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhpwN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE8P96tEei97MD7GK1RmA" name="minorGridsPerUnit" lowerBound="1" defaultValueLiteral="5" unsettable="true">
+      <eAnnotations xmi:id="_LMdZXd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZXt6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the number of minor grids per unit of&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;the scale, by default it's 5.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE8Qt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE8Q96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE8RN6tEei97MD7GK1RmA" key="name" value="MinorGridsPerUnit"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_JNLDSt6tEei97MD7GK1RmA" name="stepNumber" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdZZN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZZd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Number of steps in the values shown on the axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_JNLDTd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_JNLDTt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_JNLDT96tEei97MD7GK1RmA" key="name" value="StepNumber"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_JNLDUd6tEei97MD7GK1RmA" name="showOutside" lowerBound="1" defaultValueLiteral="false" unsettable="true">
+      <eAnnotations xmi:id="_LMdZa96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZbN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Indicates if it shows values outside Axis range.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_JNLDVN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_JNLDVd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_JNLDVt6tEei97MD7GK1RmA" key="name" value="ShowOutside"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_JZp-0N6tEei97MD7GK1RmA" name="tickBetweenCategories" defaultValueLiteral="true" unsettable="true">
+      <eAnnotations xmi:id="_LMdZct6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZc96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifes if the major tick is rendered at the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;category value or between two categories. This&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;only affects the category and text style axis.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_JZp-096tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_JZp-1N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_JZp-1d6tEei97MD7GK1RmA" key="name" value="TickBetweenCategories"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_KK6eIt6tEei97MD7GK1RmA" name="autoExpand" lowerBound="1" defaultValueLiteral="true" unsettable="true">
+      <eAnnotations xmi:id="_LMdZed6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZet6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifes if min/max value should be expanded &#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;by 1 unit, by default is true.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KK6eJd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KK6eJt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KK6eJ96tEei97MD7GK1RmA" key="name" value="AutoExpand"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_KNBV596tEei97MD7GK1RmA" name="majorGridsStepNumber" lowerBound="1" defaultValueLiteral="1" unsettable="true">
+      <eAnnotations xmi:id="_KNBV6N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_KNBV6d6tEei97MD7GK1RmA" key="documentation" value="Specify the step number of axis grid lines."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KNBV6t6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KNBV696tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KNBV7N6tEei97MD7GK1RmA" key="name" value="MajorGridsStepNumber"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0iMN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_KdLTAN6tEei97MD7GK1RmA" name="factor" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdZh96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZiN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the fixed scaling factor.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KdLTA96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KdLTBN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KdLTBd6tEei97MD7GK1RmA" key="name" value="Factor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0h4N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_HrE8Td6tEei97MD7GK1RmA" name="Series">
+    <eAnnotations xmi:id="_LMdZjt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_LMdZj96tEei97MD7GK1RmA" key="documentation" value="This type defines a single (related) group of data to be plotted in a chart.  A series is usually expected to be associated with a numerical axis.&#xA;The series includes a name, visualization settings, and a query definition used to retrieve the data point values.  At designtime, the series&#xA;data set is null, while at runtime, each series' data set gets populated with the data for that series."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_HrE8UN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_HrE8Ud6tEei97MD7GK1RmA" key="name" value="Series"/>
+      <details xmi:id="_HrE8Ut6tEei97MD7GK1RmA" key="kind" value="elementOnly"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrE8U96tEei97MD7GK1RmA" name="visible" defaultValueLiteral="true" unsettable="true">
+      <eAnnotations xmi:id="_LMdZlN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZld6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Determines visibility of the series.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrE8Vt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrE8V96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrE8WN6tEei97MD7GK1RmA" key="name" value="Visible"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrOrwd6tEei97MD7GK1RmA" name="label" lowerBound="1" eType="_HrE7lt6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZm96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZnN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the properties for the Series data points.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrOrxN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrOrxd6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrOrxt6tEei97MD7GK1RmA" key="name" value="Label"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrOrx96tEei97MD7GK1RmA" name="dataDefinition" lowerBound="1" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZod6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZot6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Defines the source of the data for the series.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;(e.g. Database field which will provide the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;values for the series).&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrOryt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrOry96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrOrzN6tEei97MD7GK1RmA" key="name" value="DataDefinition"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-TEd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrOrzt6tEei97MD7GK1RmA" name="seriesIdentifier" lowerBound="1">
+      <eAnnotations xmi:id="_LMdZqN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZqd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies an identifier to link the series with&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;its definition at runtime.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrOr0d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrOr0t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrOr096tEei97MD7GK1RmA" key="name" value="SeriesIdentifier"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hod6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrOr1d6tEei97MD7GK1RmA" name="dataPoint" lowerBound="1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZr96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZsN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies what (and how) information is shown in&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;the data label.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrOr2N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrOr2d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrOr2t6tEei97MD7GK1RmA" key="name" value="DataPoint"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_HrhnU96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IoeZcN6tEei97MD7GK1RmA" name="dataSets" lowerBound="1" upperBound="-1" eType="_IqRvat6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZtt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZt96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the runtime data for the series.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IoeZc96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IoeZdN6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IoeZdd6tEei97MD7GK1RmA" key="name" value="DataSets"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrOr6t6tEei97MD7GK1RmA" name="labelPosition" defaultValueLiteral="Outside" unsettable="true">
+      <eAnnotations xmi:id="_LMdZvN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZvd6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies where the data label for the series&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;should be displayed, by default it's Outside.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrOr7d6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrOr7t6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrOr796tEei97MD7GK1RmA" key="name" value="LabelPosition"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EEnum" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_Hrhpjt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrOr8d6tEei97MD7GK1RmA" name="stacked" unsettable="true">
+      <eAnnotations xmi:id="_LMdZw96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZxN6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies whether the series is to be rendered&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;stacked.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrOr9N6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrOr9d6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrOr9t6tEei97MD7GK1RmA" key="name" value="Stacked"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_HrOr-N6tEei97MD7GK1RmA" name="triggers" upperBound="-1" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZyt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZy96tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Holds the triggers for the series.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrOr-96tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrOr_N6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrOr_d6tEei97MD7GK1RmA" key="name" value="Triggers"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.data.ecore#_Hr-Tnt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HrOr_96tEei97MD7GK1RmA" name="translucent" lowerBound="1" unsettable="true">
+      <eAnnotations xmi:id="_LMdZ0d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZ0t6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies whether the series elements are to be&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;rendered translucent. This setting is only&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;applicable for elements with solid color fills.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_HrOsAt6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_HrOsA96tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_HrOsBN6tEei97MD7GK1RmA" key="name" value="Translucent"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_XMLType.ecore#_Hr0hw96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IHqyEt6tEei97MD7GK1RmA" name="curveFitting" eType="_IHqwzd6tEei97MD7GK1RmA" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_LMdZ2N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_LMdZ2d6tEei97MD7GK1RmA" key="documentation" value="&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;Specifies the curve fitting attributes for the&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;series.&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_IHqyFd6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_IHqyFt6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_IHqyF96tEei97MD7GK1RmA" key="name" value="CurveFitting"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KSQctd6tEei97MD7GK1RmA" name="cursor" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_KSQctt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_KSQct96tEei97MD7GK1RmA" key="documentation" value="The element represents cursor for series area."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_KSQcuN6tEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+        <details xmi:id="_KSQcud6tEei97MD7GK1RmA" key="kind" value="element"/>
+        <details xmi:id="_KSQcut6tEei97MD7GK1RmA" key="name" value="Cursor"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="chart_org.eclipse.birt.chart.engine_src_model_org.eclipse.birt.chart.model.attribute.ecore#_KSaKTd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

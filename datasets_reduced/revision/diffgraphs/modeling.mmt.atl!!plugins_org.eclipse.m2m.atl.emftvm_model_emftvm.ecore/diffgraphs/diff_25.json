@@ -1,0 +1,48 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_5l3Drt6uEei97MD7GK1RmA', 'name':'matchOneOnly','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@dd65082 (expression: EBoolean)','eContainingClass':'Rule','eParameters':['frame','valuesMap']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_5l3Dsd6uEei97MD7GK1RmA', 'name':'valuesMap','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7ebb28d8 (expression: EMap<EString, EJavaObject>)','eOperation':'matchOneOnly'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_5l3DsN6uEei97MD7GK1RmA', 'name':'frame','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'StackFrame','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@14a30e1d (expression: StackFrame)','eOperation':'matchOneOnly'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_5l3Dw96uEei97MD7GK1RmA', 'name':'applyOne','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EJavaObject','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3f578adf (expression: EJavaObject)','eContainingClass':'Rule','eParameters':['frame','trace']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_5l3Dxd6uEei97MD7GK1RmA', 'name':'frame','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'StackFrame','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3e7bfe08 (expression: StackFrame)','eOperation':'applyOne'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_5l3Dxt6uEei97MD7GK1RmA', 'name':'trace','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'TraceLink','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@14382c2f (expression: TraceLink)','eOperation':'applyOne'}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_5WZf796tEei97MD7GK1RmA', 'name':'Rule','ePackage':'emftvm','abstract':'false','interface':'false','eOperations':['findField','hasField','findStaticField','hasStaticField','registerField','matchSingle','matchRecursive','matchManual','matchOne','matchOneOnly','createTraces','completeTraceFor','apply','postApply','applyFirst','...'],'eStructuralFeatures':['module','mode','inputElements','outputElements','eSuperRules','eSubRules','matcher','applier','postApply','superRules','abstract','fields','default','distinctElements','unique','leaf','withLeaves'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@30efc592 (expression: NamedElement)']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "0", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "3", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "3", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "6", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "6", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+}]}

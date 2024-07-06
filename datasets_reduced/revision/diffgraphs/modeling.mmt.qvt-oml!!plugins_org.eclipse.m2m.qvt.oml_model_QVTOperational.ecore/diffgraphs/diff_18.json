@@ -1,0 +1,58 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_Bado6d6vEei97MD7GK1RmA', 'name':'visitForExp','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EJavaObject','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@584dd5ae (expression: T)','eContainingClass':'ExtendedVisitor','eParameters':['forExp']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_Bado696vEei97MD7GK1RmA', 'name':'forExp','ordered':'true','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'ForExp','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@168de98e (expression: ForExp)','eOperation':'visitForExp'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_Badpid6vEei97MD7GK1RmA', 'name':'ForExp','ePackage':'expressions','abstract':'false','interface':'false','eOperations':['accept'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@3f064d8c (expression: ImperativeLoopExp)']}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_Badpit6vEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@73969e21 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'accept','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EJavaObject','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@343b9a41 (expression: T)','eContainingClass':'ForExp','eTypeParameters':['T','U'],'eParameters':['v']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_Badpi96vEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@39dccadb (key: body, value: return ((<%org.eclipse.m2m.internal.qvt.oml.expressions.ExtendedVisitor%><T, ?, ?, ?, ?>) v).visitForExp(this);)'],'eModelElement':'accept'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_Badpm96vEei97MD7GK1RmA', 'name':'v','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Visitor','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@59c100a6 (expression: U)','eOperation':'accept'}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_BadpjN6vEei97MD7GK1RmA', 'key':'body','value':'return ((<%org.eclipse.m2m.internal.qvt.oml.expressions.ExtendedVisitor%><T, ?, ?, ?, ?>) v).visitForExp(this);'}}" 
+},{
+	 "id": "7", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_BFWTvd6vEei97MD7GK1RmA', 'name':'ExtendedVisitor','ePackage':'expressions','eTypeParameters':['T','S','COA','SSA','CT'],'abstract':'true','interface':'true','eOperations':['visitModule','visitLibrary','visitRename','visitModuleImport','visitProperty','visitLocalProperty','visitConfigProperty','visitContextualProperty','visitImperativeOperation','visitVarParameter','visitOperationBody','...'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@18c008ff (expression: Visitor<T, EClassifier, EOperation, EStructuralFeature, EEnumLiteral, EParameter, S, COA, SSA, CT>)']}}" 
+},{
+	 "id": "8", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_BFWSAd6vEei97MD7GK1RmA', 'name':'expressions','nsURI':'http://www.eclipse.org/qvt/1.0.0/Operational/Expressions','nsPrefix':'qvtoperational.expr','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@3cf1e3a8','eClassifiers':['Module','Library','Rename','ModuleImport','Property','LocalProperty','ConfigProperty','ContextualProperty','ImperativeOperation','ModelParameter','VarParameter','DirectionKind','OperationBody','ConstructorBody','...'],'eSuperPackage':'qvtoperational'}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "2", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "3", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "3", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "4", 
+	 "target": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "7", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "8", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+}]}

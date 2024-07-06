@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_XcT-4N6tEei97MD7GK1RmA" name="modelingBot" nsURI="http://www.eclipse.org/emf/eef/mbot/1.0.0" nsPrefix="eef-mbot">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT-4d6tEei97MD7GK1RmA" name="Scenario" eSuperTypes="_XcT-496tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT-4t6tEei97MD7GK1RmA" name="Action" abstract="true" eSuperTypes="_XcT-6N6tEei97MD7GK1RmA _XcT-9d6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT-496tEei97MD7GK1RmA" name="Sequence" abstract="true" eSuperTypes="_XcT-6N6tEei97MD7GK1RmA _XcT-9d6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XcT-5N6tEei97MD7GK1RmA" name="actions" upperBound="-1" eType="_XcT-4t6tEei97MD7GK1RmA" transient="true" derived="true" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XcT-5d6tEei97MD7GK1RmA" name="sequences" upperBound="-1" eType="_XcT-496tEei97MD7GK1RmA" transient="true" derived="true" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XcT-5t6tEei97MD7GK1RmA" name="processings" upperBound="-1" eType="_XcT-9d6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT-596tEei97MD7GK1RmA" name="Wizard" eSuperTypes="_XcT-496tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT-6N6tEei97MD7GK1RmA" name="DocumentedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT-6d6tEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT-696tEei97MD7GK1RmA" name="documentation">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT-7d6tEei97MD7GK1RmA" name="ModelingBot">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XcT-7t6tEei97MD7GK1RmA" name="propertiesEditionContext">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.eef.components_model_components.ecore#_Xcdxtd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XcT-8N6tEei97MD7GK1RmA" name="sequences" upperBound="-1" eType="_XcT-496tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT-8d6tEei97MD7GK1RmA" name="DetailsPage" eSuperTypes="_XcT-496tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT-8t6tEei97MD7GK1RmA" name="PropertiesView" eSuperTypes="_XcT-496tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT-896tEei97MD7GK1RmA" name="id">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT-9d6tEei97MD7GK1RmA" name="Processing" abstract="true" interface="true"/>
+  <eSubpackages xmi:id="_XcT-9t6tEei97MD7GK1RmA" name="EEFActions" nsURI="http://www.eclipse.org/emf/eef/test/EEFActions/1.0.0" nsPrefix="eef-test">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT-996tEei97MD7GK1RmA" name="EEFAction" abstract="true" eSuperTypes="_XcT-4t6tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT--N6tEei97MD7GK1RmA" name="EditAction" abstract="true">
+      <eSuperTypes href="#_XcT-996tEei97MD7GK1RmA"/>
+      <eSuperTypes href="plugins_org.eclipse.emf.eef.editor.model_model_extended.ecore#_XdqC1N6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XcT--d6tEei97MD7GK1RmA" name="propertiesEditionElement">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.eef.components_model_components.ecore#_Xcdxvd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XcT--96tEei97MD7GK1RmA" name="referenceableObject">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.eef.editor.model_model_extended.ecore#_XdqC1N6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XcT-_d6tEei97MD7GK1RmA" name="eContainingFeature">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Xcdwlt6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_AN6tEei97MD7GK1RmA" name="Add" eSuperTypes="_XcT--N6tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_Ad6tEei97MD7GK1RmA" name="Remove" eSuperTypes="_XcT--N6tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_At6tEei97MD7GK1RmA" name="SetAttribute" eSuperTypes="_XcT--N6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT_A96tEei97MD7GK1RmA" name="value">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_Bd6tEei97MD7GK1RmA" name="Unset" eSuperTypes="_XcT--N6tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_Bt6tEei97MD7GK1RmA" name="Cancel" eSuperTypes="_XcT-996tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_B96tEei97MD7GK1RmA" name="Check" eSuperTypes="_XcT-996tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_CN6tEei97MD7GK1RmA" name="OpenEEFEditor" eSuperTypes="_XcT-996tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT_Cd6tEei97MD7GK1RmA" name="editorName">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_C96tEei97MD7GK1RmA" name="SetReference" eSuperTypes="_XcT--N6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XcT_DN6tEei97MD7GK1RmA" name="value">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.eef.editor.model_model_extended.ecore#_XdqC1N6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages xmi:id="_XcT_Dt6tEei97MD7GK1RmA" name="EclipseActions" nsURI="http://www.eclipse.org/emf/eef/test/EclipseActions/1.0.0" nsPrefix="eef-test">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_D96tEei97MD7GK1RmA" name="EclipseAction" abstract="true" eSuperTypes="_XcT-4t6tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_EN6tEei97MD7GK1RmA" name="CreateProject" eSuperTypes="_XcT_D96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT_Ed6tEei97MD7GK1RmA" name="projectName">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_E96tEei97MD7GK1RmA" name="OpenPerspective" eSuperTypes="_XcT_D96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT_FN6tEei97MD7GK1RmA" name="type">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_Ft6tEei97MD7GK1RmA" name="CloseProject" eSuperTypes="_XcT_D96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT_F96tEei97MD7GK1RmA" name="projectName">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_Gd6tEei97MD7GK1RmA" name="Save" eSuperTypes="_XcT_D96tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_Gt6tEei97MD7GK1RmA" name="Undo" eSuperTypes="_XcT_D96tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_G96tEei97MD7GK1RmA" name="Redo" eSuperTypes="_XcT_D96tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_HN6tEei97MD7GK1RmA" name="OpenProject" eSuperTypes="_XcT_D96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT_Hd6tEei97MD7GK1RmA" name="projectName">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_H96tEei97MD7GK1RmA" name="RemoveProject" eSuperTypes="_XcT_D96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT_IN6tEei97MD7GK1RmA" name="projectName">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_It6tEei97MD7GK1RmA" name="CloseEditor" eSuperTypes="_XcT_D96tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XcT_I96tEei97MD7GK1RmA" name="CreateModel">
+      <eSuperTypes href="#_XcT_D96tEei97MD7GK1RmA"/>
+      <eSuperTypes href="plugins_org.eclipse.emf.eef.editor.model_model_extended.ecore#_XdqC1N6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT_JN6tEei97MD7GK1RmA" name="modelName">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcT_Jt6tEei97MD7GK1RmA" name="path">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XcT_KN6tEei97MD7GK1RmA" name="root">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_Xcdv7t6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

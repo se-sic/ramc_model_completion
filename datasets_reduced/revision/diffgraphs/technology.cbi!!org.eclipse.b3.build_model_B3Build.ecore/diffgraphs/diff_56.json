@@ -1,0 +1,46 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_gCjO5d6zEei97MD7GK1RmA', 'name':'CompundBestFoundRepository','ePackage':'build','abstract':'false','interface':'false','eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@6009947d (expression: CompoundBuildUnitRepository)']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_gUHf396zEei97MD7GK1RmA', 'name':'status','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'IStatus','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@1295d54 (expression: IStatus)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'ResolutionInfo','iD':'false','eAttributeType':'IStatus'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_gUHgC96zEei97MD7GK1RmA', 'name':'CompoundBestFoundRepository','ePackage':'build','abstract':'false','interface':'false','eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@74b4d1eb (expression: CompoundBuildUnitRepository)']}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_gUHgD96zEei97MD7GK1RmA', 'name':'IBuildUnitRepository','instanceClassName':'org.eclipse.b3.build.core.IBuildUnitRepository','instanceTypeName':'org.eclipse.b3.build.core.IBuildUnitRepository','ePackage':'build','abstract':'true','interface':'true'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_gUHgEd6zEei97MD7GK1RmA', 'name':'UnitResolutionInfo','ePackage':'build','abstract':'false','interface':'false','eStructuralFeatures':['unit','context'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@6e856598 (expression: ResolutionInfo)']}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_gUHgEt6zEei97MD7GK1RmA', 'name':'unit','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BuildUnit','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@2c6b49fb (expression: BuildUnit)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'UnitResolutionInfo','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'BuildUnit'}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_gUHgE96zEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BExecutionContext','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@21e330e4 (expression: BExecutionContext)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'UnitResolutionInfo','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'BExecutionContext'}}" 
+},{
+	 "id": "7", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ZnRzut6zEei97MD7GK1RmA', 'name':'ResolutionInfo','ePackage':'build','abstract':'false','interface':'false','eStructuralFeatures':['status']}}" 
+},{
+	 "id": "8", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_LS_N4d6zEei97MD7GK1RmA', 'name':'build','nsURI':'http://b3build/1.0','nsPrefix':'build','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@482e2043','eClassifiers':['BuildUnit','IBuilder','VersionRange','Version','VersionedCapability','BuilderInput','PathGroup','Prerequisite','BuildResultReference','CompoundBuildResultReference','BuilderReference','Capability','RequiredCapability','...']}}" 
+}], 
+ "links": [{
+	 "source": "4", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "4", 
+	 "target": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "7", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "8", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+}]}

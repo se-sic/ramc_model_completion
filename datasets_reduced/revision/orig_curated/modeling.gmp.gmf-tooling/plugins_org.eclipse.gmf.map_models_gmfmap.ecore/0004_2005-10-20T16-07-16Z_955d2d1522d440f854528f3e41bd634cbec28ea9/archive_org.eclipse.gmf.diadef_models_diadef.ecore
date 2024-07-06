@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_au4jJ96tEei97MD7GK1RmA" name="diadef" nsURI="http://www.eclipse.org/gmf/2005/DiagramDefinition" nsPrefix="diadef">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jKN6tEei97MD7GK1RmA" name="DiagramElement" abstract="true" eSuperTypes="_au4jS96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jKd6tEei97MD7GK1RmA" name="needsTool" defaultValueLiteral="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jK96tEei97MD7GK1RmA" name="toolGroupID">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jLd6tEei97MD7GK1RmA" name="smallIconPath">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jL96tEei97MD7GK1RmA" name="largeIconPath">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jMd6tEei97MD7GK1RmA" name="Node" eSuperTypes="_au4jKN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jMt6tEei97MD7GK1RmA" name="maxWidth">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jNN6tEei97MD7GK1RmA" name="maxHeight">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jNt6tEei97MD7GK1RmA" name="defaultWidth">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jON6tEei97MD7GK1RmA" name="defaultHeight">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jOt6tEei97MD7GK1RmA" name="compartments" upperBound="-1" eType="_au4jO96tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jO96tEei97MD7GK1RmA" name="Compartment" eSuperTypes="_au4jSN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jPN6tEei97MD7GK1RmA" name="collapsible">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jPt6tEei97MD7GK1RmA" name="needsTitle">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jQN6tEei97MD7GK1RmA" name="Connection" eSuperTypes="_au4jKN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jQd6tEei97MD7GK1RmA" name="lineKind" lowerBound="1" eType="_au4jTd6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jQt6tEei97MD7GK1RmA" name="sourceAdornment" eType="_au4jUd6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jQ96tEei97MD7GK1RmA" name="targetAdornment" eType="_au4jUd6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jRN6tEei97MD7GK1RmA" name="Canvas" eSuperTypes="_au4jS96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jRd6tEei97MD7GK1RmA" name="nodes" upperBound="-1" eType="_au4jMd6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jRt6tEei97MD7GK1RmA" name="links" upperBound="-1" eType="_au4jQN6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jR96tEei97MD7GK1RmA" name="RunTimeProperty" eSuperTypes="_au4jSN6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jSN6tEei97MD7GK1RmA" name="Identity" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_au4jSd6tEei97MD7GK1RmA" name="name" lowerBound="1" iD="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jS96tEei97MD7GK1RmA" name="CommonBase" abstract="true" eSuperTypes="_au4jSN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jTN6tEei97MD7GK1RmA" name="properties" upperBound="-1" eType="_au4jR96tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_au4jTd6tEei97MD7GK1RmA" name="LineKind">
+    <eLiterals xmi:id="_au4jTt6tEei97MD7GK1RmA" name="SOLID"/>
+    <eLiterals xmi:id="_au4jT96tEei97MD7GK1RmA" name="DOT" value="1"/>
+    <eLiterals xmi:id="_au4jUN6tEei97MD7GK1RmA" name="DASH" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_au4jUd6tEei97MD7GK1RmA" name="AdornmentKind">
+    <eLiterals xmi:id="_au4jUt6tEei97MD7GK1RmA" name="None"/>
+    <eLiterals xmi:id="_au4jU96tEei97MD7GK1RmA" name="OpenTriangle" value="1"/>
+    <eLiterals xmi:id="_au4jVN6tEei97MD7GK1RmA" name="FilledTriangle" value="2"/>
+    <eLiterals xmi:id="_au4jVd6tEei97MD7GK1RmA" name="Rhomb" value="3"/>
+    <eLiterals xmi:id="_au4jVt6tEei97MD7GK1RmA" name="FilledRhomb" value="4"/>
+  </eClassifiers>
+</ecore:EPackage>

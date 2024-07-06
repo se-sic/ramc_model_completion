@@ -1,0 +1,41 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_kfjGh96wEei97MD7GK1RmA', 'name':'Licenses','ePackage':'p2view','abstract':'false','interface':'false','eStructuralFeatures':['licenses']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_keDRud6wEei97MD7GK1RmA', 'name':'licenses','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'ILicense','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7f691e51 (expression: ILicense)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'Licenses','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'ILicense'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_kfjGkN6wEei97MD7GK1RmA', 'name':'licensesContainer','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Licenses','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@38f250ab (expression: Licenses)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'IUDetails','containment':'false','container':'false','resolveProxies':'false','eReferenceType':'Licenses'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_XTVjWd6wEei97MD7GK1RmA', 'name':'p2view','nsURI':'http://www.eclipse.org/b3/2010/aggregator/p2view/1.0.0','nsPrefix':'p2view','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@6873a20c','eClassifiers':['MetadataRepositoryStructuredView','InstallableUnits','Categories','Features','Products','Bundles','Fragments','Miscellaneous','IUPresentation','IUPresentationWithDetails','Category','Feature','Product','...'],'eSuperPackage':'aggregator'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EReference', 'attributeName': 'resolveProxies', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_XTVjwt6wEei97MD7GK1RmA', 'name':'IUDetails','ePackage':'p2view','abstract':'false','interface':'false','eStructuralFeatures':['requirementsContainer','providedCapabilitiesContainer','propertiesContainer','touchpointsContainer','updateDescriptor','copyright','licenses']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "3", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "1", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "5", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "5", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+}]}

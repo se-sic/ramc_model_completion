@@ -1,0 +1,2073 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_TEHksN6vEei97MD7GK1RmA" name="pivot" nsURI="http://www.eclipse.org/ocl/3.1.0/Pivot" nsPrefix="pivot">
+  <eAnnotations xmi:id="_TEHksd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+    <details xmi:id="_TEHkst6vEei97MD7GK1RmA" key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details xmi:id="_TEHks96vEei97MD7GK1RmA" key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details xmi:id="_TEHktN6vEei97MD7GK1RmA" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_TEHktd6vEei97MD7GK1RmA" name="Boolean" instanceClassName="boolean">
+    <eAnnotations xmi:id="_TEHktt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHkt96vEei97MD7GK1RmA" key="documentation" value="A Boolean type is used for logical expression, consisting of the predefined values true and false."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_TEHkuN6vEei97MD7GK1RmA" name="Int" instanceClassName="int"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_TEHkud6vEei97MD7GK1RmA" name="Integer" instanceClassName="java.lang.Number">
+    <eAnnotations xmi:id="_TEHkut6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHku96vEei97MD7GK1RmA" key="documentation" value="An integer is a primitive type representing integer values."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_TEHkvN6vEei97MD7GK1RmA" name="LibraryFeature" instanceClassName="org.eclipse.ocl.examples.domain.library.LibraryFeature"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_TEHkvd6vEei97MD7GK1RmA" name="Object" instanceClassName="java.lang.Object"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_TEHkvt6vEei97MD7GK1RmA" name="Real" instanceClassName="java.lang.Number"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_TEHkv96vEei97MD7GK1RmA" name="String" instanceClassName="java.lang.String">
+    <eAnnotations xmi:id="_TEHkwN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHkwd6vEei97MD7GK1RmA" key="documentation" value="A string is a sequence of characters in some suitable character set used to display information about the model. Character sets may include non-Roman alphabets and characters."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_TEHkwt6vEei97MD7GK1RmA" name="Throwable" instanceClassName="java.lang.Throwable"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_TEHkw96vEei97MD7GK1RmA" name="UnlimitedNatural" instanceClassName="java.lang.Number">
+    <eAnnotations xmi:id="_TEHkxN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHkxd6vEei97MD7GK1RmA" key="documentation" value="An unlimited natural is a primitive type representing unlimited natural values."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_TEHkxt6vEei97MD7GK1RmA" name="AssociativityKind">
+    <eLiterals xmi:id="_TEHkx96vEei97MD7GK1RmA" name="Left"/>
+    <eLiterals xmi:id="_TEHkyN6vEei97MD7GK1RmA" name="Right" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_TEHkyd6vEei97MD7GK1RmA" name="CollectionKind">
+    <eLiterals xmi:id="_TEHkyt6vEei97MD7GK1RmA" name="Collection"/>
+    <eLiterals xmi:id="_TEHky96vEei97MD7GK1RmA" name="Set" value="1"/>
+    <eLiterals xmi:id="_TEHkzN6vEei97MD7GK1RmA" name="OrderedSet" value="2"/>
+    <eLiterals xmi:id="_TEHkzd6vEei97MD7GK1RmA" name="Bag" value="3"/>
+    <eLiterals xmi:id="_TEHkzt6vEei97MD7GK1RmA" name="Sequence" value="4"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHkz96vEei97MD7GK1RmA" name="Annotation" eSuperTypes="_TEHn096vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHk0N6vEei97MD7GK1RmA" name="ownedContent" upperBound="-1" eType="_TEHlfN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHk0d6vEei97MD7GK1RmA" name="ownedDetail" upperBound="-1" eType="_TEHlet6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHk0t6vEei97MD7GK1RmA" name="reference" upperBound="-1" eType="_TEHlfN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHk096vEei97MD7GK1RmA" name="AnyType" eSuperTypes="_TEHk7N6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHk1N6vEei97MD7GK1RmA" name="AssociationClass" eSuperTypes="_TEHk7N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHk1d6vEei97MD7GK1RmA" name="unownedAttribute" ordered="false" upperBound="-1" eType="_TEHoVN6vEei97MD7GK1RmA" eOpposite="_TEHod96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHk1t6vEei97MD7GK1RmA" name="AssociationClassCallExp" eSuperTypes="_TEHn3d6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHk196vEei97MD7GK1RmA" name="referredAssociationClass" eType="_TEHk1N6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHk2N6vEei97MD7GK1RmA" name="BagType" eSuperTypes="_TEHlT96vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHk2d6vEei97MD7GK1RmA" name="BooleanLiteralExp" eSuperTypes="_TEHoUN6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHk2t6vEei97MD7GK1RmA" name="TypeIsBoolean">
+      <eAnnotations xmi:id="_TEHk296vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHk3N6vEei97MD7GK1RmA" key="documentation" value="The type of a boolean Literal expression is the type Boolean."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHk3d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHk3t6vEei97MD7GK1RmA" key="body" value="self.type = Boolean"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHk4N6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHk4t6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz89N6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz89d6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHk5t6vEei97MD7GK1RmA" name="booleanSymbol" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" unsettable="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHk596vEei97MD7GK1RmA" name="CallExp" abstract="true" eSuperTypes="_TJDLNN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHk6N6vEei97MD7GK1RmA" name="source" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHk6d6vEei97MD7GK1RmA" name="implicit" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHk6t6vEei97MD7GK1RmA" name="CallOperationAction" eSuperTypes="_TEHn096vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHk696vEei97MD7GK1RmA" name="operation" lowerBound="1" eType="_TEHn7t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHk7N6vEei97MD7GK1RmA" name="Class" eSuperTypes="_TEHo596vEei97MD7GK1RmA _TEHn3N6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHk7d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHk7t6vEei97MD7GK1RmA" key="documentation" value="A class is a type that has objects as its instances."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_TEHk796vEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EReference" xmi:id="_TEHk8N6vEei97MD7GK1RmA" name="ownedOperation" upperBound="-1" eType="_TEHn7t6vEei97MD7GK1RmA" containment="true" eOpposite="_TEHoCN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TEHk8d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_TEHk8t6vEei97MD7GK1RmA" key="documentation" value="The operations owned by a class. These do not include the inherited operations."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_TEHk896vEei97MD7GK1RmA" source="redefines" references="_TEHo-96vEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EReference" xmi:id="_TEHk9N6vEei97MD7GK1RmA" name="superClass" upperBound="-1" eType="_TEHk7N6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TEHk9d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_TEHk9t6vEei97MD7GK1RmA" key="documentation" value="The immediate superclasses of a class, from which the class inherits."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_TEHk996vEei97MD7GK1RmA" source="redefines" references="_TEHo_N6vEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EAttribute" xmi:id="_TEHk-N6vEei97MD7GK1RmA" name="instanceClassName" eType="_TEHkv96vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TEHk-d6vEei97MD7GK1RmA" source="redefines" references="_TEHo_d6vEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EReference" xmi:id="_TEHk-t6vEei97MD7GK1RmA" name="ownedAttribute" upperBound="-1" eType="_TEHoVN6vEei97MD7GK1RmA" containment="true" eOpposite="_TEHocd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TEHk-96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_TEHk_N6vEei97MD7GK1RmA" key="documentation" value="The attributes owned by a class. These do not include the inherited attributes. Attributes are represented by instances of Property."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_TEHk_d6vEei97MD7GK1RmA" source="redefines" references="_TEHo-t6vEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHk_t6vEei97MD7GK1RmA" name="isAbstract" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_TEHk_96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlAN6vEei97MD7GK1RmA" key="documentation" value="True when a class is abstract."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHlAd6vEei97MD7GK1RmA" name="isInterface" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlBN6vEei97MD7GK1RmA" name="CollectionItem" eSuperTypes="_TEHlS96vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHlBd6vEei97MD7GK1RmA" name="TypeIsItemType">
+      <eAnnotations xmi:id="_TEHlBt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlB96vEei97MD7GK1RmA" key="documentation" value="The type of a CollectionItem is the type of the item expression."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHlCN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHlCd6vEei97MD7GK1RmA" key="body" value="type = item.type"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHlC96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHlDd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9Hd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz9Ht6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlEd6vEei97MD7GK1RmA" name="item" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlEt6vEei97MD7GK1RmA" name="CollectionLiteralExp" eSuperTypes="_TEHndN6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHlPd6vEei97MD7GK1RmA" name="CollectionKindIsConcrete">
+      <eAnnotations xmi:id="_TEHlPt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlP96vEei97MD7GK1RmA" key="documentation" value="'Collection' is an abstract class on the M1 level and has no M0 instances."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHlQN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHlQd6vEei97MD7GK1RmA" key="body" value="kind &lt;> CollectionKind::Collection"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHlQ96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHlRd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9K96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz9LN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHlMd6vEei97MD7GK1RmA" name="SetKindIsSet">
+      <eAnnotations xmi:id="_TWbdON6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TWbdOd6vEei97MD7GK1RmA" key="documentation" value="The type of a collection literal expression is determined by the collection kind selection and the common&#xA;supertype of all elements. Note that the definition below defines only an upper bound on the elementType. The usage of&#xA;the CollectionLiteralExp defines a lower bound. If the elementType is not explicitly specified, the elementType must be&#xA;chosen to ensure the well-formedness of the elements of the CollectionLiteralExp and the usage of the&#xA;CollectionLiteralExp.&#xA;&#xA;For instance in&#xA;acc : Set(Real) = Set{1}->excluding(-1)&#xA;Set{1} is well formed for any type Set(T) where T ≤ UnlimitedNatural. Well-formedness of the excluding operation call&#xA;requires T ≤ Integer, and well-formedness of the initializer requires Real ≤ T. The overall expression is therefore only&#xA;well-formed if Real ≤ T ≤ Integer. Either Set(Real) or Set(Integer) are well-formed. The most general type, Set(Real), is&#xA;recommended since it minimizes type conversions and can often be easily deduced by considering the result type."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHlNN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHlNd6vEei97MD7GK1RmA" key="body" value="kind = CollectionKind::Set implies type.oclIsKindOf(SetType)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHlN96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHlOd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9N96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz9ON6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHlJ96vEei97MD7GK1RmA" name="OrderedSetKindIsOrderedSet">
+      <eAnnotations xmi:id="_TEHlKN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHlKd6vEei97MD7GK1RmA" key="body" value="kind = CollectionKind::OrderedSet implies type.oclIsKindOf(OrderedSetType)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHlK96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHlLd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9Qd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz9Qt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHlHd6vEei97MD7GK1RmA" name="SequenceKindIsSequence">
+      <eAnnotations xmi:id="_TEHlHt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHlH96vEei97MD7GK1RmA" key="body" value="kind = CollectionKind::Sequence implies type.oclIsKindOf(SequenceType)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHlId6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHlI96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9S96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz9TN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHlE96vEei97MD7GK1RmA" name="BagKindIsBag">
+      <eAnnotations xmi:id="_TEHlFN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHlFd6vEei97MD7GK1RmA" key="body" value="kind = CollectionKind::Bag implies type.oclIsKindOf(BagType)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHlF96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHlGd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9Vd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz9Vt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHlSd6vEei97MD7GK1RmA" name="kind" lowerBound="1" eType="_TEHkyd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlSt6vEei97MD7GK1RmA" name="part" upperBound="-1" eType="_TEHlS96vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlS96vEei97MD7GK1RmA" name="CollectionLiteralPart" abstract="true" eSuperTypes="_TEHpDt6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlTN6vEei97MD7GK1RmA" name="CollectionRange" eSuperTypes="_TEHlS96vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlTd6vEei97MD7GK1RmA" name="first" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlTt6vEei97MD7GK1RmA" name="last" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlT96vEei97MD7GK1RmA" name="CollectionType" eSuperTypes="_TEHldd6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlUN6vEei97MD7GK1RmA" name="elementType" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TQAFNN6vEei97MD7GK1RmA" name="lower" lowerBound="1" eType="_TEHkud6vEei97MD7GK1RmA" defaultValueLiteral="0"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TQAFNd6vEei97MD7GK1RmA" name="upper" lowerBound="1" eType="_TEHkw96vEei97MD7GK1RmA" defaultValueLiteral="*"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlUd6vEei97MD7GK1RmA" name="Comment" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHlUt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHlU96vEei97MD7GK1RmA" key="documentation" value="A comment is a textual annotation that can be attached to a set of elements."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHlVN6vEei97MD7GK1RmA" name="body" eType="_TEHkv96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHlVd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlVt6vEei97MD7GK1RmA" key="documentation" value="Specifies a string that is the comment."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlV96vEei97MD7GK1RmA" name="annotatedElement" ordered="false" upperBound="-1" eType="_TEHlfN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHlWN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlWd6vEei97MD7GK1RmA" key="documentation" value="References the Element(s) being commented."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlWt6vEei97MD7GK1RmA" name="Constraint" eSuperTypes="_TEHn096vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHlW96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHlXN6vEei97MD7GK1RmA" key="documentation" value="A constraint is a condition or restriction expressed in natural language text or in a machine readable language for the purpose of declaring some of the semantics of an element."/>
+    </eAnnotations>
+    <eOperations xmi:id="_TEHlXd6vEei97MD7GK1RmA" name="UniqueName">
+      <eAnnotations xmi:id="_TEHlXt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHlX96vEei97MD7GK1RmA" key="body" value="context.ownedRule->excluding(self)->forAll(name &lt;> self.name or stereotype &lt;> self.stereotype)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHlYd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHlY96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9dd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz9dt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlZ96vEei97MD7GK1RmA" name="constrainedElement" upperBound="-1" eType="_TEHlfN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHlaN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlad6vEei97MD7GK1RmA" key="documentation" value="The ordered set of Elements referenced by this Constraint."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlat6vEei97MD7GK1RmA" name="specification" lowerBound="1" eType="_TEHpIt6vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_TEHla96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlbN6vEei97MD7GK1RmA" key="documentation" value="A condition that must be true when evaluated in order for the constraint to be satisfied."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHlbd6vEei97MD7GK1RmA" name="stereotype" eType="_TEHkv96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHlbt6vEei97MD7GK1RmA" name="isCallable" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlb96vEei97MD7GK1RmA" name="context" eType="_TEHn096vEei97MD7GK1RmA" eOpposite="_TEHn2d6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlcN6vEei97MD7GK1RmA" name="ConstructorExp" eSuperTypes="_TJDLNN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlcd6vEei97MD7GK1RmA" name="part" upperBound="-1" eType="_TEHlct6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TG9eEt6vEei97MD7GK1RmA" name="value" eType="_TEHkv96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlct6vEei97MD7GK1RmA" name="ConstructorPart" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlc96vEei97MD7GK1RmA" name="referredProperty" lowerBound="1" eType="_TEHoVN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHldN6vEei97MD7GK1RmA" name="initExpression" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHldd6vEei97MD7GK1RmA" name="DataType" eSuperTypes="_TEHk7N6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHldt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHld96vEei97MD7GK1RmA" key="documentation" value="DataType is an abstract class that acts as a common superclass for different kinds of data types."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHleN6vEei97MD7GK1RmA" name="isSerializable" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHled6vEei97MD7GK1RmA" name="behavioralType" eType="_TEHo596vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlet6vEei97MD7GK1RmA" name="Detail" eSuperTypes="_TEHn096vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHle96vEei97MD7GK1RmA" name="value" ordered="false" lowerBound="1" upperBound="-1" eType="_TEHkv96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TLhOAN6vEei97MD7GK1RmA" name="DynamicElement" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TLhOAd6vEei97MD7GK1RmA" name="metaType" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TLhOAt6vEei97MD7GK1RmA" name="DynamicProperty" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TLhOA96vEei97MD7GK1RmA" name="referredProperty" lowerBound="1" eType="_TEHoVN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TLhOBN6vEei97MD7GK1RmA" name="default" eType="_TEHkv96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TLhOBd6vEei97MD7GK1RmA" name="DynamicType" eSuperTypes="_TEHo596vEei97MD7GK1RmA _TLhOAN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TLhOBt6vEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EReference" xmi:id="_TLhOB96vEei97MD7GK1RmA" name="metaType" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TLhOCN6vEei97MD7GK1RmA" source="redefines" references="_TLhOAd6vEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TLhOCd6vEei97MD7GK1RmA" name="ownedProperty" ordered="false" upperBound="-1" eType="_TLhOAt6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlfN6vEei97MD7GK1RmA" name="Element" abstract="true" eSuperTypes="_TEHpP96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHlfd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHlft6vEei97MD7GK1RmA" key="documentation" value="An element is a constituent of a model."/>
+    </eAnnotations>
+    <eOperations xmi:id="_TEHlf96vEei97MD7GK1RmA" name="allOwnedElements" ordered="false" upperBound="-1" eType="_TEHlfN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHlgN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHlgd6vEei97MD7GK1RmA" key="body" value="oclContents()"/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_TMHrGt6vEei97MD7GK1RmA" name="getValue" lowerBound="1" eType="_TEHlfN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TMHrG96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TMHrHN6vEei97MD7GK1RmA" key="body" value="null"/>
+      </eAnnotations>
+      <eParameters xmi:id="_TMHrHd6vEei97MD7GK1RmA" name="stereotype" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TMHrHt6vEei97MD7GK1RmA" name="propertyName" lowerBound="1" eType="_TEHkv96vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_TEHlgt6vEei97MD7GK1RmA" name="not_own_self">
+      <eAnnotations xmi:id="_TEHlg96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlhN6vEei97MD7GK1RmA" key="documentation" value="Elements that must be owned must have an owner."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHlhd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlht6vEei97MD7GK1RmA" key="documentation" value="An element may not directly or indirectly own itself."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHlh96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHliN6vEei97MD7GK1RmA" key="body" value="not allOwnedElements()->includes(self)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHlit6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHljN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9rt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz9r96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlkN6vEei97MD7GK1RmA" name="ownedComment" ordered="false" upperBound="-1" eType="_TEHlUd6vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_TEHlkd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlkt6vEei97MD7GK1RmA" key="documentation" value="The Comments owned by this element."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TUgyE96vEei97MD7GK1RmA" name="extension" ordered="false" upperBound="-1" eType="_TUgyFN6vEei97MD7GK1RmA" containment="true" eOpposite="_TUgyFt6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TUgyFN6vEei97MD7GK1RmA" name="ElementExtension" eSuperTypes="_TEHo596vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TUgyFd6vEei97MD7GK1RmA" name="stereotype" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TUgyFt6vEei97MD7GK1RmA" name="base" lowerBound="1" eType="_TEHlfN6vEei97MD7GK1RmA" eOpposite="_TUgyE96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlk96vEei97MD7GK1RmA" name="EnumLiteralExp" eSuperTypes="_TEHndN6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHllN6vEei97MD7GK1RmA" name="TypeIsEnumerationType">
+      <eAnnotations xmi:id="_TEHlld6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHllt6vEei97MD7GK1RmA" key="documentation" value="The type of an enum Literal expression is the type of the referred literal."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHll96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHlmN6vEei97MD7GK1RmA" key="body" value="self.type = referredEnumLiteral.enumeration"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHlmt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHlnN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9wt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz9w96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHloN6vEei97MD7GK1RmA" name="referredEnumLiteral" eType="_TEHlp96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlod6vEei97MD7GK1RmA" name="Enumeration" eSuperTypes="_TEHldd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHlot6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHlo96vEei97MD7GK1RmA" key="documentation" value="An enumeration defines a set of literals that can be used as its values."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlpN6vEei97MD7GK1RmA" name="ownedLiteral" upperBound="-1" eType="_TEHlp96vEei97MD7GK1RmA" containment="true" eOpposite="_TEHlqt6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHlpd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlpt6vEei97MD7GK1RmA" key="documentation" value="The ordered set of literals for this Enumeration."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlp96vEei97MD7GK1RmA" name="EnumerationLiteral" eSuperTypes="_TEHn096vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHlqN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHlqd6vEei97MD7GK1RmA" key="documentation" value="An enumeration literal is a value of an enumeration."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlqt6vEei97MD7GK1RmA" name="enumeration" eType="_TEHlod6vEei97MD7GK1RmA" eOpposite="_TEHlpN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHlq96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlrN6vEei97MD7GK1RmA" key="documentation" value="The Enumeration that this EnumerationLiteral is a member of."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHlrd6vEei97MD7GK1RmA" name="value" eType="_TEHkud6vEei97MD7GK1RmA" defaultValueLiteral="0"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_THj7P96vEei97MD7GK1RmA" name="ExpressionInOCL" eSuperTypes="_TEHn496vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlr96vEei97MD7GK1RmA" name="bodyExpression" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlsN6vEei97MD7GK1RmA" name="contextVariable" eType="_TEHpN96vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlsd6vEei97MD7GK1RmA" name="resultVariable" eType="_TEHpN96vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlst6vEei97MD7GK1RmA" name="parameterVariable" upperBound="-1" eType="_TEHpN96vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHls96vEei97MD7GK1RmA" name="messageExpression" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHltN6vEei97MD7GK1RmA" name="Feature" abstract="true" eSuperTypes="_TEHpFN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHltd6vEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EAttribute" xmi:id="_TEHltt6vEei97MD7GK1RmA" name="isStatic" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TEHlt96vEei97MD7GK1RmA" source="redefines" references="_TEHn2t6vEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHluN6vEei97MD7GK1RmA" name="implementationClass" eType="_TEHkv96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHlud6vEei97MD7GK1RmA" name="implementation" eType="_TEHkvN6vEei97MD7GK1RmA" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlut6vEei97MD7GK1RmA" name="FeatureCallExp" abstract="true" eSuperTypes="_TEHk596vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHlu96vEei97MD7GK1RmA" name="isPre" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlvN6vEei97MD7GK1RmA" name="IfExp" eSuperTypes="_TJDLNN6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHlvd6vEei97MD7GK1RmA" name="ConditionTypeIsBoolean">
+      <eAnnotations xmi:id="_TEHlvt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlv96vEei97MD7GK1RmA" key="documentation" value="The type of the condition of an if expression must be Boolean."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHlwN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHlwd6vEei97MD7GK1RmA" key="body" value="self.condition.type = Boolean"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHlw96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHlxd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9696vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz97N6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlyd6vEei97MD7GK1RmA" name="condition" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlyt6vEei97MD7GK1RmA" name="thenExpression" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHly96vEei97MD7GK1RmA" name="elseExpression" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHlzN6vEei97MD7GK1RmA" name="IntegerLiteralExp" eSuperTypes="_TEHn4d6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHlzd6vEei97MD7GK1RmA" name="TypeIsInteger">
+      <eAnnotations xmi:id="_TEHlzt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHlz96vEei97MD7GK1RmA" key="documentation" value="The type of an integer Literal expression is the type Integer."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHl0N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHl0d6vEei97MD7GK1RmA" key="body" value="self.type = Integer"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHl096vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHl1d6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz9-96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz9_N6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHl2d6vEei97MD7GK1RmA" name="integerSymbol" lowerBound="1" eType="_TEHkud6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHl2t6vEei97MD7GK1RmA" name="InvalidLiteralExp" eSuperTypes="_TEHndN6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHl296vEei97MD7GK1RmA" name="InvalidType" eSuperTypes="_TEHk7N6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHl3N6vEei97MD7GK1RmA" name="IterateExp" eSuperTypes="_TEHndd6vEei97MD7GK1RmA _TXLHft6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHl9d6vEei97MD7GK1RmA" name="TypeIsResultType">
+      <eAnnotations xmi:id="_TEHl9t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHl996vEei97MD7GK1RmA" key="documentation" value="The type of the iterate is the type of the result variable."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHl-N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHl-d6vEei97MD7GK1RmA" key="body" value="type = result.type"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHl-96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHl_d6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-C96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-DN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHl6d6vEei97MD7GK1RmA" name="BodyTypeConformsToResultType">
+      <eAnnotations xmi:id="_TEHl6t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHl696vEei97MD7GK1RmA" key="documentation" value="The type of the body expression must conform to the declared type of the result variable."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHl7N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHl7d6vEei97MD7GK1RmA" key="body" value="body.type.conformsTo(result.type)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHl796vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHl8d6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-F96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-GN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHl3d6vEei97MD7GK1RmA" name="OneInitializer">
+      <eAnnotations xmi:id="_TEHl3t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHl396vEei97MD7GK1RmA" key="documentation" value="result variable must have an init expression."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHl4N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHl4d6vEei97MD7GK1RmA" key="body" value="self.result.initExpression->size() = 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHl496vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHl5d6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-I96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-JN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHmAd6vEei97MD7GK1RmA" name="result" eType="_TEHpN96vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHmAt6vEei97MD7GK1RmA" name="Iteration" eSuperTypes="_TEHn7t6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHmA96vEei97MD7GK1RmA" name="ownedIterator" upperBound="-1" eType="_TEHoNd6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHmBN6vEei97MD7GK1RmA" name="ownedAccumulator" upperBound="-1" eType="_TEHoNd6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHmBd6vEei97MD7GK1RmA" name="IteratorExp" eSuperTypes="_TEHndd6vEei97MD7GK1RmA _TXLHft6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TPQfNN6vEei97MD7GK1RmA" name="ClosureBodyTypeIsConformanttoIteratorType">
+      <eAnnotations xmi:id="_TPQfNd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TPQfNt6vEei97MD7GK1RmA" key="body" value="true"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TPQfON6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TPQfOt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-Mt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-M96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TPQfPt6vEei97MD7GK1RmA" name="SortedByIteratorTypeIsComparable">
+      <eAnnotations xmi:id="_TPQfP96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TPQfQN6vEei97MD7GK1RmA" key="body" value="true"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TPQfQt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TPQfRN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-PN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-Pd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHnVN6vEei97MD7GK1RmA" name="AnyHasOneIterator">
+      <eAnnotations xmi:id="_TEHnVd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnVt6vEei97MD7GK1RmA" key="documentation" value="There is exactly one iterator."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnV96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnWN6vEei97MD7GK1RmA" key="body" value="name = 'any' implies iterator->size() = 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnWt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnXN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-SN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-Sd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHnSN6vEei97MD7GK1RmA" name="AnyTypeIsSourceElementType">
+      <eAnnotations xmi:id="_TEHnSd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnSt6vEei97MD7GK1RmA" key="documentation" value="The type is the same as the source element type"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnS96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnTN6vEei97MD7GK1RmA" key="body" value="name = 'any' implies type = source.type.oclAsType(CollectionType).elementType"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnTt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnUN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-VN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-Vd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHnPN6vEei97MD7GK1RmA" name="AnyBodyTypeIsBoolean">
+      <eAnnotations xmi:id="_TEHnPd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnPt6vEei97MD7GK1RmA" key="documentation" value="The type of the body must be Boolean."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnP96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnQN6vEei97MD7GK1RmA" key="body" value="name = 'any' implies body.type = 'Boolean'"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnQt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnRN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-YN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-Yd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHnMN6vEei97MD7GK1RmA" name="ClosureHasOneIterator">
+      <eAnnotations xmi:id="_TEHnMd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnMt6vEei97MD7GK1RmA" key="documentation" value="There is exactly one iterator."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnM96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnNN6vEei97MD7GK1RmA" key="body" value="name = 'closure' implies iterator->size() = 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnNt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnON6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-bN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-bd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHnJN6vEei97MD7GK1RmA" name="ClosureTypeIsUniqueCollection">
+      <eAnnotations xmi:id="_TEHnJd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnJt6vEei97MD7GK1RmA" key="documentation" value="The collection type for an OrderedSet or a Sequence source type is OrderedSet.&#xA;For any other source the collection type is Set."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnJ96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnKN6vEei97MD7GK1RmA" key="body" value="name = 'closure' implies if source.type.oclIsKindOf(SequenceType) or source.type.oclIsKindOf(OrderedSetType) then type.oclIsKindOf(OrderedSetType) else type.oclIsKindOf(SetType) endif"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnKt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnLN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-eN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-ed6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHnGN6vEei97MD7GK1RmA" name="ClosureSourceElementTypeIsBodyElementType">
+      <eAnnotations xmi:id="_TEHnGd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnGt6vEei97MD7GK1RmA" key="documentation" value="The source element type is the same as type of the body elements or element."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnG96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnHN6vEei97MD7GK1RmA" key="body" value="name = 'closure' implies source.type.oclAsType(CollectionType).elementType = if body.type.oclIsKindOf(CollectionType) then body.type.oclAsType(CollectionType).elementType else body.type endif"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnHt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnIN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-hN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-hd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHnDN6vEei97MD7GK1RmA" name="ClosureElementTypeIsSourceElementType">
+      <eAnnotations xmi:id="_TEHnDd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnDt6vEei97MD7GK1RmA" key="documentation" value="The element type is the same as the source element type."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnD96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnEN6vEei97MD7GK1RmA" key="body" value="name = 'closure' implies type.oclAsType(CollectionType).elementType = source.type.oclAsType(CollectionType).elementType"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnEt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnFN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-kN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-kd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHnAN6vEei97MD7GK1RmA" name="CollectHasOneIterator">
+      <eAnnotations xmi:id="_TEHnAd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnAt6vEei97MD7GK1RmA" key="documentation" value="There is exactly one iterator."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnA96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnBN6vEei97MD7GK1RmA" key="body" value="name = 'collect' implies iterator->size() = 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnBt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnCN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-nN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-nd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHm9t6vEei97MD7GK1RmA" name="CollectTypeIsUnordered">
+      <eAnnotations xmi:id="_TEHm996vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHm-N6vEei97MD7GK1RmA" key="body" value="name = 'collect' implies if source.type.oclIsKindOf(SequenceType) or source.type.oclIsKindOf(OrderedSetType) then type.oclIsKindOf(SequenceType) else type.oclIsKindOf(BagType) endif"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHm-t6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHm_N6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-pt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-p96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHm6t6vEei97MD7GK1RmA" name="CollectElementTypeIsSourceElementType">
+      <eAnnotations xmi:id="_TEHm696vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHm7N6vEei97MD7GK1RmA" key="documentation" value="The element type is the type of the body elements."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHm7d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHm7t6vEei97MD7GK1RmA" key="body" value="name = 'collect' implies type.oclAsType(CollectionType).elementType = body.type.oclAsType(CollectionType).elementType"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHm8N6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHm8t6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-st6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-s96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHm3t6vEei97MD7GK1RmA" name="CollectNestedHasOneIterator">
+      <eAnnotations xmi:id="_TEHm396vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHm4N6vEei97MD7GK1RmA" key="documentation" value="There is exactly one iterator."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHm4d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHm4t6vEei97MD7GK1RmA" key="body" value="name = 'collectNested' implies iterator->size() = 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHm5N6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHm5t6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-vt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-v96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHm0t6vEei97MD7GK1RmA" name="CollectNestedTypeIsBag">
+      <eAnnotations xmi:id="_TEHm096vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHm1N6vEei97MD7GK1RmA" key="documentation" value="The type is a Bag."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHm1d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHm1t6vEei97MD7GK1RmA" key="body" value="name = 'collectNested' implies type.oclIsKindOf(BagType)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHm2N6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHm2t6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-yt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-y96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmxt6vEei97MD7GK1RmA" name="CollectNestedTypeIsBodyType">
+      <eAnnotations xmi:id="_TEHmx96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmyN6vEei97MD7GK1RmA" key="documentation" value="The type is the type of source."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmyd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmyt6vEei97MD7GK1RmA" key="body" value="name = 'collectNested' implies type = body.type"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmzN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmzt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-1t6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-196vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmut6vEei97MD7GK1RmA" name="ExistsTypeIsBoolean">
+      <eAnnotations xmi:id="_TEHmu96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmvN6vEei97MD7GK1RmA" key="documentation" value="The type must be Boolean."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmvd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmvt6vEei97MD7GK1RmA" key="body" value="name = 'exists' implies type = Boolean"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmwN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmwt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-4t6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-496vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmrt6vEei97MD7GK1RmA" name="ExistsBodyTypeIsBoolean">
+      <eAnnotations xmi:id="_TEHmr96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmsN6vEei97MD7GK1RmA" key="documentation" value="The type of the body must be Boolean."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmsd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmst6vEei97MD7GK1RmA" key="body" value="name = 'exists' implies body.type = Boolean"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmtN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmtt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz-7t6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz-796vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmot6vEei97MD7GK1RmA" name="ForAllTypeIsBoolean">
+      <eAnnotations xmi:id="_TEHmo96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmpN6vEei97MD7GK1RmA" key="documentation" value="The type must be Boolean."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmpd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmpt6vEei97MD7GK1RmA" key="body" value="name = 'forAll' implies type = Boolean"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmqN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmqt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz--t6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz--96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmlt6vEei97MD7GK1RmA" name="ForAllBodyTypeIsBoolean">
+      <eAnnotations xmi:id="_TEHml96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmmN6vEei97MD7GK1RmA" key="documentation" value="The type of the body must be Boolean."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmmd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmmt6vEei97MD7GK1RmA" key="body" value="name = 'forAll' implies body.type = Boolean"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmnN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmnt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_Bt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_B96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmit6vEei97MD7GK1RmA" name="IsUniqueHasOneIterator">
+      <eAnnotations xmi:id="_TEHmi96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmjN6vEei97MD7GK1RmA" key="documentation" value="There is exactly one iterator."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmjd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmjt6vEei97MD7GK1RmA" key="body" value="name = 'isUnique' implies iterator->size() = 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmkN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmkt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_Et6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_E96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmft6vEei97MD7GK1RmA" name="IsUniqueTypeIsBoolean">
+      <eAnnotations xmi:id="_TEHmf96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmgN6vEei97MD7GK1RmA" key="documentation" value="The type must be Boolean."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmgd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmgt6vEei97MD7GK1RmA" key="body" value="name = 'isUnique' implies type = Boolean"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmhN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmht6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_Ht6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_H96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmct6vEei97MD7GK1RmA" name="OneHasOneIterator">
+      <eAnnotations xmi:id="_TEHmc96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmdN6vEei97MD7GK1RmA" key="documentation" value="There is exactly one iterator."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmdd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmdt6vEei97MD7GK1RmA" key="body" value="name = 'one' implies iterator->size() = 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmeN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmet6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_Kt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_K96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmZt6vEei97MD7GK1RmA" name="OneTypeIsBoolean">
+      <eAnnotations xmi:id="_TEHmZ96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmaN6vEei97MD7GK1RmA" key="documentation" value="The type is Boolean"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmad6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmat6vEei97MD7GK1RmA" key="body" value="name = 'one' implies type = Boolean"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmbN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmbt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_Nt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_N96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmWt6vEei97MD7GK1RmA" name="OneBodyTypeIsBoolean">
+      <eAnnotations xmi:id="_TEHmW96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmXN6vEei97MD7GK1RmA" key="documentation" value="The type of the body must be Boolean."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmXd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmXt6vEei97MD7GK1RmA" key="body" value="name = 'one' implies body.type = Boolean"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmYN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmYt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_Qt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_Q96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmTt6vEei97MD7GK1RmA" name="RejectOrSelectHasOneIterator">
+      <eAnnotations xmi:id="_TEHmT96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmUN6vEei97MD7GK1RmA" key="documentation" value="There is exactly one iterator."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmUd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmUt6vEei97MD7GK1RmA" key="body" value="name = 'reject' or name = 'select' implies iterator->size() = 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmVN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmVt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_Tt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_T96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmQt6vEei97MD7GK1RmA" name="RejectOrSelectTypeIsSourceType">
+      <eAnnotations xmi:id="_TEHmQ96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmRN6vEei97MD7GK1RmA" key="documentation" value="The type is the same as the source."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmRd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmRt6vEei97MD7GK1RmA" key="body" value="name = 'reject' or name = 'select' implies type = source.type"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmSN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmSt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_Wt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_W96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmNt6vEei97MD7GK1RmA" name="RejectOrSelectTypeIsBoolean">
+      <eAnnotations xmi:id="_TEHmN96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmON6vEei97MD7GK1RmA" key="documentation" value="The type of the body must be Boolean."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmOd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmOt6vEei97MD7GK1RmA" key="body" value="name = 'reject' or name = 'select' implies type = Boolean"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmPN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmPt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_Zt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_Z96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmKt6vEei97MD7GK1RmA" name="SortedByHasOneIterator">
+      <eAnnotations xmi:id="_TEHmK96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmLN6vEei97MD7GK1RmA" key="documentation" value="There is exactly one iterator."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmLd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmLt6vEei97MD7GK1RmA" key="body" value="name = 'sortedBy' implies iterator->size() = 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmMN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmMt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_ct6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_c96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmHt6vEei97MD7GK1RmA" name="SortedByIsOrderedIfSourceIsOrdered">
+      <eAnnotations xmi:id="_TEHmH96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmIN6vEei97MD7GK1RmA" key="documentation" value="The collection type for an OrderedSet or a Sequence type is a Sequence, the result type for any other collection type is Bag."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmId6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmIt6vEei97MD7GK1RmA" key="body" value="name = 'sortedBy' implies if source.type.oclIsKindOf(SequenceType) or source.type.oclIsKindOf(BagType) then type.oclIsKindOf(SequenceType) else type.oclIsKindOf(OrderedSetType) endif"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmJN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmJt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_ft6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_f96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmEt6vEei97MD7GK1RmA" name="SortedByElementTypeIsSourceElementType">
+      <eAnnotations xmi:id="_TEHmE96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmFN6vEei97MD7GK1RmA" key="documentation" value="The element type is the type of the body elements."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmFd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmFt6vEei97MD7GK1RmA" key="body" value="name = 'sortedBy' implies type.oclAsType(CollectionType).elementType = body.type.oclAsType(CollectionType).elementType"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmGN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmGt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_it6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_i96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHmBt6vEei97MD7GK1RmA" name="IteratorTypeIsSourceElementType">
+      <eAnnotations xmi:id="_TEHmB96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHmCN6vEei97MD7GK1RmA" key="documentation" value="The type of each iterator variable must be the type of the elements of the source collection."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHmCd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHmCt6vEei97MD7GK1RmA" key="body" value="self.iterator->forAll(type = source.type.oclAsType(CollectionType).elementType)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHmDN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHmDt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_lt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_l96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHnYN6vEei97MD7GK1RmA" name="LambdaType" eSuperTypes="_TEHldd6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnYd6vEei97MD7GK1RmA" name="contextType" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnYt6vEei97MD7GK1RmA" name="parameterType" unique="false" upperBound="-1" eType="_TEHo596vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnY96vEei97MD7GK1RmA" name="resultType" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHnZN6vEei97MD7GK1RmA" name="LetExp" eSuperTypes="_TJDLNN6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHnZd6vEei97MD7GK1RmA" name="TypeIsInType">
+      <eAnnotations xmi:id="_TEHnZt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnZ96vEei97MD7GK1RmA" key="documentation" value="The type of a Let expression is the type of the in expression."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnaN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnad6vEei97MD7GK1RmA" key="body" value="type = _'in'.type"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHna96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnbd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_p96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_qN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHncd6vEei97MD7GK1RmA" name="in" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnct6vEei97MD7GK1RmA" name="variable" lowerBound="1" eType="_TEHpN96vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHnc96vEei97MD7GK1RmA" name="Library" eSuperTypes="_TEHoI96vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoLt6vEei97MD7GK1RmA" name="ownedPrecedence" upperBound="-1" eType="_TEHoTd6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHndN6vEei97MD7GK1RmA" name="LiteralExp" abstract="true" eSuperTypes="_TJDLNN6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHndd6vEei97MD7GK1RmA" name="LoopExp" abstract="true" eSuperTypes="_TEHk596vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHngt6vEei97MD7GK1RmA" name="SourceIsCollection">
+      <eAnnotations xmi:id="_TEHng96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnhN6vEei97MD7GK1RmA" key="documentation" value="The type of the source expression must be a collection."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnhd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnht6vEei97MD7GK1RmA" key="body" value="source.type.oclIsKindOf(CollectionType)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHniN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnit6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_ud6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_ut6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHndt6vEei97MD7GK1RmA" name="NoInitializers">
+      <eAnnotations xmi:id="_TEHnd96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHneN6vEei97MD7GK1RmA" key="documentation" value="The loop variable of an iterator expression has no init expression."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHned6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnet6vEei97MD7GK1RmA" key="body" value="self.iterator->forAll(initExpression->isEmpty())"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnfN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnft6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_xd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_xt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnjt6vEei97MD7GK1RmA" name="body" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnj96vEei97MD7GK1RmA" name="iterator" upperBound="-1" eType="_TEHpN96vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnkN6vEei97MD7GK1RmA" name="referredIteration" eType="_TEHmAt6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHnkd6vEei97MD7GK1RmA" name="MessageExp" eSuperTypes="_TJDLNN6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHnnt6vEei97MD7GK1RmA" name="OneCallOrOneSend">
+      <eAnnotations xmi:id="_TEHnn96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnoN6vEei97MD7GK1RmA" key="documentation" value="An OCL message has either a called operation or a sent signal."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnod6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnot6vEei97MD7GK1RmA" key="body" value="calledOperation->size() + sentSignal->size() = 1"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnpN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnpt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_1d6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_1t6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TEHnkt6vEei97MD7GK1RmA" name="TargetIsNotACollection">
+      <eAnnotations xmi:id="_TEHnk96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHnlN6vEei97MD7GK1RmA" key="documentation" value="The target of an OCL message cannot be a collection."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHnld6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHnlt6vEei97MD7GK1RmA" key="body" value="not target.type.oclIsKindOf(CollectionType)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHnmN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHnmt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TXz_4d6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TXz_4t6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnqt6vEei97MD7GK1RmA" name="target" lowerBound="1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnq96vEei97MD7GK1RmA" name="argument" upperBound="-1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnrN6vEei97MD7GK1RmA" name="calledOperation" eType="_TEHk6t6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnrd6vEei97MD7GK1RmA" name="sentSignal" eType="_TEHoid6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHnrt6vEei97MD7GK1RmA" name="MessageType" eSuperTypes="_TEHo596vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnr96vEei97MD7GK1RmA" name="referredSignal" eType="_TEHojd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHnsN6vEei97MD7GK1RmA" name="referredOperation" eType="_TEHn7t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TR9Pit6vEei97MD7GK1RmA" name="Metaclass" eSuperTypes="_TEHk7N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHlA96vEei97MD7GK1RmA" name="instanceType" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHnsd6vEei97MD7GK1RmA" name="MorePivotable" instanceClassName="org.eclipse.ocl.examples.pivot.util.MorePivotable" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHn0t6vEei97MD7GK1RmA" name="Nameable" instanceClassName="org.eclipse.ocl.examples.pivot.util.Nameable" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHn096vEei97MD7GK1RmA" name="NamedElement" abstract="true" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA _TEHn0t6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHn1N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHn1d6vEei97MD7GK1RmA" key="documentation" value="A named element represents an element with a name."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHn1t6vEei97MD7GK1RmA" name="name" eType="_TEHkv96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHn196vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHn2N6vEei97MD7GK1RmA" key="documentation" value="The name of the NamedElement."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHn2d6vEei97MD7GK1RmA" name="ownedRule" upperBound="-1" eType="_TEHlWt6vEei97MD7GK1RmA" containment="true" eOpposite="_TEHlb96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHn2t6vEei97MD7GK1RmA" name="isStatic" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHn296vEei97MD7GK1RmA" name="ownedAnnotation" upperBound="-1" eType="_TEHkz96vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHn3N6vEei97MD7GK1RmA" name="Namespace" abstract="true" eSuperTypes="_TEHn096vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHn3d6vEei97MD7GK1RmA" name="NavigationCallExp" abstract="true" eSuperTypes="_TEHlut6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHn3t6vEei97MD7GK1RmA" name="qualifier" upperBound="-1" eType="_TJDLNN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHn396vEei97MD7GK1RmA" name="navigationSource" eType="_TEHoVN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHn4N6vEei97MD7GK1RmA" name="NullLiteralExp" eSuperTypes="_TEHoUN6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHn4d6vEei97MD7GK1RmA" name="NumericLiteralExp" abstract="true" eSuperTypes="_TEHoUN6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TJDLNN6vEei97MD7GK1RmA" name="OCLExpression" abstract="true" eSuperTypes="_TEHpDt6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHn496vEei97MD7GK1RmA" name="OpaqueExpression" eSuperTypes="_TEHpIt6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHn5N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHn5d6vEei97MD7GK1RmA" key="documentation" value="An opaque expression is an uninterpreted textual statement that denotes a (possibly empty) set of values when evaluated in a context."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHn5t6vEei97MD7GK1RmA" name="body" unique="false" upperBound="-1" eType="_TEHkv96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHn596vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHn6N6vEei97MD7GK1RmA" key="documentation" value="The text of the expression, possibly in multiple languages."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHn6d6vEei97MD7GK1RmA" name="language" upperBound="-1" eType="_TEHkv96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHn6t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHn696vEei97MD7GK1RmA" key="documentation" value="Specifies the languages in which the expression is stated. The interpretation of the expression body depends on the languages. If the languages are unspecified, they might be implicit from the expression body or the context. Languages are matched to body strings by order."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHn7N6vEei97MD7GK1RmA" name="message" unique="false" upperBound="-1" eType="_TEHkv96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHn7d6vEei97MD7GK1RmA" name="valueExpression" eType="_THj7P96vEei97MD7GK1RmA" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHn7t6vEei97MD7GK1RmA" name="Operation" eSuperTypes="_TEHltN6vEei97MD7GK1RmA _TEHn3N6vEei97MD7GK1RmA _TEHo0t6vEei97MD7GK1RmA _TEHoO96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHn796vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHn8N6vEei97MD7GK1RmA" key="documentation" value="An operation is owned by a class and may be invoked in the context of objects that are instances of that class. It is a typed element and a multiplicity element.&#xD;&#xA;Operation specializes TemplateableElement in order to support specification of template operations and bound operations. Operation specializes ParameterableElement to specify that an operation can be exposed as a formal template parameter, and provided as an actual parameter in a binding of a template."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_TEHn8d6vEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EReference" xmi:id="_TEHn8t6vEei97MD7GK1RmA" name="templateParameter" eType="_TEHon96vEei97MD7GK1RmA" eOpposite="_TEHoHt6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TEHn896vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_TEHn9N6vEei97MD7GK1RmA" key="documentation" value="The template parameter that exposes this element as a formal parameter."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_TEHn9d6vEei97MD7GK1RmA" source="redefines" references="_TEHoSd6vEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eOperations xmi:id="_TEHn9t6vEei97MD7GK1RmA" name="CompatibleReturn">
+      <eAnnotations xmi:id="_THj9id6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_THj9it6vEei97MD7GK1RmA" key="body" value="let bodyConstraint : Constraint = ownedRule->any(stereotype = 'body') in bodyConstraint &lt;> null implies let bodySpecification : ValueSpecification = bodyConstraint.specification in bodySpecification &lt;> null and bodySpecification.oclIsKindOf(ExpressionInOCL) implies CompatibleBody(bodySpecification)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHn-t6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHn_N6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TX0AGd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TX0AGt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_TPQhQ96vEei97MD7GK1RmA" name="LoadableImplementation">
+      <eAnnotations xmi:id="_TPQhRN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TPQhRd6vEei97MD7GK1RmA" key="body" value="true"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TPQhR96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TPQhSd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TX0AI96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TX0AJN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoAN6vEei97MD7GK1RmA" name="raisedException" ordered="false" upperBound="-1" eType="_TEHo596vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoAd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoAt6vEei97MD7GK1RmA" key="documentation" value="The exceptions that are declared as possible during an invocation of the operation."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoA96vEei97MD7GK1RmA" name="ownedParameter" upperBound="-1" eType="_TEHoNd6vEei97MD7GK1RmA" containment="true" eOpposite="_TEHoON6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoBN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoBd6vEei97MD7GK1RmA" key="documentation" value="The parameters to the operation."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoBt6vEei97MD7GK1RmA" name="owningType" eType="_TEHo596vEei97MD7GK1RmA" eOpposite="_TEHo-96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoB96vEei97MD7GK1RmA" name="precedence" eType="_TEHoTd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TKeuut6vEei97MD7GK1RmA" name="redefinedOperation" ordered="false" upperBound="-1" eType="_TEHn7t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoCN6vEei97MD7GK1RmA" name="class" eType="_TEHk7N6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true">
+      <eAnnotations xmi:id="_TEHoCd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoCt6vEei97MD7GK1RmA" key="documentation" value="The class that owns the operation."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoC96vEei97MD7GK1RmA" name="OperationCallExp" eSuperTypes="_TEHlut6vEei97MD7GK1RmA _TXLHft6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHoDN6vEei97MD7GK1RmA" name="ArgumentCount">
+      <eAnnotations xmi:id="_TEHoDd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoDt6vEei97MD7GK1RmA" key="documentation" value="There must be exactly as many arguments as the referred operation has parameters."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHoD96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHoEN6vEei97MD7GK1RmA" key="body" value="argument->size() = referredOperation.ownedParameter->size()"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHoEt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHoFN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TX0APN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TX0APd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoGN6vEei97MD7GK1RmA" name="argument" upperBound="-1" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoGd6vEei97MD7GK1RmA" name="referredOperation" eType="_TEHn7t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoGt6vEei97MD7GK1RmA" name="OperationTemplateParameter" eSuperTypes="_TEHon96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHoG96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHoHN6vEei97MD7GK1RmA" key="documentation" value="An operation template parameter exposes an operation as a formal parameter for a template."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_TEHoHd6vEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EReference" xmi:id="_TEHoHt6vEei97MD7GK1RmA" name="parameteredElement" lowerBound="1" eType="_TEHoO96vEei97MD7GK1RmA" eOpposite="_TEHn8t6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TEHoH96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_TEHoIN6vEei97MD7GK1RmA" key="documentation" value="The operation for this template parameter."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_TEHoId6vEei97MD7GK1RmA" source="redefines" references="_TEHopd6vEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoIt6vEei97MD7GK1RmA" name="OrderedSetType" eSuperTypes="_TEHlT96vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoI96vEei97MD7GK1RmA" name="Package" eSuperTypes="_TEHn3N6vEei97MD7GK1RmA _TEHo0t6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHoJN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHoJd6vEei97MD7GK1RmA" key="documentation" value="A package is a container for types and other packages.&#xD;&#xA;Package specializes TemplateableElement and PackageableElement specializes ParameterableElement to specify that a package can be used as a template and a PackageableElement as a template parameter."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoJt6vEei97MD7GK1RmA" name="nestedPackage" ordered="false" upperBound="-1" eType="_TEHoI96vEei97MD7GK1RmA" containment="true" eOpposite="_TEHoKd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoJ96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoKN6vEei97MD7GK1RmA" key="documentation" value="The set of contained packages."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoKd6vEei97MD7GK1RmA" name="nestingPackage" eType="_TEHoI96vEei97MD7GK1RmA" eOpposite="_TEHoJt6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoKt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoK96vEei97MD7GK1RmA" key="documentation" value="The containing package."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoLN6vEei97MD7GK1RmA" name="nsPrefix" eType="_TEHkv96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoLd6vEei97MD7GK1RmA" name="nsURI" eType="_TEHkv96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TJyyYN6vEei97MD7GK1RmA" name="importedPackage" ordered="false" upperBound="-1" eType="_TEHoI96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoL96vEei97MD7GK1RmA" name="ownedType" ordered="false" upperBound="-1" eType="_TEHo596vEei97MD7GK1RmA" containment="true" eOpposite="_TEHo996vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoMN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoMd6vEei97MD7GK1RmA" key="documentation" value="The set of contained types."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoMt6vEei97MD7GK1RmA" name="PackageableElement" abstract="true" eSuperTypes="_TEHoO96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHoM96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHoNN6vEei97MD7GK1RmA" key="documentation" value="Packageable elements are able to serve as a template parameter."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoNd6vEei97MD7GK1RmA" name="Parameter" eSuperTypes="_TEHpFN6vEei97MD7GK1RmA _TEHpO96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHoNt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHoN96vEei97MD7GK1RmA" key="documentation" value="A parameter is a typed element that represents a parameter of an operation."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoON6vEei97MD7GK1RmA" name="operation" eType="_TEHn7t6vEei97MD7GK1RmA" eOpposite="_TEHoA96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoOd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoOt6vEei97MD7GK1RmA" key="documentation" value="The operation that owns the parameter."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoO96vEei97MD7GK1RmA" name="ParameterableElement" abstract="true" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHoPN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHoPd6vEei97MD7GK1RmA" key="documentation" value="A parameterable element is an element that can be exposed as a formal template parameter for a template, or specified as an actual parameter in a binding of a template."/>
+    </eAnnotations>
+    <eOperations xmi:id="_TEHoPt6vEei97MD7GK1RmA" name="isTemplateParameter" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoP96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoQN6vEei97MD7GK1RmA" key="documentation" value="The query isTemplateParameter() determines if this parameterable element is exposed as a formal template parameter."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_TEHoQd6vEei97MD7GK1RmA" name="isCompatibleWith" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoQt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHoQ96vEei97MD7GK1RmA" key="body" value="p.oclIsKindOf(self.oclType())"/>
+      </eAnnotations>
+      <eParameters xmi:id="_TEHoRN6vEei97MD7GK1RmA" name="p" lowerBound="1" eType="_TEHoO96vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoRd6vEei97MD7GK1RmA" name="owningTemplateParameter" eType="_TEHon96vEei97MD7GK1RmA" eOpposite="_TEHoqN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoRt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoR96vEei97MD7GK1RmA" key="documentation" value="The formal template parameter that owns this element."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHoSN6vEei97MD7GK1RmA" source="subsets" references="_TEHoSd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoSd6vEei97MD7GK1RmA" name="templateParameter" eType="_TEHon96vEei97MD7GK1RmA" eOpposite="_TEHopd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoSt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoS96vEei97MD7GK1RmA" key="documentation" value="The template parameter that exposes this element as a formal parameter."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoTN6vEei97MD7GK1RmA" name="Pivotable" instanceClassName="org.eclipse.ocl.examples.pivot.util.Pivotable" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoTd6vEei97MD7GK1RmA" name="Precedence" eSuperTypes="_TEHn096vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoTt6vEei97MD7GK1RmA" name="associativity" eType="_TEHkxt6vEei97MD7GK1RmA" defaultValueLiteral="Left"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoT96vEei97MD7GK1RmA" name="order" lowerBound="1" eType="_TEHkuN6vEei97MD7GK1RmA" defaultValueLiteral="0"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoUN6vEei97MD7GK1RmA" name="PrimitiveLiteralExp" abstract="true" eSuperTypes="_TEHndN6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoUd6vEei97MD7GK1RmA" name="PrimitiveType" eSuperTypes="_TEHldd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHoUt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHoU96vEei97MD7GK1RmA" key="documentation" value="A primitive type is a data type implemented by the underlying infrastructure and made available for modeling."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TT6X6t6vEei97MD7GK1RmA" name="Profile" eSuperTypes="_TEHoI96vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoVN6vEei97MD7GK1RmA" name="Property" eSuperTypes="_TEHltN6vEei97MD7GK1RmA _TEHoO96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHoVd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHoVt6vEei97MD7GK1RmA" key="documentation" value="A property is a typed element that represents an attribute of a class.&#xD;&#xA;Property specializes ParameterableElement to specify that a property can be exposed as a formal template parameter, and provided as an actual parameter in a binding of a template."/>
+    </eAnnotations>
+    <eOperations xmi:id="_TEHoV96vEei97MD7GK1RmA" name="isAttribute" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoWN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHoWd6vEei97MD7GK1RmA" key="body" value="let container : OclElement = oclContainer() in container.oclIsKindOf(Type) and container.oclAsType(Type).ownedAttribute->includes(self)"/>
+      </eAnnotations>
+      <eParameters xmi:id="_TEHoWt6vEei97MD7GK1RmA" name="p" lowerBound="1" eType="_TEHoVN6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_TEHoW96vEei97MD7GK1RmA" name="CompatibleInitialiser">
+      <eAnnotations xmi:id="_THj97t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_THj9796vEei97MD7GK1RmA" key="body" value="isDerived implies let derivedConstraint : Constraint = ownedRule->any(stereotype = 'derivation') in let initialConstraint : Constraint = ownedRule->any(stereotype = 'initial') in let derivedSpecification : ValueSpecification = if derivedConstraint &lt;> null then derivedConstraint.specification else null endif in let initialSpecification : ValueSpecification = if initialConstraint &lt;> null then initialConstraint.specification else null endif in let initialiser : ValueSpecification = if derivedSpecification &lt;> null then derivedSpecification else initialSpecification endif in initialiser &lt;> null and initialiser.oclIsKindOf(ExpressionInOCL) implies CompatibleBody(initialiser)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3EN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_TEHoX96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3J96vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_TEHoYd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_TX0Ait6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_TX0Ai96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3RN6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_TBa3TN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoZd6vEei97MD7GK1RmA" name="isReadOnly" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_TEHoZt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoZ96vEei97MD7GK1RmA" key="documentation" value="If isReadOnly is true, the attribute may not be written to after initialization."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoaN6vEei97MD7GK1RmA" name="default" eType="_TEHkv96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoad6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoat6vEei97MD7GK1RmA" key="documentation" value="A string that is evaluated to give a default value for the attribute when an object of the owning class is instantiated."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoa96vEei97MD7GK1RmA" name="isComposite" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_TEHobN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHobd6vEei97MD7GK1RmA" key="documentation" value="If isComposite is true, the object containing the attribute is a container for the object or value contained in the attribute."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHobt6vEei97MD7GK1RmA" name="isDerived" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_TEHob96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHocN6vEei97MD7GK1RmA" key="documentation" value="If isDerived is true, the value of the attribute is derived from information elsewhere."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHocd6vEei97MD7GK1RmA" name="class" eType="_TEHk7N6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true">
+      <eAnnotations xmi:id="_TEHoct6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoc96vEei97MD7GK1RmA" key="documentation" value="The class that owns the property, and of which the property is an attribute."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHodN6vEei97MD7GK1RmA" name="opposite" eType="_TEHoVN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHodd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHodt6vEei97MD7GK1RmA" key="documentation" value="Two attributes attr1 and attr2 of two objects o1 and o2 (which may be the same object) may be paired with each other so that o1.attr1 refers to o2 if and only if o2.attr2 refers to o1. In such a case attr1 is the opposite of attr2 and attr2 is the opposite of attr1."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHod96vEei97MD7GK1RmA" name="association" eType="_TEHk1N6vEei97MD7GK1RmA" eOpposite="_TEHk1d6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoeN6vEei97MD7GK1RmA" name="implicit" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoed6vEei97MD7GK1RmA" name="isID" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoet6vEei97MD7GK1RmA" name="keys" ordered="false" upperBound="-1" eType="_TEHoVN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoe96vEei97MD7GK1RmA" name="isResolveProxies" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHofN6vEei97MD7GK1RmA" name="isTransient" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHofd6vEei97MD7GK1RmA" name="isUnsettable" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoft6vEei97MD7GK1RmA" name="isVolatile" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TKevM96vEei97MD7GK1RmA" name="redefinedProperty" ordered="false" upperBound="-1" eType="_TEHoVN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TKevNN6vEei97MD7GK1RmA" name="subsettedProperty" ordered="false" upperBound="-1" eType="_TEHoVN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TT6YGN6vEei97MD7GK1RmA" name="referredProperty" eType="_TEHoVN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHof96vEei97MD7GK1RmA" name="owningType" eType="_TEHo596vEei97MD7GK1RmA" eOpposite="_TEHo-t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHogN6vEei97MD7GK1RmA" name="PropertyCallExp" eSuperTypes="_TEHn3d6vEei97MD7GK1RmA _TXLHft6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHogd6vEei97MD7GK1RmA" name="referredProperty" eType="_TEHoVN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHogt6vEei97MD7GK1RmA" name="RealLiteralExp" eSuperTypes="_TEHn4d6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHog96vEei97MD7GK1RmA" name="realSymbol" lowerBound="1" eType="_TEHkvt6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TXLHft6vEei97MD7GK1RmA" name="ReferringElement" abstract="true" interface="true">
+    <eOperations xmi:id="_TXLHf96vEei97MD7GK1RmA" name="referredElement" lowerBound="1" eType="_TEHlfN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TNm7zN6vEei97MD7GK1RmA" name="Root" eSuperTypes="_TEHn3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TNm7zd6vEei97MD7GK1RmA" name="nestedPackage" ordered="false" upperBound="-1" eType="_TEHoI96vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TNm7zt6vEei97MD7GK1RmA" name="externalURI" eType="_TEHkv96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHohN6vEei97MD7GK1RmA" name="SelfType" eSuperTypes="_TEHk7N6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHohd6vEei97MD7GK1RmA" name="resolveSelfType" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoht6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHoh96vEei97MD7GK1RmA" key="body" value="selfType"/>
+      </eAnnotations>
+      <eParameters xmi:id="_TEHoiN6vEei97MD7GK1RmA" name="selfType" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoid6vEei97MD7GK1RmA" name="SendSignalAction" eSuperTypes="_TEHn096vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoit6vEei97MD7GK1RmA" name="signal" lowerBound="1" eType="_TEHojd6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoi96vEei97MD7GK1RmA" name="SequenceType" eSuperTypes="_TEHlT96vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHojN6vEei97MD7GK1RmA" name="SetType" eSuperTypes="_TEHlT96vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHojd6vEei97MD7GK1RmA" name="Signal" eSuperTypes="_TEHn096vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHojt6vEei97MD7GK1RmA" name="State" eSuperTypes="_TEHn096vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoj96vEei97MD7GK1RmA" name="StateExp" eSuperTypes="_TJDLNN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHokN6vEei97MD7GK1RmA" name="referredState" eType="_TEHojt6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TT6YLt6vEei97MD7GK1RmA" name="Stereotype" eSuperTypes="_TEHk7N6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHokd6vEei97MD7GK1RmA" name="StringLiteralExp" eSuperTypes="_TEHoUN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHokt6vEei97MD7GK1RmA" name="stringSymbol" lowerBound="1" eType="_TEHkv96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHok96vEei97MD7GK1RmA" name="TemplateBinding" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHolN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHold6vEei97MD7GK1RmA" key="documentation" value="A template binding represents a relationship between a templateable element and a template. A template binding specifies the substitutions of actual parameters for the formal parameters of the template."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHolt6vEei97MD7GK1RmA" name="signature" lowerBound="1" eType="_TEHoxd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHol96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHomN6vEei97MD7GK1RmA" key="documentation" value="The template signature for the template that is the target of the binding."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHomd6vEei97MD7GK1RmA" name="parameterSubstitution" ordered="false" upperBound="-1" eType="_TEHos96vEei97MD7GK1RmA" containment="true" eOpposite="_TEHowN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHomt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHom96vEei97MD7GK1RmA" key="documentation" value="The parameter substitutions owned by this template binding."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHonN6vEei97MD7GK1RmA" name="boundElement" lowerBound="1" eType="_TEHo0t6vEei97MD7GK1RmA" eOpposite="_TEHo296vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHond6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHont6vEei97MD7GK1RmA" key="documentation" value="The element that is bound by this binding."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHon96vEei97MD7GK1RmA" name="TemplateParameter" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHooN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHood6vEei97MD7GK1RmA" key="documentation" value="A template parameter exposes a parameterable element as a formal template parameter of a template."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoot6vEei97MD7GK1RmA" name="signature" lowerBound="1" eType="_TEHoxd6vEei97MD7GK1RmA" eOpposite="_TEHoy96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoo96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHopN6vEei97MD7GK1RmA" key="documentation" value="The template signature that owns this template parameter."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHopd6vEei97MD7GK1RmA" name="parameteredElement" lowerBound="1" eType="_TEHoO96vEei97MD7GK1RmA" eOpposite="_TEHoSd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHopt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHop96vEei97MD7GK1RmA" key="documentation" value="The element exposed by this template parameter."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoqN6vEei97MD7GK1RmA" name="ownedParameteredElement" eType="_TEHoO96vEei97MD7GK1RmA" containment="true" eOpposite="_TEHoRd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoqd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoqt6vEei97MD7GK1RmA" key="documentation" value="The element that is owned by this template parameter."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHoq96vEei97MD7GK1RmA" source="subsets" references="_TEHopd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHorN6vEei97MD7GK1RmA" name="default" eType="_TEHoO96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHord6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHort6vEei97MD7GK1RmA" key="documentation" value="The element that is the default for this formal template parameter."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHor96vEei97MD7GK1RmA" name="ownedDefault" eType="_TEHoO96vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_TEHosN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHosd6vEei97MD7GK1RmA" key="documentation" value="The element that is owned by this template parameter for the purpose of providing a default."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHost6vEei97MD7GK1RmA" source="subsets" references="_TEHorN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHos96vEei97MD7GK1RmA" name="TemplateParameterSubstitution" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHotN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHotd6vEei97MD7GK1RmA" key="documentation" value="A template parameter substitution relates the actual parameter to a formal template parameter as part of a template binding."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHott6vEei97MD7GK1RmA" name="formal" lowerBound="1" eType="_TEHon96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHot96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHouN6vEei97MD7GK1RmA" key="documentation" value="The formal template parameter that is associated with this substitution."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoud6vEei97MD7GK1RmA" name="actual" lowerBound="1" eType="_TEHoO96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHout6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHou96vEei97MD7GK1RmA" key="documentation" value="The element that is the actual parameter for this substitution."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHovN6vEei97MD7GK1RmA" name="ownedActual" eType="_TEHoO96vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_TEHovd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHovt6vEei97MD7GK1RmA" key="documentation" value="The actual parameter that is owned by this substitution."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHov96vEei97MD7GK1RmA" source="subsets" references="_TEHoud6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHowN6vEei97MD7GK1RmA" name="templateBinding" lowerBound="1" eType="_TEHok96vEei97MD7GK1RmA" eOpposite="_TEHomd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHowd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHowt6vEei97MD7GK1RmA" key="documentation" value="The optional bindings from this element to templates."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHow96vEei97MD7GK1RmA" name="TemplateParameterType" eSuperTypes="_TEHo596vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHoxN6vEei97MD7GK1RmA" name="specification" eType="_TEHkv96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHoxd6vEei97MD7GK1RmA" name="TemplateSignature" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHoxt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHox96vEei97MD7GK1RmA" key="documentation" value="A template signature bundles the set of formal template parameters for a templated element."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoyN6vEei97MD7GK1RmA" name="parameter" lowerBound="1" upperBound="-1" eType="_TEHon96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHoyd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHoyt6vEei97MD7GK1RmA" key="documentation" value="The ordered set of all formal template parameters for this template signature."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoy96vEei97MD7GK1RmA" name="ownedParameter" upperBound="-1" eType="_TEHon96vEei97MD7GK1RmA" containment="true" eOpposite="_TEHoot6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHozN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHozd6vEei97MD7GK1RmA" key="documentation" value="The formal template parameters that are owned by this template signature."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_TEHozt6vEei97MD7GK1RmA" source="subsets" references="_TEHoyN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHoz96vEei97MD7GK1RmA" name="template" lowerBound="1" eType="_TEHo0t6vEei97MD7GK1RmA" eOpposite="_TEHo3t6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHo0N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHo0d6vEei97MD7GK1RmA" key="documentation" value="The element that owns this template signature."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHo0t6vEei97MD7GK1RmA" name="TemplateableElement" abstract="true" eSuperTypes="_TEHlfN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHo096vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHo1N6vEei97MD7GK1RmA" key="documentation" value="A templateable element is an element that can optionally be defined as a template and bound to other templates."/>
+    </eAnnotations>
+    <eOperations xmi:id="_TEHo1d6vEei97MD7GK1RmA" name="parameterableElements" ordered="false" upperBound="-1" eType="_TEHoO96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHo1t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHo196vEei97MD7GK1RmA" key="documentation" value="The query parameterableElements() returns the set of elements that may be used as the parametered elements for a template parameter of this templateable element. By default, this set includes all the owned elements. Subclasses may override this operation if they choose to restrict the set of parameterable elements."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_TEHo2N6vEei97MD7GK1RmA" name="isTemplate" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHo2d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHo2t6vEei97MD7GK1RmA" key="documentation" value="The query isTemplate() returns whether this templateable element is actually a template."/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHo296vEei97MD7GK1RmA" name="templateBinding" ordered="false" upperBound="-1" eType="_TEHok96vEei97MD7GK1RmA" containment="true" eOpposite="_TEHonN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHo3N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHo3d6vEei97MD7GK1RmA" key="documentation" value="The optional bindings from this element to templates."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHo3t6vEei97MD7GK1RmA" name="ownedTemplateSignature" eType="_TEHoxd6vEei97MD7GK1RmA" containment="true" eOpposite="_TEHoz96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHo396vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHo4N6vEei97MD7GK1RmA" key="documentation" value="The optional template signature specifying the formal template parameters."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHo4d6vEei97MD7GK1RmA" name="unspecializedElement" eType="_TEHo0t6vEei97MD7GK1RmA" transient="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHo4t6vEei97MD7GK1RmA" name="TupleLiteralExp" eSuperTypes="_TEHndN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHo496vEei97MD7GK1RmA" name="part" upperBound="-1" eType="_TEHo5N6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHo5N6vEei97MD7GK1RmA" name="TupleLiteralPart" eSuperTypes="_TEHpO96vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHo5d6vEei97MD7GK1RmA" name="initExpression" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHo5t6vEei97MD7GK1RmA" name="TupleType" eSuperTypes="_TEHldd6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHo596vEei97MD7GK1RmA" name="Type" eSuperTypes="_TEHn096vEei97MD7GK1RmA _TEHo0t6vEei97MD7GK1RmA _TEHoO96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHo6N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHo6d6vEei97MD7GK1RmA" key="documentation" value="A type is a named element that is used as the type for a typed element. A type can be contained in a package.&#xD;&#xA;Type is defined to be a kind of templateable element so that a type can be parameterized. It is also defined to be a kind of parameterable element so that a type can be a formal template parameter."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_TEHo6t6vEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EOperation" xmi:id="_TEHo696vEei97MD7GK1RmA" name="isTemplate" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TEHo7N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_TEHo7d6vEei97MD7GK1RmA" key="documentation" value="The query isTemplate() returns whether this templateable element is actually a template."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_TEHo7t6vEei97MD7GK1RmA" source="redefines" references="_TEHo2N6vEei97MD7GK1RmA"/>
+      </contents>
+      <contents xsi:type="ecore:EReference" xmi:id="_TEHo796vEei97MD7GK1RmA" name="templateParameter" eType="_TEHon96vEei97MD7GK1RmA" eOpposite="_TEHpBN6vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TEHo8N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_TEHo8d6vEei97MD7GK1RmA" key="documentation" value="The template parameter that exposes this element as a formal parameter."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_TEHo8t6vEei97MD7GK1RmA" source="redefines" references="_TEHoSd6vEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eOperations xmi:id="_TM3VX96vEei97MD7GK1RmA" name="resolveSelfType" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TM3VYN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TM3VYd6vEei97MD7GK1RmA" key="body" value="self"/>
+      </eAnnotations>
+      <eParameters xmi:id="_TM3VYt6vEei97MD7GK1RmA" name="selfType" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHo996vEei97MD7GK1RmA" name="package" eType="_TEHoI96vEei97MD7GK1RmA" eOpposite="_TEHoL96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHo-N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHo-d6vEei97MD7GK1RmA" key="documentation" value="Specifies the owning package of this classifier, if any."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHo-t6vEei97MD7GK1RmA" name="ownedAttribute" upperBound="-1" eType="_TEHoVN6vEei97MD7GK1RmA" containment="true" eOpposite="_TEHof96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHo-96vEei97MD7GK1RmA" name="ownedOperation" upperBound="-1" eType="_TEHn7t6vEei97MD7GK1RmA" containment="true" eOpposite="_TEHoBt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHo_N6vEei97MD7GK1RmA" name="superClass" upperBound="-1" eType="_TEHo596vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHo_d6vEei97MD7GK1RmA" name="instanceClassName" eType="_TEHkv96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHo_t6vEei97MD7GK1RmA" name="TypeExp" eSuperTypes="_TJDLNN6vEei97MD7GK1RmA _TXLHft6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHo_96vEei97MD7GK1RmA" name="referredType" eType="_TEHo596vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpAN6vEei97MD7GK1RmA" name="TypeTemplateParameter" eSuperTypes="_TEHon96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHpAd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHpAt6vEei97MD7GK1RmA" key="documentation" value="A type template parameter exposes a type as a formal template parameter."/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_TEHpA96vEei97MD7GK1RmA" source="duplicates">
+      <contents xsi:type="ecore:EReference" xmi:id="_TEHpBN6vEei97MD7GK1RmA" name="parameteredElement" lowerBound="1" eType="_TEHoO96vEei97MD7GK1RmA" eOpposite="_TEHo796vEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_TEHpBd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_TEHpBt6vEei97MD7GK1RmA" key="documentation" value="The parameterable classifier for this template parameter."/>
+        </eAnnotations>
+        <eAnnotations xmi:id="_TEHpB96vEei97MD7GK1RmA" source="redefines" references="_TEHopd6vEei97MD7GK1RmA"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHpCN6vEei97MD7GK1RmA" name="allowSubstitutable" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="true">
+      <eAnnotations xmi:id="_TEHpCd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHpCt6vEei97MD7GK1RmA" key="documentation" value="Constrains the required relationship between an actual parameter and the parameteredElement for this formal parameter."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHpC96vEei97MD7GK1RmA" name="constrainingType" ordered="false" upperBound="-1" eType="_TEHo596vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHpDN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHpDd6vEei97MD7GK1RmA" key="documentation" value="The classifiers that constrain the argument that can be used for the parameter. If the allowSubstitutable attribute is true, then any classifier that is compatible with this constraining classifier can be substituted; otherwise, it must be either this classifier or one of its subclasses. If this property is empty, there are no constraints on the classifier that can be used as an argument."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpDt6vEei97MD7GK1RmA" name="TypedElement" abstract="true" eSuperTypes="_TEHn096vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHpD96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHpEN6vEei97MD7GK1RmA" key="documentation" value="A typed element is a kind of named element that represents an element with a type."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHpEd6vEei97MD7GK1RmA" name="type" eType="_TEHo596vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHpEt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHpE96vEei97MD7GK1RmA" key="documentation" value="The type of the TypedElement."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpFN6vEei97MD7GK1RmA" name="TypedMultiplicityElement" abstract="true" eSuperTypes="_TEHpDt6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_TEHpFd6vEei97MD7GK1RmA" name="CompatibleBody" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TQnNNd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TQnNNt6vEei97MD7GK1RmA" key="body" value="bodySpecification.type.conformsTo(self.type)"/>
+      </eAnnotations>
+      <eParameters xmi:id="_TEHpGN6vEei97MD7GK1RmA" name="bodySpecification" lowerBound="1" eType="_TEHpIt6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_TEHpGd6vEei97MD7GK1RmA" name="makeParameter" lowerBound="1" eType="_TEHoNd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHpGt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_TEHpG96vEei97MD7GK1RmA" key="body" value="Parameter{name = 'name'}"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TQAH3d6vEei97MD7GK1RmA" name="isRequired" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpHN6vEei97MD7GK1RmA" name="UnlimitedNaturalLiteralExp" eSuperTypes="_TEHn4d6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHpHd6vEei97MD7GK1RmA" name="unlimitedNaturalSymbol" lowerBound="1" eType="_TEHkw96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpHt6vEei97MD7GK1RmA" name="UnspecifiedType" eSuperTypes="_TEHk7N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHpH96vEei97MD7GK1RmA" name="lowerBound" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHpIN6vEei97MD7GK1RmA" name="upperBound" lowerBound="1" eType="_TEHo596vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpId6vEei97MD7GK1RmA" name="UnspecifiedValueExp" eSuperTypes="_TJDLNN6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpIt6vEei97MD7GK1RmA" name="ValueSpecification" abstract="true" eSuperTypes="_TEHpDt6vEei97MD7GK1RmA _TEHoO96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_TEHpI96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_TEHpJN6vEei97MD7GK1RmA" key="documentation" value="A value specification is the specification of a (possibly empty) set of instances, including both objects and data values.&#xD;&#xA;ValueSpecification specializes ParameterableElement to specify that a value specification can be exposed as a formal template parameter, and provided as an actual parameter in a binding of a template."/>
+    </eAnnotations>
+    <eOperations xmi:id="_TEHpJd6vEei97MD7GK1RmA" name="isComputable" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHpJt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHpJ96vEei97MD7GK1RmA" key="documentation" value="The query isComputable() determines whether a value specification can be computed in a model. This operation cannot be fully defined in OCL. A conforming implementation is expected to deliver true for this operation for all value specifications that it can compute, and to compute all of those for which the operation is true. A conforming implementation is expected to be able to compute the value of all literals."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_TEHpKN6vEei97MD7GK1RmA" name="integerValue" lowerBound="1" eType="_TEHkud6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHpKd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHpKt6vEei97MD7GK1RmA" key="documentation" value="The query integerValue() gives a single Integer value when one can be computed."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_TEHpK96vEei97MD7GK1RmA" name="booleanValue" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHpLN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHpLd6vEei97MD7GK1RmA" key="documentation" value="The query booleanValue() gives a single Boolean value when one can be computed."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_TEHpLt6vEei97MD7GK1RmA" name="stringValue" lowerBound="1" eType="_TEHkv96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHpL96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHpMN6vEei97MD7GK1RmA" key="documentation" value="The query stringValue() gives a single String value when one can be computed."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_TEHpMd6vEei97MD7GK1RmA" name="unlimitedValue" lowerBound="1" eType="_TEHkw96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHpMt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHpM96vEei97MD7GK1RmA" key="documentation" value="The query unlimitedValue() gives a single UnlimitedNatural value when one can be computed."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_TEHpNN6vEei97MD7GK1RmA" name="isNull" lowerBound="1" eType="_TEHktd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_TEHpNd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_TEHpNt6vEei97MD7GK1RmA" key="documentation" value="The query isNull() returns true when it can be computed that the value is null."/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpN96vEei97MD7GK1RmA" name="Variable" eSuperTypes="_TEHpO96vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHpON6vEei97MD7GK1RmA" name="initExpression" eType="_TJDLNN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHpOd6vEei97MD7GK1RmA" name="representedParameter" eType="_TEHoNd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHpOt6vEei97MD7GK1RmA" name="implicit" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpO96vEei97MD7GK1RmA" name="VariableDeclaration" abstract="true" eSuperTypes="_TEHpDt6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpPN6vEei97MD7GK1RmA" name="VariableExp" eSuperTypes="_TJDLNN6vEei97MD7GK1RmA _TXLHft6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TEHpPd6vEei97MD7GK1RmA" name="referredVariable" eType="_TEHpO96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TEHpPt6vEei97MD7GK1RmA" name="implicit" eType="_TEHktd6vEei97MD7GK1RmA" defaultValueLiteral="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpP96vEei97MD7GK1RmA" name="Visitable" instanceClassName="org.eclipse.ocl.examples.pivot.util.Visitable" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpQN6vEei97MD7GK1RmA" name="Visitor" instanceClassName="org.eclipse.ocl.examples.pivot.util.Visitor" abstract="true" interface="true">
+    <eTypeParameters xmi:id="_TEHpQd6vEei97MD7GK1RmA" name="R"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_TEHpQ96vEei97MD7GK1RmA" name="VoidType" eSuperTypes="_TEHk7N6vEei97MD7GK1RmA"/>
+</ecore:EPackage>

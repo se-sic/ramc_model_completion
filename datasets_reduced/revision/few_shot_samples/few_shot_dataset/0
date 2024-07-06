@@ -1,0 +1,472 @@
+----------------------------------------------------------------------------------------------------
+3 0 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eAnnotations": [
+      "org.eclipse.emf.ecore.impl.EAnnotationImpl@12c719e5 (source: http://www.eclipse.org/emf/2002/GenModel)"
+    ],
+    "eGenericSuperTypes": [
+      "org.eclipse.emf.ecore.impl.EGenericTypeImpl@3dbb70cf (expression: MappingStatement)",
+      "org.eclipse.emf.ecore.impl.EGenericTypeImpl@1055a119 (expression: ReferringElement)"
+    ],
+    "ePackage": "qvtimperative",
+    "eStructuralFeatures": [
+      "binding",
+      "isInfinite",
+      "referredMapping"
+    ],
+    "id": "_KFy-196vEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "MappingCall"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "defaultValue": "false",
+    "defaultValueLiteral": "false",
+    "derived": "false",
+    "eAnnotations": [
+      "org.eclipse.emf.ecore.impl.EAnnotationImpl@8090a82 (source: http://www.eclipse.org/emf/2002/GenModel)"
+    ],
+    "eAttributeType": "Boolean",
+    "eContainingClass": "MappingCall",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@3796a248 (expression: Boolean)",
+    "eType": "Boolean",
+    "iD": "false",
+    "id": "_M0Tzmt6vEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "isInfinite",
+    "ordered": "true",
+    "required": "false",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "true",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EAttribute",
+  "type": "object"
+}
+1 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "details",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "details": [
+      "org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@754b41b8 (key: documentation, value: An infinite MappingCall requires re-invocation of the called mapping to be suppressed to avoid an infinite loop.)"
+    ],
+    "eModelElement": "isInfinite",
+    "id": "_M0Tzm96vEei97MD7GK1RmA",
+    "source": "http://www.eclipse.org/emf/2002/GenModel"
+  },
+  "changeType": "Add",
+  "className": "EAnnotation",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "id": "_M0TznN6vEei97MD7GK1RmA",
+    "key": "documentation",
+    "value": "An infinite MappingCall requires re-invocation of the called mapping to be suppressed to avoid an infinite loop."
+  },
+  "changeType": "Add",
+  "className": "EStringToStringMapEntry",
+  "type": "object"
+}
+0 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eAnnotations",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{}
+----------------------------------------------------------------------------------------------------
+3 0 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eAnnotations": [
+      "org.eclipse.emf.ecore.impl.EAnnotationImpl@53af5687 (source: http://www.eclipse.org/emf/2002/GenModel)"
+    ],
+    "eGenericSuperTypes": [
+      "org.eclipse.emf.ecore.impl.EGenericTypeImpl@7be84469 (expression: AbstractMapping)"
+    ],
+    "eOperations": [
+      "getAllMappings"
+    ],
+    "ePackage": "qvtimperative",
+    "eStructuralFeatures": [
+      "mappingStatement",
+      "polledClasses"
+    ],
+    "id": "_KFy-096vEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "Mapping"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "false",
+    "derived": "false",
+    "eAnnotations": [
+      "org.eclipse.emf.ecore.impl.EAnnotationImpl@122bdecc (source: http://www.eclipse.org/emf/2002/GenModel)"
+    ],
+    "eContainingClass": "Mapping",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@22512f69 (expression: Class)",
+    "eReferenceType": "Class",
+    "eType": "Class",
+    "id": "_NBRRhN6vEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "true",
+    "name": "polledClasses",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "-1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EReference",
+  "type": "object"
+}
+1 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "details",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "details": [
+      "org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@162b0e0a (key: documentation, value: The classes whse instances must be polled for readiness prior to use.)"
+    ],
+    "eModelElement": "polledClasses",
+    "id": "_NBRRhd6vEei97MD7GK1RmA",
+    "source": "http://www.eclipse.org/emf/2002/GenModel"
+  },
+  "changeType": "Add",
+  "className": "EAnnotation",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "id": "_NBRRht6vEei97MD7GK1RmA",
+    "key": "documentation",
+    "value": "The classes whse instances must be polled for readiness prior to use."
+  },
+  "changeType": "Add",
+  "className": "EStringToStringMapEntry",
+  "type": "object"
+}
+0 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eAnnotations",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{}
+----------------------------------------------------------------------------------------------------
+2 0 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eAnnotations": [
+      "org.eclipse.emf.ecore.impl.EAnnotationImpl@132893ec (source: http://www.eclipse.org/emf/2002/GenModel)"
+    ],
+    "eGenericSuperTypes": [
+      "org.eclipse.emf.ecore.impl.EGenericTypeImpl@55be573 (expression: AbstractMapping)"
+    ],
+    "eOperations": [
+      "getAllMappings"
+    ],
+    "ePackage": "qvtimperative",
+    "eStructuralFeatures": [
+      "mappingStatements"
+    ],
+    "id": "_KFy-096vEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "Mapping"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "Mapping",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@111f912f (expression: MappingStatement)",
+    "eReferenceType": "MappingStatement",
+    "eType": "MappingStatement",
+    "id": "_K5nBbt6vEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "mappingStatements",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EReference",
+  "type": "object"
+}
+2 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "Mapping",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@36c57818 (expression: MappingStatement)",
+    "eReferenceType": "MappingStatement",
+    "eType": "MappingStatement",
+    "id": "_MMry396vEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "mappingStatement",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EReference",
+  "type": "object"
+}
+----------------------------------------------------------------------------------------------------
+2 0 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eAnnotations": [
+      "org.eclipse.emf.ecore.impl.EAnnotationImpl@132893ec (source: http://www.eclipse.org/emf/2002/GenModel)"
+    ],
+    "eGenericSuperTypes": [
+      "org.eclipse.emf.ecore.impl.EGenericTypeImpl@55be573 (expression: AbstractMapping)"
+    ],
+    "eOperations": [
+      "getAllMappings"
+    ],
+    "ePackage": "qvtimperative",
+    "eStructuralFeatures": [
+      "mappingStatements"
+    ],
+    "id": "_KFy-096vEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "Mapping"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "Mapping",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@111f912f (expression: MappingStatement)",
+    "eReferenceType": "MappingStatement",
+    "eType": "MappingStatement",
+    "id": "_K5nBbt6vEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "mappingStatements",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EReference",
+  "type": "object"
+}
+2 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "Mapping",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@36c57818 (expression: MappingStatement)",
+    "eReferenceType": "MappingStatement",
+    "eType": "MappingStatement",
+    "id": "_MMry396vEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "mappingStatement",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EReference",
+  "type": "object"
+}
+----------------------------------------------------------------------------------------------------
+1 0 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "eAnnotations": [
+      "org.eclipse.emf.ecore.impl.EAnnotationImpl@78b8198a (source: http://www.eclipse.org/emf/2002/GenModel)"
+    ],
+    "eGenericSuperTypes": [
+      "org.eclipse.emf.ecore.impl.EGenericTypeImpl@7b58442 (expression: ConnectionVariable)",
+      "org.eclipse.emf.ecore.impl.EGenericTypeImpl@41fc0480 (expression: VariableStatement)"
+    ],
+    "ePackage": "qvtimperative",
+    "eStructuralFeatures": [
+      "ownedInit"
+    ],
+    "id": "_NVtQzN6vEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "OutConnectionVariable"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "OutConnectionVariable",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@7a7b752f (expression: OCLExpression)",
+    "eReferenceType": "OCLExpression",
+    "eType": "OCLExpression",
+    "id": "_NZ3YDt6vEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "ownedExpression",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EReference",
+  "type": "object"
+}
+--------------------------------------------------COMPLETION--------------------------------------------------
+1 2 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "OutConnectionVariable",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@3ad9a369 (expression: OCLExpression)",
+    "eReferenceType": "OCLExpression",
+    "eType": "OCLExpression",
+    "id": "_NVtQz96vEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "false",
+    "name": "ownedInit",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EReference",
+  "type": "object"
+}

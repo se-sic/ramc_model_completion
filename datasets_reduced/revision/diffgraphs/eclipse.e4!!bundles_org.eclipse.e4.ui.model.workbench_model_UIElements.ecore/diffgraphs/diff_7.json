@@ -1,0 +1,41 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_N8kuEt6tEei97MD7GK1RmA', 'name':'Dirtyable','ePackage':'application','abstract':'false','interface':'false','eStructuralFeatures':['dirty']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_MWuxqd6tEei97MD7GK1RmA', 'name':'dirty','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@146f97b (expression: EBoolean)','changeable':'true','volatile':'false','transient':'true','defaultValue':'false','unsettable':'false','derived':'false','eContainingClass':'Dirtyable','iD':'false','eAttributeType':'EBoolean'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_N8kulN6tEei97MD7GK1RmA', 'name':'SaveablePart','ePackage':'application','abstract':'false','interface':'false','eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@4344866d (expression: Part)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@3af63d72 (expression: Dirtyable)']}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_LWKscd6tEei97MD7GK1RmA', 'name':'application','nsURI':'http://www.eclipse.org/ui/2008/UIModel','nsPrefix':'application','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@43f3ca35','eClassifiers':['V____________Abstract_____________V','ApplicationElement','Contribution','Command','Dirtyable','Handler','HandlerContainer','Input','Parameter','UIItem','UIElement','IEclipseContext','ParameterizedCommand','...']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Change', 'type': 'attributeValue', 'className': 'EAttribute', 'attributeName': 'transient', 'valueBefore': 'false', 'valueAfter': 'true'}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_LWKsht6tEei97MD7GK1RmA', 'name':'Input','ePackage':'application','abstract':'false','interface':'false','eStructuralFeatures':['inputURI','dirty']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "3", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "3", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "1", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Change', 'type': 'attribute'}" 
+},{
+	 "source": "5", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+}]}

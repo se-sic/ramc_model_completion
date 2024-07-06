@@ -1,0 +1,37 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_V96u696tEei97MD7GK1RmA', 'name':'bindingContexts','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'EString','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@e520033 (expression: EString)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'Bindings','iD':'false','eAttributeType':'EString'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAttribute', 'attributes': {'id': '_V96u9N6tEei97MD7GK1RmA', 'name':'bindingContextId','ordered':'true','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'EString','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@483a4ac7 (expression: EString)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'BindingTable','iD':'false','eAttributeType':'EString'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_XDTpKN6tEei97MD7GK1RmA', 'name':'bindingContexts','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'BindingContext','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6d6fa1ad (expression: BindingContext)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'Bindings','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'BindingContext'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_XDTpMd6tEei97MD7GK1RmA', 'name':'bindingContext','ordered':'true','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'BindingContext','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6b3b118b (expression: BindingContext)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'BindingTable','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'BindingContext'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_V96u896tEei97MD7GK1RmA', 'name':'BindingTable','ePackage':'commands','abstract':'false','interface':'false','eStructuralFeatures':['bindingContextId','bindings'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@a7e52c6 (expression: ApplicationElement)']}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_V96u6t6tEei97MD7GK1RmA', 'name':'Bindings','ePackage':'commands','abstract':'true','interface':'true','eStructuralFeatures':['bindingContexts']}}" 
+}], 
+ "links": [{
+	 "source": "4", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "4", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "5", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "5", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+}]}

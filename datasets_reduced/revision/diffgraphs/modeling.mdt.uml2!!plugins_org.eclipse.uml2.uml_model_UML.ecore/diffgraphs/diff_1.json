@@ -1,0 +1,1727 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftfLd96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7631e92c (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'no_name','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7c7d862a (expression: EBoolean)','eContainingClass':'NamedElement','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftfLeN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@19c15298 (key: documentation, value: If there is no name, or one of the containing namespaces has no name, there is no qualified name.\\r\\n(self.name->isEmpty() or self.allNamespaces()->select(ns | ns.name->isEmpty())->notEmpty())\\n\\n  implies self.qualifiedName->isEmpty())'],'eModelElement':'no_name'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftfLfd6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@70fadf7b (expression: EMap)','eOperation':'no_name'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftfLe96tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@73e090f5 (expression: EDiagnosticChain)','eOperation':'no_name'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftfLed6tEei97MD7GK1RmA', 'key':'documentation','value':'If there is no name, or one of the containing namespaces has no name, there is no qualified name.\\r\\n(self.name->isEmpty() or self.allNamespaces()->select(ns | ns.name->isEmpty())->notEmpty())\\n\\n  implie'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftfLf96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@60a6106 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'qualified_name','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@721556ef (expression: EBoolean)','eContainingClass':'NamedElement','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftfLgN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@54325a15 (key: documentation, value: When there is a name, and all of the containing namespaces have a name, the qualified name is constructed from the names of the containing namespaces.\\r\\n(self.name->notEmpty() and self.allNamespaces()->select(ns | ns.name->isEmpty())->isEmpty()) implies\\n  self.qualifiedName = self.allNamespaces()->iterate( ns : Namespace; result: String = self.name | ns.name->union(self.separator())->union(result)))'],'eModelElement':'qualified_name'}}" 
+},{
+	 "id": "7", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftfLhd6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@19a1f855 (expression: EMap)','eOperation':'qualified_name'}}" 
+},{
+	 "id": "8", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftfLg96tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7ff7cb7 (expression: EDiagnosticChain)','eOperation':'qualified_name'}}" 
+},{
+	 "id": "9", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftfLgd6tEei97MD7GK1RmA', 'key':'documentation','value':'When there is a name, and all of the containing namespaces have a name, the qualified name is constructed from the names of the containing namespaces.\\r\\n(self.name->notEmpty() and self.allNamespaces()-'}}" 
+},{
+	 "id": "10", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftfySt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@5d566113 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'parameter_substitution','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4f2e4c51 (expression: EBoolean)','eContainingClass':'TemplateBinding','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "11", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftfyS96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3dab6de3 (key: documentation, value: Each parameter substitution must refer to a formal template parameter of the target template signature.\\r\\nparameterSubstitution->forAll(b | template.parameter->includes(b.formal)))'],'eModelElement':'parameter_substitution'}}" 
+},{
+	 "id": "12", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftfyUN6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@2dee324a (expression: EMap)','eOperation':'parameter_substitution'}}" 
+},{
+	 "id": "13", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftfyTt6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@76bd079d (expression: EDiagnosticChain)','eOperation':'parameter_substitution'}}" 
+},{
+	 "id": "14", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftfyTN6tEei97MD7GK1RmA', 'key':'documentation','value':'Each parameter substitution must refer to a formal template parameter of the target template signature.\\r\\nparameterSubstitution->forAll(b | template.parameter->includes(b.formal))'}}" 
+},{
+	 "id": "15", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftfygt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@64b6663c (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'members_are_distinguishable','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4dd54b18 (expression: EBoolean)','eContainingClass':'Namespace','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "16", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftfyg96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@22756cf2 (key: documentation, value: All the members of a Namespace are distinguishable within it.\\r\\nmembersAreDistinguishable())'],'eModelElement':'members_are_distinguishable'}}" 
+},{
+	 "id": "17", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftfyht6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6b8affe0 (expression: EDiagnosticChain)','eOperation':'members_are_distinguishable'}}" 
+},{
+	 "id": "18", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftfyiN6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@57b165e (expression: EMap)','eOperation':'members_are_distinguishable'}}" 
+},{
+	 "id": "19", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftfyhN6tEei97MD7GK1RmA', 'key':'documentation','value':'All the members of a Namespace are distinguishable within it.\\r\\nmembersAreDistinguishable()'}}" 
+},{
+	 "id": "20", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftf0EN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2c485060 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'specialize','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6ad67aff (expression: EBoolean)','eContainingClass':'Classifier','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "21", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftf0Ed6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@4218ed56 (key: documentation, value: A classifier may only specialize classifiers of a valid type.\\r\\nself.parents()->forAll(c | self.maySpecializeType(c)))'],'eModelElement':'specialize'}}" 
+},{
+	 "id": "22", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftf0Ft6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@e114d9a (expression: EMap)','eOperation':'specialize'}}" 
+},{
+	 "id": "23", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftf0FN6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@523ee142 (expression: EDiagnosticChain)','eOperation':'specialize'}}" 
+},{
+	 "id": "24", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftf0Et6tEei97MD7GK1RmA', 'key':'documentation','value':'A classifier may only specialize classifiers of a valid type.\\r\\nself.parents()->forAll(c | self.maySpecializeType(c))'}}" 
+},{
+	 "id": "25", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftf0Vt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@5ef4d472 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@1e836ee5 (source: http://www.eclipse.org/emf/2002/Ecore)'],'name':'maySpecializeType','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@651b9e41 (expression: EBoolean)','eContainingClass':'Classifier'}}" 
+},{
+	 "id": "26", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftf0V96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3041b752 (key: documentation, value: The query maySpecializeType() determines whether this classifier may have a generalization relationship to classifiers of the specified type. By default a classifier may specialize classifiers of the same or a more general type. It is intended to be redefined by classifiers that have different specialization constraints.\\r\\nresult = self.oclIsKindOf(c.oclType))'],'eModelElement':'maySpecializeType'}}" 
+},{
+	 "id": "27", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftf0Wd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/Ecore','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@1db49ec1 (key: constraints, value: spec)'],'eModelElement':'maySpecializeType'}}" 
+},{
+	 "id": "28", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftf0WN6tEei97MD7GK1RmA', 'key':'documentation','value':'The query maySpecializeType() determines whether this classifier may have a generalization relationship to classifiers of the specified type. By default a classifier may specialize classifiers of the '}}" 
+},{
+	 "id": "29", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftf0Wt6tEei97MD7GK1RmA', 'key':'constraints','value':'spec'}}" 
+},{
+	 "id": "30", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftf0rN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@77797960 (key: documentation, value: The query isRedefinitionContextValid() specifies whether the redefinition contexts of this RedefinableElement are properly related to the redefinition contexts of the specified RedefinableElement to allow this element to redefine the other. By default at least one of the redefinition contexts of this element must be a specialization of at least one of the redefinition contexts of the specified element.\\r\\nresult = self.redefinitionContext->exists(c | redefinable.redefinitionContext->exists(r | c.allParents()->includes(r))))'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "31", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftf0rd6tEei97MD7GK1RmA', 'key':'documentation','value':'The query isRedefinitionContextValid() specifies whether the redefinition contexts of this RedefinableElement are properly related to the redefinition contexts of the specified RedefinableElement to a'}}" 
+},{
+	 "id": "32", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftf0sd6tEei97MD7GK1RmA', 'name':'redefinable','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'RedefinableElement','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@d2b882f (expression: RedefinableElement)','eOperation':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "33", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftf0ud6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@459ab2b6 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@43b28f9e (source: http://www.eclipse.org/emf/2002/Ecore)'],'name':'isRedefinitionContextValid','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@68992374 (expression: EBoolean)','eContainingClass':'RedefinableElement'}}" 
+},{
+	 "id": "34", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftf0ut6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@62522b5b (key: documentation, value: The query isRedefinitionContextValid() specifies whether the redefinition contexts of this RedefinableElement are properly related to the redefinition contexts of the specified RedefinableElement to allow this element to redefine the other. By default at least one of the redefinition contexts of this element must be a specialization of at least one of the redefinition contexts of the specified element.\\r\\nresult = redefinitionContext->exists(c | c.allParents()->includes(redefined.redefinitionContext)))'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "35", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftf0vN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/Ecore','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@780631c0 (key: constraints, value: spec)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "36", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftf0u96tEei97MD7GK1RmA', 'key':'documentation','value':'The query isRedefinitionContextValid() specifies whether the redefinition contexts of this RedefinableElement are properly related to the redefinition contexts of the specified RedefinableElement to a'}}" 
+},{
+	 "id": "37", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftf0vd6tEei97MD7GK1RmA', 'key':'constraints','value':'spec'}}" 
+},{
+	 "id": "38", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftf3Fd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2e2daf87 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'subsetting_context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@92f01fc (expression: EBoolean)','eContainingClass':'Property','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "39", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftf3Ft6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@16c3888a (key: documentation, value: Subsetting may only occur when the context of the subsetting property conforms to the context of the subsetted property.\\r\\nself.subsettedProperty->notEmpty() implies\\n  (self.subsettingContext()->notEmpty() and self.subsettingContext()->forAll (sc |\\n    self.subsettedProperty->forAll(sp |\\n      sp.subsettingContext()->exists(c | sc.conformsTo(c))))))'],'eModelElement':'subsetting_context'}}" 
+},{
+	 "id": "40", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftf3G96tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3b002a64 (expression: EMap)','eOperation':'subsetting_context'}}" 
+},{
+	 "id": "41", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftf3Gd6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@40dca56a (expression: EDiagnosticChain)','eOperation':'subsetting_context'}}" 
+},{
+	 "id": "42", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftf3F96tEei97MD7GK1RmA', 'key':'documentation','value':'Subsetting may only occur when the context of the subsetting property conforms to the context of the subsetted property.\\r\\nself.subsettedProperty->notEmpty() implies\\n  (self.subsettingContext()->notEmp'}}" 
+},{
+	 "id": "43", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftgaXt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@1fd5a671 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'parameters','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@e069509 (expression: EBoolean)','eContainingClass':'Behavior','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "44", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgaX96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7974b9a0 (key: documentation, value: The parameters of the behavior must match the parameters of the implemented behavioral feature.\\r\\ntrue)'],'eModelElement':'parameters'}}" 
+},{
+	 "id": "45", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftgaZN6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@133ffece (expression: EMap)','eOperation':'parameters'}}" 
+},{
+	 "id": "46", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftgaYt6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@754e869f (expression: EDiagnosticChain)','eOperation':'parameters'}}" 
+},{
+	 "id": "47", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftgaYN6tEei97MD7GK1RmA', 'key':'documentation','value':'The parameters of the behavior must match the parameters of the implemented behavioral feature.\\r\\ntrue'}}" 
+},{
+	 "id": "48", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftgbQ96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7d3dcf6f (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@1c0c2f73 (source: http://www.eclipse.org/emf/2002/Ecore)','...'],'name':'isRedefinitionContextValid','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@71666cc (expression: EBoolean)'}}" 
+},{
+	 "id": "49", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgbRN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@44ce7dce (key: documentation, value: The query isRedefinitionContextValid() specifies whether the redefinition contexts of a statemachine are properly related to the redefinition contexts of the specified statemachine to allow this element to redefine the other. The containing classifier of a redefining statemachine must redefine the containing classifier of the redefined statemachine.\\r\\nresult = true)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "50", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgbSN6tEei97MD7GK1RmA', 'source':'redefines','eModelElement':'isRedefinitionContextValid','references':['isRedefinitionContextValid']}}" 
+},{
+	 "id": "51", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgbRt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/Ecore','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2354a8ad (key: constraints, value: spec)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "52", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftgbRd6tEei97MD7GK1RmA', 'key':'documentation','value':'The query isRedefinitionContextValid() specifies whether the redefinition contexts of a statemachine are properly related to the redefinition contexts of the specified statemachine to allow this eleme'}}" 
+},{
+	 "id": "53", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftgbR96tEei97MD7GK1RmA', 'key':'constraints','value':'spec'}}" 
+},{
+	 "id": "54", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftgbkd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@52e0f988 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@168222f2 (source: http://www.eclipse.org/emf/2002/Ecore)','...'],'name':'isRedefinitionContextValid','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@8d081c1 (expression: EBoolean)'}}" 
+},{
+	 "id": "55", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgblN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/Ecore','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@77456a27 (key: constraints, value: spec)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "56", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgblt6tEei97MD7GK1RmA', 'source':'redefines','eModelElement':'isRedefinitionContextValid','references':['isRedefinitionContextValid']}}" 
+},{
+	 "id": "57", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgbkt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@954624a (key: documentation, value: The query isRedefinitionContextValid() specifies whether the redefinition contexts of a region are properly related to the redefinition contexts of the specified region to allow this element to redefine the other. The containing statemachine/state of a redefining region must redefine the containing statemachine/state of the redefined region.\\r\\nresult = true)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "58", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftgbk96tEei97MD7GK1RmA', 'key':'documentation','value':'The query isRedefinitionContextValid() specifies whether the redefinition contexts of a region are properly related to the redefinition contexts of the specified region to allow this element to redefi'}}" 
+},{
+	 "id": "59", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftgbld6tEei97MD7GK1RmA', 'key':'constraints','value':'spec'}}" 
+},{
+	 "id": "60", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftgcut6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7809d2f9 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@315b75a4 (source: http://www.eclipse.org/emf/2002/Ecore)','...'],'name':'isRedefinitionContextValid','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6fc80e32 (expression: EBoolean)'}}" 
+},{
+	 "id": "61", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgcu96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@b2189d4 (key: documentation, value: The query isRedefinitionContextValid() specifies whether the redefinition contexts of a state are properly related to the redefinition contexts of the specified state to allow this element to redefine the other. The containing region of a redefining state must redefine the containing region of the redefined state.\\r\\nresult = true)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "62", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgcv96tEei97MD7GK1RmA', 'source':'redefines','eModelElement':'isRedefinitionContextValid','references':['isRedefinitionContextValid']}}" 
+},{
+	 "id": "63", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgcvd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/Ecore','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5e88dae9 (key: constraints, value: spec)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "64", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftgcvN6tEei97MD7GK1RmA', 'key':'documentation','value':'The query isRedefinitionContextValid() specifies whether the redefinition contexts of a state are properly related to the redefinition contexts of the specified state to allow this element to redefine'}}" 
+},{
+	 "id": "65", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftgcvt6tEei97MD7GK1RmA', 'key':'constraints','value':'spec'}}" 
+},{
+	 "id": "66", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_fthAy96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@a81a36a (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'constraining_classifier','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@575553c2 (expression: EBoolean)','eContainingClass':'ClassifierTemplateParameter','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "67", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_fthAzN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@45397e54 (key: documentation, value: If \\\\'allowSubstitutable\\\\' is true, then there must be a constrainingClassifier.\\r\\nallowSubstitutable implies constrainingClassifier->notEmpty())'],'eModelElement':'constraining_classifier'}}" 
+},{
+	 "id": "68", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_fthA0d6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@d60e64c (expression: EMap)','eOperation':'constraining_classifier'}}" 
+},{
+	 "id": "69", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_fthAz96tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7e937a9f (expression: EDiagnosticChain)','eOperation':'constraining_classifier'}}" 
+},{
+	 "id": "70", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_fthAzd6tEei97MD7GK1RmA', 'key':'documentation','value':'If \\\\'allowSubstitutable\\\\' is true, then there must be a constrainingClassifier.\\r\\nallowSubstitutable implies constrainingClassifier->notEmpty()'}}" 
+},{
+	 "id": "71", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_fthnuN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@6867094f (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'is_dimension','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3abc9589 (expression: EBoolean)','eContainingClass':'ActivityPartition','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "72", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_fthnud6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@782a8e0 (key: documentation, value: A partition with isDimension = true may not be contained by another partition.\\r\\ntrue)'],'eModelElement':'is_dimension'}}" 
+},{
+	 "id": "73", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_fthnvN6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@187ce417 (expression: EDiagnosticChain)','eOperation':'is_dimension'}}" 
+},{
+	 "id": "74", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_fthnvt6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@54655641 (expression: EMap)','eOperation':'is_dimension'}}" 
+},{
+	 "id": "75", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_fthnut6tEei97MD7GK1RmA', 'key':'documentation','value':'A partition with isDimension = true may not be contained by another partition.\\r\\ntrue'}}" 
+},{
+	 "id": "76", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_fthpSN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@54813c55 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'minint','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@63e1802a (expression: EBoolean)','eContainingClass':'InteractionConstraint','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "77", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_fthpSd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@784d91d8 (key: documentation, value: If minint is specified, then the expression must evaluate to a non-negative integer.\\r\\ntrue)'],'eModelElement':'minint'}}" 
+},{
+	 "id": "78", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_fthpTN6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@254f6a14 (expression: EDiagnosticChain)','eOperation':'minint'}}" 
+},{
+	 "id": "79", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_fthpTt6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5e97cafd (expression: EMap)','eOperation':'minint'}}" 
+},{
+	 "id": "80", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_fthpSt6tEei97MD7GK1RmA', 'key':'documentation','value':'If minint is specified, then the expression must evaluate to a non-negative integer.\\r\\ntrue'}}" 
+},{
+	 "id": "81", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_fthpUN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@74c5ac30 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'maxint','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@62ea7556 (expression: EBoolean)','eContainingClass':'InteractionConstraint','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "82", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_fthpUd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@24a87c0 (key: documentation, value: If maxint is specified, then the expression must evaluate to a positive integer.\\r\\ntrue)'],'eModelElement':'maxint'}}" 
+},{
+	 "id": "83", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_fthpVt6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@552c7d55 (expression: EMap)','eOperation':'maxint'}}" 
+},{
+	 "id": "84", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_fthpVN6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@327f1155 (expression: EDiagnosticChain)','eOperation':'maxint'}}" 
+},{
+	 "id": "85", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_fthpUt6tEei97MD7GK1RmA', 'key':'documentation','value':'If maxint is specified, then the expression must evaluate to a positive integer.\\r\\ntrue'}}" 
+},{
+	 "id": "86", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftiQmt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4371411a (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'on_port','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@22d1da33 (expression: EBoolean)','eContainingClass':'InvocationAction','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "87", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftiQm96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@6c52e5ee (key: documentation, value: The onPort must be a port on the receiver object.\\r\\ntrue)'],'eModelElement':'on_port'}}" 
+},{
+	 "id": "88", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftiQnt6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7e77f789 (expression: EDiagnosticChain)','eOperation':'on_port'}}" 
+},{
+	 "id": "89", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftiQoN6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@295d42f3 (expression: EMap)','eOperation':'on_port'}}" 
+},{
+	 "id": "90", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftiQnN6tEei97MD7GK1RmA', 'key':'documentation','value':'The onPort must be a port on the receiver object.\\r\\ntrue'}}" 
+},{
+	 "id": "91", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftjdC96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@482bcd4e (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'is_unmarshall','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@847de58 (expression: EBoolean)','eContainingClass':'AcceptEventAction','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "92", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftjdDN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5992a545 (key: documentation, value: If isUnmarshall is true, there must be exactly one trigger for events of type SignalEvent. The number of result output pins must be the same as the number of attributes of the signal. The type and ordering of each result output pin must be the same as the corresponding attribute of the signal. The multiplicity of each result output pin must be compatible with the multiplicity of the corresponding attribute.\\r\\ntrue)'],'eModelElement':'is_unmarshall'}}" 
+},{
+	 "id": "93", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftjdEd6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@98ff2d3 (expression: EMap)','eOperation':'is_unmarshall'}}" 
+},{
+	 "id": "94", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftjdD96tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@73f875d3 (expression: EDiagnosticChain)','eOperation':'is_unmarshall'}}" 
+},{
+	 "id": "95", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftjdDd6tEei97MD7GK1RmA', 'key':'documentation','value':'If isUnmarshall is true, there must be exactly one trigger for events of type SignalEvent. The number of result output pins must be the same as the number of attributes of the signal. The type and ord'}}" 
+},{
+	 "id": "96", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftjdId6tEei97MD7GK1RmA', 'source':'duplicates','eModelElement':'AcceptCallAction','contents':['is_unmarshall']}}" 
+},{
+	 "id": "97", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftjdIt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@6e225f3d (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@57de6347 (source: redefines)'],'name':'is_unmarshall','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@441324b7 (expression: EBoolean)','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "98", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftjdJd6tEei97MD7GK1RmA', 'source':'redefines','eModelElement':'is_unmarshall','references':['is_unmarshall']}}" 
+},{
+	 "id": "99", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftjdI96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@43412650 (key: documentation, value: isUnmrashall must be true for an AcceptCallAction.\\r\\nisUnmarshall = true)'],'eModelElement':'is_unmarshall'}}" 
+},{
+	 "id": "100", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftjdJ96tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@728d925f (expression: EDiagnosticChain)','eOperation':'is_unmarshall'}}" 
+},{
+	 "id": "101", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftjdKd6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@b86a3f4 (expression: EMap)','eOperation':'is_unmarshall'}}" 
+},{
+	 "id": "102", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftjdJN6tEei97MD7GK1RmA', 'key':'documentation','value':'isUnmrashall must be true for an AcceptCallAction.\\r\\nisUnmarshall = true'}}" 
+},{
+	 "id": "103", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftjdx96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@3d152200 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'parameter','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@520d8b8a (expression: EBoolean)','eContainingClass':'ActivityParameterNode','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "104", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftjdyN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3c65d9d1 (key: documentation, value: Activity parameter nodes must have parameters from the containing activity.\\r\\ntrue)'],'eModelElement':'parameter'}}" 
+},{
+	 "id": "105", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftjdzd6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@2a39757 (expression: EMap)','eOperation':'parameter'}}" 
+},{
+	 "id": "106", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftjdy96tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@2ef5f5c1 (expression: EDiagnosticChain)','eOperation':'parameter'}}" 
+},{
+	 "id": "107", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftjdyd6tEei97MD7GK1RmA', 'key':'documentation','value':'Activity parameter nodes must have parameters from the containing activity.\\r\\ntrue'}}" 
+},{
+	 "id": "108", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftje5t6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@77f9e55 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'body_output','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4e6f410d (expression: EBoolean)','eContainingClass':'Clause','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "109", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftje596tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@506462f0 (key: documentation, value: The bodyOutput pins are output pins on actions in the body of the clause.\\r\\ntrue)'],'eModelElement':'body_output'}}" 
+},{
+	 "id": "110", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftje6t6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@65504f7 (expression: EDiagnosticChain)','eOperation':'body_output'}}" 
+},{
+	 "id": "111", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftje7N6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4106d5a1 (expression: EMap)','eOperation':'body_output'}}" 
+},{
+	 "id": "112", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftje6N6tEei97MD7GK1RmA', 'key':'documentation','value':'The bodyOutput pins are output pins on actions in the body of the clause.\\r\\ntrue'}}" 
+},{
+	 "id": "113", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftjfC96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@75a0a748 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'body_output','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5c1542c8 (expression: EBoolean)','eContainingClass':'LoopNode','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "114", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftjfDN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@1839133e (key: documentation, value: The bodyOutput pins are output pins on actions in the body of the loop node.\\r\\ntrue)'],'eModelElement':'body_output'}}" 
+},{
+	 "id": "115", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftjfD96tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@d21851f (expression: EDiagnosticChain)','eOperation':'body_output'}}" 
+},{
+	 "id": "116", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftjfEd6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@2ba4dd06 (expression: EMap)','eOperation':'body_output'}}" 
+},{
+	 "id": "117", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftjfDd6tEei97MD7GK1RmA', 'key':'documentation','value':'The bodyOutput pins are output pins on actions in the body of the loop node.\\r\\ntrue'}}" 
+},{
+	 "id": "118", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftjf_t6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@69fee054 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'belongs_to_psm','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@2489b27c (expression: EBoolean)','eContainingClass':'ProtocolTransition','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "119", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftjf_96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@69c801a9 (key: documentation, value: A protocol transition always belongs to a protocol state machine.\\r\\ncontainer.belongsToPSM())'],'eModelElement':'belongs_to_psm'}}" 
+},{
+	 "id": "120", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftjgBN6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@325345f1 (expression: EMap)','eOperation':'belongs_to_psm'}}" 
+},{
+	 "id": "121", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_ftjgAt6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@72cc8402 (expression: EDiagnosticChain)','eOperation':'belongs_to_psm'}}" 
+},{
+	 "id": "122", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_ftjgAN6tEei97MD7GK1RmA', 'key':'documentation','value':'A protocol transition always belongs to a protocol state machine.\\r\\ncontainer.belongsToPSM()'}}" 
+},{
+	 "id": "123", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3T1196tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7f87099f (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'has_no_qualified_name','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@1bbe3dfc (expression: EBoolean)','eContainingClass':'NamedElement','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "124", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T12N6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@415c12a3 (key: documentation, value: If there is no name, or one of the containing namespaces has no name, there is no qualified name.\\r\\n(self.name->isEmpty() or self.allNamespaces()->select(ns | ns.name->isEmpty())->notEmpty())\\n\\n  implies self.qualifiedName->isEmpty())'],'eModelElement':'has_no_qualified_name'}}" 
+},{
+	 "id": "125", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T13d6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@64d5f962 (expression: EMap)','eOperation':'has_no_qualified_name'}}" 
+},{
+	 "id": "126", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T1296tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@2f06b2d7 (expression: EDiagnosticChain)','eOperation':'has_no_qualified_name'}}" 
+},{
+	 "id": "127", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T12d6tEei97MD7GK1RmA', 'key':'documentation','value':'If there is no name, or one of the containing namespaces has no name, there is no qualified name.\\r\\n(self.name->isEmpty() or self.allNamespaces()->select(ns | ns.name->isEmpty())->notEmpty())\\n\\n  implie'}}" 
+},{
+	 "id": "128", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3T1396tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@42448651 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'has_qualified_name','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@74263076 (expression: EBoolean)','eContainingClass':'NamedElement','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "129", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T14N6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3f73c013 (key: documentation, value: When there is a name, and all of the containing namespaces have a name, the qualified name is constructed from the names of the containing namespaces.\\r\\n(self.name->notEmpty() and self.allNamespaces()->select(ns | ns.name->isEmpty())->isEmpty()) implies\\n  self.qualifiedName = self.allNamespaces()->iterate( ns : Namespace; result: String = self.name | ns.name->union(self.separator())->union(result)))'],'eModelElement':'has_qualified_name'}}" 
+},{
+	 "id": "130", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T15d6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5e5e9a0f (expression: EMap)','eOperation':'has_qualified_name'}}" 
+},{
+	 "id": "131", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T1496tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3a6c8088 (expression: EDiagnosticChain)','eOperation':'has_qualified_name'}}" 
+},{
+	 "id": "132", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T14d6tEei97MD7GK1RmA', 'key':'documentation','value':'When there is a name, and all of the containing namespaces have a name, the qualified name is constructed from the names of the containing namespaces.\\r\\n(self.name->notEmpty() and self.allNamespaces()-'}}" 
+},{
+	 "id": "133", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3T2ld6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4dd0480c (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'parameter_substitution_formal','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@71133277 (expression: EBoolean)','eContainingClass':'TemplateBinding','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "134", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T2lt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5a06fb8f (key: documentation, value: Each parameter substitution must refer to a formal template parameter of the target template signature.\\r\\nparameterSubstitution->forAll(b | template.parameter->includes(b.formal)))'],'eModelElement':'parameter_substitution_formal'}}" 
+},{
+	 "id": "135", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T2m96tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@710136da (expression: EMap)','eOperation':'parameter_substitution_formal'}}" 
+},{
+	 "id": "136", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T2md6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@745e689d (expression: EDiagnosticChain)','eOperation':'parameter_substitution_formal'}}" 
+},{
+	 "id": "137", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T2l96tEei97MD7GK1RmA', 'key':'documentation','value':'Each parameter substitution must refer to a formal template parameter of the target template signature.\\r\\nparameterSubstitution->forAll(b | template.parameter->includes(b.formal))'}}" 
+},{
+	 "id": "138", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3T2zd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@52218f74 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'members_distinguishable','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@456ba505 (expression: EBoolean)','eContainingClass':'Namespace','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "139", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T2zt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5683b477 (key: documentation, value: All the members of a Namespace are distinguishable within it.\\r\\nmembersAreDistinguishable())'],'eModelElement':'members_distinguishable'}}" 
+},{
+	 "id": "140", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T20d6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@242102cf (expression: EDiagnosticChain)','eOperation':'members_distinguishable'}}" 
+},{
+	 "id": "141", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T2096tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7711f941 (expression: EMap)','eOperation':'members_distinguishable'}}" 
+},{
+	 "id": "142", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T2z96tEei97MD7GK1RmA', 'key':'documentation','value':'All the members of a Namespace are distinguishable within it.\\r\\nmembersAreDistinguishable()'}}" 
+},{
+	 "id": "143", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T48d6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3d003a60 (key: documentation, value: The query isRedefinitionContextValid() specifies whether the redefinition contexts of this RedefinableElement are properly related to the redefinition contexts of the specified RedefinableElement to allow this element to redefine the other. By default at least one of the redefinition contexts of this element must be a specialization of at least one of the redefinition contexts of the specified element.\\r\\nresult = redefinitionContext->exists(c | c.allParents()->includes(redefined.redefinitionContext))))'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "144", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T48t6tEei97MD7GK1RmA', 'key':'documentation','value':'The query isRedefinitionContextValid() specifies whether the redefinition contexts of this RedefinableElement are properly related to the redefinition contexts of the specified RedefinableElement to a'}}" 
+},{
+	 "id": "145", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T49t6tEei97MD7GK1RmA', 'name':'redefined','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'RedefinableElement','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6b138a88 (expression: RedefinableElement)','eOperation':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "146", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3T7Xd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@990d80e (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'subsetting_context_conforms','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3d97ab67 (expression: EBoolean)','eContainingClass':'Property','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "147", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T7Xt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@32b0154e (key: documentation, value: Subsetting may only occur when the context of the subsetting property conforms to the context of the subsetted property.\\r\\nself.subsettedProperty->notEmpty() implies\\n  (self.subsettingContext()->notEmpty() and self.subsettingContext()->forAll (sc |\\n    self.subsettedProperty->forAll(sp |\\n      sp.subsettingContext()->exists(c | sc.conformsTo(c))))))'],'eModelElement':'subsetting_context_conforms'}}" 
+},{
+	 "id": "148", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T7Y96tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@24de7a98 (expression: EMap)','eOperation':'subsetting_context_conforms'}}" 
+},{
+	 "id": "149", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T7Yd6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@163a5c02 (expression: EDiagnosticChain)','eOperation':'subsetting_context_conforms'}}" 
+},{
+	 "id": "150", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T7X96tEei97MD7GK1RmA', 'key':'documentation','value':'Subsetting may only occur when the context of the subsetting property conforms to the context of the subsetted property.\\r\\nself.subsettedProperty->notEmpty() implies\\n  (self.subsettingContext()->notEmp'}}" 
+},{
+	 "id": "151", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3T9E96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@5d48dbc7 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'parameters_match','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@28f654a9 (expression: EBoolean)','eContainingClass':'Behavior','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "152", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T9FN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2e613188 (key: documentation, value: The parameters of the behavior must match the parameters of the implemented behavioral feature.\\r\\ntrue)'],'eModelElement':'parameters_match'}}" 
+},{
+	 "id": "153", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T9Gd6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@398e8ede (expression: EMap)','eOperation':'parameters_match'}}" 
+},{
+	 "id": "154", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T9F96tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@40d497b (expression: EDiagnosticChain)','eOperation':'parameters_match'}}" 
+},{
+	 "id": "155", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T9Fd6tEei97MD7GK1RmA', 'key':'documentation','value':'The parameters of the behavior must match the parameters of the implemented behavioral feature.\\r\\ntrue'}}" 
+},{
+	 "id": "156", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3T-M96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@11ba61d5 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@45ffea28 (source: http://www.eclipse.org/emf/2002/Ecore)','...'],'name':'isRedefinitionContextValid','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@9376a7a (expression: EBoolean)','eContainingClass':'StateMachine','eParameters':['redefined']}}" 
+},{
+	 "id": "157", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T-Nt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/Ecore','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@e6452fa (key: constraints, value: spec)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "158", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T-ON6tEei97MD7GK1RmA', 'source':'redefines','eModelElement':'isRedefinitionContextValid','references':['isRedefinitionContextValid']}}" 
+},{
+	 "id": "159", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T-NN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3fcf55ef (key: documentation, value: The query isRedefinitionContextValid() specifies whether the redefinition contexts of a statemachine are properly related to the redefinition contexts of the specified statemachine to allow this element to redefine the other. The containing classifier of a redefining statemachine must redefine the containing classifier of the redefined statemachine.\\r\\nresult = true)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "160", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T-Ot6tEei97MD7GK1RmA', 'name':'redefined','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'StateMachine','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@1ffc18d2 (expression: StateMachine)','eOperation':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "161", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T-Nd6tEei97MD7GK1RmA', 'key':'documentation','value':'The query isRedefinitionContextValid() specifies whether the redefinition contexts of a statemachine are properly related to the redefinition contexts of the specified statemachine to allow this eleme'}}" 
+},{
+	 "id": "162", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T-N96tEei97MD7GK1RmA', 'key':'constraints','value':'spec'}}" 
+},{
+	 "id": "163", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftf0q96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@512860e9 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@7d9d50e7 (source: http://www.eclipse.org/emf/2002/Ecore)'],'name':'isRedefinitionContextValid','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@40f116c0 (expression: EBoolean)','eContainingClass':'RedefinableElement','eParameters':['redefined']}}" 
+},{
+	 "id": "164", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3T-fd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@416c0a2e (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@4482869f (source: http://www.eclipse.org/emf/2002/Ecore)','...'],'name':'isRedefinitionContextValid','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@43e9893e (expression: EBoolean)','eContainingClass':'Region','eParameters':['redefined']}}" 
+},{
+	 "id": "165", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T-ft6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7958c061 (key: documentation, value: The query isRedefinitionContextValid() specifies whether the redefinition contexts of a region are properly related to the redefinition contexts of the specified region to allow this element to redefine the other. The containing statemachine/state of a redefining region must redefine the containing statemachine/state of the redefined region.\\r\\nresult = true)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "166", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T-gt6tEei97MD7GK1RmA', 'source':'redefines','eModelElement':'isRedefinitionContextValid','references':['isRedefinitionContextValid']}}" 
+},{
+	 "id": "167", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T-gN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/Ecore','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5d9159e0 (key: constraints, value: spec)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "168", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T-hN6tEei97MD7GK1RmA', 'name':'redefined','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Region','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@44865c6a (expression: Region)','eOperation':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "169", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T-f96tEei97MD7GK1RmA', 'key':'documentation','value':'The query isRedefinitionContextValid() specifies whether the redefinition contexts of a region are properly related to the redefinition contexts of the specified region to allow this element to redefi'}}" 
+},{
+	 "id": "170", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T-gd6tEei97MD7GK1RmA', 'key':'constraints','value':'spec'}}" 
+},{
+	 "id": "171", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3T_196tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@3410a42f (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@d4eb53f (source: http://www.eclipse.org/emf/2002/Ecore)','...'],'name':'isRedefinitionContextValid','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@687f0a14 (expression: EBoolean)','eContainingClass':'State','eParameters':['redefined']}}" 
+},{
+	 "id": "172", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T_2t6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/Ecore','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@3078c47a (key: constraints, value: spec)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "173", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T_3N6tEei97MD7GK1RmA', 'source':'redefines','eModelElement':'isRedefinitionContextValid','references':['isRedefinitionContextValid']}}" 
+},{
+	 "id": "174", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3T_2N6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@42b56b76 (key: documentation, value: The query isRedefinitionContextValid() specifies whether the redefinition contexts of a state are properly related to the redefinition contexts of the specified state to allow this element to redefine the other. The containing region of a redefining state must redefine the containing region of the redefined state.\\r\\nresult = true)'],'eModelElement':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "175", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3T_3t6tEei97MD7GK1RmA', 'name':'redefined','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'State','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@664df00b (expression: State)','eOperation':'isRedefinitionContextValid'}}" 
+},{
+	 "id": "176", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T_2d6tEei97MD7GK1RmA', 'key':'documentation','value':'The query isRedefinitionContextValid() specifies whether the redefinition contexts of a state are properly related to the redefinition contexts of the specified state to allow this element to redefine'}}" 
+},{
+	 "id": "177", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3T_296tEei97MD7GK1RmA', 'key':'constraints','value':'spec'}}" 
+},{
+	 "id": "178", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3UB8d6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@399cb403 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'has_constraining_classifier','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3cd95bb1 (expression: EBoolean)','eContainingClass':'ClassifierTemplateParameter','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "179", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3UB8t6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@406b739e (key: documentation, value: If \\\\'allowSubstitutable\\\\' is true, then there must be a constrainingClassifier.\\r\\nallowSubstitutable implies constrainingClassifier->notEmpty())'],'eModelElement':'has_constraining_classifier'}}" 
+},{
+	 "id": "180", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UB996tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@2f0bd75c (expression: EMap)','eOperation':'has_constraining_classifier'}}" 
+},{
+	 "id": "181", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UB9d6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4215775e (expression: EDiagnosticChain)','eOperation':'has_constraining_classifier'}}" 
+},{
+	 "id": "182", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3UB896tEei97MD7GK1RmA', 'key':'documentation','value':'If \\\\'allowSubstitutable\\\\' is true, then there must be a constrainingClassifier.\\r\\nallowSubstitutable implies constrainingClassifier->notEmpty()'}}" 
+},{
+	 "id": "183", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3UFht6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@598a74bf (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'dimension_not_contained','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@114ee343 (expression: EBoolean)','eContainingClass':'ActivityPartition','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "184", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3UFh96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2102d124 (key: documentation, value: A partition with isDimension = true may not be contained by another partition.\\r\\ntrue)'],'eModelElement':'dimension_not_contained'}}" 
+},{
+	 "id": "185", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UFjN6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@38087e95 (expression: EMap)','eOperation':'dimension_not_contained'}}" 
+},{
+	 "id": "186", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UFit6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6986bd1f (expression: EDiagnosticChain)','eOperation':'dimension_not_contained'}}" 
+},{
+	 "id": "187", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3UFiN6tEei97MD7GK1RmA', 'key':'documentation','value':'A partition with isDimension = true may not be contained by another partition.\\r\\ntrue'}}" 
+},{
+	 "id": "188", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3UHFt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@361d171f (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'minint_non_negative','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@f8b380b (expression: EBoolean)','eContainingClass':'InteractionConstraint','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "189", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3UHF96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@578b00d8 (key: documentation, value: If minint is specified, then the expression must evaluate to a non-negative integer.\\r\\ntrue)'],'eModelElement':'minint_non_negative'}}" 
+},{
+	 "id": "190", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UHGt6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@69d3271a (expression: EDiagnosticChain)','eOperation':'minint_non_negative'}}" 
+},{
+	 "id": "191", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UHHN6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@304c4099 (expression: EMap)','eOperation':'minint_non_negative'}}" 
+},{
+	 "id": "192", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3UHGN6tEei97MD7GK1RmA', 'key':'documentation','value':'If minint is specified, then the expression must evaluate to a non-negative integer.\\r\\ntrue'}}" 
+},{
+	 "id": "193", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3UHHt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@34d3b178 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'maxint_positive','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@b4ca346 (expression: EBoolean)','eContainingClass':'InteractionConstraint','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "194", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3UHH96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5956787d (key: documentation, value: If maxint is specified, then the expression must evaluate to a positive integer.\\r\\ntrue)'],'eModelElement':'maxint_positive'}}" 
+},{
+	 "id": "195", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UHIt6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@235c2faa (expression: EDiagnosticChain)','eOperation':'maxint_positive'}}" 
+},{
+	 "id": "196", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UHJN6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@271be2cd (expression: EMap)','eOperation':'maxint_positive'}}" 
+},{
+	 "id": "197", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3UHIN6tEei97MD7GK1RmA', 'key':'documentation','value':'If maxint is specified, then the expression must evaluate to a positive integer.\\r\\ntrue'}}" 
+},{
+	 "id": "198", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3UKm96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@3cd36e7f (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'on_port_receiver','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@757e85d8 (expression: EBoolean)','eContainingClass':'InvocationAction','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "199", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3UKnN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@77d981e (key: documentation, value: The onPort must be a port on the receiver object.\\r\\ntrue)'],'eModelElement':'on_port_receiver'}}" 
+},{
+	 "id": "200", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UKn96tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@2459064a (expression: EDiagnosticChain)','eOperation':'on_port_receiver'}}" 
+},{
+	 "id": "201", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UKod6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4e5ecbdb (expression: EMap)','eOperation':'on_port_receiver'}}" 
+},{
+	 "id": "202", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3UKnd6tEei97MD7GK1RmA', 'key':'documentation','value':'The onPort must be a port on the receiver object.\\r\\ntrue'}}" 
+},{
+	 "id": "203", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3UOON6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@607ecbe2 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'unmarshall_signal_events','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@304178fc (expression: EBoolean)','eContainingClass':'AcceptEventAction','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "204", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3UOOd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@74265dbb (key: documentation, value: If isUnmarshall is true, there must be exactly one trigger for events of type SignalEvent. The number of result output pins must be the same as the number of attributes of the signal. The type and ordering of each result output pin must be the same as the corresponding attribute of the signal. The multiplicity of each result output pin must be compatible with the multiplicity of the corresponding attribute.\\r\\ntrue)'],'eModelElement':'unmarshall_signal_events'}}" 
+},{
+	 "id": "205", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UOPN6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@27639777 (expression: EDiagnosticChain)','eOperation':'unmarshall_signal_events'}}" 
+},{
+	 "id": "206", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UOPt6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5ad3dfec (expression: EMap)','eOperation':'unmarshall_signal_events'}}" 
+},{
+	 "id": "207", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3UOOt6tEei97MD7GK1RmA', 'key':'documentation','value':'If isUnmarshall is true, there must be exactly one trigger for events of type SignalEvent. The number of result output pins must be the same as the number of attributes of the signal. The type and ord'}}" 
+},{
+	 "id": "208", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3UOXt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7ae12235 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'unmarshall','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@1c3c95ab (expression: EBoolean)','eContainingClass':'AcceptCallAction','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "209", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3UOX96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@75909291 (key: documentation, value: isUnmrashall must be true for an AcceptCallAction.\\r\\nisUnmarshall = true)'],'eModelElement':'unmarshall'}}" 
+},{
+	 "id": "210", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UOYt6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3e5dbcae (expression: EDiagnosticChain)','eOperation':'unmarshall'}}" 
+},{
+	 "id": "211", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UOZN6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3741e07d (expression: EMap)','eOperation':'unmarshall'}}" 
+},{
+	 "id": "212", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3UOYN6tEei97MD7GK1RmA', 'key':'documentation','value':'isUnmrashall must be true for an AcceptCallAction.\\r\\nisUnmarshall = true'}}" 
+},{
+	 "id": "213", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3UO8t6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@1cf48d40 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'has_parameters','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@751db9cf (expression: EBoolean)','eContainingClass':'ActivityParameterNode','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "214", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3UO896tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5216764d (key: documentation, value: Activity parameter nodes must have parameters from the containing activity.\\r\\ntrue)'],'eModelElement':'has_parameters'}}" 
+},{
+	 "id": "215", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UO-N6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@15fece3c (expression: EMap)','eOperation':'has_parameters'}}" 
+},{
+	 "id": "216", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UO9t6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6c706a59 (expression: EDiagnosticChain)','eOperation':'has_parameters'}}" 
+},{
+	 "id": "217", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3UO9N6tEei97MD7GK1RmA', 'key':'documentation','value':'Activity parameter nodes must have parameters from the containing activity.\\r\\ntrue'}}" 
+},{
+	 "id": "218", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3UQEd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@289bf225 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'body_output_pins','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@499d7998 (expression: EBoolean)','eContainingClass':'Clause','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "219", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3UQEt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@5200b55c (key: documentation, value: The bodyOutput pins are output pins on actions in the body of the clause.\\r\\ntrue)'],'eModelElement':'body_output_pins'}}" 
+},{
+	 "id": "220", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UQF96tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@75e20105 (expression: EMap)','eOperation':'body_output_pins'}}" 
+},{
+	 "id": "221", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UQFd6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6c0cc2 (expression: EDiagnosticChain)','eOperation':'body_output_pins'}}" 
+},{
+	 "id": "222", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3UQE96tEei97MD7GK1RmA', 'key':'documentation','value':'The bodyOutput pins are output pins on actions in the body of the clause.\\r\\ntrue'}}" 
+},{
+	 "id": "223", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3UQNt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@31d4cf3d (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'body_output_pins','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@412fa00 (expression: EBoolean)','eContainingClass':'LoopNode','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "224", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3UQN96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@2b7d794 (key: documentation, value: The bodyOutput pins are output pins on actions in the body of the loop node.\\r\\ntrue)'],'eModelElement':'body_output_pins'}}" 
+},{
+	 "id": "225", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UQPN6tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7d8e249e (expression: EMap)','eOperation':'body_output_pins'}}" 
+},{
+	 "id": "226", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3UQOt6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@52687711 (expression: EDiagnosticChain)','eOperation':'body_output_pins'}}" 
+},{
+	 "id": "227", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3UQON6tEei97MD7GK1RmA', 'key':'documentation','value':'The bodyOutput pins are output pins on actions in the body of the loop node.\\r\\ntrue'}}" 
+},{
+	 "id": "228", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_f3URKd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@539e1c3c (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'belongs_psm','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@f7a59db (expression: EBoolean)','eContainingClass':'ProtocolTransition','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "229", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_f3URKt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@256dcbd4 (key: documentation, value: A protocol transition always belongs to a protocol state machine.\\r\\ncontainer.belongsToPSM())'],'eModelElement':'belongs_psm'}}" 
+},{
+	 "id": "230", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3URLd6tEei97MD7GK1RmA', 'name':'diagnostics','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EDiagnosticChain','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@16d0fa97 (expression: EDiagnosticChain)','eOperation':'belongs_psm'}}" 
+},{
+	 "id": "231", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_f3URL96tEei97MD7GK1RmA', 'name':'context','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EMap','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@c18e0d (expression: EMap)','eOperation':'belongs_psm'}}" 
+},{
+	 "id": "232", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_f3URK96tEei97MD7GK1RmA', 'key':'documentation','value':'A protocol transition always belongs to a protocol state machine.\\r\\ncontainer.belongsToPSM()'}}" 
+},{
+	 "id": "233", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgbkN6tEei97MD7GK1RmA', 'source':'duplicates','eModelElement':'Region','contents':['isRedefinitionContextValid','isConsistentWith','redefinitionContext']}}" 
+},{
+	 "id": "234", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftjfAN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7fbf667b (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'LoopNode','ePackage':'uml','abstract':'false','interface':'false','eOperations':['input_edges','body_output','result_no_incoming'],'eIDAttribute':'name','eStructuralFeatures':['isTestedFirst','bodyPart','setupPart','decider','test','result','loopVariable','bodyOutput','loopVariableInput'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@301081ed (expression: StructuredActivityNode)']}}" 
+},{
+	 "id": "235", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgbQt6tEei97MD7GK1RmA', 'source':'duplicates','eModelElement':'StateMachine','contents':['isRedefinitionContextValid','isConsistentWith']}}" 
+},{
+	 "id": "236", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgbjd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@56e905bb (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@3c4f3de5 (source: duplicates)'],'name':'Region','ePackage':'uml','abstract':'false','interface':'false','eOperations':['initial_vertex','deep_history_vertex','shallow_history_vertex','owned','redefinitionContext','isRedefinitionContextValid','containingStateMachine'],'eIDAttribute':'name','eStructuralFeatures':['subvertex','transition','state','extendedRegion','stateMachine'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@7f09c68a (expression: Namespace)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@75f5dc62 (expression: RedefinableElement)']}}" 
+},{
+	 "id": "237", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgbP96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@5d9613eb (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@18a2372e (source: duplicates)'],'name':'StateMachine','ePackage':'uml','abstract':'false','interface':'false','eOperations':['classifier_context','context_classifier','connection_points','method','LCA','ancestor','isRedefinitionContextValid'],'eIDAttribute':'name','eStructuralFeatures':['region','connectionPoint','extendedStateMachine'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@7748e58e (expression: Behavior)']}}" 
+},{
+	 "id": "238", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftjdxN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@761eedee (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'ActivityParameterNode','ePackage':'uml','abstract':'false','interface':'false','eOperations':['parameter','same_type','no_edges','no_incoming_edges','no_outgoing_edges'],'eIDAttribute':'name','eStructuralFeatures':['parameter'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@7dcdd468 (expression: ObjectNode)']}}" 
+},{
+	 "id": "239", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgaW96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2098cbe0 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Behavior','ePackage':'uml','abstract':'false','interface':'false','eOperations':['parameters','feature_of_context_classifier','must_realize','most_one_behaviour','getContext','setContext'],'eIDAttribute':'name','eStructuralFeatures':['isReentrant','redefinedBehavior','ownedParameter','context','ownedParameterSet','specification'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@46bcfcdd (expression: Class)']}}" 
+},{
+	 "id": "240", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftfz6d6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@79748b26 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@9eee21c (source: duplicates)'],'name':'Classifier','ePackage':'uml','abstract':'true','interface':'false','eOperations':['no_cycles_in_generalization','specialize_type','generalization_hierarchies','specialize','maps_to_generalization_set','maySpecializeType','getGenerals','getInheritedMembers','allFeatures','parents','inheritableMembers','...'],'eIDAttribute':'name','eStructuralFeatures':['isAbstract','generalization','powertypeExtent','feature','inheritedMember','redefinedClassifier','general','ownedUseCase','useCase','substitution','attribute','representation','collaborationUse','ownedSignature'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@6d8df0dd (expression: Namespace)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@37e3a2b (expression: RedefinableElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@37f8a325 (expression: Type)','...']}}" 
+},{
+	 "id": "241", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftjc8N6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@6951d0a5 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'AcceptEventAction','ePackage':'uml','abstract':'false','interface':'false','eOperations':['no_input_pins','no_output_pins','trigger_events','is_unmarshall'],'eIDAttribute':'name','eStructuralFeatures':['isUnmarshall','result','trigger'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@4ea736dc (expression: Action)']}}" 
+},{
+	 "id": "242", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthntd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@3b7a8e05 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'ActivityPartition','ePackage':'uml','abstract':'false','interface':'false','eOperations':['is_dimension','node_or_edge','represents_part','represents_classifier','represents_part_and_is_contained'],'eIDAttribute':'name','eStructuralFeatures':['isDimension','isExternal','edge','node','subpartition','superPartition','represents'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@6bf5075e (expression: NamedElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@3546cefe (expression: ActivityGroup)']}}" 
+},{
+	 "id": "243", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftiQl96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@448d703a (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'InvocationAction','ePackage':'uml','abstract':'true','interface':'false','eOperations':['on_port'],'eIDAttribute':'name','eStructuralFeatures':['argument','onPort'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@6ad6e362 (expression: Action)']}}" 
+},{
+	 "id": "244", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftfyf96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@38dfdb5b (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Namespace','ePackage':'uml','abstract':'true','interface':'false','eOperations':['members_are_distinguishable','getImportedMembers','getNamesOfMember','membersAreDistinguishable','importMembers','excludeCollisions'],'eIDAttribute':'name','eStructuralFeatures':['elementImport','packageImport','ownedRule','member','importedMember','ownedMember'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@39a66921 (expression: NamedElement)']}}" 
+},{
+	 "id": "245", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthpLd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@48f42bdf (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'InteractionConstraint','ePackage':'uml','abstract':'false','interface':'false','eOperations':['dynamic_variables','global_data','minint_maxint','minint','maxint','maxint_greater_equal_minint'],'eIDAttribute':'name','eStructuralFeatures':['minint','maxint'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@63b5f152 (expression: Constraint)']}}" 
+},{
+	 "id": "246", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftfLdN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@24496ad8 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'NamedElement','ePackage':'uml','abstract':'true','interface':'false','eOperations':['no_name','qualified_name','visibility_needs_ownership','getQualifiedName','allNamespaces','isDistinguishableFrom','separator'],'eIDAttribute':'name','eStructuralFeatures':['name','visibility','qualifiedName','clientDependency','namespace','nameExpression'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@634777 (expression: Element)']}}" 
+},{
+	 "id": "247", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftfyR96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@3c4b9ac0 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'TemplateBinding','ePackage':'uml','abstract':'false','interface':'false','eOperations':['parameter_substitution','one_parameter_substitution'],'eStructuralFeatures':['signature','parameterSubstitution','boundElement'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@3605857a (expression: DirectedRelationship)']}}" 
+},{
+	 "id": "248", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_fthAw96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7f4f65df (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@56d47642 (source: duplicates)'],'name':'ClassifierTemplateParameter','ePackage':'uml','abstract':'false','interface':'false','eOperations':['constraining_classifier'],'eStructuralFeatures':['allowSubstitutable','defaultClassifier','constrainingClassifier'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@2490e754 (expression: TemplateParameter)']}}" 
+},{
+	 "id": "249", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftjdHt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7d3653be (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@407a8e39 (source: duplicates)'],'name':'AcceptCallAction','ePackage':'uml','abstract':'false','interface':'false','eOperations':['result_pins','trigger_call_event'],'eIDAttribute':'name','eStructuralFeatures':['returnInformation'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@9c2826 (expression: AcceptEventAction)']}}" 
+},{
+	 "id": "250", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftf0mN6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@4b421383 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'RedefinableElement','ePackage':'uml','abstract':'true','interface':'false','eOperations':['redefinition_context_valid','redefinition_consistent','isRedefinitionContextValid','isConsistentWith','isRedefinitionContextValid'],'eIDAttribute':'name','eStructuralFeatures':['isLeaf','redefinedElement','redefinitionContext'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@71fa3882 (expression: NamedElement)']}}" 
+},{
+	 "id": "251", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftgctt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2e0bae2d (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@2107b20a (source: duplicates)'],'name':'State','ePackage':'uml','abstract':'false','interface':'false','eOperations':['regions','submachine_states','destinations_or_sources_of_transitions','submachine_or_regions','composite_states','entry_or_exit','isSimple','isComposite','isOrthogonal','isSubmachineState','redefinitionContext','...'],'eIDAttribute':'name','eStructuralFeatures':['isComposite','isOrthogonal','isSimple','isSubmachineState','submachine','connection','connectionPoint','redefinedState','stateInvariant','entry','exit','doActivity','deferrableTrigger','region'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@300f82b9 (expression: Namespace)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@9794c02 (expression: RedefinableElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@171f3dbd (expression: Vertex)']}}" 
+},{
+	 "id": "252", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftje296tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2e584306 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Clause','ePackage':'uml','abstract':'false','interface':'false','eOperations':['decider_output','body_output'],'eStructuralFeatures':['test','body','predecessorClause','successorClause','decider','bodyOutput'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@307bbca4 (expression: Element)']}}" 
+},{
+	 "id": "253", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_ftgcud6tEei97MD7GK1RmA', 'source':'duplicates','eModelElement':'State','contents':['isRedefinitionContextValid','isConsistentWith','containingStateMachine','redefinitionContext']}}" 
+},{
+	 "id": "254", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftf2_N6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@3221803b (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@18fac9d1 (source: duplicates)'],'name':'Property','ePackage':'uml','abstract':'false','interface':'false','eOperations':['multiplicity_of_composite','subsetting_context','navigable_property_redefinition','subsetting_rules','navigable_readonly','derived_union_is_derived','derived_union_is_read_only','deployment_target','binding_to_attribute','...'],'eIDAttribute':'name','eStructuralFeatures':['datatype','isDerived','isDerivedUnion','default','aggregation','isComposite','class_','redefinedProperty','owningAssociation','association','defaultValue','opposite','subsettedProperty','qualifier','associationEnd'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@46c1de37 (expression: StructuralFeature)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@a59a10f (expression: ConnectableElement)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@d81e8e2 (expression: DeploymentTarget)','...']}}" 
+},{
+	 "id": "255", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftjf-96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@30e61a18 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'ProtocolTransition','ePackage':'uml','abstract':'false','interface':'false','eOperations':['belongs_to_psm','associated_actions','refers_to_operation','belongsToPSM'],'eIDAttribute':'name','eStructuralFeatures':['postCondition','referred','preCondition'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@6a228532 (expression: Transition)']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "0", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "0", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "1", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "5", 
+	 "target": "6", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "5", 
+	 "target": "7", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "5", 
+	 "target": "8", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "6", 
+	 "target": "9", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "10", 
+	 "target": "11", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "10", 
+	 "target": "12", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "10", 
+	 "target": "13", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "11", 
+	 "target": "14", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "15", 
+	 "target": "16", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "15", 
+	 "target": "17", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "15", 
+	 "target": "18", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "16", 
+	 "target": "19", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "20", 
+	 "target": "21", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "20", 
+	 "target": "22", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "20", 
+	 "target": "23", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "21", 
+	 "target": "24", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "25", 
+	 "target": "26", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "25", 
+	 "target": "27", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "26", 
+	 "target": "28", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "27", 
+	 "target": "29", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "30", 
+	 "target": "31", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "33", 
+	 "target": "34", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "33", 
+	 "target": "35", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "34", 
+	 "target": "36", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "35", 
+	 "target": "37", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "38", 
+	 "target": "39", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "38", 
+	 "target": "40", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "38", 
+	 "target": "41", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "39", 
+	 "target": "42", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "43", 
+	 "target": "44", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "43", 
+	 "target": "45", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "43", 
+	 "target": "46", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "44", 
+	 "target": "47", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "48", 
+	 "target": "49", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "48", 
+	 "target": "50", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "48", 
+	 "target": "51", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "49", 
+	 "target": "52", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "51", 
+	 "target": "53", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "50", 
+	 "target": "33", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'references'}" 
+},{
+	 "source": "54", 
+	 "target": "55", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "54", 
+	 "target": "56", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "54", 
+	 "target": "57", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "57", 
+	 "target": "58", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "55", 
+	 "target": "59", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "56", 
+	 "target": "33", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'references'}" 
+},{
+	 "source": "60", 
+	 "target": "61", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "60", 
+	 "target": "62", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "60", 
+	 "target": "63", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "61", 
+	 "target": "64", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "63", 
+	 "target": "65", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "62", 
+	 "target": "33", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'references'}" 
+},{
+	 "source": "66", 
+	 "target": "67", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "66", 
+	 "target": "68", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "66", 
+	 "target": "69", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "67", 
+	 "target": "70", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "71", 
+	 "target": "72", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "71", 
+	 "target": "73", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "71", 
+	 "target": "74", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "72", 
+	 "target": "75", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "76", 
+	 "target": "77", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "76", 
+	 "target": "78", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "76", 
+	 "target": "79", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "77", 
+	 "target": "80", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "81", 
+	 "target": "82", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "81", 
+	 "target": "83", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "81", 
+	 "target": "84", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "82", 
+	 "target": "85", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "86", 
+	 "target": "87", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "86", 
+	 "target": "88", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "86", 
+	 "target": "89", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "87", 
+	 "target": "90", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "91", 
+	 "target": "92", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "91", 
+	 "target": "93", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "91", 
+	 "target": "94", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "92", 
+	 "target": "95", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "96", 
+	 "target": "97", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'contents'}" 
+},{
+	 "source": "97", 
+	 "target": "98", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "97", 
+	 "target": "99", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "97", 
+	 "target": "100", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "97", 
+	 "target": "101", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "99", 
+	 "target": "102", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "98", 
+	 "target": "91", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'references'}" 
+},{
+	 "source": "103", 
+	 "target": "104", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "103", 
+	 "target": "105", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "103", 
+	 "target": "106", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "104", 
+	 "target": "107", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "108", 
+	 "target": "109", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "108", 
+	 "target": "110", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "108", 
+	 "target": "111", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "109", 
+	 "target": "112", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "113", 
+	 "target": "114", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "113", 
+	 "target": "115", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "113", 
+	 "target": "116", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "114", 
+	 "target": "117", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "118", 
+	 "target": "119", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "118", 
+	 "target": "120", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "118", 
+	 "target": "121", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "119", 
+	 "target": "122", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "123", 
+	 "target": "124", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "123", 
+	 "target": "125", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "123", 
+	 "target": "126", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "124", 
+	 "target": "127", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "128", 
+	 "target": "129", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "128", 
+	 "target": "130", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "128", 
+	 "target": "131", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "129", 
+	 "target": "132", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "133", 
+	 "target": "134", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "133", 
+	 "target": "135", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "133", 
+	 "target": "136", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "134", 
+	 "target": "137", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "138", 
+	 "target": "139", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "138", 
+	 "target": "140", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "138", 
+	 "target": "141", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "139", 
+	 "target": "142", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "143", 
+	 "target": "144", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "146", 
+	 "target": "147", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "146", 
+	 "target": "148", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "146", 
+	 "target": "149", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "147", 
+	 "target": "150", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "151", 
+	 "target": "152", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "151", 
+	 "target": "153", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "151", 
+	 "target": "154", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "152", 
+	 "target": "155", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "156", 
+	 "target": "157", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "156", 
+	 "target": "158", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "156", 
+	 "target": "159", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "156", 
+	 "target": "160", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "159", 
+	 "target": "161", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "157", 
+	 "target": "162", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "158", 
+	 "target": "163", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'references'}" 
+},{
+	 "source": "164", 
+	 "target": "165", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "164", 
+	 "target": "166", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "164", 
+	 "target": "167", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "164", 
+	 "target": "168", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "165", 
+	 "target": "169", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "167", 
+	 "target": "170", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "166", 
+	 "target": "163", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'references'}" 
+},{
+	 "source": "171", 
+	 "target": "172", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "171", 
+	 "target": "173", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "171", 
+	 "target": "174", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "171", 
+	 "target": "175", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "174", 
+	 "target": "176", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "172", 
+	 "target": "177", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "173", 
+	 "target": "163", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'references'}" 
+},{
+	 "source": "178", 
+	 "target": "179", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "178", 
+	 "target": "180", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "178", 
+	 "target": "181", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "179", 
+	 "target": "182", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "183", 
+	 "target": "184", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "183", 
+	 "target": "185", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "183", 
+	 "target": "186", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "184", 
+	 "target": "187", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "188", 
+	 "target": "189", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "188", 
+	 "target": "190", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "188", 
+	 "target": "191", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "189", 
+	 "target": "192", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "193", 
+	 "target": "194", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "193", 
+	 "target": "195", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "193", 
+	 "target": "196", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "194", 
+	 "target": "197", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "198", 
+	 "target": "199", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "198", 
+	 "target": "200", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "198", 
+	 "target": "201", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "199", 
+	 "target": "202", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "203", 
+	 "target": "204", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "203", 
+	 "target": "205", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "203", 
+	 "target": "206", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "204", 
+	 "target": "207", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "208", 
+	 "target": "209", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "208", 
+	 "target": "210", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "208", 
+	 "target": "211", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "209", 
+	 "target": "212", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "213", 
+	 "target": "214", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "213", 
+	 "target": "215", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "213", 
+	 "target": "216", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "214", 
+	 "target": "217", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "218", 
+	 "target": "219", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "218", 
+	 "target": "220", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "218", 
+	 "target": "221", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "219", 
+	 "target": "222", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "223", 
+	 "target": "224", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "223", 
+	 "target": "225", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "223", 
+	 "target": "226", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "224", 
+	 "target": "227", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "228", 
+	 "target": "229", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "228", 
+	 "target": "230", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "228", 
+	 "target": "231", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "229", 
+	 "target": "232", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "233", 
+	 "target": "54", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'contents'}" 
+},{
+	 "source": "234", 
+	 "target": "113", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "234", 
+	 "target": "223", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "235", 
+	 "target": "48", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'contents'}" 
+},{
+	 "source": "236", 
+	 "target": "164", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "237", 
+	 "target": "156", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "238", 
+	 "target": "103", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "238", 
+	 "target": "213", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "239", 
+	 "target": "43", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "239", 
+	 "target": "151", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "163", 
+	 "target": "30", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "163", 
+	 "target": "143", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "163", 
+	 "target": "32", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "163", 
+	 "target": "145", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "240", 
+	 "target": "20", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "240", 
+	 "target": "25", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "241", 
+	 "target": "91", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "241", 
+	 "target": "203", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "242", 
+	 "target": "71", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "242", 
+	 "target": "183", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "243", 
+	 "target": "86", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "243", 
+	 "target": "198", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "244", 
+	 "target": "15", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "244", 
+	 "target": "138", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "245", 
+	 "target": "81", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "245", 
+	 "target": "76", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "245", 
+	 "target": "193", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "245", 
+	 "target": "188", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "246", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "246", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "246", 
+	 "target": "128", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "246", 
+	 "target": "123", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "247", 
+	 "target": "10", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "247", 
+	 "target": "133", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "248", 
+	 "target": "66", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "248", 
+	 "target": "178", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "249", 
+	 "target": "96", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "249", 
+	 "target": "208", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "250", 
+	 "target": "33", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "251", 
+	 "target": "171", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "252", 
+	 "target": "108", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "252", 
+	 "target": "218", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "253", 
+	 "target": "60", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'contents'}" 
+},{
+	 "source": "254", 
+	 "target": "38", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "254", 
+	 "target": "146", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "255", 
+	 "target": "118", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "255", 
+	 "target": "228", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+}]}

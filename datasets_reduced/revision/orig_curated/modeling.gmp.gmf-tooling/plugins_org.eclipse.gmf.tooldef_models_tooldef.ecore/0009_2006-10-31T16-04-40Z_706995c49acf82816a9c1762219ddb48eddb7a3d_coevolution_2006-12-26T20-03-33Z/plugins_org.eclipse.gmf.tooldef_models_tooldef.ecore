@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_cSK6kd6tEei97MD7GK1RmA" name="tooldef" nsURI="http://www.eclipse.org/gmf/2005/ToolDefinition" nsPrefix="gmftool">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6kt6tEei97MD7GK1RmA" name="ToolRegistry">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6k96tEei97MD7GK1RmA" name="sharedActions" upperBound="-1" eType="_cSK6xd6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_cSK6lN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_cSK6ld6tEei97MD7GK1RmA" key="documentation" value="Instead of placing&#x9;common actions somewhere in menu hierarchy and referencing them in (2..n) cases, keep them in this central registry and use ItemRef everywhere (i.e. in 1..n cases)"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6lt6tEei97MD7GK1RmA" name="allMenus" upperBound="-1" eType="_cSK6uN6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6l96tEei97MD7GK1RmA" name="palette" eType="_cSK6pt6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6mN6tEei97MD7GK1RmA" name="AbstractTool" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6md6tEei97MD7GK1RmA" name="smallIcon" eType="_cSK63N6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6mt6tEei97MD7GK1RmA" name="largeIcon" eType="_cSK63N6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6m96tEei97MD7GK1RmA" name="title">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6nd6tEei97MD7GK1RmA" name="description">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6n96tEei97MD7GK1RmA" name="ToolContainer" abstract="true" eSuperTypes="_cSK6mN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6oN6tEei97MD7GK1RmA" name="tools" upperBound="-1" eType="_cSK6mN6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6od6tEei97MD7GK1RmA" name="PaletteSeparator" eSuperTypes="_cSK6mN6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6ot6tEei97MD7GK1RmA" name="ToolGroup" eSuperTypes="_cSK6n96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6o96tEei97MD7GK1RmA" name="collapsible">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsSd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSwwid6tEei97MD7GK1RmA" name="stack">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsSd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6pd6tEei97MD7GK1RmA" name="active" eType="_cSK6mN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6pt6tEei97MD7GK1RmA" name="Palette" eSuperTypes="_cSK6n96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6p96tEei97MD7GK1RmA" name="default" eType="_cSK6mN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6qN6tEei97MD7GK1RmA" name="StandardTool" eSuperTypes="_cSK6mN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_cSK6qd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_cSK6qt6tEei97MD7GK1RmA" key="documentation" value="predefined, like zoom or marquee"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6q96tEei97MD7GK1RmA" name="toolKind" eType="_cSK6rN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_cSK6rN6tEei97MD7GK1RmA" name="StandardToolKind">
+    <eLiterals xmi:id="_cSK6rd6tEei97MD7GK1RmA" name="SELECT"/>
+    <eLiterals xmi:id="_cSK6rt6tEei97MD7GK1RmA" name="SELECT_PAN" value="1"/>
+    <eLiterals xmi:id="_cSK6r96tEei97MD7GK1RmA" name="MARQUEE" value="2"/>
+    <eLiterals xmi:id="_cSK6sN6tEei97MD7GK1RmA" name="ZOOM_PAN" value="3"/>
+    <eLiterals xmi:id="_cSK6sd6tEei97MD7GK1RmA" name="ZOOM_IN" value="4"/>
+    <eLiterals xmi:id="_cSK6st6tEei97MD7GK1RmA" name="ZOOM_OUT" value="5"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6s96tEei97MD7GK1RmA" name="CreationTool" eSuperTypes="_cSK6mN6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6tN6tEei97MD7GK1RmA" name="GenericTool" eSuperTypes="_cSK6mN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6td6tEei97MD7GK1RmA" name="toolClass" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6t96tEei97MD7GK1RmA" name="ItemBase" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6uN6tEei97MD7GK1RmA" name="Menu" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6ud6tEei97MD7GK1RmA" name="items" upperBound="-1" eType="_cSK6t96tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6ut6tEei97MD7GK1RmA" name="Separator" eSuperTypes="_cSK6t96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6u96tEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6vd6tEei97MD7GK1RmA" name="PredefinedItem" eSuperTypes="_cSK6t96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6vt6tEei97MD7GK1RmA" name="identifier">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6wN6tEei97MD7GK1RmA" name="PredefinedMenu" eSuperTypes="_cSK6uN6tEei97MD7GK1RmA _cSK6vd6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6wd6tEei97MD7GK1RmA" name="ContributionItem" interface="true" eSuperTypes="_cSK6t96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6wt6tEei97MD7GK1RmA" name="icon" eType="_cSK63N6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6w96tEei97MD7GK1RmA" name="title">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6xd6tEei97MD7GK1RmA" name="MenuAction" eSuperTypes="_cSK6wd6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6xt6tEei97MD7GK1RmA" name="kind" eType="_cSK61t6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6x96tEei97MD7GK1RmA" name="hotKey">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6yd6tEei97MD7GK1RmA" name="ItemRef" eSuperTypes="_cSK6t96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6yt6tEei97MD7GK1RmA" name="item" lowerBound="1" eType="_cSK6t96tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6y96tEei97MD7GK1RmA" name="ContextMenu" eSuperTypes="_cSK6uN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_cSK6zN6tEei97MD7GK1RmA" name="default" eType="_cSK6xd6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK6zd6tEei97MD7GK1RmA" name="PopupMenu" eSuperTypes="_cSK6uN6tEei97MD7GK1RmA _cSK6wd6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6zt6tEei97MD7GK1RmA" name="iD" iD="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK60N6tEei97MD7GK1RmA" name="MainMenu" eSuperTypes="_cSK6uN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_cSK60d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_cSK60t6tEei97MD7GK1RmA" key="documentation" value="no default action and no id, just a collection of items"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6096tEei97MD7GK1RmA" name="title">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK61d6tEei97MD7GK1RmA" name="Toolbar" eSuperTypes="_cSK6uN6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_cSK61t6tEei97MD7GK1RmA" name="ActionKind">
+    <eLiterals xmi:id="_cSK6196tEei97MD7GK1RmA" name="CREATE"/>
+    <eLiterals xmi:id="_cSK62N6tEei97MD7GK1RmA" name="PROPCHANGE" value="1"/>
+    <eLiterals xmi:id="_cSK62d6tEei97MD7GK1RmA" name="MODIFY" value="2"/>
+    <eLiterals xmi:id="_cSK62t6tEei97MD7GK1RmA" name="PROCESS" value="3"/>
+    <eLiterals xmi:id="_cSK6296tEei97MD7GK1RmA" name="CUSTOM" value="99"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK63N6tEei97MD7GK1RmA" name="Image" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK63d6tEei97MD7GK1RmA" name="DefaultImage" eSuperTypes="_cSK63N6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_cSK63t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_cSK6396tEei97MD7GK1RmA" key="documentation" value="Delegate to EMF.Edit providers"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK64N6tEei97MD7GK1RmA" name="BundleImage" eSuperTypes="_cSK63N6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_cTXNst6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_cTXNs96tEei97MD7GK1RmA" key="documentation" value="Image bundled as part of distribution"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK64d6tEei97MD7GK1RmA" name="path">
+      <eAnnotations xmi:id="_cTXNtd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_cTXNtt6tEei97MD7GK1RmA" key="documentation" value="Relative path to image"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSK6496tEei97MD7GK1RmA" name="bundle">
+      <eAnnotations xmi:id="_cTXNud6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_cTXNut6tEei97MD7GK1RmA" key="documentation" value="Empty value means image path is relative to generated bundle"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsjd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK65d6tEei97MD7GK1RmA" name="StyleSelector" interface="true">
+    <eOperations xmi:id="_cSK65t6tEei97MD7GK1RmA" name="isOk">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUsSd6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_cSK66N6tEei97MD7GK1RmA" name="style">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_cSUse96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cSK66t6tEei97MD7GK1RmA" name="GenericStyleSelector" eSuperTypes="_cSK65d6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cSd12t6tEei97MD7GK1RmA" name="values" lowerBound="1" upperBound="-1" eType="_cSK67N6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_cSK67N6tEei97MD7GK1RmA" name="AppearanceStyle">
+    <eLiterals xmi:id="_cSK67d6tEei97MD7GK1RmA" name="Font"/>
+    <eLiterals xmi:id="_cSK67t6tEei97MD7GK1RmA" name="Fill" value="1"/>
+    <eLiterals xmi:id="_cSK6796tEei97MD7GK1RmA" name="Line" value="2"/>
+  </eClassifiers>
+</ecore:EPackage>

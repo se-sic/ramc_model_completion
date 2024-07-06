@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_l19g0N60Eei97MD7GK1RmA" name="foodproduction" nsURI="http:///org/eclipse/stem/foodproduction/foodproduction.ecore" nsPrefix="org.eclipse.stem.foodproduction">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l19g0d60Eei97MD7GK1RmA" name="FoodProducer">
+    <eSuperTypes href="core_org.eclipse.stem.core_model_model.ecore#_l1_9X960Eei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l19g0t60Eei97MD7GK1RmA" name="SourcePopulationName" defaultValueLiteral="cattle">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9VN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l19g1N60Eei97MD7GK1RmA" name="FoodPopulationName" defaultValueLiteral="beef">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9VN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l19g1t60Eei97MD7GK1RmA" name="FoodYieldPopulationMultiplier" defaultValueLiteral="100">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9JN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l19g2N60Eei97MD7GK1RmA" name="targetURI">
+      <eType xsi:type="ecore:EDataType" href="core_org.eclipse.stem.core_model_common.ecore#_l2Bydt60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l19g2t60Eei97MD7GK1RmA" name="sourceProcessingRate" defaultValueLiteral="1.0">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9JN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l19g3N60Eei97MD7GK1RmA" name="timePeriod" defaultValueLiteral="86400000">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9Qd60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_l5kOft60Eei97MD7GK1RmA" name="name" defaultValueLiteral="FoodProducer">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K9VN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_l5kOgd60Eei97MD7GK1RmA" name="SlaughterHouse" eSuperTypes="_l19g0d60Eei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l19g4t60Eei97MD7GK1RmA" name="sourceDecorator">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9Td60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l19g5N60Eei97MD7GK1RmA" name="foodDecorator">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_model.ecore#_l1_9Td60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l19g5t60Eei97MD7GK1RmA" name="stateTransitionsMap" lowerBound="1" containment="true">
+      <eType xsi:type="ecore:EClass" href="core_org.eclipse.stem.core_model_common.ecore#_l2ByfN60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l19g6N60Eei97MD7GK1RmA" name="sourceAttributes" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K8Md60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_l19g6t60Eei97MD7GK1RmA" name="foodAttributes" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_l2K8Md60Eei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

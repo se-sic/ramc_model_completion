@@ -1,0 +1,121 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_gCjN4d6zEei97MD7GK1RmA', 'name':'condExpr','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BExpression','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@1ea1c36d (expression: BExpression)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'RepositoryConfiguration','containment':'true','container':'false','resolveProxies':'true','eReferenceType':'BExpression'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_gCjO2d6zEei97MD7GK1RmA', 'name':'BuildUnitRepository','ePackage':'build','abstract':'true','interface':'false','eOperations':['resolve','resolve']}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_gCjO3t6zEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@ce7e9a7 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'resolve','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BuildUnit','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@37efcb5d (expression: BuildUnit)','eContainingClass':'BuildUnitRepository','eParameters':['effectiveRequirement']}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_gCjO2t6zEei97MD7GK1RmA', 'name':'resolve','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BuildUnit','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@424c7784 (expression: BuildUnit)','eContainingClass':'BuildUnitRepository','eParameters':['ctx','requiredCapability']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_gCjO296zEei97MD7GK1RmA', 'name':'ctx','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'BExecutionContext','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5592822f (expression: BExecutionContext)','eOperation':'resolve'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_gCjO3d6zEei97MD7GK1RmA', 'name':'requiredCapability','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'RequiredCapability','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@66de38a2 (expression: RequiredCapability)','eOperation':'resolve'}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_gCjO396zEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@1b6bdbb1 (key: documentation, value: Resolves an EffectiveRequireent (i.e. a combination of requirement and context) and returns a BuilUnit that matches the requirement, or null if no such unit can be found.\\nThis method is the same as calling resolve(effective.getContext(), effective.getRequirement().\\n)'],'eModelElement':'resolve'}}" 
+},{
+	 "id": "7", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_gCjO4d6zEei97MD7GK1RmA', 'name':'effectiveRequirement','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EffectiveRequirementFacade','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@49c3d53c (expression: EffectiveRequirementFacade)','eOperation':'resolve'}}" 
+},{
+	 "id": "8", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_gCjO4N6zEei97MD7GK1RmA', 'key':'documentation','value':'Resolves an EffectiveRequireent (i.e. a combination of requirement and context) and returns a BuilUnit that matches the requirement, or null if no such unit can be found.\\nThis method is the same as ca'}}" 
+},{
+	 "id": "9", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_gCjO4t6zEei97MD7GK1RmA', 'name':'CompoundBuildUnitRepository','ePackage':'build','abstract':'true','interface':'false','eStructuralFeatures':['repositories'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@3f294ddb (expression: BuildUnitRepository)']}}" 
+},{
+	 "id": "10", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_gCjO496zEei97MD7GK1RmA', 'name':'repositories','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'BuildUnitRepository','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@12cb4327 (expression: BuildUnitRepository)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'CompoundBuildUnitRepository','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'BuildUnitRepository'}}" 
+},{
+	 "id": "11", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_gCjO5N6zEei97MD7GK1RmA', 'name':'CompoundFirstFoundRepository','ePackage':'build','abstract':'false','interface':'false','eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@483752c5 (expression: CompoundBuildUnitRepository)']}}" 
+},{
+	 "id": "12", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_gCjO5d6zEei97MD7GK1RmA', 'name':'CompundBestFoundRepository','ePackage':'build','abstract':'false','interface':'false','eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@758aa3b9 (expression: CompoundBuildUnitRepository)']}}" 
+},{
+	 "id": "13", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_gCjO5t6zEei97MD7GK1RmA', 'name':'ExecutionStackRepository','ePackage':'build','abstract':'false','interface':'false','eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@16f499d7 (expression: BuildUnitRepository)']}}" 
+},{
+	 "id": "14", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_gCjO596zEei97MD7GK1RmA', 'name':'SimpleRepository','ePackage':'build','abstract':'false','interface':'false','eStructuralFeatures':['beeModels'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@b843dcf (expression: BuildUnitRepository)']}}" 
+},{
+	 "id": "15", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_gCjO6N6zEei97MD7GK1RmA', 'name':'beeModels','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'BeeModel','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@670253ba (expression: BeeModel)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'SimpleRepository','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'BeeModel'}}" 
+},{
+	 "id": "16", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_LS_N4d6zEei97MD7GK1RmA', 'name':'build','nsURI':'http://b3build/1.0','nsPrefix':'build','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@2d89762d','eClassifiers':['BuildUnit','IBuilder','VersionRange','Version','VersionedCapability','BuilderInput','PathGroup','Prerequisite','BuildResultReference','CompoundBuildResultReference','BuilderReference','Capability','RequiredCapability','...']}}" 
+},{
+	 "id": "17", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_L0f_396zEei97MD7GK1RmA', 'name':'RepositoryConfiguration','ePackage':'build','abstract':'true','interface':'false','eStructuralFeatures':['condExpr'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@29a80a0b (expression: BExpression)']}}" 
+}], 
+ "links": [{
+	 "source": "1", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "1", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "3", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "3", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "2", 
+	 "target": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "2", 
+	 "target": "7", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "6", 
+	 "target": "8", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "9", 
+	 "target": "10", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "14", 
+	 "target": "15", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "16", 
+	 "target": "9", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "16", 
+	 "target": "11", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "16", 
+	 "target": "14", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "16", 
+	 "target": "12", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "16", 
+	 "target": "13", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "16", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "17", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+}]}

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_hNHfsd6vEei97MD7GK1RmA" name="model" nsURI="http://www.eclipse.org/" nsPrefix="eavp">
+  <eAnnotations xmi:id="_hNHfst6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+    <details xmi:id="_hNHfs96vEei97MD7GK1RmA" key="documentation" value="Get the value of the specified rendering property."/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_hNHftN6vEei97MD7GK1RmA" name="MeshCache">
+    <eAnnotations xmi:id="_hNHftd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_hNHftt6vEei97MD7GK1RmA" key="documentation" value="A MeshCache is a central repository for data objects of type T, where T is a data object specific to the rendering engine associated with the cache. The cache will be responsible for creating and maintaining these objects. The MeshCache will supply references to them to Meshes on request, allowing multiple Meshes to draw from the same data object as a part of the Flyweight pattern. "/>
+    </eAnnotations>
+    <eTypeParameters xmi:id="_hNHft96vEei97MD7GK1RmA" name="T"/>
+    <eOperations xmi:id="_hNHfuN6vEei97MD7GK1RmA" name="getMesh">
+      <eAnnotations xmi:id="_hNHfud6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHfut6vEei97MD7GK1RmA" key="documentation" value="Get the mesh for a given type, creating it if it does not already exist. It is assummed that all shapes of the type will make use of the same mesh, possibly transformed geometriclly, for rendering. For example, all shapes of type &quot;RECTANGULAR_PRISM&quot; might use the same eight pointed mesh, with each one distinguished by a differing position in three dimensional space or by changing its dimensions. The operation will return null for types which do not have such a prototypical mesh. In this case, getMesh(EEList&lt;Triangle>) should be used instead."/>
+        <details xmi:id="_hNHfu96vEei97MD7GK1RmA" key="body" value="// For the base implementation, assume that the cache was loaded during&#xD;&#xA;// initialization.&#xD;&#xA;return typeCache.get(type);"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="_hNHft96vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_hNHfvd6vEei97MD7GK1RmA" name="type">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqxt6vEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_hNHfv96vEei97MD7GK1RmA" name="getMesh">
+      <eAnnotations xmi:id="_hNHfwN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHfwd6vEei97MD7GK1RmA" key="documentation" value="Get the mesh specified by the given triangles, creating it if it does not already exist. "/>
+        <details xmi:id="_hNHfwt6vEei97MD7GK1RmA" key="body" value="// The ID of the triangle list&#xD;&#xA;int ID = -1;&#xD;&#xA;&#xD;&#xA;// Whether the triangle list has been found in the cache&#xD;&#xA;boolean found = false;&#xD;&#xA;&#xD;&#xA;// Convert the list to a set&#xD;&#xA;Set&lt;Triangle> triangleSet = new HashSet(triangles);&#xD;&#xA;&#xD;&#xA;// Check each set in the cache for a match&#xD;&#xA;for (int i : sourceTriangleCache.keySet()) {&#xD;&#xA;&#x9;ID = i;&#xD;&#xA;&#xD;&#xA;&#x9;// If a match is found, stop the search&#xD;&#xA;&#x9;if (triangleSet.equals(sourceTriangleCache.get(i))) {&#xD;&#xA;&#x9;&#x9;found = true;&#xD;&#xA;&#x9;&#x9;break;&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// If the list was found, return the mesh with the same ID&#xD;&#xA;if (found) {&#xD;&#xA;&#x9;return triangleCache.get(ID);&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;// If the list was not found, create a mesh based on it and insert both&#xD;&#xA;// into the caches.&#xD;&#xA;else {&#xD;&#xA;&#x9;sourceTriangleCache.put(ID, triangleSet);&#xD;&#xA;&#x9;T mesh = createMesh(triangles);&#xD;&#xA;&#x9;triangleCache.put(ID, mesh);&#xD;&#xA;&#x9;return mesh;&#xD;&#xA;}"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="_hNHft96vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_hNHfxN6vEei97MD7GK1RmA" name="triangles">
+        <eGenericType>
+          <eTypeArguments xmi:id="_hNHfxt6vEei97MD7GK1RmA" eClassifier="_hNHgSd6vEei97MD7GK1RmA"/>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqnd6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_hNHfx96vEei97MD7GK1RmA" name="RenderObject">
+    <eAnnotations xmi:id="_hNHfyN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_hNHfyd6vEei97MD7GK1RmA" key="documentation" value="The object responsible for maintaining the base mesh which will be used to render an INode. This mesh, of type T that is native to the graphical engine, will be retrieved from the MeshCache based on the properties of the source INode."/>
+    </eAnnotations>
+    <eTypeParameters xmi:id="_hNHfyt6vEei97MD7GK1RmA" name="T"/>
+    <eOperations xmi:id="_hNHfy96vEei97MD7GK1RmA" name="getMesh">
+      <eAnnotations xmi:id="_hNHfzN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHfzd6vEei97MD7GK1RmA" key="body" value="return render;"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="_hNHfyt6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_hNHfz96vEei97MD7GK1RmA" name="meshCache">
+      <eAnnotations xmi:id="_hNHf0N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHf0d6vEei97MD7GK1RmA" key="documentation" value="The cache from which the mesh will be pulled. It is intended that all RenderObjects in the same context should share the same meshCache."/>
+      </eAnnotations>
+      <eGenericType eClassifier="_hNHftN6vEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_hNHf096vEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_hNHf1N6vEei97MD7GK1RmA" name="render">
+      <eAnnotations xmi:id="_hNHf1d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHf1t6vEei97MD7GK1RmA" key="documentation" value="The rendered object which can be provided to the graphics engine in order for a shape to be drawn."/>
+        <details xmi:id="_hNHf196vEei97MD7GK1RmA" key="suppressedSetVisibility" value="true"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="_hNHfyt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_hNHf2d6vEei97MD7GK1RmA" name="source" eType="_hNHgRt6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_hNHf2t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHf296vEei97MD7GK1RmA" key="documentation" value="The wrapped source object whose data will be used to render a shape in the graphics engine."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_hNHf3N6vEei97MD7GK1RmA" name="children" upperBound="-1" containment="true">
+      <eAnnotations xmi:id="_hNHf3d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHf3t6vEei97MD7GK1RmA" key="documentation" value="The rendered objects corresponding to the souorce object's children."/>
+      </eAnnotations>
+      <eGenericType eClassifier="_hNHgJN6vEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_hNHf4N6vEei97MD7GK1RmA" eTypeParameter="_hNHfyt6vEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="_hNHgJN6vEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_hNHf4t6vEei97MD7GK1RmA" eTypeParameter="_hNHfyt6vEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_hNHf496vEei97MD7GK1RmA" name="RenderObjectDecorator">
+    <eAnnotations xmi:id="_hNHf5N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_hNHf5d6vEei97MD7GK1RmA" key="documentation" value="A decorator for a RenderObject. A RenderObjectDecorator will be responsible for applying a single, well defined graphical change to the RenderObject to which it is applied."/>
+    </eAnnotations>
+    <eTypeParameters xmi:id="_hNHf5t6vEei97MD7GK1RmA" name="T"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_hNHf596vEei97MD7GK1RmA" name="source">
+      <eAnnotations xmi:id="_hNHf6N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHf6d6vEei97MD7GK1RmA" key="documentation" value="The wrapped object to which this object will apply its change."/>
+      </eAnnotations>
+      <eGenericType eClassifier="_hNHgJN6vEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_hNHf696vEei97MD7GK1RmA" eTypeParameter="_hNHf5t6vEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="_hNHgJN6vEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_hNHf7d6vEei97MD7GK1RmA" eTypeParameter="_hNHf5t6vEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_hNHf7t6vEei97MD7GK1RmA" name="TextureDecorator">
+    <eAnnotations xmi:id="_hNHf796vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_hNHf8N6vEei97MD7GK1RmA" key="documentation" value="A decorator which applies a texture to the wrapped object's rendering."/>
+    </eAnnotations>
+    <eTypeParameters xmi:id="_hNHf8d6vEei97MD7GK1RmA" name="T"/>
+    <eGenericSuperTypes eClassifier="_hNHf496vEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_hNHf896vEei97MD7GK1RmA" eTypeParameter="_hNHf8d6vEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_hNHf9N6vEei97MD7GK1RmA" name="OpacityDecorator">
+    <eAnnotations xmi:id="_hNHf9d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_hNHf9t6vEei97MD7GK1RmA" key="documentation" value="A decorator which sets the wrapped object's rendering to a specified amount of opacity."/>
+    </eAnnotations>
+    <eTypeParameters xmi:id="_hNHf996vEei97MD7GK1RmA" name="T"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_hNHf-N6vEei97MD7GK1RmA" name="opacity" defaultValueLiteral="100.0">
+      <eAnnotations xmi:id="_hNHf-d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHf-t6vEei97MD7GK1RmA" key="documentation" value="How opaque to render the object. Opacity is measured on a scale from 0 (fully transparent) to 1 (fully opaque)."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqlt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="_hNHf496vEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_hNHf_d6vEei97MD7GK1RmA" eTypeParameter="_hNHf996vEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_hNHf_t6vEei97MD7GK1RmA" name="ScaleDecorator">
+    <eAnnotations xmi:id="_hNHf_96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_hNHgAN6vEei97MD7GK1RmA" key="documentation" value="A decorator which scales the wrapped object's rendering to a specified multiple of the base size."/>
+    </eAnnotations>
+    <eTypeParameters xmi:id="_hNHgAd6vEei97MD7GK1RmA" name="T"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_hNHgAt6vEei97MD7GK1RmA" name="scale" defaultValueLiteral="1">
+      <eAnnotations xmi:id="_hNHgA96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgBN6vEei97MD7GK1RmA" key="documentation" value="How large the object is to be displayed in comparision to its actual data. A value of 1 is equivalent to the original object and a value of less than 0 will cause the decorator to make no changes to the object."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqlt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="_hNHf496vEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_hNHgB96vEei97MD7GK1RmA" eTypeParameter="_hNHgAd6vEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_hNHgCN6vEei97MD7GK1RmA" name="WireframeDecorator">
+    <eAnnotations xmi:id="_hNHgCd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_hNHgCt6vEei97MD7GK1RmA" key="documentation" value="A decorator which can change the object's rendering to appear in wireframe mode."/>
+    </eAnnotations>
+    <eTypeParameters xmi:id="_hNHgC96vEei97MD7GK1RmA" name="T"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_hNHgDN6vEei97MD7GK1RmA" name="wireframe" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_hNHgDd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgDt6vEei97MD7GK1RmA" key="documentation" value="Whether the object is to be rendered as a wireframe. If true, it will be displayed as a wireframe and if false it will be displayed as a solid object."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqft6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="_hNHf496vEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_hNHgEd6vEei97MD7GK1RmA" eTypeParameter="_hNHgC96vEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_hNHgEt6vEei97MD7GK1RmA" name="ColorDecorator">
+    <eAnnotations xmi:id="_hNHgE96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_hNHgFN6vEei97MD7GK1RmA" key="documentation" value="A decorator which applies a color to a rendered object."/>
+    </eAnnotations>
+    <eTypeParameters xmi:id="_hNHgFd6vEei97MD7GK1RmA" name="T"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_hNHgFt6vEei97MD7GK1RmA" name="red">
+      <eAnnotations xmi:id="_hNHgF96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgGN6vEei97MD7GK1RmA" key="documentation" value="The amount of red in the object's color, on a scale from 0 to 255."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqqd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_hNHgGt6vEei97MD7GK1RmA" name="green">
+      <eAnnotations xmi:id="_hNHgG96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgHN6vEei97MD7GK1RmA" key="documentation" value="The amount of green in the object's color, on a scale from 0 to 255."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqqd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_hNHgHt6vEei97MD7GK1RmA" name="blue">
+      <eAnnotations xmi:id="_hNHgH96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgIN6vEei97MD7GK1RmA" key="documentation" value="The amount of blue in the object's color, on a scale from 0 to 255."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqqd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="_hNHf496vEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_hNHgI96vEei97MD7GK1RmA" eTypeParameter="_hNHgFd6vEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_hNHgJN6vEei97MD7GK1RmA" name="IRenderElement" abstract="true" interface="true">
+    <eAnnotations xmi:id="_hNHgJd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_hNHgJt6vEei97MD7GK1RmA" key="documentation" value="An element in the geometry which will be rendered inside the graphical engine. T is to be some data type native to the graphical engine."/>
+    </eAnnotations>
+    <eTypeParameters xmi:id="_hNHgJ96vEei97MD7GK1RmA" name="T"/>
+    <eOperations xmi:id="_hNHgKN6vEei97MD7GK1RmA" name="getMesh">
+      <eAnnotations xmi:id="_hNHgKd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgKt6vEei97MD7GK1RmA" key="documentation" value="Get the rendered object."/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="_hNHgJ96vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_hNHgLN6vEei97MD7GK1RmA" name="getBase" eType="_hNHgRt6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_hNHgLd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgLt6vEei97MD7GK1RmA" key="documentation" value="Get the source data object on whose properties the render is based. If the IRenderElement's direct source is another IRenderElement, the INode at the bottom of the sequence of IRenderElements will be returned."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_hNHgL96vEei97MD7GK1RmA" name="handleChildren">
+      <eAnnotations xmi:id="_hNHgMN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgMd6vEei97MD7GK1RmA" key="documentation" value="Handle the source object's children by applying them to the mesh in accordance to the object's type. "/>
+      </eAnnotations>
+      <eParameters xmi:id="_hNHgMt6vEei97MD7GK1RmA" name="children">
+        <eGenericType>
+          <eTypeArguments xmi:id="_hNHgNN6vEei97MD7GK1RmA" eClassifier="_hNHgJN6vEei97MD7GK1RmA">
+            <eTypeArguments xmi:id="_hNHgNd6vEei97MD7GK1RmA" eTypeParameter="_hNHgJ96vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqnd6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_hNHgNt6vEei97MD7GK1RmA" name="getProperty" eType="_hNHgSt6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_hNHgN96vEei97MD7GK1RmA" name="property">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqxt6vEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_hNHgOd6vEei97MD7GK1RmA" name="setProperty">
+      <eAnnotations xmi:id="_hNHgOt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgO96vEei97MD7GK1RmA" key="documentation" value="Set the given rendering property to the new value."/>
+      </eAnnotations>
+      <eParameters xmi:id="_hNHgPN6vEei97MD7GK1RmA" name="property">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_hNQqxt6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_hNHgPt6vEei97MD7GK1RmA" name="value" eType="_hNHgSt6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_hNHgP96vEei97MD7GK1RmA" name="copy">
+      <eAnnotations xmi:id="_hNHgQN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgQd6vEei97MD7GK1RmA" key="documentation" value="Makes this object into a deep copy of the source object, if it is an appropriate type."/>
+      </eAnnotations>
+      <eParameters xmi:id="_hNHgQt6vEei97MD7GK1RmA" name="source" eType="_hNHgSt6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_hNHgQ96vEei97MD7GK1RmA" name="clone" eType="_hNHgSt6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_hNHgRN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_hNHgRd6vEei97MD7GK1RmA" key="documentation" value="Make a new copy of this object."/>
+      </eAnnotations>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_hNHgRt6vEei97MD7GK1RmA" name="INode" instanceClassName="org.eclipse.january.geometry.INode">
+    <eAnnotations xmi:id="_hNHgR96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_hNHgSN6vEei97MD7GK1RmA" key="documentation" value="This class represents a file path on the file system."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_hNHgSd6vEei97MD7GK1RmA" name="Triangle" instanceClassName="org.eclipse.january.geometry.Triangle"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_hNHgSt6vEei97MD7GK1RmA" name="Object" instanceTypeName="newDataType3"/>
+</ecore:EPackage>

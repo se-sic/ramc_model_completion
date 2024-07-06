@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_fmSGnN6vEei97MD7GK1RmA" name="contribution" nsURI="http://www.eclipse.org/sirius/description/contribution/1.0.0" nsPrefix="contribution">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGnd6vEei97MD7GK1RmA" name="FeatureContribution" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSGnt6vEei97MD7GK1RmA" name="sourceFeature" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFeN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSGoN6vEei97MD7GK1RmA" name="targetFeature" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFeN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGot6vEei97MD7GK1RmA" name="IgnoreFeatureContribution" eSuperTypes="_fmSGnd6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGo96vEei97MD7GK1RmA" name="SetFeatureContribution" eSuperTypes="_fmSGnd6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGpN6vEei97MD7GK1RmA" name="AddFeatureContribution" eSuperTypes="_fmSGnd6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGpd6vEei97MD7GK1RmA" name="RemoveFeatureContribution" eSuperTypes="_fmSGnd6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGpt6vEei97MD7GK1RmA" name="ClearFeatureContribution" eSuperTypes="_fmSGnd6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGp96vEei97MD7GK1RmA" name="ResetFeatureContribution" eSuperTypes="_fmSGnd6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGqN6vEei97MD7GK1RmA" name="EObjectReference" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGqd6vEei97MD7GK1RmA" name="DirectEObjectReference" eSuperTypes="_fmSGqN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSGqt6vEei97MD7GK1RmA" name="value" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGrN6vEei97MD7GK1RmA" name="ComputedEObjectReference" eSuperTypes="_fmSGqN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSGrd6vEei97MD7GK1RmA" name="valueExpression" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGr96vEei97MD7GK1RmA" name="Contribution">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSGsN6vEei97MD7GK1RmA" name="source" lowerBound="1" eType="_fmSGqN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSGsd6vEei97MD7GK1RmA" name="target" lowerBound="1" eType="_fmSGqN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSGst6vEei97MD7GK1RmA" name="featureMask" ordered="false" lowerBound="1" upperBound="-1" eType="_fmSGnd6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSGs96vEei97MD7GK1RmA" name="subContributions" upperBound="-1" eType="_fmSGr96vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSGtN6vEei97MD7GK1RmA" name="description">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGtt6vEei97MD7GK1RmA" name="ContributionProvider" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSGt96vEei97MD7GK1RmA" name="contributions" upperBound="-1" eType="_fmSGr96vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSGuN6vEei97MD7GK1RmA" name="ContributionPoint">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSGud6vEei97MD7GK1RmA" name="origin" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSF5t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSGu96vEei97MD7GK1RmA" name="contributed" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fmSFMN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

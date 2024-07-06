@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_WHBXdN6vEei97MD7GK1RmA" name="essentialoclcs" nsURI="http://www.eclipse.org/ocl/3.1.0/EssentialOCLCST" nsPrefix="essentialoclcs">
+  <eAnnotations xmi:id="_WMYWId6vEei97MD7GK1RmA" source="http://www.eclipse.org/OCL/Import">
+    <details xmi:id="_WMYWIt6vEei97MD7GK1RmA" key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+    <details xmi:id="_WMYWI96vEei97MD7GK1RmA" key="pivot" value="../../org.eclipse.ocl.examples.pivot/model/Pivot.ecore#/"/>
+    <details xmi:id="_WMYWJN6vEei97MD7GK1RmA" key="basecs" value="../../org.eclipse.ocl.examples.xtext.base/model/BaseCS.ecore#/"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXe96vEei97MD7GK1RmA" name="BinaryOperatorCS" eSuperTypes="_WHBXzt6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXfN6vEei97MD7GK1RmA" name="argument" lowerBound="1" eType="_WHBXnN6vEei97MD7GK1RmA" transient="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXfd6vEei97MD7GK1RmA" name="BooleanLiteralExpCS" eSuperTypes="_WHBX1N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WHBXft6vEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_WHKgFt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXgN6vEei97MD7GK1RmA" name="CollectionLiteralExpCS" eSuperTypes="_WHBXtt6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXgd6vEei97MD7GK1RmA" name="ownedType" eType="_WHBXh96vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXgt6vEei97MD7GK1RmA" name="ownedParts" upperBound="-1" eType="_WHBXg96vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXg96vEei97MD7GK1RmA" name="CollectionLiteralPartCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3kUN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXhN6vEei97MD7GK1RmA" name="expressionCS" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXhd6vEei97MD7GK1RmA" name="lastExpressionCS" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXh96vEei97MD7GK1RmA" name="CollectionTypeCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3k396vEei97MD7GK1RmA"/>
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_WG3oa96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WHBXiN6vEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_WHKgFt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXit6vEei97MD7GK1RmA" name="ownedType" containment="true">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3k396vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXkt6vEei97MD7GK1RmA" name="ConstructorPartCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3kUN6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_WG3oa96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7S96vEei97MD7GK1RmA" name="curlyBracketClause" eType="_Wvo7Vd6vEei97MD7GK1RmA" eOpposite="_Wvo7V96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXk96vEei97MD7GK1RmA" name="property" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_WG3pH96vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXld6vEei97MD7GK1RmA" name="initExpression" lowerBound="1" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXmN6vEei97MD7GK1RmA" name="ContextCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3kZ96vEei97MD7GK1RmA"/>
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3kqd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXmd6vEei97MD7GK1RmA" name="ownedExpression" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Wvo7Vd6vEei97MD7GK1RmA" name="CurlyBracketedClauseCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WvfDVt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7Vt6vEei97MD7GK1RmA" name="nameExp" eType="_WHBXt96vEei97MD7GK1RmA" eOpposite="_Wvo7dt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7V96vEei97MD7GK1RmA" name="ownedParts" upperBound="-1" eType="_WHBXkt6vEei97MD7GK1RmA" containment="true" eOpposite="_Wvo7S96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Wvo7WN6vEei97MD7GK1RmA" name="value" unique="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_WHKgFt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXnN6vEei97MD7GK1RmA" name="ExpCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3kUN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXnd6vEei97MD7GK1RmA" name="parent" eType="_WHBXzt6vEei97MD7GK1RmA" transient="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WX1fUt6vEei97MD7GK1RmA" name="hasError" transient="true" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_WHKfzt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXn96vEei97MD7GK1RmA" name="ExpSpecificationCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3ktd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXoN6vEei97MD7GK1RmA" name="ownedExpression" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXot6vEei97MD7GK1RmA" name="IfExpCS" eSuperTypes="_WHBXnN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXo96vEei97MD7GK1RmA" name="condition" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXpN6vEei97MD7GK1RmA" name="thenExpression" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXpd6vEei97MD7GK1RmA" name="elseExpression" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXq96vEei97MD7GK1RmA" name="InfixExpCS" eSuperTypes="_WHBXnN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXrN6vEei97MD7GK1RmA" name="ownedExpression" lowerBound="2" upperBound="-1" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXrd6vEei97MD7GK1RmA" name="ownedOperator" lowerBound="1" upperBound="-1" eType="_WHBXe96vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXrt6vEei97MD7GK1RmA" name="InvalidLiteralExpCS" eSuperTypes="_WHBX1N6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXsd6vEei97MD7GK1RmA" name="LetExpCS" eSuperTypes="_WHBXnN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXst6vEei97MD7GK1RmA" name="variable" upperBound="-1" eType="_WHBXtN6vEei97MD7GK1RmA" containment="true" eOpposite="_WHBXtd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXs96vEei97MD7GK1RmA" name="in" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXtN6vEei97MD7GK1RmA" name="LetVariableCS" eSuperTypes="_WHBX6d6vEei97MD7GK1RmA _WHBXnN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXtd6vEei97MD7GK1RmA" name="letExpression" eType="_WHBXsd6vEei97MD7GK1RmA" eOpposite="_WHBXst6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXtt6vEei97MD7GK1RmA" name="LiteralExpCS" eSuperTypes="_WHBXnN6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXt96vEei97MD7GK1RmA" name="NameExpCS" eSuperTypes="_WHBXnN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXuN6vEei97MD7GK1RmA" name="pathName" containment="true">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3kld6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WHBXut6vEei97MD7GK1RmA" name="atPre" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_WHKfzt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7dt6vEei97MD7GK1RmA" name="curlyBracketedClause" eType="_Wvo7Vd6vEei97MD7GK1RmA" containment="true" eOpposite="_Wvo7Vt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7d96vEei97MD7GK1RmA" name="roundBracketedClause" eType="_Wvo7lN6vEei97MD7GK1RmA" containment="true" eOpposite="_Wvo7ld6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7eN6vEei97MD7GK1RmA" name="squareBracketedClauses" upperBound="2" eType="_Wvo7m96vEei97MD7GK1RmA" containment="true" eOpposite="_Wvo7nN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WWfbW96vEei97MD7GK1RmA" name="sourceType" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations xmi:id="_WWfbXN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_WWfbXd6vEei97MD7GK1RmA" key="documentation" value="For explicit source invocations, sourceType provides the true source type after resolution of implicit set or implicit collect."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_WHBVbd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXvt6vEei97MD7GK1RmA" name="NavigatingArgCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3kUN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7ft6vEei97MD7GK1RmA" name="roundBracketedClause" eType="_Wvo7lN6vEei97MD7GK1RmA" eOpposite="_Wvo7lt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WHBXwN6vEei97MD7GK1RmA" name="role" eType="_WHBX796vEei97MD7GK1RmA" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WHBXwd6vEei97MD7GK1RmA" name="prefix">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_WHKgFt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXw96vEei97MD7GK1RmA" name="name" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXxN6vEei97MD7GK1RmA" name="ownedType" containment="true">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3k396vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXxt6vEei97MD7GK1RmA" name="init" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXyN6vEei97MD7GK1RmA" name="NavigationOperatorCS" eSuperTypes="_WHBXe96vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXyd6vEei97MD7GK1RmA" name="NestedExpCS" eSuperTypes="_WHBXnN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXyt6vEei97MD7GK1RmA" name="source" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXy96vEei97MD7GK1RmA" name="NullLiteralExpCS" eSuperTypes="_WHBX1N6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXzN6vEei97MD7GK1RmA" name="NumberLiteralExpCS" eSuperTypes="_WHBX1N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WHBXzd6vEei97MD7GK1RmA" name="name" eType="_WHBX7t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBXzt6vEei97MD7GK1RmA" name="OperatorCS" abstract="true">
+    <eSuperTypes href="#_WHBXnN6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3kZ96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBXz96vEei97MD7GK1RmA" name="source" lowerBound="1" eType="_WHBXnN6vEei97MD7GK1RmA" transient="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX0d6vEei97MD7GK1RmA" name="PrefixExpCS" eSuperTypes="_WHBXnN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBX0t6vEei97MD7GK1RmA" name="ownedOperator" upperBound="-1" eType="_WHBX596vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBX096vEei97MD7GK1RmA" name="ownedExpression" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX1N6vEei97MD7GK1RmA" name="PrimitiveLiteralExpCS" eSuperTypes="_WHBXtt6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Wvo7lN6vEei97MD7GK1RmA" name="RoundBracketedClauseCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WvfDVt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7ld6vEei97MD7GK1RmA" name="nameExp" eType="_WHBXt96vEei97MD7GK1RmA" eOpposite="_Wvo7d96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7lt6vEei97MD7GK1RmA" name="arguments" upperBound="-1" eType="_WHBXvt6vEei97MD7GK1RmA" containment="true" eOpposite="_Wvo7ft6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX1d6vEei97MD7GK1RmA" name="SelfExpCS" eSuperTypes="_WHBXnN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WHBX1t6vEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_WHKgFt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Wvo7m96vEei97MD7GK1RmA" name="SquareBracketedClauseCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WvfDVt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7nN6vEei97MD7GK1RmA" name="nameExp" eType="_WHBXt96vEei97MD7GK1RmA" eOpposite="_Wvo7eN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wvo7nd6vEei97MD7GK1RmA" name="terms" lowerBound="1" upperBound="-1" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX2N6vEei97MD7GK1RmA" name="StringLiteralExpCS" eSuperTypes="_WHBX1N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WHBX2d6vEei97MD7GK1RmA" name="name" unique="false" upperBound="-1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_WHKgFt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX296vEei97MD7GK1RmA" name="TupleLiteralExpCS" eSuperTypes="_WHBXtt6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBX3N6vEei97MD7GK1RmA" name="ownedParts" upperBound="-1" eType="_WHBX3d6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX3d6vEei97MD7GK1RmA" name="TupleLiteralPartCS" eSuperTypes="_WHBX6d6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX3t6vEei97MD7GK1RmA" name="TypeLiteralExpCS" eSuperTypes="_WHBXtt6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBX396vEei97MD7GK1RmA" name="ownedType" lowerBound="1" containment="true">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3k396vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX4d6vEei97MD7GK1RmA" name="TypeNameExpCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3k396vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBX4t6vEei97MD7GK1RmA" name="pathName" containment="true">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3kld6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBX5N6vEei97MD7GK1RmA" name="element" changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_WHBVbd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX596vEei97MD7GK1RmA" name="UnaryOperatorCS" eSuperTypes="_WHBXzt6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX6N6vEei97MD7GK1RmA" name="UnlimitedNaturalLiteralExpCS" eSuperTypes="_WHBX1N6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WHBX6d6vEei97MD7GK1RmA" name="VariableCS">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3kZ96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBX6t6vEei97MD7GK1RmA" name="ownedType" containment="true">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.xtext.base_model_BaseCS.ecore#_WG3k396vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WHBX7N6vEei97MD7GK1RmA" name="initExpression" eType="_WHBXnN6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_WHBX7t6vEei97MD7GK1RmA" name="BigNumber" instanceClassName="java.lang.Number"/>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_WHBX796vEei97MD7GK1RmA" name="NavigationRole">
+    <eLiterals xmi:id="_WHBX8N6vEei97MD7GK1RmA" name="ITERATOR"/>
+    <eLiterals xmi:id="_WHBX8d6vEei97MD7GK1RmA" name="ACCUMULATOR"/>
+    <eLiterals xmi:id="_WHBX8t6vEei97MD7GK1RmA" name="EXPRESSION"/>
+  </eClassifiers>
+</ecore:EPackage>

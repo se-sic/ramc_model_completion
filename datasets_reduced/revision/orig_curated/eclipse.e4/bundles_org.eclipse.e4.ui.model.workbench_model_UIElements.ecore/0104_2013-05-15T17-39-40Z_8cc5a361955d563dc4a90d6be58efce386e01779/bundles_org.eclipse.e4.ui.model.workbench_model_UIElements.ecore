@@ -1,0 +1,1177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_LWKscd6tEei97MD7GK1RmA" name="application" nsURI="http://www.eclipse.org/ui/2010/UIModel/application" nsPrefix="application">
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_LWKsn96tEei97MD7GK1RmA" name="IEclipseContext" instanceClassName="org.eclipse.e4.core.contexts.IEclipseContext" serializable="false"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_T65trt6tEei97MD7GK1RmA" name="StringToStringMap" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_T65tr96tEei97MD7GK1RmA" name="key">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_T65tsd6tEei97MD7GK1RmA" name="value">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsyd6tEei97MD7GK1RmA" name="Application">
+    <eAnnotations xmi:id="_XNoCqd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_XNoCqt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The MApplication acts as the root of the UI Model. It's children are the&#xD;&#xA; MWindows representing the UI for this application. It also owns the application's&#xD;&#xA;context (which is hooked to the OSGI context, allowing access not only to its&#xD;&#xA;own runtime information but also to any registered OSGI service.&#xD;&#xA;&lt;/p>&lt;p>&#xD;&#xA;It also owns a number of caches which, while independent of the UI itself are&#xD;&#xA;used by the appliecation to populate new windows or to define state that is&#xD;&#xA;epected to be the same for all windows:&#xD;&#xA;&lt;ui>&#xD;&#xA;&lt;li>Keybindings, Handlers, Commands&lt;/li>&#xD;&#xA;&lt;li>Part Descriptors (to support a 'Show View' dialog...)&lt;/li>&#xD;&#xA;&lt;li>Snippets of model (such as saved perspectives...)&lt;/li>&#xD;&#xA;&lt;/ui>&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKsyt6tEei97MD7GK1RmA" name="commands" upperBound="-1" eType="_LWKsfd6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_XM4bzN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4bzd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA0Cd6tEei97MD7GK1RmA" name="addons" upperBound="-1" eType="_WvA0KN6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_XM4bz96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b0N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_W6zNSt6tEei97MD7GK1RmA" name="categories" upperBound="-1" eType="_W6zNkN6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_XM4b0t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b096tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_LWKszd6tEei97MD7GK1RmA" eClassifier="_LWKs9d6tEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="_LWKsod6tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_M4sPM96tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_WvA0Kt6tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_S43CR96tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_V96u6t6tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_Wx4in96tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_W1TqIN6tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_W1TqJt6tEei97MD7GK1RmA"/>
+    <eGenericSuperTypes eClassifier="_XIqq1t6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsc96tEei97MD7GK1RmA" name="ApplicationElement" abstract="true">
+    <eAnnotations xmi:id="_XNoCwN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_XNoCwd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This is the root element for all UI Model elements, defining attribtues common&#xD;&#xA;to every element; the element's id as well as three general storage elements:&#xD;&#xA;&lt;ul>&#xD;&#xA;&lt;li>Tags: This is a set of strings which can be used to stereotype a particular&#xD;&#xA;element. Tags may be specified in element searches and can also be referred&#xD;&#xA;to in the CSS styling definition.&lt;/li>&#xD;&#xA;&lt;li>PersistedState: A string to string map used to store information that nneds&#xD;&#xA;to be persisted between sessions.&lt;/li>&#xD;&#xA;&lt;li>TransientData: A string to object map which can be used to store runtime data&#xD;&#xA;relevant to a particular model element.&lt;/li>&#xD;&#xA;&lt;/ul>&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA0Et6tEei97MD7GK1RmA" name="elementId">
+      <eAnnotations xmi:id="_XM4b496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b5N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_VM3r796tEei97MD7GK1RmA" name="persistedState" upperBound="-1" eType="_T65trt6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_XM4b596tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b6N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TqU7E96tEei97MD7GK1RmA" name="tags" upperBound="-1">
+      <eAnnotations xmi:id="_XM4b6t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b696tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XB8-Ot6tEei97MD7GK1RmA" name="contributorURI">
+      <eAnnotations xmi:id="_XM4b7t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b796tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XF1Yrd6tEei97MD7GK1RmA" name="transientData" upperBound="-1" eType="_XF1Ytd6tEei97MD7GK1RmA" transient="true" containment="true">
+      <eAnnotations xmi:id="_XM4b8t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b896tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsdt6tEei97MD7GK1RmA" name="Contribution" abstract="true" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_XNoC1d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_XNoC1t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;An MContribution defined the complete path to a class implementing the logic&#xD;&#xA;for elements representing the active parts of the UI such as MParts and MHandlers.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA0F96tEei97MD7GK1RmA" name="contributionURI">
+      <eAnnotations xmi:id="_XM4b-N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b-d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsed6tEei97MD7GK1RmA" name="object" transient="true" derived="true">
+      <eAnnotations xmi:id="_XM4b_N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XM4b_d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0KN6tEei97MD7GK1RmA" name="Addon" eSuperTypes="_LWKsdt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_XNoC4N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_XNoC4d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;An MAddon represents a self-contained application logic. Addons may be used&#xD;&#xA;to augment the UI in a variety of ways without requriing that the base application&#xD;&#xA;be aware of the extensions.&#xD;&#xA;&lt;/p>&lt;p>&#xD;&#xA;Addons aare expected to be capable of being removed without damage to the&#xD;&#xA;original UI. While not yet implemented there will be an uninstall protocol defined&#xD;&#xA;ni the future allowing an addon to remove any model elements specific to the&#xD;&#xA;addon (i.e. The MinMaxAddon's TrimElements.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XF1Ytd6tEei97MD7GK1RmA" name="StringToObjectMap" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XF1Ytt6tEei97MD7GK1RmA" name="key">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XF1YuN6tEei97MD7GK1RmA" name="value">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eSubpackages xmi:id="_WvA0Kd6tEei97MD7GK1RmA" name="commands" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/commands" nsPrefix="commands">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0Kt6tEei97MD7GK1RmA" name="BindingTableContainer" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XNoC6d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoC6t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_V96u6N6tEei97MD7GK1RmA" name="bindingTables" upperBound="-1" eType="_V96u896tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cDN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cDd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_V96u6d6tEei97MD7GK1RmA" name="rootContext" upperBound="-1" eType="_V96u7d6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cD96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cEN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_V96u6t6tEei97MD7GK1RmA" name="Bindings" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XNoC8t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoC896tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XDTpKN6tEei97MD7GK1RmA" name="bindingContexts" upperBound="-1" eType="_V96u7d6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4cFd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cFt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_V96u7d6tEei97MD7GK1RmA" name="BindingContext" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoC-N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoC-d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_V96u7t6tEei97MD7GK1RmA" name="name">
+        <eAnnotations xmi:id="_XM4cG96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cHN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_V96u8N6tEei97MD7GK1RmA" name="description">
+        <eAnnotations xmi:id="_XM4cH96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cIN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_V96u8t6tEei97MD7GK1RmA" name="children" upperBound="-1" eType="_V96u7d6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cI96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cJN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_V96u896tEei97MD7GK1RmA" name="BindingTable" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoDBt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDB96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NqSEzt6tEei97MD7GK1RmA" name="bindings" upperBound="-1" eType="_NqSEy96tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cKd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cKt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XDTpMd6tEei97MD7GK1RmA" name="bindingContext" lowerBound="1" eType="_V96u7d6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4cLN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cLd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsfd6tEei97MD7GK1RmA" name="Command" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoDD96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDEN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eOperations xmi:id="_XFPi6d6tEei97MD7GK1RmA" name="getLocalizedCommandName">
+        <eAnnotations xmi:id="_XM4cMt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cM96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eOperations>
+      <eOperations xmi:id="_XFPi696tEei97MD7GK1RmA" name="getLocalizedDescription">
+        <eAnnotations xmi:id="_XM4cNt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cN96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKshN6tEei97MD7GK1RmA" name="commandName">
+        <eAnnotations xmi:id="_XM4cOt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cO96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_M4sPL96tEei97MD7GK1RmA" name="description">
+        <eAnnotations xmi:id="_XM4cPt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cP96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ONNLEt6tEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_ONNLE96tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cQt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cQ96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_W6zNeN6tEei97MD7GK1RmA" name="category" eType="_W6zNkN6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4cRd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cRt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_ONNLE96tEei97MD7GK1RmA" name="CommandParameter" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoDKN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDKd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ONNLFN6tEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eAnnotations xmi:id="_XM4cS96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cTN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ONNLFt6tEei97MD7GK1RmA" name="typeId">
+        <eAnnotations xmi:id="_XM4cT96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cUN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ONNLGN6tEei97MD7GK1RmA" name="optional" defaultValueLiteral="true">
+        <eAnnotations xmi:id="_XM4cU96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cVN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_M4sPMd6tEei97MD7GK1RmA" name="Handler" eSuperTypes="_LWKsdt6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoDN96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDON6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_M4sPMt6tEei97MD7GK1RmA" name="command" lowerBound="1" eType="_LWKsfd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4cWt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cW96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_M4sPM96tEei97MD7GK1RmA" name="HandlerContainer" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XNoDPd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDPt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_M4sPNN6tEei97MD7GK1RmA" name="handlers" upperBound="-1" eType="_M4sPMd6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cYN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cYd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_NqSEy96tEei97MD7GK1RmA" name="KeyBinding" eSuperTypes="_LWKsc96tEei97MD7GK1RmA _NqSEVt6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoDQ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDRN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NqSEzN6tEei97MD7GK1RmA" name="command" lowerBound="1" eType="_LWKsfd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4cZt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cZ96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ONNLud6tEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_LWKsid6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cad6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cat6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_NqSEVt6tEei97MD7GK1RmA" name="KeySequence" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XNoDTN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDTd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NqSEV96tEei97MD7GK1RmA" name="keySequence" lowerBound="1">
+        <eAnnotations xmi:id="_XM4cb96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4ccN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsid6tEei97MD7GK1RmA" name="Parameter" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoDU96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDVN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA0Ut6tEei97MD7GK1RmA" name="name">
+        <eAnnotations xmi:id="_XM4cdt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cd96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsjN6tEei97MD7GK1RmA" name="value">
+        <eAnnotations xmi:id="_XM4cet6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4ce96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EDataType" xmi:id="_LWKsoN6tEei97MD7GK1RmA" name="ParameterizedCommand" instanceClassName="org.eclipse.core.commands.ParameterizedCommand" serializable="false"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_W6zNkN6tEei97MD7GK1RmA" name="Category" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoDX96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDYN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eOperations xmi:id="_XFPjC96tEei97MD7GK1RmA" name="getLocalizedName">
+        <eAnnotations xmi:id="_XM4cgt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cg96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eOperations>
+      <eOperations xmi:id="_XFPjDd6tEei97MD7GK1RmA" name="getLocalizedDescription">
+        <eAnnotations xmi:id="_XM4cht6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4ch96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W6zNkd6tEei97MD7GK1RmA" name="name" lowerBound="1">
+        <eAnnotations xmi:id="_XM4cit6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4ci96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W6zNk96tEei97MD7GK1RmA" name="description">
+        <eAnnotations xmi:id="_XM4cjt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cj96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+  </eSubpackages>
+  <eSubpackages xmi:id="_WvA0V96tEei97MD7GK1RmA" name="ui" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/ui" nsPrefix="ui">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsod6tEei97MD7GK1RmA" name="Context" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XNoDc96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDdN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This class is mixed into a UI element when that element is expected to participate&#xD;&#xA;in the Dependency Injection context hierarchy. The context life-cycle matches&#xD;&#xA;that of the rendered element it belongs to. It's automatically created when the&#xD;&#xA;element is rendered and disposed when the element is unrendered.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsot6tEei97MD7GK1RmA" name="context" eType="_LWKsn96tEei97MD7GK1RmA" transient="true" derived="true">
+        <eAnnotations xmi:id="_XNoDdt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoDd96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This attribute is a reference to the IEclipseContext for this UI element. It will be &#xD;&#xA;non-null only when the element is rendered.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKso96tEei97MD7GK1RmA" name="variables" ordered="false" upperBound="-1">
+        <eAnnotations xmi:id="_XM4cmd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cmt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_T65t4d6tEei97MD7GK1RmA" name="properties" upperBound="-1" eType="_T65trt6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4cnd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cnt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_N8kuEt6tEei97MD7GK1RmA" name="Dirtyable" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XNoDgN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDgd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This class should be mixed into any UI element that should participate in the&#xD;&#xA;dirty / save handling. Parts are the most likely scenario for this but it exists as&#xD;&#xA;a mix-in to allow for future model extensions.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_MWuxqd6tEei97MD7GK1RmA" name="dirty" transient="true" derived="true">
+        <eAnnotations xmi:id="_XNoDg96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoDhN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The current dirty state of the UI element.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsht6tEei97MD7GK1RmA" name="Input" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XNoDh96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDiN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;This class should be mixed into UI elements such as editors that need to &#xD;&#xA;reference an external resource (files...).&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsh96tEei97MD7GK1RmA" name="inputURI">
+        <eAnnotations xmi:id="_XNoDit6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoDi96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;The specification of the particular resource's location. This will be interpreted by&#xD;&#xA;the class using it (i.e. a Part).&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsld6tEei97MD7GK1RmA" name="UIElement" abstract="true" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoDjt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDj96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eOperations xmi:id="_XC29dN6tEei97MD7GK1RmA" name="getLocalizedAccessibilityPhrase">
+        <eAnnotations xmi:id="_XM4csd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cst6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKslt6tEei97MD7GK1RmA" name="widget" transient="true" derived="true">
+        <eAnnotations xmi:id="_XM4ctd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4ctt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_PPxbd96tEei97MD7GK1RmA" name="renderer" transient="true" derived="true">
+        <eAnnotations xmi:id="_XM4cud6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cut6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_PPxbed6tEei97MD7GK1RmA" name="toBeRendered" defaultValueLiteral="true">
+        <eAnnotations xmi:id="_XM4cvd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cvt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_QCOMAt6tEei97MD7GK1RmA" name="onTop">
+        <eAnnotations xmi:id="_XM4cwd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cwt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsmt6tEei97MD7GK1RmA" name="visible" defaultValueLiteral="true">
+        <eAnnotations xmi:id="_XM4cxd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cxt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKsnN6tEei97MD7GK1RmA" name="parent" eOpposite="_LWKsqd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4cyd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cyt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eGenericType eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_LWKsnt6tEei97MD7GK1RmA" eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Qzw9ud6tEei97MD7GK1RmA" name="containerData">
+        <eAnnotations xmi:id="_XM4czt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4cz96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WwW4RN6tEei97MD7GK1RmA" name="curSharedRef" eType="_SYHtDt6tEei97MD7GK1RmA" transient="true" derived="true">
+        <eAnnotations xmi:id="_XM4c0t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c096tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WwzkNd6tEei97MD7GK1RmA" name="visibleWhen" eType="_WwzkW96tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4c1d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c1t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W7slk96tEei97MD7GK1RmA" name="accessibilityPhrase">
+        <eAnnotations xmi:id="_XM4c2N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c2d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKspt6tEei97MD7GK1RmA" name="ElementContainer" abstract="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoDvN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDvd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eTypeParameters xmi:id="_LWKsp96tEei97MD7GK1RmA" name="T">
+        <eBounds xmi:id="_LWKsqN6tEei97MD7GK1RmA" eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+      </eTypeParameters>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKsqd6tEei97MD7GK1RmA" name="children" upperBound="-1" containment="true" eOpposite="_LWKsnN6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4c4d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c4t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eGenericType eTypeParameter="_LWKsp96tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_TqU7Q96tEei97MD7GK1RmA" name="selectedElement">
+        <eAnnotations xmi:id="_XM4c5d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c5t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eGenericType eTypeParameter="_LWKsp96tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_PgR8nd6tEei97MD7GK1RmA" name="UILabel" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XNoDyd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoDyt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eOperations xmi:id="_XCZqiN6tEei97MD7GK1RmA" name="getLocalizedLabel">
+        <eAnnotations xmi:id="_XM4c7N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c7d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eOperations>
+      <eOperations xmi:id="_XCZqit6tEei97MD7GK1RmA" name="getLocalizedTooltip">
+        <eAnnotations xmi:id="_XM4c8N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c8d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eOperations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_PgR8nt6tEei97MD7GK1RmA" name="label">
+        <eAnnotations xmi:id="_XM4c9N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c9d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKskd6tEei97MD7GK1RmA" name="iconURI">
+        <eAnnotations xmi:id="_XM4c-N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c-d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsk96tEei97MD7GK1RmA" name="tooltip">
+        <eAnnotations xmi:id="_XM4c_N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4c_d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Qzw9zt6tEei97MD7GK1RmA" name="GenericStack" abstract="true">
+      <eAnnotations xmi:id="_XNoD4N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoD4d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eTypeParameters xmi:id="_Qzw9z96tEei97MD7GK1RmA" name="T">
+        <eBounds xmi:id="_Qzw90N6tEei97MD7GK1RmA" eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+      </eTypeParameters>
+      <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_Qzw91t6tEei97MD7GK1RmA" eTypeParameter="_Qzw9z96tEei97MD7GK1RmA"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsrd6tEei97MD7GK1RmA" name="GenericTile" abstract="true">
+      <eAnnotations xmi:id="_XNoD596tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoD6N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eTypeParameters xmi:id="_LWKsrt6tEei97MD7GK1RmA" name="T">
+        <eBounds xmi:id="_LWKsr96tEei97MD7GK1RmA" eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+      </eTypeParameters>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKsst6tEei97MD7GK1RmA" name="horizontal">
+        <eAnnotations xmi:id="_XM4dDN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4dDd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_LWKstd6tEei97MD7GK1RmA" eTypeParameter="_LWKsrt6tEei97MD7GK1RmA"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0jd6tEei97MD7GK1RmA" name="GenericTrimContainer" abstract="true">
+      <eAnnotations xmi:id="_XNoD8t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoD896tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eTypeParameters xmi:id="_LWKst96tEei97MD7GK1RmA" name="T">
+        <eBounds xmi:id="_LWKsuN6tEei97MD7GK1RmA" eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+      </eTypeParameters>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_OumBO96tEei97MD7GK1RmA" name="side" lowerBound="1" eType="_OumA096tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XM4dF96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4dGN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+      <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_LWKsx96tEei97MD7GK1RmA" eTypeParameter="_LWKst96tEei97MD7GK1RmA"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EEnum" xmi:id="_OumA096tEei97MD7GK1RmA" name="SideValue">
+      <eAnnotations xmi:id="_XNoD_N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoD_d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eLiterals xmi:id="_OumA1N6tEei97MD7GK1RmA" name="Top"/>
+      <eLiterals xmi:id="_OumA1d6tEei97MD7GK1RmA" name="Bottom" value="1"/>
+      <eLiterals xmi:id="_OumA1t6tEei97MD7GK1RmA" name="Left" value="2"/>
+      <eLiterals xmi:id="_OumA196tEei97MD7GK1RmA" name="Right" value="3"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_WwzkW96tEei97MD7GK1RmA" name="Expression" abstract="true" eSuperTypes="_LWKsc96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoEA96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoEBN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_WwzkXN6tEei97MD7GK1RmA" name="CoreExpression" eSuperTypes="_WwzkW96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_XNoEBt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoEB96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WwzkXd6tEei97MD7GK1RmA" name="coreExpressionId" defaultValueLiteral="">
+        <eAnnotations xmi:id="_XM4dJ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4dKN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W0RIEN6tEei97MD7GK1RmA" name="coreExpression" transient="true">
+        <eAnnotations xmi:id="_XM4dK96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4dLN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XIqq1t6tEei97MD7GK1RmA" name="SnippetContainer" abstract="true" interface="true">
+      <eAnnotations xmi:id="_XNoEEd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_XNoEEt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+      </eAnnotations>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XIqq196tEei97MD7GK1RmA" name="snippets" upperBound="-1" eType="_LWKsld6tEei97MD7GK1RmA" containment="true">
+        <eAnnotations xmi:id="_XM4dMt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XM4dM96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+        </eAnnotations>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eSubpackages xmi:id="_WvA0mN6tEei97MD7GK1RmA" name="menu" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" nsPrefix="menu">
+      <eClassifiers xsi:type="ecore:EEnum" xmi:id="_SYHsQt6tEei97MD7GK1RmA" name="ItemType">
+        <eAnnotations xmi:id="_XNoEGN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEGd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eLiterals xmi:id="_SYHsQ96tEei97MD7GK1RmA" name="Push"/>
+        <eLiterals xmi:id="_SYHsRN6tEei97MD7GK1RmA" name="Check" value="1"/>
+        <eLiterals xmi:id="_SYHsRd6tEei97MD7GK1RmA" name="Radio" value="2"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKsz96tEei97MD7GK1RmA" name="Item" abstract="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA _PgR8nd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEHt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEH96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs0N6tEei97MD7GK1RmA" name="enabled" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_XM4dPd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dPt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs0t6tEei97MD7GK1RmA" name="selected">
+          <eAnnotations xmi:id="_XM4dQd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dQt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_SYHslt6tEei97MD7GK1RmA" name="type" lowerBound="1" eType="_SYHsQt6tEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_XM4dRd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dRt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs1t6tEei97MD7GK1RmA" name="HandledItem" abstract="true" eSuperTypes="_LWKsz96tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoELN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoELd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKs196tEei97MD7GK1RmA" name="command" eType="_LWKsfd6tEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_XM4dS96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dTN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs2d6tEei97MD7GK1RmA" name="wbCommand" eType="_LWKsoN6tEei97MD7GK1RmA" transient="true">
+          <eAnnotations xmi:id="_XM4dTt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dT96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKs2t6tEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_LWKsid6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4dUd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dUt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0p96tEei97MD7GK1RmA" name="MenuElement" abstract="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA _PgR8nd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEON6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEOd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eOperations xmi:id="_XFPjdN6tEei97MD7GK1RmA" name="getLocalizedMnemonics">
+          <eAnnotations xmi:id="_XM4dV96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dWN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA0qd6tEei97MD7GK1RmA" name="mnemonics">
+          <eAnnotations xmi:id="_XM4dW96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dXN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs296tEei97MD7GK1RmA" name="MenuItem" abstract="true" eSuperTypes="_LWKsz96tEei97MD7GK1RmA _WvA0p96tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEQ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoERN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0q96tEei97MD7GK1RmA" name="MenuSeparator" eSuperTypes="_WvA0p96tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoERt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoER96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs3N6tEei97MD7GK1RmA" name="Menu">
+        <eAnnotations xmi:id="_XNoESd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoESt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA0rd6tEei97MD7GK1RmA" name="enabled" defaultValueLiteral="true">
+          <eAnnotations xmi:id="_XM4daN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dad6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_WvA0p96tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA0sd6tEei97MD7GK1RmA" eClassifier="_WvA0p96tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_Wx4iid6tEei97MD7GK1RmA" name="MenuContribution">
+        <eAnnotations xmi:id="_XO0XI96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0XJN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Wx4iit6tEei97MD7GK1RmA" name="positionInParent" defaultValueLiteral="">
+          <eAnnotations xmi:id="_XM4dct6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dc96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W6WiBN6tEei97MD7GK1RmA" name="parentId" lowerBound="1">
+          <eAnnotations xmi:id="_XM4ddt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dd96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_Wx4ijd6tEei97MD7GK1RmA" eClassifier="_WvA0p96tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WxQQad6tEei97MD7GK1RmA" name="PopupMenu" eSuperTypes="_LWKs3N6tEei97MD7GK1RmA _LWKsod6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEYN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEYd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_NZlWKt6tEei97MD7GK1RmA" name="DirectMenuItem" eSuperTypes="_LWKs296tEei97MD7GK1RmA _LWKsdt6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEY96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEZN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_NZlWKd6tEei97MD7GK1RmA" name="HandledMenuItem" eSuperTypes="_LWKs296tEei97MD7GK1RmA _LWKs1t6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEZt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEZ96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs4N6tEei97MD7GK1RmA" name="ToolItem" abstract="true" eSuperTypes="_LWKsz96tEei97MD7GK1RmA _WvA0vd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEad6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEat6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_W2pt2t6tEei97MD7GK1RmA" name="menu" eType="_LWKs3N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4diN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4did6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs5N6tEei97MD7GK1RmA" name="ToolBar">
+        <eAnnotations xmi:id="_XNoEb96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEcN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA0u96tEei97MD7GK1RmA" eClassifier="_WvA0vd6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_WvA05t6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0vd6tEei97MD7GK1RmA" name="ToolBarElement" abstract="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEdd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEdt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0vt6tEei97MD7GK1RmA" name="ToolControl" eSuperTypes="_WvA0vd6tEei97MD7GK1RmA _LWKsdt6tEei97MD7GK1RmA _WvA05t6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEeN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEed6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_NZlWMN6tEei97MD7GK1RmA" name="HandledToolItem" eSuperTypes="_LWKs4N6tEei97MD7GK1RmA _LWKs1t6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEe96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEfN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_NZlWNd6tEei97MD7GK1RmA" name="DirectToolItem" eSuperTypes="_LWKs4N6tEei97MD7GK1RmA _LWKsdt6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEft6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEf96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0wd6tEei97MD7GK1RmA" name="ToolBarSeparator" eSuperTypes="_WvA0vd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEgd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEgt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_Wx4in96tEei97MD7GK1RmA" name="MenuContributions" abstract="true" interface="true">
+        <eAnnotations xmi:id="_XO0XVN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0XVd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Wx4ioN6tEei97MD7GK1RmA" name="menuContributions" upperBound="-1" eType="_Wx4iid6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4do96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dpN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_Wyx6gt6tEei97MD7GK1RmA" name="RenderedMenu" eSuperTypes="_LWKs3N6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEit6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEi96tEei97MD7GK1RmA" key="documentation" value="Do no use! This class will be removed at the beginning of Luna (4.4) development.&#xD;&#xA;@deprecated Use MMenu&#xD;&#xA;@noreference&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Wyx6g96tEei97MD7GK1RmA" name="contributionManager" transient="true">
+          <eAnnotations xmi:id="_XM4dqd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dqt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_Wyx6hd6tEei97MD7GK1RmA" name="RenderedToolBar" eSuperTypes="_LWKs5N6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoEkd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoEkt6tEei97MD7GK1RmA" key="documentation" value="Do no use! This class will be removed at the beginning of Luna (4.4) development.&#xD;&#xA;@deprecated Use MToolBar&#xD;&#xA;@noreference&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Wyx6ht6tEei97MD7GK1RmA" name="contributionManager" transient="true">
+          <eAnnotations xmi:id="_XM4dsN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dsd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W1TqHd6tEei97MD7GK1RmA" name="ToolBarContribution">
+        <eAnnotations xmi:id="_XO0XaN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0Xad6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W2NCAN6tEei97MD7GK1RmA" name="parentId">
+          <eAnnotations xmi:id="_XM4dt96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4duN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W2NCAt6tEei97MD7GK1RmA" name="positionInParent">
+          <eAnnotations xmi:id="_XM4du96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dvN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_W1TqH96tEei97MD7GK1RmA" eClassifier="_WvA0vd6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W1TqIN6tEei97MD7GK1RmA" name="ToolBarContributions" abstract="true" interface="true">
+        <eAnnotations xmi:id="_XO0Xdd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0Xdt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_W1wWE96tEei97MD7GK1RmA" name="toolBarContributions" upperBound="-1" eType="_W1TqHd6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4dxN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dxd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W1TqI96tEei97MD7GK1RmA" name="TrimContribution">
+        <eAnnotations xmi:id="_XO0Xe96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0XfN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W2NCCd6tEei97MD7GK1RmA" name="parentId">
+          <eAnnotations xmi:id="_XM4dyt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dy96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W2NCC96tEei97MD7GK1RmA" name="positionInParent">
+          <eAnnotations xmi:id="_XM4dzt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4dz96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_W1TqJd6tEei97MD7GK1RmA" eClassifier="_WvA05t6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W1TqJt6tEei97MD7GK1RmA" name="TrimContributions" abstract="true" interface="true">
+        <eAnnotations xmi:id="_XO0XiN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0Xid6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;Provisional for 4.3.&#xD;&#xA;&lt;/p>&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_W1wWGN6tEei97MD7GK1RmA" name="trimContributions" upperBound="-1" eType="_W1TqI96tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4d196tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4d2N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W552QN6tEei97MD7GK1RmA" name="RenderedMenuItem" eSuperTypes="_LWKs296tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XO0Xjt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0Xj96tEei97MD7GK1RmA" key="documentation" value="Do no use! This class will be removed at the beginning of Luna (4.4) development.&#xD;&#xA;@deprecated Use MMenuItem&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W552Qd6tEei97MD7GK1RmA" name="contributionItem" transient="true">
+          <eAnnotations xmi:id="_XM4d3d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4d3t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_XENB2N6tEei97MD7GK1RmA" name="OpaqueToolItem" eSuperTypes="_LWKs4N6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XO0Xld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0Xlt6tEei97MD7GK1RmA" key="documentation" value="Do no use! This class will be removed at the beginning of Luna (4.4) development.&#xD;&#xA;@deprecated Use MMenuItem&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XENB2d6tEei97MD7GK1RmA" name="opaqueItem" transient="true">
+          <eAnnotations xmi:id="_XM4d5N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4d5d6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W9euwt6tEei97MD7GK1RmA" name="OpaqueMenuItem" eSuperTypes="_LWKs296tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XO0XnN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0Xnd6tEei97MD7GK1RmA" key="documentation" value="Do no use! This class will be removed at the beginning of Luna (4.4) development.&#xD;&#xA;@deprecated Use MMenuItem&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W9euw96tEei97MD7GK1RmA" name="opaqueItem" transient="true">
+          <eAnnotations xmi:id="_XM4d696tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4d7N6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W9euxd6tEei97MD7GK1RmA" name="OpaqueMenuSeparator" eSuperTypes="_WvA0q96tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XO0Xo96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0XpN6tEei97MD7GK1RmA" key="documentation" value="Do no use! This class will be removed at the beginning of Luna (4.4) development.&#xD;&#xA;@deprecated Use MMenuItem&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_W9euxt6tEei97MD7GK1RmA" name="opaqueItem" transient="true">
+          <eAnnotations xmi:id="_XM4d8t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4d896tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Yd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W9euyN6tEei97MD7GK1RmA" name="OpaqueMenu" eSuperTypes="_LWKs3N6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XO0Xqt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XO0Xq96tEei97MD7GK1RmA" key="documentation" value="Do no use! This class will be removed at the beginning of Luna (4.4) development.&#xD;&#xA;@deprecated Use MMenuItem&#xD;&#xA;@noreference This interface is not intended to be referenced by clients.&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_XLf8v96tEei97MD7GK1RmA" name="DynamicMenuContribution" eSuperTypes="_LWKs296tEei97MD7GK1RmA _LWKsdt6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoE3d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoE3t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages xmi:id="_WvA0wt6tEei97MD7GK1RmA" name="basic" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" nsPrefix="basic">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs6d6tEei97MD7GK1RmA" name="Part" eSuperTypes="_LWKsld6tEei97MD7GK1RmA _WvA0596tEei97MD7GK1RmA _WwD9zt6tEei97MD7GK1RmA _LWKsdt6tEei97MD7GK1RmA _LWKsod6tEei97MD7GK1RmA _PgR8nd6tEei97MD7GK1RmA _M4sPM96tEei97MD7GK1RmA _N8kuEt6tEei97MD7GK1RmA _V96u6t6tEei97MD7GK1RmA _WvA06N6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoE4d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoE4t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eOperations xmi:id="_XFPjvt6tEei97MD7GK1RmA" name="getLocalizedDescription">
+          <eAnnotations xmi:id="_XM4eAN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eAd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKs6t6tEei97MD7GK1RmA" name="menus" upperBound="-1" eType="_LWKs3N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4eBN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eBd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKs696tEei97MD7GK1RmA" name="toolbar" eType="_LWKs5N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4eB96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eCN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UrgEmd6tEei97MD7GK1RmA" name="closeable" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_XM4eCt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eC96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XA52QN6tEei97MD7GK1RmA" name="description">
+          <eAnnotations xmi:id="_XM4eDt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eD96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_VNA13d6tEei97MD7GK1RmA" name="InputPart" eSuperTypes="_LWKs6d6tEei97MD7GK1RmA _LWKsht6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoE9t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoE996tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs7N6tEei97MD7GK1RmA" name="PartStack">
+        <eAnnotations xmi:id="_XNoE-d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoE-t6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eGenericSuperTypes eClassifier="_Qzw9zt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WwD9q96tEei97MD7GK1RmA" eClassifier="_WwD9zt6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_WvA06N6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs8d6tEei97MD7GK1RmA" name="PartSashContainer">
+        <eAnnotations xmi:id="_XNoFAN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFAd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eGenericSuperTypes eClassifier="_LWKsrd6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA00N6tEei97MD7GK1RmA" eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_WvA06N6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKs9d6tEei97MD7GK1RmA" name="Window">
+        <eAnnotations xmi:id="_XNoFB96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFCN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LWKs9t6tEei97MD7GK1RmA" name="mainMenu" eType="_LWKs3N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4eJt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eJ96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs996tEei97MD7GK1RmA" name="x" defaultValueLiteral="-2147483648">
+          <eAnnotations xmi:id="_XM4eKd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eKt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3WN6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs-d6tEei97MD7GK1RmA" name="y" defaultValueLiteral="-2147483648">
+          <eAnnotations xmi:id="_XM4eLd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eLt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3WN6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs-96tEei97MD7GK1RmA" name="width" defaultValueLiteral="-1">
+          <eAnnotations xmi:id="_XM4eMd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eMt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3WN6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_LWKs_d6tEei97MD7GK1RmA" name="height" defaultValueLiteral="-1">
+          <eAnnotations xmi:id="_XM4eNd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eNt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3WN6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA03d6tEei97MD7GK1RmA" name="windows" upperBound="-1" eType="_LWKs9d6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4eOd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eOt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WwD9vt6tEei97MD7GK1RmA" name="sharedElements" upperBound="-1" eType="_LWKsld6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4ePN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4ePd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA0396tEei97MD7GK1RmA" eClassifier="_WvA06N6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_PgR8nd6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_LWKsod6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_M4sPM96tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_V96u6t6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_XIqq1t6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA05N6tEei97MD7GK1RmA" name="TrimmedWindow" eSuperTypes="_LWKs9d6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoFKt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFK96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA05d6tEei97MD7GK1RmA" name="trimBars" upperBound="-1" eType="_WvA06d6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4eSd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eSt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA05t6tEei97MD7GK1RmA" name="TrimElement" abstract="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoFMN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFMd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA0596tEei97MD7GK1RmA" name="PartSashContainerElement" abstract="true" interface="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoFM96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFNN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA06N6tEei97MD7GK1RmA" name="WindowElement" abstract="true" interface="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoFNt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFN96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WvA06d6tEei97MD7GK1RmA" name="TrimBar">
+        <eAnnotations xmi:id="_XNoFOd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFOt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XMbxDt6tEei97MD7GK1RmA" name="pendingCleanup" upperBound="-1" eType="_WvA05t6tEei97MD7GK1RmA" transient="true">
+          <eAnnotations xmi:id="_XM4eWN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eWd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_WvA0jd6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA0696tEei97MD7GK1RmA" eClassifier="_WvA05t6tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_WwD9zt6tEei97MD7GK1RmA" name="StackElement" abstract="true" interface="true" eSuperTypes="_LWKsld6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoFQt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFQ96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+    </eSubpackages>
+    <eSubpackages xmi:id="_WvA07d6tEei97MD7GK1RmA" name="advanced" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" nsPrefix="advanced">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_SYHtDt6tEei97MD7GK1RmA" name="Placeholder" eSuperTypes="_LWKsld6tEei97MD7GK1RmA _WvA0596tEei97MD7GK1RmA _WwD9zt6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoFRt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFR96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_SYHtD96tEei97MD7GK1RmA" name="ref" lowerBound="1" eType="_LWKsld6tEei97MD7GK1RmA">
+          <eAnnotations xmi:id="_XM4eZd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eZt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XDwWIN6tEei97MD7GK1RmA" name="closeable" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_XM4eaN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4ead6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKtI96tEei97MD7GK1RmA" name="Perspective">
+        <eAnnotations xmi:id="_XNoFUN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFUd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA08d6tEei97MD7GK1RmA" name="windows" upperBound="-1" eType="_LWKs9d6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4eb96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4ecN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eGenericSuperTypes eClassifier="_LWKspt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_WvA0896tEei97MD7GK1RmA" eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_PgR8nd6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_LWKsod6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_LWKtKN6tEei97MD7GK1RmA" name="PerspectiveStack">
+        <eAnnotations xmi:id="_XNoFWt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFW96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eGenericSuperTypes eClassifier="_LWKsld6tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_Qzw9zt6tEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_TaS7096tEei97MD7GK1RmA" eClassifier="_LWKtI96tEei97MD7GK1RmA"/>
+        </eGenericSuperTypes>
+        <eGenericSuperTypes eClassifier="_WvA0596tEei97MD7GK1RmA"/>
+        <eGenericSuperTypes eClassifier="_WvA06N6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_W8lXF96tEei97MD7GK1RmA" name="Area" eSuperTypes="_LWKs8d6tEei97MD7GK1RmA _PgR8nd6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoFYt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFY96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+  <eSubpackages xmi:id="_WvA0-96tEei97MD7GK1RmA" name="descriptor" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/descriptor" nsPrefix="descriptor">
+    <eSubpackages xmi:id="_WvA0_N6tEei97MD7GK1RmA" name="basic" nsURI="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" nsPrefix="basic">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_S43CRN6tEei97MD7GK1RmA" name="PartDescriptor" eSuperTypes="_LWKsc96tEei97MD7GK1RmA _PgR8nd6tEei97MD7GK1RmA _M4sPM96tEei97MD7GK1RmA _V96u6t6tEei97MD7GK1RmA">
+        <eAnnotations xmi:id="_XNoFZ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFaN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eOperations xmi:id="_XFPkAt6tEei97MD7GK1RmA" name="getLocalizedDescription">
+          <eAnnotations xmi:id="_XM4eht6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eh96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eOperations>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_S43CRd6tEei97MD7GK1RmA" name="allowMultiple">
+          <eAnnotations xmi:id="_XM4eit6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4ei96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_TJFPkd6tEei97MD7GK1RmA" name="category">
+          <eAnnotations xmi:id="_XM4ejt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4ej96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA1At6tEei97MD7GK1RmA" name="menus" upperBound="-1" eType="_LWKs3N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4ekt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4ek96tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_WvA1A96tEei97MD7GK1RmA" name="toolbar" eType="_LWKs5N6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4eld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4elt6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA1BN6tEei97MD7GK1RmA" name="closeable" defaultValueLiteral="false">
+          <eAnnotations xmi:id="_XM4emN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4emd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA1Bt6tEei97MD7GK1RmA" name="dirtyable">
+          <eAnnotations xmi:id="_XM4enN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4end6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3Ld6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_WvA1CN6tEei97MD7GK1RmA" name="contributionURI">
+          <eAnnotations xmi:id="_XM4eoN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4eod6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XA52iN6tEei97MD7GK1RmA" name="description">
+          <eAnnotations xmi:id="_XM4epN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4epd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+          <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_LWT3dd6tEei97MD7GK1RmA"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_S43CR96tEei97MD7GK1RmA" name="PartDescriptorContainer" abstract="true" interface="true">
+        <eAnnotations xmi:id="_XNoFjN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+          <details xmi:id="_XNoFjd6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>&#xD;&#xA;@since 1.0"/>
+        </eAnnotations>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_S43CSN6tEei97MD7GK1RmA" name="descriptors" upperBound="-1" eType="_S43CRN6tEei97MD7GK1RmA" containment="true">
+          <eAnnotations xmi:id="_XM4eq96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+            <details xmi:id="_XM4erN6tEei97MD7GK1RmA" key="documentation" value="&lt;p>&#xD;&#xA;&lt;strong>Developers&lt;/strong>:&#xD;&#xA;Add more detailed documentation by editing this comment in &#xD;&#xA;org.eclipse.ui.model.workbench/model/UIElements.ecore. &#xD;&#xA;There is a GenModel/documentation node under each type and attribute.&#xD;&#xA;&lt;/p>"/>
+          </eAnnotations>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </eSubpackages>
+  </eSubpackages>
+</ecore:EPackage>

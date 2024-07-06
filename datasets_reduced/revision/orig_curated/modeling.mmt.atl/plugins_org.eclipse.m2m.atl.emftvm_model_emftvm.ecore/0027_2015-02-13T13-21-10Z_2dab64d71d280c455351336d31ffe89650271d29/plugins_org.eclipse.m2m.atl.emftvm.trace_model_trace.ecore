@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_UU2rFN6uEei97MD7GK1RmA" name="trace" nsURI="http://www.eclipse.org/m2m/atl/emftvm/2011/Trace" nsPrefix="trace">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UU2rFd6uEei97MD7GK1RmA" name="TraceLinkSet">
+    <eOperations xmi:id="_vuLx4t6uEei97MD7GK1RmA" name="getDefaultSourceElement" eType="_UU2rR96uEei97MD7GK1RmA">
+      <eParameters xmi:id="_vuLx496uEei97MD7GK1RmA" name="sourceElement">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5WipwN6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_UU2rGd6uEei97MD7GK1RmA" name="getDefaultSourceElements" eType="_UU2rT96uEei97MD7GK1RmA">
+      <eParameters xmi:id="_UU2rGt6uEei97MD7GK1RmA" name="sourceElements">
+        <eGenericType eClassifier="_UU2rVd6uEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_UU2rHN6uEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_UU2rHd6uEei97MD7GK1RmA" name="getLinksByRule" eType="_UU2rJt6uEei97MD7GK1RmA">
+      <eParameters xmi:id="_UU2rHt6uEei97MD7GK1RmA" name="rule">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5Wip1N6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_UU2rIN6uEei97MD7GK1RmA" name="create">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5WipjN6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_UU2rIt6uEei97MD7GK1RmA" name="clear"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rI96uEei97MD7GK1RmA" name="rules" upperBound="-1" eType="_UU2rJt6uEei97MD7GK1RmA" containment="true" eOpposite="_UU2rMd6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rJN6uEei97MD7GK1RmA" name="defaultSourceElements" upperBound="-1" eType="_UU2rR96uEei97MD7GK1RmA" eOpposite="_UU2rSt6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rJd6uEei97MD7GK1RmA" name="defaultSourceElementLists" upperBound="-1" eType="_UU2rT96uEei97MD7GK1RmA" containment="true" eOpposite="_UU2rU96uEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UU2rJt6uEei97MD7GK1RmA" name="TracedRule">
+    <eOperations xmi:id="_vuLx896uEei97MD7GK1RmA" name="getUniqueSourceElement" eType="_UU2rR96uEei97MD7GK1RmA">
+      <eParameters xmi:id="_vuLx9N6uEei97MD7GK1RmA" name="sourceElement">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5WipwN6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_UU2rKt6uEei97MD7GK1RmA" name="getUniqueSourceElements" eType="_UU2rT96uEei97MD7GK1RmA">
+      <eParameters xmi:id="_UU2rK96uEei97MD7GK1RmA" name="sourceElements">
+        <eGenericType eClassifier="_UU2rVd6uEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_UU2rLd6uEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UU2rLt6uEei97MD7GK1RmA" name="rule" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5Wip1N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rMN6uEei97MD7GK1RmA" name="links" upperBound="-1" eType="_UU2rNN6uEei97MD7GK1RmA" containment="true" eOpposite="_UU2rP96uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rMd6uEei97MD7GK1RmA" name="linkSet" eType="_UU2rFd6uEei97MD7GK1RmA" eOpposite="_UU2rI96uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rMt6uEei97MD7GK1RmA" name="uniqueSourceElements" upperBound="-1" eType="_UU2rR96uEei97MD7GK1RmA" eOpposite="_UU2rS96uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rM96uEei97MD7GK1RmA" name="uniqueSourceElementLists" upperBound="-1" eType="_UU2rT96uEei97MD7GK1RmA" containment="true" eOpposite="_UU2rVN6uEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UU2rNN6uEei97MD7GK1RmA" name="TraceLink">
+    <eOperations xmi:id="_UU2rNd6uEei97MD7GK1RmA" name="getSourceElement" eType="_UU2rR96uEei97MD7GK1RmA">
+      <eParameters xmi:id="_UU2rNt6uEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5Wip1N6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_UU2rON6uEei97MD7GK1RmA" name="create">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5WipjN6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_UU2rOt6uEei97MD7GK1RmA" name="getTargetElement" eType="_UU2rTN6uEei97MD7GK1RmA">
+      <eParameters xmi:id="_UU2rO96uEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5Wip1N6tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rPd6uEei97MD7GK1RmA" name="sourceElements" upperBound="-1" eType="_UU2rR96uEei97MD7GK1RmA" containment="true" eOpposite="_UU2rSN6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rPt6uEei97MD7GK1RmA" name="targetElements" upperBound="-1" eType="_UU2rTN6uEei97MD7GK1RmA" containment="true" eOpposite="_UU2rTd6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rP96uEei97MD7GK1RmA" name="rule" eType="_UU2rJt6uEei97MD7GK1RmA" eOpposite="_UU2rMN6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UU2rQN6uEei97MD7GK1RmA" name="overridden" transient="true" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5WipjN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UU2rQt6uEei97MD7GK1RmA" name="TraceElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_UU2rQ96uEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5Wip1N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rRd6uEei97MD7GK1RmA" name="object">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5WipHt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_vuLyE96uEei97MD7GK1RmA" name="runtimeObject" transient="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5WipwN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UU2rR96uEei97MD7GK1RmA" name="SourceElement" eSuperTypes="_UU2rQt6uEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rSN6uEei97MD7GK1RmA" name="sourceOf" eType="_UU2rNN6uEei97MD7GK1RmA" eOpposite="_UU2rPd6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rSd6uEei97MD7GK1RmA" name="mapsTo" upperBound="-1" eType="_UU2rTN6uEei97MD7GK1RmA" eOpposite="_UU2rTt6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rSt6uEei97MD7GK1RmA" name="defaultFor" eType="_UU2rFd6uEei97MD7GK1RmA" eOpposite="_UU2rJN6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rS96uEei97MD7GK1RmA" name="uniqueFor" eType="_UU2rJt6uEei97MD7GK1RmA" eOpposite="_UU2rMt6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_3HjONt6uEei97MD7GK1RmA" name="mapsToSelf" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5WipjN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UU2rTN6uEei97MD7GK1RmA" name="TargetElement" eSuperTypes="_UU2rQt6uEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rTd6uEei97MD7GK1RmA" name="targetOf" eType="_UU2rNN6uEei97MD7GK1RmA" eOpposite="_UU2rPt6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rTt6uEei97MD7GK1RmA" name="mapsTo" upperBound="-1" eType="_UU2rR96uEei97MD7GK1RmA" eOpposite="_UU2rSd6uEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_UU2rT96uEei97MD7GK1RmA" name="SourceElementList">
+    <eOperations xmi:id="_UU2rUN6uEei97MD7GK1RmA" name="getSourceObjects" lowerBound="2" upperBound="-1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_5WipwN6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rUt6uEei97MD7GK1RmA" name="sourceElements" lowerBound="2" upperBound="-1" eType="_UU2rR96uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rU96uEei97MD7GK1RmA" name="defaultFor" eType="_UU2rFd6uEei97MD7GK1RmA" eOpposite="_UU2rJd6uEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_UU2rVN6uEei97MD7GK1RmA" name="uniqueFor" eType="_UU2rJt6uEei97MD7GK1RmA" eOpposite="_UU2rM96uEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_UU2rVd6uEei97MD7GK1RmA" name="JavaList" instanceClassName="java.util.List">
+    <eTypeParameters xmi:id="_UU2rVt6uEei97MD7GK1RmA" name="E"/>
+  </eClassifiers>
+</ecore:EPackage>

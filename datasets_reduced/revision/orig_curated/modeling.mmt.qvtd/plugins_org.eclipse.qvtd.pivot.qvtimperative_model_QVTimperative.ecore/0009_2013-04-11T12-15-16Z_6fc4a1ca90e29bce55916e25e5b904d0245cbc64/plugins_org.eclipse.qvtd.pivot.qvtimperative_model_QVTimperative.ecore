@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_KFy-0N6vEei97MD7GK1RmA" name="qvtimperative" nsURI="http://www.eclipse.org/qvt/0.9/QVTimperatve" nsPrefix="qvti">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_KFy-0d6vEei97MD7GK1RmA" name="ImperativeModel">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_KFy-7t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_KFy-096vEei97MD7GK1RmA" name="Mapping">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtcorebase_model_QVTcoreBase.ecore#_KF823d6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_KFy-1N6vEei97MD7GK1RmA" name="getAllMappings" ordered="false" upperBound="-1" eType="_KFy-096vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KFy-1d6vEei97MD7GK1RmA" name="mappingCall" upperBound="-1" eType="_KFy-196vEei97MD7GK1RmA" containment="true" eOpposite="_KFy-2t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_KFy-196vEei97MD7GK1RmA" name="MappingCall">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_KF8zSt6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_KF80J96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KFy-2N6vEei97MD7GK1RmA" name="referredMapping" lowerBound="1" eType="_KFy-096vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KFy-2d6vEei97MD7GK1RmA" name="binding" ordered="false" upperBound="-1" eType="_KFy-3d6vEei97MD7GK1RmA" containment="true" eOpposite="_KFy-3t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KFy-2t6vEei97MD7GK1RmA" name="context" lowerBound="1" eType="_KFy-096vEei97MD7GK1RmA" eOpposite="_KFy-1d6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_KFy-3d6vEei97MD7GK1RmA" name="MappingCallBinding">
+    <eSuperTypes href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_KF8w4d6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KFy-3t6vEei97MD7GK1RmA" name="mappingCall" eType="_KFy-196vEei97MD7GK1RmA" eOpposite="_KFy-2d6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KFy-396vEei97MD7GK1RmA" name="boundVariable" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_KF81Sd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KFy-4d6vEei97MD7GK1RmA" name="value" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_KFy-4t6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_KFy-496vEei97MD7GK1RmA" key="body" value="valueAssignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="examples_org.eclipse.ocl.examples.pivot_model_Pivot.ecore#_KF8zSt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

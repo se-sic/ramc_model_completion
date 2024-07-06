@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_au4i4d6tEei97MD7GK1RmA" name="mappings" nsURI="http://www.eclipse.org/gmf/2005/mappings" nsPrefix="gmfmap">
+  <eAnnotations xmi:id="_a7v6Md6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2004/EmfaticAnnotationMap">
+    <details xmi:id="_a7v6Mt6tEei97MD7GK1RmA" key="constraints" value="http://www.eclipse.org/gmf/2005/constraints"/>
+    <details xmi:id="_a7v6M96tEei97MD7GK1RmA" key="constraintsMeta" value="http://www.eclipse.org/gmf/2005/constraints/meta"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_bWNBnd6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+    <details xmi:id="_bWNBnt6tEei97MD7GK1RmA" key="import" value="http://www.eclipse.org/gmf/runtime/1.0.0/notation"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jHN6tEei97MD7GK1RmA" name="Mapping">
+    <eAnnotations xmi:id="_bLm7J96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+      <details xmi:id="_bLm7KN6tEei97MD7GK1RmA" key="ocl" value="nodes->forAll(n|n.containmentFeature.oclIsUndefined() and not n.child.domainMetaElement.oclIsUndefined() implies links->exists(let r:ecore::EReference= linkMetaFeature.oclAsType(ecore::EReference) in r.containment and r.eReferenceType.isSuperTypeOf(n.child.domainMetaElement)))"/>
+      <details xmi:id="_bLm7Kd6tEei97MD7GK1RmA" key="description" value="Phantom nodes that are not targeted by a link mapping exist"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jHd6tEei97MD7GK1RmA" name="nodes" upperBound="-1" eType="_bDmO1N6tEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jHt6tEei97MD7GK1RmA" name="links" upperBound="-1" eType="_au4jBN6tEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jH96tEei97MD7GK1RmA" name="diagram" lowerBound="1" eType="_au4jFd6tEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a7v6ON6tEei97MD7GK1RmA" name="appearanceStyles" upperBound="-1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.tooldef_models_tooldef.ecore#_a75EdN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a545dN6tEei97MD7GK1RmA" name="audits" eType="_a545w96tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bG_g9d6tEei97MD7GK1RmA" name="metrics" eType="_bG_iFt6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4i4t6tEei97MD7GK1RmA" name="MappingEntry" abstract="true">
+    <eOperations xmi:id="_a7v6Pt6tEei97MD7GK1RmA" name="getDomainContext">
+      <eAnnotations xmi:id="_bE52SN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bE52Sd6tEei97MD7GK1RmA" key="documentation" value="This method simplifies OCL expressions (makes it easy to write for both Node and Link)."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs3N6tEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i6N6tEei97MD7GK1RmA" name="domainMetaElement">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs3N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_avoJyd6tEei97MD7GK1RmA" name="domainSpecialization" eType="_avoKBt6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_avoJyt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_avoJy96tEei97MD7GK1RmA" key="documentation" value="Specializes further the domain meta element EClass associated with this mapping and should be evaluated in this EClass context"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_a6f9DN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_a6f9Dd6tEei97MD7GK1RmA" key="def" value="context"/>
+        <details xmi:id="_a6f9Dt6tEei97MD7GK1RmA" key="ocl" value="self.getDomainContext()"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_bLm7Pt6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_bLm7P96tEei97MD7GK1RmA" key="ocl" value="not domainSpecialization.oclIsUndefined() implies not domainMetaElement.oclIsUndefined()"/>
+        <details xmi:id="_bLm7QN6tEei97MD7GK1RmA" key="description" value="Using 'Domain Specialization' requires 'Domain Meta Element' to be set"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_av7EvN6tEei97MD7GK1RmA" name="domainInitializer" eType="_av7FD96tEei97MD7GK1RmA" containment="true" eOpposite="_a9yiQt6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_av7Evd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_av7Evt6tEei97MD7GK1RmA" key="documentation" value="Initializer for the domain model element associated with mapping"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_a6f9FN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_a6f9Fd6tEei97MD7GK1RmA" key="def" value="context"/>
+        <details xmi:id="_a6f9Ft6tEei97MD7GK1RmA" key="ocl" value="self.getDomainContext()"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_a9yhsd6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_a9yhst6tEei97MD7GK1RmA" key="ocl" value="not domainInitializer.oclIsUndefined() implies not domainMetaElement.oclIsUndefined()"/>
+        <details xmi:id="_a9yhs96tEei97MD7GK1RmA" key="description" value="'Domain Element' must be set in mapping with 'Element Initializers'"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bC2n6d6tEei97MD7GK1RmA" name="labelMappings" upperBound="-1" eType="_a_Il496tEei97MD7GK1RmA" containment="true" eOpposite="_bC2oQ96tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bDmOxd6tEei97MD7GK1RmA" name="NeedsContainment" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i6t6tEei97MD7GK1RmA" name="containmentFeature">
+      <eAnnotations xmi:id="_a9yhtd6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_a9yhtt6tEei97MD7GK1RmA" key="ocl" value="not containmentFeature.oclIsUndefined() implies containmentFeature.containment"/>
+        <details xmi:id="_a9yht96tEei97MD7GK1RmA" key="description" value="Containment EReference expected"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtVd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bDmOy96tEei97MD7GK1RmA" name="NodeReference" abstract="true" eSuperTypes="_bDmOxd6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_bLm7Ut6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+      <details xmi:id="_bLm7U96tEei97MD7GK1RmA" key="ocl" value="not (child.domainMetaElement.oclIsUndefined() and containmentFeature.oclIsUndefined())"/>
+      <details xmi:id="_bLm7VN6tEei97MD7GK1RmA" key="description" value="Either 'domainMetaElement' or 'containmentFeature' must be specified"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_bLm7Vd6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+      <details xmi:id="_bLm7Vt6tEei97MD7GK1RmA" key="ocl" value="not containmentFeature.oclIsUndefined() implies containmentFeature.eReferenceType.isSuperTypeOf(child.domainMetaElement)"/>
+      <details xmi:id="_bLm7V96tEei97MD7GK1RmA" key="description" value="'Containment Feature' must reference the same class or super type of 'Domain Meta Element' of the referenced node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bDmOzd6tEei97MD7GK1RmA" name="childrenFeature">
+      <eAnnotations xmi:id="_bLm7Wd6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_bLm7Wt6tEei97MD7GK1RmA" key="ocl" value="not childrenFeature.oclIsUndefined() implies childrenFeature.eReferenceType.isSuperTypeOf(child.domainMetaElement)"/>
+        <details xmi:id="_bLm7W96tEei97MD7GK1RmA" key="description" value="'Children Feature' must reference the same class or super type of 'Domain Meta Element' of the referenced node"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtVd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bK3Ub96tEei97MD7GK1RmA" name="child" eType="_au4i5d6tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" unsettable="true" derived="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bDmOz96tEei97MD7GK1RmA" name="ChildReference" eSuperTypes="_bDmOy96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_bLm7X96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+      <details xmi:id="_bLm7YN6tEei97MD7GK1RmA" key="ocl" value="not (ownedChild.oclIsUndefined() and referencedChild.oclIsUndefined())"/>
+      <details xmi:id="_bLm7Yd6tEei97MD7GK1RmA" key="description" value="Either 'ownedChild' or 'referencedChild' NodeMapping must be set"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_bLm7Yt6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+      <details xmi:id="_bLm7Y96tEei97MD7GK1RmA" key="ocl" value="not childrenFeature.oclIsUndefined() implies childrenFeature.eContainingClass.isSuperTypeOf(parentNode.domainMetaElement)"/>
+      <details xmi:id="_bLm7ZN6tEei97MD7GK1RmA" key="description" value="'Children Feature' must be owned by 'Domain Meta Element' or its super type of this reference parent Node Mapping"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_bLm7Zd6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+      <details xmi:id="_bLm7Zt6tEei97MD7GK1RmA" key="ocl" value="not containmentFeature.oclIsUndefined() implies containmentFeature.eContainingClass.isSuperTypeOf(parentNode.domainMetaElement)"/>
+      <details xmi:id="_bLm7Z96tEei97MD7GK1RmA" key="description" value="'Children Feature' must be owned by 'Domain Meta Element' or its super type of this reference parent Node Mapping"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bDmO0N6tEei97MD7GK1RmA" name="parentNode" lowerBound="1" eType="_au4i5d6tEei97MD7GK1RmA" eOpposite="_bDmO4d6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4i9N6tEei97MD7GK1RmA" name="compartment" eType="_a13Uz96tEei97MD7GK1RmA" eOpposite="_bDmO596tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bDmO0t6tEei97MD7GK1RmA" name="ownedChild" eType="_au4i5d6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bDmO096tEei97MD7GK1RmA" name="referencedChild" eType="_au4i5d6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bDmO1N6tEei97MD7GK1RmA" name="TopNodeReference" eSuperTypes="_bDmOy96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bDmO1d6tEei97MD7GK1RmA" name="ownedChild" lowerBound="1" eType="_au4i5d6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4i5d6tEei97MD7GK1RmA" name="NodeMapping" eSuperTypes="_au4i4t6tEei97MD7GK1RmA _a7v6196tEei97MD7GK1RmA _a7v62t6tEei97MD7GK1RmA _a7v6396tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_bDmO196tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bDmO2N6tEei97MD7GK1RmA" key="documentation" value="Both top-level diagram node and any inner node"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bP596tEei97MD7GK1RmA" name="diagramNode" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.graphdef_models_gmfgraph.ecore#_a1bRyd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bDmO4d6tEei97MD7GK1RmA" name="children" upperBound="-1" eType="_bDmOz96tEei97MD7GK1RmA" containment="true" eOpposite="_bDmO0N6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bDmO4t6tEei97MD7GK1RmA" name="compartments" upperBound="-1" eType="_a13Uz96tEei97MD7GK1RmA" containment="true" eOpposite="_bDmO5t6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a13Uz96tEei97MD7GK1RmA" name="CompartmentMapping">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a13U0d6tEei97MD7GK1RmA" name="compartment" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.graphdef_models_gmfgraph.ecore#_a1bRzN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bDmO5t6tEei97MD7GK1RmA" name="parentNode" lowerBound="1" eType="_au4i5d6tEei97MD7GK1RmA" changeable="false" eOpposite="_bDmO4t6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bDmO596tEei97MD7GK1RmA" name="children" upperBound="-1" eType="_bDmOz96tEei97MD7GK1RmA" eOpposite="_au4i9N6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jBN6tEei97MD7GK1RmA" name="LinkMapping" eSuperTypes="_au4i4t6tEei97MD7GK1RmA _bDmOxd6tEei97MD7GK1RmA _a7v6196tEei97MD7GK1RmA _a7v62t6tEei97MD7GK1RmA _a7v6396tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a7v6bd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a7v6bt6tEei97MD7GK1RmA" key="documentation" value="Connection element"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_a9yh3t6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+      <details xmi:id="_a9yh396tEei97MD7GK1RmA" key="ocl" value="domainMetaElement.oclIsUndefined() implies containmentFeature.oclIsUndefined() and sourceMetaFeature.oclIsUndefined()"/>
+      <details xmi:id="_a9yh4N6tEei97MD7GK1RmA" key="description" value="Link mapping without 'Domain Element' class does not use 'Containment Feature' and 'Source Feature'"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_a9yh4d6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+      <details xmi:id="_a9yh4t6tEei97MD7GK1RmA" key="ocl" value="not domainMetaElement.oclIsUndefined()  implies containmentFeature.eReferenceType.isSuperTypeOf(domainMetaElement)"/>
+      <details xmi:id="_a9yh496tEei97MD7GK1RmA" key="description" value="'Containment Feature' must reference the same class or super type of 'Domain Element' EClass"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jBd6tEei97MD7GK1RmA" name="diagramLink" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.graphdef_models_gmfgraph.ecore#_a1bRy96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a42Xit6tEei97MD7GK1RmA" name="sourceMetaFeature">
+      <eAnnotations xmi:id="_a9yh896tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_a9yh9N6tEei97MD7GK1RmA" key="ocl" value="not domainMetaElement.oclIsUndefined() implies sourceMetaFeature.oclIsUndefined() or sourceMetaFeature.eContainingClass.isSuperTypeOf(domainMetaElement)"/>
+        <details xmi:id="_a9yh9d6tEei97MD7GK1RmA" key="description" value="'Source Feature' must be owned by the link 'Domain Element' or its super type"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtXt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jE96tEei97MD7GK1RmA" name="linkMetaFeature">
+      <eAnnotations xmi:id="_a9yh-N6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_a9yh-d6tEei97MD7GK1RmA" key="ocl" value="not(domainMetaElement.oclIsUndefined() or linkMetaFeature.oclIsUndefined()) implies linkMetaFeature.eContainingClass.isSuperTypeOf(domainMetaElement)"/>
+        <details xmi:id="_a9yh-t6tEei97MD7GK1RmA" key="description" value="'Target Feature' must be owned by the link 'Domain Element' or its super type"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtXt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_azL0Yd6tEei97MD7GK1RmA" name="creationConstraints" eType="_azL0dN6tEei97MD7GK1RmA" containment="true" eOpposite="_azL0d96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_azL0Yt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_azL0Y96tEei97MD7GK1RmA" key="documentation" value="Specifies additional restrictions on link creation"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_au4jFd6tEei97MD7GK1RmA" name="CanvasMapping">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jFt6tEei97MD7GK1RmA" name="diagramCanvas" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.graphdef_models_gmfgraph.ecore#_a1bRs96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jGN6tEei97MD7GK1RmA" name="domainModel">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtR96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_au4jGt6tEei97MD7GK1RmA" name="domainMetaElement">
+      <eAnnotations xmi:id="_bLm7mN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_bLm7md6tEei97MD7GK1RmA" key="ocl" value="not domainMetaElement.oclIsUndefined() implies not(domainMetaElement.abstract or domainMetaElement.interface)"/>
+        <details xmi:id="_bLm7mt6tEei97MD7GK1RmA" key="description" value="Top-level diagram container must be concrete"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs3N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a7v6jd6tEei97MD7GK1RmA" name="palette">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.tooldef_models_tooldef.ecore#_a75ENd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a7v6j96tEei97MD7GK1RmA" name="menuContributions" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.tooldef_models_tooldef.ecore#_a75EX96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a7v6kd6tEei97MD7GK1RmA" name="toolbarContributions" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.tooldef_models_tooldef.ecore#_a75EZN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a_Il496tEei97MD7GK1RmA" name="LabelMapping">
+    <eAnnotations xmi:id="_a_Il5N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a_Il5d6tEei97MD7GK1RmA" key="documentation" value="Label on diagram; either features or text should be specified"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a_4Mxt6tEei97MD7GK1RmA" name="diagramLabel" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.graphdef_models_gmfgraph.ecore#_bALHU96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a_Il5t6tEei97MD7GK1RmA" name="features" upperBound="-1">
+      <eAnnotations xmi:id="_bLm7qN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_bLm7qd6tEei97MD7GK1RmA" key="ocl" value="features->forAll(f | f.eContainingClass.isSuperTypeOf(mapEntry.domainMetaElement))"/>
+        <details xmi:id="_bLm7qt6tEei97MD7GK1RmA" key="description" value="Label attributes must be available in 'Domain Element' EClass of the labeled mapping entry"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs0d6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a_Il6t6tEei97MD7GK1RmA" name="readOnly">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a_Il8N6tEei97MD7GK1RmA" name="viewPattern">
+      <eAnnotations xmi:id="_a_Il8d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a_Il8t6tEei97MD7GK1RmA" key="documentation" value="Pattern for java.text.MessageFormat to produce label on diagram"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a_Il9N6tEei97MD7GK1RmA" name="editPattern">
+      <eAnnotations xmi:id="_a_Il9d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a_Il9t6tEei97MD7GK1RmA" key="documentation" value="Pattern for java.text.MessageFormat to produce text for inplace editor; if not specified then viewPattern should be used"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bC2oQ96tEei97MD7GK1RmA" name="mapEntry" lowerBound="1" eType="_au4i4t6tEei97MD7GK1RmA" changeable="false" eOpposite="_bC2n6d6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_avoKBt6tEei97MD7GK1RmA" name="Constraint" eSuperTypes="_avoKC96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_avoKCd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_avoKCt6tEei97MD7GK1RmA" key="documentation" value="Boolean type value expression which is to be evaluated in a context"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_aycNpN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+      <details xmi:id="_aycNpd6tEei97MD7GK1RmA" key="def" value="Constraint"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_azL0dN6tEei97MD7GK1RmA" name="LinkConstraints">
+    <eAnnotations xmi:id="_azL0dd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_azL0dt6tEei97MD7GK1RmA" key="documentation" value="Groups constraints on the link source and target end"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_a9yiFN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+      <details xmi:id="_a9yiFd6tEei97MD7GK1RmA" key="ocl" value="not (sourceEnd.oclIsUndefined() and targetEnd.oclIsUndefined())"/>
+      <details xmi:id="_a9yiFt6tEei97MD7GK1RmA" key="description" value="Either 'sourceEnd' or 'targetEnd' constraint must be specified"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_azL0d96tEei97MD7GK1RmA" name="linkMapping" lowerBound="1" eType="_au4jBN6tEei97MD7GK1RmA" changeable="false" eOpposite="_azL0Yd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_azL0eN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_azL0ed6tEei97MD7GK1RmA" key="documentation" value="References the link mapping restricted by these constraints"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_azL0et6tEei97MD7GK1RmA" name="sourceEnd" eType="_avoKBt6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_a38_0d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a38_0t6tEei97MD7GK1RmA" key="documentation" value="Restriction enforced by the the source end, may reference variable 'oppositeEnd' pointing to targetEnd domainMetaElement instance if available."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_a9yiHd6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_a9yiHt6tEei97MD7GK1RmA" key="def" value="context"/>
+        <details xmi:id="_a9yiH96tEei97MD7GK1RmA" key="ocl" value="let lm:LinkMapping=linkMapping in if lm.sourceMetaFeature.oclIsUndefined() then (if lm.containmentFeature.oclIsUndefined() then lm.linkMetaFeature.eContainingClass else lm.containmentFeature.eContainingClass endif) else lm.sourceMetaFeature.oclAsType(ecore::EReference).eReferenceType endif"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_a38_1t6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_a38_196tEei97MD7GK1RmA" key="def" value="variable"/>
+        <details xmi:id="_a38_2N6tEei97MD7GK1RmA" key="name" value="oppositeEnd"/>
+        <details xmi:id="_a38_2d6tEei97MD7GK1RmA" key="type.ocl" value="linkMapping.linkMetaFeature.eType"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_azL0fd6tEei97MD7GK1RmA" name="targetEnd" eType="_avoKBt6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_a38_296tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a38_3N6tEei97MD7GK1RmA" key="documentation" value="Restriction enforced by the the target end, may reference variable 'oppositeEnd' pointing to sourceEnd domainMetaElement instance."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_a38_3d6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_a38_3t6tEei97MD7GK1RmA" key="def" value="context"/>
+        <details xmi:id="_a38_396tEei97MD7GK1RmA" key="ocl" value="linkMapping.linkMetaFeature.eType.oclAsType(ecore::EClass)"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_a9yiKt6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_a9yiK96tEei97MD7GK1RmA" key="def" value="variable"/>
+        <details xmi:id="_a9yiLN6tEei97MD7GK1RmA" key="name" value="oppositeEnd"/>
+        <details xmi:id="_a9yiLd6tEei97MD7GK1RmA" key="type.ocl" value="let lm:LinkMapping=linkMapping in if lm.sourceMetaFeature.oclIsUndefined() then (if lm.containmentFeature.oclIsUndefined() then lm.linkMetaFeature.eContainingClass else lm.containmentFeature.eContainingClass endif) else lm.sourceMetaFeature.oclAsType(ecore::EReference).eReferenceType endif"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_avoKC96tEei97MD7GK1RmA" name="ValueExpression">
+    <eAnnotations xmi:id="_aycNp96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+      <details xmi:id="_aycNqN6tEei97MD7GK1RmA" key="def" value="ValueSpec"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_avoKDN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_avoKDd6tEei97MD7GK1RmA" key="documentation" value="Expression as a textual statement which results in a value when evaluated in a context"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_avoKDt6tEei97MD7GK1RmA" name="body" lowerBound="1">
+      <eAnnotations xmi:id="_avoKD96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_avoKEN6tEei97MD7GK1RmA" key="documentation" value="The text of the expression"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_aycNrt6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_aycNr96tEei97MD7GK1RmA" key="def" value="body"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_avoKEt6tEei97MD7GK1RmA" name="language" defaultValueLiteral="ocl">
+      <eAnnotations xmi:id="_avoKE96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_avoKFN6tEei97MD7GK1RmA" key="documentation" value="Specifies the language in which the expression is stated"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_aycNtN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_aycNtd6tEei97MD7GK1RmA" key="def" value="lang"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_av7FD96tEei97MD7GK1RmA" name="ElementInitializer" interface="true">
+    <eAnnotations xmi:id="_av7FEN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_av7FEd6tEei97MD7GK1RmA" key="documentation" value="Base class for initializers of domain model elements"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a9yiQt6tEei97MD7GK1RmA" name="mappingEntry" lowerBound="1" eType="_au4i4t6tEei97MD7GK1RmA" eOpposite="_av7EvN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_av7FEt6tEei97MD7GK1RmA" name="FeatureSeqInitializer" eSuperTypes="_av7FD96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_av7FE96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_av7FFN6tEei97MD7GK1RmA" key="documentation" value="Feature sequence initializer"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_av7FFd6tEei97MD7GK1RmA" name="initializers" lowerBound="1" upperBound="-1" eType="_av7FGN6tEei97MD7GK1RmA" containment="true" eOpposite="_a9yiV96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_av7FFt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_av7FF96tEei97MD7GK1RmA" key="documentation" value="Value specifications as initializers for individual features which should be initialized in the order given by this list"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_av7FGN6tEei97MD7GK1RmA" name="FeatureValueSpec" eSuperTypes="_avoKC96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_av7FGd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_av7FGt6tEei97MD7GK1RmA" key="documentation" value="Value specification associated with a specific feature"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_aycNw96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+      <details xmi:id="_aycNxN6tEei97MD7GK1RmA" key="def" value="ValueSpec"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_av7FG96tEei97MD7GK1RmA" name="feature" lowerBound="1">
+      <eAnnotations xmi:id="_axcvLd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_axcvLt6tEei97MD7GK1RmA" key="documentation" value="Denotes the feature for which this value expression is specified. Its containing EClass is the context for evaluation."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_aycNyN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_aycNyd6tEei97MD7GK1RmA" key="def" value="type"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_a9yiU96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_a9yiVN6tEei97MD7GK1RmA" key="ocl" value="feature.eContainingClass.isSuperTypeOf(featureSeqInitializer.mappingEntry.getDomainContext())"/>
+        <details xmi:id="_a9yiVd6tEei97MD7GK1RmA" key="description" value="Initialized 'Feature' must be owned by 'Domain Element' or its super type"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtXt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a9yiV96tEei97MD7GK1RmA" name="featureSeqInitializer" lowerBound="1" eType="_av7FEt6tEei97MD7GK1RmA" eOpposite="_av7FFd6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a7v6196tEei97MD7GK1RmA" name="MenuOwner" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a7v62N6tEei97MD7GK1RmA" name="contextMenu">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.tooldef_models_tooldef.ecore#_a75EWt6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a7v62t6tEei97MD7GK1RmA" name="ToolOwner" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a7v6296tEei97MD7GK1RmA" name="tool">
+      <eAnnotations xmi:id="_a7v63N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a7v63d6tEei97MD7GK1RmA" key="documentation" value="Way to create this element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.tooldef_models_tooldef.ecore#_a75EJ96tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a7v6396tEei97MD7GK1RmA" name="AppearanceSteward" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a7v64N6tEei97MD7GK1RmA" name="appearanceStyle">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.gmf.tooldef_models_tooldef.ecore#_a75EdN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a545w96tEei97MD7GK1RmA" name="AuditContainer">
+    <eAnnotations xmi:id="_a545xN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a545xd6tEei97MD7GK1RmA" key="documentation" value="Container for audit rules representing a hierarchical organization of audits in the constraint category hierarchy of emft.validation framework"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a545xt6tEei97MD7GK1RmA" name="id" lowerBound="1">
+      <eAnnotations xmi:id="_a545x96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a545yN6tEei97MD7GK1RmA" key="documentation" value="Identifier which is unique within the scope of its parent container."/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_bLm8FN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_bLm8Fd6tEei97MD7GK1RmA" key="ocl" value="not parentContainer.oclIsUndefined() implies parentContainer.childContainers->one(i | i.id = self.id)"/>
+        <details xmi:id="_bLm8Ft6tEei97MD7GK1RmA" key="description" value="Audit container with the same ID already exists"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a545yt6tEei97MD7GK1RmA" name="name">
+      <eAnnotations xmi:id="_a545y96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a545zN6tEei97MD7GK1RmA" key="documentation" value="A human readable name for the category of audits organized in this container"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a545zt6tEei97MD7GK1RmA" name="description">
+      <eAnnotations xmi:id="_a545z96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a5450N6tEei97MD7GK1RmA" key="documentation" value="The detailed description of this audit container"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5450t6tEei97MD7GK1RmA" name="parentContainer" eType="_a545w96tEei97MD7GK1RmA" eOpposite="_a5451t6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a545096tEei97MD7GK1RmA" name="audits" upperBound="-1" eType="_a545196tEei97MD7GK1RmA" containment="true" eOpposite="_a545-d6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_a5451N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a5451d6tEei97MD7GK1RmA" key="documentation" value="The audit rules organized in this container"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5451t6tEei97MD7GK1RmA" name="childContainers" upperBound="-1" eType="_a545w96tEei97MD7GK1RmA" containment="true" eOpposite="_a5450t6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bFpeBd6tEei97MD7GK1RmA" name="RuleBase" interface="true">
+    <eAnnotations xmi:id="_bFpeBt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bFpeB96tEei97MD7GK1RmA" key="documentation" value="Base class for rule like audit, metric rules..."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5455t6tEei97MD7GK1RmA" name="name">
+      <eAnnotations xmi:id="_bG_h396tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bG_h4N6tEei97MD7GK1RmA" key="documentation" value="A human readable name of this rule"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5459d6tEei97MD7GK1RmA" name="description">
+      <eAnnotations xmi:id="_bG_h496tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bG_h5N6tEei97MD7GK1RmA" key="documentation" value="The detailed description of this rule semantics"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a545196tEei97MD7GK1RmA" name="AuditRule" eSuperTypes="_bFpeBd6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5452N6tEei97MD7GK1RmA" name="id" lowerBound="1">
+      <eAnnotations xmi:id="_a5452d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a5452t6tEei97MD7GK1RmA" key="documentation" value="Unique identifier of this audit rule"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_bLm8NN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_bLm8Nd6tEei97MD7GK1RmA" key="ocl" value="not id.oclIsUndefined() implies container.audits->one(i | i.id = self.id)"/>
+        <details xmi:id="_bLm8Nt6tEei97MD7GK1RmA" key="description" value="Audit rule with the same ID already exists"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5453N6tEei97MD7GK1RmA" name="rule" lowerBound="1" eType="_avoKBt6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_a5453d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a5453t6tEei97MD7GK1RmA" key="documentation" value="A boolean type condition which if not satisfied indicates this audit rule violation. It is evaluated in the context of the target"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_bLm8O96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_bLm8PN6tEei97MD7GK1RmA" key="def" value="context"/>
+        <details xmi:id="_bLm8Pd6tEei97MD7GK1RmA" key="ref" value="target"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bG_h8d6tEei97MD7GK1RmA" name="target" lowerBound="1" eType="_bG_iL96tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_bG_h8t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bG_h896tEei97MD7GK1RmA" key="documentation" value="The target representing the context this audit is evaluated in"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5456t6tEei97MD7GK1RmA" name="severity" eType="_a545_N6tEei97MD7GK1RmA" defaultValueLiteral="ERROR">
+      <eAnnotations xmi:id="_a545696tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a5457N6tEei97MD7GK1RmA" key="documentation" value="Describes the severity of this audit rule violation"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5457d6tEei97MD7GK1RmA" name="useInLiveMode" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_a5457t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a545796tEei97MD7GK1RmA" key="documentation" value="Indicates if this audit should be evaluated also in Live mode. If 'false', only Batch mode is applicable"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5458d6tEei97MD7GK1RmA" name="message">
+      <eAnnotations xmi:id="_a5458t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a545896tEei97MD7GK1RmA" key="documentation" value="The text message to be reported in case of this audit violation"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a545-d6tEei97MD7GK1RmA" name="container" lowerBound="1" eType="_a545w96tEei97MD7GK1RmA" eOpposite="_a545096tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_a545-t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a545-96tEei97MD7GK1RmA" key="documentation" value="The containing audit container of this audit rule"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bFpeMt6tEei97MD7GK1RmA" name="DomainElementTarget" eSuperTypes="_bG_iL96tEei97MD7GK1RmA _bG_iMt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_bFpeM96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bFpeNN6tEei97MD7GK1RmA" key="documentation" value="Target for rules applied on domain model elements"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_bLm8Ut6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+      <details xmi:id="_bLm8U96tEei97MD7GK1RmA" key="def" value="context"/>
+      <details xmi:id="_bLm8VN6tEei97MD7GK1RmA" key="ocl" value="element"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bFpeNd6tEei97MD7GK1RmA" name="element" lowerBound="1">
+      <eAnnotations xmi:id="_bFpeNt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bFpeN96tEei97MD7GK1RmA" key="documentation" value="Targeted domain model element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs3N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bQHo6d6tEei97MD7GK1RmA" name="DomainAttributeTarget" eSuperTypes="_bG_iL96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_bQHo6t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bQHo696tEei97MD7GK1RmA" key="documentation" value="Represents value based target, useful for audit rules expression not capable of ecore meta-model access"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_bQHo7N6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+      <details xmi:id="_bQHo7d6tEei97MD7GK1RmA" key="def" value="context"/>
+      <details xmi:id="_bQHo7t6tEei97MD7GK1RmA" key="ocl" value="attribute.eType"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bQHo796tEei97MD7GK1RmA" name="attribute" lowerBound="1">
+      <eAnnotations xmi:id="_bQHo8N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bQHo8d6tEei97MD7GK1RmA" key="documentation" value="The attribute the value of which is used as context in audit rule defining this target"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs0d6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bQHo896tEei97MD7GK1RmA" name="nullAsError">
+      <eAnnotations xmi:id="_bQHo9N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bQHo9d6tEei97MD7GK1RmA" key="documentation" value="Indicates whether null value of the attribute is reported as audit failure or success"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bFpeOd6tEei97MD7GK1RmA" name="DiagramElementTarget" eSuperTypes="_bG_iL96tEei97MD7GK1RmA _bG_iMt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_bFpeOt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bFpeO96tEei97MD7GK1RmA" key="documentation" value="Target for rules applied on diagram notation model selectively, for specific visualized element"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_bLm8XN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+      <details xmi:id="_bLm8Xd6tEei97MD7GK1RmA" key="def" value="context"/>
+      <details xmi:id="_bLm8Xt6tEei97MD7GK1RmA" key="ocl" value="if element.oclIsKindOf(NodeMapping) then 'notation::Node' else 'notation::Edge' endif"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bFpePN6tEei97MD7GK1RmA" name="element" lowerBound="1" eType="_au4i4t6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_bFpePd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bFpePt6tEei97MD7GK1RmA" key="documentation" value="Targeted visualized element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bFpeP96tEei97MD7GK1RmA" name="NotationElementTarget" eSuperTypes="_bG_iL96tEei97MD7GK1RmA _bG_iMt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_bFpeQN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bFpeQd6tEei97MD7GK1RmA" key="documentation" value="Target for rules applied on diagram notation model elements"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_bLm8Zd6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+      <details xmi:id="_bLm8Zt6tEei97MD7GK1RmA" key="def" value="context"/>
+      <details xmi:id="_bLm8Z96tEei97MD7GK1RmA" key="ocl" value="element"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bFpeQt6tEei97MD7GK1RmA" name="element" lowerBound="1">
+      <eAnnotations xmi:id="_bFpeQ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bFpeRN6tEei97MD7GK1RmA" key="documentation" value="Targeted diagram notation model element"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_bUAqid6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_bUAqit6tEei97MD7GK1RmA" key="ocl" value="element.eAllSuperTypes->including(element)->one(ePackage.name = 'notation' and name = 'View')"/>
+        <details xmi:id="_bUAqi96tEei97MD7GK1RmA" key="description" value="'notation::View' or its sub-class must be set to NotationElement target"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBs3N6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bG_iFt6tEei97MD7GK1RmA" name="MetricContainer">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bG_iF96tEei97MD7GK1RmA" name="metrics" lowerBound="1" upperBound="-1" eType="_bG_iGN6tEei97MD7GK1RmA" containment="true" eOpposite="_bG_iJt6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bG_iGN6tEei97MD7GK1RmA" name="MetricRule" eSuperTypes="_bFpeBd6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_bNGKMt6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+      <details xmi:id="_bNGKM96tEei97MD7GK1RmA" key="ocl" value="not lowLimit.oclIsUndefined() and not highLimit.oclIsUndefined()  implies lowLimit &lt; highLimit"/>
+      <details xmi:id="_bNGKNN6tEei97MD7GK1RmA" key="description" value="Metric value 'lowLimit' must be smaller then 'highLimit'"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bG_iGd6tEei97MD7GK1RmA" name="key" lowerBound="1">
+      <eAnnotations xmi:id="_bG_iGt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bG_iG96tEei97MD7GK1RmA" key="documentation" value="Unique key identifying this metric an abbreviation for this metric"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_bLm8dd6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints">
+        <details xmi:id="_bLm8dt6tEei97MD7GK1RmA" key="ocl" value="not key.oclIsUndefined() implies container.metrics->one(i | i.key = self.key)"/>
+        <details xmi:id="_bLm8d96tEei97MD7GK1RmA" key="description" value="Metric rule with the same 'key' already exists"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bFpeL96tEei97MD7GK1RmA" name="rule" lowerBound="1" eType="_avoKC96tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_bG_iHt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bG_iH96tEei97MD7GK1RmA" key="documentation" value="Expression that calculates the value of this metric which is of EDataType that encapsulates java.lang.Number subclasses or their primitives"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_bLm8fN6tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_bLm8fd6tEei97MD7GK1RmA" key="def" value="context"/>
+        <details xmi:id="_bLm8ft6tEei97MD7GK1RmA" key="ref" value="target"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_bLm8f96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+        <details xmi:id="_bLm8gN6tEei97MD7GK1RmA" key="def" value="type"/>
+        <details xmi:id="_bLm8gd6tEei97MD7GK1RmA" key="ocl" value="'ecore::EDoubleObject'"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bG_iI96tEei97MD7GK1RmA" name="target" lowerBound="1" eType="_bG_iMt6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_bG_iJN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bG_iJd6tEei97MD7GK1RmA" key="documentation" value="The target representing the context this metric is evaluated in"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bNGKSN6tEei97MD7GK1RmA" name="lowLimit">
+      <eAnnotations xmi:id="_bNGKSd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bNGKSt6tEei97MD7GK1RmA" key="documentation" value="The lowest acceptable value of the rule expression result"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtit6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bNGKTN6tEei97MD7GK1RmA" name="highLimit">
+      <eAnnotations xmi:id="_bNGKTd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bNGKTt6tEei97MD7GK1RmA" key="documentation" value="The highest acceptable value of the rule expression result"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtit6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bG_iJt6tEei97MD7GK1RmA" name="container" lowerBound="1" eType="_bG_iFt6tEei97MD7GK1RmA" eOpposite="_bG_iF96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_bG_iJ96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bG_iKN6tEei97MD7GK1RmA" key="documentation" value="The containing metric container of this metric rule"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bG_iKd6tEei97MD7GK1RmA" name="AuditedMetricTarget" eSuperTypes="_bG_iL96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_bG_iKt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bG_iK96tEei97MD7GK1RmA" key="documentation" value="Target metric which can be evaluated by audit rule. The target context here is the metric rule resulting type classifier"/>
+    </eAnnotations>
+    <eAnnotations xmi:id="_bLm8i96tEei97MD7GK1RmA" source="http://www.eclipse.org/gmf/2005/constraints/meta">
+      <details xmi:id="_bLm8jN6tEei97MD7GK1RmA" key="def" value="context"/>
+      <details xmi:id="_bLm8jd6tEei97MD7GK1RmA" key="ocl" value="'ecore::EDoubleObject'"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bG_iLN6tEei97MD7GK1RmA" name="metric" lowerBound="1" eType="_bG_iGN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_bG_iLd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bG_iLt6tEei97MD7GK1RmA" key="documentation" value="Metric which can be checked by audit"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bG_iL96tEei97MD7GK1RmA" name="Auditable" interface="true">
+    <eAnnotations xmi:id="_bG_iMN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bG_iMd6tEei97MD7GK1RmA" key="documentation" value="Target suitable for auditing"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bG_iMt6tEei97MD7GK1RmA" name="Measurable" interface="true">
+    <eAnnotations xmi:id="_bG_iM96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bG_iNN6tEei97MD7GK1RmA" key="documentation" value="Marker interface for anything that can be subject to metrics"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_a545_N6tEei97MD7GK1RmA" name="Severity">
+    <eLiterals xmi:id="_a545_d6tEei97MD7GK1RmA" name="INFO"/>
+    <eLiterals xmi:id="_a545_t6tEei97MD7GK1RmA" name="WARNING" value="1"/>
+    <eLiterals xmi:id="_a545_96tEei97MD7GK1RmA" name="ERROR" value="2"/>
+  </eClassifiers>
+</ecore:EPackage>

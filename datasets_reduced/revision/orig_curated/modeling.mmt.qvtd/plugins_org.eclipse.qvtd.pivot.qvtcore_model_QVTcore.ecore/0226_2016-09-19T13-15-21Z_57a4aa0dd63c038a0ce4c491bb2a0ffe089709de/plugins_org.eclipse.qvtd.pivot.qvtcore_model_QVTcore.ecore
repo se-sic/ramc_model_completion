@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_F3yGQd6vEei97MD7GK1RmA" name="qvtcore" nsURI="http://www.eclipse.org/qvt/2015/QVTcore" nsPrefix="qvtc">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY1st6vEei97MD7GK1RmA" name="Area" abstract="true" interface="true">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxMs96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY1s96vEei97MD7GK1RmA" name="guardPattern" lowerBound="1" eType="_JOY1096vEei97MD7GK1RmA" containment="true" eOpposite="_JOY11N6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY1tN6vEei97MD7GK1RmA" name="bottomPattern" lowerBound="1" eType="_JOY1v96vEei97MD7GK1RmA" containment="true" eOpposite="_JOY1wN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY1tt6vEei97MD7GK1RmA" name="Assignment" abstract="true">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxMs96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY1t96vEei97MD7GK1RmA" name="bottomPattern" lowerBound="1" eType="_JOY1v96vEei97MD7GK1RmA" transient="true" eOpposite="_JOY1wd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY1uN6vEei97MD7GK1RmA" name="value" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_JOY1ud6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_JOY1ut6vEei97MD7GK1RmA" key="body" value="valueAssignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icxy396vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_JOY1vN6vEei97MD7GK1RmA" name="isDefault" unsettable="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxLht6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY1v96vEei97MD7GK1RmA" name="BottomPattern" eSuperTypes="_JOY1yN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY1wN6vEei97MD7GK1RmA" name="area" lowerBound="1" eType="_JOY1st6vEei97MD7GK1RmA" transient="true" eOpposite="_JOY1tN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY1wd6vEei97MD7GK1RmA" name="assignment" ordered="false" upperBound="-1" eType="_JOY1tt6vEei97MD7GK1RmA" containment="true" eOpposite="_JOY1t96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY1wt6vEei97MD7GK1RmA" name="enforcementOperation" ordered="false" upperBound="-1" eType="_JOY1zd6vEei97MD7GK1RmA" containment="true" eOpposite="_JOY1z96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY1w96vEei97MD7GK1RmA" name="realizedVariable" ordered="false" upperBound="-1" eType="_JOY16t6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY1xN6vEei97MD7GK1RmA" name="CoreDomain">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_F37V5d6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="#_JOY1st6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_F-hAfN6vEei97MD7GK1RmA" name="CoreModel">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_GBMmsd6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY1yN6vEei97MD7GK1RmA" name="CorePattern">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_F37V-N6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_JOY1yd6vEei97MD7GK1RmA" name="getArea" lowerBound="1" eType="_JOY1st6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY1yt6vEei97MD7GK1RmA" name="variable" ordered="false" upperBound="-1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icx00t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY1zd6vEei97MD7GK1RmA" name="EnforcementOperation">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxMs96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_JOY1zt6vEei97MD7GK1RmA" name="enforcementMode" eType="_JOY18d6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY1z96vEei97MD7GK1RmA" name="bottomPattern" eType="_JOY1v96vEei97MD7GK1RmA" transient="true" eOpposite="_JOY1wt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY10N6vEei97MD7GK1RmA" name="operationCallExp" lowerBound="1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxzId6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY1096vEei97MD7GK1RmA" name="GuardPattern" eSuperTypes="_JOY1yN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY11N6vEei97MD7GK1RmA" name="area" lowerBound="1" eType="_JOY1st6vEei97MD7GK1RmA" transient="true" eOpposite="_JOY1s96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_F3yGbd6vEei97MD7GK1RmA" name="Mapping">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_F37WBt6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="#_JOY1st6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_F3yGc96vEei97MD7GK1RmA" name="context" ordered="false" eType="_F3yGbd6vEei97MD7GK1RmA" eOpposite="_F3yGct6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_F3yGct6vEei97MD7GK1RmA" name="local" ordered="false" upperBound="-1" eType="_F3yGbd6vEei97MD7GK1RmA" containment="true" eOpposite="_F3yGc96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_F3yGdN6vEei97MD7GK1RmA" name="refinement" ordered="false" upperBound="-1" eType="_F3yGbd6vEei97MD7GK1RmA" eOpposite="_F3yGcd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_F3yGcd6vEei97MD7GK1RmA" name="specification" ordered="false" upperBound="-1" eType="_F3yGbd6vEei97MD7GK1RmA" eOpposite="_F3yGdN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY1296vEei97MD7GK1RmA" name="NavigationAssignment" abstract="true" eSuperTypes="_JOY1tt6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY13N6vEei97MD7GK1RmA" name="slotExpression" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_JOY13d6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_JOY13t6vEei97MD7GK1RmA" key="body" value="slotAssignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icxy396vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY14N6vEei97MD7GK1RmA" name="OppositePropertyAssignment" eSuperTypes="_JOY1296vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY14d6vEei97MD7GK1RmA" name="targetProperty" lowerBound="1">
+      <eAnnotations xmi:id="_JOY14t6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_JOY1496vEei97MD7GK1RmA" key="body" value="assignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxzZt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY15d6vEei97MD7GK1RmA" name="PropertyAssignment" eSuperTypes="_JOY1296vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY15t6vEei97MD7GK1RmA" name="targetProperty" lowerBound="1">
+      <eAnnotations xmi:id="_JOY1596vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_JOY16N6vEei97MD7GK1RmA" key="body" value="assignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxzZt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY16t6vEei97MD7GK1RmA" name="RealizedVariable">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icx00t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JOY17N6vEei97MD7GK1RmA" name="VariableAssignment" eSuperTypes="_JOY1tt6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JOY17d6vEei97MD7GK1RmA" name="targetVariable" lowerBound="1">
+      <eAnnotations xmi:id="_JOY17t6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_JOY1796vEei97MD7GK1RmA" key="body" value="assignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icx00t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_JOY18d6vEei97MD7GK1RmA" name="EnforcementMode">
+    <eLiterals xmi:id="_JOY18t6vEei97MD7GK1RmA" name="Creation"/>
+    <eLiterals xmi:id="_JOY1896vEei97MD7GK1RmA" name="Deletion" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>

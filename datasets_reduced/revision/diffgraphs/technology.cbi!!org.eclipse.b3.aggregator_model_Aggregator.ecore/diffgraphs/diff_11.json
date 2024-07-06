@@ -1,0 +1,30 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_klLM6N6wEei97MD7GK1RmA', 'name':'provisioningAgent','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'IProvisioningAgent','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@45fd35f9 (expression: IProvisioningAgent)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'IRepository','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'IProvisioningAgent'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_klLNCN6wEei97MD7GK1RmA', 'name':'IProvisioningAgent','instanceClassName':'org.eclipse.equinox.p2.core.IProvisioningAgent','instanceTypeName':'org.eclipse.equinox.p2.core.IProvisioningAgent','ePackage':'p2','abstract':'true','interface':'true'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_koMrvd6wEei97MD7GK1RmA', 'name':'getProvisioningAgent','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'IProvisioningAgent','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@45dfc1c2 (expression: IProvisioningAgent)','eContainingClass':'IRepository'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_XTVjNd6wEei97MD7GK1RmA', 'name':'IRepository','instanceClassName':'org.eclipse.equinox.p2.repository.IRepository','instanceTypeName':'org.eclipse.equinox.p2.repository.IRepository','ePackage':'p2','eTypeParameters':['T'],'abstract':'true','interface':'true','eOperations':['getProperties','setProperty','getProvisioningAgent'],'eStructuralFeatures':['location','name','type','version','description','provider','modifiable'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@2bfe30da (expression: IAdaptable)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@403cbc36 (expression: IQueryable<T>)']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_XTVigd6wEei97MD7GK1RmA', 'name':'p2','nsURI':'http://www.eclipse.org/b3/2010/p2/1.0.0','nsPrefix':'p2','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@2bb808f7','eClassifiers':['IArtifactKey','ICopyright','IInstallableUnit','IInstallableUnitFragment','ILicense','IProvidedCapability','IRequirement','IRequiredCapability','ITouchpointData','ITouchpointInstruction','ITouchpointType','...'],'eSuperPackage':'aggregator'}}" 
+}], 
+ "links": [{
+	 "source": "3", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "3", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "4", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+}]}

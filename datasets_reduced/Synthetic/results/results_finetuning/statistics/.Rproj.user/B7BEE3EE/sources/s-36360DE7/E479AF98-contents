@@ -1,0 +1,71 @@
+library(tidyverse) 
+library(data.table)
+library(ggplot2)
+library(plyr)
+
+
+data = read.csv("./../results.csv", header = TRUE, sep="\t")
+data=as.data.table(data)
+data$GroundTruth <- recode(data$GroundTruth, Mined="M")
+data$GroundTruth <- recode(data$GroundTruth, Random="R")
+
+
+#mined = data %>% filter(Ground.Truth == "Mined")
+#random = data %>% filter(Ground.Truth == "Random")
+#random_results = random %>% select(-Ground.Truth)
+#random_all <- melt(data=as.data.table(random_results), variable.name="bla", value.name="Lickert")
+
+# Boxplot
+data_table <- melt(data, variable.name="Participant", value.name="Likert")
+plot.new()
+boxplot(Likert ~ interaction(GroundTruth, Participant), data=data_table,
+        las = 2,
+        col = c("green","red"),
+        border = "black",
+        horizontal = FALSE,
+        notch = FALSE, ann=FALSE
+)
+
+describeBy(Likert ~ interaction(GroundTruth, Participant), data=data_table)
+
+#mined_results = mined %>% select(-Ground.Truth)
+#random_list = as.numeric( %>% select(Lickert))
+mined_likert = data_table %>% filter(GroundTruth == "M") %>% select(Likert)
+random_likert = data_table %>% filter(GroundTruth == "R") %>% select(Likert)
+mined_likert<-as.numeric(as.character(unlist(mined_likert[[1]])))
+random_likert<-as.numeric(as.character(unlist(random_likert[[1]])))
+class(mined_likert)
+# Histogram
+hgA <- hist(mined_likert, plot = FALSE) # Save first histogram data
+hgB <- hist(random_likert,  plot = FALSE) # Save 2nd histogram data
+
+plot.new()
+plot(hgA, col=rgb(1,0,0,0.5)) # Plot 1st histogram using a transparent color
+plot(hgB, col=rgb(0,0,1,0.5), add = TRUE) # Add 2nd histogram using different color
+
+
+# F test for variances (actually not necessary for t-test since sample size is equal and t-test then robust)
+var.test(mined_likert, random_likert, alternative = "two.sided")
+# The Null-Hyoptheses that the variances are equal can not be rejected
+
+
+# t test
+t.test(mined_likert, random_likert, var.equal = FALSE, alternative = "greater")
+# The null hypotheses that the means are equal can be rejected with a significane level of 0.01
+t.test(Likert ~ GroundTruth, data=data_table, var.equal=FALSE, alternative = "greater")
+t.test(Likert ~ GroundTruth, data=data_table[Participant == "P1"], var.equal=FALSE, alternative = "greater")
+t.test(Likert ~ GroundTruth, data=data_table[Participant == "P2"], var.equal=FALSE, alternative = "greater")
+t.test(Likert ~ GroundTruth, data=data_table[Participant == "P3"], var.equal=FALSE, alternative = "greater")
+t.test(Likert ~ GroundTruth, data=data_table[Participant == "P4"], var.equal=FALSE, alternative = "greater")
+t.test(Likert ~ GroundTruth, data=data_table[Participant == "P5"], var.equal=FALSE, alternative = "greater")
+
+
+# Mann-Whitney-U test (for unparametric distributions)
+wilcox.test(Likert ~ GroundTruth, data=data_table, exact = FALSE, correct = FALSE, conf.int = FALSE)
+wilcox.test(Likert ~ GroundTruth, data=data_table[Participant == "P1"], exact = FALSE, correct = FALSE, conf.int = FALSE)
+wilcox.test(Likert ~ GroundTruth, data=data_table[Participant == "P2"], exact = FALSE, correct = FALSE, conf.int = FALSE)
+wilcox.test(Likert ~ GroundTruth, data=data_table[Participant == "P3"], exact = FALSE, correct = FALSE, conf.int = FALSE)
+wilcox.test(Likert ~ GroundTruth, data=data_table[Participant == "P4"], exact = FALSE, correct = FALSE, conf.int = FALSE)
+wilcox.test(Likert ~ GroundTruth, data=data_table[Participant == "P5"], exact = FALSE, correct = FALSE, conf.int = FALSE)
+
+

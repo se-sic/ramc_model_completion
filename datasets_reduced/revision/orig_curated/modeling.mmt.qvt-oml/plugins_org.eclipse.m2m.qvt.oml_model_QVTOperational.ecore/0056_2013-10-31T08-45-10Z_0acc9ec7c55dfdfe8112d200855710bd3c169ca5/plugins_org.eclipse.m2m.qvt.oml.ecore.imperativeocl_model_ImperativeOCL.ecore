@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_BzDGj96vEei97MD7GK1RmA" name="ImperativeOCL" nsURI="http://www.eclipse.org/qvt/1.0/ImperativeOCL" nsPrefix="eimpocl">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDGkN6vEei97MD7GK1RmA" name="AltExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGkd6vEei97MD7GK1RmA" name="body" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDGkt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGk96vEei97MD7GK1RmA" key="body" value="altBodyOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGld6vEei97MD7GK1RmA" name="condition" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDGlt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGl96vEei97MD7GK1RmA" key="body" value="altCondOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDGmd6vEei97MD7GK1RmA" name="AssertExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGmt6vEei97MD7GK1RmA" name="assertion" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDGm96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGnN6vEei97MD7GK1RmA" key="body" value="assertOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGnt6vEei97MD7GK1RmA" name="log" eType="_BzDG9N6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_BzDGn96vEei97MD7GK1RmA" name="severity" eType="_BzDHF96vEei97MD7GK1RmA" defaultValueLiteral="error"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDGoN6vEei97MD7GK1RmA" name="AssignExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_B3RfUd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_B3RfUt6vEei97MD7GK1RmA" key="constraints" value="WellFormedLeftExp checkLeftAndValueExpConformance"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGod6vEei97MD7GK1RmA" name="defaultValue" containment="true">
+      <eAnnotations xmi:id="_BzDGot6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGo96vEei97MD7GK1RmA" key="body" value="defaultOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_BzDGpd6vEei97MD7GK1RmA" name="isReset" unsettable="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgD-t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGp96vEei97MD7GK1RmA" name="left" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDGqN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGqd6vEei97MD7GK1RmA" key="body" value="leftOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGq96vEei97MD7GK1RmA" name="value" upperBound="-1" containment="true">
+      <eAnnotations xmi:id="_BzDGrN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGrd6vEei97MD7GK1RmA" key="body" value="valueOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDGr96vEei97MD7GK1RmA" name="BlockExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGsN6vEei97MD7GK1RmA" name="body" upperBound="-1" containment="true">
+      <eAnnotations xmi:id="_BzDGsd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGst6vEei97MD7GK1RmA" key="body" value="blockOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDGtN6vEei97MD7GK1RmA" name="BreakExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDGtd6vEei97MD7GK1RmA" name="CatchExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGtt6vEei97MD7GK1RmA" name="body" upperBound="-1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGuN6vEei97MD7GK1RmA" name="exception" upperBound="-1">
+      <eAnnotations xmi:id="_BzDGud6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGut6vEei97MD7GK1RmA" key="body" value="tryExpression"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgDOd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDGvN6vEei97MD7GK1RmA" name="ComputeExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGvd6vEei97MD7GK1RmA" name="body" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDGvt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGv96vEei97MD7GK1RmA" key="body" value="computeOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGwd6vEei97MD7GK1RmA" name="returnedElement" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDGwt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGw96vEei97MD7GK1RmA" key="body" value="computeOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLN896vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDGxd6vEei97MD7GK1RmA" name="ContinueExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDGxt6vEei97MD7GK1RmA" name="DictLiteralExp">
+    <eSuperTypes href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNoN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGx96vEei97MD7GK1RmA" name="part" ordered="false" upperBound="-1" eType="_BzDGy96vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_BzDGyN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGyd6vEei97MD7GK1RmA" key="body" value="partOwner"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDGy96vEei97MD7GK1RmA" name="DictLiteralPart">
+    <eSuperTypes href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgDdN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDGzN6vEei97MD7GK1RmA" name="key" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDGzd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDGzt6vEei97MD7GK1RmA" key="body" value="keyOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDG0N6vEei97MD7GK1RmA" name="value" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDG0d6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDG0t6vEei97MD7GK1RmA" key="body" value="valOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDG1d6vEei97MD7GK1RmA" name="DictionaryType">
+    <eSuperTypes href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLM_d6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDG1t6vEei97MD7GK1RmA" name="keyType">
+      <eAnnotations xmi:id="_BzDG196vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDG2N6vEei97MD7GK1RmA" key="body" value="keyDict"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgDOd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDG296vEei97MD7GK1RmA" name="ForExp" eSuperTypes="_BzDG496vEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDG3N6vEei97MD7GK1RmA" name="ImperativeExpression" abstract="true">
+    <eSuperTypes href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDG3t6vEei97MD7GK1RmA" name="ImperativeIterateExp" eSuperTypes="_BzDG496vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_B3Rfkd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_B3Rfkt6vEei97MD7GK1RmA" key="constraints" value="WellFormedName WellFormedTargetVar WellFormedBody WellFormedCondition"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDG396vEei97MD7GK1RmA" name="target" containment="true">
+      <eAnnotations xmi:id="_BzDG4N6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDG4d6vEei97MD7GK1RmA" key="body" value="tgtOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLN896vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDG496vEei97MD7GK1RmA" name="ImperativeLoopExp" abstract="true">
+    <eSuperTypes href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNpN6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="#_BzDG3N6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDG5N6vEei97MD7GK1RmA" name="condition" containment="true">
+      <eAnnotations xmi:id="_BzDG5d6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDG5t6vEei97MD7GK1RmA" key="body" value="loopCondOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDG6d6vEei97MD7GK1RmA" name="InstantiationExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDG6t6vEei97MD7GK1RmA" name="argument" upperBound="-1" containment="true">
+      <eAnnotations xmi:id="_BzDG696vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDG7N6vEei97MD7GK1RmA" key="body" value="argOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDG7t6vEei97MD7GK1RmA" name="extent">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLN896vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDG8N6vEei97MD7GK1RmA" name="instantiatedClass" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgDEN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_CAGrjN6vEei97MD7GK1RmA" name="ListLiteralExp">
+    <eSuperTypes href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNoN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_CAGrjd6vEei97MD7GK1RmA" name="element" upperBound="-1" containment="true">
+      <eAnnotations xmi:id="_CAGrjt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_CAGrj96vEei97MD7GK1RmA" key="body" value="elementOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDG8t6vEei97MD7GK1RmA" name="ListType">
+    <eSuperTypes href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLM_d6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDG9N6vEei97MD7GK1RmA" name="LogExp">
+    <eSuperTypes href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNxN6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="#_BzDG3N6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDG9d6vEei97MD7GK1RmA" name="condition" containment="true">
+      <eAnnotations xmi:id="_BzDG9t6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDG996vEei97MD7GK1RmA" key="body" value="logOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDG-t6vEei97MD7GK1RmA" name="OrderedTupleLiteralExp">
+    <eSuperTypes href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNoN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDG-96vEei97MD7GK1RmA" name="part" upperBound="-1" eType="_BzDG_96vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_BzDG_N6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDG_d6vEei97MD7GK1RmA" key="body" value="partOwner"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDG_96vEei97MD7GK1RmA" name="OrderedTupleLiteralPart">
+    <eSuperTypes href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgDdN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHAN6vEei97MD7GK1RmA" name="value" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDHAd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHAt6vEei97MD7GK1RmA" key="body" value="tupValOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDHBd6vEei97MD7GK1RmA" name="OrderedTupleType">
+    <eAnnotations xmi:id="_BzDHBt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_BzDHB96vEei97MD7GK1RmA" key="constraints" value="WellFormedName"/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgDEN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHCN6vEei97MD7GK1RmA" name="elementType" upperBound="-1">
+      <eAnnotations xmi:id="_BzDHCd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHCt6vEei97MD7GK1RmA" key="body" value="eltTuple"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgDOd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDHDd6vEei97MD7GK1RmA" name="RaiseExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHDt6vEei97MD7GK1RmA" name="argument" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHEN6vEei97MD7GK1RmA" name="exception" lowerBound="1">
+      <eAnnotations xmi:id="_BzDHEd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHEt6vEei97MD7GK1RmA" key="body" value="raiseExpression"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgDOd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDHFN6vEei97MD7GK1RmA" name="ReturnExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHFd6vEei97MD7GK1RmA" name="value" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_BzDHF96vEei97MD7GK1RmA" name="SeverityKind">
+    <eLiterals xmi:id="_BzDHGN6vEei97MD7GK1RmA" name="error"/>
+    <eLiterals xmi:id="_BzDHGd6vEei97MD7GK1RmA" name="warning" value="1"/>
+    <eLiterals xmi:id="_BzDHGt6vEei97MD7GK1RmA" name="fatal" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDHG96vEei97MD7GK1RmA" name="SwitchExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHHN6vEei97MD7GK1RmA" name="alternativePart" upperBound="-1" eType="_BzDGkN6vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_BzDHHd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHHt6vEei97MD7GK1RmA" key="body" value="altOwner"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHH96vEei97MD7GK1RmA" name="elsePart" containment="true">
+      <eAnnotations xmi:id="_BzDHIN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHId6vEei97MD7GK1RmA" key="body" value="elsePartOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDHJ96vEei97MD7GK1RmA" name="TryExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHKN6vEei97MD7GK1RmA" name="exceptClause" upperBound="-1" eType="_BzDGtd6vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_BzDHKd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHKt6vEei97MD7GK1RmA" key="body" value="exceptOwner"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHK96vEei97MD7GK1RmA" name="tryBody" upperBound="-1" containment="true">
+      <eAnnotations xmi:id="_BzDHLN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHLd6vEei97MD7GK1RmA" key="body" value="tryBodyOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDHL96vEei97MD7GK1RmA" name="Typedef">
+    <eSuperTypes href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgDEN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHMN6vEei97MD7GK1RmA" name="base" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgDOd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHMt6vEei97MD7GK1RmA" name="condition" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDHNd6vEei97MD7GK1RmA" name="UnlinkExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHNt6vEei97MD7GK1RmA" name="item" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDHN96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHON6vEei97MD7GK1RmA" key="body" value="itemUnlink"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHOt6vEei97MD7GK1RmA" name="target" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDHO96vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHPN6vEei97MD7GK1RmA" key="body" value="tgtUnlink"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDHPt6vEei97MD7GK1RmA" name="UnpackExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHP96vEei97MD7GK1RmA" name="source" lowerBound="1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHQd6vEei97MD7GK1RmA" name="targetVariable" lowerBound="1" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLN896vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDHQ96vEei97MD7GK1RmA" name="VariableInitExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHRN6vEei97MD7GK1RmA" name="referredVariable" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDHRd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHRt6vEei97MD7GK1RmA" key="body" value="declaration"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLN896vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_BzDHSN6vEei97MD7GK1RmA" name="withResult" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_BFgD-t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BzDHSt6vEei97MD7GK1RmA" name="WhileExp" eSuperTypes="_BzDG3N6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHS96vEei97MD7GK1RmA" name="body" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDHTN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHTd6vEei97MD7GK1RmA" key="body" value="whileOwner"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BzDHT96vEei97MD7GK1RmA" name="condition" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_BzDHUN6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_BzDHUd6vEei97MD7GK1RmA" key="body" value="whileExpression"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.ecore_model_OCLEcore.ecore#_BZLNvN6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

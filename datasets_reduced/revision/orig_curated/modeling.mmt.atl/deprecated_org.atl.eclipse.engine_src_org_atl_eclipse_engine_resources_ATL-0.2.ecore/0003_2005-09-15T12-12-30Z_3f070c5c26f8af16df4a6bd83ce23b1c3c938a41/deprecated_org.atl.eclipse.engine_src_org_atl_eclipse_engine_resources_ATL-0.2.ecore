@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
+  <ecore:EPackage xmi:id="_5T16Sd6tEei97MD7GK1RmA" name="OCL">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16St6tEei97MD7GK1RmA" name="OclFeature" abstract="true" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16TN6tEei97MD7GK1RmA" name="definition" ordered="false" eType="_5T16Yd6tEei97MD7GK1RmA" eOpposite="_5T16Y96tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16S96tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Td6tEei97MD7GK1RmA" name="Attribute" eSuperTypes="_5T16St6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Tt6tEei97MD7GK1RmA" name="initExpression" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16hN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16T96tEei97MD7GK1RmA" name="type" ordered="false" lowerBound="1" eType="_5T16t96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16vt6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16UN6tEei97MD7GK1RmA" name="Operation" eSuperTypes="_5T16St6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Ud6tEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_5T16VN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16Vt6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Ut6tEei97MD7GK1RmA" name="returnType" ordered="false" lowerBound="1" eType="_5T16t96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16v96tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16U96tEei97MD7GK1RmA" name="body" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16hd6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16VN6tEei97MD7GK1RmA" name="Parameter" eSuperTypes="_5T16l96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Vt6tEei97MD7GK1RmA" name="operation" ordered="false" lowerBound="1" eType="_5T16UN6tEei97MD7GK1RmA" eOpposite="_5T16Ud6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16V96tEei97MD7GK1RmA" name="OclModel" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16W96tEei97MD7GK1RmA" name="metamodel" ordered="false" lowerBound="1" eType="_5T16V96tEei97MD7GK1RmA" eOpposite="_5T16XN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Xd6tEei97MD7GK1RmA" name="elements" ordered="false" upperBound="-1" eType="_5T16yd6tEei97MD7GK1RmA" eOpposite="_5T16yt6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16XN6tEei97MD7GK1RmA" name="model" ordered="false" upperBound="-1" eType="_5T16V96tEei97MD7GK1RmA" eOpposite="_5T16W96tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16WN6tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Xt6tEei97MD7GK1RmA" name="OclContextDefinition" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16YN6tEei97MD7GK1RmA" name="definition" ordered="false" lowerBound="1" eType="_5T16Yd6tEei97MD7GK1RmA" eOpposite="_5T16ZN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16X96tEei97MD7GK1RmA" name="context_" ordered="false" lowerBound="1" eType="_5T16t96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16wN6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Yd6tEei97MD7GK1RmA" name="OclFeatureDefinition" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Y96tEei97MD7GK1RmA" name="feature" ordered="false" lowerBound="1" eType="_5T16St6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16TN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16ZN6tEei97MD7GK1RmA" name="context_" ordered="false" eType="_5T16Xt6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16YN6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eSubpackages xmi:id="_5T16Zd6tEei97MD7GK1RmA" name="Expressions">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Zt6tEei97MD7GK1RmA" name="CollectionOperationCallExp" eSuperTypes="_5T16n96tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Z96tEei97MD7GK1RmA" name="VariableExp" eSuperTypes="_5T16dN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16ad6tEei97MD7GK1RmA" name="referredVariable" ordered="false" lowerBound="1" eType="_5T16l96tEei97MD7GK1RmA" eOpposite="_5T16nd6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16aN6tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5U6RHd6tEei97MD7GK1RmA" name="MapExp" eSuperTypes="_5T16dN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5U6RHt6tEei97MD7GK1RmA" name="elements" upperBound="-1" eType="_5U6RH96tEei97MD7GK1RmA" containment="true" eOpposite="_5U6RIN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5U6RH96tEei97MD7GK1RmA" name="MapElement" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5U6RIN6tEei97MD7GK1RmA" name="map" ordered="false" lowerBound="1" eType="_5U6RHd6tEei97MD7GK1RmA" eOpposite="_5U6RHt6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5U6RId6tEei97MD7GK1RmA" name="key" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5U6RIt6tEei97MD7GK1RmA" name="value" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16a96tEei97MD7GK1RmA" name="RealExp" eSuperTypes="_5T16ot6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16bN6tEei97MD7GK1RmA" name="realSymbol" ordered="false" unique="false" lowerBound="1" eType="_5T16At6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16bd6tEei97MD7GK1RmA" name="PrimitiveExp" abstract="true" eSuperTypes="_5T16dN6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5U6RJt6tEei97MD7GK1RmA" name="OclUndefinedExp" eSuperTypes="_5T16dN6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16bt6tEei97MD7GK1RmA" name="IterateExp" eSuperTypes="_5T16qt6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16b96tEei97MD7GK1RmA" name="result" ordered="false" lowerBound="1" eType="_5T16l96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16nN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16cN6tEei97MD7GK1RmA" name="PropertyCallExp" abstract="true" eSuperTypes="_5T16dN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16cd6tEei97MD7GK1RmA" name="source" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16et6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16ct6tEei97MD7GK1RmA" name="TuplePart" eSuperTypes="_5T16l96tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16c96tEei97MD7GK1RmA" name="tuple" ordered="false" lowerBound="1" eType="_5T16rd6tEei97MD7GK1RmA" eOpposite="_5T16rt6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16dN6tEei97MD7GK1RmA" name="OclExpression" abstract="true" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16f96tEei97MD7GK1RmA" name="ifExp3" ordered="false" eType="_5T16pt6tEei97MD7GK1RmA" eOpposite="_5T16qN6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16et6tEei97MD7GK1RmA" name="appliedProperty" ordered="false" eType="_5T16cN6tEei97MD7GK1RmA" eOpposite="_5T16cd6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16fN6tEei97MD7GK1RmA" name="collection" ordered="false" eType="_5T16pN6tEei97MD7GK1RmA" eOpposite="_5T16pd6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16gN6tEei97MD7GK1RmA" name="letExp" ordered="false" eType="_5T16kd6tEei97MD7GK1RmA" eOpposite="_5T16k96tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16ft6tEei97MD7GK1RmA" name="loopExp" ordered="false" eType="_5T16qt6tEei97MD7GK1RmA" eOpposite="_5T16q96tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16gt6tEei97MD7GK1RmA" name="parentOperation" ordered="false" eType="_5T16n96tEei97MD7GK1RmA" eOpposite="_5T16od6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16e96tEei97MD7GK1RmA" name="initializedVariable" ordered="false" eType="_5T16l96tEei97MD7GK1RmA" eOpposite="_5T16mt6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16gd6tEei97MD7GK1RmA" name="ifExp2" ordered="false" eType="_5T16pt6tEei97MD7GK1RmA" eOpposite="_5T16qd6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16hd6tEei97MD7GK1RmA" name="operation" ordered="false" eType="_5T16UN6tEei97MD7GK1RmA" eOpposite="_5T16U96tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16fd6tEei97MD7GK1RmA" name="ifExp1" ordered="false" eType="_5T16pt6tEei97MD7GK1RmA" eOpposite="_5T16p96tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16g96tEei97MD7GK1RmA" name="type" ordered="false" lowerBound="1" eType="_5T16t96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16vd6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16hN6tEei97MD7GK1RmA" name="attribute" ordered="false" eType="_5T16Td6tEei97MD7GK1RmA" eOpposite="_5T16Tt6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16ht6tEei97MD7GK1RmA" name="IntegerExp" eSuperTypes="_5T16ot6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16h96tEei97MD7GK1RmA" name="integerSymbol" ordered="false" unique="false" lowerBound="1" eType="_5T16A96tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16iN6tEei97MD7GK1RmA" name="EnumLiteralExp" eSuperTypes="_5T16dN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16id6tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16it6tEei97MD7GK1RmA" name="OperatorCallExp" eSuperTypes="_5T16n96tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16i96tEei97MD7GK1RmA" name="IteratorExp" eSuperTypes="_5T16qt6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16jN6tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16jd6tEei97MD7GK1RmA" name="StringExp" eSuperTypes="_5T16bd6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16jt6tEei97MD7GK1RmA" name="stringSymbol" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16j96tEei97MD7GK1RmA" name="BooleanExp" eSuperTypes="_5T16bd6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16kN6tEei97MD7GK1RmA" name="booleanSymbol" ordered="false" unique="false" lowerBound="1" eType="_5T16Bd6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16kd6tEei97MD7GK1RmA" name="LetExp" eSuperTypes="_5T16dN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16kt6tEei97MD7GK1RmA" name="variable" ordered="false" lowerBound="1" eType="_5T16l96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16m96tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16k96tEei97MD7GK1RmA" name="in_" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16gN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16lN6tEei97MD7GK1RmA" name="Iterator" eSuperTypes="_5T16l96tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16lt6tEei97MD7GK1RmA" name="loopExpr" ordered="false" eType="_5T16qt6tEei97MD7GK1RmA" eOpposite="_5T16rN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16l96tEei97MD7GK1RmA" name="VariableDeclaration" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16m96tEei97MD7GK1RmA" name="letExp" ordered="false" eType="_5T16kd6tEei97MD7GK1RmA" eOpposite="_5T16kt6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16nt6tEei97MD7GK1RmA" name="type" ordered="false" lowerBound="1" eType="_5T16t96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16wd6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16nN6tEei97MD7GK1RmA" name="baseExp" ordered="false" eType="_5T16bt6tEei97MD7GK1RmA" eOpposite="_5T16b96tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16nd6tEei97MD7GK1RmA" name="variableExp" ordered="false" upperBound="-1" eType="_5T16Z96tEei97MD7GK1RmA" eOpposite="_5T16ad6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16mt6tEei97MD7GK1RmA" name="initExpression" ordered="false" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16e96tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16mN6tEei97MD7GK1RmA" name="varName" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16md6tEei97MD7GK1RmA" name="id" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16n96tEei97MD7GK1RmA" name="OperationCallExp" eSuperTypes="_5T16cN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16od6tEei97MD7GK1RmA" name="arguments" upperBound="-1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16gt6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16oN6tEei97MD7GK1RmA" name="operationName" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5U6RVd6tEei97MD7GK1RmA" name="signature" ordered="false" unique="false" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16ot6tEei97MD7GK1RmA" name="NumericExp" abstract="true" eSuperTypes="_5T16bd6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16o96tEei97MD7GK1RmA" name="BagExp" eSuperTypes="_5T16pN6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16pN6tEei97MD7GK1RmA" name="CollectionExp" abstract="true" eSuperTypes="_5T16dN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16pd6tEei97MD7GK1RmA" name="elements" upperBound="-1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16fN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16pt6tEei97MD7GK1RmA" name="IfExp" eSuperTypes="_5T16dN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16qd6tEei97MD7GK1RmA" name="thenExpression" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16gd6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16p96tEei97MD7GK1RmA" name="condition" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16fd6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16qN6tEei97MD7GK1RmA" name="elseExpression" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16f96tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16qt6tEei97MD7GK1RmA" name="LoopExp" eSuperTypes="_5T16cN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16q96tEei97MD7GK1RmA" name="body" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16ft6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16rN6tEei97MD7GK1RmA" name="iterators" ordered="false" lowerBound="1" upperBound="-1" eType="_5T16lN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16lt6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16rd6tEei97MD7GK1RmA" name="TupleExp" eSuperTypes="_5T16dN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16rt6tEei97MD7GK1RmA" name="tuplePart" upperBound="-1" eType="_5T16ct6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16c96tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16r96tEei97MD7GK1RmA" name="SequenceExp" eSuperTypes="_5T16pN6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16sN6tEei97MD7GK1RmA" name="NavigationOrAttributeCallExp" eSuperTypes="_5T16cN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16sd6tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16st6tEei97MD7GK1RmA" name="SetExp" eSuperTypes="_5T16pN6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16s96tEei97MD7GK1RmA" name="OrderedSetExp" eSuperTypes="_5T16pN6tEei97MD7GK1RmA"/>
+    </eSubpackages>
+    <eSubpackages xmi:id="_5T16tN6tEei97MD7GK1RmA" name="Types">
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16td6tEei97MD7GK1RmA" name="CollectionType" abstract="true" eSuperTypes="_5T16t96tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16tt6tEei97MD7GK1RmA" name="elementType" ordered="false" lowerBound="1" eType="_5T16t96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16u96tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16t96tEei97MD7GK1RmA" name="OclType" abstract="true" eSuperTypes="_5T16dN6tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16wN6tEei97MD7GK1RmA" name="definitions" ordered="false" upperBound="-1" eType="_5T16Xt6tEei97MD7GK1RmA" eOpposite="_5T16X96tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16vd6tEei97MD7GK1RmA" name="oclExpression" ordered="false" upperBound="-1" eType="_5T16dN6tEei97MD7GK1RmA" eOpposite="_5T16g96tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16v96tEei97MD7GK1RmA" name="operation" ordered="false" eType="_5T16UN6tEei97MD7GK1RmA" eOpposite="_5T16Ut6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16ut6tEei97MD7GK1RmA" name="mapType2" ordered="false" eType="_5T161N6tEei97MD7GK1RmA" eOpposite="_5T161d6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16vt6tEei97MD7GK1RmA" name="attribute" ordered="false" lowerBound="1" eType="_5T16Td6tEei97MD7GK1RmA" eOpposite="_5T16T96tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16vN6tEei97MD7GK1RmA" name="mapType" ordered="false" eType="_5T161N6tEei97MD7GK1RmA" eOpposite="_5T161t6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16u96tEei97MD7GK1RmA" name="collectionTypes" ordered="false" eType="_5T16td6tEei97MD7GK1RmA" eOpposite="_5T16tt6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16ud6tEei97MD7GK1RmA" name="tupleTypeAttribute" ordered="false" upperBound="-1" eType="_5T16z96tEei97MD7GK1RmA" eOpposite="_5T160d6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16wd6tEei97MD7GK1RmA" name="variableDeclaration" ordered="false" upperBound="-1" eType="_5T16l96tEei97MD7GK1RmA" eOpposite="_5T16nt6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16uN6tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16wt6tEei97MD7GK1RmA" name="StringType" eSuperTypes="_5T16w96tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16w96tEei97MD7GK1RmA" name="Primitive" abstract="true" eSuperTypes="_5T16t96tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16xN6tEei97MD7GK1RmA" name="RealType" eSuperTypes="_5T16zt6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5U6Red6tEei97MD7GK1RmA" name="OclAnyType" eSuperTypes="_5T16t96tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16xd6tEei97MD7GK1RmA" name="TupleType" eSuperTypes="_5T16t96tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16xt6tEei97MD7GK1RmA" name="attributes" ordered="false" upperBound="-1" eType="_5T16z96tEei97MD7GK1RmA" containment="true" eOpposite="_5T160t6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16x96tEei97MD7GK1RmA" name="SequenceType" eSuperTypes="_5T16td6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16yN6tEei97MD7GK1RmA" name="BooleanType" eSuperTypes="_5T16w96tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16yd6tEei97MD7GK1RmA" name="OclModelElement" eSuperTypes="_5T16t96tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16yt6tEei97MD7GK1RmA" name="model" ordered="false" lowerBound="1" eType="_5T16V96tEei97MD7GK1RmA" eOpposite="_5T16Xd6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16y96tEei97MD7GK1RmA" name="SetType" eSuperTypes="_5T16td6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16zN6tEei97MD7GK1RmA" name="BagType" eSuperTypes="_5T16td6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16zd6tEei97MD7GK1RmA" name="OrderedSetType" eSuperTypes="_5T16td6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16zt6tEei97MD7GK1RmA" name="NumericType" abstract="true" eSuperTypes="_5T16w96tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16z96tEei97MD7GK1RmA" name="TupleTypeAttribute" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T160d6tEei97MD7GK1RmA" name="type" ordered="false" lowerBound="1" eType="_5T16t96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16ud6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T160t6tEei97MD7GK1RmA" name="tupleType" ordered="false" lowerBound="1" eType="_5T16xd6tEei97MD7GK1RmA" eOpposite="_5T16xt6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T160N6tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16096tEei97MD7GK1RmA" name="IntegerType" eSuperTypes="_5T16zt6tEei97MD7GK1RmA"/>
+      <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T161N6tEei97MD7GK1RmA" name="MapType" eSuperTypes="_5T16t96tEei97MD7GK1RmA">
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T161d6tEei97MD7GK1RmA" name="valueType" ordered="false" lowerBound="1" eType="_5T16t96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16ut6tEei97MD7GK1RmA"/>
+        <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T161t6tEei97MD7GK1RmA" name="keyType" ordered="false" lowerBound="1" eType="_5T16t96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16vN6tEei97MD7GK1RmA"/>
+      </eClassifiers>
+    </eSubpackages>
+  </ecore:EPackage>
+  <ecore:EPackage xmi:id="_5T16Cd6tEei97MD7GK1RmA" name="ATL">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Ct6tEei97MD7GK1RmA" name="DerivedInPatternElement" eSuperTypes="_5T16Md6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16C96tEei97MD7GK1RmA" name="value" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16DN6tEei97MD7GK1RmA" name="Query" eSuperTypes="_5T16Fd6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Dt6tEei97MD7GK1RmA" name="body" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Dd6tEei97MD7GK1RmA" name="helpers" upperBound="-1" eType="_5T16LN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16Ld6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16D96tEei97MD7GK1RmA" name="Module" eSuperTypes="_5T16Fd6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5U6Rk96tEei97MD7GK1RmA" name="isRefining" ordered="false" unique="false" lowerBound="1" eType="_5T16Bd6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Ed6tEei97MD7GK1RmA" name="inModels" lowerBound="1" upperBound="-1" eType="_5T16V96tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16EN6tEei97MD7GK1RmA" name="outModels" ordered="false" lowerBound="1" upperBound="-1" eType="_5T16V96tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Et6tEei97MD7GK1RmA" name="elements" upperBound="-1" eType="_5T16Kt6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16K96tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16E96tEei97MD7GK1RmA" name="ActionBlock" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16FN6tEei97MD7GK1RmA" name="rule" ordered="false" lowerBound="1" eType="_5T16Gt6tEei97MD7GK1RmA" eOpposite="_5T16Ht6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1Ad6tEei97MD7GK1RmA" name="statements" upperBound="-1" eType="_5UI1At6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5UI1At6tEei97MD7GK1RmA" name="Statement" abstract="true" eSuperTypes="_5T16B96tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5UI1A96tEei97MD7GK1RmA" name="ExpressionStat" eSuperTypes="_5UI1At6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1BN6tEei97MD7GK1RmA" name="expression" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5UI1Bd6tEei97MD7GK1RmA" name="BindingStat" eSuperTypes="_5UI1At6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1Bt6tEei97MD7GK1RmA" name="source" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5UI1B96tEei97MD7GK1RmA" name="propertyName" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1CN6tEei97MD7GK1RmA" name="value" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5UI1Cd6tEei97MD7GK1RmA" name="IfStat" eSuperTypes="_5UI1At6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1Ct6tEei97MD7GK1RmA" name="condition" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1C96tEei97MD7GK1RmA" name="thenStatements" upperBound="-1" eType="_5UI1At6tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1DN6tEei97MD7GK1RmA" name="elseStatements" upperBound="-1" eType="_5UI1At6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5UI1Dd6tEei97MD7GK1RmA" name="ForStat" eSuperTypes="_5UI1At6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1Dt6tEei97MD7GK1RmA" name="iterator" ordered="false" lowerBound="1" eType="_5T16lN6tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1D96tEei97MD7GK1RmA" name="collection" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1EN6tEei97MD7GK1RmA" name="statements" upperBound="-1" eType="_5UI1At6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Fd6tEei97MD7GK1RmA" name="Unit" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16F96tEei97MD7GK1RmA" name="libraries" ordered="false" upperBound="-1" eType="_5T16QN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16Qt6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16Ft6tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16GN6tEei97MD7GK1RmA" name="Library" eSuperTypes="_5T16Fd6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Gd6tEei97MD7GK1RmA" name="helpers" upperBound="-1" eType="_5T16LN6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16L96tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Gt6tEei97MD7GK1RmA" name="Rule" abstract="true" eSuperTypes="_5T16Kt6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16HN6tEei97MD7GK1RmA" name="outPattern" ordered="false" eType="_5T16J96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16KN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Ht6tEei97MD7GK1RmA" name="actionBlock" ordered="false" eType="_5T16E96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16FN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Hd6tEei97MD7GK1RmA" name="variables" upperBound="-1" eType="_5T16Pt6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16P96tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16G96tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16H96tEei97MD7GK1RmA" name="OutPatternElement" abstract="true" eSuperTypes="_5T16NN6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16It6tEei97MD7GK1RmA" name="outPattern" ordered="false" lowerBound="1" eType="_5T16J96tEei97MD7GK1RmA" eOpposite="_5T16Kd6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16IN6tEei97MD7GK1RmA" name="sourceElement" ordered="false" eType="_5T16Md6tEei97MD7GK1RmA" eOpposite="_5T16Mt6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Id6tEei97MD7GK1RmA" name="bindings" upperBound="-1" eType="_5T16N96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16Od6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16I96tEei97MD7GK1RmA" name="InPattern" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Jd6tEei97MD7GK1RmA" name="elements" ordered="false" lowerBound="1" upperBound="-1" eType="_5T16Md6tEei97MD7GK1RmA" containment="true" eOpposite="_5T16M96tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Jt6tEei97MD7GK1RmA" name="rule" ordered="false" lowerBound="1" eType="_5T16Q96tEei97MD7GK1RmA" eOpposite="_5T16R96tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16JN6tEei97MD7GK1RmA" name="filter" ordered="false" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16J96tEei97MD7GK1RmA" name="OutPattern" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16KN6tEei97MD7GK1RmA" name="rule" ordered="false" lowerBound="1" eType="_5T16Gt6tEei97MD7GK1RmA" eOpposite="_5T16HN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Kd6tEei97MD7GK1RmA" name="elements" lowerBound="1" upperBound="-1" eType="_5T16H96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16It6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Kt6tEei97MD7GK1RmA" name="ModuleElement" abstract="true" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16K96tEei97MD7GK1RmA" name="module" ordered="false" lowerBound="1" eType="_5T16D96tEei97MD7GK1RmA" eOpposite="_5T16Et6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16LN6tEei97MD7GK1RmA" name="Helper" eSuperTypes="_5T16Kt6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Ld6tEei97MD7GK1RmA" name="query" ordered="false" eType="_5T16DN6tEei97MD7GK1RmA" eOpposite="_5T16Dd6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16L96tEei97MD7GK1RmA" name="library" ordered="false" eType="_5T16GN6tEei97MD7GK1RmA" eOpposite="_5T16Gd6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Lt6tEei97MD7GK1RmA" name="definition" ordered="false" lowerBound="1" eType="_5T16Yd6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16MN6tEei97MD7GK1RmA" name="SimpleInPatternElement" eSuperTypes="_5T16Md6tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5U6Rxd6tEei97MD7GK1RmA" name="IterateInPatternElement" eSuperTypes="_5T16Md6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5U6Rxt6tEei97MD7GK1RmA" name="collection" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Md6tEei97MD7GK1RmA" name="InPatternElement" abstract="true" eSuperTypes="_5T16NN6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Mt6tEei97MD7GK1RmA" name="mapsTo" ordered="false" lowerBound="1" eType="_5T16H96tEei97MD7GK1RmA" eOpposite="_5T16IN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16M96tEei97MD7GK1RmA" name="inPattern" ordered="false" lowerBound="1" eType="_5T16I96tEei97MD7GK1RmA" eOpposite="_5T16Jd6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16NN6tEei97MD7GK1RmA" name="PatternElement" abstract="true" eSuperTypes="_5T16l96tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Nd6tEei97MD7GK1RmA" name="CalledRule" eSuperTypes="_5T16Gt6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Nt6tEei97MD7GK1RmA" name="parameters" ordered="false" upperBound="-1" eType="_5T16VN6tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5U6Rzd6tEei97MD7GK1RmA" name="isEntrypoint" ordered="false" unique="false" lowerBound="1" eType="_5T16Bd6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16N96tEei97MD7GK1RmA" name="Binding" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Ot6tEei97MD7GK1RmA" name="value" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Od6tEei97MD7GK1RmA" name="outPatternElement" ordered="false" lowerBound="1" eType="_5T16H96tEei97MD7GK1RmA" eOpposite="_5T16Id6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16ON6tEei97MD7GK1RmA" name="propertyName" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16O96tEei97MD7GK1RmA" name="ForEachOutPatternElement" eSuperTypes="_5T16H96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16PN6tEei97MD7GK1RmA" name="collection" ordered="false" lowerBound="1" eType="_5T16dN6tEei97MD7GK1RmA" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Pd6tEei97MD7GK1RmA" name="iterator" ordered="false" lowerBound="1" eType="_5T16lN6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Pt6tEei97MD7GK1RmA" name="RuleVariableDeclaration" eSuperTypes="_5T16l96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16P96tEei97MD7GK1RmA" name="rule" ordered="false" lowerBound="1" eType="_5T16Gt6tEei97MD7GK1RmA" eOpposite="_5T16Hd6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16QN6tEei97MD7GK1RmA" name="LibraryRef" eSuperTypes="_5T16B96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Qt6tEei97MD7GK1RmA" name="unit" ordered="false" lowerBound="1" eType="_5T16Fd6tEei97MD7GK1RmA" eOpposite="_5T16F96tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16Qd6tEei97MD7GK1RmA" name="name" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16Q96tEei97MD7GK1RmA" name="MatchedRule" eSuperTypes="_5T16Gt6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16R96tEei97MD7GK1RmA" name="inPattern" ordered="false" eType="_5T16I96tEei97MD7GK1RmA" containment="true" eOpposite="_5T16Jt6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5T16Rd6tEei97MD7GK1RmA" name="children" ordered="false" upperBound="-1" eType="_5T16Q96tEei97MD7GK1RmA" eOpposite="_5UI1Qt6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_5UI1Qt6tEei97MD7GK1RmA" name="superRule" ordered="false" eType="_5T16Q96tEei97MD7GK1RmA" eOpposite="_5T16Rd6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16RN6tEei97MD7GK1RmA" name="isAbstract" ordered="false" unique="false" lowerBound="1" eType="_5T16Bd6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5U6R396tEei97MD7GK1RmA" name="isRefining" ordered="false" unique="false" lowerBound="1" eType="_5T16Bd6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5U6R4N6tEei97MD7GK1RmA" name="LazyMatchedRule" eSuperTypes="_5T16Q96tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5U6R4d6tEei97MD7GK1RmA" name="isUnique" ordered="false" unique="false" lowerBound="1" eType="_5T16Bd6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16SN6tEei97MD7GK1RmA" name="SimpleOutPatternElement" eSuperTypes="_5T16H96tEei97MD7GK1RmA"/>
+  </ecore:EPackage>
+  <ecore:EPackage xmi:id="_5T16Bt6tEei97MD7GK1RmA" name="Core">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_5T16B96tEei97MD7GK1RmA" name="Element">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5T16CN6tEei97MD7GK1RmA" name="location" ordered="false" unique="false" lowerBound="1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5U6R5t6tEei97MD7GK1RmA" name="commentsBefore" unique="false" upperBound="-1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_5U6R596tEei97MD7GK1RmA" name="commentsAfter" unique="false" upperBound="-1" eType="_5T16BN6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ecore:EPackage xmi:id="_5T16Ad6tEei97MD7GK1RmA" name="PrimitiveTypes">
+    <eClassifiers xsi:type="ecore:EDataType" xmi:id="_5T16At6tEei97MD7GK1RmA" name="Double"/>
+    <eClassifiers xsi:type="ecore:EDataType" xmi:id="_5T16A96tEei97MD7GK1RmA" name="Integer"/>
+    <eClassifiers xsi:type="ecore:EDataType" xmi:id="_5T16BN6tEei97MD7GK1RmA" name="String"/>
+    <eClassifiers xsi:type="ecore:EDataType" xmi:id="_5T16Bd6tEei97MD7GK1RmA" name="Boolean"/>
+  </ecore:EPackage>
+</xmi:XMI>

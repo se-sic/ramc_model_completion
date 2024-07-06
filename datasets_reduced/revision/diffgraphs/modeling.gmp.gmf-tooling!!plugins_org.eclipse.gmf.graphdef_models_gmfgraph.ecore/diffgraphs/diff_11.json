@@ -1,0 +1,44 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_aP_Ad96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@37cf8480 (key: documentation, value: utility operation to get first visual facet assignable (in Java terms, {@link Class#isAssignableFrom(Class)}) to variables of designated class. Argument can't be null)'],'eModelElement':'find'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_aP_AeN6tEei97MD7GK1RmA', 'key':'documentation','value':'utility operation to get first visual facet assignable (in Java terms, {@link Class#isAssignableFrom(Class)}) to variables of designated class. Argument can't be null'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_aK_y2t6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@56f561de (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'FigureMarker','ePackage':'gmfgraph','abstract':'false','interface':'true','eStructuralFeatures':['parent'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@129b2844 (expression: Layoutable)']}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_aK_y4d6tEei97MD7GK1RmA', 'name':'parent','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'Figure','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@31a81739 (expression: Figure)','changeable':'false','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'FigureMarker','containment':'false','container':'true','resolveProxies':'false','eOpposite':'children','eReferenceType':'Figure'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_aK_y4N6tEei97MD7GK1RmA', 'name':'children','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'FigureMarker','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5488653f (expression: FigureMarker)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'Figure','containment':'true','container':'false','resolveProxies':'true','eOpposite':'parent','eReferenceType':'FigureMarker'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_aK_y3d6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@44023e65 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'Figure','ePackage':'gmfgraph','abstract':'false','interface':'true','eIDAttribute':'name','eStructuralFeatures':['children','parent','foregroundColor','backgroundColor','maximumSize','minimumSize','preferredSize','font','insets','border','location','size'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@34c4ab1 (expression: FigureMarker)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@765c5ea9 (expression: Identity)']}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_aPiUht6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@1de76981 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'find','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'VisualFacet','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@338660e1 (expression: VisualFacet)','eContainingClass':'DiagramElement','eParameters':['facetClass']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "2", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "4", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOpposite'}" 
+},{
+	 "source": "5", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "6", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+}]}

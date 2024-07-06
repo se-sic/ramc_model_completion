@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_lTgQ0d6wEei97MD7GK1RmA" name="b3backend" nsURI="http://b3backend/1.0" nsPrefix="b3backend">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgQ0t6wEei97MD7GK1RmA" name="BExpression" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgQ4t6wEei97MD7GK1RmA" name="BExecutionContext" abstract="true" eSuperTypes="_35Zab96xEei97MD7GK1RmA">
+    <eOperations xmi:id="_lTgQ496wEei97MD7GK1RmA" name="loadFunctions" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eParameters xmi:id="_lTgQ5N6wEei97MD7GK1RmA" name="clazz">
+        <eGenericType>
+          <eTypeArguments xmi:id="_lTgQ5t6wEei97MD7GK1RmA">
+            <eUpperBound xmi:id="_lTgQ596wEei97MD7GK1RmA">
+              <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+            </eUpperBound>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC3t6wEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_cLB0CN6xEei97MD7GK1RmA" name="loadFunction" eType="_lTgR0t6wEei97MD7GK1RmA" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eParameters xmi:id="_cLB0Cd6xEei97MD7GK1RmA" name="method" eType="_lTgR2N6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_O_V1196xEei97MD7GK1RmA" name="defineFunction" eType="_O_V2hd6xEei97MD7GK1RmA" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eParameters xmi:id="_O_V12N6xEei97MD7GK1RmA" name="function" eType="_O_V2hd6xEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_foAbvd6yEei97MD7GK1RmA" name="findFunction" eType="_O_V2hd6xEei97MD7GK1RmA" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_foAbvt6yEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_foAbv96yEei97MD7GK1RmA" key="documentation" value="Evaluate the function referenced by name in this context."/>
+      </eAnnotations>
+      <eParameters xmi:id="_foAbwN6yEei97MD7GK1RmA" name="functionName">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_foAbwt6yEei97MD7GK1RmA" name="types" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_lTgRJd6wEei97MD7GK1RmA" name="getInvocationContext" eType="_lTgRwt6wEei97MD7GK1RmA" eExceptions="_lTgRwd6wEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_lTgRJt6wEei97MD7GK1RmA" name="createInnerContext" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_xVUnwt6xEei97MD7GK1RmA" name="createWrappedInnerContext" eType="_lTgRvt6wEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_xVUnw96xEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_xVUnxN6xEei97MD7GK1RmA" key="documentation" value="Creates a new inner context parented by a delegating context refering to a newly created outer context.&#xA;The freshly created outer context is obtained by simply calling getOuterContext on the returned inner context.&#xA;&#xA;This method is useful when a context is needed that keeps the input context's content visible (in the returned inner context), while at the same time providing a new outer context where values visible downstream can be placed."/>
+      </eAnnotations>
+    </eOperations>
+    <eOperations xmi:id="_lTgRJ96wEei97MD7GK1RmA" name="createOuterContext" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_BCVvwN6xEei97MD7GK1RmA" name="isPropertyScope">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_G0t-E96xEei97MD7GK1RmA" name="getContext" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eGenericType eTypeParameter="_G0t-Fd6xEei97MD7GK1RmA"/>
+      <eTypeParameters xmi:id="_G0t-Fd6xEei97MD7GK1RmA" name="T"/>
+      <eParameters xmi:id="_G0t-Ft6xEei97MD7GK1RmA" name="clazz">
+        <eGenericType>
+          <eTypeArguments xmi:id="_G0t-GN6xEei97MD7GK1RmA" eTypeParameter="_G0t-Fd6xEei97MD7GK1RmA"/>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC3t6wEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_Y5qxSd6xEei97MD7GK1RmA" name="getFunctionIterator">
+      <eGenericType eClassifier="_pN1k796xEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_pN1jVt6xEei97MD7GK1RmA" eClassifier="_O_V2hd6xEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations xmi:id="_Y5qxTN6xEei97MD7GK1RmA" name="getFunctionIterator">
+      <eGenericType eClassifier="_pN1k796xEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_pN1jWd6xEei97MD7GK1RmA" eClassifier="_O_V2hd6xEei97MD7GK1RmA"/>
+      </eGenericType>
+      <eParameters xmi:id="_Y5qxT96xEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_l9OuPd6xEei97MD7GK1RmA" name="getFunctionIterator">
+      <eGenericType eClassifier="_pN1k796xEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_pN1jXt6xEei97MD7GK1RmA" eClassifier="_O_V2hd6xEei97MD7GK1RmA"/>
+      </eGenericType>
+      <eParameters xmi:id="_l9OuQN6xEei97MD7GK1RmA" name="type" eType="_lTgRsd6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_l9OuQd6xEei97MD7GK1RmA" name="functionType">
+        <eGenericType>
+          <eTypeArguments xmi:id="_l9OuQ96xEei97MD7GK1RmA"/>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC3t6wEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_YHkwXN6yEei97MD7GK1RmA" name="printStack"/>
+    <eOperations xmi:id="_YHkwXd6yEei97MD7GK1RmA" name="printStackTrace"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRMd6wEei97MD7GK1RmA" name="parentContext" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRM96wEei97MD7GK1RmA" name="valueMap" lowerBound="1" eType="_lTgRwN6wEei97MD7GK1RmA" defaultValueLiteral=""/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRNN6wEei97MD7GK1RmA" name="funcStore" eType="_lTgR2t6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_hE7ikd6xEei97MD7GK1RmA" name="effectiveConcerns" upperBound="-1" eType="_DzhfDt6xEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_vs3cXN6xEei97MD7GK1RmA" name="progressMonitor" eType="_vs3eBd6xEei97MD7GK1RmA" transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_HVViTd6yEei97MD7GK1RmA" name="injector" eType="_HVVkT96yEei97MD7GK1RmA" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRNd6wEei97MD7GK1RmA" name="BIfExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRNt6wEei97MD7GK1RmA" name="conditionExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRN96wEei97MD7GK1RmA" name="thenExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRON6wEei97MD7GK1RmA" name="elseExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgROd6wEei97MD7GK1RmA" name="BSwitchExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eOperations xmi:id="_JM_AdN6yEei97MD7GK1RmA" name="hasUnreachableCase">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_JM_Adt6yEei97MD7GK1RmA" name="chain">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCw96wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_JM_AeN6yEei97MD7GK1RmA" name="map">
+        <eGenericType>
+          <eTypeArguments xmi:id="_zg0Zc96yEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_zg0ZdN6yEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC6N6wEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgROt6wEei97MD7GK1RmA" name="switchExpression" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRO96wEei97MD7GK1RmA" name="caseList" upperBound="-1" eType="_lTgRPN6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRPN6wEei97MD7GK1RmA" name="BCase">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRRN6wEei97MD7GK1RmA" name="conditionExpr" upperBound="-1" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRRd6wEei97MD7GK1RmA" name="thenExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRR96wEei97MD7GK1RmA" name="BTryExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRSN6wEei97MD7GK1RmA" name="tryExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRSd6wEei97MD7GK1RmA" name="catchBlocks" upperBound="-1" eType="_lTgRS96wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRSt6wEei97MD7GK1RmA" name="finallyExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRS96wEei97MD7GK1RmA" name="BCatch" eSuperTypes="_QpnzF96yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRUd6wEei97MD7GK1RmA" name="catchExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRVd6wEei97MD7GK1RmA" name="BBinaryExpression" abstract="true" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRVt6wEei97MD7GK1RmA" name="leftExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRV96wEei97MD7GK1RmA" name="rightExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRWN6wEei97MD7GK1RmA" name="BOrExpression" eSuperTypes="_lTgRVd6wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRWd6wEei97MD7GK1RmA" name="BAndExpression" eSuperTypes="_lTgRVd6wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRWt6wEei97MD7GK1RmA" name="BChainedExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRW96wEei97MD7GK1RmA" name="expressions" upperBound="-1" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRXN6wEei97MD7GK1RmA" name="BUnaryExpression" abstract="true" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRXd6wEei97MD7GK1RmA" name="expr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRXt6wEei97MD7GK1RmA" name="BThrowExpression" eSuperTypes="_lTgRXN6wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRX96wEei97MD7GK1RmA" name="BUnaryOpExpression" eSuperTypes="_lTgRXN6wEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_lTgRYN6wEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_lTgRYd6wEei97MD7GK1RmA" key="documentation" value="Unary, non Lvalue operations - for invocation of functions with one parameter."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRYt6wEei97MD7GK1RmA" name="functionName">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRZN6wEei97MD7GK1RmA" name="BUnaryPostOpExpression" eSuperTypes="_lTgRX96wEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_lTgRZd6wEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_lTgRZt6wEei97MD7GK1RmA" key="documentation" value="Unary operation requiring Lvalue expression - where function is applied post calculation of return value."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRZ96wEei97MD7GK1RmA" name="BBinaryOpExpression" eSuperTypes="_lTgRVd6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRaN6wEei97MD7GK1RmA" name="functionName">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRat6wEei97MD7GK1RmA" name="BCachedExpression" eSuperTypes="_lTgRXN6wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRa96wEei97MD7GK1RmA" name="BLiteralExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRbN6wEei97MD7GK1RmA" name="value">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRbt6wEei97MD7GK1RmA" name="BLiteralListExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRb96wEei97MD7GK1RmA" name="entries" upperBound="-1" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_q3sSvt6wEei97MD7GK1RmA" name="entryType" eType="_pfFhlN6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRcd6wEei97MD7GK1RmA" name="BLiteralMapExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRct6wEei97MD7GK1RmA" name="entries" upperBound="-1" eType="_lTgRdd6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_q3sSwd6wEei97MD7GK1RmA" name="keyType" eType="_pfFhlN6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_q3sSwt6wEei97MD7GK1RmA" name="valueType" eType="_pfFhlN6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRdd6wEei97MD7GK1RmA" name="BMapEntry">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRdt6wEei97MD7GK1RmA" name="key" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRd96wEei97MD7GK1RmA" name="value" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgReN6wEei97MD7GK1RmA" name="BFeatureExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRed6wEei97MD7GK1RmA" name="objExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRet6wEei97MD7GK1RmA" name="featureName">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRfN6wEei97MD7GK1RmA" name="BAtExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRfd6wEei97MD7GK1RmA" name="objExpr" lowerBound="1" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRft6wEei97MD7GK1RmA" name="indexExpr" lowerBound="1" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRf96wEei97MD7GK1RmA" name="BVariableExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_M7w_nt6yEei97MD7GK1RmA" name="namedValue" eType="_M7xBTd6yEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRgt6wEei97MD7GK1RmA" name="BCallExpression" abstract="true" eSuperTypes="_lTgRht6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRg96wEei97MD7GK1RmA" name="funcExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRhN6wEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRht6wEei97MD7GK1RmA" name="BParameterizedExpression" abstract="true" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_oGfWhd6wEei97MD7GK1RmA" name="parameterList" eType="_oGfW6d6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRiN6wEei97MD7GK1RmA" name="BLiteralAny" eSuperTypes="_BsnBNt6yEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRid6wEei97MD7GK1RmA" name="BCreateExpression" eSuperTypes="_lTgRht6wEei97MD7GK1RmA _QpnzF96yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_7iYHet6wEei97MD7GK1RmA" name="typeExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_q3sS296wEei97MD7GK1RmA" name="contextBlock" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgRjd6wEei97MD7GK1RmA" name="CoreException" instanceClassName="org.eclipse.core.runtime.CoreException"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_O_V2hd6xEei97MD7GK1RmA" name="IFunction" abstract="true" interface="true" eSuperTypes="_pfFhnd6wEei97MD7GK1RmA _lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_q3sS496wEei97MD7GK1RmA" name="visibility" eType="_q3sTbt6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRlt6wEei97MD7GK1RmA" name="final">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_q3sS5t6wEei97MD7GK1RmA" name="executionMode" eType="_q3sTcd6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRmt6wEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRnN6wEei97MD7GK1RmA" name="guard" eType="_lTgRpd6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRn96wEei97MD7GK1RmA" name="exceptionTypes" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_pfFhPt6wEei97MD7GK1RmA" name="typeParameters" eType="_lTgR2d6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_oGfWot6wEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_oGfW796wEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_KFhAMd6xEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_KFhAMt6xEei97MD7GK1RmA" key="documentation" value="The parameters are the declared parameters. Some parameters may be implicit. Use {@link #getEffetiveParameters} to get all of the parameter declarations."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRo96wEei97MD7GK1RmA" name="varArgs">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_q3sS8d6wEei97MD7GK1RmA" name="documentation">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_q3sS896wEei97MD7GK1RmA" name="returnType" eType="_pfFhlN6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_6Kegi96wEei97MD7GK1RmA" name="typeCalculator" eType="_6KehD96wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_IcDIyN6xEei97MD7GK1RmA" name="container" eType="_IcDI_96xEei97MD7GK1RmA" eOpposite="_DzhfEt6xEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cLB08t6xEei97MD7GK1RmA" name="classFunction">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_0mhTfd6xEei97MD7GK1RmA" name="varargArrayType" eType="_lTgRsd6wEei97MD7GK1RmA" transient="true" derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRpd6wEei97MD7GK1RmA" name="BGuard">
+    <eOperations xmi:id="_SgrZ6t6yEei97MD7GK1RmA" name="accepts" eExceptions="_lTgRyd6wEei97MD7GK1RmA">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_SgrZ7N6yEei97MD7GK1RmA" name="function" eType="_O_V2hd6xEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_SgrZ7d6yEei97MD7GK1RmA" name="types" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_foAcVN6yEei97MD7GK1RmA" name="func" eType="_lTgR0t6wEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgRsd6wEei97MD7GK1RmA" name="Type" instanceClassName="java.lang.reflect.Type"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgRst6wEei97MD7GK1RmA" name="ObjectArray" instanceClassName="java.lang.Object[]"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRs96wEei97MD7GK1RmA" name="BSystemContext" eSuperTypes="_lTgQ4t6wEei97MD7GK1RmA">
+    <eOperations xmi:id="_dzKQct6xEei97MD7GK1RmA" name="loadMethod" eType="_O_V2hd6xEei97MD7GK1RmA" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_dzKQc96xEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_dzKQdN6xEei97MD7GK1RmA" key="documentation" value="Evaluate the function referenced by name in the specified context. "/>
+      </eAnnotations>
+      <eParameters xmi:id="_dzKQdt6xEei97MD7GK1RmA" name="functionName">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_dzKQeN6xEei97MD7GK1RmA" name="types" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRvd6wEei97MD7GK1RmA" name="BContext" eSuperTypes="_lTgQ4t6wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRvt6wEei97MD7GK1RmA" name="BInnerContext" eSuperTypes="_lTgQ4t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRv96wEei97MD7GK1RmA" name="outerContext" lowerBound="1" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgRwN6wEei97MD7GK1RmA" name="ValueMap" instanceClassName="org.eclipse.b3.backend.evaluator.ValueMap"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgRwd6wEei97MD7GK1RmA" name="B3EngineException" instanceClassName="org.eclipse.b3.backend.core.exceptions.B3EngineException"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRwt6wEei97MD7GK1RmA" name="BInvocationContext" eSuperTypes="_lTgQ4t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRx96wEei97MD7GK1RmA" name="expressionCache" eType="_lTgRyN6wEei97MD7GK1RmA" transient="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgRyN6wEei97MD7GK1RmA" name="B3ExpressionCache" instanceClassName="org.eclipse.b3.backend.evaluator.B3ExpressionCache" serializable="false"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgRyd6wEei97MD7GK1RmA" name="Throwable" instanceClassName="java.lang.Throwable"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRyt6wEei97MD7GK1RmA" name="BUnaryPreOpExpression" eSuperTypes="_lTgRX96wEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_lTgRy96wEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_lTgRzN6wEei97MD7GK1RmA" key="documentation" value="Unary operation requiring Lvalue expression - where function is applied pre calculation of return value."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgRzd6wEei97MD7GK1RmA" name="LValue" instanceClassName="org.eclipse.b3.backend.core.datatypes.LValue"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRzt6wEei97MD7GK1RmA" name="BAssignmentExpression" eSuperTypes="_lTgRZ96wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgRz96wEei97MD7GK1RmA" name="TypeArray" instanceClassName="java.lang.reflect.Type[]"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgR0N6wEei97MD7GK1RmA" name="B3Function" eSuperTypes="_lTgRjt6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgR0d6wEei97MD7GK1RmA" name="funcExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgR0t6wEei97MD7GK1RmA" name="BJavaFunction" eSuperTypes="_lTgRjt6wEei97MD7GK1RmA">
+    <eOperations xmi:id="_cLB1It6xEei97MD7GK1RmA" name="isSystemCall">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_cLB1JN6xEei97MD7GK1RmA" name="isFunctionCall">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_cLB1Jt6xEei97MD7GK1RmA" name="isMethodCall">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_lTgRj96wEei97MD7GK1RmA" name="internalCall" eExceptions="_lTgRyd6wEei97MD7GK1RmA">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_lTgRkd6wEei97MD7GK1RmA" name="ctx" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_lTgRkt6wEei97MD7GK1RmA" name="parameters" eType="_lTgRst6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_foAcet6yEei97MD7GK1RmA" name="parameterTypes" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgR096wEei97MD7GK1RmA" name="method" eType="_lTgR2N6wEei97MD7GK1RmA" transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cLB1Kd6xEei97MD7GK1RmA" name="callType" eType="_cLB16N6xEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRnt6wEei97MD7GK1RmA" name="parameterTypes" eType="_lTgRz96wEei97MD7GK1RmA" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_lTgRod6wEei97MD7GK1RmA" name="parameterNames" eType="_oGfW896wEei97MD7GK1RmA" transient="true" derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgR2N6wEei97MD7GK1RmA" name="Method" instanceClassName="java.lang.reflect.Method"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgR2d6wEei97MD7GK1RmA" name="TypeVariableArray" instanceClassName="java.lang.reflect.TypeVariable[]"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_lTgR2t6wEei97MD7GK1RmA" name="FuncStore" instanceClassName="org.eclipse.b3.backend.evaluator.B3FuncStore"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_IcDI_96xEei97MD7GK1RmA" name="BFunctionContainer" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_DzhfEt6xEei97MD7GK1RmA" name="functions" upperBound="-1" eType="_O_V2hd6xEei97MD7GK1RmA" containment="true" eOpposite="_IcDIyN6xEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_mtrJy96wEei97MD7GK1RmA" name="BDefValue" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA _QpnzF96yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_mtrJzt6wEei97MD7GK1RmA" name="final">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_mtrJ0N6wEei97MD7GK1RmA" name="immutable">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_mtrJ0t6wEei97MD7GK1RmA" name="valueExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_oGfW5N6wEei97MD7GK1RmA" name="BRegularExpression" eSuperTypes="_BsnBNt6yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_oGfW596wEei97MD7GK1RmA" name="pattern" eType="_oGfW6N6wEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_oGfW6N6wEei97MD7GK1RmA" name="RegexpPattern" instanceClassName="java.util.regex.Pattern"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_oGfW6d6wEei97MD7GK1RmA" name="BParameterList">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_lTgRh96wEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_oGfW696wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_oGfW696wEei97MD7GK1RmA" name="BParameter">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_oGfW7t6wEei97MD7GK1RmA" name="expr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_oGfW796wEei97MD7GK1RmA" name="BParameterDeclaration" eSuperTypes="_QpnzF96yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IcDJGN6xEei97MD7GK1RmA" name="final">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_IcDJGt6xEei97MD7GK1RmA" name="immutable">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_oGfW896wEei97MD7GK1RmA" name="StringArray" instanceClassName="java.lang.String[]"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_pfFhlN6wEei97MD7GK1RmA" name="IType" instanceClassName="java.lang.reflect.Type" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_pfFhld6wEei97MD7GK1RmA" name="B3FunctionType" eSuperTypes="_pfFhlN6wEei97MD7GK1RmA">
+    <eOperations xmi:id="_pfFhlt6wEei97MD7GK1RmA" name="getParameterTypesArray" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_2B1Qed6wEei97MD7GK1RmA" name="isAssignableFrom">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_2B1Qe96wEei97MD7GK1RmA" name="type" eType="_pfFhlN6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_SgraN96yEei97MD7GK1RmA" name="getReturnTypeForParameterTypes" eType="_lTgRsd6wEei97MD7GK1RmA">
+      <eParameters xmi:id="_SgraON6yEei97MD7GK1RmA" name="types" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_pfFhl96wEei97MD7GK1RmA" name="functionType" eType="_pfFhlN6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_pfFhmN6wEei97MD7GK1RmA" name="returnType" eType="_pfFhlN6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_pfFhmd6wEei97MD7GK1RmA" name="parameterTypes" unique="false" upperBound="-1" eType="_pfFhlN6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_pfFhmt6wEei97MD7GK1RmA" name="varArgs">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_863k6d6wEei97MD7GK1RmA" name="typeCalculator" eType="_6KehD96wEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_pfFhnN6wEei97MD7GK1RmA" name="IParameterizedType" instanceClassName="java.lang.reflect.ParameterizedType" abstract="true" interface="true" eSuperTypes="_pfFhlN6wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_pfFhnd6wEei97MD7GK1RmA" name="IGenericDeclaration" instanceClassName="java.lang.reflect.GenericDeclaration" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_pfFhnt6wEei97MD7GK1RmA" name="B3ParameterizedType" eSuperTypes="_pfFhnN6wEei97MD7GK1RmA">
+    <eOperations xmi:id="_pfFhn96wEei97MD7GK1RmA" name="getActualTypeArguments" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_pfFhoN6wEei97MD7GK1RmA" name="ownerType" eType="_pfFhlN6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_pfFhod6wEei97MD7GK1RmA" name="rawType" eType="_pfFhlN6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_pfFhot6wEei97MD7GK1RmA" name="actualArgumentsList" unique="false" upperBound="-1" eType="_pfFhlN6wEei97MD7GK1RmA" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_pfFho96wEei97MD7GK1RmA" name="IWildcardType" instanceClassName="java.lang.reflect.WildcardType" abstract="true" interface="true" eSuperTypes="_pfFhlN6wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_pfFhpN6wEei97MD7GK1RmA" name="B3WildcardType" eSuperTypes="_pfFho96wEei97MD7GK1RmA">
+    <eOperations xmi:id="_pfFhpd6wEei97MD7GK1RmA" name="getLowerBounds" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_pfFhpt6wEei97MD7GK1RmA" name="getUpperBounds" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_pfFhp96wEei97MD7GK1RmA" name="lowerBoundsList" upperBound="-1" eType="_pfFhlN6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_pfFhqN6wEei97MD7GK1RmA" name="upperBoundsList" upperBound="-1" eType="_pfFhlN6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_pfFhqd6wEei97MD7GK1RmA" name="ITypeVariable" instanceClassName="java.lang.reflect.TypeVariable" abstract="true" interface="true" eSuperTypes="_pfFhlN6wEei97MD7GK1RmA">
+    <eTypeParameters xmi:id="_pfFhqt6wEei97MD7GK1RmA" name="D">
+      <eBounds xmi:id="_pfFhq96wEei97MD7GK1RmA" eClassifier="_pfFhnd6wEei97MD7GK1RmA"/>
+    </eTypeParameters>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_pfFhrN6wEei97MD7GK1RmA" name="B3FuncTypeVariable">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_pfFhrd6wEei97MD7GK1RmA" name="bounds" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_pfFhrt6wEei97MD7GK1RmA" name="genericDeclaration" eType="_O_V2hd6xEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_pfFhr96wEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eGenericSuperTypes eClassifier="_pfFhqd6wEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_O_V3I96xEei97MD7GK1RmA" eClassifier="_O_V2hd6xEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_q3sTZt6wEei97MD7GK1RmA" name="B3JavaImport" eSuperTypes="_pfFhlN6wEei97MD7GK1RmA _QpnzF96yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_q3sTad6wEei97MD7GK1RmA" name="qualifiedName">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_q3sTbN6wEei97MD7GK1RmA" name="reexport">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_q3sTbt6wEei97MD7GK1RmA" name="Visibility">
+    <eLiterals xmi:id="_q3sTb96wEei97MD7GK1RmA" name="private" literal="private"/>
+    <eLiterals xmi:id="_q3sTcN6wEei97MD7GK1RmA" name="public" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_q3sTcd6wEei97MD7GK1RmA" name="ExecutionMode">
+    <eLiterals xmi:id="_q3sTct6wEei97MD7GK1RmA" name="sequential"/>
+    <eLiterals xmi:id="_q3sTc96wEei97MD7GK1RmA" name="parallel" value="1"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_zROxQt6wEei97MD7GK1RmA" name="BLiteralType" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_zROxQ96wEei97MD7GK1RmA" name="type" eType="_pfFhlN6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_6KehD96wEei97MD7GK1RmA" name="BTypeCalculator">
+    <eOperations xmi:id="_jLET3N6yEei97MD7GK1RmA" name="getSignature" eType="_pfFhld6wEei97MD7GK1RmA">
+      <eParameters xmi:id="_jLET3d6yEei97MD7GK1RmA" name="types" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_foAczt6yEei97MD7GK1RmA" name="func" eType="_lTgR0t6wEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_-TPGOd6wEei97MD7GK1RmA" name="BInstanceContext" eSuperTypes="_lTgRvt6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_-TPGOt6wEei97MD7GK1RmA" name="instance">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BCVwzN6xEei97MD7GK1RmA" name="BDefProperty" eSuperTypes="_mtrJy96wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_BCVwzd6xEei97MD7GK1RmA" name="mutable" volatile="true" transient="true" derived="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Caa-D96xEei97MD7GK1RmA" name="BPropertySet" eSuperTypes="_DzhfC96xEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Caa-EN6xEei97MD7GK1RmA" name="extends" eType="_Caa-D96xEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Caa-Ed6xEei97MD7GK1RmA" name="operations" upperBound="-1" eType="_Caa-Ft6xEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_sdYpwd6xEei97MD7GK1RmA" name="propertiesFile" eType="_sdYqQd6xEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Caa-Et6xEei97MD7GK1RmA" name="BDefaultPropertySet" eSuperTypes="_Caa-D96xEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Caa-Ft6xEei97MD7GK1RmA" name="BPropertyOperation" abstract="true" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eOperations xmi:id="_y-rMkt6xEei97MD7GK1RmA" name="evaluateDefaults" eExceptions="_lTgRyd6wEei97MD7GK1RmA">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_y-rMlN6xEei97MD7GK1RmA" name="ctx" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_y-rMld6xEei97MD7GK1RmA" name="allVisible">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Caa-F96xEei97MD7GK1RmA" name="BPropertyDefinitionOperation" eSuperTypes="_Caa-Ft6xEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Caa-GN6xEei97MD7GK1RmA" name="definition" eType="_BCVwzN6xEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Caa-Gd6xEei97MD7GK1RmA" name="BConditionalPropertyOperation" eSuperTypes="_Caa-Ft6xEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Caa-Gt6xEei97MD7GK1RmA" name="condExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Caa-G96xEei97MD7GK1RmA" name="body" eType="_Caa-Ft6xEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Caa-HN6xEei97MD7GK1RmA" name="BPropertySetOperation" eSuperTypes="_Caa-Ft6xEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Caa-Hd6xEei97MD7GK1RmA" name="propertySet" eType="_Caa-D96xEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_DzhfC96xEei97MD7GK1RmA" name="BAdvice" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA _QpnzF96yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_DzhfD96xEei97MD7GK1RmA" name="documentation">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_DzhfDt6xEei97MD7GK1RmA" name="BConcern" eSuperTypes="_DzhfC96xEei97MD7GK1RmA _IcDI_96xEei97MD7GK1RmA">
+    <eOperations xmi:id="_hE7j0d6xEei97MD7GK1RmA" name="evaluateIfMatching" eExceptions="_lTgRyd6wEei97MD7GK1RmA">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_hE7j096xEei97MD7GK1RmA" name="candidate">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_hE7j1d6xEei97MD7GK1RmA" name="ctx" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_pN1kpt6xEei97MD7GK1RmA" name="getConcernContextIterator">
+      <eGenericType eClassifier="_pN1k796xEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_pN1kqN6xEei97MD7GK1RmA" eClassifier="_LuTkbd6xEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_DzhfEd6xEei97MD7GK1RmA" name="superConcerns" upperBound="-1" eType="_DzhfDt6xEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_DzhfE96xEei97MD7GK1RmA" name="propertySets" upperBound="-1" eType="_Caa-D96xEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_LuTkZ96xEei97MD7GK1RmA" name="contexts" upperBound="-1" eType="_LuTkbd6xEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_DzhfFN6xEei97MD7GK1RmA" name="BWithExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eOperations xmi:id="_XRFrIt6xEei97MD7GK1RmA" name="createContext" eType="_lTgRvt6wEei97MD7GK1RmA">
+      <eParameters xmi:id="_XRFrI96xEei97MD7GK1RmA" name="ctx" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_l9OvkN6xEei97MD7GK1RmA" name="getEvaluationContext" eType="_lTgQ4t6wEei97MD7GK1RmA" eExceptions="_lTgRyd6wEei97MD7GK1RmA">
+      <eParameters xmi:id="_l9Ovkd6xEei97MD7GK1RmA" name="ctx" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_DzhfFd6xEei97MD7GK1RmA" name="referencedAdvice" upperBound="-1" eType="_DzhfC96xEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_DzhfFt6xEei97MD7GK1RmA" name="propertySets" upperBound="-1" eType="_Caa-D96xEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_DzhfF96xEei97MD7GK1RmA" name="concerns" upperBound="-1" eType="_DzhfDt6xEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_XRFrJ96xEei97MD7GK1RmA" name="funcExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_LuTkbd6xEei97MD7GK1RmA" name="BConcernContext" abstract="true" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA _IcDI_96xEei97MD7GK1RmA">
+    <eOperations xmi:id="_pN1kvt6xEei97MD7GK1RmA" name="matches">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_pN1kwN6xEei97MD7GK1RmA" name="candidate">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_pN1kwt6xEei97MD7GK1RmA" name="ctx" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_uEX15N6xEei97MD7GK1RmA" name="documentation">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_lTgRjt6wEei97MD7GK1RmA" name="BFunction" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA _O_V2hd6xEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_O_V3Xt6xEei97MD7GK1RmA" name="BFunctionWrapper" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA _O_V2hd6xEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Y5qyod6xEei97MD7GK1RmA" name="aroundExpr" lowerBound="1" eType="_lTgQ0t6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_O_V3YN6xEei97MD7GK1RmA" name="original" eType="_O_V2hd6xEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Y5qyo96xEei97MD7GK1RmA" name="parameterMap" transient="true">
+      <eGenericType>
+        <eTypeArguments xmi:id="_zg0ait6yEei97MD7GK1RmA">
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+        </eTypeArguments>
+        <eTypeArguments xmi:id="_zg0ai96yEei97MD7GK1RmA">
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+        </eTypeArguments>
+        <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC6N6wEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Y5qyp96xEei97MD7GK1RmA" name="varargsName">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_T7PwEd6xEei97MD7GK1RmA" name="BNamePredicate">
+    <eOperations xmi:id="_pN1kzt6xEei97MD7GK1RmA" name="matches">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_pN1k0N6xEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_SQPAZN6xEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_BsnAr96yEei97MD7GK1RmA" name="namePattern" eType="_BsnBNt6yEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_T7PwFd6xEei97MD7GK1RmA" name="BFunctionNamePredicate" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eOperations xmi:id="_hE7j-N6xEei97MD7GK1RmA" name="matches">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_hE7j-t6xEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_T7PwFt6xEei97MD7GK1RmA" name="namePredicate" eType="_T7PwEd6xEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_T7PwF96xEei97MD7GK1RmA" name="BFunctionConcernContext" eSuperTypes="_LuTkbd6xEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_T7PwGN6xEei97MD7GK1RmA" name="namePredicate" eType="_T7PwFd6xEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Vl3fet6xEei97MD7GK1RmA" name="parameters" upperBound="-1" eType="_Vl3fft6xEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Vl3fe96xEei97MD7GK1RmA" name="funcExpr" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_T7PwJN6xEei97MD7GK1RmA" name="varArgs">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_pN1k4d6xEei97MD7GK1RmA" name="matchParameters">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Vl3fft6xEei97MD7GK1RmA" name="BParameterPredicate" eSuperTypes="_QpnzF96yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_T7PwIN6xEei97MD7GK1RmA" name="typePredicateOp">
+      <eAnnotations xmi:id="_T7PwId6xEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_T7PwIt6xEei97MD7GK1RmA" key="documentation" value="Operators are _ (any type), * (zero or more parameters), + (one or more parameters)"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Vl3fiN6xEei97MD7GK1RmA" name="BProceedExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_XRFrRd6xEei97MD7GK1RmA" name="BDelegatingContext" eSuperTypes="_lTgRvt6wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_pN1k796xEei97MD7GK1RmA" name="JavaIterator" instanceClassName="java.util.Iterator">
+    <eTypeParameters xmi:id="_pN1k8N6xEei97MD7GK1RmA" name="E"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Y5qyw96xEei97MD7GK1RmA" name="BWrappingContext" eSuperTypes="_XRFrRd6xEei97MD7GK1RmA">
+    <eOperations xmi:id="_Y5qyxN6xEei97MD7GK1RmA" name="mapContext">
+      <eParameters xmi:id="_Y5qyxd6xEei97MD7GK1RmA" name="ctx" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Y5qyxt6xEei97MD7GK1RmA" name="map">
+        <eGenericType>
+          <eTypeArguments xmi:id="_zg0ast6yEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_zg0as96yEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC6N6wEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+      <eParameters xmi:id="_Y5qyyt6xEei97MD7GK1RmA" name="functionWrapper" eType="_O_V3Xt6xEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Y5qyy96xEei97MD7GK1RmA" name="functionWrapper" eType="_O_V3Xt6xEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Y5qyzN6xEei97MD7GK1RmA" name="wrappedContext" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Y5qyzd6xEei97MD7GK1RmA" name="parameters" eType="_lTgRst6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Y5qyzt6xEei97MD7GK1RmA" name="parameterTypes" eType="_lTgRz96wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Y5qyz96xEei97MD7GK1RmA" name="varargsName">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_cLB16N6xEei97MD7GK1RmA" name="BJavaCallType">
+    <eLiterals xmi:id="_cLB16d6xEei97MD7GK1RmA" name="FUNCTION"/>
+    <eLiterals xmi:id="_cLB16t6xEei97MD7GK1RmA" name="SYSTEM" value="1"/>
+    <eLiterals xmi:id="_cLB1696xEei97MD7GK1RmA" name="METHOD" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_cLB17N6xEei97MD7GK1RmA" name="B3MetaClass" eSuperTypes="_pfFhlN6wEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_cLB17d6xEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_cLB17t6xEei97MD7GK1RmA" key="documentation" value="Represents the type of a class &quot;instance&quot;. In java there is no type that describes the difference between the type of instances, and the type of the class - for String, both are represented by Class&lt;T> (java.lang.String). &#xD;An instance of B3MetaClass has an attribute {@link #instanceClass} that is reference to the class. &#xD;It only computes equal to another B3MetaClass instance for the same instance class.&#xD;It computes isAssignableTo to true for any B3MetaClass with an instanceClass being a subclass."/>
+    </eAnnotations>
+    <eOperations xmi:id="_cLB1796xEei97MD7GK1RmA" name="isAssignableFrom">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_cLB18d6xEei97MD7GK1RmA" name="type" eType="_pfFhlN6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_cLB18t6xEei97MD7GK1RmA" name="instanceClass">
+      <eGenericType>
+        <eTypeArguments xmi:id="_nltwn96xEei97MD7GK1RmA"/>
+        <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC3t6wEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_q1mNDN6xEei97MD7GK1RmA" name="BExpressionWrapper" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_q1mNDd6xEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_q1mNDt6xEei97MD7GK1RmA" key="documentation" value="The purpose of a BExpressionWrapper is to contain a reference to some other contained expression.&#xD;&#xD;Evaluates to null (Object) if original is not set.&#xD;"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_q1mND96xEei97MD7GK1RmA" name="original" eType="_lTgQ0t6wEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_sdYqQd6xEei97MD7GK1RmA" name="URI" instanceClassName="java.net.URI"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_vs3eBd6xEei97MD7GK1RmA" name="IProgressMonitor" instanceClassName="org.eclipse.core.runtime.IProgressMonitor"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_2QNOdd6xEei97MD7GK1RmA" name="BWithContextExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA _QpnzF96yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_2QNOeN6xEei97MD7GK1RmA" name="expr" lowerBound="1" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_2QNOed6xEei97MD7GK1RmA" name="contextBlock" lowerBound="1" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_35Zab96xEei97MD7GK1RmA" name="ITypedValueContainer" abstract="true" interface="true">
+    <eOperations xmi:id="_lTgQ8t6wEei97MD7GK1RmA" name="getValue" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_lTgQ9N6wEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_lTgQ9t6wEei97MD7GK1RmA" name="getLValue" eType="_lTgRzd6wEei97MD7GK1RmA" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eParameters xmi:id="_lTgQ996wEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_pfFgmN6wEei97MD7GK1RmA" name="defineValue" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_pfFgmd6wEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_pfFgmt6wEei97MD7GK1RmA" key="documentation" value="Defines an immutable value"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_pfFgnN6wEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_pfFgnt6wEei97MD7GK1RmA" name="value">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_pfFgoN6wEei97MD7GK1RmA" name="type" eType="_pfFhlN6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_pfFgod6wEei97MD7GK1RmA" name="defineFinalValue" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_pfFgot6wEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_pfFgo96wEei97MD7GK1RmA" key="documentation" value="Defines an immutable value"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_pfFgpd6wEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_pfFgp96wEei97MD7GK1RmA" name="value">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_pfFgqd6wEei97MD7GK1RmA" name="type" eType="_pfFhlN6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_pfFgqt6wEei97MD7GK1RmA" name="defineVariableValue" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_pfFgq96wEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_pfFgrN6wEei97MD7GK1RmA" key="documentation" value="Defines a variable value (mutable)."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_pfFgrt6wEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_pfFgsN6wEei97MD7GK1RmA" name="value">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_pfFgst6wEei97MD7GK1RmA" name="type" eType="_pfFhlN6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_pfFgs96wEei97MD7GK1RmA" name="defineFinalVariableValue" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_pfFgtN6wEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_pfFgtd6wEei97MD7GK1RmA" key="documentation" value="Defines a variable value (mutable)."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_pfFgt96wEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_pfFgud6wEei97MD7GK1RmA" name="value">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC4N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_pfFgu96wEei97MD7GK1RmA" name="type" eType="_pfFhlN6wEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_lTgRHd6wEei97MD7GK1RmA" name="isFinal">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_lTgRH96wEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_lTgRId6wEei97MD7GK1RmA" name="isImmutable">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_lTgRI96wEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_lTgRKN6wEei97MD7GK1RmA" name="getDeclaredValueType" eType="_pfFhlN6wEei97MD7GK1RmA" eExceptions="_lTgRwd6wEei97MD7GK1RmA">
+      <eParameters xmi:id="_lTgRKd6wEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_5iwlJt6xEei97MD7GK1RmA" name="containsValue">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_5iwlKN6xEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_y-rLW96xEei97MD7GK1RmA" name="containsValue">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_y-rLXd6xEei97MD7GK1RmA" name="name">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_y-rLX96xEei97MD7GK1RmA" name="allVisible">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_7K5An96xEei97MD7GK1RmA" name="BCallFeature" eSuperTypes="_lTgRgt6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_puOfpd6yEei97MD7GK1RmA" name="call">
+      <eAnnotations xmi:id="_puOfpt6yEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_puOfp96yEei97MD7GK1RmA" key="documentation" value="Indicates if this is a call like a.foo(), or a feature LVal like a.foo&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_7K5AoN6xEei97MD7GK1RmA" name="BCallNamedFunction" eSuperTypes="_lTgRgt6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_QpnzB96yEei97MD7GK1RmA" name="funcRef" eType="_O_V2hd6xEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_7K5Aod6xEei97MD7GK1RmA" name="BCallFunction" eSuperTypes="_lTgRgt6wEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BsnBNt6yEei97MD7GK1RmA" name="BPatternLiteralExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eOperations xmi:id="_BsnBN96yEei97MD7GK1RmA" name="matches">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_BsnBOd6yEei97MD7GK1RmA" name="candidate" eType="_BsnBPd6yEei97MD7GK1RmA"/>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_BsnBOt6yEei97MD7GK1RmA" name="BSimplePatternExpression" eSuperTypes="_BsnBNt6yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_BsnBO96yEei97MD7GK1RmA" name="pattern" eType="_BsnBPN6yEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_BsnBPN6yEei97MD7GK1RmA" name="SimplePattern" instanceClassName="org.eclipse.b3.backend.core.datatypes.SimplePattern"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_BsnBPd6yEei97MD7GK1RmA" name="CharSequence" instanceClassName="java.lang.CharSequence"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_HVVkT96yEei97MD7GK1RmA" name="Injector" instanceClassName="com.google.inject.Injector" serializable="false"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_M7xBTd6yEei97MD7GK1RmA" name="INamedValue" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_M7xBTt6yEei97MD7GK1RmA" name="name">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_M7xBUd6yEei97MD7GK1RmA" name="B3Type" eSuperTypes="_pfFhlN6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_M7xBUt6yEei97MD7GK1RmA" name="rawType" eType="_lTgRsd6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_oFoxR96yEei97MD7GK1RmA" name="defaultInference">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_QpnzF96yEei97MD7GK1RmA" name="ITypedValue" abstract="true" interface="true" eSuperTypes="_M7xBTd6yEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_q3sTRd6wEei97MD7GK1RmA" name="type" eType="_pfFhlN6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_k0yrmd6yEei97MD7GK1RmA" name="IVarName" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_k0yrmt6yEei97MD7GK1RmA" name="varName" changeable="false" volatile="true" transient="true" derived="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqC9N6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_rYTb8d6yEei97MD7GK1RmA" name="BTemplate" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_3aP0l96wEei97MD7GK1RmA" name="closure" eType="_lTgQ4t6wEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_rYTb896yEei97MD7GK1RmA" name="expressions" upperBound="-1" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_rYTb9N6yEei97MD7GK1RmA" name="BEchoExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_rYTb9d6yEei97MD7GK1RmA" name="expression" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_un1TBN6yEei97MD7GK1RmA" name="echoExpression" eType="_lTgQ0t6wEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_zg0bNd6yEei97MD7GK1RmA" name="BLiteralByteArrayExpression" eSuperTypes="_lTgQ0t6wEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_zg0bNt6yEei97MD7GK1RmA" name="value">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCtt6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_zg0bON6yEei97MD7GK1RmA" name="base64">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_lTqCrN6wEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

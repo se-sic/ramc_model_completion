@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_fORfUN6tEei97MD7GK1RmA" name="oclstdlib" nsURI="http://www.eclipse.org/ocl/2015/Library" nsPrefix="oclstdlib">
+  <eAnnotations xmi:id="_fORfUd6tEei97MD7GK1RmA" source="http://www.eclipse.org/OCL/ASLibrary"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfV96tEei97MD7GK1RmA" name="Bag" instanceClassName="org.eclipse.ocl.pivot.values.Bag" abstract="true" interface="true">
+    <eTypeParameters xmi:id="_fORfWN6tEei97MD7GK1RmA" name="T"/>
+    <eGenericSuperTypes eClassifier="_fORfW96tEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_fORfWt6tEei97MD7GK1RmA" eTypeParameter="_fORfWN6tEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fORfUt6tEei97MD7GK1RmA" name="Boolean" instanceClassName="java.lang.Boolean"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfW96tEei97MD7GK1RmA" name="Collection" instanceClassName="java.util.Collection" abstract="true" interface="true">
+    <eTypeParameters xmi:id="_fORfXN6tEei97MD7GK1RmA" name="T"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fORfXd6tEei97MD7GK1RmA" name="elementType" lowerBound="1">
+      <eAnnotations xmi:id="_fORfXt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fORfX96tEei97MD7GK1RmA" key="documentation" value="Evaluates to the type of the collection elements.&#xA;"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="_fORfXN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fORfYd6tEei97MD7GK1RmA" name="lower" lowerBound="1" eType="_fORfU96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fORfYt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fORfY96tEei97MD7GK1RmA" key="documentation" value="Evaluates to the lower bound on the number of collection elements.&#xA;"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fORfZN6tEei97MD7GK1RmA" name="upper" lowerBound="1" eType="_fORfU96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fORfZd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fORfZt6tEei97MD7GK1RmA" key="documentation" value="Evaluates to the upper bound on the number of collection elements.&#xA;"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fORfU96tEei97MD7GK1RmA" name="Integer" instanceClassName="org.eclipse.ocl.pivot.values.IntegerValue"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fTrD5N6tEei97MD7GK1RmA" name="Map" instanceClassName="java.util.Map" abstract="true" interface="true">
+    <eTypeParameters xmi:id="_fTrD5d6tEei97MD7GK1RmA" name="K"/>
+    <eTypeParameters xmi:id="_fTrD5t6tEei97MD7GK1RmA" name="V"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fTrD596tEei97MD7GK1RmA" name="keyType">
+      <eAnnotations xmi:id="_fTrD6N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fTrD6d6tEei97MD7GK1RmA" key="documentation" value="The key type of the key-value pairs of oclText[self].&#xA;"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="_fTrD5d6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fTrD696tEei97MD7GK1RmA" name="valueType">
+      <eAnnotations xmi:id="_fTrD7N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fTrD7d6tEei97MD7GK1RmA" key="documentation" value="The value type of the key-value pairs of oclText[self].&#xA;"/>
+      </eAnnotations>
+      <eGenericType eTypeParameter="_fTrD5t6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfZ96tEei97MD7GK1RmA" name="OclAny" instanceClassName="java.lang.Object" abstract="true" interface="true">
+    <eAnnotations xmi:id="_fORfaN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fORfad6tEei97MD7GK1RmA" key="documentation" value="This Ecore representation of the pivot OclAny exists solely to support serialization of Ecore metamodels.&#xA;True functionality is only available once converted to a Pivot model."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfat6tEei97MD7GK1RmA" name="OclComparable" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfZ96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfa96tEei97MD7GK1RmA" name="OclElement" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfZ96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fPBNbN6tEei97MD7GK1RmA" name="oclContainer" eType="_fORfa96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fP-Ijd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fP-Ijt6tEei97MD7GK1RmA" key="documentation" value="The object for which self is a composed content or null if there is no such object.&#xA;"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fPBNb96tEei97MD7GK1RmA" name="oclContents" ordered="false" upperBound="-1" eType="_fORfa96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fP-IkN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fP-Ikd6tEei97MD7GK1RmA" key="documentation" value="The composed contents of self."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fTrD-t6tEei97MD7GK1RmA" name="OclEnumeration" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfZ96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfbN6tEei97MD7GK1RmA" name="OclInvalid" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfc96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfbd6tEei97MD7GK1RmA" name="OclLambda" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfZ96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfbt6tEei97MD7GK1RmA" name="OclMessage" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfZ96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fTrD_t6tEei97MD7GK1RmA" name="OclSelf" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfZ96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfb96tEei97MD7GK1RmA" name="OclState" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfZ96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fQ3geN6tEei97MD7GK1RmA" name="OclStereotype" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfct6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfcN6tEei97MD7GK1RmA" name="OclSummable" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfZ96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfcd6tEei97MD7GK1RmA" name="OclTuple" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfZ96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfct6tEei97MD7GK1RmA" name="OclType" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfa96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfc96tEei97MD7GK1RmA" name="OclVoid" instanceClassName="java.lang.Object" abstract="true" interface="true" eSuperTypes="_fORfZ96tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfdN6tEei97MD7GK1RmA" name="OrderedCollection" instanceClassName="java.util.Collection" abstract="true" interface="true">
+    <eTypeParameters xmi:id="_fORfdd6tEei97MD7GK1RmA" name="T"/>
+    <eGenericSuperTypes eClassifier="_fORfW96tEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_fORfd96tEei97MD7GK1RmA" eTypeParameter="_fORfdd6tEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfeN6tEei97MD7GK1RmA" name="OrderedSet" instanceClassName="org.eclipse.ocl.pivot.values.OrderedSet" abstract="true" interface="true">
+    <eTypeParameters xmi:id="_fORfed6tEei97MD7GK1RmA" name="T"/>
+    <eGenericSuperTypes eClassifier="_fORfdN6tEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_fORfe96tEei97MD7GK1RmA" eTypeParameter="_fORfed6tEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="_fORfht6tEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_fORffd6tEei97MD7GK1RmA" eTypeParameter="_fORfed6tEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fORfVN6tEei97MD7GK1RmA" name="Real" instanceClassName="org.eclipse.ocl.pivot.values.RealValue"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfft6tEei97MD7GK1RmA" name="Sequence" instanceClassName="java.util.List" abstract="true" interface="true">
+    <eTypeParameters xmi:id="_fORff96tEei97MD7GK1RmA" name="T"/>
+    <eGenericSuperTypes eClassifier="_fORfdN6tEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_fORfgd6tEei97MD7GK1RmA" eTypeParameter="_fORff96tEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfgt6tEei97MD7GK1RmA" name="Set" instanceClassName="java.util.Set" abstract="true" interface="true">
+    <eTypeParameters xmi:id="_fORfg96tEei97MD7GK1RmA" name="T"/>
+    <eGenericSuperTypes eClassifier="_fORfht6tEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_fORfhd6tEei97MD7GK1RmA" eTypeParameter="_fORfg96tEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fORfVd6tEei97MD7GK1RmA" name="String" instanceClassName="java.lang.String"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fORfht6tEei97MD7GK1RmA" name="UniqueCollection" instanceClassName="java.util.Collection" abstract="true" interface="true">
+    <eTypeParameters xmi:id="_fORfh96tEei97MD7GK1RmA" name="T"/>
+    <eGenericSuperTypes eClassifier="_fORfW96tEei97MD7GK1RmA">
+      <eTypeArguments xmi:id="_fORfid6tEei97MD7GK1RmA" eTypeParameter="_fORfh96tEei97MD7GK1RmA"/>
+    </eGenericSuperTypes>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fORfVt6tEei97MD7GK1RmA" name="UnlimitedNatural" instanceClassName="org.eclipse.ocl.pivot.values.UnlimitedNaturalValue"/>
+</ecore:EPackage>

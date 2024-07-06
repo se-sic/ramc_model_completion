@@ -1,0 +1,37 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_NOBUFt6vEei97MD7GK1RmA', 'name':'realizedVariable','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'RealizedVariable','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@75b6baf4 (expression: RealizedVariable)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'BottomPattern','containment':'true','container':'false','resolveProxies':'true','eReferenceType':'RealizedVariable'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_NOBUld6vEei97MD7GK1RmA', 'name':'RealizedVariable','ePackage':'qvtimperative','abstract':'false','interface':'false','eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@765ed88d (expression: Variable)']}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_NTwwFd6vEei97MD7GK1RmA', 'name':'NewStatement','ePackage':'qvtimperative','abstract':'false','interface':'false','eStructuralFeatures':['referredTypedModel'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@6bcbb3 (expression: Variable)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@5489c53f (expression: BottomStatement)']}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_NTwwFt6vEei97MD7GK1RmA', 'name':'referredTypedModel','ordered':'true','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'TypedModel','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@77dd6fb (expression: TypedModel)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'NewStatement','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'TypedModel'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_KFy-0N6vEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@493d60a3 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@3b9a1844 (source: http://www.eclipse.org/OCL/Import)'],'name':'qvtimperative','nsURI':'http://www.eclipse.org/qvt/2015/QVTimperative','nsPrefix':'qvti','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@3835ef66','eClassifiers':['AddStatement','Area','Assignment','BottomPattern','BottomStatement','ConnectionVariable','GuardPattern','ImperativeDomain','ImperativeModel','ImperativePattern','Mapping','MappingCall','MappingCallBinding','...']}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_NOBUEt6vEei97MD7GK1RmA', 'name':'BottomPattern','ePackage':'qvtimperative','abstract':'false','interface':'false','eStructuralFeatures':['area','assignment','realizedVariable'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@10b9dba9 (expression: ImperativePattern)']}}" 
+}], 
+ "links": [{
+	 "source": "2", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "4", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "4", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "5", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+}]}

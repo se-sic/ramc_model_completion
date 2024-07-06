@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_fWEwct6tEei97MD7GK1RmA" name="architecture" nsURI="http://www.eclipse.org/papyrus/infra/core/architecture" nsPrefix="architecture">
+  <eAnnotations xmi:id="_fYKbLN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+    <details xmi:id="_fYKbLd6tEei97MD7GK1RmA" key="documentation" value="An architecture context is a method for customizing Papyrus for a given domain. It defines a regime for editing a Papyrus model semantically and notationally. The semantic editing is defined by a set of element type set configurations (from some domain), while the notational side is defined by a set of viewpoints consisting of a set of representation kinds (e.g., diagram kinds and table kinds) and other notational configurations...."/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwc96tEei97MD7GK1RmA" name="ADElement" abstract="true">
+    <eAnnotations xmi:id="_fYKbL96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKbMN6tEei97MD7GK1RmA" key="documentation" value="The superclass of all architecture elements"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fXRqU96tEei97MD7GK1RmA" name="id" lowerBound="1">
+      <eAnnotations xmi:id="_fYKbMt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbM96tEei97MD7GK1RmA" key="documentation" value="The unique id of the element"/>
+        <details xmi:id="_fYKbNN6tEei97MD7GK1RmA" key="propertyDescription" value="The unique id of the element"/>
+        <details xmi:id="_fYKbNd6tEei97MD7GK1RmA" key="propertyCategory" value="Element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fWEwdN6tEei97MD7GK1RmA" name="name" lowerBound="1">
+      <eAnnotations xmi:id="_fYKbON6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbOd6tEei97MD7GK1RmA" key="documentation" value="The name of the element"/>
+        <details xmi:id="_fYKbOt6tEei97MD7GK1RmA" key="propertyDescription" value="The name of the element"/>
+        <details xmi:id="_fYKbO96tEei97MD7GK1RmA" key="propertyCategory" value="Element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fWXrZN6tEei97MD7GK1RmA" name="description">
+      <eAnnotations xmi:id="_fYKbPt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbP96tEei97MD7GK1RmA" key="documentation" value="The description of the element"/>
+        <details xmi:id="_fYKbQN6tEei97MD7GK1RmA" key="propertyDescription" value="The description of the element"/>
+        <details xmi:id="_fYKbQd6tEei97MD7GK1RmA" key="propertyCategory" value="Element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fWEweN6tEei97MD7GK1RmA" name="qualifiedName" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_fYKbRN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbRd6tEei97MD7GK1RmA" key="documentation" value="The qualified name of the element"/>
+        <details xmi:id="_fYKbRt6tEei97MD7GK1RmA" key="propertyDescription" value="The qualified name of the element"/>
+        <details xmi:id="_fYKbR96tEei97MD7GK1RmA" key="propertyCategory" value="Element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fXRqW96tEei97MD7GK1RmA" name="icon">
+      <eAnnotations xmi:id="_fYKbSt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbS96tEei97MD7GK1RmA" key="documentation" value="The icon of the element specified using a platform plugin URI"/>
+        <details xmi:id="_fYKbTN6tEei97MD7GK1RmA" key="propertyDescription" value="The icon of the element specified using a platform plugin URI"/>
+        <details xmi:id="_fYKbTd6tEei97MD7GK1RmA" key="propertyCategory" value="Element"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwet6tEei97MD7GK1RmA" name="ArchitectureDomain" eSuperTypes="_fWEwc96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fYKbUN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKbUd6tEei97MD7GK1RmA" key="documentation" value="A domain is the root of the architecture model. It can contains a collection of concerns, stakeholders, as well as contexts (which can be description languages and/or frameworks)."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwe96tEei97MD7GK1RmA" name="stakeholders" upperBound="-1" eType="_fWEwhN6tEei97MD7GK1RmA" containment="true" eOpposite="_fWEwht6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbU96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbVN6tEei97MD7GK1RmA" key="documentation" value="The set of stakeholders defined by the domain"/>
+        <details xmi:id="_fYKbVd6tEei97MD7GK1RmA" key="propertyDescription" value="The set of stakeholders defined by the domain"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwfN6tEei97MD7GK1RmA" name="concerns" upperBound="-1" eType="_fWEwh96tEei97MD7GK1RmA" containment="true" eOpposite="_fWEwiN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbV96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbWN6tEei97MD7GK1RmA" key="documentation" value="The set of concerns defined by the domain"/>
+        <details xmi:id="_fYKbWd6tEei97MD7GK1RmA" key="propertyDescription" value="The set of concerns defined by the domain"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwfd6tEei97MD7GK1RmA" name="contexts" upperBound="-1" eType="_fWEwlN6tEei97MD7GK1RmA" containment="true" eOpposite="_fWEwmN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbW96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbXN6tEei97MD7GK1RmA" key="documentation" value="The set of contexts defined by the domain"/>
+        <details xmi:id="_fYKbXd6tEei97MD7GK1RmA" key="propertyDescription" value="The set of contexts defined by the domain"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwft6tEei97MD7GK1RmA" name="ArchitectureDescriptionLanguage" eSuperTypes="_fWEwlN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fYKbX96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKbYN6tEei97MD7GK1RmA" key="documentation" value="A description language (from ISO 42010) represents in Papyrus a modeling language (e.g., UML, SysML). It has a unique id' that corresponds to that of an ''IClientContext from GMF. It references a metamodel, a set of profiles, a set of element type set configurations, a creation command (creates a model of this language), a conversion command (converts a model to this language), and and icon. It also has an optional extension prefix for its models. It can also contain a set of representation kinds (which can be either diagrams or tables) and a set of viewpoints."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwf96tEei97MD7GK1RmA" name="representationKinds" upperBound="-1" eType="_fWEwj96tEei97MD7GK1RmA" containment="true" eOpposite="_fWEwkN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbYt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbY96tEei97MD7GK1RmA" key="documentation" value="The set of representation kinds defined by the language"/>
+        <details xmi:id="_fYKbZN6tEei97MD7GK1RmA" key="propertyDescription" value="The set of representation kinds defined by the language"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwgN6tEei97MD7GK1RmA" name="metamodel" lowerBound="1">
+      <eAnnotations xmi:id="_fYKbZt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbZ96tEei97MD7GK1RmA" key="documentation" value="The metamodel used by the language"/>
+        <details xmi:id="_fYKbaN6tEei97MD7GK1RmA" key="propertyDescription" value="The metamodel used by the language"/>
+        <details xmi:id="_fYKbad6tEei97MD7GK1RmA" key="propertyCategory" value="Description Language"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7At6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwgt6tEei97MD7GK1RmA" name="profiles" upperBound="-1">
+      <eAnnotations xmi:id="_fYKbbN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbbd6tEei97MD7GK1RmA" key="documentation" value="The set of UML profiles used by the language"/>
+        <details xmi:id="_fYKbbt6tEei97MD7GK1RmA" key="propertyDescription" value="The set of UML profiles used by the language"/>
+        <details xmi:id="_fYKbb96tEei97MD7GK1RmA" key="propertyCategory" value="Description Language"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7At6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwhN6tEei97MD7GK1RmA" name="Stakeholder" eSuperTypes="_fWEwc96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fYKbct6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKbc96tEei97MD7GK1RmA" key="documentation" value="A stakeholder (from ISO 42010) represents in Papyrus an archetype of users. It references a set of its concerns."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwhd6tEei97MD7GK1RmA" name="concerns" upperBound="-1" eType="_fWEwh96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbdd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbdt6tEei97MD7GK1RmA" key="documentation" value="The set of concerns of the stakeholder"/>
+        <details xmi:id="_fYKbd96tEei97MD7GK1RmA" key="propertyDescription" value="The set of concerns of the stakeholder"/>
+        <details xmi:id="_fYKbeN6tEei97MD7GK1RmA" key="propertyCategory" value="Stakeholder"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwht6tEei97MD7GK1RmA" name="domain" lowerBound="1" eType="_fWEwet6tEei97MD7GK1RmA" eOpposite="_fWEwe96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbet6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbe96tEei97MD7GK1RmA" key="documentation" value="The domain that defines the stakeholder"/>
+        <details xmi:id="_fYKbfN6tEei97MD7GK1RmA" key="propertyDescription" value="The domain that defines the stakeholder"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwh96tEei97MD7GK1RmA" name="Concern" eSuperTypes="_fWEwc96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fYKbft6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKbf96tEei97MD7GK1RmA" key="documentation" value="A concern (from ISO 42010) represents in Papyrus a matter of interest to some stakeholder."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwiN6tEei97MD7GK1RmA" name="domain" lowerBound="1" eType="_fWEwet6tEei97MD7GK1RmA" eOpposite="_fWEwfN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbgd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbgt6tEei97MD7GK1RmA" key="documentation" value="The domain that defines the concern"/>
+        <details xmi:id="_fYKbg96tEei97MD7GK1RmA" key="propertyDescription" value="The domain that defines the concern"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwid6tEei97MD7GK1RmA" name="ArchitectureViewpoint" eSuperTypes="_fWEwc96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fYKbhd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKbht6tEei97MD7GK1RmA" key="documentation" value="A viewpoint (from ISO 42010) in Papyrus references set of representation kinds, which can be diagrams or tables."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwit6tEei97MD7GK1RmA" name="concerns" upperBound="-1" eType="_fWEwh96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbiN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbid6tEei97MD7GK1RmA" key="documentation" value="The set of concerns covered by the viewpoint"/>
+        <details xmi:id="_fYKbit6tEei97MD7GK1RmA" key="propertyDescription" value="The set of concerns covered by the viewpoint"/>
+        <details xmi:id="_fYKbi96tEei97MD7GK1RmA" key="propertyCategory" value="Viewpoint"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwi96tEei97MD7GK1RmA" name="representationKinds" upperBound="-1" eType="_fWEwj96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbjd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbjt6tEei97MD7GK1RmA" key="documentation" value="The set of representation kinds provided by the viewpoint"/>
+        <details xmi:id="_fYKbj96tEei97MD7GK1RmA" key="propertyDescription" value="The set of representation kinds provided by the viewpoint"/>
+        <details xmi:id="_fYKbkN6tEei97MD7GK1RmA" key="propertyCategory" value="Viewpoint"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwjN6tEei97MD7GK1RmA" name="context" lowerBound="1" eType="_fWEwlN6tEei97MD7GK1RmA" eOpposite="_fWEwld6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbkt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbk96tEei97MD7GK1RmA" key="documentation" value="The context that defines the viewpoint"/>
+        <details xmi:id="_fYKblN6tEei97MD7GK1RmA" key="propertyDescription" value="The context that defines the viewpoint"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwj96tEei97MD7GK1RmA" name="RepresentationKind" abstract="true" eSuperTypes="_fWEwc96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fYKblt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKbl96tEei97MD7GK1RmA" key="documentation" value="The kind of representations defined by architectural contexts and that depict some information from a model"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwkN6tEei97MD7GK1RmA" name="language" lowerBound="1" eType="_fWEwft6tEei97MD7GK1RmA" eOpposite="_fWEwf96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbmd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbmt6tEei97MD7GK1RmA" key="documentation" value="The language that defines the representation kind"/>
+        <details xmi:id="_fYKbm96tEei97MD7GK1RmA" key="propertyDescription" value="The language that defines the representation kind"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwkd6tEei97MD7GK1RmA" name="concerns" upperBound="-1" eType="_fWEwh96tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbnd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbnt6tEei97MD7GK1RmA" key="documentation" value="The set of concerns covered by the representation kind"/>
+        <details xmi:id="_fYKbn96tEei97MD7GK1RmA" key="propertyDescription" value="The set of concerns covered by the representation kind"/>
+        <details xmi:id="_fYKboN6tEei97MD7GK1RmA" key="propertyCategory" value="Representation Kind"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwlN6tEei97MD7GK1RmA" name="ArchitectureContext" abstract="true" eSuperTypes="_fWEwc96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fYKbot6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKbo96tEei97MD7GK1RmA" key="documentation" value="The superclass of architectural description languages or architecture frameworks. It defines a collection of viewpoints on models."/>
+    </eAnnotations>
+    <eOperations xmi:id="_fYnHit6tEei97MD7GK1RmA" name="ceationCommandClassExists">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7Pt6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fYnHjN6tEei97MD7GK1RmA" name="diagnostics" unique="false">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7Vd6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fYnHjt6tEei97MD7GK1RmA" name="context" unique="false">
+        <eGenericType>
+          <eTypeArguments xmi:id="_fYnHkN6tEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ct6tEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_fYnHkd6tEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ct6tEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7et6tEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_fYnHkt6tEei97MD7GK1RmA" name="conversionCommandClassExists">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7Pt6tEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fYnHlN6tEei97MD7GK1RmA" name="diagnostics" unique="false">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7Vd6tEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_fYnHlt6tEei97MD7GK1RmA" name="context" unique="false">
+        <eGenericType>
+          <eTypeArguments xmi:id="_fYnHmN6tEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ct6tEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_fYnHmd6tEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ct6tEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7et6tEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwld6tEei97MD7GK1RmA" name="viewpoints" upperBound="-1" eType="_fWEwid6tEei97MD7GK1RmA" containment="true" eOpposite="_fWEwjN6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbpd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbpt6tEei97MD7GK1RmA" key="documentation" value="The set of viewpoints defined by the context"/>
+        <details xmi:id="_fYKbp96tEei97MD7GK1RmA" key="propertyDescription" value="The set of viewpoints defined by the context"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fXE2JN6tEei97MD7GK1RmA" name="defaultViewpoints" upperBound="-1" eType="_fWEwid6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbqd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbqt6tEei97MD7GK1RmA" key="documentation" value="The set of viewpoints that are selected for the context by default"/>
+        <details xmi:id="_fYKbq96tEei97MD7GK1RmA" key="propertyDescription" value="The set of viewpoints that are selected for the context by default"/>
+        <details xmi:id="_fYKbrN6tEei97MD7GK1RmA" key="propertyCategory" value="Context"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwlt6tEei97MD7GK1RmA" name="elementTypes" upperBound="-1">
+      <eAnnotations xmi:id="_fYKbrt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbr96tEei97MD7GK1RmA" key="documentation" value="The set of element type set configurations that are used by the context (typically found in .elementtypesconfigurations resources)"/>
+        <details xmi:id="_fYKbsN6tEei97MD7GK1RmA" key="propertyDescription" value="The set of element type set configurations that are used by the context (typically found in .elementtypesconfigurations resources)"/>
+        <details xmi:id="_fYKbsd6tEei97MD7GK1RmA" key="propertyCategory" value="Context"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_infra_types_org.eclipse.papyrus.infra.types_model_ElementTypesConfigurations.ecore#_fWN8Pd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fWEwmN6tEei97MD7GK1RmA" name="domain" lowerBound="1" eType="_fWEwet6tEei97MD7GK1RmA" eOpposite="_fWEwfd6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_fYKbtN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbtd6tEei97MD7GK1RmA" key="documentation" value="The domain that defines the context"/>
+        <details xmi:id="_fYKbtt6tEei97MD7GK1RmA" key="propertyDescription" value="The domain that defines the context"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fWEwnd6tEei97MD7GK1RmA" name="extensionPrefix">
+      <eAnnotations xmi:id="_fYKbuN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbud6tEei97MD7GK1RmA" key="documentation" value="The prefix of the file extension of the UML models applying this context (e.g., &lt;Name>.&lt;prefixExtension>.uml)"/>
+        <details xmi:id="_fYKbut6tEei97MD7GK1RmA" key="propertyDescription" value="The prefix of the file extension of the UML models applying this context (e.g., &lt;Name>.&lt;prefixExtension>.uml)"/>
+        <details xmi:id="_fYKbu96tEei97MD7GK1RmA" key="propertyCategory" value="Context"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fWEwn96tEei97MD7GK1RmA" name="creationCommandClass" lowerBound="1">
+      <eAnnotations xmi:id="_fYKbvt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbv96tEei97MD7GK1RmA" key="documentation" value="The fully qualified name of a command that creates models applying this context. The command must implement the org.eclipse.papyrus.infra.architecture.commands.IModelCreationCommand inteface"/>
+        <details xmi:id="_fYKbwN6tEei97MD7GK1RmA" key="propertyDescription" value="The fully qualified name of a command that creates models applying this context. The command must implement the org.eclipse.papyrus.infra.architecture.commands.IModelCreationCommand inteface"/>
+        <details xmi:id="_fYKbwd6tEei97MD7GK1RmA" key="propertyCategory" value="Context"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fWEwot6tEei97MD7GK1RmA" name="conversionCommandClass">
+      <eAnnotations xmi:id="_fYKbxd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKbxt6tEei97MD7GK1RmA" key="documentation" value="The fully qualified name of a command that refactors models that switched to this context. The command must implement the org.eclipse.papyrus.infra.architecture.commands.IModelConversionCommand inteface"/>
+        <details xmi:id="_fYKbx96tEei97MD7GK1RmA" key="propertyDescription" value="The fully qualified name of a command that refactors models that switched to this context. The command must implement the org.eclipse.papyrus.infra.architecture.commands.IModelConversionCommand inteface"/>
+        <details xmi:id="_fYKbyN6tEei97MD7GK1RmA" key="propertyCategory" value="Context"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwpd6tEei97MD7GK1RmA" name="ArchitectureFramework" eSuperTypes="_fWEwlN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fYKbzN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKbzd6tEei97MD7GK1RmA" key="documentation" value="A framework (from ISO 42010) represents in Papyrus a modeling framework (e.g., DoDAF). It has a unique id' that corresponds to that of an ''IClientContext from GMF. It references a set of element type set configurations, a creation command (creates a model of this framework), a conversion command (converts a model to this framework), and an icon. It also has an optional extension prefix for its models. It can also contain a set of viewpoints."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwpt6tEei97MD7GK1RmA" name="ArchitectureDescription">
+    <eAnnotations xmi:id="_fYKbz96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKb0N6tEei97MD7GK1RmA" key="documentation" value="An element that is added to a DI model to record the id of the architecture context applied to a model set"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fWEwp96tEei97MD7GK1RmA" name="contextId">
+      <eAnnotations xmi:id="_fYKb0t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKb096tEei97MD7GK1RmA" key="documentation" value="The id of the context applied to a UML model"/>
+        <details xmi:id="_fYKb1N6tEei97MD7GK1RmA" key="propertyDescription" value="The id of the context applied to a UML model"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fWEwqd6tEei97MD7GK1RmA" name="ArchitectureDescriptionPreferences">
+    <eAnnotations xmi:id="_fYKb196tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_fYKb2N6tEei97MD7GK1RmA" key="documentation" value="An element that is added to a DI model to record the architecture preferences used by a model set"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fWEwqt6tEei97MD7GK1RmA" name="viewpointIds" upperBound="-1">
+      <eAnnotations xmi:id="_fYKb2t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fYKb296tEei97MD7GK1RmA" key="documentation" value="The set of ids of viewpoints enabled on a UML model"/>
+        <details xmi:id="_fYKb3N6tEei97MD7GK1RmA" key="propertyDescription" value="The set of ids of viewpoints enabled on a UML model"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_fWN7ht6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

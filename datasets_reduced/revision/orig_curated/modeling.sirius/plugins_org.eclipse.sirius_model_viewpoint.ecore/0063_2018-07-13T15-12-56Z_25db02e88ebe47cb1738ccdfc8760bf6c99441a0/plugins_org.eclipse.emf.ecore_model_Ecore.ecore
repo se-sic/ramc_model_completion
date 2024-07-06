@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_fmSEwN6vEei97MD7GK1RmA" name="ecore" nsURI="http://www.eclipse.org/emf/2002/Ecore" nsPrefix="ecore">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSEwd6vEei97MD7GK1RmA" name="EAttribute" eSuperTypes="_fmSFeN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmSEwt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSEw96vEei97MD7GK1RmA" key="constraints" value="ConsistentTransient"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSExN6vEei97MD7GK1RmA" name="iD" eType="_fmSFnt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSExd6vEei97MD7GK1RmA" name="eAttributeType" lowerBound="1" eType="_fmSFDd6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSExt6vEei97MD7GK1RmA" name="EAnnotation" eSuperTypes="_fmSFKN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_hKIdR96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_hKIdSN6vEei97MD7GK1RmA" key="constraints" value="WellFormed WellFormedSourceURI"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSEyd6vEei97MD7GK1RmA" name="source" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSEyt6vEei97MD7GK1RmA" name="details" upperBound="-1" eType="_fmSF6d6vEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSEy96vEei97MD7GK1RmA" name="eModelElement" eType="_fmSFKN6vEei97MD7GK1RmA" transient="true" resolveProxies="false" eOpposite="_fmSFK96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSEzN6vEei97MD7GK1RmA" name="contents" upperBound="-1" eType="_fmSFMN6vEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSEzd6vEei97MD7GK1RmA" name="references" upperBound="-1" eType="_fmSFMN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSEzt6vEei97MD7GK1RmA" name="EClass" eSuperTypes="_fmSE-d6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmSEz96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSE0N6vEei97MD7GK1RmA" key="constraints" value="InterfaceIsAbstract AtMostOneID UniqueFeatureNames UniqueOperationSignatures NoCircularSuperTypes WellFormedMapEntryClass ConsistentSuperTypes DisjointFeatureAndOperationSignatures"/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmSE0d6vEei97MD7GK1RmA" name="isSuperTypeOf" eType="_fmSFnt6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSE0t6vEei97MD7GK1RmA" name="someClass" eType="_fmSEzt6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSE096vEei97MD7GK1RmA" name="getFeatureCount" eType="_fmSFyd6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fmSE1N6vEei97MD7GK1RmA" name="getEStructuralFeature" eType="_fmSFeN6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSE1d6vEei97MD7GK1RmA" name="featureID" eType="_fmSFyd6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSE1t6vEei97MD7GK1RmA" name="getFeatureID" eType="_fmSFyd6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSE196vEei97MD7GK1RmA" name="feature" eType="_fmSFeN6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSE2N6vEei97MD7GK1RmA" name="getEStructuralFeature" eType="_fmSFeN6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSE2d6vEei97MD7GK1RmA" name="featureName" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSE2t6vEei97MD7GK1RmA" name="getOperationCount" eType="_fmSFyd6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fmSE296vEei97MD7GK1RmA" name="getEOperation" eType="_fmSFUd6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSE3N6vEei97MD7GK1RmA" name="operationID" eType="_fmSFyd6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSE3d6vEei97MD7GK1RmA" name="getOperationID" eType="_fmSFyd6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSE3t6vEei97MD7GK1RmA" name="operation" eType="_fmSFUd6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSE396vEei97MD7GK1RmA" name="getOverride" eType="_fmSFUd6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSE4N6vEei97MD7GK1RmA" name="operation" eType="_fmSFUd6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSE4d6vEei97MD7GK1RmA" name="getFeatureType" eType="_fmSF7t6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSE4t6vEei97MD7GK1RmA" name="feature" eType="_fmSFeN6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSE496vEei97MD7GK1RmA" name="abstract" eType="_fmSFnt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSE5N6vEei97MD7GK1RmA" name="interface" eType="_fmSFnt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE5d6vEei97MD7GK1RmA" name="eSuperTypes" upperBound="-1" eType="_fmSEzt6vEei97MD7GK1RmA" unsettable="true">
+      <eAnnotations xmi:id="_fmSE5t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmSE596vEei97MD7GK1RmA" key="suppressedIsSetVisibility" value="true"/>
+        <details xmi:id="_fmSE6N6vEei97MD7GK1RmA" key="suppressedUnsetVisibility" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE6d6vEei97MD7GK1RmA" name="eOperations" upperBound="-1" eType="_fmSFUd6vEei97MD7GK1RmA" containment="true" resolveProxies="false" eOpposite="_fmSFV96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE6t6vEei97MD7GK1RmA" name="eAllAttributes" upperBound="-1" eType="_fmSEwd6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE696vEei97MD7GK1RmA" name="eAllReferences" upperBound="-1" eType="_fmSFb96vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE7N6vEei97MD7GK1RmA" name="eReferences" upperBound="-1" eType="_fmSFb96vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE7d6vEei97MD7GK1RmA" name="eAttributes" upperBound="-1" eType="_fmSEwd6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE7t6vEei97MD7GK1RmA" name="eAllContainments" upperBound="-1" eType="_fmSFb96vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE796vEei97MD7GK1RmA" name="eAllOperations" upperBound="-1" eType="_fmSFUd6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE8N6vEei97MD7GK1RmA" name="eAllStructuralFeatures" upperBound="-1" eType="_fmSFeN6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE8d6vEei97MD7GK1RmA" name="eAllSuperTypes" upperBound="-1" eType="_fmSEzt6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE8t6vEei97MD7GK1RmA" name="eIDAttribute" eType="_fmSEwd6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE896vEei97MD7GK1RmA" name="eStructuralFeatures" upperBound="-1" eType="_fmSFeN6vEei97MD7GK1RmA" containment="true" resolveProxies="false" eOpposite="_fmSFht6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE9N6vEei97MD7GK1RmA" name="eGenericSuperTypes" upperBound="-1" eType="_fmSF7t6vEei97MD7GK1RmA" unsettable="true" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_fmSE9d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmSE9t6vEei97MD7GK1RmA" key="suppressedIsSetVisibility" value="true"/>
+        <details xmi:id="_fmSE996vEei97MD7GK1RmA" key="suppressedUnsetVisibility" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSE-N6vEei97MD7GK1RmA" name="eAllGenericSuperTypes" upperBound="-1" eType="_fmSF7t6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSE-d6vEei97MD7GK1RmA" name="EClassifier" abstract="true" eSuperTypes="_fmSFLN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmSE-t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSE-96vEei97MD7GK1RmA" key="constraints" value="WellFormedInstanceTypeName UniqueTypeParameterNames"/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmSE_N6vEei97MD7GK1RmA" name="isInstance" eType="_fmSFnt6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSE_d6vEei97MD7GK1RmA" name="object" eType="_fmSF0t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSE_t6vEei97MD7GK1RmA" name="getClassifierID" eType="_fmSFyd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSE_96vEei97MD7GK1RmA" name="instanceClassName" eType="_fmSF5t6vEei97MD7GK1RmA" volatile="true" unsettable="true">
+      <eAnnotations xmi:id="_fmSFAN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmSFAd6vEei97MD7GK1RmA" key="suppressedIsSetVisibility" value="true"/>
+        <details xmi:id="_fmSFAt6vEei97MD7GK1RmA" key="suppressedUnsetVisibility" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFA96vEei97MD7GK1RmA" name="instanceClass" changeable="false" volatile="true" transient="true" derived="true">
+      <eGenericType eClassifier="_fmSF0N6vEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_fmSFBd6vEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFBt6vEei97MD7GK1RmA" name="defaultValue" eType="_fmSF0t6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFB96vEei97MD7GK1RmA" name="instanceTypeName" eType="_fmSF5t6vEei97MD7GK1RmA" volatile="true" unsettable="true">
+      <eAnnotations xmi:id="_fmSFCN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmSFCd6vEei97MD7GK1RmA" key="suppressedIsSetVisibility" value="true"/>
+        <details xmi:id="_fmSFCt6vEei97MD7GK1RmA" key="suppressedUnsetVisibility" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFC96vEei97MD7GK1RmA" name="ePackage" eType="_fmSFYt6vEei97MD7GK1RmA" changeable="false" transient="true" eOpposite="_fmSFat6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFDN6vEei97MD7GK1RmA" name="eTypeParameters" upperBound="-1" eType="_fmSF-d6vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFDd6vEei97MD7GK1RmA" name="EDataType" eSuperTypes="_fmSE-d6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFDt6vEei97MD7GK1RmA" name="serializable" eType="_fmSFnt6vEei97MD7GK1RmA" defaultValueLiteral="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFD96vEei97MD7GK1RmA" name="EEnum" eSuperTypes="_fmSFDd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmSFEN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSFEd6vEei97MD7GK1RmA" key="constraints" value="UniqueEnumeratorNames UniqueEnumeratorLiterals"/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmSFEt6vEei97MD7GK1RmA" name="getEEnumLiteral" eType="_fmSFGd6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFE96vEei97MD7GK1RmA" name="name" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSFFN6vEei97MD7GK1RmA" name="getEEnumLiteral" eType="_fmSFGd6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFFd6vEei97MD7GK1RmA" name="value" eType="_fmSFyd6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSFFt6vEei97MD7GK1RmA" name="getEEnumLiteralByLiteral" eType="_fmSFGd6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFF96vEei97MD7GK1RmA" name="literal" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFGN6vEei97MD7GK1RmA" name="eLiterals" upperBound="-1" eType="_fmSFGd6vEei97MD7GK1RmA" containment="true" resolveProxies="false" eOpposite="_fmSFHd6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFGd6vEei97MD7GK1RmA" name="EEnumLiteral" eSuperTypes="_fmSFLN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFGt6vEei97MD7GK1RmA" name="value" eType="_fmSFyd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFG96vEei97MD7GK1RmA" name="instance" eType="_fmSFv96vEei97MD7GK1RmA" transient="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFHN6vEei97MD7GK1RmA" name="literal" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFHd6vEei97MD7GK1RmA" name="eEnum" eType="_fmSFD96vEei97MD7GK1RmA" changeable="false" transient="true" resolveProxies="false" eOpposite="_fmSFGN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFHt6vEei97MD7GK1RmA" name="EFactory" eSuperTypes="_fmSFKN6vEei97MD7GK1RmA">
+    <eOperations xmi:id="_fmSFH96vEei97MD7GK1RmA" name="create" eType="_fmSFMN6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFIN6vEei97MD7GK1RmA" name="eClass" eType="_fmSEzt6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSFId6vEei97MD7GK1RmA" name="createFromString" eType="_fmSF0t6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFIt6vEei97MD7GK1RmA" name="eDataType" eType="_fmSFDd6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fmSFI96vEei97MD7GK1RmA" name="literalValue" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSFJN6vEei97MD7GK1RmA" name="convertToString" eType="_fmSF5t6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFJd6vEei97MD7GK1RmA" name="eDataType" eType="_fmSFDd6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fmSFJt6vEei97MD7GK1RmA" name="instanceValue" eType="_fmSF0t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFJ96vEei97MD7GK1RmA" name="ePackage" lowerBound="1" eType="_fmSFYt6vEei97MD7GK1RmA" transient="true" resolveProxies="false" eOpposite="_fmSFad6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFKN6vEei97MD7GK1RmA" name="EModelElement" abstract="true">
+    <eOperations xmi:id="_fmSFKd6vEei97MD7GK1RmA" name="getEAnnotation" eType="_fmSExt6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFKt6vEei97MD7GK1RmA" name="source" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFK96vEei97MD7GK1RmA" name="eAnnotations" upperBound="-1" eType="_fmSExt6vEei97MD7GK1RmA" containment="true" resolveProxies="false" eOpposite="_fmSEy96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFLN6vEei97MD7GK1RmA" name="ENamedElement" abstract="true" eSuperTypes="_fmSFKN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmSFLd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSFLt6vEei97MD7GK1RmA" key="constraints" value="WellFormedName"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFL96vEei97MD7GK1RmA" name="name" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFMN6vEei97MD7GK1RmA" name="EObject">
+    <eOperations xmi:id="_fmSFMd6vEei97MD7GK1RmA" name="eClass" eType="_fmSEzt6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fmSFMt6vEei97MD7GK1RmA" name="eIsProxy" eType="_fmSFnt6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fmSFM96vEei97MD7GK1RmA" name="eResource" eType="_fmSF3d6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fmSFNN6vEei97MD7GK1RmA" name="eContainer" eType="_fmSFMN6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fmSFNd6vEei97MD7GK1RmA" name="eContainingFeature" eType="_fmSFeN6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fmSFNt6vEei97MD7GK1RmA" name="eContainmentFeature" eType="_fmSFb96vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fmSFN96vEei97MD7GK1RmA" name="eContents">
+      <eGenericType eClassifier="_fmSFvd6vEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_fmSFOd6vEei97MD7GK1RmA" eClassifier="_fmSFMN6vEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations xmi:id="_fmSFOt6vEei97MD7GK1RmA" name="eAllContents">
+      <eGenericType eClassifier="_fmSF7N6vEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_fmSFPN6vEei97MD7GK1RmA" eClassifier="_fmSFMN6vEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations xmi:id="_fmSFPd6vEei97MD7GK1RmA" name="eCrossReferences">
+      <eGenericType eClassifier="_fmSFvd6vEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_fmSFP96vEei97MD7GK1RmA" eClassifier="_fmSFMN6vEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eOperations>
+    <eOperations xmi:id="_fmSFQN6vEei97MD7GK1RmA" name="eGet" eType="_fmSF0t6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFQd6vEei97MD7GK1RmA" name="feature" eType="_fmSFeN6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSFQt6vEei97MD7GK1RmA" name="eGet" eType="_fmSF0t6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFQ96vEei97MD7GK1RmA" name="feature" eType="_fmSFeN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fmSFRN6vEei97MD7GK1RmA" name="resolve" eType="_fmSFnt6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSFRd6vEei97MD7GK1RmA" name="eSet">
+      <eParameters xmi:id="_fmSFRt6vEei97MD7GK1RmA" name="feature" eType="_fmSFeN6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fmSFR96vEei97MD7GK1RmA" name="newValue" eType="_fmSF0t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSFSN6vEei97MD7GK1RmA" name="eIsSet" eType="_fmSFnt6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFSd6vEei97MD7GK1RmA" name="feature" eType="_fmSFeN6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSFSt6vEei97MD7GK1RmA" name="eUnset">
+      <eParameters xmi:id="_fmSFS96vEei97MD7GK1RmA" name="feature" eType="_fmSFeN6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_fmSFTN6vEei97MD7GK1RmA" name="eInvoke" eType="_fmSF0t6vEei97MD7GK1RmA" eExceptions="_fmSF-96vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFTd6vEei97MD7GK1RmA" name="operation" eType="_fmSFUd6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_fmSFTt6vEei97MD7GK1RmA" name="arguments">
+        <eGenericType eClassifier="_fmSFvd6vEei97MD7GK1RmA">
+          <eTypeArguments xmi:id="_fmSFUN6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFUd6vEei97MD7GK1RmA" name="EOperation" eSuperTypes="_fmSFh96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmSFUt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSFU96vEei97MD7GK1RmA" key="constraints" value="UniqueParameterNames UniqueTypeParameterNames NoRepeatingVoid"/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmSFVN6vEei97MD7GK1RmA" name="getOperationID" eType="_fmSFyd6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fmSFVd6vEei97MD7GK1RmA" name="isOverrideOf" eType="_fmSFnt6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFVt6vEei97MD7GK1RmA" name="someOperation" eType="_fmSFUd6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFV96vEei97MD7GK1RmA" name="eContainingClass" eType="_fmSEzt6vEei97MD7GK1RmA" changeable="false" transient="true" resolveProxies="false" eOpposite="_fmSE6d6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFWN6vEei97MD7GK1RmA" name="eTypeParameters" upperBound="-1" eType="_fmSF-d6vEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFWd6vEei97MD7GK1RmA" name="eParameters" upperBound="-1" eType="_fmSFbd6vEei97MD7GK1RmA" containment="true" resolveProxies="false" eOpposite="_fmSFbt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFWt6vEei97MD7GK1RmA" name="eExceptions" upperBound="-1" eType="_fmSE-d6vEei97MD7GK1RmA" unsettable="true">
+      <eAnnotations xmi:id="_fmSFW96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmSFXN6vEei97MD7GK1RmA" key="suppressedIsSetVisibility" value="true"/>
+        <details xmi:id="_fmSFXd6vEei97MD7GK1RmA" key="suppressedUnsetVisibility" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFXt6vEei97MD7GK1RmA" name="eGenericExceptions" upperBound="-1" eType="_fmSF7t6vEei97MD7GK1RmA" unsettable="true" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_fmSFX96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmSFYN6vEei97MD7GK1RmA" key="suppressedIsSetVisibility" value="true"/>
+        <details xmi:id="_fmSFYd6vEei97MD7GK1RmA" key="suppressedUnsetVisibility" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFYt6vEei97MD7GK1RmA" name="EPackage" eSuperTypes="_fmSFLN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmSFY96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSFZN6vEei97MD7GK1RmA" key="constraints" value="WellFormedNsURI WellFormedNsPrefix UniqueSubpackageNames UniqueClassifierNames UniqueNsURIs"/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmSFZd6vEei97MD7GK1RmA" name="getEClassifier" eType="_fmSE-d6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSFZt6vEei97MD7GK1RmA" name="name" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFZ96vEei97MD7GK1RmA" name="nsURI" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFaN6vEei97MD7GK1RmA" name="nsPrefix" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFad6vEei97MD7GK1RmA" name="eFactoryInstance" lowerBound="1" eType="_fmSFHt6vEei97MD7GK1RmA" transient="true" resolveProxies="false" eOpposite="_fmSFJ96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFat6vEei97MD7GK1RmA" name="eClassifiers" upperBound="-1" eType="_fmSE-d6vEei97MD7GK1RmA" containment="true" eOpposite="_fmSFC96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFa96vEei97MD7GK1RmA" name="eSubpackages" upperBound="-1" eType="_fmSFYt6vEei97MD7GK1RmA" containment="true" eOpposite="_fmSFbN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFbN6vEei97MD7GK1RmA" name="eSuperPackage" eType="_fmSFYt6vEei97MD7GK1RmA" changeable="false" transient="true" eOpposite="_fmSFa96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFbd6vEei97MD7GK1RmA" name="EParameter" eSuperTypes="_fmSFh96vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFbt6vEei97MD7GK1RmA" name="eOperation" eType="_fmSFUd6vEei97MD7GK1RmA" changeable="false" transient="true" resolveProxies="false" eOpposite="_fmSFWd6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFb96vEei97MD7GK1RmA" name="EReference" eSuperTypes="_fmSFeN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmSFcN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSFcd6vEei97MD7GK1RmA" key="constraints" value="ConsistentOpposite SingleContainer ConsistentKeys ConsistentUnique ConsistentContainer"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFct6vEei97MD7GK1RmA" name="containment" eType="_fmSFnt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFc96vEei97MD7GK1RmA" name="container" eType="_fmSFnt6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFdN6vEei97MD7GK1RmA" name="resolveProxies" eType="_fmSFnt6vEei97MD7GK1RmA" defaultValueLiteral="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFdd6vEei97MD7GK1RmA" name="eOpposite" eType="_fmSFb96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFdt6vEei97MD7GK1RmA" name="eReferenceType" lowerBound="1" eType="_fmSEzt6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFd96vEei97MD7GK1RmA" name="eKeys" upperBound="-1" eType="_fmSEwd6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFeN6vEei97MD7GK1RmA" name="EStructuralFeature" abstract="true" eSuperTypes="_fmSFh96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmSFed6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSFet6vEei97MD7GK1RmA" key="constraints" value="ValidDefaultValueLiteral"/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmSFe96vEei97MD7GK1RmA" name="getFeatureID" eType="_fmSFyd6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_fmSFfN6vEei97MD7GK1RmA" name="getContainerClass">
+      <eGenericType eClassifier="_fmSF0N6vEei97MD7GK1RmA">
+        <eTypeArguments xmi:id="_fmSFft6vEei97MD7GK1RmA"/>
+      </eGenericType>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFf96vEei97MD7GK1RmA" name="changeable" eType="_fmSFnt6vEei97MD7GK1RmA" defaultValueLiteral="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFgN6vEei97MD7GK1RmA" name="volatile" eType="_fmSFnt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFgd6vEei97MD7GK1RmA" name="transient" eType="_fmSFnt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFgt6vEei97MD7GK1RmA" name="defaultValueLiteral" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFg96vEei97MD7GK1RmA" name="defaultValue" eType="_fmSF0t6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFhN6vEei97MD7GK1RmA" name="unsettable" eType="_fmSFnt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFhd6vEei97MD7GK1RmA" name="derived" eType="_fmSFnt6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFht6vEei97MD7GK1RmA" name="eContainingClass" eType="_fmSEzt6vEei97MD7GK1RmA" changeable="false" transient="true" resolveProxies="false" eOpposite="_fmSE896vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSFh96vEei97MD7GK1RmA" name="ETypedElement" abstract="true" eSuperTypes="_fmSFLN6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_fmSFiN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSFid6vEei97MD7GK1RmA" key="constraints" value="ValidLowerBound ValidUpperBound ConsistentBounds ValidType"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFit6vEei97MD7GK1RmA" name="ordered" eType="_fmSFnt6vEei97MD7GK1RmA" defaultValueLiteral="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFi96vEei97MD7GK1RmA" name="unique" eType="_fmSFnt6vEei97MD7GK1RmA" defaultValueLiteral="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFjN6vEei97MD7GK1RmA" name="lowerBound" eType="_fmSFyd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFjd6vEei97MD7GK1RmA" name="upperBound" eType="_fmSFyd6vEei97MD7GK1RmA" defaultValueLiteral="1"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFjt6vEei97MD7GK1RmA" name="many" eType="_fmSFnt6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSFj96vEei97MD7GK1RmA" name="required" eType="_fmSFnt6vEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFkN6vEei97MD7GK1RmA" name="eType" eType="_fmSE-d6vEei97MD7GK1RmA" volatile="true" unsettable="true">
+      <eAnnotations xmi:id="_fmSFkd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmSFkt6vEei97MD7GK1RmA" key="suppressedIsSetVisibility" value="true"/>
+        <details xmi:id="_fmSFk96vEei97MD7GK1RmA" key="suppressedUnsetVisibility" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSFlN6vEei97MD7GK1RmA" name="eGenericType" eType="_fmSF7t6vEei97MD7GK1RmA" volatile="true" unsettable="true" containment="true" resolveProxies="false">
+      <eAnnotations xmi:id="_fmSFld6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_fmSFlt6vEei97MD7GK1RmA" key="suppressedIsSetVisibility" value="true"/>
+        <details xmi:id="_fmSFl96vEei97MD7GK1RmA" key="suppressedUnsetVisibility" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFmN6vEei97MD7GK1RmA" name="EBigDecimal" instanceClassName="java.math.BigDecimal">
+    <eAnnotations xmi:id="_fmSFmd6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFmt6vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFm96vEei97MD7GK1RmA" name="EBigInteger" instanceClassName="java.math.BigInteger">
+    <eAnnotations xmi:id="_fmSFnN6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFnd6vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#integer"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFnt6vEei97MD7GK1RmA" name="EBoolean" instanceClassName="boolean">
+    <eAnnotations xmi:id="_fmSFn96vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFoN6vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFod6vEei97MD7GK1RmA" name="EBooleanObject" instanceClassName="java.lang.Boolean">
+    <eAnnotations xmi:id="_fmSFot6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFo96vEei97MD7GK1RmA" key="baseType" value="EBoolean"/>
+      <details xmi:id="_fmSFpN6vEei97MD7GK1RmA" key="name" value="EBoolean:Object"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFpd6vEei97MD7GK1RmA" name="EByte" instanceClassName="byte">
+    <eAnnotations xmi:id="_fmSFpt6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFp96vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#byte"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFqN6vEei97MD7GK1RmA" name="EByteArray" instanceClassName="byte[]">
+    <eAnnotations xmi:id="_fmSFqd6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFqt6vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#hexBinary"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFq96vEei97MD7GK1RmA" name="EByteObject" instanceClassName="java.lang.Byte">
+    <eAnnotations xmi:id="_fmSFrN6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFrd6vEei97MD7GK1RmA" key="baseType" value="EByte"/>
+      <details xmi:id="_fmSFrt6vEei97MD7GK1RmA" key="name" value="EByte:Object"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFr96vEei97MD7GK1RmA" name="EChar" instanceClassName="char"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFsN6vEei97MD7GK1RmA" name="ECharacterObject" instanceClassName="java.lang.Character">
+    <eAnnotations xmi:id="_fmSFsd6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFst6vEei97MD7GK1RmA" key="baseType" value="EChar"/>
+      <details xmi:id="_fmSFs96vEei97MD7GK1RmA" key="name" value="EChar:Object"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFtN6vEei97MD7GK1RmA" name="EDate" instanceClassName="java.util.Date"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFtd6vEei97MD7GK1RmA" name="EDiagnosticChain" instanceClassName="org.eclipse.emf.common.util.DiagnosticChain" serializable="false"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFtt6vEei97MD7GK1RmA" name="EDouble" instanceClassName="double">
+    <eAnnotations xmi:id="_fmSFt96vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFuN6vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#double"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFud6vEei97MD7GK1RmA" name="EDoubleObject" instanceClassName="java.lang.Double">
+    <eAnnotations xmi:id="_fmSFut6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFu96vEei97MD7GK1RmA" key="baseType" value="EDouble"/>
+      <details xmi:id="_fmSFvN6vEei97MD7GK1RmA" key="name" value="EDouble:Object"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFvd6vEei97MD7GK1RmA" name="EEList" instanceClassName="org.eclipse.emf.common.util.EList" serializable="false">
+    <eTypeParameters xmi:id="_fmSFvt6vEei97MD7GK1RmA" name="E"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFv96vEei97MD7GK1RmA" name="EEnumerator" instanceClassName="org.eclipse.emf.common.util.Enumerator" serializable="false"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFwN6vEei97MD7GK1RmA" name="EFeatureMap" instanceClassName="org.eclipse.emf.ecore.util.FeatureMap" serializable="false"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFwd6vEei97MD7GK1RmA" name="EFeatureMapEntry" instanceClassName="org.eclipse.emf.ecore.util.FeatureMap$Entry" serializable="false"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFwt6vEei97MD7GK1RmA" name="EFloat" instanceClassName="float">
+    <eAnnotations xmi:id="_fmSFw96vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFxN6vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#float"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFxd6vEei97MD7GK1RmA" name="EFloatObject" instanceClassName="java.lang.Float">
+    <eAnnotations xmi:id="_fmSFxt6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFx96vEei97MD7GK1RmA" key="baseType" value="EFloat"/>
+      <details xmi:id="_fmSFyN6vEei97MD7GK1RmA" key="name" value="EFloat:Object"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFyd6vEei97MD7GK1RmA" name="EInt" instanceClassName="int">
+    <eAnnotations xmi:id="_fmSFyt6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFy96vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#int"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSFzN6vEei97MD7GK1RmA" name="EIntegerObject" instanceClassName="java.lang.Integer">
+    <eAnnotations xmi:id="_fmSFzd6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSFzt6vEei97MD7GK1RmA" key="baseType" value="EInt"/>
+      <details xmi:id="_fmSFz96vEei97MD7GK1RmA" key="name" value="EInt:Object"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF0N6vEei97MD7GK1RmA" name="EJavaClass" instanceClassName="java.lang.Class">
+    <eTypeParameters xmi:id="_fmSF0d6vEei97MD7GK1RmA" name="T"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF0t6vEei97MD7GK1RmA" name="EJavaObject" instanceClassName="java.lang.Object"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF096vEei97MD7GK1RmA" name="ELong" instanceClassName="long">
+    <eAnnotations xmi:id="_fmSF1N6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSF1d6vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#long"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF1t6vEei97MD7GK1RmA" name="ELongObject" instanceClassName="java.lang.Long">
+    <eAnnotations xmi:id="_fmSF196vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSF2N6vEei97MD7GK1RmA" key="baseType" value="ELong"/>
+      <details xmi:id="_fmSF2d6vEei97MD7GK1RmA" key="name" value="ELong:Object"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF2t6vEei97MD7GK1RmA" name="EMap" instanceClassName="java.util.Map" serializable="false">
+    <eTypeParameters xmi:id="_fmSF296vEei97MD7GK1RmA" name="K"/>
+    <eTypeParameters xmi:id="_fmSF3N6vEei97MD7GK1RmA" name="V"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF3d6vEei97MD7GK1RmA" name="EResource" instanceClassName="org.eclipse.emf.ecore.resource.Resource" serializable="false"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF3t6vEei97MD7GK1RmA" name="EResourceSet" instanceClassName="org.eclipse.emf.ecore.resource.ResourceSet" serializable="false"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF396vEei97MD7GK1RmA" name="EShort" instanceClassName="short">
+    <eAnnotations xmi:id="_fmSF4N6vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSF4d6vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#short"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF4t6vEei97MD7GK1RmA" name="EShortObject" instanceClassName="java.lang.Short">
+    <eAnnotations xmi:id="_fmSF496vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSF5N6vEei97MD7GK1RmA" key="baseType" value="EShort"/>
+      <details xmi:id="_fmSF5d6vEei97MD7GK1RmA" key="name" value="EShort:Object"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF5t6vEei97MD7GK1RmA" name="EString" instanceClassName="java.lang.String">
+    <eAnnotations xmi:id="_fmSF596vEei97MD7GK1RmA" source="http:///org/eclipse/emf/ecore/util/ExtendedMetaData">
+      <details xmi:id="_fmSF6N6vEei97MD7GK1RmA" key="baseType" value="http://www.w3.org/2001/XMLSchema#string"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSF6d6vEei97MD7GK1RmA" name="EStringToStringMapEntry" instanceClassName="java.util.Map$Entry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSF6t6vEei97MD7GK1RmA" name="key" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_fmSF696vEei97MD7GK1RmA" name="value" eType="_fmSF5t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF7N6vEei97MD7GK1RmA" name="ETreeIterator" instanceClassName="org.eclipse.emf.common.util.TreeIterator" serializable="false">
+    <eTypeParameters xmi:id="_fmSF7d6vEei97MD7GK1RmA" name="E"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSF7t6vEei97MD7GK1RmA" name="EGenericType">
+    <eAnnotations xmi:id="_fmSF796vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+      <details xmi:id="_fmSF8N6vEei97MD7GK1RmA" key="constraints" value="ConsistentType ConsistentBounds ConsistentArguments"/>
+    </eAnnotations>
+    <eOperations xmi:id="_fmSF8d6vEei97MD7GK1RmA" name="isInstance" eType="_fmSFnt6vEei97MD7GK1RmA">
+      <eParameters xmi:id="_fmSF8t6vEei97MD7GK1RmA" name="object" eType="_fmSF0t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSF896vEei97MD7GK1RmA" name="eUpperBound" eType="_fmSF7t6vEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSF9N6vEei97MD7GK1RmA" name="eTypeArguments" upperBound="-1" eType="_fmSF7t6vEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSF9d6vEei97MD7GK1RmA" name="eRawType" lowerBound="1" eType="_fmSE-d6vEei97MD7GK1RmA" changeable="false" transient="true" derived="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSF9t6vEei97MD7GK1RmA" name="eLowerBound" eType="_fmSF7t6vEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSF996vEei97MD7GK1RmA" name="eTypeParameter" eType="_fmSF-d6vEei97MD7GK1RmA" resolveProxies="false"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSF-N6vEei97MD7GK1RmA" name="eClassifier" eType="_fmSE-d6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_fmSF-d6vEei97MD7GK1RmA" name="ETypeParameter" eSuperTypes="_fmSFLN6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_fmSF-t6vEei97MD7GK1RmA" name="eBounds" upperBound="-1" eType="_fmSF7t6vEei97MD7GK1RmA" containment="true" resolveProxies="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_fmSF-96vEei97MD7GK1RmA" name="EInvocationTargetException" instanceClassName="java.lang.reflect.InvocationTargetException" serializable="false"/>
+</ecore:EPackage>

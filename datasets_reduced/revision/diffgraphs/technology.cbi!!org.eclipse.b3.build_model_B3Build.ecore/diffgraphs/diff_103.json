@@ -1,0 +1,30 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_B7PmEd60Eei97MD7GK1RmA', 'name':'fragmentHosts','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'FragmentHost','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4a5e6d99 (expression: FragmentHost)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'BuildUnit','containment':'true','container':'false','resolveProxies':'true','eReferenceType':'FragmentHost'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_B7Pn1t60Eei97MD7GK1RmA', 'name':'FragmentHost','ePackage':'build','abstract':'false','interface':'false','eStructuralFeatures':['hostRequirements']}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_B7Pn1960Eei97MD7GK1RmA', 'name':'hostRequirements','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'RequiredCapability','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5a2034b3 (expression: RequiredCapability)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'FragmentHost','containment':'true','container':'false','resolveProxies':'true','eReferenceType':'RequiredCapability'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_LS_N4t6zEei97MD7GK1RmA', 'name':'BuildUnit','ePackage':'build','abstract':'false','interface':'false','eOperations':['getEffectiveFacade','getUnitProvider'],'eStructuralFeatures':['builders','documentation','executionMode','metaRequiredCapabilities','implements','concerns','defaultProperties','synchronizations','repositories','containers','propertySets','sourceLocation','outputLocation','...'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@384b61a0 (expression: VersionedCapability)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@299f0f34 (expression: BFunctionContainer)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@5c4deb8e (expression: IRequiredCapabilityContainer)','...']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_LS_N4d6zEei97MD7GK1RmA', 'name':'build','nsURI':'http://b3build/1.0','nsPrefix':'','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@22cbbc8b','eClassifiers':['BuildUnit','IBuilder','VersionRange','Version','VersionedCapability','BuilderInput','PathGroup','BuilderInputDecorator','BuilderCall','Capability','RequiredCapability','ConditionalPathVector','PathVector','...']}}" 
+}], 
+ "links": [{
+	 "source": "1", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "3", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "4", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+}]}

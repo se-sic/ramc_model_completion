@@ -1,0 +1,590 @@
+----------------------------------------------------------------------------------------------------
+0 3 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "ePackage": "aggregator",
+    "eStructuralFeatures": [
+      "name",
+      "email",
+      "aggregator"
+    ],
+    "id": "_XTVh8t6wEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "Contact"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "true",
+    "containment": "false",
+    "derived": "false",
+    "eContainingClass": "Contact",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@60631ca2 (expression: Aggregation)",
+    "eOpposite": "contacts",
+    "eReferenceType": "Aggregation",
+    "eType": "Aggregation",
+    "id": "_XTVh996wEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "aggregator",
+    "ordered": "true",
+    "required": "true",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EReference",
+  "type": "object"
+}
+3 2 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eOpposite",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "Aggregation",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@5e5bb088 (expression: Contact)",
+    "eKeys": [
+      "email"
+    ],
+    "eOpposite": "aggregator",
+    "eReferenceType": "Contact",
+    "eType": "Contact",
+    "id": "_XTVhv96wEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "true",
+    "name": "contacts",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "-1",
+    "volatile": "false"
+  },
+  "changeType": "Preserve",
+  "className": "EReference",
+  "type": "object"
+}
+2 3 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eOpposite",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{}
+1 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOpposite",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "changeable": "true",
+    "container": "true",
+    "containment": "false",
+    "derived": "false",
+    "eContainingClass": "Contact",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@43aebc35 (expression: Aggregation)",
+    "eOpposite": "contacts",
+    "eReferenceType": "Aggregation",
+    "eType": "Aggregation",
+    "id": "_lEbTOt6wEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "aggregation",
+    "ordered": "true",
+    "required": "true",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EReference",
+  "type": "object"
+} 
+ Target Node:{}
+0 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{}
+2 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOpposite",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{}
+----------------------------------------------------------------------------------------------------
+0 1 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "ePackage": "aggregator",
+    "eStructuralFeatures": [
+      "contributions"
+    ],
+    "id": "_k7c-Q96wEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "AggregateView"
+  },
+  "changeType": "Remove",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "AggregateView",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@3ef6ec01 (expression: Contribution)",
+    "eKeys": [
+      "label"
+    ],
+    "eReferenceType": "Contribution",
+    "eType": "Contribution",
+    "id": "_k7c-RN6wEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "true",
+    "name": "contributions",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "-1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EReference",
+  "type": "object"
+}
+1 2 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eKeys",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "derived": "false",
+    "eAttributeType": "EString",
+    "eContainingClass": "Contribution",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@7cdbba80 (expression: EString)",
+    "eType": "EString",
+    "iD": "false",
+    "id": "_XTVh7d6wEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "label",
+    "ordered": "true",
+    "required": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Preserve",
+  "className": "EAttribute",
+  "type": "object"
+}
+3 0 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eClassifiers",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "eClassifiers": [
+      "Aggregator",
+      "Aggregate",
+      "MappedRepository",
+      "Configuration",
+      "Contribution",
+      "Contact",
+      "Feature",
+      "Bundle",
+      "MappedUnit",
+      "Product",
+      "Property",
+      "AggregationType",
+      "OperatingSystem",
+      "WindowSystem",
+      "Architecture",
+      "..."
+    ],
+    "eFactoryInstance": "org.eclipse.emf.ecore.impl.EFactoryImpl@2721b6d4",
+    "eSubpackages": [
+      "p2view"
+    ],
+    "id": "_XTVhsd6wEei97MD7GK1RmA",
+    "name": "aggregator",
+    "nsPrefix": "aggregator",
+    "nsURI": "http://www.eclipse.org/b3/2010/aggregator/1.0.0"
+  },
+  "changeType": "Preserve",
+  "className": "EPackage",
+  "type": "object"
+} 
+ Target Node:{}
+----------------------------------------------------------------------------------------------------
+0 3 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "ePackage": "aggregator",
+    "eStructuralFeatures": [
+      "name",
+      "email",
+      "aggregator"
+    ],
+    "id": "_XTVh8t6wEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "Contact"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "true",
+    "containment": "false",
+    "derived": "false",
+    "eContainingClass": "Contact",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@60631ca2 (expression: Aggregation)",
+    "eOpposite": "contacts",
+    "eReferenceType": "Aggregation",
+    "eType": "Aggregation",
+    "id": "_XTVh996wEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "aggregator",
+    "ordered": "true",
+    "required": "true",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EReference",
+  "type": "object"
+}
+3 2 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eOpposite",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "Aggregation",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@5e5bb088 (expression: Contact)",
+    "eKeys": [
+      "email"
+    ],
+    "eOpposite": "aggregator",
+    "eReferenceType": "Contact",
+    "eType": "Contact",
+    "id": "_XTVhv96wEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "true",
+    "name": "contacts",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "-1",
+    "volatile": "false"
+  },
+  "changeType": "Preserve",
+  "className": "EReference",
+  "type": "object"
+}
+2 3 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eOpposite",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{}
+1 2 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOpposite",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "changeable": "true",
+    "container": "true",
+    "containment": "false",
+    "derived": "false",
+    "eContainingClass": "Contact",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@43aebc35 (expression: Aggregation)",
+    "eOpposite": "contacts",
+    "eReferenceType": "Aggregation",
+    "eType": "Aggregation",
+    "id": "_lEbTOt6wEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "aggregation",
+    "ordered": "true",
+    "required": "true",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Add",
+  "className": "EReference",
+  "type": "object"
+} 
+ Target Node:{}
+0 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{}
+2 1 
+ Edge: {
+  "changeType": "Add",
+  "referenceTypeName": "eOpposite",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{}
+----------------------------------------------------------------------------------------------------
+0 1 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eStructuralFeatures",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "false",
+    "ePackage": "aggregator",
+    "eStructuralFeatures": [
+      "contributions"
+    ],
+    "id": "_k7c-Q96wEei97MD7GK1RmA",
+    "interface": "false",
+    "name": "AggregateView"
+  },
+  "changeType": "Remove",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "container": "false",
+    "containment": "true",
+    "derived": "false",
+    "eContainingClass": "AggregateView",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@3ef6ec01 (expression: Contribution)",
+    "eKeys": [
+      "label"
+    ],
+    "eReferenceType": "Contribution",
+    "eType": "Contribution",
+    "id": "_k7c-RN6wEei97MD7GK1RmA",
+    "lowerBound": "0",
+    "many": "true",
+    "name": "contributions",
+    "ordered": "true",
+    "required": "false",
+    "resolveProxies": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "-1",
+    "volatile": "false"
+  },
+  "changeType": "Remove",
+  "className": "EReference",
+  "type": "object"
+}
+1 2 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eKeys",
+  "type": "reference"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributes": {
+    "changeable": "true",
+    "derived": "false",
+    "eAttributeType": "EString",
+    "eContainingClass": "Contribution",
+    "eGenericType": "org.eclipse.emf.ecore.impl.EGenericTypeImpl@7cdbba80 (expression: EString)",
+    "eType": "EString",
+    "iD": "false",
+    "id": "_XTVh7d6wEei97MD7GK1RmA",
+    "lowerBound": "1",
+    "many": "false",
+    "name": "label",
+    "ordered": "true",
+    "required": "true",
+    "transient": "false",
+    "unique": "true",
+    "unsettable": "false",
+    "upperBound": "1",
+    "volatile": "false"
+  },
+  "changeType": "Preserve",
+  "className": "EAttribute",
+  "type": "object"
+}
+3 0 
+ Edge: {
+  "changeType": "Remove",
+  "referenceTypeName": "eClassifiers",
+  "type": "reference"
+} 
+ Source Node: {
+  "attributes": {
+    "eClassifiers": [
+      "Aggregator",
+      "Aggregate",
+      "MappedRepository",
+      "Configuration",
+      "Contribution",
+      "Contact",
+      "Feature",
+      "Bundle",
+      "MappedUnit",
+      "Product",
+      "Property",
+      "AggregationType",
+      "OperatingSystem",
+      "WindowSystem",
+      "Architecture",
+      "..."
+    ],
+    "eFactoryInstance": "org.eclipse.emf.ecore.impl.EFactoryImpl@2721b6d4",
+    "eSubpackages": [
+      "p2view"
+    ],
+    "id": "_XTVhsd6wEei97MD7GK1RmA",
+    "name": "aggregator",
+    "nsPrefix": "aggregator",
+    "nsURI": "http://www.eclipse.org/b3/2010/aggregator/1.0.0"
+  },
+  "changeType": "Preserve",
+  "className": "EPackage",
+  "type": "object"
+} 
+ Target Node:{}
+----------------------------------------------------------------------------------------------------
+2 1 
+ Edge: {
+  "changeType": "Change",
+  "type": "attribute"
+} 
+ Source Node: {
+  "attributes": {
+    "abstract": "true",
+    "ePackage": "aggregator",
+    "eStructuralFeatures": [
+      "aggregation"
+    ],
+    "id": "_k4xdnN6wEei97MD7GK1RmA",
+    "interface": "true",
+    "name": "Separable"
+  },
+  "changeType": "Preserve",
+  "className": "EClass",
+  "type": "object"
+} 
+ Target Node:{
+  "attributeName": "interface",
+  "changeType": "Change",
+  "className": "EClass",
+  "type": "attributeValue",
+  "valueAfter": "false",
+  "valueBefore": "true"
+}
+--------------------------------------------------COMPLETION--------------------------------------------------
+2 0 
+ Edge: {
+  "changeType": "Change",
+  "type": "attribute"
+} 
+ Source Node: {} 
+ Target Node:{
+  "attributeName": "abstract",
+  "changeType": "Change",
+  "className": "EClass",
+  "type": "attributeValue",
+  "valueAfter": "false",
+  "valueBefore": "true"
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_ZzbnQN6tEei97MD7GK1RmA" name="ecp" nsURI="http://ecp/1.0" nsPrefix="ecp">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnQd6tEei97MD7GK1RmA" name="Project">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnQt6tEei97MD7GK1RmA" name="repository" lowerBound="1" eType="_ZzbnRd6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZzbnQ96tEei97MD7GK1RmA" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZzbnRN6tEei97MD7GK1RmA" name="properties" eType="_ZzbnYN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnRd6tEei97MD7GK1RmA" name="Repository">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnRt6tEei97MD7GK1RmA" name="provider" lowerBound="1" eType="_ZzbnSd6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZzbnR96tEei97MD7GK1RmA" name="name"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZzbnSN6tEei97MD7GK1RmA" name="properties" eType="_ZzbnYN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnSd6tEei97MD7GK1RmA" name="Provider" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnSt6tEei97MD7GK1RmA" name="ProviderRegistry">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnS96tEei97MD7GK1RmA" name="providers" upperBound="-1" eType="_ZzbnSd6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZzbnTN6tEei97MD7GK1RmA" name="INSTANCE"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnTd6tEei97MD7GK1RmA" name="WorkspaceProvider" eSuperTypes="_ZzbnSd6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnTt6tEei97MD7GK1RmA" name="EMFStoreProvider" eSuperTypes="_ZzbnSd6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnT96tEei97MD7GK1RmA" name="CDOProvider" eSuperTypes="_ZzbnSd6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnUN6tEei97MD7GK1RmA" name="RepositoryManager">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnUd6tEei97MD7GK1RmA" name="repositories" upperBound="-1" eType="_ZzbnRd6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZzbnUt6tEei97MD7GK1RmA" name="INSTANCE"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnU96tEei97MD7GK1RmA" name="ProviderParser">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnVN6tEei97MD7GK1RmA" name="extensionPoint" lowerBound="1" eType="_ZzbnXt6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnVd6tEei97MD7GK1RmA" name="populates" lowerBound="1" eType="_ZzbnSt6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnVt6tEei97MD7GK1RmA" name="RepositoryParser">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnV96tEei97MD7GK1RmA" name="extensionPoint" lowerBound="1" eType="_ZzbnXd6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnWN6tEei97MD7GK1RmA" name="populates" lowerBound="1" eType="_ZzbnUN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnWd6tEei97MD7GK1RmA" name="ProjectManager">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnWt6tEei97MD7GK1RmA" name="projects" upperBound="-1" eType="_ZzbnQd6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZzbnW96tEei97MD7GK1RmA" name="INSTANCE"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnXN6tEei97MD7GK1RmA" name="ExtensionPoint" abstract="true" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnXd6tEei97MD7GK1RmA" name="repositories" eSuperTypes="_ZzbnXN6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnXt6tEei97MD7GK1RmA" name="providers" eSuperTypes="_ZzbnXN6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnX96tEei97MD7GK1RmA" name="uiProviders" eSuperTypes="_ZzbnXN6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EDataType" xmi:id="_ZzbnYN6tEei97MD7GK1RmA" name="Properties" instanceTypeName="java.util.Map&lt;String, String>"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnYd6tEei97MD7GK1RmA" name="UIProvider" abstract="true" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnYt6tEei97MD7GK1RmA" name="core" lowerBound="1" eType="_ZzbnSd6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnY96tEei97MD7GK1RmA" name="UIProviderRegistry">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_ZzbnZN6tEei97MD7GK1RmA" name="INSTANCE"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnZd6tEei97MD7GK1RmA" name="uiProviders" upperBound="-1" eType="_ZzbnYd6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_ZzbnZt6tEei97MD7GK1RmA" name="UIProviderParser">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnZ96tEei97MD7GK1RmA" name="extensionPoint" lowerBound="1" eType="_ZzbnX96tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_ZzbnaN6tEei97MD7GK1RmA" name="populates" lowerBound="1" eType="_ZzbnY96tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zzbnad6tEei97MD7GK1RmA" name="CDOUIProvider" eSuperTypes="_ZzbnYd6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zzbnat6tEei97MD7GK1RmA" name="WorkspaceUIProvider" eSuperTypes="_ZzbnYd6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_Zzbna96tEei97MD7GK1RmA" name="EMFStoreUIProvider" eSuperTypes="_ZzbnYd6tEei97MD7GK1RmA"/>
+</ecore:EPackage>

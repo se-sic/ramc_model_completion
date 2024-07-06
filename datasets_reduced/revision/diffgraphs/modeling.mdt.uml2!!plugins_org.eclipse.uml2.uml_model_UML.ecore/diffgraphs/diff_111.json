@@ -1,0 +1,172 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_1u0W5d6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@8fb48dc (key: documentation, value: The query allNamespaces() gives the sequence of Namespaces in which the NamedElement is nested, working outwards.\\nresult = (if owner.oclIsKindOf(TemplateParameter) and\\n  owner.oclAsType(TemplateParameter).signature.template.oclIsKindOf(Namespace) then\\n    let enclosingNamespace : Namespace =\\n      owner.oclAsType(TemplateParameter).signature.template.oclAsType(Namespace) in\\n        enclosingNamespace.allNamespaces()->prepend(enclosingNamespace)\\nelse\\n  if namespace->isEmpty()\\n    then OrderedSet{}\\n  else\\n    namespace.allNamespaces()->prepend(namespace)\\n  endif\\nendif)\\n<p>From package UML::CommonStructure.</p>)'],'eModelElement':'allNamespaces'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_1u0W5t6tEei97MD7GK1RmA', 'key':'documentation','value':'The query allNamespaces() gives the sequence of Namespaces in which the NamedElement is nested, working outwards.\\nresult = (if owner.oclIsKindOf(TemplateParameter) and\\n  owner.oclAsType(TemplateParame'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_1u0bjt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@427d2e36 (key: documentation, value: The query isCompatibleWith() determines if this Property is compatible with the specified ParameterableElement. This Property is compatible with ParameterableElement p if the kind of this Property is thesame as or a subtype of the kind of p. Further, if p is a TypedElement, then the type of this Property must be conformant with the type of p.\\nresult = (self.oclIsKindOf(p.oclType()) and (p.oclIsKindOf(TypeElement) implies\\r\\nself.type.conformsTo(p.oclAsType(TypedElement).type)))\\n<p>From package UML::Classification.</p>)'],'eModelElement':'isCompatibleWith'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_1u0bj96tEei97MD7GK1RmA', 'key':'documentation','value':'The query isCompatibleWith() determines if this Property is compatible with the specified ParameterableElement. This Property is compatible with ParameterableElement p if the kind of this Property is '}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_1u0gFd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@45624ad3 (key: documentation, value: The query returnResult() returns the set containing the return parameter of the Operation if one exists, otherwise, it returns an empty set\\nresult = (ownedParameter->select (direction = ParameterDirectionKind::return))\\n<p>From package UML::Classification.</p>)'],'eModelElement':'returnResult'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_1u0gFt6tEei97MD7GK1RmA', 'key':'documentation','value':'The query returnResult() returns the set containing the return parameter of the Operation if one exists, otherwise, it returns an empty set\\nresult = (ownedParameter->select (direction = ParameterDirec'}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_1u0oKt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@638668ae (key: documentation, value: Derivation for StructuredClassifier::/part\\nresult = (ownedAttribute->select(isComposite))\\n<p>From package UML::StructuredClassifiers.</p>)','...'],'eModelElement':'getParts'}}" 
+},{
+	 "id": "7", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_1u0oK96tEei97MD7GK1RmA', 'key':'documentation','value':'Derivation for StructuredClassifier::/part\\nresult = (ownedAttribute->select(isComposite))\\n<p>From package UML::StructuredClassifiers.</p>'}}" 
+},{
+	 "id": "8", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_1u0oLN6tEei97MD7GK1RmA', 'key':'suppressedVisibility','value':'true'}}" 
+},{
+	 "id": "9", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_2ZAGTd6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7b9b645a (key: documentation, value: If a lifeline is in an Interaction referred to by an InteractionUse in an enclosing Interaction,  and that lifeline is common with another lifeline in an Interaction referred to by another InteractonUse within that same enclosing Interaction, it must be common to a lifeline within that enclosing Interaction. By common Lifelines we mean Lifelines with the same selector and represents associations.\\nlet intUses : Set(InteractionUse) = interaction.interactionUse  in \\r\\nintUses->forAll\\r\\n( iuse : InteractionUse | \\r\\nlet usingInteraction : Set(Interaction)  = iuse.enclosingInteraction->asSet()\\r\\n->union(\\r\\niuse.enclosingOperand.combinedFragment->asSet()->closure(enclosingOperand.combinedFragment).enclosingInteraction->asSet()\\r\\n               ) \\r\\nin\\r\\nlet peerUses : Set(InteractionUse) = usingInteraction.fragment->select(oclIsKindOf(InteractionUse)).oclAsType(InteractionUse)->asSet()\\r\\n->union(\\r\\nusingInteraction.fragment->select(oclIsKindOf(CombinedFragment)).oclAsType(CombinedFragment)->asSet()\\r\\n->closure(operand.fragment->select(oclIsKindOf(CombinedFragment)).oclAsType(CombinedFragment)).operand.fragment->\\r\\nselect(oclIsKindOf(InteractionUse)).oclAsType(InteractionUse)->asSet()\\r\\n               )->excluding(iuse)\\r\\n in\\r\\npeerUses->forAll( peerUse : InteractionUse |\\r\\n peerUse.refersTo.lifeline->forAll( l : Lifeline | (l.represents = self.represents and \\r\\n ( self.selector.oclIsKindOf(LiteralString) implies\\r\\n  l.selector.oclIsKindOf(LiteralString) and \\r\\n  self.selector.oclAsType(LiteralString).value = l.selector.oclAsType(LiteralString).value )\\r\\n  and \\r\\n( self.selector.oclIsKindOf(LiteralInteger) implies\\r\\n  l.selector.oclIsKindOf(LiteralInteger) and \\r\\n  self.selector.oclAsType(LiteralInteger).value = l.selector.oclAsType(LiteralInteger).value )\\r\\n)  \\r\\nimplies\\r\\n usingInteraction.lifeline->select(represents = self.represents and\\r\\n ( self.selector.oclIsKindOf(LiteralString) implies\\r\\n  l.selector.oclIsKindOf(LiteralString) and \\r\\n  self.selector.oclAsType(LiteralString).value = l.selector.oclAsType(LiteralString).value )\\r\\nand \\r\\n( self.selector.oclIsKindOf(LiteralInteger) implies\\r\\n  l.selector.oclIsKindOf(LiteralInteger) and \\r\\n  self.selector.oclAsType(LiteralInteger).value = l.selector.oclAsType(LiteralInteger).value )\\r\\n)\\r\\n                                                )\\r\\n                    )\\r\\n))'],'eModelElement':'interaction_uses_share_lifeline'}}" 
+},{
+	 "id": "10", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_2ZAGTt6tEei97MD7GK1RmA', 'key':'documentation','value':'If a lifeline is in an Interaction referred to by an InteractionUse in an enclosing Interaction,  and that lifeline is common with another lifeline in an Interaction referred to by another InteractonU'}}" 
+},{
+	 "id": "11", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_3CIY996tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@48693d3d (key: documentation, value: The query allNamespaces() gives the sequence of Namespaces in which the NamedElement is nested, working outwards.\\nresult = (\\nif owner = null\\n  then OrderedSet{}\\nelse\\n  let enclosingNamespace : Namespace =\\n    if owner.oclIsKindOf(TemplateParameter) and owner.oclAsType(TemplateParameter).signature.template.oclIsKindOf(Namespace)\\n      then owner.oclAsType(TemplateParameter).signature.template.oclAsType(Namespace)\\n    else\\n      namespace\\n    endif\\n  in enclosingNamespace.allNamespaces()->prepend(enclosingNamespace)\\nendif)\\n<p>From package UML::CommonStructure.</p>)'],'eModelElement':'allNamespaces'}}" 
+},{
+	 "id": "12", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_3CIY-N6tEei97MD7GK1RmA', 'key':'documentation','value':'The query allNamespaces() gives the sequence of Namespaces in which the NamedElement is nested, working outwards.\\nresult = (\\nif owner = null\\n  then OrderedSet{}\\nelse\\n  let enclosingNamespace : Namespa'}}" 
+},{
+	 "id": "13", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_3CIdrt6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@4e62df90 (key: documentation, value: The query isCompatibleWith() determines if this Property is compatible with the specified ParameterableElement. This Property is compatible with ParameterableElement p if the kind of this Property is thesame as or a subtype of the kind of p. Further, if p is a TypedElement, then the type of this Property must be conformant with the type of p.\\nresult = (self.oclIsKindOf(p.oclType()) and (p.oclIsKindOf(TypedElement) implies\\r\\nself.type.conformsTo(p.oclAsType(TypedElement).type)))\\n<p>From package UML::Classification.</p>)'],'eModelElement':'isCompatibleWith'}}" 
+},{
+	 "id": "14", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_3CIdr96tEei97MD7GK1RmA', 'key':'documentation','value':'The query isCompatibleWith() determines if this Property is compatible with the specified ParameterableElement. This Property is compatible with ParameterableElement p if the kind of this Property is '}}" 
+},{
+	 "id": "15", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_3CIiR96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@49498a30 (key: documentation, value: The query returnResult() returns the set containing the return parameter of the Operation if one exists, otherwise, it returns an empty set\\nresult = (ownedParameter->select (direction = ParameterDirectionKind::return)->asSet())\\n<p>From package UML::Classification.</p>)'],'eModelElement':'returnResult'}}" 
+},{
+	 "id": "16", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_3CIiSN6tEei97MD7GK1RmA', 'key':'documentation','value':'The query returnResult() returns the set containing the return parameter of the Operation if one exists, otherwise, it returns an empty set\\nresult = (ownedParameter->select (direction = ParameterDirec'}}" 
+},{
+	 "id": "17", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_3CIqbN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@1af03aaa (key: documentation, value: Derivation for StructuredClassifier::/part\\nresult = (ownedAttribute->select(isComposite)->asSet())\\n<p>From package UML::StructuredClassifiers.</p>)','...'],'eModelElement':'getParts'}}" 
+},{
+	 "id": "18", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_3CIqbt6tEei97MD7GK1RmA', 'key':'suppressedVisibility','value':'true'}}" 
+},{
+	 "id": "19", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_3CIqbd6tEei97MD7GK1RmA', 'key':'documentation','value':'Derivation for StructuredClassifier::/part\\nresult = (ownedAttribute->select(isComposite)->asSet())\\n<p>From package UML::StructuredClassifiers.</p>'}}" 
+},{
+	 "id": "20", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_3CQ5oN6tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@10540c12 (key: documentation, value: If a lifeline is in an Interaction referred to by an InteractionUse in an enclosing Interaction,  and that lifeline is common with another lifeline in an Interaction referred to by another InteractonUse within that same enclosing Interaction, it must be common to a lifeline within that enclosing Interaction. By common Lifelines we mean Lifelines with the same selector and represents associations.\\nlet intUses : Set(InteractionUse) = interaction.interactionUse  in \\r\\nintUses->forAll\\r\\n( iuse : InteractionUse | \\r\\nlet usingInteraction : Set(Interaction)  = iuse.enclosingInteraction->asSet()\\r\\n->union(\\r\\niuse.enclosingOperand.combinedFragment->asSet()->closure(enclosingOperand.combinedFragment).enclosingInteraction->asSet()\\r\\n               ) \\r\\nin\\r\\nlet peerUses : Set(InteractionUse) = usingInteraction.fragment->select(oclIsKindOf(InteractionUse)).oclAsType(InteractionUse)->asSet()\\r\\n->union(\\r\\nusingInteraction.fragment->select(oclIsKindOf(CombinedFragment)).oclAsType(CombinedFragment)->asSet()\\r\\n->closure(operand.fragment->select(oclIsKindOf(CombinedFragment)).oclAsType(CombinedFragment)).operand.fragment->\\r\\nselect(oclIsKindOf(InteractionUse)).oclAsType(InteractionUse)->asSet()\\r\\n               )->excluding(iuse)\\r\\n in\\r\\npeerUses->forAll( peerUse : InteractionUse |\\r\\n peerUse.refersTo.lifeline->forAll( l : Lifeline | (l.represents = self.represents and \\r\\n ( self.selector.oclIsKindOf(LiteralString) implies\\r\\n  l.selector.oclIsKindOf(LiteralString) and \\r\\n  self.selector.oclAsType(LiteralString).value = l.selector.oclAsType(LiteralString).value )\\r\\n  and \\r\\n( self.selector.oclIsKindOf(LiteralInteger) implies\\r\\n  l.selector.oclIsKindOf(LiteralInteger) and \\r\\n  self.selector.oclAsType(LiteralInteger).value = l.selector.oclAsType(LiteralInteger).value )\\r\\n)  \\r\\nimplies\\r\\n usingInteraction.lifeline->exists(represents = self.represents and\\r\\n ( self.selector.oclIsKindOf(LiteralString) implies\\r\\n  l.selector.oclIsKindOf(LiteralString) and \\r\\n  self.selector.oclAsType(LiteralString).value = l.selector.oclAsType(LiteralString).value )\\r\\nand \\r\\n( self.selector.oclIsKindOf(LiteralInteger) implies\\r\\n  l.selector.oclIsKindOf(LiteralInteger) and \\r\\n  self.selector.oclAsType(LiteralInteger).value = l.selector.oclAsType(LiteralInteger).value )\\r\\n)\\r\\n                                                )\\r\\n                    )\\r\\n))'],'eModelElement':'interaction_uses_share_lifeline'}}" 
+},{
+	 "id": "21", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_3CQ5od6tEei97MD7GK1RmA', 'key':'documentation','value':'If a lifeline is in an Interaction referred to by an InteractionUse in an enclosing Interaction,  and that lifeline is common with another lifeline in an Interaction referred to by another InteractonU'}}" 
+},{
+	 "id": "22", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftgaAd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@2a6cbd97 (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'returnResult','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'Parameter','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@5a383dab (expression: Parameter)','eContainingClass':'Operation'}}" 
+},{
+	 "id": "23", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_fthDBt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@525d4eea (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'interaction_uses_share_lifeline','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EBoolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@3e465864 (expression: EBoolean)','eContainingClass':'Lifeline','eParameters':['diagnostics','context']}}" 
+},{
+	 "id": "24", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_ftfLld6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@32d2426a (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'allNamespaces','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'Namespace','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@32dcf904 (expression: Namespace)','eContainingClass':'NamedElement'}}" 
+},{
+	 "id": "25", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_wIHLxt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@540a8929 (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@3cf28dd0 (source: http://www.eclipse.org/uml2/2.0.0/UML)'],'name':'getParts','ordered':'false','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'Property','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@51e936f1 (expression: Property)','eContainingClass':'StructuredClassifier'}}" 
+},{
+	 "id": "26", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_hs3Hu96tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@6221122c (source: http://www.eclipse.org/emf/2002/GenModel)','org.eclipse.emf.ecore.impl.EAnnotationImpl@4960703c (source: redefines)'],'name':'isCompatibleWith','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@af72695 (expression: Boolean)','eParameters':['p']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "2", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "4", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "6", 
+	 "target": "7", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "6", 
+	 "target": "8", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "9", 
+	 "target": "10", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "11", 
+	 "target": "12", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "13", 
+	 "target": "14", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "15", 
+	 "target": "16", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "17", 
+	 "target": "18", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "17", 
+	 "target": "19", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "20", 
+	 "target": "21", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "22", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "22", 
+	 "target": "15", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "23", 
+	 "target": "9", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "23", 
+	 "target": "20", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "24", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "24", 
+	 "target": "11", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "25", 
+	 "target": "6", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "25", 
+	 "target": "17", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "26", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "26", 
+	 "target": "13", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+}]}

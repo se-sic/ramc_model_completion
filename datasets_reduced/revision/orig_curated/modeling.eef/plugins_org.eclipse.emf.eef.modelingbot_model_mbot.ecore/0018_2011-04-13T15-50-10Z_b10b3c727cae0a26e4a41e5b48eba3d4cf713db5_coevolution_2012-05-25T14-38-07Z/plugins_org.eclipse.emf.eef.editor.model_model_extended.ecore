@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_Xcdxx96tEei97MD7GK1RmA" name="extended" nsURI="http://www.eclipse.org/emf/eef/extended" nsPrefix="eef-ext">
+  <eSubpackages xmi:id="_XcdxyN6tEei97MD7GK1RmA" name="editor" nsURI="http://www.eclipse.org/emf/eef/extended/editor/1.0.0" nsPrefix="eef-ext-edt">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdxyd6tEei97MD7GK1RmA" name="EEFEditorContribution" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Xcdxyt6tEei97MD7GK1RmA" name="input" lowerBound="1" eType="_Xcdx2d6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdxy96tEei97MD7GK1RmA" name="EEFPage" abstract="true">
+      <eSuperTypes href="plugins_org.eclipse.emf.eef.views_model_views.ecore#_XcwsRN6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_XcdxzN6tEei97MD7GK1RmA" name="title">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdxz96tEei97MD7GK1RmA" name="StandardFormPage" eSuperTypes="_Xcdxy96tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx0N6tEei97MD7GK1RmA" name="MasterDetailsPage" abstract="true" eSuperTypes="_Xcdxy96tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx0d6tEei97MD7GK1RmA" name="EEFMasterPage" eSuperTypes="_Xcdx0N6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Xcdx0t6tEei97MD7GK1RmA" name="orientable">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdwvN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Xcdx1N6tEei97MD7GK1RmA" name="showValidatePage">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdwvN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx1t6tEei97MD7GK1RmA" name="TreeMasterPage" eSuperTypes="_Xcdx0N6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Xcdx196tEei97MD7GK1RmA" name="toolbarVisible">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdwvN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx2d6tEei97MD7GK1RmA" name="EEFPageInput" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Xcdx2t6tEei97MD7GK1RmA" name="query" eType="_Xcdx7N6tEei97MD7GK1RmA" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx296tEei97MD7GK1RmA" name="AllResourcesRootsRelativeInput" eSuperTypes="_Xcdx2d6tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx3N6tEei97MD7GK1RmA" name="FirstResourceRootRelativeInput" eSuperTypes="_Xcdx2d6tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx3d6tEei97MD7GK1RmA" name="PartFilter">
+      <eSuperTypes href="plugins_org.eclipse.emf.eef.mapping_model_mapping.ecore#_Xcm6Gt6tEei97MD7GK1RmA"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Xcdx3t6tEei97MD7GK1RmA" name="filteredPart" lowerBound="1">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.eef.views_model_views.ecore#_XcwsRN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Xcdx4N6tEei97MD7GK1RmA" name="contextualComponent">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.eef.components_model_components.ecore#_Xcdxud6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx496tEei97MD7GK1RmA" name="EEFEditorContributions">
+      <eSuperTypes href="plugins_org.eclipse.emf.eef.mapping_model_mapping.ecore#_Xcm5-t6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx5d6tEei97MD7GK1RmA" name="EEFEditorPages">
+      <eSuperTypes href="plugins_org.eclipse.emf.eef.views_model_views.ecore#_XcwsTN6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx596tEei97MD7GK1RmA" name="StaticEEFEditorContribution">
+      <eSuperTypes href="plugins_org.eclipse.emf.eef.mapping_model_mapping.ecore#_Xcm52d6tEei97MD7GK1RmA"/>
+      <eSuperTypes href="#_Xcdxyd6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx6d6tEei97MD7GK1RmA" name="DynamicEEFEditorContribution">
+      <eSuperTypes href="plugins_org.eclipse.emf.eef.mapping_model_mapping.ecore#_Xcm5796tEei97MD7GK1RmA"/>
+      <eSuperTypes href="#_Xcdxyd6tEei97MD7GK1RmA"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_XlHXm96tEei97MD7GK1RmA" name="ReferenceableObject"/>
+  </eSubpackages>
+  <eSubpackages xmi:id="_Xcdx696tEei97MD7GK1RmA" name="query" nsURI="http://www.eclipse.org/emf/eef/extended/query/1.0.0" nsPrefix="eef-ext-qry">
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx7N6tEei97MD7GK1RmA" name="EEFUnderstandableQuery" abstract="true" eSuperTypes="_XlHXm96tEei97MD7GK1RmA"/>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx7d6tEei97MD7GK1RmA" name="OCLQuery" eSuperTypes="_Xcdx7N6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_Xcdx7t6tEei97MD7GK1RmA" name="query" lowerBound="1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdxBN6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Xcdx8N6tEei97MD7GK1RmA" name="context" lowerBound="1">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_XcdwF96tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" xmi:id="_Xcdx8t6tEei97MD7GK1RmA" name="ExplicitPathQuery" eSuperTypes="_Xcdx7N6tEei97MD7GK1RmA">
+      <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_Xcdx896tEei97MD7GK1RmA" name="query" lowerBound="1">
+        <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.emf.eef.mapping_model_mapping.ecore#_Xcm6Ct6tEei97MD7GK1RmA"/>
+      </eStructuralFeatures>
+    </eClassifiers>
+  </eSubpackages>
+</ecore:EPackage>

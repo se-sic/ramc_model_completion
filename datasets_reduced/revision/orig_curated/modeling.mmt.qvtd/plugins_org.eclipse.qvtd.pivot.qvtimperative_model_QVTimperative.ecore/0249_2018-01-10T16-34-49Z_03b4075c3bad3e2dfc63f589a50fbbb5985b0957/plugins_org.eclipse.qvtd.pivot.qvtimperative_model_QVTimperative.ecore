@@ -1,0 +1,964 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_KFy-0N6vEei97MD7GK1RmA" name="qvtimperative" nsURI="http://www.eclipse.org/qvt/2016/QVTimperative" nsPrefix="qvti">
+  <eAnnotations xmi:id="_Nek4gd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+    <details xmi:id="_Nek4gt6vEei97MD7GK1RmA" key="documentation" value="The Package for an Imperative QVT transformation.&#xA;&#xA;An Imperative QVT trabsformation is expected to be created by an autogenerator that observes the following run-time restrictions:&#xA;&#xA;A mapping that my be re-invoked must have MappingCall.isInfinite set for every possible invocation.&#xA;&#xA;A mapping that reads object slots before they are guaranteed to have been assigned must declare the slots property in a corresponding ImperativeArea.checkedProperties entry.&#xA;&#xA;A mapping that assigns an object slot that any mapping may access before assignment is guaranteed must declare declare the slots property in a corresponding ImperativeArea.enforcedProperties entry.&#xA;&#xA;All reads by Functions/Queries must be guaranteed to succeed; i.e. the invoking mapping must check readiness before calling the query.&#xA;&#xA;All writes to multi-valued properties must be guaranteed to occur before any read of the property."/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_OJ8ww96vEei97MD7GK1RmA" source="http://www.eclipse.org/OCL/Import">
+    <details xmi:id="_OJ8wxN6vEei97MD7GK1RmA" key="qvtb" value="http://www.eclipse.org/qvt/2015/QVTbase"/>
+  </eAnnotations>
+  <eAnnotations xmi:id="_Noqopd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore">
+    <details xmi:id="_Noqopt6vEei97MD7GK1RmA" key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details xmi:id="_Noqop96vEei97MD7GK1RmA" key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details xmi:id="_NoqoqN6vEei97MD7GK1RmA" key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NS3Xxd6vEei97MD7GK1RmA" name="AddStatement" eSuperTypes="_K5nBkd6vEei97MD7GK1RmA _NZ3YBt6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek4ht6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4h96vEei97MD7GK1RmA" key="documentation" value="An AddStatement appends the value of an expression to a connection.&#xA;&#xA;syntax: oclText[add connection := expression;]"/>
+    </eAnnotations>
+    <eOperations xmi:id="_Np5Xut6vEei97MD7GK1RmA" name="validateCompatibleTypeForValue">
+      <eAnnotations xmi:id="_Np5Xu96vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_Np5XvN6vEei97MD7GK1RmA" key="originalName" value="CompatibleTypeForValue"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_Np5Xvd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_Np5Xvt6vEei97MD7GK1RmA" key="body" value="ownedExpression.type.conformsTo(targetVariable.type)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Np5XwN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_Np5Xwt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQdtN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQdtd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NS3XyN6vEei97MD7GK1RmA" name="targetVariable" lowerBound="1" eType="_NGV-yN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Nek4id6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4it6vEei97MD7GK1RmA" key="documentation" value="The connection to be appended."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NVtQb96vEei97MD7GK1RmA" name="isEnforcedUnique" lowerBound="1">
+      <eAnnotations xmi:id="_Nek4jN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4jd6vEei97MD7GK1RmA" key="documentation" value="True if the append is suppressed after a check for uniqueness of the value."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NZ3Xrd6vEei97MD7GK1RmA" name="ownedExpression" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_Nek4kN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4kd6vEei97MD7GK1RmA" key="documentation" value="The expression whose evaluation yields the value to append."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1swt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NbNbf96vEei97MD7GK1RmA" name="AppendParameter" eSuperTypes="_NGV-yN6vEei97MD7GK1RmA _NbNbzd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek4lN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4ld6vEei97MD7GK1RmA" key="documentation" value="An AppendParameter of a Mapping defines an output connection to which values may be appended.&#xA;&#xA;syntax: oclText[append name : type;]"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NcMS8t6vEei97MD7GK1RmA" name="AppendParameterBinding" eSuperTypes="_NcMTWd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek4l96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4mN6vEei97MD7GK1RmA" key="documentation" value="An AppendParameterBinding binds an AppendParameter of an invoked Mapping to a connection of the invoker.&#xA;Execution of the mapping may append to the connection.&#xA;&#xA;syntax: oclText[formalName appendsTo connection;]"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NcMS9d6vEei97MD7GK1RmA" name="value" lowerBound="1" eType="_NGV-yN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_NcMS9t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_NcMS996vEei97MD7GK1RmA" key="documentation" value="The value or collection of values to bind to boundVariable"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NcMS-N6vEei97MD7GK1RmA" name="BufferStatement" eSuperTypes="_NGV-yN6vEei97MD7GK1RmA _NVtQ696vEei97MD7GK1RmA _NZ3YBt6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek4nd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4nt6vEei97MD7GK1RmA" key="documentation" value="A BufferStatement declares a connection buffer and optionally assigns initial content.&#xA;&#xA;syntax: oclText[buffer name : type := expression;]&#xA;&#xA;oclText[type] or oclText[expression] but not both may be omitted. An omitted type is deduced from the initial expression values."/>
+    </eAnnotations>
+    <eOperations xmi:id="_NsVn1t6vEei97MD7GK1RmA" name="validateCompatibleTypeForValue">
+      <eAnnotations xmi:id="_NsVn196vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVn2N6vEei97MD7GK1RmA" key="originalName" value="CompatibleTypeForValue"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVn2d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVn2t6vEei97MD7GK1RmA" key="body" value="ownedExpression &lt;> null implies ownedExpression.type.oclAsType(ocl::CollectionType).elementType.conformsTo(type)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVn3N6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVn3t6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQd0N6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQd0d6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NZ3YDt6vEei97MD7GK1RmA" name="ownedExpression" containment="true">
+      <eAnnotations xmi:id="_Nek4oN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4od6vEei97MD7GK1RmA" key="documentation" value="The optional expression computing initial content values."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1swt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NVtQcd6vEei97MD7GK1RmA" name="CheckStatement" eSuperTypes="_NZ3YBt6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek4pN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4pd6vEei97MD7GK1RmA" key="documentation" value="A CheckStatement evaluates a predicate. If the evaluation is false, the mapping execution&#xA;terminates fails and does nothing.&#xA;&#xA;syntax: oclText[check expression;]"/>
+    </eAnnotations>
+    <eOperations xmi:id="_NsVn596vEei97MD7GK1RmA" name="validateTypeIsBoolean">
+      <eAnnotations xmi:id="_NsVn6N6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVn6d6vEei97MD7GK1RmA" key="originalName" value="TypeIsBoolean"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVn6t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVn696vEei97MD7GK1RmA" key="body" value="ownedExpression.type = Boolean&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVn7d6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVn796vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQd4d6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQd4t6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NZ3XsN6vEei97MD7GK1RmA" name="ownedExpression" lowerBound="1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1swt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NGV-yN6vEei97MD7GK1RmA" name="ConnectionVariable" abstract="true">
+    <eAnnotations xmi:id="_Nek4qd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4qt6vEei97MD7GK1RmA" key="documentation" value="A ConnectionVariable identifes a variable used as a connection buffer."/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1uw96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NhC93N6vEei97MD7GK1RmA" name="isStrict" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_NhC93d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_NhC93t6vEei97MD7GK1RmA" key="documentation" value="Duplicate elements in a strict ConnectionVariable are suppressed at run-time.&#xD;&#xA;&#xD;&#xA;Duplicate elements in a not-strict ConnectionVariable are guaranteed not to occur."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NY01696vEei97MD7GK1RmA" name="DeclareStatement" eSuperTypes="_NVtQ696vEei97MD7GK1RmA _NZ3YBt6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek4rd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4rt6vEei97MD7GK1RmA" key="documentation" value="A DeclareStatement declares a variable and initial value.&#xA;&#xA;syntax: oclText[check var name : type := expression;]&#xA;&#xA;oclText[type] or oclText[expression] but not both may be omitted. An omitted type is deduced from the initial expression values.&#xA;&#xA;oclText[check] may be omitted when the expression type is necessarily conformant."/>
+    </eAnnotations>
+    <eOperations xmi:id="_NsVn_N6vEei97MD7GK1RmA" name="validateCompatibleTypeForCheckedValue">
+      <eAnnotations xmi:id="_NsVn_d6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVn_t6vEei97MD7GK1RmA" key="originalName" value="CompatibleTypeForCheckedValue"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVn_96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVoAN6vEei97MD7GK1RmA" key="body" value="isCheck implies type.conformsTo(ownedExpression.type)&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVoAt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVoBN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQd9t6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQd996vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_NsVoCN6vEei97MD7GK1RmA" name="validateCompatibleTypeForUncheckedValue">
+      <eAnnotations xmi:id="_NsVoCd6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVoCt6vEei97MD7GK1RmA" key="originalName" value="CompatibleTypeForUncheckedValue"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVoC96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVoDN6vEei97MD7GK1RmA" key="body" value="not isCheck implies ownedExpression.type.conformsTo(type)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVoDt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVoEN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQeAt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQeA96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NcMTBd6vEei97MD7GK1RmA" name="isCheck" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_Nek4sN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4sd6vEei97MD7GK1RmA" key="documentation" value="True if the initial expression's type must be  checked for conformance with the variable's type.&#xA;A non-conforming vlaue is a predicate failure causing the mapping to fail without doing anything.&#xA;This is a derivation of not ownedInit.type.conformsTo(self.type)."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NZ3Xu96vEei97MD7GK1RmA" name="ownedExpression" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_Nek4tN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4td6vEei97MD7GK1RmA" key="documentation" value="The expression computing the variable's value."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1swt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NbNbkN6vEei97MD7GK1RmA" name="GuardParameter" eSuperTypes="_NbNbzd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek4uN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4ud6vEei97MD7GK1RmA" key="documentation" value="A GuardParameter of a Mapping defines a input at which a value is consumed from a connection.&#xA;&#xA;syntax: oclText[guard:typedModel name : type;]"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NVtQfd6vEei97MD7GK1RmA" name="referredTypedModel" lowerBound="1" eType="_NW5jXN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Nek4u96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4vN6vEei97MD7GK1RmA" key="documentation" value="The TypedModel that contains the passed value."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="F-qvtimperative-GuardParameter-successProperty" name="successProperty">
+      <eAnnotations xmi:id="_ORb5Pt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_ORb5P96vEei97MD7GK1RmA" key="documentation" value="The TypedModel that contains the passed value."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1tSd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NcMTD96vEei97MD7GK1RmA" name="GuardParameterBinding" eSuperTypes="_NcMTWd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek4vt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4v96vEei97MD7GK1RmA" key="documentation" value="A GuardParameterBinding binds a guard parameter of an invoked Mapping to a value of a connection.&#xA;Execution of the mapping may use the value. A distinct Mapping invocation occurs for each value&#xA;in the connection.&#xA;&#xA;syntax: oclText[formalName consumes expression;]"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NcMTEt6vEei97MD7GK1RmA" name="value" lowerBound="1" eType="_NGV-yN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Nek4wd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4wt6vEei97MD7GK1RmA" key="documentation" value="The connection providing the invocation values."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NcMTFd6vEei97MD7GK1RmA" name="isCheck" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_Nek4xN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4xd6vEei97MD7GK1RmA" key="documentation" value="True if each consumed value must be checked for conformance with the variable's type.&#xA;A non-conforming vlaue is a predicate failure causing the mapping invocation to fail without doing anything.&#xA;This is a derivation of not ownedInit.type.conformsTo(self.type)."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_KFy-0d6vEei97MD7GK1RmA" name="ImperativeModel">
+    <eAnnotations xmi:id="_KOx7uN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_KOx7ud6vEei97MD7GK1RmA" key="documentation" value="The Model of an Imperative QVT transformation."/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_KFy-7t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NgC4bN6vEei97MD7GK1RmA" name="ImperativeTransformation">
+    <eAnnotations xmi:id="_NgC4bd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_NgC4bt6vEei97MD7GK1RmA" key="documentation" value="An ImperativeTransfornmation distinguishes a QVTi transformation from other transformations."/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_KFy_Ed6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_NsVoKt6vEei97MD7GK1RmA" name="validateallRulesAreMappings">
+      <eAnnotations xmi:id="_NsVoK96vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVoLN6vEei97MD7GK1RmA" key="originalName" value="allRulesAreMappings"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVoLd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVoLt6vEei97MD7GK1RmA" key="body" value="rule->forAll(oclIsKindOf(Mapping))&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVoMN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVoMt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQeJ96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQeKN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NW5jXN6vEei97MD7GK1RmA" name="ImperativeTypedModel">
+    <eAnnotations xmi:id="_Nek4zN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4zd6vEei97MD7GK1RmA" key="documentation" value="An ImperativeTypedModel defines an input,middle or output modek for the transformation."/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_KFy_Id6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_NsVoOd6vEei97MD7GK1RmA" name="validateNameIsNotNull">
+      <eAnnotations xmi:id="_NsVoOt6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVoO96vEei97MD7GK1RmA" key="originalName" value="NameIsNotNull"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVoPN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVoPd6vEei97MD7GK1RmA" key="body" value="name &lt;> null&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVoP96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVoQd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQeNt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQeN96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_NsVoRd6vEei97MD7GK1RmA" name="validateNotBothCheckedAndEnforced">
+      <eAnnotations xmi:id="_NsVoRt6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVoR96vEei97MD7GK1RmA" key="originalName" value="NotBothCheckedAndEnforced"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVoSN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVoSd6vEei97MD7GK1RmA" key="body" value="not (isChecked and isEnforced)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVoS96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVoTd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQeQt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQeQ96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NW5jX96vEei97MD7GK1RmA" name="isChecked" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_Nek4z96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek40N6vEei97MD7GK1RmA" key="documentation" value="True for an input model."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NW5jYd6vEei97MD7GK1RmA" name="isEnforced" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_Nek4096vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek41N6vEei97MD7GK1RmA" key="documentation" value="True for an output model."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="F-qvtimperative-ImperativeTypedModel-allUsedPackages" name="allUsedPackages" ordered="false" upperBound="-1" changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations xmi:id="_NsVoV96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVoWN6vEei97MD7GK1RmA" key="derivation" value="usedPackage&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1tH96vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NcMTJd6vEei97MD7GK1RmA" name="LoopParameterBinding" eSuperTypes="_NcMTWd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek42N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek42d6vEei97MD7GK1RmA" key="documentation" value="A LoopParameterBinding binds a guard parameter of an invoked Mapping to the value of a loop variable&#xA;in the invoker. Execution of the mapping may use the value.&#xA;&#xA;syntax: oclText[formalName iterates expression;]&#xA;&#xA;Deprecated - WIP for a consuming stream"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NcMTKN6vEei97MD7GK1RmA" name="value" lowerBound="1" eType="_NVtQjt6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_NcMTKd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_NcMTKt6vEei97MD7GK1RmA" key="documentation" value="The value or collection of values to bind to boundVariable"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NcMTK96vEei97MD7GK1RmA" name="isCheck" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_NcMTLN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_NcMTLd6vEei97MD7GK1RmA" key="documentation" value="Whether the variable initialization needs to be checked as a predicate. This is a derivation of not ownedInit.type.conformsTo(self.type)."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NVtQjt6vEei97MD7GK1RmA" name="LoopVariable">
+    <eAnnotations xmi:id="_Nek44t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek4496vEei97MD7GK1RmA" key="documentation" value="A LoopVariable defines the iterator of a MappingLoop."/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1uw96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NVtQj96vEei97MD7GK1RmA" name="owningMappingLoop" lowerBound="1" eType="_K5nBid6vEei97MD7GK1RmA" eOpposite="_NAX5yt6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_KFy-096vEei97MD7GK1RmA" name="Mapping">
+    <eAnnotations xmi:id="_KOx7vN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_KOx7vd6vEei97MD7GK1RmA" key="documentation" value="An Imperative Mapping extends the abstract declarative mapping to support&#xA;explicit nested invocation of mappings with bindings for the invoked mapping's&#xA;bound variables."/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_KFy_Ct6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_NsVoad6vEei97MD7GK1RmA" name="validateNameIsNotNull">
+      <eAnnotations xmi:id="_NsVoat6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVoa96vEei97MD7GK1RmA" key="originalName" value="NameIsNotNull"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVobN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVobd6vEei97MD7GK1RmA" key="body" value="name &lt;> null&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVob96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVocd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQeZN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQeZd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_NsVodd6vEei97MD7GK1RmA" name="validateMappingParameterNamesAreUnique">
+      <eAnnotations xmi:id="_NsVodt6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVod96vEei97MD7GK1RmA" key="originalName" value="MappingParameterNamesAreUnique"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVoeN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVoed6vEei97MD7GK1RmA" key="body" value="ownedMappingParameters->isUnique(name)&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVoe96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVofd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQecN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQecd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_OMz4T96vEei97MD7GK1RmA" name="validateLocalVariableNamesAreUnique">
+      <eAnnotations xmi:id="_OMz4UN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_OMz4Ud6vEei97MD7GK1RmA" key="originalName" value="LocalVariableNamesAreUnique"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_OMz4Ut6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_OMz4U96vEei97MD7GK1RmA" key="body" value="ownedMappingParameters->union(ownedStatements->selectByKind(VariableStatement))->isUnique(name)&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_OMz4Vd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_OMz4V96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQefN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQefd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NhC-It6vEei97MD7GK1RmA" name="isStrict" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_NhC-I96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_NhC-JN6vEei97MD7GK1RmA" key="documentation" value="Repeated invocations of a strict Mapping are suppressed at run-time.&#xD;&#xA;&#xD;&#xA;Repeated invocations of a not-strict Mapping are guaranteed not to occur."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="F-qvtimperative-Mapping-ownedMappingParameters" name="ownedMappingParameters" ordered="false" upperBound="-1" eType="_NbNbzd6vEei97MD7GK1RmA" containment="true" eOpposite="F-qvtimperative-MappingParameter-owningMapping"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NQ7eUt6vEei97MD7GK1RmA" name="ownedStatements" upperBound="-1" eType="_NQ7el96vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_KFy-196vEei97MD7GK1RmA" name="MappingCall">
+    <eAnnotations xmi:id="_Nek47d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek47t6vEei97MD7GK1RmA" key="documentation" value="A MappingCall specifies the invocation of a referredMapping with a set of bindings.&#xA;An installed mapping is invoked asynchronously whenever suitable values are available on consumed connections.&#xA;An invoked mapping is invoked synchronously with values provided by the caller."/>
+    </eAnnotations>
+    <eSuperTypes href="#_K5nBkd6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1tqN6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_Np5YFt6vEei97MD7GK1RmA" name="validateMatchingCallBindings">
+      <eAnnotations xmi:id="_Np5YF96vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_Np5YGN6vEei97MD7GK1RmA" key="originalName" value="MatchingCallBindings"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_OBuCtN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_OBuCtd6vEei97MD7GK1RmA" key="body" value="Tuple {&#xA;&#x9;message : String = 'MappingCall::MatchingCallBindings: ' + referredMapping.name + joinNames(referredNames) + ' &lt;= ' + joinNames(referringNames),&#xA;&#x9;status : Boolean = referredNames = referringNames&#xA;&#xA;}.status"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Np5YHN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_Np5YHt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQejt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQej96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_NsVon96vEei97MD7GK1RmA" name="validateNotBothInstallAndInvoke">
+      <eAnnotations xmi:id="_NsVooN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVood6vEei97MD7GK1RmA" key="originalName" value="NotBothInstallAndInvoke"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVoot6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVoo96vEei97MD7GK1RmA" key="body" value="not (isInstall and isInvoke)&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVopd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVop96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQemt6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQem96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_Np5YIt6vEei97MD7GK1RmA" name="validateUniqueCallBindings">
+      <eAnnotations xmi:id="_Np5YI96vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_Np5YJN6vEei97MD7GK1RmA" key="originalName" value="UniqueCallBindings"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NrFq9d6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NrFq9t6vEei97MD7GK1RmA" key="body" value="ownedMappingParameterBindings->isUnique(boundVariable)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Np5YKN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_Np5YKt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQept6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQep96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="F-qvtimperative-MappingCall-ownedMappingParameterBindings" name="ownedMappingParameterBindings" upperBound="-1" eType="_NcMTWd6vEei97MD7GK1RmA" containment="true" eOpposite="F-qvtimperative-MappingParameterBinding-owningMappingCall">
+      <eAnnotations xmi:id="_NrFq_t6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_NrFq_96vEei97MD7GK1RmA" key="documentation" value="The Set of bindings of variables or expressions to forma parameters."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NcMTQt6vEei97MD7GK1RmA" name="isInstall" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_Nek4996vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4-N6vEei97MD7GK1RmA" key="documentation" value="An install MappingCall declares a MappingCall that consumes one or more connections and appends to zero or more connections.&#xA;Invocations of the mapping are driven by the availability of values in the connection."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NcMTRt6vEei97MD7GK1RmA" name="isInvoke" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_Nek4-96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek4_N6vEei97MD7GK1RmA" key="documentation" value="An invoke MappingCall invokes a Mapping that uses one or more values and appends to zero or more connections.&#xA;Invocations of the mapping is requested by the caller."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KFy-2N6vEei97MD7GK1RmA" name="referredMapping" lowerBound="1" eType="_KFy-096vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_KOx7xd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_KOx7xt6vEei97MD7GK1RmA" key="documentation" value="The Mapping invoked by the MappingCall."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="F-qvtimperative-MappingCall-referredNames" name="referredNames" upperBound="-1" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_NrFrCN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NrFrCd6vEei97MD7GK1RmA" key="derivation" value="referredMapping.ownedMappingParameters.name->asSet()->sortedBy(n | n)&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ut6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="F-qvtimperative-MappingCall-referringNames" name="referringNames" upperBound="-1" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_NrFrDd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NrFrDt6vEei97MD7GK1RmA" key="derivation" value="ownedMappingParameterBindings.boundVariable.name->asSet()->sortedBy(n | n)&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ut6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_K5nBid6vEei97MD7GK1RmA" name="MappingLoop" eSuperTypes="_K5nBkd6vEei97MD7GK1RmA _NZ3YBt6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek5A96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek5BN6vEei97MD7GK1RmA" key="documentation" value="A MappingLoop supports an iteration of mapping invocations.&#xA;&#xA;syntax: oclText[for name : type in expression {...}]"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NAX5yt6vEei97MD7GK1RmA" name="ownedIterators" upperBound="-1" eType="_NVtQjt6vEei97MD7GK1RmA" containment="true" eOpposite="_NVtQj96vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Nek5Bt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek5B96vEei97MD7GK1RmA" key="documentation" value="The iterator loop variable."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NQ7egN6vEei97MD7GK1RmA" name="ownedMappingStatements" upperBound="-1" eType="_K5nBkd6vEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_Nek5Cd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek5Ct6vEei97MD7GK1RmA" key="documentation" value="The statements to be iterated, typically a single MappingCall."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NZ3X_d6vEei97MD7GK1RmA" name="ownedExpression" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_Nek5DN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek5Dd6vEei97MD7GK1RmA" key="documentation" value="The expression whose values provide the iterator values."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1swt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NbNbzd6vEei97MD7GK1RmA" name="MappingParameter" abstract="true">
+    <eAnnotations xmi:id="_Nek5EN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek5Ed6vEei97MD7GK1RmA" key="documentation" value="A MappingParameter defines a formal parameter of a mapping. The parameter is bound by the&#xA;mapping invocation to satisfy the requirements of the derived parameter class."/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1uw96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="F-qvtimperative-MappingParameter-owningMapping" name="owningMapping" lowerBound="1" eType="_KFy-096vEei97MD7GK1RmA" eOpposite="F-qvtimperative-Mapping-ownedMappingParameters">
+      <eAnnotations xmi:id="_NrFrHt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_NrFrH96vEei97MD7GK1RmA" key="documentation" value="The containing MappingCall."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NcMTWd6vEei97MD7GK1RmA" name="MappingParameterBinding" abstract="true">
+    <eAnnotations xmi:id="_Nek5FN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek5Fd6vEei97MD7GK1RmA" key="documentation" value="A MappingCallBinding specifies the binding of a single variable or value to&#xA;the formal parameter of a mapping as part of its inviocatuon or installation."/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1qk96vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_NsVo3N6vEei97MD7GK1RmA" name="validateParameterIsMappingParameter">
+      <eAnnotations xmi:id="_NsVo3d6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVo3t6vEei97MD7GK1RmA" key="originalName" value="ParameterIsMappingParameter"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVo396vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVo4N6vEei97MD7GK1RmA" key="body" value="owningMappingCall.referredMapping.ownedMappingParameters->includes(boundVariable)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVo4t6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVo5N6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQe096vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQe1N6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="F-qvtimperative-MappingParameterBinding-owningMappingCall" name="owningMappingCall" lowerBound="1" eType="_KFy-196vEei97MD7GK1RmA" eOpposite="F-qvtimperative-MappingCall-ownedMappingParameterBindings">
+      <eAnnotations xmi:id="_NrFrI96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_NrFrJN6vEei97MD7GK1RmA" key="documentation" value="The containing MappingCall."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_KFy-396vEei97MD7GK1RmA" name="boundVariable" lowerBound="1" eType="_NbNbzd6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Nek5Gt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek5G96vEei97MD7GK1RmA" key="documentation" value="The formal parameter bound by the call."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_K5nBkd6vEei97MD7GK1RmA" name="MappingStatement" abstract="true" eSuperTypes="_NQ7el96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_K5nBkt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_K5nBk96vEei97MD7GK1RmA" key="documentation" value="A MappingCall specifies the invocation of a referredMapping with a set of bindings&#xA;of the bound variables of the referredMapping to values provided in the invocation.&#xA;Where Collections of values are provided for isLoop bindings, a distinct invocation&#xA;is performed for each distinct permutation of Collection elements."/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NTwwFd6vEei97MD7GK1RmA" name="NewStatement" eSuperTypes="_NVtQ696vEei97MD7GK1RmA _NZ3YBt6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek5Id6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek5It6vEei97MD7GK1RmA" key="documentation" value="A NewStatement creates an instance of a class and binds a name to it.&#xA;&#xA;syntax: oclText[new:typedModel name : type := expression;]&#xA;&#xA;If expression is omitted, a new instance if the tyope is created. If expression is provided, it&#xA;computes the 'new' object, typically a singlton supervisor fpr a QVTr key."/>
+    </eAnnotations>
+    <eOperations xmi:id="_Np5YWt6vEei97MD7GK1RmA" name="validateCompatibleTypeForValue">
+      <eAnnotations xmi:id="_Np5YW96vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_Np5YXN6vEei97MD7GK1RmA" key="originalName" value="CompatibleTypeForValue"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVo9N6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVo9d6vEei97MD7GK1RmA" key="body" value="ownedExpression &lt;> null implies ownedExpression.type.conformsTo(type)&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Np5YYN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_Np5YYt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQe6N6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQe6d6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_N2V5iN6vEei97MD7GK1RmA" name="validateNonDataTypeForType">
+      <eAnnotations xmi:id="_N2V5id6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_N2V5it6vEei97MD7GK1RmA" key="originalName" value="NonDataTypeForType"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_N2V5i96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_N2V5jN6vEei97MD7GK1RmA" key="body" value="not type.oclIsKindOf(ocl::DataType)&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_N2V5jt6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_N2V5kN6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQe9N6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQe9d6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="F-qvtimperative-NewStatement-isContained" name="isContained" lowerBound="1">
+      <eAnnotations xmi:id="_N3r9Y96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_N3r9ZN6vEei97MD7GK1RmA" key="documentation" value="True if the new element is guaranteed to be assigned to a container and so does not need to be tracked in the set of potential orphan elememnts to be contained at the model root."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NTwwFt6vEei97MD7GK1RmA" name="referredTypedModel" lowerBound="1" eType="_NW5jXN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Nek5JN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek5Jd6vEei97MD7GK1RmA" key="documentation" value="The TypedModel to which the new object is added."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NZ3YBN6vEei97MD7GK1RmA" name="ownedExpression" containment="true">
+      <eAnnotations xmi:id="_Nek5J96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek5KN6vEei97MD7GK1RmA" key="documentation" value="Optional expression that constructs the new object."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1swt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NZ3YBt6vEei97MD7GK1RmA" name="ObservableStatement" abstract="true" eSuperTypes="_NQ7el96vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek5K96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek5LN6vEei97MD7GK1RmA" key="documentation" value="An ObservableStatement may involve evaluation of an expression that accesses object properties whose&#xA;values may not be available. If not ready,the mapping execution is suspended until the required value&#xA;is made available by a notifying SetStatement.&#xA;&#xA;syntax: oclText[observe class::property ...]"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NZ3YB96vEei97MD7GK1RmA" name="observedProperties" ordered="false" upperBound="-1">
+      <eAnnotations xmi:id="_Nek5Lt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek5L96vEei97MD7GK1RmA" key="documentation" value="The properties whose accesses must be checked for readiness."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1tSd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NR02bt6vEei97MD7GK1RmA" name="SetStatement" eSuperTypes="_NZ3YBt6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek5Mt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek5M96vEei97MD7GK1RmA" key="documentation" value="A SetStatement sets an object property to a computed value.&#xA;&#xA;syntax: oclText[notify set name : type := expression;]&#xA;&#xA;If oclText[notify] is specified, execution defines the property as ready enabling&#xA;mappings whose ObservableStatements are waiting for the value to resume."/>
+    </eAnnotations>
+    <eOperations xmi:id="_Np5Yct6vEei97MD7GK1RmA" name="validateCompatibleClassForProperty">
+      <eAnnotations xmi:id="_Np5Yc96vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_Np5YdN6vEei97MD7GK1RmA" key="originalName" value="CompatibleClassForProperty"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_OBuDNd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_OBuDNt6vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;let requiredType = resolvedProperty.owningClass in&#xA;&#x9;let actualType = targetVariable.type in&#xA;&#x9;Tuple{&#xA;&#x9;&#x9;status : Boolean = actualType.conformsTo(requiredType),&#xA;&#x9;&#x9;message : String = 'SetStatement::CompatibleClassForProperty: ' + actualType?.name + ' must conform to ' + requiredType?.name&#xA;&#x9;}.status&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Np5YeN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_Np5Yet6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQfD96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQfEN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_OBuDPt6vEei97MD7GK1RmA" name="validateCompatibleTypeForPartialValue">
+      <eAnnotations xmi:id="_OBuDP96vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_OBuDQN6vEei97MD7GK1RmA" key="originalName" value="CompatibleTypeForPartialValue"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_OBuDQd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_OBuDQt6vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;isPartial implies&#xA;&#x9;&#x9;let requiredType = resolvedProperty.type.oclAsType(ocl::CollectionType).elementType in&#xA;&#x9;&#x9;let actualType = ownedExpression.type in&#xA;&#x9;&#x9;Tuple{&#xA;&#x9;&#x9;&#x9;status : Boolean = actualType.conformsTo(requiredType),&#xA;&#x9;&#x9;&#x9;message : String = 'SetStatement::CompatibleTypeForPartialValue: ' + actualType?.name + ' must conform to ' + requiredType.name&#xA;&#x9;&#x9;}.status&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_OBuDRN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_OBuDRt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQfG96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQfHN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_OBuDSt6vEei97MD7GK1RmA" name="validateCompatibleTypeForTotalValue">
+      <eAnnotations xmi:id="_OBuDS96vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_OBuDTN6vEei97MD7GK1RmA" key="originalName" value="CompatibleTypeForTotalValue"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_OBuDTd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_OBuDTt6vEei97MD7GK1RmA" key="body" value="&#xA;&#x9;not isPartial implies&#xA;&#x9;&#x9;let requiredType = resolvedProperty.type in&#xA;&#x9;&#x9;let actualType = ownedExpression.type in&#xA;&#x9;&#x9;Tuple{&#xA;&#x9;&#x9;&#x9;status : Boolean = actualType.conformsTo(requiredType),&#xA;&#x9;&#x9;&#x9;message : String = 'SetStatement::CompatibleTypeForTotalValue: ' + actualType?.name + ' must conform to ' + requiredType?.name&#xA;&#x9;&#x9;}.status&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_OBuDUN6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_OBuDUt6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQfJ96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQfKN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_NsVpId6vEei97MD7GK1RmA" name="validateValueDoesNotNavigateFromRealizedVariables">
+      <eAnnotations xmi:id="_NsVpIt6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVpI96vEei97MD7GK1RmA" key="originalName" value="ValueDoesNotNavigateFromRealizedVariables"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_OBuDWd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_OBuDWt6vEei97MD7GK1RmA" key="body" value="&#xA;ownedExpression->closure(e : ocl::OclElement | e.oclContents())->selectByKind(ocl::VariableExp)->select(referredVariable.oclIsKindOf(NewStatement))->select(s | s.oclContainer().oclIsKindOf(ocl::CallExp) and s.oclContainer().oclAsType(ocl::CallExp).ownedSource = s)->isEmpty()&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVpJ96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVpKd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQfM96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQfNN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_NsVpLd6vEei97MD7GK1RmA" name="validateTargetPropertyIsNotReadOnly">
+      <eAnnotations xmi:id="_NsVpLt6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVpL96vEei97MD7GK1RmA" key="originalName" value="TargetPropertyIsNotReadOnly"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVpMN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVpMd6vEei97MD7GK1RmA" key="body" value="&#xA;not resolvedProperty.isReadOnly&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVpM96vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVpNd6vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQfP96vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQfQN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NVtQ2d6vEei97MD7GK1RmA" name="targetVariable" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1uw96vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NR02c96vEei97MD7GK1RmA" name="targetProperty" lowerBound="1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1tSd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="F-qvtimperative-SetStatement-isPartial" name="isPartial" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_OAO1pN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_OAO1pd6vEei97MD7GK1RmA" key="documentation" value="If not isPartial, the value of the ownedExpression is assigned as the entirety of the targetProperty of the targetVariable.&#xD;&#xA;&#xD;&#xA;If isPartial, the value of the ownedExpression is included within the targetProperty of the targetVariable."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NY02Xd6vEei97MD7GK1RmA" name="isNotify" lowerBound="1" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NR02e96vEei97MD7GK1RmA" name="isOpposite" lowerBound="1" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NZ3YHd6vEei97MD7GK1RmA" name="ownedExpression" lowerBound="1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1swt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="F-qvtimperative-SetStatement-resolvedProperty" name="resolvedProperty" lowerBound="1" changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations xmi:id="_OBuDdt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_OBuDd96vEei97MD7GK1RmA" key="derivation" value="if isOpposite then targetProperty.opposite else targetProperty endif&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1tSd6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NcMTft6vEei97MD7GK1RmA" name="SimpleParameter" eSuperTypes="_NbNbzd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek5P96vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek5QN6vEei97MD7GK1RmA" key="documentation" value="A SimpleParameter of a Mapping defines an input at which a value is passed to the mapping.&#xA;&#xA;syntax: oclText[in:typedModel name : type;]"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NcMTgd6vEei97MD7GK1RmA" name="referredTypedModel" lowerBound="1" eType="_NW5jXN6vEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_Nek5Qt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_Nek5Q96vEei97MD7GK1RmA" key="documentation" value="The TypedModel that contains the passed value."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NcMTgt6vEei97MD7GK1RmA" name="SimpleParameterBinding" eSuperTypes="_NcMTWd6vEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_Nek5Rd6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek5Rt6vEei97MD7GK1RmA" key="documentation" value="A SimpleParameterBinding binds a simple parameter of an invoked Mapping to the value of an expression&#xA;computed by the invoker. Execution of the mapping may use the value.&#xA;&#xA;syntax: oclText[formalName uses expression;]"/>
+    </eAnnotations>
+    <eOperations xmi:id="_NsVpR96vEei97MD7GK1RmA" name="validateCompatibleTypeForCheckedValue">
+      <eAnnotations xmi:id="_NsVpSN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVpSd6vEei97MD7GK1RmA" key="originalName" value="CompatibleTypeForCheckedValue"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVpSt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVpS96vEei97MD7GK1RmA" key="body" value="isCheck implies boundVariable.type.conformsTo(value.type)&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVpTd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVpT96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQfXN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQfXd6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eOperations xmi:id="_NsVpU96vEei97MD7GK1RmA" name="validateCompatibleTypeForUncheckedValue">
+      <eAnnotations xmi:id="_NsVpVN6vEei97MD7GK1RmA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_NsVpVd6vEei97MD7GK1RmA" key="originalName" value="CompatibleTypeForUncheckedValue"/>
+      </eAnnotations>
+      <eAnnotations xmi:id="_NsVpVt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_NsVpV96vEei97MD7GK1RmA" key="body" value="not isCheck implies value.type.conformsTo(boundVariable.type)&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_NsVpWd6vEei97MD7GK1RmA" name="diagnostics">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Id6vEei97MD7GK1RmA"/>
+      </eParameters>
+      <eParameters xmi:id="_NsVpW96vEei97MD7GK1RmA" name="context">
+        <eGenericType>
+          <eTypeArguments xmi:id="_OaQfaN6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eTypeArguments xmi:id="_OaQfad6vEei97MD7GK1RmA">
+            <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Pt6vEei97MD7GK1RmA"/>
+          </eTypeArguments>
+          <eClassifier xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Rt6vEei97MD7GK1RmA"/>
+        </eGenericType>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_NcMThd6vEei97MD7GK1RmA" name="value" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_NcMTht6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_NcMTh96vEei97MD7GK1RmA" key="documentation" value="The value or collection of values to bind to boundVariable"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1swt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_NcMTid6vEei97MD7GK1RmA" name="isCheck" lowerBound="1" defaultValueLiteral="false">
+      <eAnnotations xmi:id="_NcMTit6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_NcMTi96vEei97MD7GK1RmA" key="documentation" value="Whether the variable initialization needs to be checked as a predicate. This is a derivation of not ownedInit.type.conformsTo(self.type)."/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ct6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NQ7el96vEei97MD7GK1RmA" name="Statement" abstract="true">
+    <eAnnotations xmi:id="_Nek5UN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek5Ud6vEei97MD7GK1RmA" key="documentation" value="A Statement is the basis for all execution by a Mapping."/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1ss96vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_Np5Ynd6vEei97MD7GK1RmA" name="joinNames">
+      <eAnnotations xmi:id="_Np5Ynt6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details xmi:id="_Np5Yn96vEei97MD7GK1RmA" key="body" value="'{' + names/*->sortedBy(n | n)*/->iterate(n; s : String = '' | if s = '' then n else s + ';' + n endif) + '}'&#xA;&#xA;&#xA;"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ut6vEei97MD7GK1RmA"/>
+      <eParameters xmi:id="_Np5Yod6vEei97MD7GK1RmA" name="names" upperBound="-1">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_KF84Ut6vEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_NVtQ696vEei97MD7GK1RmA" name="VariableStatement" abstract="true">
+    <eAnnotations xmi:id="_Nek5VN6vEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_Nek5Vd6vEei97MD7GK1RmA" key="documentation" value="A VariableStatement is the basis for a Mapping execution that makes a name available to subsequent starements."/>
+    </eAnnotations>
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_MN1uw96vEei97MD7GK1RmA"/>
+    <eSuperTypes href="#_NQ7el96vEei97MD7GK1RmA"/>
+  </eClassifiers>
+</ecore:EPackage>

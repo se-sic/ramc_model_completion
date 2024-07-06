@@ -1,0 +1,37 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_BFWSM96vEei97MD7GK1RmA', 'name':'library','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'EObject','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@4f697f49 (expression: EObject)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'Library','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'EObject'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_BXsCid6vEei97MD7GK1RmA', 'name':'OperationalTransformation','ePackage':'expressions','abstract':'false','interface':'false','eStructuralFeatures':['modelParameter'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@6d974ab4 (expression: Module)']}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_BFWSHN6vEei97MD7GK1RmA', 'name':'modelParameter','ordered':'true','unique':'true','lowerBound':'0','upperBound':'-1','many':'true','required':'false','eType':'ModelParameter','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@7fe14619 (expression: ModelParameter)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'OperationalTransformation','containment':'true','container':'false','resolveProxies':'true','eReferenceType':'ModelParameter'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_BFWSAt6vEei97MD7GK1RmA', 'name':'Module','ePackage':'expressions','abstract':'false','interface':'false','eOperations':['accept'],'eStructuralFeatures':['moduleImport','usedModelType','configProperty','ownedRenaming','entry','modelParameter','intermediateProperty'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@74bef8ab (expression: EClass)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@325f9896 (expression: EPackage)','org.eclipse.emf.ecore.impl.EGenericTypeImpl@16dff93b (expression: VisitableASTNode)']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_BFWSAd6vEei97MD7GK1RmA', 'name':'expressions','nsURI':'http://www.eclipse.org/qvt/1.0.0/Operational/Expressions','nsPrefix':'qvtoperational.expr','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@1da28ad0','eClassifiers':['Module','Library','Rename','ModuleImport','Property','LocalProperty','ConfigProperty','ContextualProperty','ImperativeOperation','ModelParameter','VarParameter','DirectionKind','OperationBody','ConstructorBody','...'],'eSuperPackage':'qvtoperational'}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_BFWSH96vEei97MD7GK1RmA', 'name':'Library','ePackage':'expressions','abstract':'false','interface':'false','eOperations':['accept'],'eStructuralFeatures':['library'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@5f0ba877 (expression: Module)']}}" 
+}], 
+ "links": [{
+	 "source": "1", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "3", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "4", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "5", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+}]}

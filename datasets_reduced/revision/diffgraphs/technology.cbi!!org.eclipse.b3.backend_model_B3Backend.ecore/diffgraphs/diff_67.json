@@ -1,0 +1,37 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_QpnzB96yEei97MD7GK1RmA', 'name':'funcRef','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'IFunction','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6fd284b7 (expression: IFunction)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'BCallNamedFunction','containment':'false','container':'false','resolveProxies':'true','eReferenceType':'IFunction'}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_QpnzF96yEei97MD7GK1RmA', 'name':'ITypedValue','ePackage':'b3backend','abstract':'true','interface':'true','eStructuralFeatures':['type'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@24187ae (expression: INamedValue)']}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EReference', 'attributes': {'id': '_q3sTRd6wEei97MD7GK1RmA', 'name':'type','ordered':'true','unique':'true','lowerBound':'0','upperBound':'1','many':'false','required':'false','eType':'IType','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@59c12198 (expression: IType)','changeable':'true','volatile':'false','transient':'false','unsettable':'false','derived':'false','eContainingClass':'ITypedValue','containment':'true','container':'false','resolveProxies':'true','eReferenceType':'IType'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_M7xBTd6yEei97MD7GK1RmA', 'name':'INamedValue','ePackage':'b3backend','abstract':'true','interface':'true','eStructuralFeatures':['name','type']}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EPackage', 'attributes': {'id': '_lTgQ0d6wEei97MD7GK1RmA', 'name':'b3backend','nsURI':'http://b3backend/1.0','nsPrefix':'b3backend','eFactoryInstance':'org.eclipse.emf.ecore.impl.EFactoryImpl@5b6ff02a','eClassifiers':['BExpression','BExecutionContext','BIfExpression','BSwitchExpression','BCase','BTryExpression','BCatch','BBinaryExpression','BOrExpression','BAndExpression','BChainedExpression','BUnaryExpression','BThrowExpression','...']}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_7K5AoN6xEei97MD7GK1RmA', 'name':'BCallNamedFunction','ePackage':'b3backend','abstract':'false','interface':'false','eStructuralFeatures':['funcRef'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@7a8e3849 (expression: BCallExpression)']}}" 
+}], 
+ "links": [{
+	 "source": "1", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "3", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Remove', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+},{
+	 "source": "4", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eClassifiers'}" 
+},{
+	 "source": "5", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eStructuralFeatures'}" 
+}]}

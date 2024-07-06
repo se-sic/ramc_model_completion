@@ -1,0 +1,69 @@
+{"directed": true, "multigraph": false, "graph": {}, 
+  "nodes": [{
+	 "id": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_oq7Eyt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@32c70f4f (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'compatibleWith','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@1ccc3c6f (expression: Boolean)','eContainingClass':'MultiplicityElement','eParameters':['other']}}" 
+},{
+	 "id": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_oq7Ey96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@7e8fb5b1 (key: documentation, value: The operation compatibleWith takes another multiplicity as input. It checks if one multiplicity is compatible with another.\\r\\nresult = Integer.allInstances()->forAll(i : Integer | self.includesCardinality(i) implies other.includesCardinality(i)))'],'eModelElement':'compatibleWith'}}" 
+},{
+	 "id": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_oq7Ezd6tEei97MD7GK1RmA', 'name':'other','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'MultiplicityElement','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@67829e8e (expression: MultiplicityElement)','eOperation':'compatibleWith'}}" 
+},{
+	 "id": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_oq7EzN6tEei97MD7GK1RmA', 'key':'documentation','value':'The operation compatibleWith takes another multiplicity as input. It checks if one multiplicity is compatible with another.\\r\\nresult = Integer.allInstances()->forAll(i : Integer | self.includesCardinal'}}" 
+},{
+	 "id": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EOperation', 'attributes': {'id': '_oq7Ezt6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@73eebedf (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'is','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Boolean','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@6e945a7c (expression: Boolean)','eContainingClass':'MultiplicityElement','eParameters':['lowerbound','upperbound']}}" 
+},{
+	 "id": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EAnnotation', 'attributes': {'id': '_oq7Ez96tEei97MD7GK1RmA', 'source':'http://www.eclipse.org/emf/2002/GenModel','details':['org.eclipse.emf.ecore.impl.EStringToStringMapEntryImpl@eb38c2 (key: documentation, value: The operation is determines if the upper and lower bound of the ranges are the ones given.\\r\\nresult = (lowerbound = self.lowerbound and upperbound = self.upperbound))'],'eModelElement':'is'}}" 
+},{
+	 "id": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_oq7E0t6tEei97MD7GK1RmA', 'name':'upperbound','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Integer','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@54ba996c (expression: Integer)','eOperation':'is'}}" 
+},{
+	 "id": "7", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EParameter', 'attributes': {'id': '_oq7E0d6tEei97MD7GK1RmA', 'name':'lowerbound','ordered':'false','unique':'true','lowerBound':'1','upperBound':'1','many':'false','required':'true','eType':'Integer','eGenericType':'org.eclipse.emf.ecore.impl.EGenericTypeImpl@bd0d2cc (expression: Integer)','eOperation':'is'}}" 
+},{
+	 "id": "8", 
+	 "label": "{'changeType': 'Add', 'type': 'object', 'className': 'EStringToStringMapEntry', 'attributes': {'id': '_oq7E0N6tEei97MD7GK1RmA', 'key':'documentation','value':'The operation is determines if the upper and lower bound of the ranges are the ones given.\\r\\nresult = (lowerbound = self.lowerbound and upperbound = self.upperbound)'}}" 
+},{
+	 "id": "9", 
+	 "label": "{'changeType': 'Preserve', 'type': 'object', 'className': 'EClass', 'attributes': {'id': '_ftf2Vd6tEei97MD7GK1RmA', 'eAnnotations':['org.eclipse.emf.ecore.impl.EAnnotationImpl@7292cdb (source: http://www.eclipse.org/emf/2002/GenModel)'],'name':'MultiplicityElement','ePackage':'uml','abstract':'true','interface':'false','eOperations':['upper_gt_0','lower_ge_0','upper_ge_lower','value_specification_no_side_effects','value_specification_constant','setLower','setUpper','getLower','getUpper','isMultivalued','includesCardinality','includesMultiplicity','...'],'eStructuralFeatures':['isOrdered','isUnique','upper','lower','upperValue','lowerValue'],'eGenericSuperTypes':['org.eclipse.emf.ecore.impl.EGenericTypeImpl@2417726b (expression: Element)']}}" 
+}], 
+ "links": [{
+	 "source": "0", 
+	 "target": "1", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "0", 
+	 "target": "2", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "1", 
+	 "target": "3", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "4", 
+	 "target": "5", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eAnnotations'}" 
+},{
+	 "source": "4", 
+	 "target": "6", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "4", 
+	 "target": "7", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eParameters'}" 
+},{
+	 "source": "5", 
+	 "target": "8", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'details'}" 
+},{
+	 "source": "9", 
+	 "target": "0", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+},{
+	 "source": "9", 
+	 "target": "4", 
+	 "label": "{'changeType': 'Add', 'type': 'reference', 'referenceTypeName': 'eOperations'}" 
+}]}

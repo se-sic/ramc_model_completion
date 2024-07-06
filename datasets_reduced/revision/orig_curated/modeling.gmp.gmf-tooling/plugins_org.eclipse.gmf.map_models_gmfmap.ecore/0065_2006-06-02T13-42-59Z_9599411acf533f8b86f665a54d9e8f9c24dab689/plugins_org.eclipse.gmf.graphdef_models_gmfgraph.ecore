@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_a1bRst6tEei97MD7GK1RmA" name="gmfgraph" nsURI="http://www.eclipse.org/gmf/2005/GraphicalDefinition" nsPrefix="gmfgraph">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bRs96tEei97MD7GK1RmA" name="Canvas" eSuperTypes="_a1bRv96tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bRtN6tEei97MD7GK1RmA" name="figures" upperBound="-1" eType="_a1bRud6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_a3Dnc96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a3DndN6tEei97MD7GK1RmA" key="documentation" value="containment here doesn't restrict nodes/connection from using figure galeries defined elsewhere. No assumption should be made whether or not node/connection figure is defined in the galery beloning to this canvas"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bRtd6tEei97MD7GK1RmA" name="nodes" upperBound="-1" eType="_a1bRyd6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bRtt6tEei97MD7GK1RmA" name="connections" upperBound="-1" eType="_a1bRy96tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bRt96tEei97MD7GK1RmA" name="compartments" upperBound="-1" eType="_a1bRzN6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bALHOd6tEei97MD7GK1RmA" name="labels" upperBound="-1" eType="_bALHU96tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bRud6tEei97MD7GK1RmA" name="FigureGallery" eSuperTypes="_a1bRv96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a3Dnet6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a3Dne96tEei97MD7GK1RmA" key="documentation" value="Kind of explicit figure library notion. Bundle of figures. Allows to specify plugin id (allows importing it later from gmfgen code) in addition to figures"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bRvN6tEei97MD7GK1RmA" name="figures" upperBound="-1" eType="_a1bR396tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a3Dnfd6tEei97MD7GK1RmA" name="implementationBundle">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bRv96tEei97MD7GK1RmA" name="Identity" interface="true">
+    <eAnnotations xmi:id="_a1bRwN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bRwd6tEei97MD7GK1RmA" key="documentation" value="Easy and readable way to reference element of the model from another one"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bRwt6tEei97MD7GK1RmA" name="name" lowerBound="1" iD="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bRxN6tEei97MD7GK1RmA" name="DiagramElement" abstract="true" eSuperTypes="_a1bRv96tEei97MD7GK1RmA">
+    <eOperations xmi:id="_bDAaM96tEei97MD7GK1RmA" name="find" eType="_a1bR0t6tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_bEdKV96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bEdKWN6tEei97MD7GK1RmA" key="documentation" value="utility operation to get first visual facet assignable (in Java terms, {@link Class#isAssignableFrom(Class)}) to variables of designated class. Argument can't be null"/>
+      </eAnnotations>
+      <eParameters xmi:id="_bDAaNN6tEei97MD7GK1RmA" name="facetClass">
+        <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtk96tEei97MD7GK1RmA"/>
+      </eParameters>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bRxd6tEei97MD7GK1RmA" name="figure" lowerBound="1" eType="_bY7ltt6tEei97MD7GK1RmA" eOpposite="_bRBBO96tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bRxt6tEei97MD7GK1RmA" name="facets" upperBound="-1" eType="_a1bR0t6tEei97MD7GK1RmA" containment="true">
+      <eAnnotations xmi:id="_a1bRx96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a1bRyN6tEei97MD7GK1RmA" key="documentation" value="anything to further specify constraint or any other aspect of the element"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bRyd6tEei97MD7GK1RmA" name="Node" eSuperTypes="_a1bRxN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bY7lj96tEei97MD7GK1RmA" name="nodeFigure" lowerBound="1" eType="_a1bR396tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations xmi:id="_bY7lkN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bY7lkd6tEei97MD7GK1RmA" key="documentation" value="Specializes DiagramElement.figure"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bRyt6tEei97MD7GK1RmA" name="resizeConstraint" eType="_a1bSQt6tEei97MD7GK1RmA" defaultValueLiteral="NSEW"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bRy96tEei97MD7GK1RmA" name="Connection" eSuperTypes="_a1bRxN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bY7llN6tEei97MD7GK1RmA" name="connectionFigure" lowerBound="1" eType="_a1bR396tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true" resolveProxies="false">
+      <eAnnotations xmi:id="_bY7lld6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_bY7llt6tEei97MD7GK1RmA" key="documentation" value="Specializes DiagramElement.figure"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bRzN6tEei97MD7GK1RmA" name="Compartment" eSuperTypes="_a1bRxN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bRzd6tEei97MD7GK1RmA" name="collapsible">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bRz96tEei97MD7GK1RmA" name="needsTitle">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bALHU96tEei97MD7GK1RmA" name="DiagramLabel" eSuperTypes="_a1bRyd6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bVwVyd6tEei97MD7GK1RmA" name="elementIcon">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bR0t6tEei97MD7GK1RmA" name="VisualFacet" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bR096tEei97MD7GK1RmA" name="GeneralFacet" eSuperTypes="_a1bR0t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bR1N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bR1d6tEei97MD7GK1RmA" key="documentation" value="provide means to attach arbitrary data to your diagram element definition. It's up to you (template author) to process it somehow."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bR1t6tEei97MD7GK1RmA" name="identifier" iD="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bR2N6tEei97MD7GK1RmA" name="data">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bDAaTN6tEei97MD7GK1RmA" name="AlignmentFacet" eSuperTypes="_a1bR0t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_bDAaTd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bDAaTt6tEei97MD7GK1RmA" key="documentation" value="Makes sense for DiagramLabels of Links only (now). Constants from {@link org.eclipse.draw2d.ConnectionLocator} are: MIDDLE = Alignment.CENTER, TARGET = Alignment.END, SOURCE = Alignment.BEGINNING"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bDAaT96tEei97MD7GK1RmA" name="alignment" eType="_a-r6at6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bR2t6tEei97MD7GK1RmA" name="GradientFacet" eSuperTypes="_a1bR0t6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bR296tEei97MD7GK1RmA" name="direction" eType="_a1bSQt6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bPhMVN6tEei97MD7GK1RmA" name="LabelOffsetFacet" eSuperTypes="_a1bR0t6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bPhMVd6tEei97MD7GK1RmA" name="x">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bPhMV96tEei97MD7GK1RmA" name="y">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bR3N6tEei97MD7GK1RmA" name="FigureMarker" interface="true" eSuperTypes="_a-r6b96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bR3d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bR3t6tEei97MD7GK1RmA" key="documentation" value="Anything you could combine visual representation from. Ordinary GEF figures, custom-defined or references to defined elsewhere."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bR496tEei97MD7GK1RmA" name="parent" eType="_a1bR396tEei97MD7GK1RmA" changeable="false" resolveProxies="false" eOpposite="_a1bR4t6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bY7ltt6tEei97MD7GK1RmA" name="FigureHandle" interface="true">
+    <eAnnotations xmi:id="_bY7lt96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bY7luN6tEei97MD7GK1RmA" key="documentation" value="Entry in the figure's hierarchy to reference from diagram element"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bRBBO96tEei97MD7GK1RmA" name="referencingElements" upperBound="-1" eType="_a1bRxN6tEei97MD7GK1RmA" eOpposite="_a1bRxd6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bR396tEei97MD7GK1RmA" name="Figure" interface="true" eSuperTypes="_a1bR3N6tEei97MD7GK1RmA _bY7ltt6tEei97MD7GK1RmA _a1bRv96tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bR4N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bR4d6tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.Figure"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bR4t6tEei97MD7GK1RmA" name="children" upperBound="-1" eType="_a1bR3N6tEei97MD7GK1RmA" containment="true" eOpposite="_a1bR496tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-RN6tEei97MD7GK1RmA" name="foregroundColor" eType="_a5l-nt6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-Rd6tEei97MD7GK1RmA" name="backgroundColor" eType="_a5l-nt6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-Rt6tEei97MD7GK1RmA" name="maximumSize" eType="_a5l-yN6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-R96tEei97MD7GK1RmA" name="minimumSize" eType="_a5l-yN6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-SN6tEei97MD7GK1RmA" name="preferredSize" eType="_a5l-yN6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-Sd6tEei97MD7GK1RmA" name="font" eType="_a5l-uN6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-St6tEei97MD7GK1RmA" name="insets" eType="_a5l-zd6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-S96tEei97MD7GK1RmA" name="border" eType="_a5l-1t6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bR596tEei97MD7GK1RmA" name="location" eType="_a1bSPd6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bR6N6tEei97MD7GK1RmA" name="size" eType="_a1bSPd6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bR696tEei97MD7GK1RmA" name="FigureRef" eSuperTypes="_a1bR3N6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bR7N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bR7d6tEei97MD7GK1RmA" key="documentation" value="Need this to facilitate reuse of figures while keeping (so nice looking) containment relationship in the Figure class"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bR7t6tEei97MD7GK1RmA" name="figure" lowerBound="1" eType="_a1bR396tEei97MD7GK1RmA">
+      <eAnnotations xmi:id="_a1bR796tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a1bR8N6tEei97MD7GK1RmA" key="documentation" value="not FigureMarker because don't want to reference figure references."/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bR8d6tEei97MD7GK1RmA" name="ConnectionFigure" interface="true" eSuperTypes="_a1bR396tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bR8t6tEei97MD7GK1RmA" name="DecorationFigure" interface="true" eSuperTypes="_a1bR396tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bR896tEei97MD7GK1RmA" name="Shape" abstract="true" eSuperTypes="_a1bR396tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bR9N6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bR9d6tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.Shape"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bR9t6tEei97MD7GK1RmA" name="outline" defaultValueLiteral="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bR-N6tEei97MD7GK1RmA" name="fill" defaultValueLiteral="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bR-t6tEei97MD7GK1RmA" name="lineWidth" defaultValueLiteral="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bR_N6tEei97MD7GK1RmA" name="lineKind" eType="_a1bSTd6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a3Dnvt6tEei97MD7GK1RmA" name="xorFill">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a3DnwN6tEei97MD7GK1RmA" name="xorOutline">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a3Dnq96tEei97MD7GK1RmA" name="resolvedChildren" upperBound="-1" eType="_a1bR396tEei97MD7GK1RmA" changeable="false" volatile="true" transient="true" derived="true">
+      <eAnnotations xmi:id="_a5l-Z96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+        <details xmi:id="_a5l-aN6tEei97MD7GK1RmA" key="documentation" value="Same as children, but resolves child FigureRefs, if any, to Figures"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bR_d6tEei97MD7GK1RmA" name="Label" eSuperTypes="_a1bR396tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bR_t6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bR_96tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.Label"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bSAN6tEei97MD7GK1RmA" name="text">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSAt6tEei97MD7GK1RmA" name="LabeledContainer" eSuperTypes="_a1bR396tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSA96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSBN6tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.LabeledContainer"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSBd6tEei97MD7GK1RmA" name="Rectangle" eSuperTypes="_a1bR896tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSBt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSB96tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.RectangleFigure"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSCN6tEei97MD7GK1RmA" name="RoundedRectangle" eSuperTypes="_a1bR896tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSCd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSCt6tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.RoundedRectangle"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bSC96tEei97MD7GK1RmA" name="cornerWidth" defaultValueLiteral="8">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bSDd6tEei97MD7GK1RmA" name="cornerHeight" defaultValueLiteral="8">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSD96tEei97MD7GK1RmA" name="Ellipse" eSuperTypes="_a1bR896tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSEN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSEd6tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.Ellipse"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSEt6tEei97MD7GK1RmA" name="Polyline" eSuperTypes="_a1bR896tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSE96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSFN6tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.Polyline"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bSFd6tEei97MD7GK1RmA" name="template" upperBound="-1" eType="_a1bSPd6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSFt6tEei97MD7GK1RmA" name="Polygon" eSuperTypes="_a1bSEt6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSF96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSGN6tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.Polygon"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSGd6tEei97MD7GK1RmA" name="PolylineConnection" eSuperTypes="_a1bSEt6tEei97MD7GK1RmA _a1bR8d6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSGt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSG96tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.PolylineConnection"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bSHN6tEei97MD7GK1RmA" name="sourceDecoration" eType="_a1bR8t6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a1bSHd6tEei97MD7GK1RmA" name="targetDecoration" eType="_a1bR8t6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSHt6tEei97MD7GK1RmA" name="PolylineDecoration" eSuperTypes="_a1bSEt6tEei97MD7GK1RmA _a1bR8t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSH96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSIN6tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.PolylineDecoration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSId6tEei97MD7GK1RmA" name="PolygonDecoration" eSuperTypes="_a1bSFt6tEei97MD7GK1RmA _a1bR8t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSIt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSI96tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.PolygonDecoration"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-kN6tEei97MD7GK1RmA" name="CustomClass" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bSJ96tEei97MD7GK1RmA" name="qualifiedClassName">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bSKd6tEei97MD7GK1RmA" name="bundleName">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a-r5896tEei97MD7GK1RmA" name="attributes" upperBound="-1" eType="_a-r6fd6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a-r6fd6tEei97MD7GK1RmA" name="CustomAttribute">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6ft6tEei97MD7GK1RmA" name="name" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6gN6tEei97MD7GK1RmA" name="value" lowerBound="1" defaultValueLiteral="null">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6gt6tEei97MD7GK1RmA" name="directAccess" lowerBound="1" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6hN6tEei97MD7GK1RmA" name="multiStatementValue" lowerBound="1" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bY7mF96tEei97MD7GK1RmA" name="FigureAccessor" eSuperTypes="_bY7ltt6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bY7mGN6tEei97MD7GK1RmA" name="accessor" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bY7mGt6tEei97MD7GK1RmA" name="typedFigure" eType="_a1bSJN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSJN6tEei97MD7GK1RmA" name="CustomFigure" eSuperTypes="_a1bR396tEei97MD7GK1RmA _a5l-kN6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSJd6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSJt6tEei97MD7GK1RmA" key="documentation" value="Any figure class provided by some bundle"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bY7mHt6tEei97MD7GK1RmA" name="customChildren" upperBound="-1" eType="_bY7mF96tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSK96tEei97MD7GK1RmA" name="CustomDecoration" eSuperTypes="_a1bSJN6tEei97MD7GK1RmA _a1bR8t6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSLN6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSLd6tEei97MD7GK1RmA" key="documentation" value="Same as CustomFigure, but for Decorations"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSLt6tEei97MD7GK1RmA" name="CustomConnection" eSuperTypes="_a1bSJN6tEei97MD7GK1RmA _a1bR8d6tEei97MD7GK1RmA">
+    <eAnnotations xmi:id="_a1bSL96tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bSMN6tEei97MD7GK1RmA" key="documentation" value="Same as CustomFigure, but for Connections"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-nt6tEei97MD7GK1RmA" name="Color" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-n96tEei97MD7GK1RmA" name="RGBColor" eSuperTypes="_a5l-nt6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-oN6tEei97MD7GK1RmA" name="red" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-ot6tEei97MD7GK1RmA" name="green" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-pN6tEei97MD7GK1RmA" name="blue" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-pt6tEei97MD7GK1RmA" name="ConstantColor" eSuperTypes="_a5l-nt6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-p96tEei97MD7GK1RmA" name="value" lowerBound="1" eType="_a5l-qN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_a5l-qN6tEei97MD7GK1RmA" name="ColorConstants">
+    <eLiterals xmi:id="_a5l-qd6tEei97MD7GK1RmA" name="white"/>
+    <eLiterals xmi:id="_a5l-qt6tEei97MD7GK1RmA" name="black" value="1"/>
+    <eLiterals xmi:id="_a5l-q96tEei97MD7GK1RmA" name="lightGray" value="2"/>
+    <eLiterals xmi:id="_a5l-rN6tEei97MD7GK1RmA" name="gray" value="3"/>
+    <eLiterals xmi:id="_a5l-rd6tEei97MD7GK1RmA" name="darkGray" value="4"/>
+    <eLiterals xmi:id="_a5l-rt6tEei97MD7GK1RmA" name="red" value="5"/>
+    <eLiterals xmi:id="_a5l-r96tEei97MD7GK1RmA" name="orange" value="6"/>
+    <eLiterals xmi:id="_a5l-sN6tEei97MD7GK1RmA" name="yellow" value="7"/>
+    <eLiterals xmi:id="_a5l-sd6tEei97MD7GK1RmA" name="green" value="8"/>
+    <eLiterals xmi:id="_a5l-st6tEei97MD7GK1RmA" name="lightGreen" value="9"/>
+    <eLiterals xmi:id="_a5l-s96tEei97MD7GK1RmA" name="darkGreen" value="10"/>
+    <eLiterals xmi:id="_a5l-tN6tEei97MD7GK1RmA" name="cyan" value="11"/>
+    <eLiterals xmi:id="_a5l-td6tEei97MD7GK1RmA" name="lightBlue" value="12"/>
+    <eLiterals xmi:id="_a5l-tt6tEei97MD7GK1RmA" name="blue" value="13"/>
+    <eLiterals xmi:id="_a5l-t96tEei97MD7GK1RmA" name="darkBlue" value="14"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-uN6tEei97MD7GK1RmA" name="Font" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-ud6tEei97MD7GK1RmA" name="BasicFont" eSuperTypes="_a5l-uN6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bSO96tEei97MD7GK1RmA" name="faceName">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtnN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-vN6tEei97MD7GK1RmA" name="height" defaultValueLiteral="9">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-vt6tEei97MD7GK1RmA" name="style" eType="_a5l-v96tEei97MD7GK1RmA" defaultValueLiteral="NORMAL"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_a5l-v96tEei97MD7GK1RmA" name="FontStyle">
+    <eLiterals xmi:id="_a5l-wN6tEei97MD7GK1RmA" name="NORMAL"/>
+    <eLiterals xmi:id="_a5l-wd6tEei97MD7GK1RmA" name="BOLD" value="1"/>
+    <eLiterals xmi:id="_a5l-wt6tEei97MD7GK1RmA" name="ITALIC" value="2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a1bSPd6tEei97MD7GK1RmA" name="Point">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bSPt6tEei97MD7GK1RmA" name="x">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a1bSQN6tEei97MD7GK1RmA" name="y">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-yN6tEei97MD7GK1RmA" name="Dimension">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-yd6tEei97MD7GK1RmA" name="dx">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-y96tEei97MD7GK1RmA" name="dy">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-zd6tEei97MD7GK1RmA" name="Insets">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-zt6tEei97MD7GK1RmA" name="top">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-0N6tEei97MD7GK1RmA" name="left">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-0t6tEei97MD7GK1RmA" name="bottom">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-1N6tEei97MD7GK1RmA" name="right">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-1t6tEei97MD7GK1RmA" name="Border" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-196tEei97MD7GK1RmA" name="LineBorder" eSuperTypes="_a5l-1t6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-2N6tEei97MD7GK1RmA" name="color" eType="_a5l-nt6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a5l-2d6tEei97MD7GK1RmA" name="width" defaultValueLiteral="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-296tEei97MD7GK1RmA" name="MarginBorder" eSuperTypes="_a5l-1t6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-3N6tEei97MD7GK1RmA" name="insets" eType="_a5l-zd6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-3d6tEei97MD7GK1RmA" name="CompoundBorder" eSuperTypes="_a5l-1t6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-3t6tEei97MD7GK1RmA" name="outer" eType="_a5l-1t6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a5l-396tEei97MD7GK1RmA" name="inner" eType="_a5l-1t6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a5l-4N6tEei97MD7GK1RmA" name="CustomBorder" eSuperTypes="_a5l-1t6tEei97MD7GK1RmA _a5l-kN6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_a1bSQt6tEei97MD7GK1RmA" name="Direction">
+    <eAnnotations xmi:id="_bOwX-d6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_bOwX-t6tEei97MD7GK1RmA" key="documentation" value="Geographical bit constants from org.eclipse.draw2d.PositionConstants"/>
+    </eAnnotations>
+    <eLiterals xmi:id="_a3DoCN6tEei97MD7GK1RmA" name="NONE"/>
+    <eLiterals xmi:id="_a1bSQ96tEei97MD7GK1RmA" name="NORTH" value="1"/>
+    <eLiterals xmi:id="_a1bSRN6tEei97MD7GK1RmA" name="SOUTH" value="4"/>
+    <eLiterals xmi:id="_a1bSRt6tEei97MD7GK1RmA" name="WEST" value="8"/>
+    <eLiterals xmi:id="_a1bSRd6tEei97MD7GK1RmA" name="EAST" value="16"/>
+    <eLiterals xmi:id="_a1bSSN6tEei97MD7GK1RmA" name="NORTH_EAST" value="17"/>
+    <eLiterals xmi:id="_a1bSR96tEei97MD7GK1RmA" name="NORTH_WEST" value="9"/>
+    <eLiterals xmi:id="_a1bSSt6tEei97MD7GK1RmA" name="SOUTH_EAST" value="20"/>
+    <eLiterals xmi:id="_a1bSSd6tEei97MD7GK1RmA" name="SOUTH_WEST" value="12"/>
+    <eLiterals xmi:id="_bOwYBN6tEei97MD7GK1RmA" name="NORTH_SOUTH" value="5"/>
+    <eLiterals xmi:id="_bOwYBd6tEei97MD7GK1RmA" name="EAST_WEST" value="24"/>
+    <eLiterals xmi:id="_bOwYBt6tEei97MD7GK1RmA" name="NSEW" value="29"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_a1bSTd6tEei97MD7GK1RmA" name="LineKind">
+    <eAnnotations xmi:id="_a1bSTt6tEei97MD7GK1RmA" source="http://www.eclipse.org/emf/2002/GenModel">
+      <details xmi:id="_a1bST96tEei97MD7GK1RmA" key="documentation" value="org.eclipse.draw2d.Graphics.LINE_* (== org.eclipse.swt.SWT.LINE_*. Values are same as SWT constants"/>
+    </eAnnotations>
+    <eLiterals xmi:id="_a1bSUN6tEei97MD7GK1RmA" name="LINE_SOLID" value="1"/>
+    <eLiterals xmi:id="_a1bSUd6tEei97MD7GK1RmA" name="LINE_DASH" value="2"/>
+    <eLiterals xmi:id="_a1bSUt6tEei97MD7GK1RmA" name="LINE_DOT" value="3"/>
+    <eLiterals xmi:id="_a1bSU96tEei97MD7GK1RmA" name="LINE_DASHDOT" value="4"/>
+    <eLiterals xmi:id="_a1bSVN6tEei97MD7GK1RmA" name="LINE_DASHDOTDOT" value="5"/>
+    <eLiterals xmi:id="_a1bSVd6tEei97MD7GK1RmA" name="LINE_CUSTOM" value="6"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a-r6Vd6tEei97MD7GK1RmA" name="LayoutData" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a-r6Vt6tEei97MD7GK1RmA" name="owner" lowerBound="1" eType="_a-r6b96tEei97MD7GK1RmA" eOpposite="_a-r6cN6tEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a-r6V96tEei97MD7GK1RmA" name="CustomLayoutData" eSuperTypes="_a-r6Vd6tEei97MD7GK1RmA _a5l-kN6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a-r6WN6tEei97MD7GK1RmA" name="GridLayoutData" eSuperTypes="_a-r6Vd6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6Wd6tEei97MD7GK1RmA" name="grabExcessHorizontalSpace" lowerBound="1" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6W96tEei97MD7GK1RmA" name="grabExcessVerticalSpace" lowerBound="1" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6Xd6tEei97MD7GK1RmA" name="verticalAlignment" lowerBound="1" eType="_a-r6at6tEei97MD7GK1RmA" defaultValueLiteral="CENTER"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6Xt6tEei97MD7GK1RmA" name="horizontalAlignment" lowerBound="1" eType="_a-r6at6tEei97MD7GK1RmA" defaultValueLiteral="CENTER"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6X96tEei97MD7GK1RmA" name="verticalSpan" lowerBound="1" defaultValueLiteral="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6Yd6tEei97MD7GK1RmA" name="horizontalSpan" lowerBound="1" defaultValueLiteral="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6Y96tEei97MD7GK1RmA" name="horizontalIndent" lowerBound="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a-r6Zd6tEei97MD7GK1RmA" name="sizeHint" eType="_a5l-yN6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a-r6Zt6tEei97MD7GK1RmA" name="BorderLayoutData" eSuperTypes="_a-r6Vd6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6Z96tEei97MD7GK1RmA" name="alignment" lowerBound="1" eType="_a-r6at6tEei97MD7GK1RmA" defaultValueLiteral="CENTER"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6aN6tEei97MD7GK1RmA" name="vertical" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_a-r6at6tEei97MD7GK1RmA" name="Alignment">
+    <eLiterals xmi:id="_a-r6a96tEei97MD7GK1RmA" name="BEGINNING"/>
+    <eLiterals xmi:id="_a-r6bN6tEei97MD7GK1RmA" name="CENTER" value="1"/>
+    <eLiterals xmi:id="_a-r6bd6tEei97MD7GK1RmA" name="END" value="2"/>
+    <eLiterals xmi:id="_a-r6bt6tEei97MD7GK1RmA" name="FILL" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a-r6b96tEei97MD7GK1RmA" name="Layoutable" interface="true">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a-r6cN6tEei97MD7GK1RmA" name="layoutData" eType="_a-r6Vd6tEei97MD7GK1RmA" containment="true" eOpposite="_a-r6Vt6tEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a-r6cd6tEei97MD7GK1RmA" name="layout" eType="_a-r6ct6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a-r6ct6tEei97MD7GK1RmA" name="Layout" interface="true"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a-r6c96tEei97MD7GK1RmA" name="CustomLayout" eSuperTypes="_a-r6ct6tEei97MD7GK1RmA _a5l-kN6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a-r6dN6tEei97MD7GK1RmA" name="GridLayout" eSuperTypes="_a-r6ct6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6dd6tEei97MD7GK1RmA" name="numColumns" lowerBound="1" defaultValueLiteral="1">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_a-r6d96tEei97MD7GK1RmA" name="equalWidth" lowerBound="1" defaultValueLiteral="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a-r6ed6tEei97MD7GK1RmA" name="margins" eType="_a5l-yN6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a-r6et6tEei97MD7GK1RmA" name="spacing" eType="_a5l-yN6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_a-r6e96tEei97MD7GK1RmA" name="BorderLayout" eSuperTypes="_a-r6ct6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_a-r6fN6tEei97MD7GK1RmA" name="spacing" eType="_a5l-yN6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bBqWCN6tEei97MD7GK1RmA" name="FlowLayout" eSuperTypes="_a-r6ct6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bBqWCd6tEei97MD7GK1RmA" name="vertical" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bBqWC96tEei97MD7GK1RmA" name="matchMinorSize" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bBqWDd6tEei97MD7GK1RmA" name="forceSingleLine" defaultValueLiteral="false">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtgN6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bBqWD96tEei97MD7GK1RmA" name="majorAlignment" eType="_a-r6at6tEei97MD7GK1RmA" defaultValueLiteral="BEGINNING"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bBqWEN6tEei97MD7GK1RmA" name="minorAlignment" eType="_a-r6at6tEei97MD7GK1RmA" defaultValueLiteral="BEGINNING"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bBqWEd6tEei97MD7GK1RmA" name="majorSpacing" defaultValueLiteral="5">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_bBqWE96tEei97MD7GK1RmA" name="minorSpacing" defaultValueLiteral="5">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.emf.ecore_model_Ecore.ecore#_avBtkd6tEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bBqWFd6tEei97MD7GK1RmA" name="XYLayout" eSuperTypes="_a-r6ct6tEei97MD7GK1RmA"/>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bBqWFt6tEei97MD7GK1RmA" name="XYLayoutData" eSuperTypes="_a-r6Vd6tEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bBqWF96tEei97MD7GK1RmA" name="topLeft" lowerBound="1" eType="_a1bSPd6tEei97MD7GK1RmA" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_bBqWGN6tEei97MD7GK1RmA" name="size" lowerBound="1" eType="_a5l-yN6tEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_bBqWGd6tEei97MD7GK1RmA" name="StackLayout" eSuperTypes="_a-r6ct6tEei97MD7GK1RmA"/>
+</ecore:EPackage>

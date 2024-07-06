@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmi:id="_GpmEvN6vEei97MD7GK1RmA" name="qvtcorebase" nsURI="http://www.eclipse.org/qvt/2015/QVTcoreBase" nsPrefix="qvtcb">
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmEvd6vEei97MD7GK1RmA" name="AbstractMapping" abstract="true" interface="true">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_F37WBt6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="#_GpmEwd6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_GpmEvt6vEei97MD7GK1RmA" name="getContext" eType="_GpmEvd6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_GpmEv96vEei97MD7GK1RmA" name="getRefinement" upperBound="-1" eType="_GpmEvd6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmEwd6vEei97MD7GK1RmA" name="Area" abstract="true" interface="true">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxMs96vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_GpmEwt6vEei97MD7GK1RmA" name="getAllVariables" ordered="false" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icx00t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmExN6vEei97MD7GK1RmA" name="guardPattern" lowerBound="1" eType="_GpmE5N6vEei97MD7GK1RmA" containment="true" eOpposite="_GpmE5d6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmExd6vEei97MD7GK1RmA" name="bottomPattern" lowerBound="1" eType="_GpmE0N6vEei97MD7GK1RmA" containment="true" eOpposite="_GpmE0d6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmEx96vEei97MD7GK1RmA" name="Assignment" abstract="true">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxMs96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmEyN6vEei97MD7GK1RmA" name="bottomPattern" lowerBound="1" eType="_GpmE0N6vEei97MD7GK1RmA" transient="true" eOpposite="_GpmE0t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmEyd6vEei97MD7GK1RmA" name="value" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_GpmEyt6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_GpmEy96vEei97MD7GK1RmA" key="body" value="valueAssignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icxy396vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_GpmEzd6vEei97MD7GK1RmA" name="isDefault" unsettable="true">
+      <eType xsi:type="ecore:EDataType" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxLht6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmE0N6vEei97MD7GK1RmA" name="BottomPattern" eSuperTypes="_GpmE196vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE0d6vEei97MD7GK1RmA" name="area" lowerBound="1" eType="_GpmEwd6vEei97MD7GK1RmA" transient="true" eOpposite="_GpmExd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE0t6vEei97MD7GK1RmA" name="assignment" ordered="false" upperBound="-1" eType="_GpmEx96vEei97MD7GK1RmA" containment="true" eOpposite="_GpmEyN6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE096vEei97MD7GK1RmA" name="enforcementOperation" ordered="false" upperBound="-1" eType="_GpmE3t6vEei97MD7GK1RmA" containment="true" eOpposite="_GpmE4N6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE1N6vEei97MD7GK1RmA" name="realizedVariable" ordered="false" upperBound="-1" eType="_GpmE796vEei97MD7GK1RmA" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmE1d6vEei97MD7GK1RmA" name="CoreDomain">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_F37V5d6vEei97MD7GK1RmA"/>
+    <eSuperTypes href="#_GpmEwd6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmE196vEei97MD7GK1RmA" name="CorePattern">
+    <eSuperTypes href="plugins_org.eclipse.qvtd.pivot.qvtbase_model_QVTbase.ecore#_F37V-N6vEei97MD7GK1RmA"/>
+    <eOperations xmi:id="_GpmE2N6vEei97MD7GK1RmA" name="getAllVariables" ordered="false" upperBound="-1">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icx00t6vEei97MD7GK1RmA"/>
+    </eOperations>
+    <eOperations xmi:id="_GpmE2t6vEei97MD7GK1RmA" name="getArea" lowerBound="1" eType="_GpmEwd6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE296vEei97MD7GK1RmA" name="variable" ordered="false" upperBound="-1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icx00t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmE3t6vEei97MD7GK1RmA" name="EnforcementOperation">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxMs96vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" xmi:id="_GpmE396vEei97MD7GK1RmA" name="enforcementMode" eType="_GpmE9t6vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE4N6vEei97MD7GK1RmA" name="bottomPattern" eType="_GpmE0N6vEei97MD7GK1RmA" transient="true" eOpposite="_GpmE096vEei97MD7GK1RmA"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE4d6vEei97MD7GK1RmA" name="operationCallExp" lowerBound="1" containment="true">
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxzId6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmE5N6vEei97MD7GK1RmA" name="GuardPattern" eSuperTypes="_GpmE196vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE5d6vEei97MD7GK1RmA" name="area" lowerBound="1" eType="_GpmEwd6vEei97MD7GK1RmA" transient="true" eOpposite="_GpmExN6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JMy6at6vEei97MD7GK1RmA" name="NavigationAssignment" abstract="true" eSuperTypes="_GpmEx96vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE596vEei97MD7GK1RmA" name="slotExpression" lowerBound="1" containment="true">
+      <eAnnotations xmi:id="_GpmE6N6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_GpmE6d6vEei97MD7GK1RmA" key="body" value="slotAssignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icxy396vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_JMy6b96vEei97MD7GK1RmA" name="OppositePropertyAssignment" eSuperTypes="_JMy6at6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_JMy6cN6vEei97MD7GK1RmA" name="targetProperty" lowerBound="1">
+      <eAnnotations xmi:id="_JMy6cd6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_JMy6ct6vEei97MD7GK1RmA" key="body" value="assignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxzZt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmE5t6vEei97MD7GK1RmA" name="PropertyAssignment" eSuperTypes="_JMy6at6vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE696vEei97MD7GK1RmA" name="targetProperty" lowerBound="1">
+      <eAnnotations xmi:id="_GpmE7N6vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_GpmE7d6vEei97MD7GK1RmA" key="body" value="assignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_IcxzZt6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmE796vEei97MD7GK1RmA" name="RealizedVariable">
+    <eSuperTypes href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icx00t6vEei97MD7GK1RmA"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" xmi:id="_GpmE8d6vEei97MD7GK1RmA" name="VariableAssignment" eSuperTypes="_GpmEx96vEei97MD7GK1RmA">
+    <eStructuralFeatures xsi:type="ecore:EReference" xmi:id="_GpmE8t6vEei97MD7GK1RmA" name="targetVariable" lowerBound="1">
+      <eAnnotations xmi:id="_GpmE896vEei97MD7GK1RmA" source="http://schema.omg.org/spec/MOF/2.0/emof.xml#Property.oppositeRoleName">
+        <details xmi:id="_GpmE9N6vEei97MD7GK1RmA" key="body" value="assignment"/>
+      </eAnnotations>
+      <eType xsi:type="ecore:EClass" href="plugins_org.eclipse.ocl.pivot_model_Pivot.ecore#_Icx00t6vEei97MD7GK1RmA"/>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" xmi:id="_GpmE9t6vEei97MD7GK1RmA" name="EnforcementMode">
+    <eLiterals xmi:id="_GpmE996vEei97MD7GK1RmA" name="Creation"/>
+    <eLiterals xmi:id="_GpmE-N6vEei97MD7GK1RmA" name="Deletion" value="1"/>
+  </eClassifiers>
+</ecore:EPackage>
